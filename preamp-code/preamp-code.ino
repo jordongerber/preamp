@@ -30,14 +30,25 @@ void setup(){
 void loop(){
   selector.refresh();
 
-  if(selector.pressed())
-    toggle_mute();
-  else
-    if(selector.rotate_CW() || selector.rotate_CCW())
+  if(selector.pressed()){    
+    if(selector.long_pressed())
+      toggle_mute();
+    if(selector.short_pressed())
+      toggle_output();
+  }
+  else if(selector.rotate_CW() || selector.rotate_CCW())
       input_select();
 }
 
 void toggle_mute(){
+  for(int i = 0; i < inputSize; i++)
+    digitalWrite(inputs[i], LOW);
+  for(int i = 0; i < outputSize; i++)
+    digitalWrite(outputs[i], LOW);
+  delay(1000);
+}
+
+void toggle_output(){
   for(int i = 0; i < outputSize; i++)
     digitalWrite(outputs[i], LOW);
   digitalWrite(outputs[selector.get_current_switch_position()], HIGH);

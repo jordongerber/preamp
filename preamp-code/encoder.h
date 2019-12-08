@@ -70,14 +70,33 @@ class encoder{
     }
 
     bool pressed(){
+      long_press = false;
+      short_press = false;
       if(this->SW_status == LOW && this->SW_status_prev == HIGH){
+        int count = 0;
+        while (digitalRead(this->SW_PIN) == LOW){
+          count += 1; //increment count if key is continuously pressed
+          if(count > long_press_duration){
+            long_press = true;
+            return true;
+          }
+        }
         if(this->current_switch_position < this->switch_positions - 1)
             this->current_switch_position++;
-          else
-            this->current_switch_position = 0;
+        else
+          this->current_switch_position = 0;
+        short_press = true;
         return true;
       }
       return false;
+    }
+
+    bool short_pressed(){
+      return this->short_press;
+    }
+
+    bool long_pressed(){
+      return this->long_press;
     }
 
     void refresh(){
@@ -108,4 +127,8 @@ class encoder{
 
     int current_switch_position = 0;
     int switch_positions = 0;
+
+    int long_press_duration = 1000000;
+    bool long_press = false;
+    bool short_press = false;
 };
