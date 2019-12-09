@@ -1,11 +1,11 @@
-#include "encoder.h"
+#include "Encoder.h"
 
 const int inputs[] = {D2, D3, D4}; //pins from MCU board
 const int inputSize = sizeof(inputs)/ sizeof(int); //# of input channels
 const int outputs[] = {22, D6}; //pins from MCU board, the first is a placeholder for "mute"
 const int outputSize = sizeof(outputs)/ sizeof(int); //# of output channels
 
-encoder selector(D5, D0, D1, inputSize, outputSize);
+Encoder selector(D5, D0, D1, inputSize, outputSize);
 
 void setup(){
 
