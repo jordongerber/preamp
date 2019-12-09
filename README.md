@@ -8,13 +8,19 @@ I have three goals with this project:
  * become familiar with microcontroller programming
  * make a bomb preamp
 
-## Implementation 
- * This preamp will implement relay-controlled input and output switching
- 	* inputs
- 		* Some number of single-ended RCA pairs
- 		* 1-2 pairs balanced pairs
- 		* Selection remembered when the device is power-cycled 
- 	* outputs
+## Implementation
+* I am planning to use an ESP32 controller as the MCU
+* This preamp will implement relay-controlled input and output switching
+  * Inputs
+  * Some number of single-ended RCA pairs
+ 	  * 1-2 pairs balanced pairs
+    * relays controlled via demux from MCU. Input control via
+      * front panel rotary encoder
+      * front panel capacitive touch sensors
+      * IR remote control
+      * because it's an ESP32, I gotta play with network control
+ 		* Selection remembered when the device is power-cycled
+ 	* Outputs
  		* 1x single-ended RCA pair
  		* 1x balanced XLR pair
  		* Headphone Amp
@@ -25,7 +31,6 @@ I have three goals with this project:
  		* Upon bootup the headphone volume will come in low (previous state not remembered) but not off, TBD
  * Volume control will be implemented via an MDAC controller
  	* Selectable gain setting: 0dB or +12dB
- * I am planning to use an ESP32 controller as the MCU
  * Power Supply
  	* Separate linear power supplies for analog and digital sections
  		* 5V
@@ -35,11 +40,11 @@ I have three goals with this project:
  	* Op-amp driven
  * Tone Controls
  	* Meh. At the moment I don't really care about tone controls on this unit. If I do add them I'd like to have:
- 		* low/high pass loudness controls w/ controllable corner frequency
+ 		* Low/high pass loudness controls w/ controllable corner frequency
  		* Parametric upper-midrange control, 2kHz - 5kHz, variable Q, variable gain (-6dB to 0dB)
  		* Parametric lower-midrange control, 200Hz - 500kHz, variable Q, variable gain (-6dB to +2dB)  
- 	
+
 ## References
- * https://github.com/FutureSharks/preamp-two/tree/master/PCBs
+ * https://github.com/FutureSharks/preamp-two
  * https://www.muffsy.com/muffsy-relay-input-selector-4.html
  * https://sound-au.com/articles/balanced-io.htm
