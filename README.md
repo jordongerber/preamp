@@ -4,9 +4,13 @@
 
 I have three goals with this project:
 
- * learn Kicad
- * become familiar with microcontroller programming
- * make a bomb preamp
+ * Learn Kicad
+ * Become familiar with microcontroller programming
+  * SPI
+  * shift registers
+  * mux/demux
+ * Make a bomb preamp
+  * See the block diagram in [/preamp-layout/](https://github.com/SlurpyTurts/preamp/tree/master/preamp-layout) for details of the overall design.
 
 ## Implementation
 * I am planning to use an ESP32 controller as the MCU
@@ -44,7 +48,15 @@ I have three goals with this project:
  		* Parametric upper-midrange control, 2kHz - 5kHz, variable Q, variable gain (-6dB to 0dB)
  		* Parametric lower-midrange control, 200Hz - 500kHz, variable Q, variable gain (-6dB to +2dB)  
 
+## Instructions
+
+* The code in [/preamp-code](https://github.com/SlurpyTurts/preamp/tree/master/preamp-code) can be run in the Arduino IDE. Currently it is configured for an ESP8266 NodeMCU
+* The schematic & pcb files in [/preamp-layout/preamp-kicad](https://github.com/SlurpyTurts/preamp/tree/master/preamp-layout/preamp-kicad) can be viewed using KiCad. Open the file ```preamp.pro```
+
 ## References
  * https://github.com/FutureSharks/preamp-two
  * https://www.muffsy.com/muffsy-relay-input-selector-4.html
  * https://sound-au.com/articles/balanced-io.htm
+ * SPI - http://www.circuitbasics.com/basics-of-the-spi-communication-protocol/
+ * Neopixel - https://www.adafruit.com/product/3094
+ * shift registers for mux - https://www.brainy-bits.com/get-more-inputs-on-your-arduino-by-using-a-shift-register/
