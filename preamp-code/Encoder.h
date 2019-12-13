@@ -38,63 +38,35 @@ class Encoder{
     int get_current_switch_position(){return current_switch_position;}
     int get_switch_positions(){return switch_positions;}
 
-    bool rotate_CW(){
-      if(Clock->changed()){
-        if(Clock->is_pressed() && !Data->is_pressed()){
-          if(current_rotary_position < rotary_positions - 1)
-            current_rotary_position++;
-          else
-            current_rotary_position = 0;
-        }
-        return true;
-      }
-      return false;
+    void rotate_CW(){
+      if(current_rotary_position + 1 == rotary_positions)
+        current_rotary_position = 0;
+      else
+        current_rotary_position++;
+    }
+    
+    void rotate_CCW(){
+      if(current_rotary_position == 0)
+        current_rotary_position = rotary_positions - 1;
+      else
+        current_rotary_position--;
     }
 
-    bool rotate_CCW(){
-      if(Data->changed()){
-        if(Data->is_pressed() && !Clock->is_pressed()){
-          if(current_rotary_position > 0)
-            current_rotary_position--;
-          else
-            current_rotary_position = rotary_positions - 1;
-        }
-        return true;
-      }
-      return false;
+    void select(){
+      if(current_switch_position + 1 == switch_positions)
+        current_switch_position = 0;
+      else
+        current_switch_position++;
     }
-
+    
     bool pressed(){
-      long_press = false;
-      short_press = false;
-      if(Button->is_pressed()){
-        int count = 0;
-        while(Button->is_pressed()){
-          count++;
-          if(count > long_press_duration){
-            long_press = true;
-            return true;
-          }
-          Button->refresh();
-        }
-        if(current_switch_position < switch_positions - 1)
-            current_switch_position++;
-        else
-          current_switch_position = 0;
-        short_press = true;
+      if(Button->is_pressed())
         return true;
-      }
       return false;
     }
 
     bool short_pressed(){return short_press;}
     bool long_pressed(){return long_press;}
-
-    void refresh(){
-      Button->refresh();
-      Clock->refresh();
-      Data->refresh();
-    }
 
   private:
 

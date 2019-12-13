@@ -63,6 +63,9 @@ I have three goals with this project:
 ### SPI
  * SPI - http://www.circuitbasics.com/basics-of-the-spi-communication-protocol/
  * shift registers for mux - https://www.brainy-bits.com/get-more-inputs-on-your-arduino-by-using-a-shift-register/
+### Arduino
+  * encoder interrupts - http://bristolwatch.com/arduino/arduino2.htm
+  * encoder interrupts - https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
+  * flash memory - https://randomnerdtutorials.com/esp32-flash-memory/
 ### Other
  * Neopixel - https://www.adafruit.com/product/3094
- * encoder interrupts - http://bristolwatch.com/arduino/arduino2.htm

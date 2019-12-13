@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -15,15 +15,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2750 3200 0    50   UnSpc ~ 0
-AC_IN_+
+AC+
 Text HLabel 2750 3650 0    50   UnSpc ~ 0
-AC_IN_-
+AC-
 Text GLabel 9400 4200 1    50   UnSpc ~ 0
 +5V
 $Comp
 L power:GNDD #PWR?
 U 1 1 5FFF96E2
 P 9400 5100
+AR Path="/5E2D8DA2/5FFF96E2" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EF2D4/5FFF96E2" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 9400 4850 50  0001 C CNN
 F 1 "GNDD" H 9404 4945 50  0000 C CNN
 F 2 "" H 9400 5100 50  0001 C CNN

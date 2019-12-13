@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 11
 Title ""
 Date ""
 Rev ""
@@ -1815,23 +1815,6 @@ Wire Wire Line
 Wire Wire Line
 	11750 -650 11750 -550
 $Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 60AC4101
-P -4750 3300
-F 0 "J?" H -4778 3324 50  0000 R CNN
-F 1 "Conn_01x03_Male" H -4778 3233 50  0000 R CNN
-F 2 "" H -4750 3300 50  0001 C CNN
-F 3 "~" H -4750 3300 50  0001 C CNN
-	1    -4750 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-4550 3200 -4100 3200
-Wire Wire Line
-	-4550 3300 -4100 3300
-Wire Wire Line
-	-4550 3400 -4100 3400
-$Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 60B9F1D4
 P 17200 5150
@@ -2613,4 +2596,57 @@ Text GLabel 18900 4850 1    50   UnSpc ~ 0
 +15V
 Text GLabel 18900 5450 3    50   UnSpc ~ 0
 -15V
+Text HLabel -4500 2650 0    50   Input ~ 0
+CLK
+Text HLabel -4500 2550 0    50   Input ~ 0
+CS
+Text HLabel -4500 2750 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	-4550 3300 -4200 3300
+Wire Wire Line
+	-4550 3200 -4100 3200
+Wire Wire Line
+	-4550 3400 -4300 3400
+Text HLabel -4500 2850 0    50   Output ~ 0
+MISO
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 61B752E4
+P -4750 3300
+F 0 "J?" H -4642 3581 50  0000 C CNN
+F 1 "Conn_01x04_Male" H -4642 3490 50  0000 C CNN
+F 2 "" H -4750 3300 50  0001 C CNN
+F 3 "~" H -4750 3300 50  0001 C CNN
+	1    -4750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-4400 3500 -4550 3500
+Wire Wire Line
+	-4100 3500 -4400 3500
+Connection ~ -4400 3500
+Connection ~ -4300 3400
+Wire Wire Line
+	-4300 3400 -4100 3400
+Connection ~ -4200 3300
+Wire Wire Line
+	-4200 3300 -4100 3300
+Connection ~ -4100 3200
+Wire Wire Line
+	-4100 2550 -4100 3200
+Wire Wire Line
+	-4500 2550 -4100 2550
+Wire Wire Line
+	-4200 2650 -4200 3300
+Wire Wire Line
+	-4500 2650 -4200 2650
+Wire Wire Line
+	-4300 2750 -4300 3400
+Wire Wire Line
+	-4500 2750 -4300 2750
+Wire Wire Line
+	-4500 2850 -4400 2850
+Wire Wire Line
+	-4400 2850 -4400 3500
 $EndSCHEMATC
