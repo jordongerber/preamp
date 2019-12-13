@@ -9,6 +9,7 @@ I have three goals with this project:
   * SPI
   * shift registers
   * mux/demux
+  * controller interrupts
  * Make a bomb preamp
   * See the block diagram in [/preamp-layout/](https://github.com/SlurpyTurts/preamp/tree/master/preamp-layout) for details of the overall design.
 
@@ -50,13 +51,18 @@ I have three goals with this project:
 
 ## Instructions
 
-* The code in [/preamp-code](https://github.com/SlurpyTurts/preamp/tree/master/preamp-code) can be run in the Arduino IDE. Currently it is configured for an ESP8266 NodeMCU
+* The files in [/preamp-code](https://github.com/SlurpyTurts/preamp/tree/master/preamp-code) can be run in the Arduino IDE. Currently it is configured for an ESP8266 NodeMCU
 * The schematic & pcb files in [/preamp-layout/preamp-kicad](https://github.com/SlurpyTurts/preamp/tree/master/preamp-layout/preamp-kicad) can be viewed using KiCad. Open the file ```preamp.pro```
 
 ## References
+
+### Preamp design
  * https://github.com/FutureSharks/preamp-two
  * https://www.muffsy.com/muffsy-relay-input-selector-4.html
  * https://sound-au.com/articles/balanced-io.htm
+### SPI
  * SPI - http://www.circuitbasics.com/basics-of-the-spi-communication-protocol/
- * Neopixel - https://www.adafruit.com/product/3094
  * shift registers for mux - https://www.brainy-bits.com/get-more-inputs-on-your-arduino-by-using-a-shift-register/
+### Other
+ * Neopixel - https://www.adafruit.com/product/3094
+ * encoder interrupts - http://bristolwatch.com/arduino/arduino2.htm
