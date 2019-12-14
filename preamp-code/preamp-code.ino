@@ -5,7 +5,8 @@ const int inputSize = sizeof(inputs)/ sizeof(int); //# of input channels
 const int outputs[] = {22, D0}; //pins from MCU board, the first is a placeholder for "mute"
 const int outputSize = sizeof(outputs)/ sizeof(int); //# of output channels
 
-const int debounce_delay = 20; //microseconds. this is used in the encoder interrupts
+const int debounce_delay = 20; //microseconds. This is used in the encoder interrupt methods
+const int refresh_delay = 100; //milliseconds. This is used in the refresh method
 
 //this is required for interrupts to work in ESP8266 / ESP32, unable to find reliable documentation as to why. This specifies that the routine is put in RAM
 void ICACHE_RAM_ATTR CW_INTERRUPT();
@@ -41,11 +42,11 @@ void loop () {
     selector.rotate_CW();
     refresh();
   }
-  if(CCW_FLAG){
+  else if(CCW_FLAG){
     selector.rotate_CCW();
     refresh();
   }
-  if(SW_FLAG){
+  else if(SW_FLAG){
     /*
     int count = 0;
     bool long_press = false;
@@ -101,6 +102,8 @@ void refresh(){
   for(int i = 0; i < outputSize; i++)
     digitalWrite(outputs[i], LOW);
   digitalWrite(outputs[selector.get_current_switch_position()], HIGH);
+
+  delay(refresh_delay);
   
   CW_FLAG = false;
   CCW_FLAG = false;
