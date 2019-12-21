@@ -15,6 +15,8 @@ class Preamp{
 
   public:
     
+    bool status_change = false;
+  
     Preamp(int inputs, int outputs, Encoder *vol_enc, Encoder *sel_enc){
       
       FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
@@ -27,15 +29,27 @@ class Preamp{
     }
 
     void startup(){
-      for(int i = 0; i < NUM_LEDS; i++) leds[i] = CRGB(20, 0, 0);
-      FastLED.show();
-      delay(500);
-      for(int i = 0; i < NUM_LEDS; i++) leds[i] = CRGB(0, 20, 0);
-      FastLED.show();
-      delay(500);
-      for(int i = 0; i < NUM_LEDS; i++) leds[i] = CRGB(0, 0, 20);
-      FastLED.show();
-      delay(500);
+      for (int i = 0; i < 255; i++) {
+        leds[0] = CRGB(i, 0, 255-i);
+        for (int j = 1; j < NUM_LEDS; j++)
+          leds[j] = leds[j-1];
+        FastLED.show();
+        delay(1);
+      }
+      for (int i = 0; i < 255; i++) {
+        leds[0] = CRGB(255-i, i, 0);
+        for (int j = 1; j < NUM_LEDS; j++)
+          leds[j] = leds[j-1];
+        FastLED.show();
+        delay(1);
+      }
+      for (int i = 0; i < 255; i++) {
+        leds[0] = CRGB(0, 255-i, i);
+        for (int j = 1; j < NUM_LEDS; j++)
+          leds[j] = leds[j-1];
+        FastLED.show();
+        delay(1);
+      }
       LED_refresh();
     }
     
@@ -160,17 +174,20 @@ class Preamp{
     }
 
   private:
-
-    Encoder *selector_encoder;
-    Encoder *volume_encoder;
     
     int max_inputs;
     int max_outputs;
     int max_volume = NUM_LEDS - max_inputs - 1;
+    
     int current_volume;
-    bool mute;
-    bool standby = false;
     int current_input = 0;
     int current_output = 0;
+
+    bool mute;
+    bool standby = false;
+    
+    Encoder *selector_encoder;
+    Encoder *volume_encoder;
+
     CRGB leds[NUM_LEDS];
 };

@@ -63,6 +63,7 @@ I have three goals with this project:
 ### SPI
  * SPI - http://www.circuitbasics.com/basics-of-the-spi-communication-protocol/
  * shift registers for mux - https://www.brainy-bits.com/get-more-inputs-on-your-arduino-by-using-a-shift-register/
+ * https://github.com/espressif/arduino-esp32/blob/master/libraries/SPI/examples/SPI_Multiple_Buses/SPI_Multiple_Buses.ino
 ### Arduino
   * encoder interrupts - http://bristolwatch.com/arduino/arduino2.htm
   * encoder interrupts - https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
