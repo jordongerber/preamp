@@ -3,6 +3,16 @@ class Encoder{
 
   public:
 
+    Encoder(int CLK, int DT, int SW){
+      
+      Clock->configure(CLK, HIGH);
+      Data->configure(DT, HIGH);
+      Button->configure(SW, HIGH);
+      
+      set_rotary_positions(0);
+      set_switch_positions(0);
+    }
+    
     Encoder(int CLK, int DT, int SW, int rotary_positions, int switch_positions){
       
       Clock->configure(CLK, HIGH);
@@ -83,4 +93,5 @@ class Encoder{
     int long_press_duration = 1000000;
     bool long_press = false;
     bool short_press = false;
+
 };
