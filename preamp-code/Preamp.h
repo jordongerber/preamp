@@ -3,11 +3,11 @@
  */
 
 
-#include <FastLED.h>
+#include <Adafruit_NeoPixel.h>
 #include "Encoder.h"
 
 #define NUM_LEDS 60
-#define LED_PIN 4
+#define LED_PIN 16
 
 
 
@@ -17,9 +17,11 @@ class Preamp{
     
     bool status_change = false;
   
-    Preamp(int inputs, int outputs, Encoder *vol_enc, Encoder *sel_enc){
+    Preamp(int inputs, int outputs, Encoder *vol_enc, Encoder *sel_enc, Adafruit_NeoPixel *LEDs){
+
+      FP_Strip = LEDs;
+      FP_Strip->begin();
       
-      FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
       max_inputs = inputs;
       max_outputs = outputs; 
 
@@ -30,24 +32,21 @@ class Preamp{
 
     void startup(){
       for (int i = 0; i < 255; i++) {
-        leds[0] = CRGB(i, 0, 255-i);
-        for (int j = 1; j < NUM_LEDS; j++)
-          leds[j] = leds[j-1];
-        FastLED.show();
+        for (int j = 0; j < NUM_LEDS; j++)
+          FP_Strip->setPixelColor(j, i, 0, 255-i);
+        FP_Strip->show();
         delay(1);
       }
       for (int i = 0; i < 255; i++) {
-        leds[0] = CRGB(255-i, i, 0);
-        for (int j = 1; j < NUM_LEDS; j++)
-          leds[j] = leds[j-1];
-        FastLED.show();
+        for (int j = 0; j < NUM_LEDS; j++)
+          FP_Strip->setPixelColor(j, 255-i, i, 0);
+        FP_Strip->show();
         delay(1);
       }
       for (int i = 0; i < 255; i++) {
-        leds[0] = CRGB(0, 255-i, i);
-        for (int j = 1; j < NUM_LEDS; j++)
-          leds[j] = leds[j-1];
-        FastLED.show();
+        for (int j = 0; j < NUM_LEDS; j++)
+          FP_Strip->setPixelColor(j, 0, 255-i, i);
+        FP_Strip->show();
         delay(1);
       }
       LED_refresh();
@@ -78,39 +77,40 @@ class Preamp{
     }
     
     void LED_refresh(){
+      FP_Strip->clear();
       if(standby)
-        leds[0] = CRGB(10, 10, 0);
+        FP_Strip->setPixelColor(0, 10, 10, 0);
       else{
         //mute
         if(mute){
-          leds[0] = CRGB(20, 0, 0);
+          FP_Strip->setPixelColor(0, 20, 0, 0);
           //fade out leds here
         }
         else{
-          leds[0] = CRGB(0, 0, 0);
+          FP_Strip->setPixelColor(0, 0, 0, 0);
           //fade in leds here
         }
   
         //input select update
         for(int i = 0; i < max_inputs; i++)
-          leds[i+1] = CRGB(0, 0, 0);
+          FP_Strip->setPixelColor(i+1, 0, 0, 0);
         if(mute)
-          leds[current_input+1] = CRGB(0, 1, 0);
+          FP_Strip->setPixelColor(current_input+1, 0, 1, 0);
         else
-          leds[current_input+1] = CRGB(11, 9, 0);
+          FP_Strip->setPixelColor(current_input+1, 11, 9, 0);
         
         //volume update
         for(int i = 0; i < max_volume; i++)
-          leds[i+1+max_inputs] = CRGB(0, 0, 0);
+          FP_Strip->setPixelColor(i+1+max_inputs, 0, 0, 0);
         
         if(mute)
           for(int i = 0; i < current_volume; i++)
-            leds[i+1+max_inputs] = CRGB(1, 0, 0);
+            FP_Strip->setPixelColor(i+1+max_inputs, 1, 0, 0);
         else
           for(int i = 0; i < current_volume; i++)
-            leds[i+1+max_inputs] = CRGB(14, 0, 6);
+            FP_Strip->setPixelColor(i+1+max_inputs, 14, 0, 6);
       }
-      FastLED.show();
+      FP_Strip->show();
     }
 
     int getInput(){return current_input;}
@@ -136,9 +136,6 @@ class Preamp{
       else{
         current_input = in;
       }
-
-//      EEPROM.write(INPUT_STORE, current_input);
-//      EEPROM.commit();
       
       LED_refresh();
     }
@@ -147,10 +144,6 @@ class Preamp{
       if(out == max_outputs) current_output = 0;
       else if(out < 0) current_output = max_outputs - 1;
       else if(out >= 0 && out < max_outputs) current_output = out;
-      
-//      EEPROM.write(OUTPUT_STORE, current_output);
-//      EEPROM.commit();
-      
       LED_refresh();
     }
     
@@ -158,8 +151,6 @@ class Preamp{
       if(mute) mute = !mute;
       if(vol >= 0 && vol < max_volume){
         current_volume = vol;
-//        EEPROM.write(VOLUME_STORE, current_volume);
-//        EEPROM.commit();
         LED_refresh();
       }
     }
@@ -188,6 +179,6 @@ class Preamp{
     
     Encoder *selector_encoder;
     Encoder *volume_encoder;
-
-    CRGB leds[NUM_LEDS];
+    
+    Adafruit_NeoPixel *FP_Strip;
 };

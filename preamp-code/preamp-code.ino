@@ -4,8 +4,12 @@
  * currently configured for DOIT ESP32 DEVKIT V1 board
  * 
  */
+
 #include <EEPROM.h>
 #include "Preamp.h"
+#include <SPI.h>
+
+SPIClass IO_Expand(VSPI);
 
 //preamp IO ports
 #define NUM_INPUTS 6
@@ -23,11 +27,14 @@
 #define VOL_DT 14
 #define VOL_SW 13
 
-#define SEL_CLK 23
-#define SEL_DT 22
-#define SEL_SW 21
+#define SEL_CLK 33
+#define SEL_DT 25
+#define SEL_SW 26
 
-Preamp preamp(NUM_INPUTS, NUM_OUTPUTS, new Encoder(VOL_CLK, VOL_DT, VOL_SW), new Encoder(SEL_CLK, SEL_DT, SEL_SW));
+#define NUM_LEDS 60
+#define LED_PIN 16
+
+Preamp preamp(NUM_INPUTS, NUM_OUTPUTS, new Encoder(VOL_CLK, VOL_DT, VOL_SW), new Encoder(SEL_CLK, SEL_DT, SEL_SW), new Adafruit_NeoPixel(60, 16, NEO_GRB + NEO_KHZ800));
 
 enum Actions{vol_up, vol_down, vol_set, sel_next, sel_prev, sel_set, toggle_mute};
 Actions action;
@@ -57,6 +64,9 @@ void setup(){
 
   EEPROM.begin(EEPROM_SIZE);
 
+  //pinMode(5, OUTPUT);
+  //IO_Expand.begin(18, 23, 19, 5);
+  
   //initializing preamp from EEPROM stored values
   preamp.setVolume(EEPROM.read(VOLUME_STORE));
   preamp.setInput(EEPROM.read(INPUT_STORE));
@@ -85,15 +95,48 @@ void loop(){
 
   if(preamp.status_change){
     switch(action){
-      case vol_up:       preamp.volume_up();        EEPROM.write(VOLUME_STORE, preamp.getVolume()); EEPROM.commit();  delay(volume_select_delay); break;
-      case vol_down:     preamp.volume_down();      EEPROM.write(VOLUME_STORE, preamp.getVolume()); EEPROM.commit();  delay(volume_select_delay); break;
-      case vol_set:      preamp.setVolume(vol);     EEPROM.write(VOLUME_STORE, preamp.getVolume()); EEPROM.commit();  delay(volume_select_delay); break;
-      
-      case sel_prev:     preamp.select_previous();  EEPROM.write(INPUT_STORE, preamp.getInput()); EEPROM.commit();    delay(io_select_delay); break;
-      case sel_next:     preamp.select_next();      EEPROM.write(INPUT_STORE, preamp.getInput()); EEPROM.commit();    delay(io_select_delay); break;
-      case sel_set:      preamp.setInput(input);    EEPROM.write(INPUT_STORE, preamp.getInput()); EEPROM.commit();    delay(io_select_delay); break;
-      
-      case toggle_mute:  preamp.toggle_mute();      EEPROM.write(MUTE_STORE, preamp.isMute()); EEPROM.commit();       delay(io_select_delay); break;
+      case vol_up:
+        preamp.volume_up();
+        EEPROM.write(VOLUME_STORE, preamp.getVolume());
+        EEPROM.commit();
+        delay(volume_select_delay);
+        break;
+      case vol_down:
+        preamp.volume_down();
+        EEPROM.write(VOLUME_STORE, preamp.getVolume());
+        EEPROM.commit();
+        delay(volume_select_delay);
+        break;
+      case vol_set:
+        preamp.setVolume(vol);
+        EEPROM.write(VOLUME_STORE, preamp.getVolume());
+        EEPROM.commit();
+        delay(volume_select_delay);
+        break;
+      case sel_prev:
+        preamp.select_previous();
+        EEPROM.write(INPUT_STORE, preamp.getInput());
+        EEPROM.commit();
+        delay(io_select_delay);
+        break;
+      case sel_next:
+        preamp.select_next();
+        EEPROM.write(INPUT_STORE, preamp.getInput());
+        EEPROM.commit();
+        delay(io_select_delay);
+        break;
+      case sel_set:
+        preamp.setInput(input);
+        EEPROM.write(INPUT_STORE, preamp.getInput());
+        EEPROM.commit();
+        delay(io_select_delay);
+        break;
+      case toggle_mute:
+        preamp.toggle_mute();
+        EEPROM.write(MUTE_STORE, preamp.isMute());
+        EEPROM.commit();
+        delay(io_select_delay);
+        break;
     }
     
     preamp.status_change = false;
