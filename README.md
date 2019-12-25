@@ -2,8 +2,6 @@
 
 ## Goals
 
-I have three goals with this project:
-
  * Learn Kicad
  * Become familiar with microcontroller programming
   * SPI
@@ -53,6 +51,7 @@ I have three goals with this project:
 
 * The files in [/preamp-code](https://github.com/SlurpyTurts/preamp/tree/master/preamp-code) can be run in the Arduino IDE. Currently it is configured for an ESP8266 NodeMCU
 * The schematic & pcb files in [/preamp-layout/preamp-kicad](https://github.com/SlurpyTurts/preamp/tree/master/preamp-layout/preamp-kicad) can be viewed using KiCad. Open the file ```preamp.pro```
+* An overview of the schematic layout of this preamp is located at [preamp/preamp-layout/preamp-kicad/preamp.pdf](https://github.com/SlurpyTurts/preamp/blob/master/preamp-layout/preamp-kicad/preamp.pdf)
 
 ## References
 
