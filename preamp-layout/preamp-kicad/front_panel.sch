@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -158,16 +158,12 @@ Text Label 6350 2650 3    50   ~ 0
 SW_CH5
 Text Label 6800 2650 3    50   ~ 0
 SW_MUTE
-Text HLabel 6900 4000 2    50   UnSpc ~ 0
-tone_ctl_1
-Text HLabel 6900 4150 2    50   UnSpc ~ 0
-tone_ctl_2
-Text HLabel 6900 4300 2    50   UnSpc ~ 0
-tone_ctl_3
 $Comp
 L LED:WS2812B D?
 U 1 1 5EA014C6
 P 2100 2100
+AR Path="/5EA014C6" Ref="D?"  Part="1" 
+AR Path="/5E5ECAAE/5EA014C6" Ref="D?"  Part="1" 
 F 0 "D?" H 2444 2146 50  0000 L CNN
 F 1 "WS2812B" H 2444 2055 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2150 1800 50  0001 L TNN
@@ -230,6 +226,8 @@ $Comp
 L LED:WS2812B D?
 U 1 1 5EA04D89
 P 3100 2100
+AR Path="/5EA04D89" Ref="D?"  Part="1" 
+AR Path="/5E5ECAAE/5EA04D89" Ref="D?"  Part="1" 
 F 0 "D?" H 3444 2146 50  0000 L CNN
 F 1 "WS2812B" H 3444 2055 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3150 1800 50  0001 L TNN

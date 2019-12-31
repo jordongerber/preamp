@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -14,810 +14,814 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1800 5450 800  750 
+S 700  5850 800  750 
 U 5E26F6FE
 F0 "AC input" 50
 F1 "AC_input.sch" 50
-F2 "AC+" U R 2600 5750 50 
-F3 "AC-" U R 2600 5850 50 
+F2 "AC+" U R 1500 6150 50 
+F3 "AC-" U R 1500 6250 50 
 $EndSheet
 $Sheet
-S 3300 5450 1050 750 
+S 2200 5850 1050 750 
 U 5E27B612
 F0 "+-15V PWR SUPPLY" 50
 F1 "+-15V_PWR_SUPPLY.sch" 50
-F2 "AC+" U L 3300 5750 50 
-F3 "AC-" U L 3300 5850 50 
+F2 "AC+" U L 2200 6150 50 
+F3 "AC-" U L 2200 6250 50 
 $EndSheet
 $Sheet
-S 3650 1150 1200 2450
+S 2150 900  1200 2450
 U 5E2D8DA2
 F0 "input selector" 50
 F1 "input_selector.sch" 50
-F2 "A_IN_L" U R 4850 2300 50 
-F3 "A_IN_R" U R 4850 2400 50 
-F4 "A_OUT_L" U R 4850 1400 50 
-F5 "A_OUT_R" U R 4850 1500 50 
-F6 "A_IN_L_1" U L 3650 1250 50 
-F7 "A_IN_R_1" U L 3650 1350 50 
-F8 "A_IN_L_2" U L 3650 1500 50 
-F9 "A_IN_R_2" U L 3650 1600 50 
-F10 "A_IN_L_3" U L 3650 1750 50 
-F11 "A_IN_R_3" U L 3650 1850 50 
-F12 "A_IN_L_4" U L 3650 2000 50 
-F13 "A_IN_R_4" U L 3650 2100 50 
-F14 "CLK" I R 4850 3200 50 
-F15 "CS" I R 4850 2900 50 
-F16 "MOSI" I R 4850 3000 50 
-F17 "MISO" O R 4850 3100 50 
-F18 "A_OUT_1_R" U L 3650 3200 50 
-F19 "A_OUT_1_L" U L 3650 3100 50 
-F20 "A_OUT_2_R" U L 3650 3450 50 
-F21 "A_OUT_2_L" U L 3650 3350 50 
-F22 "A_IN_R_5" U L 3650 2400 50 
-F23 "A_IN_L_5" U L 3650 2300 50 
+F2 "A_IN_L" U R 3350 2000 50 
+F3 "A_IN_R" U R 3350 2100 50 
+F4 "A_OUT_L" U R 3350 1150 50 
+F5 "A_OUT_R" U R 3350 1250 50 
+F6 "A_IN_L_1" U L 2150 1000 50 
+F7 "A_IN_R_1" U L 2150 1100 50 
+F8 "A_IN_L_2" U L 2150 1250 50 
+F9 "A_IN_R_2" U L 2150 1350 50 
+F10 "A_IN_L_3" U L 2150 1500 50 
+F11 "A_IN_R_3" U L 2150 1600 50 
+F12 "A_IN_L_4" U L 2150 1750 50 
+F13 "A_IN_R_4" U L 2150 1850 50 
+F14 "CLK" I R 3350 2950 50 
+F15 "CS" I R 3350 2650 50 
+F16 "MOSI" I R 3350 2750 50 
+F17 "MISO" O R 3350 2850 50 
+F18 "A_OUT_1_R" U L 2150 2950 50 
+F19 "A_OUT_1_L" U L 2150 2850 50 
+F20 "A_OUT_2_R" U L 2150 3200 50 
+F21 "A_OUT_2_L" U L 2150 3100 50 
+F22 "A_IN_R_5" U L 2150 2150 50 
+F23 "A_IN_L_5" U L 2150 2050 50 
 $EndSheet
 $Sheet
-S 3450 6550 800  600 
+S 2350 6950 800  600 
 U 5E5EF2D4
 F0 "5V supply" 50
 F1 "5V_supply.sch" 50
-F2 "AC+" U L 3450 6800 50 
-F3 "AC-" U L 3450 6900 50 
+F2 "AC+" U L 2350 7200 50 
+F3 "AC-" U L 2350 7300 50 
 $EndSheet
 $Sheet
-S 8700 1650 550  500 
+S 8700 900  550  500 
 U 5E4A803E
 F0 "headphone amp" 50
 F1 "headphone_amp.sch" 50
-F2 "in_R" U L 8700 1950 50 
-F3 "in_L" U L 8700 1850 50 
+F2 "in_R" U L 8700 1200 50 
+F3 "in_L" U L 8700 1100 50 
 $EndSheet
-Wire Wire Line
-	2600 5750 3000 5750
-Wire Wire Line
-	2600 5850 2900 5850
-Wire Wire Line
-	3000 5750 3000 6800
-Wire Wire Line
-	3000 6800 3450 6800
-Connection ~ 3000 5750
-Wire Wire Line
-	3000 5750 3300 5750
-Wire Wire Line
-	2900 5850 2900 6900
-Wire Wire Line
-	2900 6900 3450 6900
-Connection ~ 2900 5850
-Wire Wire Line
-	2900 5850 3300 5850
 $Sheet
-S 5250 1000 800  1000
-U 61DC5D9D
-F0 "tone control" 50
-F1 "tone_control.sch" 50
-F2 "in_R" U L 5250 1500 50 
-F3 "in_L" U L 5250 1400 50 
-F4 "out_L" U R 6050 1700 50 
-F5 "out_R" U R 6050 1800 50 
-F6 "tone_ctl_1" U R 6050 1150 50 
-F7 "tone_ctl_2" U R 6050 1250 50 
-F8 "tone_ctl_3" U R 6050 1350 50 
-$EndSheet
-Wire Wire Line
-	4850 1400 5250 1400
-Wire Wire Line
-	4850 1500 5250 1500
-Wire Wire Line
-	7000 2300 4850 2300
-Wire Wire Line
-	4850 2400 7000 2400
-Text Label 6200 1150 0    50   ~ 0
-tone_ctl_1
-Text Label 6200 1250 0    50   ~ 0
-tone_ctl_2
-Text Label 6200 1350 0    50   ~ 0
-tone_ctl_3
-Wire Wire Line
-	6200 1250 6050 1250
-Wire Wire Line
-	6050 1150 6200 1150
-Wire Wire Line
-	6200 1350 6050 1350
-Wire Wire Line
-	6050 1800 6500 1800
-Wire Wire Line
-	6500 1800 6500 2000
-Wire Wire Line
-	6500 2000 7000 2000
-Wire Wire Line
-	6050 1700 6600 1700
-Wire Wire Line
-	6600 1700 6600 1900
-Wire Wire Line
-	6600 1900 7000 1900
-$Sheet
-S 7000 1700 1100 900 
+S 7000 950  1100 900 
 U 61DA059E
 F0 "gain_stage" 50
 F1 "gain_stage.sch" 50
-F2 "in_L" U L 7000 1900 50 
-F3 "in_R" U L 7000 2000 50 
-F4 "headphone_out_L" U R 8100 1850 50 
-F5 "headphone_out_R" U R 8100 1950 50 
-F6 "out_L" U L 7000 2300 50 
-F7 "out_R" U L 7000 2400 50 
-F8 "MISO" O R 8100 2400 50 
-F9 "MOSI" I R 8100 2300 50 
-F10 "CLK" I R 8100 2500 50 
-F11 "CS_VOL" I R 8100 2200 50 
+F2 "in_L" U L 7000 1150 50 
+F3 "in_R" U L 7000 1250 50 
+F4 "headphone_out_L" U R 8100 1100 50 
+F5 "headphone_out_R" U R 8100 1200 50 
+F6 "out_L" U L 7000 1550 50 
+F7 "out_R" U L 7000 1650 50 
+F8 "MISO" O R 8100 1650 50 
+F9 "MOSI" I R 8100 1550 50 
+F10 "CLK" I R 8100 1750 50 
+F11 "CS_VOL" I R 8100 1450 50 
 $EndSheet
-Text Label 4850 4800 2    50   ~ 0
-tone_ctl_3
-Text Label 4850 4700 2    50   ~ 0
-tone_ctl_2
-Text Label 4850 4600 2    50   ~ 0
-tone_ctl_1
-Wire Wire Line
-	4850 4800 5050 4800
-Wire Wire Line
-	4850 4700 5050 4700
-Wire Wire Line
-	4850 4600 5050 4600
 $Sheet
-S 5050 4450 900  700 
+S 5300 3700 550  750 
 U 5E5ECAAE
 F0 "front panel" 50
 F1 "front_panel.sch" 50
-F2 "MISO" O R 5950 4800 50 
-F3 "MOSI" I R 5950 4700 50 
-F4 "CLK" I R 5950 4900 50 
-F5 "CS" I R 5950 4600 50 
-F6 "tone_ctl_1" U L 5050 4600 50 
-F7 "tone_ctl_2" U L 5050 4700 50 
-F8 "tone_ctl_3" U L 5050 4800 50 
-F9 "LED_DT" I R 5950 5050 50 
+F2 "MISO" O R 5850 4050 50 
+F3 "MOSI" I R 5850 3950 50 
+F4 "CLK" I R 5850 4150 50 
+F5 "CS" I R 5850 3850 50 
+F9 "LED_DT" I R 5850 4300 50 
 $EndSheet
 $Sheet
-S 7750 3700 950  1450
+S 7750 2950 950  1450
 U 619FA14B
 F0 "MCU" 50
 F1 "MCU.sch" 50
-F2 "MISO" I L 7750 4250 50 
-F3 "MOSI" O L 7750 4150 50 
-F4 "CLK" O L 7750 4350 50 
-F5 "CS_IO" O L 7750 4050 50 
-F6 "SEL_CLK" I R 8700 3900 50 
-F7 "SEL_DT" I R 8700 4000 50 
-F8 "SEL_SW" I R 8700 4100 50 
-F9 "VOL_CLK" I R 8700 4700 50 
-F10 "VOL_DT" I R 8700 4800 50 
-F11 "VOL_SW" I R 8700 4900 50 
-F12 "CS_FP" O L 7750 4450 50 
-F13 "CS_VOL" O L 7750 3950 50 
-F14 "LED_DT" O L 7750 4650 50 
+F2 "MISO" I L 7750 3500 50 
+F3 "MOSI" O L 7750 3400 50 
+F4 "CLK" O L 7750 3600 50 
+F5 "CS_IO" O L 7750 3300 50 
+F6 "SEL_CLK" I R 8700 3150 50 
+F7 "SEL_DT" I R 8700 3250 50 
+F8 "SEL_SW" I R 8700 3350 50 
+F9 "VOL_CLK" I R 8700 3950 50 
+F10 "VOL_DT" I R 8700 4050 50 
+F11 "VOL_SW" I R 8700 4150 50 
+F12 "CS_FP" O L 7750 3700 50 
+F13 "CS_VOL" O L 7750 3200 50 
+F14 "LED_DT" O L 7750 3900 50 
 $EndSheet
-Wire Wire Line
-	8100 2500 8200 2500
-Wire Wire Line
-	8200 2500 8200 2900
-Wire Wire Line
-	7250 3500 7250 4050
-Wire Wire Line
-	7250 4050 7750 4050
-Wire Wire Line
-	7150 3600 7150 4150
-Wire Wire Line
-	7050 3700 7050 4250
-Wire Wire Line
-	6950 3800 6950 4350
-Wire Wire Line
-	5950 4700 6150 4700
-Wire Wire Line
-	6150 4700 6150 3600
-Connection ~ 6150 3600
-Wire Wire Line
-	5950 4800 6250 4800
-Wire Wire Line
-	6250 4800 6250 3700
-Connection ~ 6250 3700
-Wire Wire Line
-	5950 4900 6350 4900
-Wire Wire Line
-	6350 4900 6350 3800
-Connection ~ 6350 3800
-Wire Wire Line
-	5950 4600 6950 4600
-Wire Wire Line
-	6950 4600 6950 4450
-Wire Wire Line
-	6950 4450 7750 4450
-Wire Wire Line
-	6950 4350 7750 4350
-Wire Wire Line
-	7050 4250 7750 4250
-Wire Wire Line
-	7150 4150 7750 4150
-Wire Wire Line
-	6950 2900 6950 3800
-Wire Wire Line
-	8100 2400 8300 2400
-Wire Wire Line
-	8100 2300 8400 2300
-Wire Wire Line
-	8100 2200 8500 2200
-Wire Wire Line
-	8300 2400 8300 3000
-Wire Wire Line
-	7050 3000 7050 3700
-Wire Wire Line
-	8400 3100 7150 3100
-Wire Wire Line
-	7150 3100 7150 3600
-Wire Wire Line
-	8400 2300 8400 3100
-Wire Wire Line
-	8500 3200 7650 3200
-Wire Wire Line
-	7650 3200 7650 3950
-Wire Wire Line
-	8500 2200 8500 3200
-Wire Wire Line
-	7650 3950 7750 3950
-Wire Wire Line
-	6950 2900 8200 2900
-Connection ~ 6950 3800
-Wire Wire Line
-	7050 3000 8300 3000
-Connection ~ 7050 3700
-Connection ~ 7150 3600
-Wire Wire Line
-	6250 3700 7050 3700
-Wire Wire Line
-	6350 3800 6950 3800
-Wire Wire Line
-	6150 3600 7150 3600
-Wire Wire Line
-	8100 1850 8700 1850
-Wire Wire Line
-	8100 1950 8700 1950
 $Sheet
-S 800  3550 700  900 
+S 900  4050 700  900 
 U 5E1A0CE1
 F0 "Balanced daughter IO pcb" 50
 F1 "IO_BALANCED_DAUGHTER.sch" 50
-F2 "OUT_R" U R 1500 4250 50 
-F3 "OUT_L" U R 1500 4150 50 
-F4 "IN_L" U R 1500 3750 50 
-F5 "IN_R" U R 1500 3850 50 
+F2 "OUT_R" U R 1600 4750 50 
+F3 "OUT_L" U R 1600 4650 50 
+F4 "IN_L" U R 1600 4250 50 
+F5 "IN_R" U R 1600 4350 50 
 $EndSheet
 $Sheet
-S 2350 1150 750  2450
+S 850  900  750  2450
 U 5E607732
 F0 "IO" 50
 F1 "IO.sch" 50
-F2 "A_IN_1_L" U R 3100 1250 50 
-F3 "A_IN_1_R" U R 3100 1350 50 
-F4 "A_IN_2_L" U R 3100 1500 50 
-F5 "A_IN_2_R" U R 3100 1600 50 
-F6 "A_IN_3_L" U R 3100 1750 50 
-F7 "A_IN_3_R" U R 3100 1850 50 
-F8 "A_IN_4_L" U R 3100 2000 50 
-F9 "A_IN_4_R" U R 3100 2100 50 
-F10 "A_OUT_1_L" U R 3100 3100 50 
-F11 "A_OUT_1_R" U R 3100 3200 50 
-F12 "A_IN_5_L" U R 3100 2300 50 
-F13 "A_IN_5_R" U R 3100 2400 50 
-F14 "A_OUT_2_R" U R 3100 3450 50 
-F15 "A_OUT_2_L" U R 3100 3350 50 
+F2 "A_IN_1_L" U R 1600 1000 50 
+F3 "A_IN_1_R" U R 1600 1100 50 
+F4 "A_IN_2_L" U R 1600 1250 50 
+F5 "A_IN_2_R" U R 1600 1350 50 
+F6 "A_IN_3_L" U R 1600 1500 50 
+F7 "A_IN_3_R" U R 1600 1600 50 
+F8 "A_IN_4_L" U R 1600 1750 50 
+F9 "A_IN_4_R" U R 1600 1850 50 
+F10 "A_OUT_1_L" U R 1600 2850 50 
+F11 "A_OUT_1_R" U R 1600 2950 50 
+F12 "A_IN_5_L" U R 1600 2050 50 
+F13 "A_IN_5_R" U R 1600 2150 50 
+F14 "A_OUT_2_R" U R 1600 3200 50 
+F15 "A_OUT_2_L" U R 1600 3100 50 
 $EndSheet
-Text HLabel 14650 2400 0    50   UnSpc ~ 0
-A_OUT_L
-Text HLabel 16750 2500 2    50   UnSpc ~ 0
-A_OUT_UNBAL_L
-Wire Wire Line
-	14750 2400 14650 2400
-Wire Wire Line
-	16600 2500 16750 2500
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 5E79BF6A
-P 18700 3450
-AR Path="/5E2D8DA2/5E79BF6A" Ref="U?"  Part="3" 
-AR Path="/5E79BF6A" Ref="U?"  Part="3" 
-F 0 "U?" H 18658 3496 50  0000 L CNN
-F 1 "TL072" H 18658 3405 50  0000 L CNN
-F 2 "" H 18700 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 18700 3450 50  0001 C CNN
-	3    18700 3450
-	1    0    0    -1  
-$EndComp
-Text GLabel 18600 3150 1    50   UnSpc ~ 0
-+15V
-Text GLabel 18600 3750 3    50   UnSpc ~ 0
--15V
-$Comp
-L power:GNDS #PWR?
-U 1 1 5E79BF72
-P 15250 2850
-AR Path="/5E2D8DA2/5E79BF72" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5E79BF72" Ref="#PWR?"  Part="1" 
-AR Path="/5E79BF72" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15250 2600 50  0001 C CNN
-F 1 "GNDS" H 15255 2677 50  0000 C CNN
-F 2 "" H 15250 2850 50  0001 C CNN
-F 3 "" H 15250 2850 50  0001 C CNN
-	1    15250 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BF78
-P 15250 2650
-AR Path="/5E2D8DA2/5E79BF78" Ref="R?"  Part="1" 
-AR Path="/5E79BF78" Ref="R?"  Part="1" 
-F 0 "R?" V 15043 2650 50  0000 C CNN
-F 1 "10K" V 15134 2650 50  0000 C CNN
-F 2 "" V 15180 2650 50  0001 C CNN
-F 3 "~" H 15250 2650 50  0001 C CNN
-	1    15250 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BF7E
-P 14900 2400
-AR Path="/5E2D8DA2/5E79BF7E" Ref="R?"  Part="1" 
-AR Path="/5E79BF7E" Ref="R?"  Part="1" 
-F 0 "R?" V 14693 2400 50  0000 C CNN
-F 1 "10K" V 14784 2400 50  0000 C CNN
-F 2 "" V 14830 2400 50  0001 C CNN
-F 3 "~" H 14900 2400 50  0001 C CNN
-	1    14900 2400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15050 2400 15250 2400
-Wire Wire Line
-	15250 2500 15250 2400
-Connection ~ 15250 2400
-Wire Wire Line
-	15250 2400 15450 2400
-Wire Wire Line
-	15250 2800 15250 2850
-$Comp
-L Device:R R?
-U 1 1 5E79BF89
-P 16450 2500
-AR Path="/5E2D8DA2/5E79BF89" Ref="R?"  Part="1" 
-AR Path="/5E79BF89" Ref="R?"  Part="1" 
-F 0 "R?" V 16243 2500 50  0000 C CNN
-F 1 "100R" V 16334 2500 50  0000 C CNN
-F 2 "" V 16380 2500 50  0001 C CNN
-F 3 "~" H 16450 2500 50  0001 C CNN
-	1    16450 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BF8F
-P 15800 3000
-AR Path="/5E2D8DA2/5E79BF8F" Ref="R?"  Part="1" 
-AR Path="/5E79BF8F" Ref="R?"  Part="1" 
-F 0 "R?" V 15593 3000 50  0000 C CNN
-F 1 "10K" V 15684 3000 50  0000 C CNN
-F 2 "" V 15730 3000 50  0001 C CNN
-F 3 "~" H 15800 3000 50  0001 C CNN
-	1    15800 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15450 2600 15450 3000
-Wire Wire Line
-	15650 3000 15450 3000
-$Comp
-L power:GNDS #PWR?
-U 1 1 5E79BF97
-P 15450 3450
-AR Path="/5E2D8DA2/5E79BF97" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5E79BF97" Ref="#PWR?"  Part="1" 
-AR Path="/5E79BF97" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15450 3200 50  0001 C CNN
-F 1 "GNDS" H 15455 3277 50  0000 C CNN
-F 2 "" H 15450 3450 50  0001 C CNN
-F 3 "" H 15450 3450 50  0001 C CNN
-	1    15450 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BF9D
-P 15450 3250
-AR Path="/5E2D8DA2/5E79BF9D" Ref="R?"  Part="1" 
-AR Path="/5E79BF9D" Ref="R?"  Part="1" 
-F 0 "R?" V 15243 3250 50  0000 C CNN
-F 1 "10K" V 15334 3250 50  0000 C CNN
-F 2 "" V 15380 3250 50  0001 C CNN
-F 3 "~" H 15450 3250 50  0001 C CNN
-	1    15450 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15450 3400 15450 3450
-Connection ~ 15450 3000
-Wire Wire Line
-	15450 3000 15450 3100
-Wire Wire Line
-	15950 3000 16150 3000
-Wire Wire Line
-	16150 2500 16300 2500
-Wire Wire Line
-	16050 2500 16150 2500
-Connection ~ 16150 2500
-Wire Wire Line
-	16150 2500 16150 3000
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 5E79BFAB
-P 15750 2500
-AR Path="/5E2D8DA2/5E79BFAB" Ref="U?"  Part="1" 
-AR Path="/5E79BFAB" Ref="U?"  Part="1" 
-F 0 "U?" H 15750 2867 50  0000 C CNN
-F 1 "TL072" H 15750 2776 50  0000 C CNN
-F 2 "" H 15750 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 15750 2500 50  0001 C CNN
-	1    15750 2500
-	1    0    0    -1  
-$EndComp
-Text HLabel 14650 4150 0    50   UnSpc ~ 0
-A_OUT_R
-Text HLabel 16750 4250 2    50   UnSpc ~ 0
-A_OUT_UNBAL_R
-$Comp
-L power:GNDS #PWR?
-U 1 1 5E79BFB3
-P 15250 4600
-AR Path="/5E2D8DA2/5E79BFB3" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5E79BFB3" Ref="#PWR?"  Part="1" 
-AR Path="/5E79BFB3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15250 4350 50  0001 C CNN
-F 1 "GNDS" H 15255 4427 50  0000 C CNN
-F 2 "" H 15250 4600 50  0001 C CNN
-F 3 "" H 15250 4600 50  0001 C CNN
-	1    15250 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BFB9
-P 15250 4400
-AR Path="/5E2D8DA2/5E79BFB9" Ref="R?"  Part="1" 
-AR Path="/5E79BFB9" Ref="R?"  Part="1" 
-F 0 "R?" V 15043 4400 50  0000 C CNN
-F 1 "10K" V 15134 4400 50  0000 C CNN
-F 2 "" V 15180 4400 50  0001 C CNN
-F 3 "~" H 15250 4400 50  0001 C CNN
-	1    15250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BFBF
-P 14900 4150
-AR Path="/5E2D8DA2/5E79BFBF" Ref="R?"  Part="1" 
-AR Path="/5E79BFBF" Ref="R?"  Part="1" 
-F 0 "R?" V 14693 4150 50  0000 C CNN
-F 1 "10K" V 14784 4150 50  0000 C CNN
-F 2 "" V 14830 4150 50  0001 C CNN
-F 3 "~" H 14900 4150 50  0001 C CNN
-	1    14900 4150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15050 4150 15250 4150
-Wire Wire Line
-	15250 4250 15250 4150
-Connection ~ 15250 4150
-Wire Wire Line
-	15250 4150 15450 4150
-Wire Wire Line
-	15250 4550 15250 4600
-Wire Wire Line
-	14750 4150 14650 4150
-$Comp
-L Device:R R?
-U 1 1 5E79BFCB
-P 16450 4250
-AR Path="/5E2D8DA2/5E79BFCB" Ref="R?"  Part="1" 
-AR Path="/5E79BFCB" Ref="R?"  Part="1" 
-F 0 "R?" V 16243 4250 50  0000 C CNN
-F 1 "100R" V 16334 4250 50  0000 C CNN
-F 2 "" V 16380 4250 50  0001 C CNN
-F 3 "~" H 16450 4250 50  0001 C CNN
-	1    16450 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BFD1
-P 15800 4750
-AR Path="/5E2D8DA2/5E79BFD1" Ref="R?"  Part="1" 
-AR Path="/5E79BFD1" Ref="R?"  Part="1" 
-F 0 "R?" V 15593 4750 50  0000 C CNN
-F 1 "10K" V 15684 4750 50  0000 C CNN
-F 2 "" V 15730 4750 50  0001 C CNN
-F 3 "~" H 15800 4750 50  0001 C CNN
-	1    15800 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15450 4350 15450 4750
-Wire Wire Line
-	15650 4750 15450 4750
-$Comp
-L power:GNDS #PWR?
-U 1 1 5E79BFD9
-P 15450 5200
-AR Path="/5E2D8DA2/5E79BFD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5E79BFD9" Ref="#PWR?"  Part="1" 
-AR Path="/5E79BFD9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15450 4950 50  0001 C CNN
-F 1 "GNDS" H 15455 5027 50  0000 C CNN
-F 2 "" H 15450 5200 50  0001 C CNN
-F 3 "" H 15450 5200 50  0001 C CNN
-	1    15450 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E79BFDF
-P 15450 5000
-AR Path="/5E2D8DA2/5E79BFDF" Ref="R?"  Part="1" 
-AR Path="/5E79BFDF" Ref="R?"  Part="1" 
-F 0 "R?" V 15243 5000 50  0000 C CNN
-F 1 "10K" V 15334 5000 50  0000 C CNN
-F 2 "" V 15380 5000 50  0001 C CNN
-F 3 "~" H 15450 5000 50  0001 C CNN
-	1    15450 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15450 5150 15450 5200
-Wire Wire Line
-	16600 4250 16750 4250
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 5E79BFE7
-P 15750 4250
-AR Path="/5E2D8DA2/5E79BFE7" Ref="U?"  Part="2" 
-AR Path="/5E79BFE7" Ref="U?"  Part="2" 
-F 0 "U?" H 15750 4617 50  0000 C CNN
-F 1 "TL072" H 15750 4526 50  0000 C CNN
-F 2 "" H 15750 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 15750 4250 50  0001 C CNN
-	2    15750 4250
-	1    0    0    -1  
-$EndComp
-Connection ~ 15450 4750
-Wire Wire Line
-	15450 4750 15450 4850
-Wire Wire Line
-	15950 4750 16150 4750
-Wire Wire Line
-	16150 4250 16300 4250
-Wire Wire Line
-	16050 4250 16150 4250
-Connection ~ 16150 4250
-Wire Wire Line
-	16150 4250 16150 4750
-Text Label 1750 3750 0    50   ~ 0
+Text Label 1850 4250 0    50   ~ 0
 BAL_IN_L
-Text Label 1750 3850 0    50   ~ 0
+Text Label 1850 4350 0    50   ~ 0
 BAL_IN_R
-Text Label 1750 4150 0    50   ~ 0
+Text Label 1850 4650 0    50   ~ 0
 BAL_OUT_L
-Text Label 1750 4250 0    50   ~ 0
+Text Label 1850 4750 0    50   ~ 0
 BAL_OUT_R
-Text Label 3450 2600 3    50   ~ 0
+Text Label 1950 2350 3    50   ~ 0
 BAL_IN_L
-Text Label 3350 2600 3    50   ~ 0
+Text Label 1850 2350 3    50   ~ 0
 BAL_IN_R
-Text Label 3450 3650 3    50   ~ 0
+Text Label 1950 3400 3    50   ~ 0
 BAL_OUT_L
-Text Label 3350 3650 3    50   ~ 0
+Text Label 1850 3400 3    50   ~ 0
 BAL_OUT_R
-Wire Wire Line
-	1500 3750 1750 3750
-Wire Wire Line
-	1500 3850 1750 3850
-Wire Wire Line
-	1500 4150 1750 4150
-Wire Wire Line
-	1500 4250 1750 4250
-Wire Wire Line
-	3100 3100 3650 3100
-Wire Wire Line
-	3100 3200 3650 3200
-Wire Wire Line
-	3100 3350 3450 3350
-Wire Wire Line
-	3100 3450 3350 3450
-Wire Wire Line
-	3100 2400 3350 2400
-Wire Wire Line
-	3100 2300 3450 2300
-Wire Wire Line
-	3100 1250 3650 1250
-Wire Wire Line
-	3100 1350 3650 1350
-Wire Wire Line
-	3100 1500 3650 1500
-Wire Wire Line
-	3100 1600 3650 1600
-Wire Wire Line
-	3100 1750 3650 1750
-Wire Wire Line
-	3100 1850 3650 1850
-Wire Wire Line
-	3100 2000 3650 2000
-Wire Wire Line
-	3100 2100 3650 2100
-Wire Wire Line
-	3450 2600 3450 2300
-Connection ~ 3450 2300
-Wire Wire Line
-	3450 2300 3650 2300
-Wire Wire Line
-	3350 2600 3350 2400
-Connection ~ 3350 2400
-Wire Wire Line
-	3350 2400 3650 2400
-Wire Wire Line
-	3450 3650 3450 3350
-Connection ~ 3450 3350
-Wire Wire Line
-	3450 3350 3650 3350
-Wire Wire Line
-	3350 3650 3350 3450
-Connection ~ 3350 3450
-Wire Wire Line
-	3350 3450 3650 3450
-Wire Wire Line
-	4850 2900 6550 2900
-Wire Wire Line
-	6550 2900 6550 3500
-Wire Wire Line
-	6550 3500 7250 3500
-Wire Wire Line
-	4850 3000 6150 3000
-Wire Wire Line
-	6150 3000 6150 3600
-Wire Wire Line
-	4850 3100 6250 3100
-Wire Wire Line
-	6250 3100 6250 3700
-Wire Wire Line
-	4850 3200 6350 3200
-Wire Wire Line
-	6350 3200 6350 3800
 $Comp
 L Device:Rotary_Encoder_Switch SW?
 U 1 1 5E975BA4
-P 9700 4000
+P 9700 3250
 AR Path="/63AE120F/5E975BA4" Ref="SW?"  Part="1" 
 AR Path="/5E975BA4" Ref="SW?"  Part="1" 
-F 0 "SW?" H 9700 4367 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 9700 4276 50  0000 C CNN
-F 2 "" H 9550 4160 50  0001 C CNN
-F 3 "~" H 9700 4260 50  0001 C CNN
-	1    9700 4000
+F 0 "SW?" H 9700 3617 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9700 3526 50  0000 C CNN
+F 2 "" H 9550 3410 50  0001 C CNN
+F 3 "~" H 9700 3510 50  0001 C CNN
+	1    9700 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR?
 U 1 1 5E975BAA
-P 10150 4150
+P 10150 3400
 AR Path="/63AE120F/5E975BAA" Ref="#PWR?"  Part="1" 
 AR Path="/5E975BAA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10150 3900 50  0001 C CNN
-F 1 "GNDD" H 10154 3995 50  0000 C CNN
-F 2 "" H 10150 4150 50  0001 C CNN
-F 3 "" H 10150 4150 50  0001 C CNN
-	1    10150 4150
+F 0 "#PWR?" H 10150 3150 50  0001 C CNN
+F 1 "GNDD" H 10154 3245 50  0000 C CNN
+F 2 "" H 10150 3400 50  0001 C CNN
+F 3 "" H 10150 3400 50  0001 C CNN
+	1    10150 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 10400 3900 2    50   UnSpc ~ 0
+Text GLabel 10400 3150 2    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	10000 3900 10300 3900
-Wire Wire Line
-	10000 4100 10150 4100
-Wire Wire Line
-	10150 4100 10150 4150
-Text GLabel 9250 4000 0    50   UnSpc ~ 0
+Text GLabel 9250 3250 0    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	9250 4000 9400 4000
-Wire Wire Line
-	8700 3900 9400 3900
-Wire Wire Line
-	9000 4100 9000 4000
-Wire Wire Line
-	9000 4000 8700 4000
-Wire Wire Line
-	9000 4100 9400 4100
-Wire Wire Line
-	10300 3900 10300 4350
-Wire Wire Line
-	10300 4350 8900 4350
-Wire Wire Line
-	8900 4350 8900 4100
-Wire Wire Line
-	8900 4100 8700 4100
 $Comp
 L Device:Rotary_Encoder_Switch SW?
 U 1 1 5E9C5C27
-P 9700 4800
+P 9700 4050
 AR Path="/63AE120F/5E9C5C27" Ref="SW?"  Part="1" 
 AR Path="/5E9C5C27" Ref="SW?"  Part="1" 
-F 0 "SW?" H 9700 5167 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 9700 5076 50  0000 C CNN
-F 2 "" H 9550 4960 50  0001 C CNN
-F 3 "~" H 9700 5060 50  0001 C CNN
-	1    9700 4800
+F 0 "SW?" H 9700 4417 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9700 4326 50  0000 C CNN
+F 2 "" H 9550 4210 50  0001 C CNN
+F 3 "~" H 9700 4310 50  0001 C CNN
+	1    9700 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR?
 U 1 1 5E9C5C31
-P 10150 4950
+P 10150 4200
 AR Path="/63AE120F/5E9C5C31" Ref="#PWR?"  Part="1" 
 AR Path="/5E9C5C31" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10150 4700 50  0001 C CNN
-F 1 "GNDD" H 10154 4795 50  0000 C CNN
-F 2 "" H 10150 4950 50  0001 C CNN
-F 3 "" H 10150 4950 50  0001 C CNN
-	1    10150 4950
+F 0 "#PWR?" H 10150 3950 50  0001 C CNN
+F 1 "GNDD" H 10154 4045 50  0000 C CNN
+F 2 "" H 10150 4200 50  0001 C CNN
+F 3 "" H 10150 4200 50  0001 C CNN
+	1    10150 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 4700 10300 4700
-Wire Wire Line
-	10000 4900 10150 4900
-Wire Wire Line
-	10150 4900 10150 4950
-Text GLabel 9250 4800 0    50   UnSpc ~ 0
+Text GLabel 9250 4050 0    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	9250 4800 9400 4800
-Wire Wire Line
-	8700 4700 9400 4700
-Wire Wire Line
-	9000 4900 9000 4800
-Wire Wire Line
-	9000 4800 8700 4800
-Wire Wire Line
-	9000 4900 9400 4900
-Wire Wire Line
-	10300 4700 10300 5150
-Wire Wire Line
-	10300 5150 8900 5150
-Wire Wire Line
-	8900 5150 8900 4900
-Wire Wire Line
-	8900 4900 8700 4900
-Wire Wire Line
-	10400 3900 10300 3900
-Connection ~ 10300 3900
-Text GLabel 10400 4700 2    50   UnSpc ~ 0
+Text GLabel 10400 3950 2    50   UnSpc ~ 0
 +5V
+Text HLabel 11600 -3100 0    50   UnSpc ~ 0
+A_OUT_L
+Text HLabel 13700 -3000 2    50   UnSpc ~ 0
+A_OUT_UNBAL_L
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5F0A1007
+P 15500 -1750
+AR Path="/5E2D8DA2/5F0A1007" Ref="U?"  Part="3" 
+AR Path="/5F0A1007" Ref="U?"  Part="3" 
+AR Path="/61DC5D9D/5F0A1007" Ref="U?"  Part="3" 
+F 0 "U?" H 15458 -1704 50  0000 L CNN
+F 1 "TL072" H 15458 -1795 50  0000 L CNN
+F 2 "" H 15500 -1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 15500 -1750 50  0001 C CNN
+	3    15500 -1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 15400 -2050 1    50   UnSpc ~ 0
++15V
+Text GLabel 15400 -1450 3    50   UnSpc ~ 0
+-15V
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0A100F
+P 12200 -2650
+AR Path="/5E2D8DA2/5F0A100F" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5F0A100F" Ref="#PWR?"  Part="1" 
+AR Path="/5F0A100F" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/5F0A100F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12200 -2900 50  0001 C CNN
+F 1 "GNDS" H 12205 -2823 50  0000 C CNN
+F 2 "" H 12200 -2650 50  0001 C CNN
+F 3 "" H 12200 -2650 50  0001 C CNN
+	1    12200 -2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A1015
+P 12200 -2850
+AR Path="/5E2D8DA2/5F0A1015" Ref="R?"  Part="1" 
+AR Path="/5F0A1015" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1015" Ref="R?"  Part="1" 
+F 0 "R?" V 11993 -2850 50  0000 C CNN
+F 1 "10K" V 12084 -2850 50  0000 C CNN
+F 2 "" V 12130 -2850 50  0001 C CNN
+F 3 "~" H 12200 -2850 50  0001 C CNN
+	1    12200 -2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A101B
+P 11850 -3100
+AR Path="/5E2D8DA2/5F0A101B" Ref="R?"  Part="1" 
+AR Path="/5F0A101B" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A101B" Ref="R?"  Part="1" 
+F 0 "R?" V 11643 -3100 50  0000 C CNN
+F 1 "10K" V 11734 -3100 50  0000 C CNN
+F 2 "" V 11780 -3100 50  0001 C CNN
+F 3 "~" H 11850 -3100 50  0001 C CNN
+	1    11850 -3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A1026
+P 13400 -3000
+AR Path="/5E2D8DA2/5F0A1026" Ref="R?"  Part="1" 
+AR Path="/5F0A1026" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1026" Ref="R?"  Part="1" 
+F 0 "R?" V 13193 -3000 50  0000 C CNN
+F 1 "100R" V 13284 -3000 50  0000 C CNN
+F 2 "" V 13330 -3000 50  0001 C CNN
+F 3 "~" H 13400 -3000 50  0001 C CNN
+	1    13400 -3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A102C
+P 12750 -2500
+AR Path="/5E2D8DA2/5F0A102C" Ref="R?"  Part="1" 
+AR Path="/5F0A102C" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A102C" Ref="R?"  Part="1" 
+F 0 "R?" V 12543 -2500 50  0000 C CNN
+F 1 "10K" V 12634 -2500 50  0000 C CNN
+F 2 "" V 12680 -2500 50  0001 C CNN
+F 3 "~" H 12750 -2500 50  0001 C CNN
+	1    12750 -2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0A1034
+P 12400 -2050
+AR Path="/5E2D8DA2/5F0A1034" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5F0A1034" Ref="#PWR?"  Part="1" 
+AR Path="/5F0A1034" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1034" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12400 -2300 50  0001 C CNN
+F 1 "GNDS" H 12405 -2223 50  0000 C CNN
+F 2 "" H 12400 -2050 50  0001 C CNN
+F 3 "" H 12400 -2050 50  0001 C CNN
+	1    12400 -2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A103A
+P 12400 -2250
+AR Path="/5E2D8DA2/5F0A103A" Ref="R?"  Part="1" 
+AR Path="/5F0A103A" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A103A" Ref="R?"  Part="1" 
+F 0 "R?" V 12193 -2250 50  0000 C CNN
+F 1 "10K" V 12284 -2250 50  0000 C CNN
+F 2 "" V 12330 -2250 50  0001 C CNN
+F 3 "~" H 12400 -2250 50  0001 C CNN
+	1    12400 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 5F0A1048
+P 12700 -3000
+AR Path="/5E2D8DA2/5F0A1048" Ref="U?"  Part="1" 
+AR Path="/5F0A1048" Ref="U?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1048" Ref="U?"  Part="1" 
+F 0 "U?" H 12700 -2633 50  0000 C CNN
+F 1 "TL072" H 12700 -2724 50  0000 C CNN
+F 2 "" H 12700 -3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12700 -3000 50  0001 C CNN
+	1    12700 -3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 11600 -1350 0    50   UnSpc ~ 0
+A_OUT_R
+Text HLabel 13700 -1250 2    50   UnSpc ~ 0
+A_OUT_UNBAL_R
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0A1050
+P 12200 -900
+AR Path="/5E2D8DA2/5F0A1050" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5F0A1050" Ref="#PWR?"  Part="1" 
+AR Path="/5F0A1050" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1050" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12200 -1150 50  0001 C CNN
+F 1 "GNDS" H 12205 -1073 50  0000 C CNN
+F 2 "" H 12200 -900 50  0001 C CNN
+F 3 "" H 12200 -900 50  0001 C CNN
+	1    12200 -900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A1056
+P 12200 -1100
+AR Path="/5E2D8DA2/5F0A1056" Ref="R?"  Part="1" 
+AR Path="/5F0A1056" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1056" Ref="R?"  Part="1" 
+F 0 "R?" V 11993 -1100 50  0000 C CNN
+F 1 "10K" V 12084 -1100 50  0000 C CNN
+F 2 "" V 12130 -1100 50  0001 C CNN
+F 3 "~" H 12200 -1100 50  0001 C CNN
+	1    12200 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A105C
+P 11850 -1350
+AR Path="/5E2D8DA2/5F0A105C" Ref="R?"  Part="1" 
+AR Path="/5F0A105C" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A105C" Ref="R?"  Part="1" 
+F 0 "R?" V 11643 -1350 50  0000 C CNN
+F 1 "10K" V 11734 -1350 50  0000 C CNN
+F 2 "" V 11780 -1350 50  0001 C CNN
+F 3 "~" H 11850 -1350 50  0001 C CNN
+	1    11850 -1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A1068
+P 13400 -1250
+AR Path="/5E2D8DA2/5F0A1068" Ref="R?"  Part="1" 
+AR Path="/5F0A1068" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1068" Ref="R?"  Part="1" 
+F 0 "R?" V 13193 -1250 50  0000 C CNN
+F 1 "100R" V 13284 -1250 50  0000 C CNN
+F 2 "" V 13330 -1250 50  0001 C CNN
+F 3 "~" H 13400 -1250 50  0001 C CNN
+	1    13400 -1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A106E
+P 12750 -750
+AR Path="/5E2D8DA2/5F0A106E" Ref="R?"  Part="1" 
+AR Path="/5F0A106E" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A106E" Ref="R?"  Part="1" 
+F 0 "R?" V 12543 -750 50  0000 C CNN
+F 1 "10K" V 12634 -750 50  0000 C CNN
+F 2 "" V 12680 -750 50  0001 C CNN
+F 3 "~" H 12750 -750 50  0001 C CNN
+	1    12750 -750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0A1076
+P 12400 -300
+AR Path="/5E2D8DA2/5F0A1076" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5F0A1076" Ref="#PWR?"  Part="1" 
+AR Path="/5F0A1076" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/5F0A1076" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12400 -550 50  0001 C CNN
+F 1 "GNDS" H 12405 -473 50  0000 C CNN
+F 2 "" H 12400 -300 50  0001 C CNN
+F 3 "" H 12400 -300 50  0001 C CNN
+	1    12400 -300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0A107C
+P 12400 -500
+AR Path="/5E2D8DA2/5F0A107C" Ref="R?"  Part="1" 
+AR Path="/5F0A107C" Ref="R?"  Part="1" 
+AR Path="/61DC5D9D/5F0A107C" Ref="R?"  Part="1" 
+F 0 "R?" V 12193 -500 50  0000 C CNN
+F 1 "10K" V 12284 -500 50  0000 C CNN
+F 2 "" V 12330 -500 50  0001 C CNN
+F 3 "~" H 12400 -500 50  0001 C CNN
+	1    12400 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 5F0A1084
+P 12700 -1250
+AR Path="/5E2D8DA2/5F0A1084" Ref="U?"  Part="2" 
+AR Path="/5F0A1084" Ref="U?"  Part="2" 
+AR Path="/61DC5D9D/5F0A1084" Ref="U?"  Part="2" 
+F 0 "U?" H 12700 -883 50  0000 C CNN
+F 1 "TL072" H 12700 -974 50  0000 C CNN
+F 2 "" H 12700 -1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12700 -1250 50  0001 C CNN
+	2    12700 -1250
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3500 2750 3600 2850
+Entry Wire Line
+	3500 2850 3600 2950
+Entry Wire Line
+	3500 2950 3600 3050
+Entry Wire Line
+	7550 3300 7650 3400
+Entry Wire Line
+	7550 3400 7650 3500
+Entry Wire Line
+	7550 3500 7650 3600
 Wire Wire Line
-	10400 4700 10300 4700
-Connection ~ 10300 4700
+	1500 6150 1900 6150
 Wire Wire Line
-	7750 4650 7150 4650
+	1500 6250 1800 6250
 Wire Wire Line
-	7150 4650 7150 5050
+	1900 6150 1900 7200
 Wire Wire Line
-	7150 5050 5950 5050
+	1900 7200 2350 7200
+Connection ~ 1900 6150
+Wire Wire Line
+	1900 6150 2200 6150
+Wire Wire Line
+	1800 6250 1800 7300
+Wire Wire Line
+	1800 7300 2350 7300
+Connection ~ 1800 6250
+Wire Wire Line
+	1800 6250 2200 6250
+Wire Wire Line
+	5500 2000 3350 2000
+Wire Wire Line
+	8500 2450 7650 2450
+Wire Wire Line
+	7650 2450 7650 3200
+Wire Wire Line
+	8500 1450 8500 2450
+Wire Wire Line
+	7650 3200 7750 3200
+Wire Wire Line
+	8100 1100 8700 1100
+Wire Wire Line
+	8100 1200 8700 1200
+Wire Wire Line
+	1600 4250 1850 4250
+Wire Wire Line
+	1600 4350 1850 4350
+Wire Wire Line
+	1600 4650 1850 4650
+Wire Wire Line
+	1600 4750 1850 4750
+Wire Wire Line
+	1600 2850 2150 2850
+Wire Wire Line
+	1600 2950 2150 2950
+Wire Wire Line
+	1600 3100 1950 3100
+Wire Wire Line
+	1600 3200 1850 3200
+Wire Wire Line
+	1600 2150 1850 2150
+Wire Wire Line
+	1600 2050 1950 2050
+Wire Wire Line
+	1600 1000 2150 1000
+Wire Wire Line
+	1600 1100 2150 1100
+Wire Wire Line
+	1600 1250 2150 1250
+Wire Wire Line
+	1600 1350 2150 1350
+Wire Wire Line
+	1600 1500 2150 1500
+Wire Wire Line
+	1600 1600 2150 1600
+Wire Wire Line
+	1600 1750 2150 1750
+Wire Wire Line
+	1600 1850 2150 1850
+Wire Wire Line
+	1950 2350 1950 2050
+Connection ~ 1950 2050
+Wire Wire Line
+	1950 2050 2150 2050
+Wire Wire Line
+	1850 2350 1850 2150
+Connection ~ 1850 2150
+Wire Wire Line
+	1850 2150 2150 2150
+Wire Wire Line
+	1950 3400 1950 3100
+Connection ~ 1950 3100
+Wire Wire Line
+	1950 3100 2150 3100
+Wire Wire Line
+	1850 3400 1850 3200
+Connection ~ 1850 3200
+Wire Wire Line
+	1850 3200 2150 3200
+Wire Wire Line
+	10000 3150 10300 3150
+Wire Wire Line
+	10000 3350 10150 3350
+Wire Wire Line
+	10150 3350 10150 3400
+Wire Wire Line
+	9250 3250 9400 3250
+Wire Wire Line
+	8700 3150 9400 3150
+Wire Wire Line
+	9000 3350 9000 3250
+Wire Wire Line
+	9000 3250 8700 3250
+Wire Wire Line
+	9000 3350 9400 3350
+Wire Wire Line
+	10300 3150 10300 3600
+Wire Wire Line
+	10300 3600 8900 3600
+Wire Wire Line
+	8900 3600 8900 3350
+Wire Wire Line
+	8900 3350 8700 3350
+Wire Wire Line
+	10000 3950 10300 3950
+Wire Wire Line
+	10000 4150 10150 4150
+Wire Wire Line
+	10150 4150 10150 4200
+Wire Wire Line
+	9250 4050 9400 4050
+Wire Wire Line
+	8700 3950 9400 3950
+Wire Wire Line
+	9000 4150 9000 4050
+Wire Wire Line
+	9000 4050 8700 4050
+Wire Wire Line
+	9000 4150 9400 4150
+Wire Wire Line
+	10300 3950 10300 4400
+Wire Wire Line
+	10300 4400 8900 4400
+Wire Wire Line
+	8900 4400 8900 4150
+Wire Wire Line
+	8900 4150 8700 4150
+Wire Wire Line
+	10400 3150 10300 3150
+Connection ~ 10300 3150
+Wire Wire Line
+	10400 3950 10300 3950
+Connection ~ 10300 3950
+Wire Wire Line
+	11700 -3100 11600 -3100
+Wire Wire Line
+	13550 -3000 13700 -3000
+Wire Wire Line
+	12000 -3100 12200 -3100
+Wire Wire Line
+	12200 -3000 12200 -3100
+Connection ~ 12200 -3100
+Wire Wire Line
+	12200 -3100 12400 -3100
+Wire Wire Line
+	12200 -2700 12200 -2650
+Wire Wire Line
+	12400 -2900 12400 -2500
+Wire Wire Line
+	12600 -2500 12400 -2500
+Wire Wire Line
+	12400 -2100 12400 -2050
+Connection ~ 12400 -2500
+Wire Wire Line
+	12400 -2500 12400 -2400
+Wire Wire Line
+	12900 -2500 13100 -2500
+Wire Wire Line
+	13100 -3000 13250 -3000
+Wire Wire Line
+	13000 -3000 13100 -3000
+Connection ~ 13100 -3000
+Wire Wire Line
+	13100 -3000 13100 -2500
+Wire Wire Line
+	12000 -1350 12200 -1350
+Wire Wire Line
+	12200 -1250 12200 -1350
+Connection ~ 12200 -1350
+Wire Wire Line
+	12200 -1350 12400 -1350
+Wire Wire Line
+	12200 -950 12200 -900
+Wire Wire Line
+	11700 -1350 11600 -1350
+Wire Wire Line
+	12400 -1150 12400 -750
+Wire Wire Line
+	12600 -750 12400 -750
+Wire Wire Line
+	12400 -350 12400 -300
+Wire Wire Line
+	13550 -1250 13700 -1250
+Connection ~ 12400 -750
+Wire Wire Line
+	12400 -750 12400 -650
+Wire Wire Line
+	12900 -750 13100 -750
+Wire Wire Line
+	13100 -1250 13250 -1250
+Wire Wire Line
+	13000 -1250 13100 -1250
+Connection ~ 13100 -1250
+Wire Wire Line
+	13100 -1250 13100 -750
+Wire Wire Line
+	4600 1150 7000 1150
+Wire Wire Line
+	4600 1250 7000 1250
+Wire Wire Line
+	3350 1150 3950 1150
+Wire Wire Line
+	3350 1250 3950 1250
+Wire Wire Line
+	7000 1550 5500 1550
+Wire Wire Line
+	5500 1550 5500 2000
+Wire Wire Line
+	7000 1650 5600 1650
+Wire Wire Line
+	5600 1650 5600 2100
+Wire Wire Line
+	3350 2100 5600 2100
+Wire Wire Line
+	5950 4300 7500 4300
+Wire Wire Line
+	7500 4300 7500 3900
+Wire Wire Line
+	7500 3900 7750 3900
+Wire Wire Line
+	6800 3850 6800 3700
+Wire Wire Line
+	6800 3700 7750 3700
+Wire Wire Line
+	3350 2750 3500 2750
+Wire Wire Line
+	3350 2850 3500 2850
+Wire Wire Line
+	3350 2950 3500 2950
+Wire Wire Line
+	7650 3600 7750 3600
+Wire Wire Line
+	7650 3500 7750 3500
+Wire Wire Line
+	7650 3400 7750 3400
+Wire Bus Line
+	3600 3050 4800 3050
+Entry Wire Line
+	5950 4150 6050 4050
+Entry Wire Line
+	5950 4050 6050 3950
+Entry Wire Line
+	5950 3950 6050 3850
+Connection ~ 6050 3050
+Wire Bus Line
+	6050 3050 7150 3050
+Wire Wire Line
+	5950 3950 5850 3950
+Wire Wire Line
+	5950 4050 5850 4050
+Wire Wire Line
+	5950 4150 5850 4150
+Entry Wire Line
+	8200 1550 8300 1650
+Entry Wire Line
+	8200 1750 8300 1850
+Wire Wire Line
+	8100 1450 8500 1450
+Entry Wire Line
+	8200 1650 8300 1750
+Wire Wire Line
+	8100 1550 8200 1550
+Wire Wire Line
+	8100 1650 8200 1650
+Wire Wire Line
+	8100 1750 8200 1750
+Wire Bus Line
+	8300 2100 7150 2100
+Wire Bus Line
+	7150 2100 7150 3050
+Connection ~ 7150 3050
+Wire Bus Line
+	7150 3050 7550 3050
+$Sheet
+S 3950 1050 650  800 
+U 5F2E428C
+F0 "Tone Control SPI" 50
+F1 "tone_control_SPI.sch" 50
+F2 "IN_R" U L 3950 1250 50 
+F3 "IN_L" U L 3950 1150 50 
+F4 "OUT_R" U R 4600 1250 50 
+F5 "OUT_L" U R 4600 1150 50 
+F6 "CLK" I R 4600 1750 50 
+F7 "CS" I R 4600 1450 50 
+F8 "MOSI" I R 4600 1550 50 
+F9 "MISO" O R 4600 1650 50 
+$EndSheet
+$Sheet
+S 3050 -400 650  300 
+U 61DC5D9D
+F0 "Tone Control Analog" 50
+F1 "tone_control_analog.sch" 50
+F2 "IN_R" U L 3050 -200 50 
+F3 "IN_L" U L 3050 -300 50 
+F4 "OUT_R" U R 3700 -200 50 
+F5 "OUT_L" U R 3700 -300 50 
+$EndSheet
+Entry Wire Line
+	4700 1750 4800 1850
+Entry Wire Line
+	4700 1650 4800 1750
+Entry Wire Line
+	4700 1550 4800 1650
+Wire Wire Line
+	4700 1550 4600 1550
+Wire Wire Line
+	4600 1650 4700 1650
+Wire Wire Line
+	4700 1750 4600 1750
+Wire Wire Line
+	5850 3850 6800 3850
+Wire Bus Line
+	3600 2850 3600 3050
+Wire Bus Line
+	7550 3050 7550 3500
+Wire Bus Line
+	6050 3050 6050 4050
+Wire Bus Line
+	8300 1650 8300 2100
+Wire Bus Line
+	4800 1650 4800 3050
+Connection ~ 4800 3050
+Wire Bus Line
+	4800 3050 6050 3050
 $EndSCHEMATC

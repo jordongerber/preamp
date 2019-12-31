@@ -59,6 +59,7 @@
  * https://github.com/FutureSharks/preamp-two
  * https://www.muffsy.com/muffsy-relay-input-selector-4.html
  * https://sound-au.com/articles/balanced-io.htm
+ * http://www.interfacebus.com/tone-control-3-band-tlo82-opamp-design.html
 ### SPI
  * SPI - http://www.circuitbasics.com/basics-of-the-spi-communication-protocol/
  * shift registers for mux - https://www.brainy-bits.com/get-more-inputs-on-your-arduino-by-using-a-shift-register/
