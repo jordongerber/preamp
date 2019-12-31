@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -165,7 +165,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 4600 5050 4600
 $Sheet
-S 5050 4450 900  600 
+S 5050 4450 900  700 
 U 5E5ECAAE
 F0 "front panel" 50
 F1 "front_panel.sch" 50
@@ -176,42 +176,7 @@ F5 "CS" I R 5950 4600 50
 F6 "tone_ctl_1" U L 5050 4600 50 
 F7 "tone_ctl_2" U L 5050 4700 50 
 F8 "tone_ctl_3" U L 5050 4800 50 
-$EndSheet
-Wire Wire Line
-	8700 5000 9050 5000
-Wire Wire Line
-	8700 4900 9050 4900
-Wire Wire Line
-	8700 4800 9050 4800
-Wire Wire Line
-	8700 4700 9050 4700
-Wire Wire Line
-	8700 4200 9050 4200
-Wire Wire Line
-	8700 4100 9050 4100
-Wire Wire Line
-	8700 4000 9050 4000
-Wire Wire Line
-	8700 3900 9050 3900
-$Sheet
-S 9050 3750 550  600 
-U 63AE120F
-F0 "selector encoder" 50
-F1 "selector_encoder.sch" 50
-F2 "CLK" O L 9050 3900 50 
-F3 "DT" O L 9050 4000 50 
-F4 "SW" O L 9050 4100 50 
-F5 "LED_DT" I L 9050 4200 50 
-$EndSheet
-$Sheet
-S 9050 4550 550  600 
-U 63AE11F4
-F0 "volume_encoder" 50
-F1 "volume_encoder.sch" 50
-F2 "CLK" O L 9050 4700 50 
-F3 "DT" O L 9050 4800 50 
-F4 "SW" O L 9050 4900 50 
-F5 "LED_DT" I L 9050 5000 50 
+F9 "LED_DT" I R 5950 5050 50 
 $EndSheet
 $Sheet
 S 7750 3700 950  1450
@@ -228,10 +193,9 @@ F8 "SEL_SW" I R 8700 4100 50
 F9 "VOL_CLK" I R 8700 4700 50 
 F10 "VOL_DT" I R 8700 4800 50 
 F11 "VOL_SW" I R 8700 4900 50 
-F12 "VOL_LED_DT" O R 8700 4200 50 
-F13 "SEL_LED_DT" O R 8700 5000 50 
-F14 "CS_FP" O L 7750 4450 50 
-F15 "CS_VOL" O L 7750 3950 50 
+F12 "CS_FP" O L 7750 4450 50 
+F13 "CS_VOL" O L 7750 3950 50 
+F14 "LED_DT" O L 7750 4650 50 
 $EndSheet
 Wire Wire Line
 	8100 2500 8200 2500
@@ -736,4 +700,124 @@ Wire Wire Line
 	4850 3200 6350 3200
 Wire Wire Line
 	6350 3200 6350 3800
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5E975BA4
+P 9700 4000
+AR Path="/63AE120F/5E975BA4" Ref="SW?"  Part="1" 
+AR Path="/5E975BA4" Ref="SW?"  Part="1" 
+F 0 "SW?" H 9700 4367 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9700 4276 50  0000 C CNN
+F 2 "" H 9550 4160 50  0001 C CNN
+F 3 "~" H 9700 4260 50  0001 C CNN
+	1    9700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E975BAA
+P 10150 4150
+AR Path="/63AE120F/5E975BAA" Ref="#PWR?"  Part="1" 
+AR Path="/5E975BAA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10150 3900 50  0001 C CNN
+F 1 "GNDD" H 10154 3995 50  0000 C CNN
+F 2 "" H 10150 4150 50  0001 C CNN
+F 3 "" H 10150 4150 50  0001 C CNN
+	1    10150 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 3900 2    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	10000 3900 10300 3900
+Wire Wire Line
+	10000 4100 10150 4100
+Wire Wire Line
+	10150 4100 10150 4150
+Text GLabel 9250 4000 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	9250 4000 9400 4000
+Wire Wire Line
+	8700 3900 9400 3900
+Wire Wire Line
+	9000 4100 9000 4000
+Wire Wire Line
+	9000 4000 8700 4000
+Wire Wire Line
+	9000 4100 9400 4100
+Wire Wire Line
+	10300 3900 10300 4350
+Wire Wire Line
+	10300 4350 8900 4350
+Wire Wire Line
+	8900 4350 8900 4100
+Wire Wire Line
+	8900 4100 8700 4100
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5E9C5C27
+P 9700 4800
+AR Path="/63AE120F/5E9C5C27" Ref="SW?"  Part="1" 
+AR Path="/5E9C5C27" Ref="SW?"  Part="1" 
+F 0 "SW?" H 9700 5167 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9700 5076 50  0000 C CNN
+F 2 "" H 9550 4960 50  0001 C CNN
+F 3 "~" H 9700 5060 50  0001 C CNN
+	1    9700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E9C5C31
+P 10150 4950
+AR Path="/63AE120F/5E9C5C31" Ref="#PWR?"  Part="1" 
+AR Path="/5E9C5C31" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10150 4700 50  0001 C CNN
+F 1 "GNDD" H 10154 4795 50  0000 C CNN
+F 2 "" H 10150 4950 50  0001 C CNN
+F 3 "" H 10150 4950 50  0001 C CNN
+	1    10150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4700 10300 4700
+Wire Wire Line
+	10000 4900 10150 4900
+Wire Wire Line
+	10150 4900 10150 4950
+Text GLabel 9250 4800 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	9250 4800 9400 4800
+Wire Wire Line
+	8700 4700 9400 4700
+Wire Wire Line
+	9000 4900 9000 4800
+Wire Wire Line
+	9000 4800 8700 4800
+Wire Wire Line
+	9000 4900 9400 4900
+Wire Wire Line
+	10300 4700 10300 5150
+Wire Wire Line
+	10300 5150 8900 5150
+Wire Wire Line
+	8900 5150 8900 4900
+Wire Wire Line
+	8900 4900 8700 4900
+Wire Wire Line
+	10400 3900 10300 3900
+Connection ~ 10300 3900
+Text GLabel 10400 4700 2    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	10400 4700 10300 4700
+Connection ~ 10300 4700
+Wire Wire Line
+	7750 4650 7150 4650
+Wire Wire Line
+	7150 4650 7150 5050
+Wire Wire Line
+	7150 5050 5950 5050
 $EndSCHEMATC

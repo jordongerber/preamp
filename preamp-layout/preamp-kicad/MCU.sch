@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 14
+Sheet 10 12
 Title ""
 Date ""
 Rev ""
@@ -145,12 +145,10 @@ Text HLabel 6000 4800 2    50   Input ~ 0
 VOL_DT
 Text HLabel 6000 4950 2    50   Input ~ 0
 VOL_SW
-Text HLabel 6000 5100 2    50   Output ~ 0
-VOL_LED_DT
-Text HLabel 6000 4450 2    50   Output ~ 0
-SEL_LED_DT
 Text HLabel 4300 4600 0    50   Output ~ 0
 CS_FP
 Text HLabel 4300 4800 0    50   Output ~ 0
 CS_VOL
+Text HLabel 6000 3600 2    50   Output ~ 0
+LED_DT
 $EndSCHEMATC
