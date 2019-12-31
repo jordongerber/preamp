@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:preamp-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 13
+Sheet 2 14
 Title ""
 Date ""
 Rev ""
@@ -115,11 +114,13 @@ $EndComp
 Wire Wire Line
 	5750 3400 5600 3400
 Connection ~ 5600 3400
-Wire Wire Line
-	5300 3800 6050 3800
 Connection ~ 5300 3800
-Text HLabel 6050 3400 2    50   UnSpc ~ 0
+Text HLabel 6200 3400 2    50   UnSpc ~ 0
 AC+
-Text HLabel 6050 3800 2    50   UnSpc ~ 0
+Text HLabel 6200 3800 2    50   UnSpc ~ 0
 AC-
+Wire Wire Line
+	6050 3400 6200 3400
+Wire Wire Line
+	5300 3800 6200 3800
 $EndSCHEMATC
