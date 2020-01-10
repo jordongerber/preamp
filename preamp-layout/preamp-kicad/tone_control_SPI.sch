@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
-Title ""
-Date ""
-Rev ""
+Sheet 11 13
+Title "SPI Controlled Tone Control Board"
+Date "2020-01-09"
+Rev "A00"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "creativecommons.org/licenses/by/4.0/"
+Comment2 "License: CC BY 4.0"
+Comment3 "github.com/SlurpyTurts/preamp"
+Comment4 "Author: Jordon Gerber"
 $EndDescr
 $Comp
 L power:GNDS #PWR?
@@ -1300,6 +1300,7 @@ U 1 1 5F79861C
 P 1500 7500
 AR Path="/5E2D8DA2/5F79861C" Ref="#PWR?"  Part="1" 
 AR Path="/5E5EF2D4/5F79861C" Ref="#PWR?"  Part="1" 
+AR Path="/5F2E428C/5F79861C" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1500 7250 50  0001 C CNN
 F 1 "GNDD" H 1504 7345 50  0000 C CNN
 F 2 "" H 1500 7500 50  0001 C CNN
@@ -1368,6 +1369,7 @@ U 1 1 5F600AC9
 P 1500 5800
 AR Path="/5E2D8DA2/5F600AC9" Ref="#PWR?"  Part="1" 
 AR Path="/5E5EF2D4/5F600AC9" Ref="#PWR?"  Part="1" 
+AR Path="/5F2E428C/5F600AC9" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1500 5550 50  0001 C CNN
 F 1 "GNDD" H 1504 5645 50  0000 C CNN
 F 2 "" H 1500 5800 50  0001 C CNN
@@ -1436,6 +1438,7 @@ U 1 1 5F4E6653
 P 1500 4100
 AR Path="/5E2D8DA2/5F4E6653" Ref="#PWR?"  Part="1" 
 AR Path="/5E5EF2D4/5F4E6653" Ref="#PWR?"  Part="1" 
+AR Path="/5F2E428C/5F4E6653" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1500 3850 50  0001 C CNN
 F 1 "GNDD" H 1504 3945 50  0000 C CNN
 F 2 "" H 1500 4100 50  0001 C CNN
@@ -1504,6 +1507,7 @@ U 1 1 5F41DB1E
 P 1500 2400
 AR Path="/5E2D8DA2/5F41DB1E" Ref="#PWR?"  Part="1" 
 AR Path="/5E5EF2D4/5F41DB1E" Ref="#PWR?"  Part="1" 
+AR Path="/5F2E428C/5F41DB1E" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1500 2150 50  0001 C CNN
 F 1 "GNDD" H 1504 2245 50  0000 C CNN
 F 2 "" H 1500 2400 50  0001 C CNN

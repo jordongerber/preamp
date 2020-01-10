@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 13
-Title ""
-Date ""
-Rev ""
+Sheet 7 13
+Title "Front Panel"
+Date "2020-01-09"
+Rev "A00"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "creativecommons.org/licenses/by/4.0/"
+Comment2 "License: CC BY 4.0"
+Comment3 "github.com/SlurpyTurts/preamp"
+Comment4 "Author: Jordon Gerber"
 $EndDescr
 Text GLabel 5150 2250 1    50   UnSpc ~ 0
 +5V
@@ -265,4 +265,52 @@ Text HLabel 1700 2100 0    50   Input ~ 0
 LED_DT
 Wire Wire Line
 	1700 2100 1800 2100
+Text GLabel 1250 6200 1    50   UnSpc ~ 0
++5V
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FF4C386
+P 1250 7100
+AR Path="/5E2D8DA2/5FF4C386" Ref="#PWR?"  Part="1" 
+AR Path="/5E5ECAAE/5FF4C386" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1250 6850 50  0001 C CNN
+F 1 "GNDD" H 1254 6945 50  0000 C CNN
+F 2 "" H 1250 7100 50  0001 C CNN
+F 3 "" H 1250 7100 50  0001 C CNN
+	1    1250 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF4C38C
+P 1250 6450
+AR Path="/5E2D8DA2/5FF4C38C" Ref="R?"  Part="1" 
+AR Path="/5FF4C38C" Ref="R?"  Part="1" 
+AR Path="/5E5ECAAE/5FF4C38C" Ref="R?"  Part="1" 
+F 0 "R?" V 1043 6450 50  0000 C CNN
+F 1 "330R" V 1134 6450 50  0000 C CNN
+F 2 "" V 1180 6450 50  0001 C CNN
+F 3 "~" H 1250 6450 50  0001 C CNN
+	1    1250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FF4C392
+P 1250 6850
+AR Path="/5E2D8DA2/5FF4C392" Ref="D?"  Part="1" 
+AR Path="/5E5ECAAE/5FF4C392" Ref="D?"  Part="1" 
+F 0 "D?" V 1289 6733 50  0000 R CNN
+F 1 "LED" V 1198 6733 50  0000 R CNN
+F 2 "" H 1250 6850 50  0001 C CNN
+F 3 "~" H 1250 6850 50  0001 C CNN
+	1    1250 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 6200 1250 6300
+Wire Wire Line
+	1250 6600 1250 6700
+Wire Wire Line
+	1250 7000 1250 7100
 $EndSCHEMATC

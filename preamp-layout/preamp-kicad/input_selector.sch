@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 13
-Title ""
-Date ""
-Rev ""
+Sheet 13 13
+Title "IO Relay Select Board"
+Date "2020-01-09"
+Rev "A00"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "creativecommons.org/licenses/by/4.0/"
+Comment2 "License: CC BY 4.0"
+Comment3 "github.com/SlurpyTurts/preamp"
+Comment4 "Author: Jordon Gerber"
 $EndDescr
 $Comp
 L Connector:Conn_01x03_Female J?

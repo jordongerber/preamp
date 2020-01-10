@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
-Title ""
-Date ""
-Rev ""
+Sheet 8 13
+Title "Preamp MCU Board"
+Date "2020-01-09"
+Rev "A00"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "creativecommons.org/licenses/by/4.0/"
+Comment2 "License: CC BY 4.0"
+Comment3 "github.com/SlurpyTurts/preamp"
+Comment4 "Author: Jordon Gerber"
 $EndDescr
 Text HLabel 4300 3800 0    50   Input ~ 0
 MISO
@@ -21,7 +21,7 @@ Text HLabel 4300 4200 0    50   Output ~ 0
 CLK
 Text HLabel 4300 4400 0    50   Output ~ 0
 CS_IO
-Text GLabel 9550 4150 1    50   UnSpc ~ 0
+Text GLabel 5000 750  1    50   UnSpc ~ 0
 +5V
 $Comp
 L power:GNDD #PWR?
@@ -151,4 +151,30 @@ Text HLabel 4300 4800 0    50   Output ~ 0
 CS_VOL
 Text HLabel 6000 3600 2    50   Output ~ 0
 LED_DT
+$Comp
+L RF_Module:ESP32-WROOM-32D U?
+U 1 1 5FF4D990
+P 5000 2450
+F 0 "U?" H 5000 4031 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5000 3940 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5000 950 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4700 2500 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 750  5000 1050
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FF5213F
+P 5000 3850
+AR Path="/5E2D8DA2/5FF5213F" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/5FF5213F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 3600 50  0001 C CNN
+F 1 "GNDD" H 5004 3695 50  0000 C CNN
+F 2 "" H 5000 3850 50  0001 C CNN
+F 3 "" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
