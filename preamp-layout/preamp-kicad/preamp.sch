@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title "Preamp"
 Date "2020-01-09"
 Rev "A00"
@@ -38,28 +38,22 @@ F2 "AC+" U L 2350 7200 50
 F3 "AC-" U L 2350 7300 50 
 $EndSheet
 $Sheet
-S 8700 900  550  500 
+S 8150 950  550  500 
 U 5E4A803E
 F0 "headphone amp" 50
 F1 "headphone_amp.sch" 50
-F2 "in_R" U L 8700 1200 50 
-F3 "in_L" U L 8700 1100 50 
+F2 "in_R" U L 8150 1250 50 
+F3 "in_L" U L 8150 1150 50 
 $EndSheet
 $Sheet
-S 7000 950  1100 900 
+S 7000 1000 550  400 
 U 61DA059E
 F0 "gain_stage" 50
 F1 "gain_stage.sch" 50
 F2 "in_L" U L 7000 1150 50 
 F3 "in_R" U L 7000 1250 50 
-F4 "headphone_out_L" U R 8100 1100 50 
-F5 "headphone_out_R" U R 8100 1200 50 
-F6 "out_L" U L 7000 1550 50 
-F7 "out_R" U L 7000 1650 50 
-F8 "MISO" O R 8100 1650 50 
-F9 "MOSI" I R 8100 1550 50 
-F10 "CLK" I R 8100 1750 50 
-F11 "CS_VOL" I R 8100 1450 50 
+F6 "out_L" U R 7550 1150 50 
+F7 "out_R" U R 7550 1250 50 
 $EndSheet
 $Sheet
 S 5300 3850 550  750 
@@ -197,260 +191,6 @@ Text GLabel 9250 4050 0    50   UnSpc ~ 0
 +5V
 Text GLabel 10400 3950 2    50   UnSpc ~ 0
 +5V
-Text HLabel 11600 -3100 0    50   UnSpc ~ 0
-A_OUT_L
-Text HLabel 13700 -3000 2    50   UnSpc ~ 0
-A_OUT_UNBAL_L
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 5F0A1007
-P 15500 -1750
-AR Path="/5E2D8DA2/5F0A1007" Ref="U?"  Part="3" 
-AR Path="/5F0A1007" Ref="U?"  Part="3" 
-AR Path="/61DC5D9D/5F0A1007" Ref="U?"  Part="3" 
-F 0 "U?" H 15458 -1704 50  0000 L CNN
-F 1 "TL072" H 15458 -1795 50  0000 L CNN
-F 2 "" H 15500 -1750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 15500 -1750 50  0001 C CNN
-	3    15500 -1750
-	1    0    0    -1  
-$EndComp
-Text GLabel 15400 -2050 1    50   UnSpc ~ 0
-+15V
-Text GLabel 15400 -1450 3    50   UnSpc ~ 0
--15V
-$Comp
-L power:GNDS #PWR?
-U 1 1 5F0A100F
-P 12200 -2650
-AR Path="/5E2D8DA2/5F0A100F" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5F0A100F" Ref="#PWR?"  Part="1" 
-AR Path="/5F0A100F" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/5F0A100F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12200 -2900 50  0001 C CNN
-F 1 "GNDS" H 12205 -2823 50  0000 C CNN
-F 2 "" H 12200 -2650 50  0001 C CNN
-F 3 "" H 12200 -2650 50  0001 C CNN
-	1    12200 -2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A1015
-P 12200 -2850
-AR Path="/5E2D8DA2/5F0A1015" Ref="R?"  Part="1" 
-AR Path="/5F0A1015" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1015" Ref="R?"  Part="1" 
-F 0 "R?" V 11993 -2850 50  0000 C CNN
-F 1 "10K" V 12084 -2850 50  0000 C CNN
-F 2 "" V 12130 -2850 50  0001 C CNN
-F 3 "~" H 12200 -2850 50  0001 C CNN
-	1    12200 -2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A101B
-P 11850 -3100
-AR Path="/5E2D8DA2/5F0A101B" Ref="R?"  Part="1" 
-AR Path="/5F0A101B" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A101B" Ref="R?"  Part="1" 
-F 0 "R?" V 11643 -3100 50  0000 C CNN
-F 1 "10K" V 11734 -3100 50  0000 C CNN
-F 2 "" V 11780 -3100 50  0001 C CNN
-F 3 "~" H 11850 -3100 50  0001 C CNN
-	1    11850 -3100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A1026
-P 13400 -3000
-AR Path="/5E2D8DA2/5F0A1026" Ref="R?"  Part="1" 
-AR Path="/5F0A1026" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1026" Ref="R?"  Part="1" 
-F 0 "R?" V 13193 -3000 50  0000 C CNN
-F 1 "100R" V 13284 -3000 50  0000 C CNN
-F 2 "" V 13330 -3000 50  0001 C CNN
-F 3 "~" H 13400 -3000 50  0001 C CNN
-	1    13400 -3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A102C
-P 12750 -2500
-AR Path="/5E2D8DA2/5F0A102C" Ref="R?"  Part="1" 
-AR Path="/5F0A102C" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A102C" Ref="R?"  Part="1" 
-F 0 "R?" V 12543 -2500 50  0000 C CNN
-F 1 "10K" V 12634 -2500 50  0000 C CNN
-F 2 "" V 12680 -2500 50  0001 C CNN
-F 3 "~" H 12750 -2500 50  0001 C CNN
-	1    12750 -2500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDS #PWR?
-U 1 1 5F0A1034
-P 12400 -2050
-AR Path="/5E2D8DA2/5F0A1034" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5F0A1034" Ref="#PWR?"  Part="1" 
-AR Path="/5F0A1034" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1034" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12400 -2300 50  0001 C CNN
-F 1 "GNDS" H 12405 -2223 50  0000 C CNN
-F 2 "" H 12400 -2050 50  0001 C CNN
-F 3 "" H 12400 -2050 50  0001 C CNN
-	1    12400 -2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A103A
-P 12400 -2250
-AR Path="/5E2D8DA2/5F0A103A" Ref="R?"  Part="1" 
-AR Path="/5F0A103A" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A103A" Ref="R?"  Part="1" 
-F 0 "R?" V 12193 -2250 50  0000 C CNN
-F 1 "10K" V 12284 -2250 50  0000 C CNN
-F 2 "" V 12330 -2250 50  0001 C CNN
-F 3 "~" H 12400 -2250 50  0001 C CNN
-	1    12400 -2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 5F0A1048
-P 12700 -3000
-AR Path="/5E2D8DA2/5F0A1048" Ref="U?"  Part="1" 
-AR Path="/5F0A1048" Ref="U?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1048" Ref="U?"  Part="1" 
-F 0 "U?" H 12700 -2633 50  0000 C CNN
-F 1 "TL072" H 12700 -2724 50  0000 C CNN
-F 2 "" H 12700 -3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12700 -3000 50  0001 C CNN
-	1    12700 -3000
-	1    0    0    -1  
-$EndComp
-Text HLabel 11600 -1350 0    50   UnSpc ~ 0
-A_OUT_R
-Text HLabel 13700 -1250 2    50   UnSpc ~ 0
-A_OUT_UNBAL_R
-$Comp
-L power:GNDS #PWR?
-U 1 1 5F0A1050
-P 12200 -900
-AR Path="/5E2D8DA2/5F0A1050" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5F0A1050" Ref="#PWR?"  Part="1" 
-AR Path="/5F0A1050" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1050" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12200 -1150 50  0001 C CNN
-F 1 "GNDS" H 12205 -1073 50  0000 C CNN
-F 2 "" H 12200 -900 50  0001 C CNN
-F 3 "" H 12200 -900 50  0001 C CNN
-	1    12200 -900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A1056
-P 12200 -1100
-AR Path="/5E2D8DA2/5F0A1056" Ref="R?"  Part="1" 
-AR Path="/5F0A1056" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1056" Ref="R?"  Part="1" 
-F 0 "R?" V 11993 -1100 50  0000 C CNN
-F 1 "10K" V 12084 -1100 50  0000 C CNN
-F 2 "" V 12130 -1100 50  0001 C CNN
-F 3 "~" H 12200 -1100 50  0001 C CNN
-	1    12200 -1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A105C
-P 11850 -1350
-AR Path="/5E2D8DA2/5F0A105C" Ref="R?"  Part="1" 
-AR Path="/5F0A105C" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A105C" Ref="R?"  Part="1" 
-F 0 "R?" V 11643 -1350 50  0000 C CNN
-F 1 "10K" V 11734 -1350 50  0000 C CNN
-F 2 "" V 11780 -1350 50  0001 C CNN
-F 3 "~" H 11850 -1350 50  0001 C CNN
-	1    11850 -1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A1068
-P 13400 -1250
-AR Path="/5E2D8DA2/5F0A1068" Ref="R?"  Part="1" 
-AR Path="/5F0A1068" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1068" Ref="R?"  Part="1" 
-F 0 "R?" V 13193 -1250 50  0000 C CNN
-F 1 "100R" V 13284 -1250 50  0000 C CNN
-F 2 "" V 13330 -1250 50  0001 C CNN
-F 3 "~" H 13400 -1250 50  0001 C CNN
-	1    13400 -1250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A106E
-P 12750 -750
-AR Path="/5E2D8DA2/5F0A106E" Ref="R?"  Part="1" 
-AR Path="/5F0A106E" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A106E" Ref="R?"  Part="1" 
-F 0 "R?" V 12543 -750 50  0000 C CNN
-F 1 "10K" V 12634 -750 50  0000 C CNN
-F 2 "" V 12680 -750 50  0001 C CNN
-F 3 "~" H 12750 -750 50  0001 C CNN
-	1    12750 -750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDS #PWR?
-U 1 1 5F0A1076
-P 12400 -300
-AR Path="/5E2D8DA2/5F0A1076" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5F0A1076" Ref="#PWR?"  Part="1" 
-AR Path="/5F0A1076" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/5F0A1076" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12400 -550 50  0001 C CNN
-F 1 "GNDS" H 12405 -473 50  0000 C CNN
-F 2 "" H 12400 -300 50  0001 C CNN
-F 3 "" H 12400 -300 50  0001 C CNN
-	1    12400 -300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F0A107C
-P 12400 -500
-AR Path="/5E2D8DA2/5F0A107C" Ref="R?"  Part="1" 
-AR Path="/5F0A107C" Ref="R?"  Part="1" 
-AR Path="/61DC5D9D/5F0A107C" Ref="R?"  Part="1" 
-F 0 "R?" V 12193 -500 50  0000 C CNN
-F 1 "10K" V 12284 -500 50  0000 C CNN
-F 2 "" V 12330 -500 50  0001 C CNN
-F 3 "~" H 12400 -500 50  0001 C CNN
-	1    12400 -500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 5F0A1084
-P 12700 -1250
-AR Path="/5E2D8DA2/5F0A1084" Ref="U?"  Part="2" 
-AR Path="/5F0A1084" Ref="U?"  Part="2" 
-AR Path="/61DC5D9D/5F0A1084" Ref="U?"  Part="2" 
-F 0 "U?" H 12700 -883 50  0000 C CNN
-F 1 "TL072" H 12700 -974 50  0000 C CNN
-F 2 "" H 12700 -1250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12700 -1250 50  0001 C CNN
-	2    12700 -1250
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	3500 2750 3600 2850
 Entry Wire Line
@@ -482,19 +222,11 @@ Connection ~ 1800 6250
 Wire Wire Line
 	1800 6250 2200 6250
 Wire Wire Line
-	5500 2000 3350 2000
-Wire Wire Line
-	8500 2450 7650 2450
-Wire Wire Line
-	7650 2450 7650 3200
-Wire Wire Line
-	8500 1450 8500 2450
-Wire Wire Line
 	7650 3200 7750 3200
 Wire Wire Line
-	8100 1100 8700 1100
+	7550 1150 7800 1150
 Wire Wire Line
-	8100 1200 8700 1200
+	7550 1250 7900 1250
 Wire Wire Line
 	1600 4250 1850 4250
 Wire Wire Line
@@ -606,78 +338,6 @@ Wire Wire Line
 	10400 3950 10300 3950
 Connection ~ 10300 3950
 Wire Wire Line
-	11700 -3100 11600 -3100
-Wire Wire Line
-	13550 -3000 13700 -3000
-Wire Wire Line
-	12000 -3100 12200 -3100
-Wire Wire Line
-	12200 -3000 12200 -3100
-Connection ~ 12200 -3100
-Wire Wire Line
-	12200 -3100 12400 -3100
-Wire Wire Line
-	12200 -2700 12200 -2650
-Wire Wire Line
-	12400 -2900 12400 -2500
-Wire Wire Line
-	12600 -2500 12400 -2500
-Wire Wire Line
-	12400 -2100 12400 -2050
-Connection ~ 12400 -2500
-Wire Wire Line
-	12400 -2500 12400 -2400
-Wire Wire Line
-	12900 -2500 13100 -2500
-Wire Wire Line
-	13100 -3000 13250 -3000
-Wire Wire Line
-	13000 -3000 13100 -3000
-Connection ~ 13100 -3000
-Wire Wire Line
-	13100 -3000 13100 -2500
-Wire Wire Line
-	12000 -1350 12200 -1350
-Wire Wire Line
-	12200 -1250 12200 -1350
-Connection ~ 12200 -1350
-Wire Wire Line
-	12200 -1350 12400 -1350
-Wire Wire Line
-	12200 -950 12200 -900
-Wire Wire Line
-	11700 -1350 11600 -1350
-Wire Wire Line
-	12400 -1150 12400 -750
-Wire Wire Line
-	12600 -750 12400 -750
-Wire Wire Line
-	12400 -350 12400 -300
-Wire Wire Line
-	13550 -1250 13700 -1250
-Connection ~ 12400 -750
-Wire Wire Line
-	12400 -750 12400 -650
-Wire Wire Line
-	12900 -750 13100 -750
-Wire Wire Line
-	13100 -1250 13250 -1250
-Wire Wire Line
-	13000 -1250 13100 -1250
-Connection ~ 13100 -1250
-Wire Wire Line
-	13100 -1250 13100 -750
-Wire Wire Line
-	7000 1550 5500 1550
-Wire Wire Line
-	5500 1550 5500 2000
-Wire Wire Line
-	7000 1650 5600 1650
-Wire Wire Line
-	5600 1650 5600 2100
-Wire Wire Line
-	3350 2100 5600 2100
-Wire Wire Line
 	3350 2750 3500 2750
 Wire Wire Line
 	3350 2850 3500 2850
@@ -696,8 +356,6 @@ Entry Wire Line
 Entry Wire Line
 	5950 3950 6050 3850
 Connection ~ 6050 3050
-Wire Bus Line
-	6050 3050 7150 3050
 Wire Wire Line
 	5950 3950 5850 3950
 Wire Wire Line
@@ -705,26 +363,17 @@ Wire Wire Line
 Wire Wire Line
 	5950 4150 5850 4150
 Entry Wire Line
-	8200 1550 8300 1650
+	6200 1500 6300 1600
 Entry Wire Line
-	8200 1750 8300 1850
-Wire Wire Line
-	8100 1450 8500 1450
+	6200 1700 6300 1800
 Entry Wire Line
-	8200 1650 8300 1750
+	6200 1600 6300 1700
 Wire Wire Line
-	8100 1550 8200 1550
+	6100 1500 6200 1500
 Wire Wire Line
-	8100 1650 8200 1650
+	6100 1600 6200 1600
 Wire Wire Line
-	8100 1750 8200 1750
-Wire Bus Line
-	8300 2100 7150 2100
-Wire Bus Line
-	7150 2100 7150 3050
-Connection ~ 7150 3050
-Wire Bus Line
-	7150 3050 7550 3050
+	6100 1700 6200 1700
 $Sheet
 S 4750 -2700 650  1200
 U 5F2E428C
@@ -807,17 +456,62 @@ Wire Wire Line
 Wire Bus Line
 	3600 3050 6050 3050
 Wire Wire Line
-	3350 1150 7000 1150
+	3350 1250 5500 1250
 Wire Wire Line
-	3350 1250 7000 1250
+	3350 1150 5500 1150
+Wire Wire Line
+	6100 1150 7000 1150
+Wire Wire Line
+	6100 1250 7000 1250
 Wire Bus Line
-	5600 -2200 5600 -300
+	6050 3050 6300 3050
+Connection ~ 6300 3050
 Wire Bus Line
-	8300 1650 8300 2100
+	6300 3050 7550 3050
+Wire Wire Line
+	6100 1400 6400 1400
+Wire Wire Line
+	6400 1400 6400 2650
+Wire Wire Line
+	6400 2650 7650 2650
+Wire Wire Line
+	7650 2650 7650 3200
+Wire Wire Line
+	7800 1150 7800 2000
+Wire Wire Line
+	3350 2000 7800 2000
+Connection ~ 7800 1150
+Wire Wire Line
+	7800 1150 8150 1150
+Wire Wire Line
+	7900 1250 7900 2100
+Wire Wire Line
+	3350 2100 7900 2100
 Wire Bus Line
-	6050 3050 6050 4050
+	3600 2850 3600 3050
 Wire Bus Line
 	7550 3050 7550 3500
 Wire Bus Line
-	3600 2850 3600 3050
+	6050 3050 6050 4050
+Wire Bus Line
+	6300 1600 6300 3050
+Wire Bus Line
+	5600 -2200 5600 -300
+Connection ~ 7900 1250
+Wire Wire Line
+	7900 1250 8150 1250
+$Sheet
+S 5500 1050 600  750 
+U 6009D432
+F0 "Volume Control" 50
+F1 "volume_ctrl.sch" 50
+F2 "in_R" U L 5500 1150 50 
+F3 "in_L" U L 5500 1250 50 
+F4 "out_L" U R 6100 1150 50 
+F5 "out_R" U R 6100 1250 50 
+F6 "CS_VOL" U R 6100 1400 50 
+F7 "MOSI" U R 6100 1500 50 
+F8 "MISO" U R 6100 1600 50 
+F9 "CLK" U R 6100 1700 50 
+$EndSheet
 $EndSCHEMATC
