@@ -59,6 +59,7 @@
  * https://www.muffsy.com/muffsy-relay-input-selector-4.html
  * https://sound-au.com/articles/balanced-io.htm
  * http://www.interfacebus.com/tone-control-3-band-tlo82-opamp-design.html
+ * http://www.thatcorp.com/2181-series_Trimmable_Blackmer_IC_Voltage-Controlled_Amplifiers.shtml
 
 ### Power Supply design
  * https://www.eleccircuit.com/dual-adjustable-power-supply-circuit-diagram/

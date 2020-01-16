@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 14
+Sheet 7 13
 Title "Preamp MCU Board"
 Date "2020-01-09"
 Rev "A00"
@@ -148,7 +148,7 @@ VOL_SW
 Text HLabel 4300 4600 0    50   Output ~ 0
 CS_FP
 Text HLabel 4300 4800 0    50   Output ~ 0
-CS_VOL
+CS_VOL_HP
 Text HLabel 6000 3600 2    50   Output ~ 0
 LED_DT
 $Comp
@@ -177,4 +177,6 @@ F 3 "" H 5000 3850 50  0001 C CNN
 	1    5000 3850
 	1    0    0    -1  
 $EndComp
+Text HLabel 4300 5000 0    50   Output ~ 0
+CS_VOL_MAIN
 $EndSCHEMATC
