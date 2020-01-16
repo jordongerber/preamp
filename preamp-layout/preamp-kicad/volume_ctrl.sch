@@ -1582,45 +1582,45 @@ Wire Wire Line
 	2100 6150 2100 6850
 Wire Wire Line
 	2100 6850 2200 6850
-Text GLabel 4650 6900 0    50   UnSpc ~ 0
+Text GLabel 4600 7400 0    50   UnSpc ~ 0
 +15V
-Text GLabel 4650 7000 0    50   UnSpc ~ 0
+Text GLabel 4600 7500 0    50   UnSpc ~ 0
 -15V
 $Comp
 L power:GNDA #PWR?
 U 1 1 606FB9BF
-P 4700 7200
+P 4650 7700
 AR Path="/5E2D8DA2/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E1A0CE1/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E80BFEC/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E27B612/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/6009D432/606FB9BF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4700 6950 50  0001 C CNN
-F 1 "GNDA" H 4705 7027 50  0000 C CNN
-F 2 "" H 4700 7200 50  0001 C CNN
-F 3 "" H 4700 7200 50  0001 C CNN
-	1    4700 7200
+F 0 "#PWR?" H 4650 7450 50  0001 C CNN
+F 1 "GNDA" H 4655 7527 50  0000 C CNN
+F 2 "" H 4650 7700 50  0001 C CNN
+F 3 "" H 4650 7700 50  0001 C CNN
+	1    4650 7700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 6900 4850 6900
+	4600 7400 4800 7400
 Wire Wire Line
-	4650 7000 4850 7000
+	4600 7500 4800 7500
 Wire Wire Line
-	4850 7100 4700 7100
+	4800 7600 4650 7600
 Wire Wire Line
-	4700 7100 4700 7200
+	4650 7600 4650 7700
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 606FB9C9
-P 5050 7000
+P 5000 7500
 AR Path="/5E27B612/606FB9C9" Ref="J?"  Part="1" 
 AR Path="/6009D432/606FB9C9" Ref="J?"  Part="1" 
-F 0 "J?" H 5022 6978 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 5022 6933 50  0001 R CNN
-F 2 "" H 5050 7000 50  0001 C CNN
-F 3 "~" H 5050 7000 50  0001 C CNN
-	1    5050 7000
+F 0 "J?" H 4972 7478 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 4972 7433 50  0001 R CNN
+F 2 "" H 5000 7500 50  0001 C CNN
+F 3 "~" H 5000 7500 50  0001 C CNN
+	1    5000 7500
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1889,4 +1889,78 @@ Text HLabel 7400 5750 0    50   UnSpc ~ 0
 out_HP_L
 Text HLabel 7400 5850 0    50   UnSpc ~ 0
 out_HP_R
+Text GLabel 4650 6850 0    50   UnSpc ~ 0
++5V
+$Comp
+L power:GNDD #PWR?
+U 1 1 60AAB0EF
+P 4650 7050
+AR Path="/5E5EF2D4/60AAB0EF" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/60AAB0EF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 6800 50  0001 C CNN
+F 1 "GNDD" H 4654 6895 50  0000 C CNN
+F 2 "" H 4650 7050 50  0001 C CNN
+F 3 "" H 4650 7050 50  0001 C CNN
+	1    4650 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6950 4650 6950
+Wire Wire Line
+	4650 6950 4650 7050
+Wire Wire Line
+	4850 6850 4650 6850
+Text GLabel 4600 8000 0    50   UnSpc ~ 0
++15V
+Text GLabel 4600 8100 0    50   UnSpc ~ 0
+-15V
+$Comp
+L power:GNDA #PWR?
+U 1 1 60AE7223
+P 4650 8300
+AR Path="/5E2D8DA2/60AE7223" Ref="#PWR?"  Part="1" 
+AR Path="/5E1A0CE1/60AE7223" Ref="#PWR?"  Part="1" 
+AR Path="/5E80BFEC/60AE7223" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/60AE7223" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/60AE7223" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 8050 50  0001 C CNN
+F 1 "GNDA" H 4655 8127 50  0000 C CNN
+F 2 "" H 4650 8300 50  0001 C CNN
+F 3 "" H 4650 8300 50  0001 C CNN
+	1    4650 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 8000 4800 8000
+Wire Wire Line
+	4600 8100 4800 8100
+Wire Wire Line
+	4800 8200 4650 8200
+Wire Wire Line
+	4650 8200 4650 8300
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B225EE
+P 5000 8100
+AR Path="/5E607732/60B225EE" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/60B225EE" Ref="J?"  Part="1" 
+AR Path="/6009D432/60B225EE" Ref="J?"  Part="1" 
+F 0 "J?" H 5028 8126 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 5028 8035 50  0001 L CNN
+F 2 "" H 5000 8100 50  0001 C CNN
+F 3 "~" H 5000 8100 50  0001 C CNN
+	1    5000 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 60B321C7
+P 5050 6850
+F 0 "J?" H 5078 6780 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5078 6735 50  0001 L CNN
+F 2 "" H 5050 6850 50  0001 C CNN
+F 3 "~" H 5050 6850 50  0001 C CNN
+	1    5050 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

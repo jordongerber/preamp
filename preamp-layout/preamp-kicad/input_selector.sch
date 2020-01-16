@@ -1346,21 +1346,10 @@ L Connector:Conn_01x03_Female J?
 U 1 1 635E9155
 P 9400 -2350
 F 0 "J?" H 9428 -2324 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 9428 -2415 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 9428 -2415 50  0001 L CNN
 F 2 "" H 9400 -2350 50  0001 C CNN
 F 3 "~" H 9400 -2350 50  0001 C CNN
 	1    9400 -2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 635E9FF1
-P 9400 -3000
-F 0 "J?" H 9428 -3024 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 9428 -3115 50  0000 L CNN
-F 2 "" H 9400 -3000 50  0001 C CNN
-F 3 "~" H 9400 -3000 50  0001 C CNN
-	1    9400 -3000
 	1    0    0    -1  
 $EndComp
 Text Notes 7650 -2700 0    50   ~ 0
@@ -1457,22 +1446,11 @@ Wire Wire Line
 Wire Wire Line
 	9050 -950 9050 -850
 $Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 638B3B34
-P 9400 -1050
-F 0 "J?" H 9428 -1024 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 9428 -1115 50  0000 L CNN
-F 2 "" H 9400 -1050 50  0001 C CNN
-F 3 "~" H 9400 -1050 50  0001 C CNN
-	1    9400 -1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 638B3B3E
 P 9400 -1700
 F 0 "J?" H 9428 -1724 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 9428 -1815 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9428 -1815 50  0001 L CNN
 F 2 "" H 9400 -1700 50  0001 C CNN
 F 3 "~" H 9400 -1700 50  0001 C CNN
 	1    9400 -1700
@@ -1646,4 +1624,26 @@ Text HLabel 2250 9050 3    50   UnSpc ~ 0
 A_IN_R_5
 Text HLabel 2150 9050 3    50   UnSpc ~ 0
 A_IN_L_5
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 60B85B38
+P 9400 -3000
+F 0 "J?" H 9372 -3072 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9372 -3117 50  0001 R CNN
+F 2 "" H 9400 -3000 50  0001 C CNN
+F 3 "~" H 9400 -3000 50  0001 C CNN
+	1    9400 -3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 60C02DE3
+P 9400 -1050
+F 0 "J?" H 9372 -1072 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9372 -1117 50  0001 R CNN
+F 2 "" H 9400 -1050 50  0001 C CNN
+F 3 "~" H 9400 -1050 50  0001 C CNN
+	1    9400 -1050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
