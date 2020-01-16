@@ -1307,20 +1307,6 @@ Wire Wire Line
 	5200 7200 5050 7200
 Wire Wire Line
 	5050 7200 5050 7300
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 5E50A2B6
-P 5400 7100
-AR Path="/5E2D8DA2/5E50A2B6" Ref="J?"  Part="1" 
-AR Path="/5E1A0CE1/5E50A2B6" Ref="J?"  Part="1" 
-AR Path="/5E80BFEC/5E50A2B6" Ref="J?"  Part="1" 
-F 0 "J?" H 5428 7126 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 5428 7035 50  0000 L CNN
-F 2 "" H 5400 7100 50  0001 C CNN
-F 3 "~" H 5400 7100 50  0001 C CNN
-	1    5400 7100
-	1    0    0    -1  
-$EndComp
 Text GLabel 5000 6300 0    50   UnSpc ~ 0
 +15V
 Text GLabel 5000 6400 0    50   UnSpc ~ 0
@@ -1355,7 +1341,7 @@ AR Path="/5E2D8DA2/5E50E170" Ref="J?"  Part="1"
 AR Path="/5E1A0CE1/5E50E170" Ref="J?"  Part="1" 
 AR Path="/5E80BFEC/5E50E170" Ref="J?"  Part="1" 
 F 0 "J?" H 5428 6426 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 5428 6335 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 5428 6335 50  0001 L CNN
 F 2 "" H 5400 6400 50  0001 C CNN
 F 3 "~" H 5400 6400 50  0001 C CNN
 	1    5400 6400
@@ -1391,4 +1377,15 @@ Text HLabel 4600 1950 2    50   UnSpc ~ 0
 IN_L
 Text HLabel 4600 4350 2    50   UnSpc ~ 0
 IN_R
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 60C5821A
+P 5400 7100
+F 0 "J?" H 5372 7078 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5372 7033 50  0001 R CNN
+F 2 "" H 5400 7100 50  0001 C CNN
+F 3 "~" H 5400 7100 50  0001 C CNN
+	1    5400 7100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
