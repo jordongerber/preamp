@@ -18,9 +18,9 @@ in_R
 Text HLabel 4750 1900 0    50   UnSpc ~ 0
 in_L
 Text HLabel 7200 2000 2    50   UnSpc ~ 0
-out_L
+out_main_L
 Text HLabel 7200 4000 2    50   UnSpc ~ 0
-out_R
+out_main_R
 $Comp
 L Amplifier_Operational:TL072 U?
 U 2 1 600B881E
@@ -41,23 +41,23 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 600B8824
-P 7150 5650
+P 8750 5600
 AR Path="/5E2D8DA2/600B8824" Ref="U?"  Part="3" 
 AR Path="/600B8824" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/600B8824" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/600B8824" Ref="U?"  Part="3" 
 AR Path="/61DA059E/600B8824" Ref="U?"  Part="3" 
 AR Path="/6009D432/600B8824" Ref="U?"  Part="3" 
-F 0 "U?" H 7108 5696 50  0000 L CNN
-F 1 "TL072" H 7108 5605 50  0000 L CNN
-F 2 "" H 7150 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7150 5650 50  0001 C CNN
-	3    7150 5650
+F 0 "U?" H 8708 5646 50  0000 L CNN
+F 1 "TL072" H 8708 5555 50  0000 L CNN
+F 2 "" H 8750 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8750 5600 50  0001 C CNN
+	3    8750 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7050 5350 1    50   UnSpc ~ 0
+Text GLabel 8650 5300 1    50   UnSpc ~ 0
 +15V
-Text GLabel 7050 5950 3    50   UnSpc ~ 0
+Text GLabel 8650 5900 3    50   UnSpc ~ 0
 -15V
 $Comp
 L power:GNDA #PWR?
@@ -772,9 +772,9 @@ in_R
 Text HLabel 8100 1900 0    50   UnSpc ~ 0
 in_L
 Text HLabel 10550 2000 2    50   UnSpc ~ 0
-out_L
+out_HP_L
 Text HLabel 10550 4000 2    50   UnSpc ~ 0
-out_R
+out_HP_R
 $Comp
 L Amplifier_Operational:TL072 U?
 U 2 1 6033B8E8
@@ -1499,44 +1499,44 @@ Connection ~ 10450 4000
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 603FD5C0
-P 7600 5650
+P 9200 5600
 AR Path="/5E2D8DA2/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/61DA059E/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/6009D432/603FD5C0" Ref="U?"  Part="3" 
-F 0 "U?" H 7558 5696 50  0000 L CNN
-F 1 "TL072" H 7558 5605 50  0000 L CNN
-F 2 "" H 7600 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7600 5650 50  0001 C CNN
-	3    7600 5650
+F 0 "U?" H 9158 5646 50  0000 L CNN
+F 1 "TL072" H 9158 5555 50  0000 L CNN
+F 2 "" H 9200 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9200 5600 50  0001 C CNN
+	3    9200 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 5350 1    50   UnSpc ~ 0
+Text GLabel 9100 5300 1    50   UnSpc ~ 0
 +15V
-Text GLabel 7500 5950 3    50   UnSpc ~ 0
+Text GLabel 9100 5900 3    50   UnSpc ~ 0
 -15V
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 604092EC
-P 8050 5650
+P 9650 5600
 AR Path="/5E2D8DA2/604092EC" Ref="U?"  Part="3" 
 AR Path="/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/604092EC" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DA059E/604092EC" Ref="U?"  Part="3" 
 AR Path="/6009D432/604092EC" Ref="U?"  Part="3" 
-F 0 "U?" H 8008 5696 50  0000 L CNN
-F 1 "TL072" H 8008 5605 50  0000 L CNN
-F 2 "" H 8050 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8050 5650 50  0001 C CNN
-	3    8050 5650
+F 0 "U?" H 9608 5646 50  0000 L CNN
+F 1 "TL072" H 9608 5555 50  0000 L CNN
+F 2 "" H 9650 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9650 5600 50  0001 C CNN
+	3    9650 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7950 5350 1    50   UnSpc ~ 0
+Text GLabel 9550 5300 1    50   UnSpc ~ 0
 +15V
-Text GLabel 7950 5950 3    50   UnSpc ~ 0
+Text GLabel 9550 5900 3    50   UnSpc ~ 0
 -15V
 Wire Wire Line
 	850  6250 850  6350
@@ -1582,171 +1582,311 @@ Wire Wire Line
 	2100 6150 2100 6850
 Wire Wire Line
 	2100 6850 2200 6850
-Text GLabel 5350 6750 0    50   UnSpc ~ 0
+Text GLabel 4650 6900 0    50   UnSpc ~ 0
 +15V
-Text GLabel 5350 6850 0    50   UnSpc ~ 0
+Text GLabel 4650 7000 0    50   UnSpc ~ 0
 -15V
 $Comp
 L power:GNDA #PWR?
 U 1 1 606FB9BF
-P 5400 7050
+P 4700 7200
 AR Path="/5E2D8DA2/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E1A0CE1/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E80BFEC/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/5E27B612/606FB9BF" Ref="#PWR?"  Part="1" 
 AR Path="/6009D432/606FB9BF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5400 6800 50  0001 C CNN
-F 1 "GNDA" H 5405 6877 50  0000 C CNN
-F 2 "" H 5400 7050 50  0001 C CNN
-F 3 "" H 5400 7050 50  0001 C CNN
-	1    5400 7050
+F 0 "#PWR?" H 4700 6950 50  0001 C CNN
+F 1 "GNDA" H 4705 7027 50  0000 C CNN
+F 2 "" H 4700 7200 50  0001 C CNN
+F 3 "" H 4700 7200 50  0001 C CNN
+	1    4700 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 6750 5550 6750
+	4650 6900 4850 6900
 Wire Wire Line
-	5350 6850 5550 6850
+	4650 7000 4850 7000
 Wire Wire Line
-	5550 6950 5400 6950
+	4850 7100 4700 7100
 Wire Wire Line
-	5400 6950 5400 7050
+	4700 7100 4700 7200
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 606FB9C9
-P 5750 6850
+P 5050 7000
 AR Path="/5E27B612/606FB9C9" Ref="J?"  Part="1" 
 AR Path="/6009D432/606FB9C9" Ref="J?"  Part="1" 
-F 0 "J?" H 5722 6828 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 5722 6783 50  0001 R CNN
-F 2 "" H 5750 6850 50  0001 C CNN
-F 3 "~" H 5750 6850 50  0001 C CNN
-	1    5750 6850
+F 0 "J?" H 5022 6978 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5022 6933 50  0001 R CNN
+F 2 "" H 5050 7000 50  0001 C CNN
+F 3 "~" H 5050 7000 50  0001 C CNN
+	1    5050 7000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 6070F5EA
-P 5750 6050
+P 5050 6300
 AR Path="/5E5EF2D4/6070F5EA" Ref="J?"  Part="1" 
 AR Path="/6009D432/6070F5EA" Ref="J?"  Part="1" 
-F 0 "J?" H 5722 5978 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 5722 5933 50  0001 R CNN
-F 2 "" H 5750 6050 50  0001 C CNN
-F 3 "~" H 5750 6050 50  0001 C CNN
-	1    5750 6050
+F 0 "J?" H 5022 6228 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5022 6183 50  0001 R CNN
+F 2 "" H 5050 6300 50  0001 C CNN
+F 3 "~" H 5050 6300 50  0001 C CNN
+	1    5050 6300
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5350 6050 0    50   UnSpc ~ 0
+Text GLabel 4650 6300 0    50   UnSpc ~ 0
 +5V
 $Comp
 L power:GNDD #PWR?
 U 1 1 6070F5F1
-P 5350 6250
+P 4650 6500
 AR Path="/5E5EF2D4/6070F5F1" Ref="#PWR?"  Part="1" 
 AR Path="/6009D432/6070F5F1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5350 6000 50  0001 C CNN
-F 1 "GNDD" H 5354 6095 50  0000 C CNN
-F 2 "" H 5350 6250 50  0001 C CNN
-F 3 "" H 5350 6250 50  0001 C CNN
-	1    5350 6250
+F 0 "#PWR?" H 4650 6250 50  0001 C CNN
+F 1 "GNDD" H 4654 6345 50  0000 C CNN
+F 2 "" H 4650 6500 50  0001 C CNN
+F 3 "" H 4650 6500 50  0001 C CNN
+	1    4650 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 6150 5350 6150
+	4850 6400 4650 6400
 Wire Wire Line
-	5350 6150 5350 6250
+	4650 6400 4650 6500
 Wire Wire Line
-	5550 6050 5350 6050
-Text GLabel 9650 5250 1    50   UnSpc ~ 0
+	4850 6300 4650 6300
+Text GLabel 10300 5150 1    50   UnSpc ~ 0
 +15V
 $Comp
 L Device:R R?
 U 1 1 6072D4FD
-P 9650 5500
+P 10300 5400
 AR Path="/5E2D8DA2/6072D4FD" Ref="R?"  Part="1" 
 AR Path="/6072D4FD" Ref="R?"  Part="1" 
 AR Path="/5E27B612/6072D4FD" Ref="R?"  Part="1" 
-F 0 "R?" V 9443 5500 50  0000 C CNN
-F 1 "10K" V 9534 5500 50  0000 C CNN
-F 2 "" V 9580 5500 50  0001 C CNN
-F 3 "~" H 9650 5500 50  0001 C CNN
-	1    9650 5500
+AR Path="/6009D432/6072D4FD" Ref="R?"  Part="1" 
+F 0 "R?" V 10093 5400 50  0000 C CNN
+F 1 "10K" V 10184 5400 50  0000 C CNN
+F 2 "" V 10230 5400 50  0001 C CNN
+F 3 "~" H 10300 5400 50  0001 C CNN
+	1    10300 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6072D503
-P 9650 5900
+P 10300 5800
 AR Path="/5E2D8DA2/6072D503" Ref="D?"  Part="1" 
 AR Path="/5E27B612/6072D503" Ref="D?"  Part="1" 
-F 0 "D?" V 9689 5783 50  0000 R CNN
-F 1 "LED" V 9598 5783 50  0000 R CNN
-F 2 "" H 9650 5900 50  0001 C CNN
-F 3 "~" H 9650 5900 50  0001 C CNN
-	1    9650 5900
+AR Path="/6009D432/6072D503" Ref="D?"  Part="1" 
+F 0 "D?" V 10339 5683 50  0000 R CNN
+F 1 "LED" V 10248 5683 50  0000 R CNN
+F 2 "" H 10300 5800 50  0001 C CNN
+F 3 "~" H 10300 5800 50  0001 C CNN
+	1    10300 5800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9650 5250 9650 5350
+	10300 5150 10300 5250
 Wire Wire Line
-	9650 5650 9650 5750
+	10300 5550 10300 5650
 Wire Wire Line
-	9650 6050 9650 6150
-Text GLabel 10200 5250 1    50   UnSpc ~ 0
+	10300 5950 10300 6050
+Text GLabel 10850 5150 1    50   UnSpc ~ 0
 -15V
 $Comp
 L Device:R R?
 U 1 1 6072D50D
-P 10200 5500
+P 10850 5400
 AR Path="/5E2D8DA2/6072D50D" Ref="R?"  Part="1" 
 AR Path="/6072D50D" Ref="R?"  Part="1" 
 AR Path="/5E27B612/6072D50D" Ref="R?"  Part="1" 
-F 0 "R?" V 9993 5500 50  0000 C CNN
-F 1 "10K" V 10084 5500 50  0000 C CNN
-F 2 "" V 10130 5500 50  0001 C CNN
-F 3 "~" H 10200 5500 50  0001 C CNN
-	1    10200 5500
+AR Path="/6009D432/6072D50D" Ref="R?"  Part="1" 
+F 0 "R?" V 10643 5400 50  0000 C CNN
+F 1 "10K" V 10734 5400 50  0000 C CNN
+F 2 "" V 10780 5400 50  0001 C CNN
+F 3 "~" H 10850 5400 50  0001 C CNN
+	1    10850 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6072D513
-P 10200 5900
+P 10850 5800
 AR Path="/5E2D8DA2/6072D513" Ref="D?"  Part="1" 
 AR Path="/5E27B612/6072D513" Ref="D?"  Part="1" 
-F 0 "D?" V 10239 5783 50  0000 R CNN
-F 1 "LED" V 10148 5783 50  0000 R CNN
-F 2 "" H 10200 5900 50  0001 C CNN
-F 3 "~" H 10200 5900 50  0001 C CNN
-	1    10200 5900
+AR Path="/6009D432/6072D513" Ref="D?"  Part="1" 
+F 0 "D?" V 10889 5683 50  0000 R CNN
+F 1 "LED" V 10798 5683 50  0000 R CNN
+F 2 "" H 10850 5800 50  0001 C CNN
+F 3 "~" H 10850 5800 50  0001 C CNN
+	1    10850 5800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10200 5250 10200 5350
+	10850 5150 10850 5250
 Wire Wire Line
-	10200 5650 10200 5750
+	10850 5550 10850 5650
 Wire Wire Line
-	10200 6050 10200 6150
+	10850 5950 10850 6050
 $Comp
 L power:GNDA #PWR?
 U 1 1 6072D51C
-P 9650 6150
-F 0 "#PWR?" H 9650 5900 50  0001 C CNN
-F 1 "GNDA" H 9655 5977 50  0000 C CNN
-F 2 "" H 9650 6150 50  0001 C CNN
-F 3 "" H 9650 6150 50  0001 C CNN
-	1    9650 6150
+P 10300 6050
+AR Path="/5E27B612/6072D51C" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/6072D51C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10300 5800 50  0001 C CNN
+F 1 "GNDA" H 10305 5877 50  0000 C CNN
+F 2 "" H 10300 6050 50  0001 C CNN
+F 3 "" H 10300 6050 50  0001 C CNN
+	1    10300 6050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 6072D522
-P 10200 6150
-F 0 "#PWR?" H 10200 5900 50  0001 C CNN
-F 1 "GNDA" H 10205 5977 50  0000 C CNN
-F 2 "" H 10200 6150 50  0001 C CNN
-F 3 "" H 10200 6150 50  0001 C CNN
-	1    10200 6150
+P 10850 6050
+AR Path="/5E27B612/6072D522" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/6072D522" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10850 5800 50  0001 C CNN
+F 1 "GNDA" H 10855 5877 50  0000 C CNN
+F 2 "" H 10850 6050 50  0001 C CNN
+F 3 "" H 10850 6050 50  0001 C CNN
+	1    10850 6050
 	1    0    0    -1  
 $EndComp
+Text Notes 700  7300 0    50   ~ 0
+7ms adjustment between DAC output level
+Text Notes 3750 5900 0    50   ~ 0
+Buffered DAC output max approx. 0.78V\n5V * (2k/12.83k)
+Text Notes 4750 5400 0    50   ~ 0
+Per VCA Manufacturer’s spec, 6mV per dB attenuation\nfor max 0.78V, 0.78/0.006 = 130dB range\n130dB / 256 steps = 0.51dB / step\n\n178k offset resistor shifts output up by approx. 30dB\ncontrol range becomes -100dB to +30dB
+Text Notes 6950 6500 0    50   ~ 0
+http://www.thatcorp.com/datashts/dn02.pdf
+$Comp
+L power:GNDS #PWR?
+U 1 1 6091AA2E
+P 6150 7450
+AR Path="/5E2D8DA2/6091AA2E" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/6091AA2E" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/6091AA2E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6150 7200 50  0001 C CNN
+F 1 "GNDS" H 6155 7277 50  0000 C CNN
+F 2 "" H 6150 7450 50  0001 C CNN
+F 3 "" H 6150 7450 50  0001 C CNN
+	1    6150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 7350 6150 7350
+Wire Wire Line
+	6150 7350 6150 7450
+Wire Wire Line
+	6000 7150 6200 7150
+Wire Wire Line
+	6000 7250 6200 7250
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 6091AA3A
+P 6400 7250
+AR Path="/5E607732/6091AA3A" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/6091AA3A" Ref="J?"  Part="1" 
+AR Path="/6009D432/6091AA3A" Ref="J?"  Part="1" 
+F 0 "J?" H 6428 7276 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6428 7185 50  0001 L CNN
+F 2 "" H 6400 7250 50  0001 C CNN
+F 3 "~" H 6400 7250 50  0001 C CNN
+	1    6400 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 6091AA40
+P 6400 6400
+AR Path="/5E2D8DA2/6091AA40" Ref="J?"  Part="1" 
+AR Path="/6009D432/6091AA40" Ref="J?"  Part="1" 
+F 0 "J?" H 6372 6424 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6372 6333 50  0001 R CNN
+F 2 "" H 6400 6400 50  0001 C CNN
+F 3 "~" H 6400 6400 50  0001 C CNN
+	1    6400 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 6091AA48
+P 6150 6600
+AR Path="/5E2D8DA2/6091AA48" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/6091AA48" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/6091AA48" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6150 6350 50  0001 C CNN
+F 1 "GNDS" H 6155 6427 50  0000 C CNN
+F 2 "" H 6150 6600 50  0001 C CNN
+F 3 "" H 6150 6600 50  0001 C CNN
+	1    6150 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6600 6150 6500
+Wire Wire Line
+	6150 6500 6200 6500
+Wire Wire Line
+	6000 6300 6200 6300
+Wire Wire Line
+	6000 6400 6200 6400
+Text Notes 5700 6150 0    50   ~ 0
+Sends to IO
+Text Notes 5650 7000 0    50   ~ 0
+Receives from tone / IO
+Text HLabel 6000 7250 0    50   UnSpc ~ 0
+in_R
+Text HLabel 6000 7150 0    50   UnSpc ~ 0
+in_L
+Text HLabel 6000 6300 0    50   UnSpc ~ 0
+out_main_L
+Text HLabel 6000 6400 0    50   UnSpc ~ 0
+out_main_R
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 60A378F2
+P 7800 5850
+AR Path="/5E2D8DA2/60A378F2" Ref="J?"  Part="1" 
+AR Path="/6009D432/60A378F2" Ref="J?"  Part="1" 
+F 0 "J?" H 7772 5874 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 7772 5783 50  0001 R CNN
+F 2 "" H 7800 5850 50  0001 C CNN
+F 3 "~" H 7800 5850 50  0001 C CNN
+	1    7800 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 60A378FC
+P 7550 6050
+AR Path="/5E2D8DA2/60A378FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/60A378FC" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/60A378FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7550 5800 50  0001 C CNN
+F 1 "GNDS" H 7555 5877 50  0000 C CNN
+F 2 "" H 7550 6050 50  0001 C CNN
+F 3 "" H 7550 6050 50  0001 C CNN
+	1    7550 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6050 7550 5950
+Wire Wire Line
+	7550 5950 7600 5950
+Wire Wire Line
+	7400 5750 7600 5750
+Wire Wire Line
+	7400 5850 7600 5850
+Text Notes 7100 5600 0    50   ~ 0
+Sends to headphone amp
+Text HLabel 7400 5750 0    50   UnSpc ~ 0
+out_HP_L
+Text HLabel 7400 5850 0    50   UnSpc ~ 0
+out_HP_R
 $EndSCHEMATC
