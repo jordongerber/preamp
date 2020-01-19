@@ -13,91 +13,31 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-$Comp
-L power:GNDS #PWR?
-U 1 1 638AA21E
-P 6800 5400
-AR Path="/5E2D8DA2/638AA21E" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/638AA21E" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/638AA21E" Ref="#PWR?"  Part="1" 
-AR Path="/5F2E428C/638AA21E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6800 5150 50  0001 C CNN
-F 1 "GNDS" H 6805 5227 50  0000 C CNN
-F 2 "" H 6800 5400 50  0001 C CNN
-F 3 "" H 6800 5400 50  0001 C CNN
-	1    6800 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 5300 6800 5300
-Wire Wire Line
-	6800 5300 6800 5400
-Text HLabel 6950 5200 2    50   UnSpc ~ 0
+Text HLabel 6650 5150 0    50   UnSpc ~ 0
 IN_R
-Text HLabel 6950 5100 2    50   UnSpc ~ 0
+Text HLabel 6650 4750 0    50   UnSpc ~ 0
 IN_L
-Wire Wire Line
-	6750 5100 6950 5100
-Wire Wire Line
-	6750 5200 6950 5200
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6010807F
-P 6550 5200
+P 7000 4150
 AR Path="/5E607732/6010807F" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6010807F" Ref="J?"  Part="1" 
 AR Path="/61DC5D9D/6010807F" Ref="J?"  Part="1" 
 AR Path="/5F2E428C/6010807F" Ref="J?"  Part="1" 
-F 0 "J?" H 6578 5226 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6578 5135 50  0001 L CNN
-F 2 "" H 6550 5200 50  0001 C CNN
-F 3 "~" H 6550 5200 50  0001 C CNN
-	1    6550 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 60108080
-P 7050 4150
-AR Path="/5E2D8DA2/60108080" Ref="J?"  Part="1" 
-AR Path="/61DC5D9D/60108080" Ref="J?"  Part="1" 
-AR Path="/5F2E428C/60108080" Ref="J?"  Part="1" 
-F 0 "J?" H 7022 4174 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 7022 4083 50  0001 R CNN
-F 2 "" H 7050 4150 50  0001 C CNN
-F 3 "~" H 7050 4150 50  0001 C CNN
-	1    7050 4150
-	-1   0    0    -1  
-$EndComp
-Text HLabel 6650 4150 0    50   UnSpc ~ 0
-OUT_R
-Text HLabel 6650 4050 0    50   UnSpc ~ 0
-OUT_L
-$Comp
-L power:GNDS #PWR?
-U 1 1 60108081
-P 6800 4350
-AR Path="/5E2D8DA2/60108081" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/60108081" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/60108081" Ref="#PWR?"  Part="1" 
-AR Path="/5F2E428C/60108081" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6800 4100 50  0001 C CNN
-F 1 "GNDS" H 6805 4177 50  0000 C CNN
-F 2 "" H 6800 4350 50  0001 C CNN
-F 3 "" H 6800 4350 50  0001 C CNN
-	1    6800 4350
+F 0 "J?" H 7028 4176 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7028 4085 50  0001 L CNN
+F 2 "" H 7000 4150 50  0001 C CNN
+F 3 "~" H 7000 4150 50  0001 C CNN
+	1    7000 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 4350 6800 4250
-Wire Wire Line
-	6800 4250 6850 4250
-Wire Wire Line
-	6650 4050 6850 4050
-Wire Wire Line
-	6650 4150 6850 4150
-Text Notes 6600 4950 0    50   ~ 0
-Receives from IO
+Text HLabel 6700 4350 0    50   UnSpc ~ 0
+OUT_R
+Text HLabel 6700 3950 0    50   UnSpc ~ 0
+OUT_L
+Text Notes 6350 4700 0    50   ~ 0
+Receive from\nIO Select
 Text GLabel 1400 6300 1    50   UnSpc ~ 0
 +15V
 $Comp
@@ -200,90 +140,10 @@ F 3 "" H 2000 7200 50  0001 C CNN
 	1    2000 7200
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 6000 0    50   UnSpc ~ 0
-+15V
-Text GLabel 2800 6100 0    50   UnSpc ~ 0
--15V
-$Comp
-L power:GNDA #PWR?
-U 1 1 6399F81F
-P 2850 6300
-AR Path="/5E2D8DA2/6399F81F" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/6399F81F" Ref="#PWR?"  Part="1" 
-AR Path="/5F2E428C/6399F81F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 6050 50  0001 C CNN
-F 1 "GNDA" H 2855 6127 50  0000 C CNN
-F 2 "" H 2850 6300 50  0001 C CNN
-F 3 "" H 2850 6300 50  0001 C CNN
-	1    2850 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6000 3000 6000
-Wire Wire Line
-	2800 6100 3000 6100
-Wire Wire Line
-	3000 6200 2850 6200
-Wire Wire Line
-	2850 6200 2850 6300
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 6399F829
-P 3200 6100
-AR Path="/5E2D8DA2/6399F829" Ref="J?"  Part="1" 
-AR Path="/61DC5D9D/6399F829" Ref="J?"  Part="1" 
-AR Path="/5F2E428C/6399F829" Ref="J?"  Part="1" 
-F 0 "J?" H 3228 6126 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 3228 6035 50  0001 L CNN
-F 2 "" H 3200 6100 50  0001 C CNN
-F 3 "~" H 3200 6100 50  0001 C CNN
-	1    3200 6100
-	1    0    0    -1  
-$EndComp
 Text Notes 1750 5800 0    50   ~ 0
 PWR, monitoring
-Text GLabel 2800 6900 0    50   UnSpc ~ 0
-+15V
-Text GLabel 2800 7000 0    50   UnSpc ~ 0
--15V
-$Comp
-L power:GNDA #PWR?
-U 1 1 6399F841
-P 2850 7200
-AR Path="/5E2D8DA2/6399F841" Ref="#PWR?"  Part="1" 
-AR Path="/61DC5D9D/6399F841" Ref="#PWR?"  Part="1" 
-AR Path="/5F2E428C/6399F841" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 6950 50  0001 C CNN
-F 1 "GNDA" H 2855 7027 50  0000 C CNN
-F 2 "" H 2850 7200 50  0001 C CNN
-F 3 "" H 2850 7200 50  0001 C CNN
-	1    2850 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6900 3000 6900
-Wire Wire Line
-	2800 7000 3000 7000
-Wire Wire Line
-	3000 7100 2850 7100
-Wire Wire Line
-	2850 7100 2850 7200
-$Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 63C3437F
-P 3200 7000
-AR Path="/5E2D8DA2/63C3437F" Ref="J?"  Part="1" 
-AR Path="/61DC5D9D/63C3437F" Ref="J?"  Part="1" 
-AR Path="/5F2E428C/63C3437F" Ref="J?"  Part="1" 
-F 0 "J?" H 3172 7024 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 3172 6933 50  0001 R CNN
-F 2 "" H 3200 7000 50  0001 C CNN
-F 3 "~" H 3200 7000 50  0001 C CNN
-	1    3200 7000
-	-1   0    0    -1  
-$EndComp
 Text Notes 6350 3900 0    50   ~ 0
-Sends to amp
+Send to\nGain Stage
 $Comp
 L Device:R_POT_Dual_Separate RV?
 U 2 1 5EA54AF4
@@ -1370,4 +1230,172 @@ Wire Wire Line
 Wire Wire Line
 	5300 4050 5300 4850
 Connection ~ 2800 1850
+Text GLabel 3200 6300 0    50   UnSpc ~ 0
++15V
+Text GLabel 3200 6700 0    50   UnSpc ~ 0
+-15V
+$Comp
+L power:GNDA #PWR?
+U 1 1 647F0EA8
+P 3200 6500
+AR Path="/5E2D8DA2/647F0EA8" Ref="#PWR?"  Part="1" 
+AR Path="/5E1A0CE1/647F0EA8" Ref="#PWR?"  Part="1" 
+AR Path="/5E80BFEC/647F0EA8" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/647F0EA8" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/647F0EA8" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/647F0EA8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3200 6250 50  0001 C CNN
+F 1 "GNDA" H 3205 6327 50  0000 C CNN
+F 2 "" H 3200 6500 50  0001 C CNN
+F 3 "" H 3200 6500 50  0001 C CNN
+	1    3200 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 6500 3200 6500
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 647F0EAF
+P 3500 6500
+AR Path="/5E27B612/647F0EAF" Ref="J?"  Part="1" 
+AR Path="/6009D432/647F0EAF" Ref="J?"  Part="1" 
+AR Path="/61DC5D9D/647F0EAF" Ref="J?"  Part="1" 
+F 0 "J?" H 3472 6478 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 3472 6433 50  0001 R CNN
+F 2 "" H 3500 6500 50  0001 C CNN
+F 3 "~" H 3500 6500 50  0001 C CNN
+	1    3500 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 647F0EB5
+P 3500 7100
+AR Path="/5E607732/647F0EB5" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/647F0EB5" Ref="J?"  Part="1" 
+AR Path="/6009D432/647F0EB5" Ref="J?"  Part="1" 
+AR Path="/61DC5D9D/647F0EB5" Ref="J?"  Part="1" 
+F 0 "J?" H 3528 7126 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 3528 7035 50  0001 L CNN
+F 2 "" H 3500 7100 50  0001 C CNN
+F 3 "~" H 3500 7100 50  0001 C CNN
+	1    3500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6400 3250 6400
+Wire Wire Line
+	3250 6400 3250 6300
+Wire Wire Line
+	3250 6300 3200 6300
+Wire Wire Line
+	3300 6600 3250 6600
+Wire Wire Line
+	3250 6600 3250 6700
+Wire Wire Line
+	3250 6700 3200 6700
+Text GLabel 3200 6900 0    50   UnSpc ~ 0
++15V
+Text GLabel 3200 7300 0    50   UnSpc ~ 0
+-15V
+$Comp
+L power:GNDA #PWR?
+U 1 1 647F0EC3
+P 3200 7100
+AR Path="/5E2D8DA2/647F0EC3" Ref="#PWR?"  Part="1" 
+AR Path="/5E1A0CE1/647F0EC3" Ref="#PWR?"  Part="1" 
+AR Path="/5E80BFEC/647F0EC3" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/647F0EC3" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/647F0EC3" Ref="#PWR?"  Part="1" 
+AR Path="/61DC5D9D/647F0EC3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3200 6850 50  0001 C CNN
+F 1 "GNDA" H 3205 6927 50  0000 C CNN
+F 2 "" H 3200 7100 50  0001 C CNN
+F 3 "" H 3200 7100 50  0001 C CNN
+	1    3200 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 7100 3200 7100
+Wire Wire Line
+	3300 7000 3250 7000
+Wire Wire Line
+	3250 7000 3250 6900
+Wire Wire Line
+	3250 6900 3200 6900
+Wire Wire Line
+	3300 7200 3250 7200
+Wire Wire Line
+	3250 7200 3250 7300
+Wire Wire Line
+	3250 7300 3200 7300
+$Comp
+L power:GNDS #PWR?
+U 1 1 64814533
+P 6700 4150
+AR Path="/5E2D8DA2/64814533" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/64814533" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/64814533" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 3900 50  0001 C CNN
+F 1 "GNDS" H 6705 3977 50  0000 C CNN
+F 2 "" H 6700 4150 50  0001 C CNN
+F 3 "" H 6700 4150 50  0001 C CNN
+	1    6700 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 4150 6700 4150
+Wire Wire Line
+	6700 3950 6750 3950
+Wire Wire Line
+	6750 3950 6750 4050
+Wire Wire Line
+	6750 4050 6800 4050
+Wire Wire Line
+	6700 4350 6750 4350
+Wire Wire Line
+	6750 4350 6750 4250
+Wire Wire Line
+	6750 4250 6800 4250
+$Comp
+L power:GNDS #PWR?
+U 1 1 6481E1D0
+P 6650 4950
+AR Path="/5E2D8DA2/6481E1D0" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/6481E1D0" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/6481E1D0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 4700 50  0001 C CNN
+F 1 "GNDS" H 6655 4777 50  0000 C CNN
+F 2 "" H 6650 4950 50  0001 C CNN
+F 3 "" H 6650 4950 50  0001 C CNN
+	1    6650 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 4950 6650 4950
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 6481E1DB
+P 6950 4950
+AR Path="/5E2D8DA2/6481E1DB" Ref="J?"  Part="1" 
+AR Path="/6009D432/6481E1DB" Ref="J?"  Part="1" 
+F 0 "J?" H 6922 4974 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6922 4883 50  0001 R CNN
+F 2 "" H 6950 4950 50  0001 C CNN
+F 3 "~" H 6950 4950 50  0001 C CNN
+	1    6950 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4750 6700 4750
+Wire Wire Line
+	6700 4750 6700 4850
+Wire Wire Line
+	6700 4850 6750 4850
+Wire Wire Line
+	6650 5150 6700 5150
+Wire Wire Line
+	6700 5150 6700 5050
+Wire Wire Line
+	6700 5050 6750 5050
 $EndSCHEMATC
