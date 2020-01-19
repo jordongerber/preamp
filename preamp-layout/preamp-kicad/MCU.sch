@@ -13,16 +13,14 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 4300 3800 0    50   Input ~ 0
+Text HLabel 4650 1550 0    50   Input ~ 0
 MISO
-Text HLabel 4300 4000 0    50   Output ~ 0
+Text HLabel 6350 2500 2    50   Output ~ 0
 MOSI
-Text HLabel 4300 4200 0    50   Output ~ 0
+Text HLabel 6350 3100 2    50   Output ~ 0
 CLK
-Text HLabel 4300 4400 0    50   Output ~ 0
+Text HLabel 6350 3200 2    50   Output ~ 0
 CS_IO
-Text GLabel 5000 750  1    50   UnSpc ~ 0
-+5V
 $Comp
 L power:GNDD #PWR?
 U 1 1 63AD6B23
@@ -87,50 +85,163 @@ F 3 "~" H 9700 3100 50  0001 C CNN
 	1    9700 3100
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6000 4000 2    50   Input ~ 0
+Text HLabel 4850 3100 0    50   Input ~ 0
 SEL_CLK
-Text HLabel 6000 4150 2    50   Input ~ 0
-SEL_DT
-Text HLabel 6000 4300 2    50   Input ~ 0
+Text HLabel 4850 3300 0    50   Input ~ 0
 SEL_SW
-Text HLabel 6000 4650 2    50   Input ~ 0
+Text HLabel 4850 3400 0    50   Input ~ 0
 VOL_CLK
-Text HLabel 6000 4800 2    50   Input ~ 0
+Text HLabel 4850 3500 0    50   Input ~ 0
 VOL_DT
-Text HLabel 6000 4950 2    50   Input ~ 0
+Text HLabel 4850 3700 0    50   Input ~ 0
 VOL_SW
-Text HLabel 4300 4600 0    50   Output ~ 0
+Text HLabel 4650 1750 0    50   Output ~ 0
 CS_FP
-Text HLabel 4300 4800 0    50   Output ~ 0
+Text HLabel 4650 1850 0    50   Output ~ 0
 CS_VOL_HP
-Text HLabel 6000 3600 2    50   Output ~ 0
+Text HLabel 4650 1650 0    50   Output ~ 0
 LED_DT
-$Comp
-L RF_Module:ESP32-WROOM-32D U?
-U 1 1 5FF4D990
-P 5000 2450
-F 0 "U?" H 5000 4031 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 5000 3940 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5000 950 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4700 2500 50  0001 C CNN
-	1    5000 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 750  5000 1050
+Text HLabel 4650 1950 0    50   Output ~ 0
+CS_VOL_MAIN
+Text GLabel 5100 4050 3    50   UnSpc ~ 0
++5V
 $Comp
 L power:GNDD #PWR?
 U 1 1 5FF5213F
-P 5000 3850
+P 4900 4100
 AR Path="/5E2D8DA2/5FF5213F" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/5FF5213F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5000 3600 50  0001 C CNN
-F 1 "GNDD" H 5004 3695 50  0000 C CNN
-F 2 "" H 5000 3850 50  0001 C CNN
-F 3 "" H 5000 3850 50  0001 C CNN
-	1    5000 3850
+F 0 "#PWR?" H 4900 3850 50  0001 C CNN
+F 1 "GNDD" H 4904 3945 50  0000 C CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
 	1    0    0    -1  
 $EndComp
-Text HLabel 4300 5000 0    50   Output ~ 0
+Wire Wire Line
+	4900 4100 4900 3800
+$Comp
+L preamp:ESP32-DevKitC U?
+U 1 1 64954378
+P 5600 3200
+F 0 "U?" H 5600 4165 50  0000 C CNN
+F 1 "ESP32-DevKitC" H 5600 4074 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "" H 5600 4200 50  0001 C CNN
+	1    5600 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 4850 3200 0    50   Input ~ 0
+SEL_DT
+Wire Wire Line
+	5100 3900 5150 3900
+Wire Wire Line
+	5100 3900 5100 4050
+Wire Wire Line
+	4900 3800 5150 3800
+Wire Wire Line
+	4850 3100 5150 3100
+Wire Wire Line
+	4850 3200 5150 3200
+Wire Wire Line
+	4850 3300 5150 3300
+Wire Wire Line
+	4850 3400 5150 3400
+Wire Wire Line
+	4850 3500 5150 3500
+Wire Wire Line
+	4850 3700 5150 3700
+Wire Wire Line
+	6050 2500 6350 2500
+Wire Wire Line
+	6050 3100 6350 3100
+Wire Wire Line
+	6050 3200 6350 3200
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 6496C10E
+P 8350 3550
+AR Path="/5E607732/6496C10E" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/6496C10E" Ref="J?"  Part="1" 
+F 0 "J?" H 8378 3576 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8378 3485 50  0001 L CNN
+F 2 "" H 8350 3550 50  0001 C CNN
+F 3 "~" H 8350 3550 50  0001 C CNN
+	1    8350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 6496C114
+P 9450 4250
+F 0 "J?" H 9422 4274 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9422 4183 50  0001 R CNN
+F 2 "" H 9450 4250 50  0001 C CNN
+F 3 "~" H 9450 4250 50  0001 C CNN
+	1    9450 4250
+	-1   0    0    -1  
+$EndComp
+Text HLabel 8150 3450 0    50   Input ~ 0
+SEL_CLK
+Text HLabel 8150 3650 0    50   Input ~ 0
+SEL_SW
+Text HLabel 8150 3550 0    50   Input ~ 0
+SEL_DT
+Text HLabel 8150 3900 0    50   Input ~ 0
+VOL_CLK
+Text HLabel 8150 4000 0    50   Input ~ 0
+VOL_DT
+Text HLabel 8150 4100 0    50   Input ~ 0
+VOL_SW
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 6496FD14
+P 8350 4000
+AR Path="/5E607732/6496FD14" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/6496FD14" Ref="J?"  Part="1" 
+F 0 "J?" H 8378 4026 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8378 3935 50  0001 L CNN
+F 2 "" H 8350 4000 50  0001 C CNN
+F 3 "~" H 8350 4000 50  0001 C CNN
+	1    8350 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 8150 4450 0    50   Output ~ 0
+MOSI
+Text HLabel 8150 4350 0    50   Output ~ 0
+CLK
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 64973E6E
+P 8350 4450
+AR Path="/5E607732/64973E6E" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/64973E6E" Ref="J?"  Part="1" 
+F 0 "J?" H 8378 4476 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8378 4385 50  0001 L CNN
+F 2 "" H 8350 4450 50  0001 C CNN
+F 3 "~" H 8350 4450 50  0001 C CNN
+	1    8350 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 8150 4550 0    50   Input ~ 0
+MISO
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 64977856
+P 8350 2700
+F 0 "J?" H 8378 2630 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 8378 2585 50  0001 L CNN
+F 2 "" H 8350 2700 50  0001 C CNN
+F 3 "~" H 8350 2700 50  0001 C CNN
+	1    8350 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 8150 2600 0    50   Output ~ 0
+CS_FP
+Text HLabel 8150 2700 0    50   Output ~ 0
+CS_VOL_HP
+Text HLabel 8150 2800 0    50   Output ~ 0
 CS_VOL_MAIN
+Text HLabel 8150 2500 0    50   Output ~ 0
+CS_IO
 $EndSCHEMATC
