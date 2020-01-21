@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 11
 Title "Preamp"
 Date "2020-01-09"
 Rev "A00"
@@ -317,45 +317,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 1700 5100 1700
 $Sheet
-S 4750 -2700 650  1200
-U 5F2E428C
-F0 "Tone Control SPI" 50
-F1 "tone_control_SPI.sch" 50
-F2 "IN_R" U L 4750 -2500 50 
-F3 "IN_L" U L 4750 -2600 50 
-F4 "OUT_R" U R 5400 -2500 50 
-F5 "OUT_L" U R 5400 -2600 50 
-F6 "CLK" I R 5400 -2100 50 
-F7 "MOSI" I R 5400 -2300 50 
-F8 "MISO" O R 5400 -2200 50 
-F9 "CS_HF" I R 5400 -1900 50 
-F10 "CS_UMF" I R 5400 -1800 50 
-F11 "CS_LMF" I R 5400 -1700 50 
-F12 "CS_LF" I R 5400 -1600 50 
-$EndSheet
-$Sheet
-S 3000 -2350 650  300 
-U 61DC5D9D
-F0 "Tone Control Analog" 50
-F1 "tone_control_analog.sch" 50
-F2 "IN_R" U L 3000 -2150 50 
-F3 "IN_L" U L 3000 -2250 50 
-F4 "OUT_R" U R 3650 -2150 50 
-F5 "OUT_L" U R 3650 -2250 50 
-$EndSheet
-Entry Wire Line
-	5500 -2100 5600 -2000
-Entry Wire Line
-	5500 -2200 5600 -2100
-Entry Wire Line
-	5500 -2300 5600 -2200
-Wire Wire Line
-	5500 -2300 5400 -2300
-Wire Wire Line
-	5400 -2200 5500 -2200
-Wire Wire Line
-	5500 -2100 5400 -2100
-$Sheet
 S 2150 900  1200 2450
 U 5E2D8DA2
 F0 "input selector" 50
@@ -401,14 +362,15 @@ F0 "Volume Control" 50
 F1 "volume_ctrl.sch" 50
 F2 "in_R" U L 4250 1150 50 
 F3 "in_L" U L 4250 1250 50 
-F4 "MOSI" U R 5000 1600 50 
-F5 "CLK" U R 5000 1700 50 
-F6 "CS_VOL_HP" U R 5000 1400 50 
-F7 "CS_VOL_MAIN" U R 5000 1500 50 
-F8 "out_main_L" U L 4250 1850 50 
-F9 "out_main_R" U L 4250 1950 50 
-F10 "out_HP_L" U R 5000 1150 50 
-F11 "out_HP_R" U R 5000 1250 50 
+F4 "out_main_L" U L 4250 1850 50 
+F5 "out_main_R" U L 4250 1950 50 
+F6 "out_HP_L" U R 5000 1150 50 
+F7 "out_HP_R" U R 5000 1250 50 
+F8 "~CS_VOL_HP" I R 5000 1400 50 
+F9 "~CS_VOL_MAIN" I R 5000 1500 50 
+F10 "~LDAC" I R 5000 1800 50 
+F11 "MOSI" I R 5000 1600 50 
+F12 "CLK" I R 5000 1700 50 
 $EndSheet
 Wire Wire Line
 	5000 1150 5850 1150
@@ -486,6 +448,4 @@ Wire Bus Line
 	3600 2850 3600 3300
 Wire Bus Line
 	6050 3300 6050 4050
-Wire Bus Line
-	5600 -2200 5600 -300
 $EndSCHEMATC

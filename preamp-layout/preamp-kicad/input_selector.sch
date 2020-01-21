@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
+Sheet 10 11
 Title "IO Relay Select Board"
 Date "2020-01-09"
 Rev "A00"
@@ -1228,17 +1228,6 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 7250 50
 	3    2050 7150
 	1    0    0    -1  
 $EndComp
-$Comp
-L preamp:G6JU K3
-U 2 1 63E1D910
-P 2050 6550
-F 0 "K3" H 2050 6875 50  0000 C CNN
-F 1 "G6JU" H 2050 6784 50  0000 C CNN
-F 2 "" H 2050 6650 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 6650 50  0001 C CNN
-	2    2050 6550
-	1    0    0    -1  
-$EndComp
 Text Label 2350 7250 0    50   ~ 0
 A_OUT_R
 Text HLabel 3350 6550 0    50   UnSpc ~ 0
@@ -1649,4 +1638,16 @@ NoConn ~ 1500 2600
 NoConn ~ 1500 2200
 NoConn ~ 2900 2600
 NoConn ~ 2900 3500
+$Comp
+L preamp:G6JU K3
+U 2 1 63E1D910
+P 2050 6550
+F 0 "K3" H 2050 6875 50  0000 C CNN
+F 1 "G6JU" H 2050 6784 50  0000 C CNN
+F 2 "" H 2050 6650 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 6650 50  0001 C CNN
+	2    2050 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2800 6300
 $EndSCHEMATC

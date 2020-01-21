@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 6 11
 Title "Front Panel"
 Date "2020-01-09"
 Rev "A00"
@@ -342,4 +342,23 @@ F 3 "" H 10100 5350 50  0001 C CNN
 $EndComp
 NoConn ~ 10500 3950
 NoConn ~ 10500 4050
+$Comp
+L Connector:Conn_01x04_Female J46
+U 1 1 65AE66F9
+P 10150 2800
+F 0 "J46" H 10178 2730 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 10178 2685 50  0001 L CNN
+F 2 "" H 10150 2800 50  0001 C CNN
+F 3 "~" H 10150 2800 50  0001 C CNN
+	1    10150 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 9950 2900 0    50   Output ~ 0
+MISO
+Text HLabel 9950 2700 0    50   Input ~ 0
+CLK
+Text HLabel 9950 2800 0    50   Input ~ 0
+MOSI
+Text HLabel 9950 3000 0    50   Input ~ 0
+CS
 $EndSCHEMATC

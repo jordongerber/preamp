@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 11 11
 Title ""
 Date ""
 Rev ""
@@ -104,14 +104,12 @@ F 3 "~" H 3500 1400 50  0001 C CNN
 	1    3500 1400
 	0    1    1    0   
 $EndComp
-Text HLabel 850  6350 3    50   UnSpc ~ 0
+Text HLabel 850  6350 3    50   Input ~ 0
 ~CS_VOL_HP
-Text HLabel 850  2650 0    50   UnSpc ~ 0
+Text HLabel 850  2650 0    50   Input ~ 0
 MOSI
-Text HLabel 850  2450 0    50   UnSpc ~ 0
+Text HLabel 850  2450 0    50   Input ~ 0
 CLK
-Text HLabel 850  2850 3    50   UnSpc ~ 0
-~CS_VOL_MAIN
 $Comp
 L Analog_DAC:MCP4902 U20
 U 1 1 6017A289
@@ -709,9 +707,9 @@ F 3 "~" H 3500 4900 50  0001 C CNN
 	1    3500 4900
 	0    1    1    0   
 $EndComp
-Text HLabel 850  6150 0    50   UnSpc ~ 0
+Text HLabel 850  6150 0    50   Input ~ 0
 MOSI
-Text HLabel 850  5950 0    50   UnSpc ~ 0
+Text HLabel 850  5950 0    50   Input ~ 0
 CLK
 $Comp
 L Analog_DAC:MCP4902 U21
@@ -1633,8 +1631,6 @@ Text GLabel 9700 5300 1    50   UnSpc ~ 0
 +15V
 Text GLabel 9700 5900 3    50   UnSpc ~ 0
 -15V
-Text GLabel 1500 1700 1    50   UnSpc ~ 0
-+5V
 $Comp
 L power:GND #PWR0109
 U 1 1 64F342E5
@@ -1932,11 +1928,11 @@ F 3 "" H 3100 5450 50  0001 C CNN
 	1    3100 5450
 	1    0    0    -1  
 $EndComp
-Text HLabel 850  6050 0    50   UnSpc ~ 0
+Text HLabel 850  6050 0    50   Input ~ 0
 ~LDAC
 Wire Wire Line
 	850  6050 1000 6050
-Text HLabel 850  2550 0    50   UnSpc ~ 0
+Text HLabel 850  2550 0    50   Input ~ 0
 ~LDAC
 Wire Wire Line
 	850  2550 1000 2550
@@ -1946,8 +1942,6 @@ Wire Wire Line
 	1000 2250 950  2250
 Wire Wire Line
 	950  2250 950  1800
-Wire Wire Line
-	950  1800 1500 1800
 Connection ~ 1500 1800
 Wire Wire Line
 	1500 1800 1500 2050
@@ -1964,4 +1958,14 @@ Wire Wire Line
 Wire Wire Line
 	1500 5300 1500 5550
 Connection ~ 1500 5300
+Wire Wire Line
+	950  1800 1500 1800
+Text GLabel 1500 1700 1    50   UnSpc ~ 0
++5V
+Text HLabel 850  2850 3    50   Input ~ 0
+~CS_VOL_MAIN
+NoConn ~ 9150 3600
+NoConn ~ 9150 1600
+NoConn ~ 5800 1600
+NoConn ~ 5800 3600
 $EndSCHEMATC

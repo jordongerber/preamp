@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 13
+Sheet 4 11
 Title "5V Power Supply"
 Date "2020-01-09"
 Rev "A00"
@@ -175,8 +175,6 @@ F 3 "~" H 10350 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 3900 10350 4350
-Text GLabel 10500 3150 2    50   UnSpc ~ 0
-+5V
 $Comp
 L Device:R R?
 U 1 1 5FCCFD3B
@@ -227,10 +225,6 @@ F 3 "~" H 3100 5700 50  0001 C CNN
 	1    3100 5700
 	-1   0    0    -1  
 $EndComp
-Text GLabel 4400 6050 1    50   UnSpc ~ 0
-+5V
-Text GLabel 2700 5700 0    50   UnSpc ~ 0
-+5V
 Wire Wire Line
 	2900 5800 2700 5800
 Wire Wire Line
@@ -515,6 +509,12 @@ F 3 "" H 4400 6950 50  0001 C CNN
 	1    4400 6950
 	1    0    0    -1  
 $EndComp
+Text GLabel 2700 5700 0    50   UnSpc ~ 0
++5V
+Text GLabel 4400 6050 1    50   UnSpc ~ 0
++5V
+Text GLabel 10500 3150 2    50   UnSpc ~ 0
++5V
 $Comp
 L power:GND #PWR?
 U 1 1 64A33F46
@@ -528,4 +528,27 @@ F 3 "" H 10350 4450 50  0001 C CNN
 	1    10350 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 65AE5699
+P 6850 3150
+F 0 "#FLG0105" H 6850 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 3323 50  0000 C CNN
+F 2 "" H 6850 3150 50  0001 C CNN
+F 3 "~" H 6850 3150 50  0001 C CNN
+	1    6850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 65AE5DC2
+P 8400 3800
+F 0 "#FLG0106" H 8400 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 8400 3973 50  0000 C CNN
+F 2 "" H 8400 3800 50  0001 C CNN
+F 3 "~" H 8400 3800 50  0001 C CNN
+	1    8400 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 3800
 $EndSCHEMATC
