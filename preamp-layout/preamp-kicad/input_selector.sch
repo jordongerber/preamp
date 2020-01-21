@@ -13,19 +13,6 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-$Comp
-L power:GNDS #PWR0113
-U 1 1 5E8E2AD4
-P 6250 5500
-AR Path="/5E2D8DA2/5E8E2AD4" Ref="#PWR0113"  Part="1" 
-AR Path="/5E607732/5E8E2AD4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0113" H 6250 5250 50  0001 C CNN
-F 1 "GNDS" H 6255 5327 50  0000 C CNN
-F 2 "" H 6250 5500 50  0001 C CNN
-F 3 "" H 6250 5500 50  0001 C CNN
-	1    6250 5500
-	0    1    1    0   
-$EndComp
 Text HLabel 6250 5750 0    50   UnSpc ~ 0
 A_IN_R
 Text HLabel 6250 5300 0    50   UnSpc ~ 0
@@ -35,8 +22,8 @@ L Connector:Conn_01x03_Female J?
 U 1 1 5E8E2ACA
 P 6600 4700
 AR Path="/5E607732/5E8E2ACA" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/5E8E2ACA" Ref="J4"  Part="1" 
-F 0 "J4" H 6628 4726 50  0000 L CNN
+AR Path="/5E2D8DA2/5E8E2ACA" Ref="J63"  Part="1" 
+F 0 "J63" H 6628 4726 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 6628 4635 50  0001 L CNN
 F 2 "" H 6600 4700 50  0001 C CNN
 F 3 "~" H 6600 4700 50  0001 C CNN
@@ -48,8 +35,8 @@ L Interface_Expansion:MCP23S17_SP U?
 U 1 1 5E01AA66
 P 2200 2700
 AR Path="/5E01AA66" Ref="U?"  Part="1" 
-AR Path="/5E2D8DA2/5E01AA66" Ref="U?"  Part="1" 
-F 0 "U?" H 2200 3981 50  0000 C CNN
+AR Path="/5E2D8DA2/5E01AA66" Ref="U17"  Part="1" 
+F 0 "U17" H 2200 3981 50  0000 C CNN
 F 1 "MCP23S17_SP" H 2200 3890 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W7.62mm" H 2400 1700 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 50  0001 L CNN
@@ -68,17 +55,6 @@ Wire Wire Line
 	2200 1250 2200 1600
 Wire Wire Line
 	5300 1400 5550 1400
-$Comp
-L power:GNDD #PWR?
-U 1 1 5F60227A
-P 4900 4000
-F 0 "#PWR?" H 4900 3750 50  0001 C CNN
-F 1 "GNDD" H 4904 3845 50  0000 C CNN
-F 2 "" H 4900 4000 50  0001 C CNN
-F 3 "" H 4900 4000 50  0001 C CNN
-	1    4900 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 3300 5550 3300
 Wire Wire Line
@@ -108,10 +84,10 @@ OUT_1_S+
 Text Label 5550 3600 0    50   ~ 0
 OUT_1_R+
 $Comp
-L Transistor_Array:ULN2003 U?
+L Transistor_Array:ULN2003 U19
 U 1 1 5E0598D8
 P 4900 3400
-F 0 "U?" H 4900 4067 50  0000 C CNN
+F 0 "U19" H 4900 4067 50  0000 C CNN
 F 1 "ULN2003" H 4900 3976 50  0000 C CNN
 F 2 "" H 4950 2850 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 3200 50  0001 C CNN
@@ -139,23 +115,12 @@ Wire Wire Line
 Text GLabel 7000 1250 1    50   UnSpc ~ 0
 +5V
 $Comp
-L power:GNDD #PWR?
-U 1 1 5FDB8970
-P 7000 2150
-F 0 "#PWR?" H 7000 1900 50  0001 C CNN
-F 1 "GNDD" H 7004 1995 50  0000 C CNN
-F 2 "" H 7000 2150 50  0001 C CNN
-F 3 "" H 7000 2150 50  0001 C CNN
-	1    7000 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
+L Device:R R87
 U 1 1 5FDEBED2
 P 7000 1500
-AR Path="/5E2D8DA2/5FDEBED2" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/5FDEBED2" Ref="R87"  Part="1" 
 AR Path="/5FDEBED2" Ref="R?"  Part="1" 
-F 0 "R?" V 6793 1500 50  0000 C CNN
+F 0 "R87" V 6793 1500 50  0000 C CNN
 F 1 "330R" V 6884 1500 50  0000 C CNN
 F 2 "" V 6930 1500 50  0001 C CNN
 F 3 "~" H 7000 1500 50  0001 C CNN
@@ -163,10 +128,10 @@ F 3 "~" H 7000 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D20
 U 1 1 5FE4B18E
 P 7000 1900
-F 0 "D?" V 7039 1783 50  0000 R CNN
+F 0 "D20" V 7039 1783 50  0000 R CNN
 F 1 "LED" V 6948 1783 50  0000 R CNN
 F 2 "" H 7000 1900 50  0001 C CNN
 F 3 "~" H 7000 1900 50  0001 C CNN
@@ -179,17 +144,6 @@ Wire Wire Line
 	7000 1650 7000 1750
 Wire Wire Line
 	7000 2050 7000 2150
-$Comp
-L power:GNDD #PWR?
-U 1 1 6074E145
-P 6950 3500
-F 0 "#PWR?" H 6950 3250 50  0001 C CNN
-F 1 "GNDD" H 6954 3345 50  0000 C CNN
-F 2 "" H 6950 3500 50  0001 C CNN
-F 3 "" H 6950 3500 50  0001 C CNN
-	1    6950 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 3400 6950 3500
 Wire Wire Line
@@ -248,36 +202,14 @@ IN_2_R+
 Text Label 5550 1500 0    50   ~ 0
 IN_1_R+
 $Comp
-L Transistor_Array:ULN2003 U?
+L Transistor_Array:ULN2003 U18
 U 1 1 5E036B83
 P 4900 1600
-F 0 "U?" H 4900 2267 50  0000 C CNN
+F 0 "U18" H 4900 2267 50  0000 C CNN
 F 1 "ULN2003" H 4900 2176 50  0000 C CNN
 F 2 "" H 4950 1050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 1400 50  0001 C CNN
 	1    4900 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5F6259F7
-P 4900 2200
-F 0 "#PWR?" H 4900 1950 50  0001 C CNN
-F 1 "GNDD" H 4904 2045 50  0000 C CNN
-F 2 "" H 4900 2200 50  0001 C CNN
-F 3 "" H 4900 2200 50  0001 C CNN
-	1    4900 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5F5E036F
-P 2200 3900
-F 0 "#PWR?" H 2200 3650 50  0001 C CNN
-F 1 "GNDD" H 2204 3745 50  0000 C CNN
-F 2 "" H 2200 3900 50  0001 C CNN
-F 3 "" H 2200 3900 50  0001 C CNN
-	1    2200 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -324,10 +256,10 @@ Wire Wire Line
 Wire Wire Line
 	3550 3800 3550 3300
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J62
 U 1 1 637A81F9
 P 6550 5500
-F 0 "J?" H 6522 5524 50  0000 R CNN
+F 0 "J62" H 6522 5524 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 6522 5433 50  0001 R CNN
 F 2 "" H 6550 5500 50  0001 C CNN
 F 3 "~" H 6550 5500 50  0001 C CNN
@@ -338,36 +270,12 @@ Text HLabel 6300 4900 0    50   UnSpc ~ 0
 A_OUT_R
 Text HLabel 6300 4500 0    50   UnSpc ~ 0
 A_OUT_L
-$Comp
-L power:GNDS #PWR?
-U 1 1 637A8205
-P 6300 4700
-AR Path="/5E2D8DA2/637A8205" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/637A8205" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 4450 50  0001 C CNN
-F 1 "GNDS" H 6305 4527 50  0000 C CNN
-F 2 "" H 6300 4700 50  0001 C CNN
-F 3 "" H 6300 4700 50  0001 C CNN
-	1    6300 4700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6300 4700 6400 4700
 Text Notes 5750 4400 0    50   ~ 0
 Sends to amp / tone / etc
 Text Notes 5800 5200 0    50   ~ 0
 Receives from gain stage
-$Comp
-L power:GNDD #PWR?
-U 1 1 638B3B17
-P 6950 2950
-F 0 "#PWR?" H 6950 2700 50  0001 C CNN
-F 1 "GNDD" H 6954 2795 50  0000 C CNN
-F 2 "" H 6950 2950 50  0001 C CNN
-F 3 "" H 6950 2950 50  0001 C CNN
-	1    6950 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 2850 6950 2950
 Wire Wire Line
@@ -375,10 +283,10 @@ Wire Wire Line
 Text GLabel 6850 2750 0    50   UnSpc ~ 0
 +5V
 $Comp
-L Connector:Conn_01x02_Female J?
+L Connector:Conn_01x02_Female J64
 U 1 1 638B3B3E
 P 7150 2750
-F 0 "J?" H 7178 2726 50  0000 L CNN
+F 0 "J64" H 7178 2726 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 7178 2635 50  0001 L CNN
 F 2 "" H 7150 2750 50  0001 C CNN
 F 3 "~" H 7150 2750 50  0001 C CNN
@@ -394,10 +302,10 @@ Wire Wire Line
 Wire Wire Line
 	5300 3800 5550 3800
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J65
 U 1 1 60B85B38
 P 7150 3300
-F 0 "J?" H 7122 3228 50  0000 R CNN
+F 0 "J65" H 7122 3228 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7122 3183 50  0001 R CNN
 F 2 "" H 7150 3300 50  0001 C CNN
 F 3 "~" H 7150 3300 50  0001 C CNN
@@ -453,10 +361,10 @@ Wire Wire Line
 Wire Wire Line
 	3800 3800 4500 3800
 $Comp
-L Connector:Conn_01x07_Female J?
+L Connector:Conn_01x07_Female J59
 U 1 1 60FF250B
 P 3300 1150
-F 0 "J?" V 3373 1130 50  0000 C CNN
+F 0 "J59" V 3373 1130 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 3374 1130 50  0001 C CNN
 F 2 "" H 3300 1150 50  0001 C CNN
 F 3 "~" H 3300 1150 50  0001 C CNN
@@ -511,10 +419,10 @@ Connection ~ 3600 2500
 Wire Wire Line
 	3600 2500 4400 2500
 $Comp
-L Connector:Conn_01x07_Female J?
+L Connector:Conn_01x07_Female J60
 U 1 1 610AC3C4
 P 3350 4000
-F 0 "J?" V 3423 3980 50  0000 C CNN
+F 0 "J60" V 3423 3980 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 3424 3980 50  0001 C CNN
 F 2 "" H 3350 4000 50  0001 C CNN
 F 3 "~" H 3350 4000 50  0001 C CNN
@@ -549,8 +457,8 @@ L Connector:Conn_01x03_Female J?
 U 1 1 6152C395
 P 850 2000
 AR Path="/5E607732/6152C395" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/6152C395" Ref="J?"  Part="1" 
-F 0 "J?" H 878 2026 50  0000 L CNN
+AR Path="/5E2D8DA2/6152C395" Ref="J54"  Part="1" 
+F 0 "J54" H 878 2026 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 878 1935 50  0001 L CNN
 F 2 "" H 850 2000 50  0001 C CNN
 F 3 "~" H 850 2000 50  0001 C CNN
@@ -562,10 +470,10 @@ A_IN_1_L
 Text HLabel 1650 5950 0    50   UnSpc ~ 0
 A_IN_1_R
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J55
 U 1 1 61FAB9F4
 P 1250 5650
-F 0 "J?" H 1222 5674 50  0000 R CNN
+F 0 "J55" H 1222 5674 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 1222 5583 50  0001 R CNN
 F 2 "" H 1250 5650 50  0001 C CNN
 F 3 "~" H 1250 5650 50  0001 C CNN
@@ -577,10 +485,10 @@ A_OUT_L
 Text Notes 10150 1818 2    118  ~ 24
 IN 1
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K1
 U 1 1 632C72C1
 P 10350 1750
-F 0 "K?" H 10350 2065 50  0000 C CNN
+F 0 "K1" H 10350 2065 50  0000 C CNN
 F 1 "G6JU" H 10350 1974 50  0000 C CNN
 F 2 "" H 10350 1850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 1850 50  0001 C CNN
@@ -588,12 +496,12 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 1850 5
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R92
 U 1 1 632C72CB
 P 10600 1350
-AR Path="/5E2D8DA2/632C72CB" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/632C72CB" Ref="R92"  Part="1" 
 AR Path="/632C72CB" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 1350 50  0000 C CNN
+F 0 "R92" V 10393 1350 50  0000 C CNN
 F 1 "49R" V 10484 1350 50  0000 C CNN
 F 2 "" V 10530 1350 50  0001 C CNN
 F 3 "~" H 10600 1350 50  0001 C CNN
@@ -601,12 +509,12 @@ F 3 "~" H 10600 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R93
 U 1 1 632C72D5
 P 10600 2150
-AR Path="/5E2D8DA2/632C72D5" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/632C72D5" Ref="R93"  Part="1" 
 AR Path="/632C72D5" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 2150 50  0000 C CNN
+F 0 "R93" V 10393 2150 50  0000 C CNN
 F 1 "49R" V 10484 2150 50  0000 C CNN
 F 2 "" V 10530 2150 50  0001 C CNN
 F 3 "~" H 10600 2150 50  0001 C CNN
@@ -642,23 +550,23 @@ IN_1_R+
 Text Notes 10150 2818 2    118  ~ 24
 IN 2
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K2
 U 1 1 6353124F
 P 10350 2750
-F 0 "K?" H 10350 3065 50  0000 C CNN
-F 1 "G6JU" H 10350 2974 50  0000 C CNN
+F 0 "K2" V 10304 2928 50  0000 L CNN
+F 1 "G6JU" V 10395 2928 50  0000 L CNN
 F 2 "" H 10350 2850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 2850 50  0001 C CNN
 	1    10350 2750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R94
 U 1 1 63531259
 P 10600 2350
-AR Path="/5E2D8DA2/63531259" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/63531259" Ref="R94"  Part="1" 
 AR Path="/63531259" Ref="R?"  Part="1" 
-F 0 "R?" V 10715 2350 50  0000 C CNN
+F 0 "R94" V 10715 2350 50  0000 C CNN
 F 1 "49R" V 10806 2350 50  0000 C CNN
 F 2 "" V 10530 2350 50  0001 C CNN
 F 3 "~" H 10600 2350 50  0001 C CNN
@@ -666,12 +574,12 @@ F 3 "~" H 10600 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R95
 U 1 1 63531263
 P 10600 3150
-AR Path="/5E2D8DA2/63531263" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/63531263" Ref="R95"  Part="1" 
 AR Path="/63531263" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 3150 50  0000 C CNN
+F 0 "R95" V 10393 3150 50  0000 C CNN
 F 1 "49R" V 10484 3150 50  0000 C CNN
 F 2 "" V 10530 3150 50  0001 C CNN
 F 3 "~" H 10600 3150 50  0001 C CNN
@@ -705,23 +613,23 @@ IN_2_R+
 Text Notes 10150 3818 2    118  ~ 24
 IN 3
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K3
 U 1 1 6365EAC0
 P 10350 3750
-F 0 "K?" H 10350 4065 50  0000 C CNN
-F 1 "G6JU" H 10350 3974 50  0000 C CNN
+F 0 "K3" V 10304 3928 50  0000 L CNN
+F 1 "G6JU" V 10395 3928 50  0000 L CNN
 F 2 "" H 10350 3850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 3850 50  0001 C CNN
 	1    10350 3750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R96
 U 1 1 6365EACA
 P 10600 3350
-AR Path="/5E2D8DA2/6365EACA" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/6365EACA" Ref="R96"  Part="1" 
 AR Path="/6365EACA" Ref="R?"  Part="1" 
-F 0 "R?" V 10715 3350 50  0000 C CNN
+F 0 "R96" V 10715 3350 50  0000 C CNN
 F 1 "49R" V 10806 3350 50  0000 C CNN
 F 2 "" V 10530 3350 50  0001 C CNN
 F 3 "~" H 10600 3350 50  0001 C CNN
@@ -729,12 +637,12 @@ F 3 "~" H 10600 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R97
 U 1 1 6365EAD4
 P 10600 4150
-AR Path="/5E2D8DA2/6365EAD4" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/6365EAD4" Ref="R97"  Part="1" 
 AR Path="/6365EAD4" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 4150 50  0000 C CNN
+F 0 "R97" V 10393 4150 50  0000 C CNN
 F 1 "49R" V 10484 4150 50  0000 C CNN
 F 2 "" V 10530 4150 50  0001 C CNN
 F 3 "~" H 10600 4150 50  0001 C CNN
@@ -768,23 +676,23 @@ IN_3_R+
 Text Notes 10150 4818 2    118  ~ 24
 IN 4
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K4
 U 1 1 636947FD
 P 10350 4750
-F 0 "K?" H 10350 5065 50  0000 C CNN
-F 1 "G6JU" H 10350 4974 50  0000 C CNN
+F 0 "K4" V 10304 4928 50  0000 L CNN
+F 1 "G6JU" V 10395 4928 50  0000 L CNN
 F 2 "" H 10350 4850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 4850 50  0001 C CNN
 	1    10350 4750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R98
 U 1 1 63694807
 P 10600 4350
-AR Path="/5E2D8DA2/63694807" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/63694807" Ref="R98"  Part="1" 
 AR Path="/63694807" Ref="R?"  Part="1" 
-F 0 "R?" V 10715 4350 50  0000 C CNN
+F 0 "R98" V 10715 4350 50  0000 C CNN
 F 1 "49R" V 10806 4350 50  0000 C CNN
 F 2 "" V 10530 4350 50  0001 C CNN
 F 3 "~" H 10600 4350 50  0001 C CNN
@@ -792,12 +700,12 @@ F 3 "~" H 10600 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R99
 U 1 1 63694811
 P 10600 5150
-AR Path="/5E2D8DA2/63694811" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/63694811" Ref="R99"  Part="1" 
 AR Path="/63694811" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 5150 50  0000 C CNN
+F 0 "R99" V 10393 5150 50  0000 C CNN
 F 1 "49R" V 10484 5150 50  0000 C CNN
 F 2 "" V 10530 5150 50  0001 C CNN
 F 3 "~" H 10600 5150 50  0001 C CNN
@@ -831,10 +739,10 @@ IN_4_R+
 Text Notes 10150 5818 2    118  ~ 24
 IN 5
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K5
 U 1 1 63694829
 P 10350 5750
-F 0 "K?" H 10350 6065 50  0000 C CNN
+F 0 "K5" H 10350 6065 50  0000 C CNN
 F 1 "G6JU" H 10350 5974 50  0000 C CNN
 F 2 "" H 10350 5850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 5850 50  0001 C CNN
@@ -842,12 +750,12 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 5850 5
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R100
 U 1 1 63694833
 P 10600 5350
-AR Path="/5E2D8DA2/63694833" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/63694833" Ref="R100"  Part="1" 
 AR Path="/63694833" Ref="R?"  Part="1" 
-F 0 "R?" V 10715 5350 50  0000 C CNN
+F 0 "R100" V 10715 5350 50  0000 C CNN
 F 1 "49R" V 10806 5350 50  0000 C CNN
 F 2 "" V 10530 5350 50  0001 C CNN
 F 3 "~" H 10600 5350 50  0001 C CNN
@@ -855,12 +763,12 @@ F 3 "~" H 10600 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R101
 U 1 1 6369483D
 P 10600 6150
-AR Path="/5E2D8DA2/6369483D" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/6369483D" Ref="R101"  Part="1" 
 AR Path="/6369483D" Ref="R?"  Part="1" 
-F 0 "R?" V 10393 6150 50  0000 C CNN
+F 0 "R101" V 10393 6150 50  0000 C CNN
 F 1 "49R" V 10484 6150 50  0000 C CNN
 F 2 "" V 10530 6150 50  0001 C CNN
 F 3 "~" H 10600 6150 50  0001 C CNN
@@ -913,10 +821,10 @@ Connection ~ 10850 1350
 Text Notes 8450 1768 2    118  ~ 24
 OUT 1
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K6
 U 1 1 638E8EFC
 P 8650 1700
-F 0 "K?" H 8650 2015 50  0000 C CNN
+F 0 "K6" H 8650 2015 50  0000 C CNN
 F 1 "G6JU" H 8650 1924 50  0000 C CNN
 F 2 "" H 8650 1800 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 1800 50  0001 C CNN
@@ -924,12 +832,12 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 1800 50
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R88
 U 1 1 638E8F06
 P 8900 1300
-AR Path="/5E2D8DA2/638E8F06" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/638E8F06" Ref="R88"  Part="1" 
 AR Path="/638E8F06" Ref="R?"  Part="1" 
-F 0 "R?" V 9015 1300 50  0000 C CNN
+F 0 "R88" V 9015 1300 50  0000 C CNN
 F 1 "49R" V 9106 1300 50  0000 C CNN
 F 2 "" V 8830 1300 50  0001 C CNN
 F 3 "~" H 8900 1300 50  0001 C CNN
@@ -937,12 +845,12 @@ F 3 "~" H 8900 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R89
 U 1 1 638E8F10
 P 8900 2100
-AR Path="/5E2D8DA2/638E8F10" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/638E8F10" Ref="R89"  Part="1" 
 AR Path="/638E8F10" Ref="R?"  Part="1" 
-F 0 "R?" V 8693 2100 50  0000 C CNN
+F 0 "R89" V 8693 2100 50  0000 C CNN
 F 1 "49R" V 8784 2100 50  0000 C CNN
 F 2 "" V 8830 2100 50  0001 C CNN
 F 3 "~" H 8900 2100 50  0001 C CNN
@@ -976,10 +884,10 @@ OUT_1_R+
 Text Notes 8450 2768 2    118  ~ 24
 OUT 2
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K7
 U 1 1 638E8F28
 P 8650 2700
-F 0 "K?" H 8650 3015 50  0000 C CNN
+F 0 "K7" H 8650 3015 50  0000 C CNN
 F 1 "G6JU" H 8650 2924 50  0000 C CNN
 F 2 "" H 8650 2800 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 2800 50  0001 C CNN
@@ -987,12 +895,12 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 2800 50
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R90
 U 1 1 638E8F32
 P 8900 2300
-AR Path="/5E2D8DA2/638E8F32" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/638E8F32" Ref="R90"  Part="1" 
 AR Path="/638E8F32" Ref="R?"  Part="1" 
-F 0 "R?" V 9015 2300 50  0000 C CNN
+F 0 "R90" V 9015 2300 50  0000 C CNN
 F 1 "49R" V 9106 2300 50  0000 C CNN
 F 2 "" V 8830 2300 50  0001 C CNN
 F 3 "~" H 8900 2300 50  0001 C CNN
@@ -1000,12 +908,12 @@ F 3 "~" H 8900 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R91
 U 1 1 638E8F3C
 P 8900 3100
-AR Path="/5E2D8DA2/638E8F3C" Ref="R?"  Part="1" 
+AR Path="/5E2D8DA2/638E8F3C" Ref="R91"  Part="1" 
 AR Path="/638E8F3C" Ref="R?"  Part="1" 
-F 0 "R?" V 8693 3100 50  0000 C CNN
+F 0 "R91" V 8693 3100 50  0000 C CNN
 F 1 "49R" V 8784 3100 50  0000 C CNN
 F 2 "" V 8830 3100 50  0001 C CNN
 F 3 "~" H 8900 3100 50  0001 C CNN
@@ -1062,38 +970,12 @@ A_IN_R
 Text Label 8950 5350 0    50   ~ 0
 A_IN_L
 $Comp
-L power:GNDS #PWR?
-U 1 1 63BC62A7
-P 8850 5750
-AR Path="/5E2D8DA2/63BC62A7" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63BC62A7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8850 5500 50  0001 C CNN
-F 1 "GNDS" H 8855 5577 50  0000 C CNN
-F 2 "" H 8850 5750 50  0001 C CNN
-F 3 "" H 8850 5750 50  0001 C CNN
-	1    8850 5750
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GNDS #PWR?
-U 1 1 63BC629D
-P 8850 5150
-AR Path="/5E2D8DA2/63BC629D" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63BC629D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8850 4900 50  0001 C CNN
-F 1 "GNDS" H 8855 4977 50  0000 C CNN
-F 2 "" H 8850 5150 50  0001 C CNN
-F 3 "" H 8850 5150 50  0001 C CNN
-	1    8850 5150
-	0    -1   1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 63BC6293
 P 7750 5550
 AR Path="/5E607732/63BC6293" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/63BC6293" Ref="J?"  Part="1" 
-F 0 "J?" H 7778 5576 50  0000 L CNN
+AR Path="/5E2D8DA2/63BC6293" Ref="J67"  Part="1" 
+F 0 "J67" H 7778 5576 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 7778 5485 50  0001 L CNN
 F 2 "" H 7750 5550 50  0001 C CNN
 F 3 "~" H 7750 5550 50  0001 C CNN
@@ -1111,23 +993,10 @@ Wire Wire Line
 Wire Wire Line
 	8250 5450 8250 5250
 $Comp
-L power:GNDS #PWR?
-U 1 1 63BC6284
-P 8200 5550
-AR Path="/5E2D8DA2/63BC6284" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63BC6284" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 5300 50  0001 C CNN
-F 1 "GNDS" H 8205 5377 50  0000 C CNN
-F 2 "" H 8200 5550 50  0001 C CNN
-F 3 "" H 8200 5550 50  0001 C CNN
-	1    8200 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K7
 U 3 1 63BC627A
 P 8550 5850
-F 0 "K?" H 8550 6175 50  0000 C CNN
+F 0 "K7" H 8550 6175 50  0000 C CNN
 F 1 "G6JU" H 8550 6084 50  0000 C CNN
 F 2 "" H 8550 5950 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5950 50  0001 C CNN
@@ -1135,10 +1004,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5950 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K7
 U 2 1 63BC6270
 P 8550 5250
-F 0 "K?" H 8550 5575 50  0000 C CNN
+F 0 "K7" H 8550 5575 50  0000 C CNN
 F 1 "G6JU" H 8550 5484 50  0000 C CNN
 F 2 "" H 8550 5350 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5350 50  0001 C CNN
@@ -1170,38 +1039,12 @@ A_IN_R
 Text Label 8950 4150 0    50   ~ 0
 A_IN_L
 $Comp
-L power:GNDS #PWR?
-U 1 1 6221AE29
-P 8850 4550
-AR Path="/5E2D8DA2/6221AE29" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/6221AE29" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8850 4300 50  0001 C CNN
-F 1 "GNDS" H 8855 4377 50  0000 C CNN
-F 2 "" H 8850 4550 50  0001 C CNN
-F 3 "" H 8850 4550 50  0001 C CNN
-	1    8850 4550
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GNDS #PWR?
-U 1 1 621E2100
-P 8850 3950
-AR Path="/5E2D8DA2/621E2100" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/621E2100" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8850 3700 50  0001 C CNN
-F 1 "GNDS" H 8855 3777 50  0000 C CNN
-F 2 "" H 8850 3950 50  0001 C CNN
-F 3 "" H 8850 3950 50  0001 C CNN
-	1    8850 3950
-	0    -1   1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 620969B0
 P 7750 4350
 AR Path="/5E607732/620969B0" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/620969B0" Ref="J?"  Part="1" 
-F 0 "J?" H 7778 4376 50  0000 L CNN
+AR Path="/5E2D8DA2/620969B0" Ref="J66"  Part="1" 
+F 0 "J66" H 7778 4376 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 7778 4285 50  0001 L CNN
 F 2 "" H 7750 4350 50  0001 C CNN
 F 3 "~" H 7750 4350 50  0001 C CNN
@@ -1219,23 +1062,10 @@ Wire Wire Line
 Wire Wire Line
 	8250 4250 8250 4050
 $Comp
-L power:GNDS #PWR?
-U 1 1 6205D530
-P 8200 4350
-AR Path="/5E2D8DA2/6205D530" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/6205D530" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 4100 50  0001 C CNN
-F 1 "GNDS" H 8205 4177 50  0000 C CNN
-F 2 "" H 8200 4350 50  0001 C CNN
-F 3 "" H 8200 4350 50  0001 C CNN
-	1    8200 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K6
 U 3 1 6205D525
 P 8550 4650
-F 0 "K?" H 8550 4975 50  0000 C CNN
+F 0 "K6" H 8550 4975 50  0000 C CNN
 F 1 "G6JU" H 8550 4884 50  0000 C CNN
 F 2 "" H 8550 4750 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4750 50  0001 C CNN
@@ -1243,10 +1073,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4750 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K6
 U 2 1 6205D51B
 P 8550 4050
-F 0 "K?" H 8550 4375 50  0000 C CNN
+F 0 "K6" H 8550 4375 50  0000 C CNN
 F 1 "G6JU" H 8550 4284 50  0000 C CNN
 F 2 "" H 8550 4150 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4150 50  0001 C CNN
@@ -1272,23 +1102,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 5550 1750 5350
 $Comp
-L power:GNDS #PWR?
-U 1 1 63C5D225
-P 1700 5650
-AR Path="/5E2D8DA2/63C5D225" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63C5D225" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1700 5400 50  0001 C CNN
-F 1 "GNDS" H 1705 5477 50  0000 C CNN
-F 2 "" H 1700 5650 50  0001 C CNN
-F 3 "" H 1700 5650 50  0001 C CNN
-	1    1700 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K1
 U 3 1 63C5D22F
 P 2050 5950
-F 0 "K?" H 2050 6275 50  0000 C CNN
+F 0 "K1" H 2050 6275 50  0000 C CNN
 F 1 "G6JU" H 2050 6184 50  0000 C CNN
 F 2 "" H 2050 6050 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 6050 50  0001 C CNN
@@ -1296,10 +1113,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 6050 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K1
 U 2 1 63C5D239
 P 2050 5350
-F 0 "K?" H 2050 5675 50  0000 C CNN
+F 0 "K1" H 2050 5675 50  0000 C CNN
 F 1 "G6JU" H 2050 5584 50  0000 C CNN
 F 2 "" H 2050 5450 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 5450 50  0001 C CNN
@@ -1312,8 +1129,6 @@ Text HLabel 3350 5350 0    50   UnSpc ~ 0
 A_IN_2_L
 Text HLabel 3350 5950 0    50   UnSpc ~ 0
 A_IN_2_R
-Text Label 4050 5450 0    50   ~ 0
-A_OUT_L
 Connection ~ 3450 5950
 Wire Wire Line
 	3350 5950 3450 5950
@@ -1333,23 +1148,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 5550 3450 5350
 $Comp
-L power:GNDS #PWR?
-U 1 1 63D4778B
-P 3400 5650
-AR Path="/5E2D8DA2/63D4778B" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63D4778B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3400 5400 50  0001 C CNN
-F 1 "GNDS" H 3405 5477 50  0000 C CNN
-F 2 "" H 3400 5650 50  0001 C CNN
-F 3 "" H 3400 5650 50  0001 C CNN
-	1    3400 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K2
 U 3 1 63D47795
 P 3750 5950
-F 0 "K?" H 3750 6275 50  0000 C CNN
+F 0 "K2" H 3750 6275 50  0000 C CNN
 F 1 "G6JU" H 3750 6184 50  0000 C CNN
 F 2 "" H 3750 6050 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 6050 50  0001 C CNN
@@ -1357,10 +1159,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 6050 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K2
 U 2 1 63D4779F
 P 3750 5350
-F 0 "K?" H 3750 5675 50  0000 C CNN
+F 0 "K2" H 3750 5675 50  0000 C CNN
 F 1 "G6JU" H 3750 5584 50  0000 C CNN
 F 2 "" H 3750 5450 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5450 50  0001 C CNN
@@ -1370,10 +1172,10 @@ $EndComp
 Text Label 4050 6050 0    50   ~ 0
 A_OUT_R
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J57
 U 1 1 63D9CD4B
 P 2950 5650
-F 0 "J?" H 2922 5674 50  0000 R CNN
+F 0 "J57" H 2922 5674 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 2922 5583 50  0001 R CNN
 F 2 "" H 2950 5650 50  0001 C CNN
 F 3 "~" H 2950 5650 50  0001 C CNN
@@ -1385,10 +1187,10 @@ A_IN_3_L
 Text HLabel 1650 7150 0    50   UnSpc ~ 0
 A_IN_3_R
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J56
 U 1 1 63E1D8E7
 P 1250 6850
-F 0 "J?" H 1222 6874 50  0000 R CNN
+F 0 "J56" H 1222 6874 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 1222 6783 50  0001 R CNN
 F 2 "" H 1250 6850 50  0001 C CNN
 F 3 "~" H 1250 6850 50  0001 C CNN
@@ -1416,23 +1218,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 6750 1750 6550
 $Comp
-L power:GNDS #PWR?
-U 1 1 63E1D8FC
-P 1700 6850
-AR Path="/5E2D8DA2/63E1D8FC" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63E1D8FC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1700 6600 50  0001 C CNN
-F 1 "GNDS" H 1705 6677 50  0000 C CNN
-F 2 "" H 1700 6850 50  0001 C CNN
-F 3 "" H 1700 6850 50  0001 C CNN
-	1    1700 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K3
 U 3 1 63E1D906
 P 2050 7150
-F 0 "K?" H 2050 7475 50  0000 C CNN
+F 0 "K3" H 2050 7475 50  0000 C CNN
 F 1 "G6JU" H 2050 7384 50  0000 C CNN
 F 2 "" H 2050 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 7250 50  0001 C CNN
@@ -1440,10 +1229,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 7250 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K3
 U 2 1 63E1D910
 P 2050 6550
-F 0 "K?" H 2050 6875 50  0000 C CNN
+F 0 "K3" H 2050 6875 50  0000 C CNN
 F 1 "G6JU" H 2050 6784 50  0000 C CNN
 F 2 "" H 2050 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 2050 6650 50  0001 C CNN
@@ -1477,23 +1266,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 6750 3450 6550
 $Comp
-L power:GNDS #PWR?
-U 1 1 63E1D928
-P 3400 6850
-AR Path="/5E2D8DA2/63E1D928" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63E1D928" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3400 6600 50  0001 C CNN
-F 1 "GNDS" H 3405 6677 50  0000 C CNN
-F 2 "" H 3400 6850 50  0001 C CNN
-F 3 "" H 3400 6850 50  0001 C CNN
-	1    3400 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K4
 U 3 1 63E1D932
 P 3750 7150
-F 0 "K?" H 3750 7475 50  0000 C CNN
+F 0 "K4" H 3750 7475 50  0000 C CNN
 F 1 "G6JU" H 3750 7384 50  0000 C CNN
 F 2 "" H 3750 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 7250 50  0001 C CNN
@@ -1501,10 +1277,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 7250 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K4
 U 2 1 63E1D93C
 P 3750 6550
-F 0 "K?" H 3750 6875 50  0000 C CNN
+F 0 "K4" H 3750 6875 50  0000 C CNN
 F 1 "G6JU" H 3750 6784 50  0000 C CNN
 F 2 "" H 3750 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 6650 50  0001 C CNN
@@ -1514,10 +1290,10 @@ $EndComp
 Text Label 4050 7250 0    50   ~ 0
 A_OUT_R
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J58
 U 1 1 63E1D947
 P 2950 6850
-F 0 "J?" H 2922 6874 50  0000 R CNN
+F 0 "J58" H 2922 6874 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 2922 6783 50  0001 R CNN
 F 2 "" H 2950 6850 50  0001 C CNN
 F 3 "~" H 2950 6850 50  0001 C CNN
@@ -1549,23 +1325,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 6750 5150 6550
 $Comp
-L power:GNDS #PWR?
-U 1 1 63E64123
-P 5100 6850
-AR Path="/5E2D8DA2/63E64123" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/63E64123" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5100 6600 50  0001 C CNN
-F 1 "GNDS" H 5105 6677 50  0000 C CNN
-F 2 "" H 5100 6850 50  0001 C CNN
-F 3 "" H 5100 6850 50  0001 C CNN
-	1    5100 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L preamp:G6JU K?
+L preamp:G6JU K5
 U 3 1 63E6412D
 P 5450 7150
-F 0 "K?" H 5450 7475 50  0000 C CNN
+F 0 "K5" H 5450 7475 50  0000 C CNN
 F 1 "G6JU" H 5450 7384 50  0000 C CNN
 F 2 "" H 5450 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5450 7250 50  0001 C CNN
@@ -1573,10 +1336,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5450 7250 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K?
+L preamp:G6JU K5
 U 2 1 63E64137
 P 5450 6550
-F 0 "K?" H 5450 6875 50  0000 C CNN
+F 0 "K5" H 5450 6875 50  0000 C CNN
 F 1 "G6JU" H 5450 6784 50  0000 C CNN
 F 2 "" H 5450 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5450 6650 50  0001 C CNN
@@ -1586,10 +1349,10 @@ $EndComp
 Text Label 5750 7250 0    50   ~ 0
 A_OUT_R
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J61
 U 1 1 63E64142
 P 4650 6850
-F 0 "J?" H 4622 6874 50  0000 R CNN
+F 0 "J61" H 4622 6874 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 4622 6783 50  0001 R CNN
 F 2 "" H 4650 6850 50  0001 C CNN
 F 3 "~" H 4650 6850 50  0001 C CNN
@@ -1622,4 +1385,268 @@ Wire Wire Line
 	6300 5750 6300 5600
 Wire Wire Line
 	6300 5600 6350 5600
+$Comp
+L power:GND #PWR?
+U 1 1 64BBA535
+P 2200 3900
+AR Path="/5E26F6FE/64BBA535" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64BBA535" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 2200 3650 50  0001 C CNN
+F 1 "GND" H 2205 3727 50  0000 C CNN
+F 2 "" H 2200 3900 50  0001 C CNN
+F 3 "" H 2200 3900 50  0001 C CNN
+	1    2200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64C160A3
+P 4900 2200
+AR Path="/5E26F6FE/64C160A3" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C160A3" Ref="#PWR090"  Part="1" 
+F 0 "#PWR090" H 4900 1950 50  0001 C CNN
+F 1 "GND" H 4905 2027 50  0000 C CNN
+F 2 "" H 4900 2200 50  0001 C CNN
+F 3 "" H 4900 2200 50  0001 C CNN
+	1    4900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64C3AB10
+P 4900 4000
+AR Path="/5E26F6FE/64C3AB10" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C3AB10" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 4900 3750 50  0001 C CNN
+F 1 "GND" H 4905 3827 50  0000 C CNN
+F 2 "" H 4900 4000 50  0001 C CNN
+F 3 "" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64C5F5F4
+P 7000 2150
+AR Path="/5E26F6FE/64C5F5F4" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C5F5F4" Ref="#PWR097"  Part="1" 
+F 0 "#PWR097" H 7000 1900 50  0001 C CNN
+F 1 "GND" H 7005 1977 50  0000 C CNN
+F 2 "" H 7000 2150 50  0001 C CNN
+F 3 "" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64C83DF6
+P 6950 2950
+AR Path="/5E26F6FE/64C83DF6" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C83DF6" Ref="#PWR095"  Part="1" 
+F 0 "#PWR095" H 6950 2700 50  0001 C CNN
+F 1 "GND" H 6955 2777 50  0000 C CNN
+F 2 "" H 6950 2950 50  0001 C CNN
+F 3 "" H 6950 2950 50  0001 C CNN
+	1    6950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64CA86A4
+P 6950 3500
+AR Path="/5E26F6FE/64CA86A4" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64CA86A4" Ref="#PWR096"  Part="1" 
+F 0 "#PWR096" H 6950 3250 50  0001 C CNN
+F 1 "GND" H 6955 3327 50  0000 C CNN
+F 2 "" H 6950 3500 50  0001 C CNN
+F 3 "" H 6950 3500 50  0001 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64CCCF8D
+P 6300 4700
+AR Path="/5E26F6FE/64CCCF8D" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64CCCF8D" Ref="#PWR094"  Part="1" 
+F 0 "#PWR094" H 6300 4450 50  0001 C CNN
+F 1 "GND" H 6305 4527 50  0000 C CNN
+F 2 "" H 6300 4700 50  0001 C CNN
+F 3 "" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64CF171C
+P 6250 5500
+AR Path="/5E26F6FE/64CF171C" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64CF171C" Ref="#PWR093"  Part="1" 
+F 0 "#PWR093" H 6250 5250 50  0001 C CNN
+F 1 "GND" H 6255 5327 50  0000 C CNN
+F 2 "" H 6250 5500 50  0001 C CNN
+F 3 "" H 6250 5500 50  0001 C CNN
+	1    6250 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D1642F
+P 8850 3950
+AR Path="/5E26F6FE/64D1642F" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64D1642F" Ref="#PWR0100"  Part="1" 
+F 0 "#PWR0100" H 8850 3700 50  0001 C CNN
+F 1 "GND" H 8855 3777 50  0000 C CNN
+F 2 "" H 8850 3950 50  0001 C CNN
+F 3 "" H 8850 3950 50  0001 C CNN
+	1    8850 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D3ACF0
+P 8850 4550
+AR Path="/5E26F6FE/64D3ACF0" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64D3ACF0" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 8850 4300 50  0001 C CNN
+F 1 "GND" H 8855 4377 50  0000 C CNN
+F 2 "" H 8850 4550 50  0001 C CNN
+F 3 "" H 8850 4550 50  0001 C CNN
+	1    8850 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D5F564
+P 8850 5150
+AR Path="/5E26F6FE/64D5F564" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64D5F564" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 8850 4900 50  0001 C CNN
+F 1 "GND" H 8855 4977 50  0000 C CNN
+F 2 "" H 8850 5150 50  0001 C CNN
+F 3 "" H 8850 5150 50  0001 C CNN
+	1    8850 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D83F57
+P 8850 5750
+AR Path="/5E26F6FE/64D83F57" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64D83F57" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 8850 5500 50  0001 C CNN
+F 1 "GND" H 8855 5577 50  0000 C CNN
+F 2 "" H 8850 5750 50  0001 C CNN
+F 3 "" H 8850 5750 50  0001 C CNN
+	1    8850 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64DA87BA
+P 8200 5550
+AR Path="/5E26F6FE/64DA87BA" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64DA87BA" Ref="#PWR099"  Part="1" 
+F 0 "#PWR099" H 8200 5300 50  0001 C CNN
+F 1 "GND" H 8205 5377 50  0000 C CNN
+F 2 "" H 8200 5550 50  0001 C CNN
+F 3 "" H 8200 5550 50  0001 C CNN
+	1    8200 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64DCCE63
+P 8200 4350
+AR Path="/5E26F6FE/64DCCE63" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64DCCE63" Ref="#PWR098"  Part="1" 
+F 0 "#PWR098" H 8200 4100 50  0001 C CNN
+F 1 "GND" H 8205 4177 50  0000 C CNN
+F 2 "" H 8200 4350 50  0001 C CNN
+F 3 "" H 8200 4350 50  0001 C CNN
+	1    8200 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64DF159D
+P 5100 6850
+AR Path="/5E26F6FE/64DF159D" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64DF159D" Ref="#PWR092"  Part="1" 
+F 0 "#PWR092" H 5100 6600 50  0001 C CNN
+F 1 "GND" H 5105 6677 50  0000 C CNN
+F 2 "" H 5100 6850 50  0001 C CNN
+F 3 "" H 5100 6850 50  0001 C CNN
+	1    5100 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64E15D0A
+P 3400 6850
+AR Path="/5E26F6FE/64E15D0A" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64E15D0A" Ref="#PWR089"  Part="1" 
+F 0 "#PWR089" H 3400 6600 50  0001 C CNN
+F 1 "GND" H 3405 6677 50  0000 C CNN
+F 2 "" H 3400 6850 50  0001 C CNN
+F 3 "" H 3400 6850 50  0001 C CNN
+	1    3400 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64E3A6FC
+P 1700 6850
+AR Path="/5E26F6FE/64E3A6FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64E3A6FC" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 1700 6600 50  0001 C CNN
+F 1 "GND" H 1705 6677 50  0000 C CNN
+F 2 "" H 1700 6850 50  0001 C CNN
+F 3 "" H 1700 6850 50  0001 C CNN
+	1    1700 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64E5EEF1
+P 1700 5650
+AR Path="/5E26F6FE/64E5EEF1" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64E5EEF1" Ref="#PWR085"  Part="1" 
+F 0 "#PWR085" H 1700 5400 50  0001 C CNN
+F 1 "GND" H 1705 5477 50  0000 C CNN
+F 2 "" H 1700 5650 50  0001 C CNN
+F 3 "" H 1700 5650 50  0001 C CNN
+	1    1700 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64E83996
+P 3400 5650
+AR Path="/5E26F6FE/64E83996" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64E83996" Ref="#PWR088"  Part="1" 
+F 0 "#PWR088" H 3400 5400 50  0001 C CNN
+F 1 "GND" H 3405 5477 50  0000 C CNN
+F 2 "" H 3400 5650 50  0001 C CNN
+F 3 "" H 3400 5650 50  0001 C CNN
+	1    3400 5650
+	0    -1   -1   0   
+$EndComp
+Text Label 4050 5450 0    50   ~ 0
+A_OUT_L
+NoConn ~ 4050 5250
+NoConn ~ 4050 5850
+NoConn ~ 2350 5250
+NoConn ~ 2350 5850
+NoConn ~ 2350 6450
+NoConn ~ 2350 7050
+NoConn ~ 4050 7050
+NoConn ~ 4050 6450
+NoConn ~ 5750 6450
+NoConn ~ 5750 7050
+NoConn ~ 1500 2500
+NoConn ~ 1500 2600
+NoConn ~ 1500 2200
+NoConn ~ 2900 2600
+NoConn ~ 2900 3500
 $EndSCHEMATC
