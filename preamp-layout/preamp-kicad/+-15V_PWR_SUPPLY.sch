@@ -16,13 +16,13 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5F8FF1B9
-P 1200 3250
-F 0 "J1" H 1118 2925 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1118 3016 50  0000 C CNN
-F 2 "" H 1200 3250 50  0001 C CNN
-F 3 "~" H 1200 3250 50  0001 C CNN
-	1    1200 3250
-	-1   0    0    1   
+P 1200 3150
+F 0 "J1" H 1118 3275 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1118 2916 50  0001 C CNN
+F 2 "" H 1200 3150 50  0001 C CNN
+F 3 "~" H 1200 3150 50  0001 C CNN
+	1    1200 3150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 3150 1500 3150

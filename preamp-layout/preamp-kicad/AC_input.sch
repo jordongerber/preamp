@@ -68,8 +68,6 @@ AC-
 Wire Wire Line
 	6050 3400 6200 3400
 Wire Wire Line
-	5250 4050 5250 4250
-Wire Wire Line
 	5250 3750 5250 3600
 $Comp
 L Device:R R1
@@ -104,12 +102,48 @@ Connection ~ 4900 3400
 $Comp
 L power:GND #PWR03
 U 1 1 649E3EA1
-P 5250 4250
-F 0 "#PWR03" H 5250 4000 50  0001 C CNN
-F 1 "GND" H 5255 4077 50  0000 C CNN
-F 2 "" H 5250 4250 50  0001 C CNN
-F 3 "" H 5250 4250 50  0001 C CNN
-	1    5250 4250
+P 5250 4200
+F 0 "#PWR03" H 5250 3950 50  0001 C CNN
+F 1 "GND" H 5255 4027 50  0000 C CNN
+F 2 "" H 5250 4200 50  0001 C CNN
+F 3 "" H 5250 4200 50  0001 C CNN
+	1    5250 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 65B060F9
+P 7700 3150
+AR Path="/5E27B612/65B060F9" Ref="J?"  Part="1" 
+AR Path="/5E26F6FE/65B060F9" Ref="J?"  Part="1" 
+F 0 "J?" H 7780 3096 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7780 3051 50  0001 L CNN
+F 2 "" H 7700 3150 50  0001 C CNN
+F 3 "~" H 7700 3150 50  0001 C CNN
+	1    7700 3150
+	1    0    0    -1  
+$EndComp
+Text HLabel 7500 3150 0    50   UnSpc ~ 0
+AC+
+Text HLabel 7500 3250 0    50   UnSpc ~ 0
+AC-
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 65B0680E
+P 7700 3650
+AR Path="/5E27B612/65B0680E" Ref="J?"  Part="1" 
+AR Path="/5E26F6FE/65B0680E" Ref="J?"  Part="1" 
+F 0 "J?" H 7780 3596 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7780 3551 50  0001 L CNN
+F 2 "" H 7700 3650 50  0001 C CNN
+F 3 "~" H 7700 3650 50  0001 C CNN
+	1    7700 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 7500 3650 0    50   UnSpc ~ 0
+AC+
+Text HLabel 7500 3750 0    50   UnSpc ~ 0
+AC-
+Wire Wire Line
+	5250 4050 5250 4200
 $EndSCHEMATC
