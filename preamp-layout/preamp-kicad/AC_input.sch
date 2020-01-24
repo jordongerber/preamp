@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 11
 Title ""
-Date "2020-01-09"
+Date "2020-01-23"
 Rev "A00"
 Comp ""
 Comment1 "creativecommons.org/licenses/by/4.0/"
@@ -115,8 +115,8 @@ L Connector:Screw_Terminal_01x02 J?
 U 1 1 65B060F9
 P 7700 3150
 AR Path="/5E27B612/65B060F9" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/65B060F9" Ref="J?"  Part="1" 
-F 0 "J?" H 7780 3096 50  0000 L CNN
+AR Path="/5E26F6FE/65B060F9" Ref="J47"  Part="1" 
+F 0 "J47" H 7780 3096 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 7780 3051 50  0001 L CNN
 F 2 "" H 7700 3150 50  0001 C CNN
 F 3 "~" H 7700 3150 50  0001 C CNN
@@ -132,8 +132,8 @@ L Connector:Screw_Terminal_01x02 J?
 U 1 1 65B0680E
 P 7700 3650
 AR Path="/5E27B612/65B0680E" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/65B0680E" Ref="J?"  Part="1" 
-F 0 "J?" H 7780 3596 50  0000 L CNN
+AR Path="/5E26F6FE/65B0680E" Ref="J48"  Part="1" 
+F 0 "J48" H 7780 3596 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 7780 3551 50  0001 L CNN
 F 2 "" H 7700 3650 50  0001 C CNN
 F 3 "~" H 7700 3650 50  0001 C CNN

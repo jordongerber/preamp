@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 11
 Title "5V Power Supply"
-Date "2020-01-09"
+Date "2020-01-23"
 Rev "A00"
 Comp ""
 Comment1 "creativecommons.org/licenses/by/4.0/"
