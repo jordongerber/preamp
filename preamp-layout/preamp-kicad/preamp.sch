@@ -14,12 +14,14 @@ Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
 $Sheet
-S 2550 5700 800  750 
+S 2550 5800 800  500 
 U 5E26F6FE
 F0 "AC input" 50
 F1 "AC_input.sch" 50
 F2 "AC+" U R 3350 6000 50 
 F3 "AC-" U R 3350 6100 50 
+F4 "PWR_SW_1" U L 2550 6000 50 
+F5 "PWR_SW_2" U L 2550 6100 50 
 $EndSheet
 $Sheet
 S 4050 5700 1050 750 
@@ -54,7 +56,7 @@ F2 "MISO" O R 5850 4050 50
 F3 "MOSI" I R 5850 3950 50 
 F4 "CLK" I R 5850 4150 50 
 F5 "CS" I R 5850 4400 50 
-F9 "LED_DT" I R 5850 4500 50 
+F6 "LED_DT" I R 5850 4500 50 
 $EndSheet
 $Sheet
 S 8200 2300 950  1450
@@ -440,6 +442,35 @@ Wire Wire Line
 	9350 2600 9350 2900
 Wire Wire Line
 	10750 2400 10750 2900
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5E2E8D21
+P 1950 6050
+AR Path="/5E26F6FE/5E2E8D21" Ref="SW?"  Part="1" 
+AR Path="/5E2E8D21" Ref="SW3"  Part="1" 
+F 0 "SW3" H 1950 6285 50  0000 C CNN
+F 1 "SW_SPST" H 1950 6194 50  0001 C CNN
+F 2 "" H 1950 6050 50  0001 C CNN
+F 3 "~" H 1950 6050 50  0001 C CNN
+	1    1950 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 5850 1950 5750
+Wire Wire Line
+	1950 5750 2250 5750
+Wire Wire Line
+	2250 5750 2250 6000
+Wire Wire Line
+	2250 6000 2550 6000
+Wire Wire Line
+	1950 6250 1950 6350
+Wire Wire Line
+	1950 6350 2250 6350
+Wire Wire Line
+	2250 6350 2250 6100
+Wire Wire Line
+	2250 6100 2550 6100
 Wire Bus Line
 	5200 1700 5200 3300
 Wire Bus Line
