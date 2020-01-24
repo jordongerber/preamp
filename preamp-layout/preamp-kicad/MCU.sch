@@ -41,7 +41,7 @@ AR Path="/5E2D8DA2/63AD6B3B" Ref="J?"  Part="1"
 AR Path="/619FA14B/63AD6B3B" Ref="J27"  Part="1" 
 F 0 "J27" H 9728 2526 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 9728 2435 50  0001 L CNN
-F 2 "" H 9700 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 2550 50  0001 C CNN
 F 3 "~" H 9700 2550 50  0001 C CNN
 	1    9700 2550
 	1    0    0    -1  
@@ -54,7 +54,7 @@ U 1 1 63AD6EFD
 P 9700 3100
 F 0 "J28" H 9672 3074 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 9672 2983 50  0001 R CNN
-F 2 "" H 9700 3100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 3100 50  0001 C CNN
 F 3 "~" H 9700 3100 50  0001 C CNN
 	1    9700 3100
 	-1   0    0    -1  
@@ -127,7 +127,7 @@ AR Path="/5E2D8DA2/6496C10E" Ref="J?"  Part="1"
 AR Path="/619FA14B/6496C10E" Ref="J23"  Part="1" 
 F 0 "J23" H 8378 3576 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 8378 3485 50  0001 L CNN
-F 2 "" H 8350 3550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 3550 50  0001 C CNN
 F 3 "~" H 8350 3550 50  0001 C CNN
 	1    8350 3550
 	1    0    0    -1  
@@ -140,7 +140,7 @@ AR Path="/5E2D8DA2/6496C114" Ref="J?"  Part="1"
 AR Path="/619FA14B/6496C114" Ref="J26"  Part="1" 
 F 0 "J26" H 9422 4274 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 9422 4183 50  0001 R CNN
-F 2 "" H 9450 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9450 4250 50  0001 C CNN
 F 3 "~" H 9450 4250 50  0001 C CNN
 	1    9450 4250
 	-1   0    0    -1  
@@ -166,7 +166,7 @@ AR Path="/5E2D8DA2/6496FD14" Ref="J?"  Part="1"
 AR Path="/619FA14B/6496FD14" Ref="J24"  Part="1" 
 F 0 "J24" H 8378 4026 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 8378 3935 50  0001 L CNN
-F 2 "" H 8350 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4000 50  0001 C CNN
 F 3 "~" H 8350 4000 50  0001 C CNN
 	1    8350 4000
 	1    0    0    -1  
@@ -184,7 +184,7 @@ AR Path="/5E2D8DA2/64973E6E" Ref="J?"  Part="1"
 AR Path="/619FA14B/64973E6E" Ref="J25"  Part="1" 
 F 0 "J25" H 8378 4476 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 8378 4385 50  0001 L CNN
-F 2 "" H 8350 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4450 50  0001 C CNN
 F 3 "~" H 8350 4450 50  0001 C CNN
 	1    8350 4450
 	1    0    0    -1  
@@ -197,7 +197,7 @@ U 1 1 64977856
 P 8350 2700
 F 0 "J22" H 8378 2630 50  0000 L CNN
 F 1 "Conn_01x06_Female" H 8378 2585 50  0001 L CNN
-F 2 "" H 8350 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8350 2700 50  0001 C CNN
 F 3 "~" H 8350 2700 50  0001 C CNN
 	1    8350 2700
 	1    0    0    -1  
@@ -216,7 +216,7 @@ U 1 1 649C22F5
 P 6300 3200
 F 0 "J21" H 6192 3993 50  0000 C CNN
 F 1 "Conn_01x15_Female" H 6192 3994 50  0001 C CNN
-F 2 "" H 6300 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 6300 3200 50  0001 C CNN
 F 3 "~" H 6300 3200 50  0001 C CNN
 	1    6300 3200
 	-1   0    0    -1  
@@ -227,7 +227,7 @@ U 1 1 649C438C
 P 4900 3200
 F 0 "J20" H 4928 3180 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 4928 3135 50  0001 L CNN
-F 2 "" H 4900 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 4900 3200 50  0001 C CNN
 F 3 "~" H 4900 3200 50  0001 C CNN
 	1    4900 3200
 	1    0    0    -1  

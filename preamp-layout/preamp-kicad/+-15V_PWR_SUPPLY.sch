@@ -16,36 +16,22 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5F8FF1B9
-P 1200 3150
-F 0 "J5" H 1118 3275 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1118 2916 50  0001 C CNN
-F 2 "" H 1200 3150 50  0001 C CNN
-F 3 "~" H 1200 3150 50  0001 C CNN
-	1    1200 3150
+P 1300 3150
+F 0 "J5" H 1218 3275 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1218 2916 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1300 3150 50  0001 C CNN
+F 3 "~" H 1300 3150 50  0001 C CNN
+	1    1300 3150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 3150 1500 3150
-Wire Wire Line
 	1800 3150 1800 3000
 Wire Wire Line
-	1400 3250 1600 3250
-Wire Wire Line
 	1800 3250 1800 3400
-Text HLabel 1500 3400 3    50   UnSpc ~ 0
+Text HLabel 1650 3050 1    50   UnSpc ~ 0
 AC+
-Text HLabel 1600 3400 3    50   UnSpc ~ 0
+Text HLabel 1650 3350 3    50   UnSpc ~ 0
 AC-
-Wire Wire Line
-	1500 3400 1500 3150
-Connection ~ 1500 3150
-Wire Wire Line
-	1500 3150 1800 3150
-Wire Wire Line
-	1600 3400 1600 3250
-Connection ~ 1600 3250
-Wire Wire Line
-	1600 3250 1800 3250
 Text GLabel 4550 6200 1    50   UnSpc ~ 0
 +15V
 $Comp
@@ -57,7 +43,7 @@ AR Path="/5FFF1130" Ref="R?"  Part="1"
 AR Path="/5E27B612/5FFF1130" Ref="R2"  Part="1" 
 F 0 "R2" V 4343 6450 50  0000 C CNN
 F 1 "10K" V 4434 6450 50  0000 C CNN
-F 2 "" V 4480 6450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 6450 50  0001 C CNN
 F 3 "~" H 4550 6450 50  0001 C CNN
 	1    4550 6450
 	1    0    0    -1  
@@ -70,7 +56,7 @@ AR Path="/5E2D8DA2/5FFF1136" Ref="D?"  Part="1"
 AR Path="/5E27B612/5FFF1136" Ref="D2"  Part="1" 
 F 0 "D2" V 4589 6733 50  0000 R CNN
 F 1 "LED" V 4498 6733 50  0000 R CNN
-F 2 "" H 4550 6850 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4550 6850 50  0001 C CNN
 F 3 "~" H 4550 6850 50  0001 C CNN
 	1    4550 6850
 	0    -1   -1   0   
@@ -92,7 +78,7 @@ AR Path="/5FFF1146" Ref="R?"  Part="1"
 AR Path="/5E27B612/5FFF1146" Ref="R3"  Part="1" 
 F 0 "R3" V 4893 6450 50  0000 C CNN
 F 1 "10K" V 4984 6450 50  0000 C CNN
-F 2 "" V 5030 6450 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5030 6450 50  0001 C CNN
 F 3 "~" H 5100 6450 50  0001 C CNN
 	1    5100 6450
 	1    0    0    -1  
@@ -105,7 +91,7 @@ AR Path="/5E2D8DA2/5FFF114C" Ref="D?"  Part="1"
 AR Path="/5E27B612/5FFF114C" Ref="D3"  Part="1" 
 F 0 "D3" V 5139 6733 50  0000 R CNN
 F 1 "LED" V 5048 6733 50  0000 R CNN
-F 2 "" H 5100 6850 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5100 6850 50  0001 C CNN
 F 3 "~" H 5100 6850 50  0001 C CNN
 	1    5100 6850
 	0    1    1    0   
@@ -123,7 +109,7 @@ P 2800 3000
 AR Path="/5E26F6FE/60029A0D" Ref="F?"  Part="1" 
 AR Path="/5E27B612/60029A0D" Ref="F2"  Part="1" 
 F 0 "F2" V 2603 3000 50  0000 C CNN
-F 1 "Fuse" V 2694 3000 50  0000 C CNN
+F 1 "500mA" V 2694 3000 50  0000 C CNN
 F 2 "" V 2730 3000 50  0001 C CNN
 F 3 "~" H 2800 3000 50  0001 C CNN
 	1    2800 3000
@@ -170,8 +156,8 @@ $Comp
 L Device:Transformer_1P_1S T1
 U 1 1 5FD657B8
 P 2200 3200
-F 0 "T1" H 2200 3581 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 2200 3490 50  0000 C CNN
+F 0 "T1" H 2200 3489 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 2200 3490 50  0001 C CNN
 F 2 "" H 2200 3200 50  0001 C CNN
 F 3 "~" H 2200 3200 50  0001 C CNN
 	1    2200 3200
@@ -673,7 +659,7 @@ AR Path="/6009D432/647A815C" Ref="J?"  Part="1"
 AR Path="/5E27B612/647A815C" Ref="J6"  Part="1" 
 F 0 "J6" H 2228 5826 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 2228 5735 50  0001 L CNN
-F 2 "" H 2200 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 5800 50  0001 C CNN
 F 3 "~" H 2200 5800 50  0001 C CNN
 	1    2200 5800
 	1    0    0    -1  
@@ -706,7 +692,7 @@ AR Path="/6009D432/647B6C33" Ref="J?"  Part="1"
 AR Path="/5E27B612/647B6C33" Ref="J7"  Part="1" 
 F 0 "J7" H 2228 6426 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 2228 6335 50  0001 L CNN
-F 2 "" H 2200 6400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 6400 50  0001 C CNN
 F 3 "~" H 2200 6400 50  0001 C CNN
 	1    2200 6400
 	1    0    0    -1  
@@ -739,7 +725,7 @@ AR Path="/6009D432/647BAB03" Ref="J?"  Part="1"
 AR Path="/5E27B612/647BAB03" Ref="J8"  Part="1" 
 F 0 "J8" H 2228 7026 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 2228 6935 50  0001 L CNN
-F 2 "" H 2200 7000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 7000 50  0001 C CNN
 F 3 "~" H 2200 7000 50  0001 C CNN
 	1    2200 7000
 	1    0    0    -1  
@@ -892,4 +878,18 @@ F 3 "~" H 8350 3800 50  0001 C CNN
 	1    8350 3800
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1500 3150 1650 3150
+Wire Wire Line
+	1500 3250 1650 3250
+Wire Wire Line
+	1650 3050 1650 3150
+Connection ~ 1650 3150
+Wire Wire Line
+	1650 3150 1800 3150
+Wire Wire Line
+	1650 3250 1650 3350
+Connection ~ 1650 3250
+Wire Wire Line
+	1650 3250 1800 3250
 $EndSCHEMATC
