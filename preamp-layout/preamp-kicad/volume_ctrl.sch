@@ -41,23 +41,23 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 600B8824
-P 8450 5600
+P 8000 5800
 AR Path="/5E2D8DA2/600B8824" Ref="U?"  Part="3" 
 AR Path="/600B8824" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/600B8824" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/600B8824" Ref="U?"  Part="3" 
 AR Path="/61DA059E/600B8824" Ref="U?"  Part="3" 
 AR Path="/6009D432/600B8824" Ref="U14"  Part="3" 
-F 0 "U14" H 8408 5646 50  0000 L CNN
-F 1 "TL072" H 8408 5555 50  0000 L CNN
-F 2 "" H 8450 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8450 5600 50  0001 C CNN
-	3    8450 5600
+F 0 "U14" H 7958 5846 50  0000 L CNN
+F 1 "TL072" H 7958 5755 50  0000 L CNN
+F 2 "" H 8000 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8000 5800 50  0001 C CNN
+	3    8000 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8350 5300 1    50   UnSpc ~ 0
+Text GLabel 7900 5500 1    50   UnSpc ~ 0
 +15V
-Text GLabel 8350 5900 3    50   UnSpc ~ 0
+Text GLabel 7900 6100 3    50   UnSpc ~ 0
 -15V
 $Comp
 L Amplifier_Operational:TL072 U?
@@ -443,8 +443,8 @@ AR Path="/61DC5D9D/602693B0" Ref="U?"  Part="1"
 AR Path="/5F2E428C/602693B0" Ref="U?"  Part="1" 
 AR Path="/61DA059E/602693B0" Ref="U?"  Part="1" 
 AR Path="/6009D432/602693B0" Ref="U18"  Part="1" 
-F 0 "U18" H 6600 2367 50  0000 C CNN
-F 1 "TL072" H 6600 2276 50  0000 C CNN
+F 0 "U18" H 6600 2275 50  0000 C CNN
+F 1 "TL072" H 6600 2366 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6600 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6600 2000 50  0001 C CNN
 	1    6600 2000
@@ -460,8 +460,8 @@ AR Path="/61DC5D9D/6026CEF5" Ref="U?"  Part="2"
 AR Path="/5F2E428C/6026CEF5" Ref="U?"  Part="2" 
 AR Path="/61DA059E/6026CEF5" Ref="U?"  Part="2" 
 AR Path="/6009D432/6026CEF5" Ref="U18"  Part="2" 
-F 0 "U18" H 6600 4367 50  0000 C CNN
-F 1 "TL072" H 6600 4276 50  0000 C CNN
+F 0 "U18" H 6600 4275 50  0000 C CNN
+F 1 "TL072" H 6600 4366 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6600 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6600 4000 50  0001 C CNN
 	2    6600 4000
@@ -1044,8 +1044,8 @@ AR Path="/61DC5D9D/6033BA38" Ref="U?"  Part="1"
 AR Path="/5F2E428C/6033BA38" Ref="U?"  Part="1" 
 AR Path="/61DA059E/6033BA38" Ref="U?"  Part="1" 
 AR Path="/6009D432/6033BA38" Ref="U21"  Part="1" 
-F 0 "U21" H 9950 2367 50  0000 C CNN
-F 1 "TL072" H 9950 2276 50  0000 C CNN
+F 0 "U21" H 9950 2275 50  0000 C CNN
+F 1 "TL072" H 9950 2366 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9950 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9950 2000 50  0001 C CNN
 	1    9950 2000
@@ -1061,8 +1061,8 @@ AR Path="/61DC5D9D/6033BA42" Ref="U?"  Part="2"
 AR Path="/5F2E428C/6033BA42" Ref="U?"  Part="2" 
 AR Path="/61DA059E/6033BA42" Ref="U?"  Part="2" 
 AR Path="/6009D432/6033BA42" Ref="U21"  Part="2" 
-F 0 "U21" H 9950 4367 50  0000 C CNN
-F 1 "TL072" H 9950 4276 50  0000 C CNN
+F 0 "U21" H 9950 4275 50  0000 C CNN
+F 1 "TL072" H 9950 4366 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9950 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9950 4000 50  0001 C CNN
 	2    9950 4000
@@ -1241,44 +1241,44 @@ Connection ~ 10450 4000
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 603FD5C0
-P 8900 5600
+P 8450 5800
 AR Path="/5E2D8DA2/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/61DA059E/603FD5C0" Ref="U?"  Part="3" 
 AR Path="/6009D432/603FD5C0" Ref="U15"  Part="3" 
-F 0 "U15" H 8858 5646 50  0000 L CNN
-F 1 "TL072" H 8858 5555 50  0000 L CNN
-F 2 "" H 8900 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8900 5600 50  0001 C CNN
-	3    8900 5600
+F 0 "U15" H 8408 5846 50  0000 L CNN
+F 1 "TL072" H 8408 5755 50  0000 L CNN
+F 2 "" H 8450 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8450 5800 50  0001 C CNN
+	3    8450 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8800 5300 1    50   UnSpc ~ 0
+Text GLabel 8350 5500 1    50   UnSpc ~ 0
 +15V
-Text GLabel 8800 5900 3    50   UnSpc ~ 0
+Text GLabel 8350 6100 3    50   UnSpc ~ 0
 -15V
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 604092EC
-P 9350 5600
+P 8900 5800
 AR Path="/5E2D8DA2/604092EC" Ref="U?"  Part="3" 
 AR Path="/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/604092EC" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DA059E/604092EC" Ref="U?"  Part="3" 
 AR Path="/6009D432/604092EC" Ref="U18"  Part="3" 
-F 0 "U18" H 9308 5646 50  0000 L CNN
-F 1 "TL072" H 9308 5555 50  0000 L CNN
-F 2 "" H 9350 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9350 5600 50  0001 C CNN
-	3    9350 5600
+F 0 "U18" H 8858 5846 50  0000 L CNN
+F 1 "TL072" H 8858 5755 50  0000 L CNN
+F 2 "" H 8900 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8900 5800 50  0001 C CNN
+	3    8900 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9250 5300 1    50   UnSpc ~ 0
+Text GLabel 8800 5500 1    50   UnSpc ~ 0
 +15V
-Text GLabel 9250 5900 3    50   UnSpc ~ 0
+Text GLabel 8800 6100 3    50   UnSpc ~ 0
 -15V
 Wire Wire Line
 	850  6250 850  6350
@@ -1324,23 +1324,23 @@ Wire Wire Line
 	2100 6150 2100 6850
 Wire Wire Line
 	2100 6850 2200 6850
-Text GLabel 7650 4300 0    50   UnSpc ~ 0
+Text GLabel 7400 4300 0    50   UnSpc ~ 0
 +15V
-Text GLabel 7650 4700 0    50   UnSpc ~ 0
+Text GLabel 7400 4700 0    50   UnSpc ~ 0
 -15V
 Wire Wire Line
-	7750 4500 7650 4500
+	7500 4500 7400 4500
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 606FB9C9
-P 7950 4500
+P 7700 4500
 AR Path="/5E27B612/606FB9C9" Ref="J?"  Part="1" 
 AR Path="/6009D432/606FB9C9" Ref="J70"  Part="1" 
-F 0 "J70" H 7922 4478 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 7922 4433 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7950 4500 50  0001 C CNN
-F 3 "~" H 7950 4500 50  0001 C CNN
-	1    7950 4500
+F 0 "J70" H 7672 4478 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 7672 4433 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7700 4500 50  0001 C CNN
+F 3 "~" H 7700 4500 50  0001 C CNN
+	1    7700 4500
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1364,90 +1364,90 @@ Wire Wire Line
 	4650 6400 4650 6500
 Wire Wire Line
 	4850 6300 4650 6300
-Text GLabel 10300 5150 1    50   UnSpc ~ 0
+Text GLabel 9850 5350 1    50   UnSpc ~ 0
 +15V
 $Comp
 L Device:R R?
 U 1 1 6072D4FD
-P 10300 5400
+P 9850 5600
 AR Path="/5E2D8DA2/6072D4FD" Ref="R?"  Part="1" 
 AR Path="/6072D4FD" Ref="R?"  Part="1" 
 AR Path="/5E27B612/6072D4FD" Ref="R?"  Part="1" 
 AR Path="/6009D432/6072D4FD" Ref="R82"  Part="1" 
-F 0 "R82" V 10093 5400 50  0000 C CNN
-F 1 "10K" V 10184 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10230 5400 50  0001 C CNN
-F 3 "~" H 10300 5400 50  0001 C CNN
-	1    10300 5400
+F 0 "R82" H 9920 5646 50  0000 L CNN
+F 1 "430" H 9920 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9780 5600 50  0001 C CNN
+F 3 "~" H 9850 5600 50  0001 C CNN
+	1    9850 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6072D503
-P 10300 5800
+P 9850 6000
 AR Path="/5E2D8DA2/6072D503" Ref="D?"  Part="1" 
 AR Path="/5E27B612/6072D503" Ref="D?"  Part="1" 
 AR Path="/6009D432/6072D503" Ref="D17"  Part="1" 
-F 0 "D17" V 10339 5683 50  0000 R CNN
-F 1 "LED" V 10248 5683 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10300 5800 50  0001 C CNN
-F 3 "~" H 10300 5800 50  0001 C CNN
-	1    10300 5800
+F 0 "D17" V 9889 5882 50  0000 R CNN
+F 1 "LED" V 9798 5882 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 6000 50  0001 C CNN
+F 3 "~" H 9850 6000 50  0001 C CNN
+	1    9850 6000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10300 5150 10300 5250
+	9850 5350 9850 5450
 Wire Wire Line
-	10300 5550 10300 5650
+	9850 5750 9850 5850
 Wire Wire Line
-	10300 5950 10300 6050
-Text GLabel 10850 5150 1    50   UnSpc ~ 0
+	9850 6150 9850 6250
+Text GLabel 10400 5350 1    50   UnSpc ~ 0
 -15V
 $Comp
 L Device:R R?
 U 1 1 6072D50D
-P 10850 5400
+P 10400 5600
 AR Path="/5E2D8DA2/6072D50D" Ref="R?"  Part="1" 
 AR Path="/6072D50D" Ref="R?"  Part="1" 
 AR Path="/5E27B612/6072D50D" Ref="R?"  Part="1" 
 AR Path="/6009D432/6072D50D" Ref="R83"  Part="1" 
-F 0 "R83" V 10643 5400 50  0000 C CNN
-F 1 "10K" V 10734 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10780 5400 50  0001 C CNN
-F 3 "~" H 10850 5400 50  0001 C CNN
-	1    10850 5400
+F 0 "R83" H 10470 5646 50  0000 L CNN
+F 1 "430" H 10470 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10330 5600 50  0001 C CNN
+F 3 "~" H 10400 5600 50  0001 C CNN
+	1    10400 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6072D513
-P 10850 5800
+P 10400 6000
 AR Path="/5E2D8DA2/6072D513" Ref="D?"  Part="1" 
 AR Path="/5E27B612/6072D513" Ref="D?"  Part="1" 
 AR Path="/6009D432/6072D513" Ref="D18"  Part="1" 
-F 0 "D18" V 10889 5683 50  0000 R CNN
-F 1 "LED" V 10798 5683 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10850 5800 50  0001 C CNN
-F 3 "~" H 10850 5800 50  0001 C CNN
-	1    10850 5800
+F 0 "D18" V 10347 6079 50  0000 L CNN
+F 1 "LED" V 10438 6079 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10400 6000 50  0001 C CNN
+F 3 "~" H 10400 6000 50  0001 C CNN
+	1    10400 6000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 5150 10850 5250
+	10400 5350 10400 5450
 Wire Wire Line
-	10850 5550 10850 5650
+	10400 5750 10400 5850
 Wire Wire Line
-	10850 5950 10850 6050
-Text Notes 700  7300 0    50   ~ 0
-7ms adjustment between DAC output level
+	10400 6150 10400 6250
+Text Notes 1500 7250 0    50   ~ 0
+7ms adjustment\nbetween DAC output level
 Text Notes 3750 5900 0    50   ~ 0
-Buffered DAC output max approx. 0.78V\n5V * (2k/12.83k)
+Buffered DAC output max approx. 0.78V\n5V * (2k/(6.34k+6.49k))
 Text Notes 4750 5400 0    50   ~ 0
 Per VCA Manufacturer’s spec, 6mV per dB attenuation\nfor max 0.78V, 0.78/0.006 = 130dB range\n130dB / 256 steps = 0.51dB / step\n\n178k offset resistor shifts output up by approx. 30dB\ncontrol range becomes -100dB to +30dB
 Text Notes 7000 6500 0    50   ~ 0
 http://www.thatcorp.com/datashts/dn02.pdf
 Wire Wire Line
-	7600 6000 7500 6000
+	7050 6000 6950 6000
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6091AA3A
@@ -1455,7 +1455,7 @@ P 6400 6400
 AR Path="/5E607732/6091AA3A" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6091AA3A" Ref="J?"  Part="1" 
 AR Path="/6009D432/6091AA3A" Ref="J67"  Part="1" 
-F 0 "J67" H 6428 6426 50  0000 L CNN
+F 0 "J67" H 6428 6380 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 6428 6335 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6400 6400 50  0001 C CNN
 F 3 "~" H 6400 6400 50  0001 C CNN
@@ -1465,25 +1465,25 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 6091AA40
-P 7800 6000
+P 7250 6000
 AR Path="/5E2D8DA2/6091AA40" Ref="J?"  Part="1" 
 AR Path="/6009D432/6091AA40" Ref="J69"  Part="1" 
-F 0 "J69" H 7772 6024 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 7772 5933 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7800 6000 50  0001 C CNN
-F 3 "~" H 7800 6000 50  0001 C CNN
-	1    7800 6000
+F 0 "J69" H 7222 5978 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 7222 5933 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7250 6000 50  0001 C CNN
+F 3 "~" H 7250 6000 50  0001 C CNN
+	1    7250 6000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6100 6400 6200 6400
 Text Notes 5850 6100 0    50   ~ 0
 Sends to\nIO Select
-Text Notes 7250 5700 0    50   ~ 0
+Text Notes 6700 5700 0    50   ~ 0
 Receives from\ntone / IO
-Text HLabel 7500 6200 0    50   UnSpc ~ 0
+Text HLabel 6950 6200 0    50   UnSpc ~ 0
 in_R
-Text HLabel 7500 5800 0    50   UnSpc ~ 0
+Text HLabel 6950 5800 0    50   UnSpc ~ 0
 in_L
 Text HLabel 6100 6200 0    50   UnSpc ~ 0
 out_main_L
@@ -1506,15 +1506,15 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 60B225EE
-P 7950 5100
+P 7700 5100
 AR Path="/5E607732/60B225EE" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/60B225EE" Ref="J?"  Part="1" 
 AR Path="/6009D432/60B225EE" Ref="J71"  Part="1" 
-F 0 "J71" H 7978 5126 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 7978 5035 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7950 5100 50  0001 C CNN
-F 3 "~" H 7950 5100 50  0001 C CNN
-	1    7950 5100
+F 0 "J71" H 7728 5080 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7728 5035 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7700 5100 50  0001 C CNN
+F 3 "~" H 7700 5100 50  0001 C CNN
+	1    7700 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1541,17 +1541,17 @@ Wire Wire Line
 Wire Wire Line
 	6150 6500 6200 6500
 Wire Wire Line
-	7500 5800 7550 5800
+	6950 5800 7000 5800
 Wire Wire Line
-	7550 5800 7550 5900
+	7000 5800 7000 5900
 Wire Wire Line
-	7550 5900 7600 5900
+	7000 5900 7050 5900
 Wire Wire Line
-	7500 6200 7550 6200
+	6950 6200 7000 6200
 Wire Wire Line
-	7550 6200 7550 6100
+	7000 6200 7000 6100
 Wire Wire Line
-	7550 6100 7600 6100
+	7000 6100 7050 6100
 Wire Wire Line
 	6100 7250 6200 7250
 Wire Wire Line
@@ -1573,7 +1573,7 @@ P 6400 7250
 AR Path="/5E607732/646326E7" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/646326E7" Ref="J?"  Part="1" 
 AR Path="/6009D432/646326E7" Ref="J68"  Part="1" 
-F 0 "J68" H 6428 7276 50  0000 L CNN
+F 0 "J68" H 6428 7230 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 6428 7185 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6400 7250 50  0001 C CNN
 F 3 "~" H 6400 7250 50  0001 C CNN
@@ -1581,55 +1581,55 @@ F 3 "~" H 6400 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 4400 7700 4400
+	7500 4400 7450 4400
 Wire Wire Line
-	7700 4400 7700 4300
+	7450 4400 7450 4300
 Wire Wire Line
-	7700 4300 7650 4300
+	7450 4300 7400 4300
 Wire Wire Line
-	7750 4600 7700 4600
+	7500 4600 7450 4600
 Wire Wire Line
-	7700 4600 7700 4700
+	7450 4600 7450 4700
 Wire Wire Line
-	7700 4700 7650 4700
-Text GLabel 7650 4900 0    50   UnSpc ~ 0
+	7450 4700 7400 4700
+Text GLabel 7400 4900 0    50   UnSpc ~ 0
 +15V
-Text GLabel 7650 5300 0    50   UnSpc ~ 0
+Text GLabel 7400 5300 0    50   UnSpc ~ 0
 -15V
 Wire Wire Line
-	7750 5100 7650 5100
+	7500 5100 7400 5100
 Wire Wire Line
-	7750 5000 7700 5000
+	7500 5000 7450 5000
 Wire Wire Line
-	7700 5000 7700 4900
+	7450 5000 7450 4900
 Wire Wire Line
-	7700 4900 7650 4900
+	7450 4900 7400 4900
 Wire Wire Line
-	7750 5200 7700 5200
+	7500 5200 7450 5200
 Wire Wire Line
-	7700 5200 7700 5300
+	7450 5200 7450 5300
 Wire Wire Line
-	7700 5300 7650 5300
+	7450 5300 7400 5300
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 64985FF3
-P 9800 5600
+P 9350 5800
 AR Path="/5E2D8DA2/64985FF3" Ref="U?"  Part="3" 
 AR Path="/64985FF3" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/64985FF3" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/64985FF3" Ref="U?"  Part="3" 
 AR Path="/61DA059E/64985FF3" Ref="U?"  Part="3" 
 AR Path="/6009D432/64985FF3" Ref="U21"  Part="3" 
-F 0 "U21" H 9758 5646 50  0000 L CNN
-F 1 "TL072" H 9758 5555 50  0000 L CNN
-F 2 "" H 9800 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9800 5600 50  0001 C CNN
-	3    9800 5600
+F 0 "U21" H 9308 5846 50  0000 L CNN
+F 1 "TL072" H 9308 5755 50  0000 L CNN
+F 2 "" H 9350 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9350 5800 50  0001 C CNN
+	3    9350 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9700 5300 1    50   UnSpc ~ 0
+Text GLabel 9250 5500 1    50   UnSpc ~ 0
 +15V
-Text GLabel 9700 5900 3    50   UnSpc ~ 0
+Text GLabel 9250 6100 3    50   UnSpc ~ 0
 -15V
 $Comp
 L power:GND #PWR085
@@ -1680,7 +1680,7 @@ L power:GND #PWR094
 U 1 1 64FCD89A
 P 6100 6400
 F 0 "#PWR094" H 6100 6150 50  0001 C CNN
-F 1 "GND" H 6105 6227 50  0000 C CNN
+F 1 "GND" V 6105 6272 50  0000 R CNN
 F 2 "" H 6100 6400 50  0001 C CNN
 F 3 "" H 6100 6400 50  0001 C CNN
 	1    6100 6400
@@ -1691,7 +1691,7 @@ L power:GND #PWR095
 U 1 1 64FEEEAE
 P 6100 7250
 F 0 "#PWR095" H 6100 7000 50  0001 C CNN
-F 1 "GND" H 6105 7077 50  0000 C CNN
+F 1 "GND" V 6105 7122 50  0000 R CNN
 F 2 "" H 6100 7250 50  0001 C CNN
 F 3 "" H 6100 7250 50  0001 C CNN
 	1    6100 7250
@@ -1700,56 +1700,56 @@ $EndComp
 $Comp
 L power:GND #PWR098
 U 1 1 650103B2
-P 7500 6000
-F 0 "#PWR098" H 7500 5750 50  0001 C CNN
-F 1 "GND" H 7505 5827 50  0000 C CNN
-F 2 "" H 7500 6000 50  0001 C CNN
-F 3 "" H 7500 6000 50  0001 C CNN
-	1    7500 6000
+P 6950 6000
+F 0 "#PWR098" H 6950 5750 50  0001 C CNN
+F 1 "GND" V 6955 5872 50  0000 R CNN
+F 2 "" H 6950 6000 50  0001 C CNN
+F 3 "" H 6950 6000 50  0001 C CNN
+	1    6950 6000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0100
 U 1 1 6503182E
-P 7650 5100
-F 0 "#PWR0100" H 7650 4850 50  0001 C CNN
-F 1 "GND" H 7655 4927 50  0000 C CNN
-F 2 "" H 7650 5100 50  0001 C CNN
-F 3 "" H 7650 5100 50  0001 C CNN
-	1    7650 5100
+P 7400 5100
+F 0 "#PWR0100" H 7400 4850 50  0001 C CNN
+F 1 "GND" V 7405 4972 50  0000 R CNN
+F 2 "" H 7400 5100 50  0001 C CNN
+F 3 "" H 7400 5100 50  0001 C CNN
+	1    7400 5100
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR099
 U 1 1 65052C66
-P 7650 4500
-F 0 "#PWR099" H 7650 4250 50  0001 C CNN
-F 1 "GND" H 7655 4327 50  0000 C CNN
-F 2 "" H 7650 4500 50  0001 C CNN
-F 3 "" H 7650 4500 50  0001 C CNN
-	1    7650 4500
+P 7400 4500
+F 0 "#PWR099" H 7400 4250 50  0001 C CNN
+F 1 "GND" V 7405 4372 50  0000 R CNN
+F 2 "" H 7400 4500 50  0001 C CNN
+F 3 "" H 7400 4500 50  0001 C CNN
+	1    7400 4500
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 650741F7
-P 10300 6050
-F 0 "#PWR0105" H 10300 5800 50  0001 C CNN
-F 1 "GND" H 10305 5877 50  0000 C CNN
-F 2 "" H 10300 6050 50  0001 C CNN
-F 3 "" H 10300 6050 50  0001 C CNN
-	1    10300 6050
+P 9850 6250
+F 0 "#PWR0105" H 9850 6000 50  0001 C CNN
+F 1 "GND" H 9855 6077 50  0000 C CNN
+F 2 "" H 9850 6250 50  0001 C CNN
+F 3 "" H 9850 6250 50  0001 C CNN
+	1    9850 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 650955C9
-P 10850 6050
-F 0 "#PWR0106" H 10850 5800 50  0001 C CNN
-F 1 "GND" H 10855 5877 50  0000 C CNN
-F 2 "" H 10850 6050 50  0001 C CNN
-F 3 "" H 10850 6050 50  0001 C CNN
-	1    10850 6050
+P 10400 6250
+F 0 "#PWR0106" H 10400 6000 50  0001 C CNN
+F 1 "GND" H 10405 6077 50  0000 C CNN
+F 2 "" H 10400 6250 50  0001 C CNN
+F 3 "" H 10400 6250 50  0001 C CNN
+	1    10400 6250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1968,4 +1968,57 @@ NoConn ~ 9150 3600
 NoConn ~ 9150 1600
 NoConn ~ 5800 1600
 NoConn ~ 5800 3600
+$Comp
+L Device:R R?
+U 1 1 5E3D5CE9
+P 10900 5600
+AR Path="/5E2D8DA2/5E3D5CE9" Ref="R?"  Part="1" 
+AR Path="/5E3D5CE9" Ref="R?"  Part="1" 
+AR Path="/5E27B612/5E3D5CE9" Ref="R?"  Part="1" 
+AR Path="/5E5EF2D4/5E3D5CE9" Ref="R?"  Part="1" 
+AR Path="/6009D432/5E3D5CE9" Ref="R86"  Part="1" 
+F 0 "R86" H 10970 5646 50  0000 L CNN
+F 1 "430" H 10970 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10830 5600 50  0001 C CNN
+F 3 "~" H 10900 5600 50  0001 C CNN
+	1    10900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E3D5CEF
+P 10900 6000
+AR Path="/5E2D8DA2/5E3D5CEF" Ref="D?"  Part="1" 
+AR Path="/5E27B612/5E3D5CEF" Ref="D?"  Part="1" 
+AR Path="/5E5EF2D4/5E3D5CEF" Ref="D?"  Part="1" 
+AR Path="/6009D432/5E3D5CEF" Ref="D21"  Part="1" 
+F 0 "D21" V 10939 5882 50  0000 R CNN
+F 1 "LED" V 10848 5882 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10900 6000 50  0001 C CNN
+F 3 "~" H 10900 6000 50  0001 C CNN
+	1    10900 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10900 5350 10900 5450
+Wire Wire Line
+	10900 5750 10900 5850
+Wire Wire Line
+	10900 6150 10900 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5E3D5CF8
+P 10900 6250
+AR Path="/5E26F6FE/5E3D5CF8" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EF2D4/5E3D5CF8" Ref="#PWR?"  Part="1" 
+AR Path="/6009D432/5E3D5CF8" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 10900 6000 50  0001 C CNN
+F 1 "GND" H 10905 6077 50  0000 C CNN
+F 2 "" H 10900 6250 50  0001 C CNN
+F 3 "" H 10900 6250 50  0001 C CNN
+	1    10900 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10900 5350 1    50   UnSpc ~ 0
++5V
 $EndSCHEMATC

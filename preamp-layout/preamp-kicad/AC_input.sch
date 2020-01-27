@@ -64,10 +64,10 @@ F 3 "~" H 5650 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 4050 5650 4050
+	4700 4050 4950 4050
 Connection ~ 5650 4050
 Wire Wire Line
-	5300 3950 4700 3950
+	5300 3950 4950 3950
 Connection ~ 5300 3950
 $Comp
 L power:GND #PWR03
@@ -163,7 +163,7 @@ U 1 1 5E330384
 P 4500 3950
 AR Path="/5E27B612/5E330384" Ref="J?"  Part="1" 
 AR Path="/5E26F6FE/5E330384" Ref="J4"  Part="1" 
-F 0 "J4" H 4580 3896 50  0000 L CNN
+F 0 "J4" H 4418 4075 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 4580 3851 50  0001 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 4500 3950 50  0001 C CNN
 F 3 "~" H 4500 3950 50  0001 C CNN
@@ -182,4 +182,14 @@ Wire Wire Line
 Wire Wire Line
 	7100 4350 7350 4350
 Connection ~ 7100 4050
+Wire Wire Line
+	4950 3850 4950 3950
+Connection ~ 4950 3950
+Wire Wire Line
+	4950 3950 4700 3950
+Wire Wire Line
+	4950 4150 4950 4050
+Connection ~ 4950 4050
+Wire Wire Line
+	4950 4050 5650 4050
 $EndSCHEMATC

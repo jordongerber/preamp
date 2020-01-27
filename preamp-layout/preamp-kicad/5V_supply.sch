@@ -34,8 +34,8 @@ P 7800 2650
 AR Path="/5FCCFC72" Ref="D?"  Part="1" 
 AR Path="/5E27B612/5FCCFC72" Ref="D?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFC72" Ref="D10"  Part="1" 
-F 0 "D10" V 7754 2729 50  0000 L CNN
-F 1 "D" V 7845 2729 50  0000 L CNN
+F 0 "D10" H 7800 2866 50  0000 C CNN
+F 1 "SM4001" H 7800 2775 50  0000 C CNN
 F 2 "" H 7800 2650 50  0001 C CNN
 F 3 "~" H 7800 2650 50  0001 C CNN
 	1    7800 2650
@@ -51,7 +51,7 @@ AR Path="/5FCCFC8B" Ref="R?"  Part="1"
 AR Path="/5E27B612/5FCCFC8B" Ref="R?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFC8B" Ref="R10"  Part="1" 
 F 0 "R10" H 8370 3746 50  0000 L CNN
-F 1 "240R 1%" H 8370 3655 50  0000 L CNN
+F 1 "240R" H 8370 3655 50  0000 L CNN
 F 2 "" V 8230 3700 50  0001 C CNN
 F 3 "~" H 8300 3700 50  0001 C CNN
 	1    8300 3700
@@ -95,8 +95,8 @@ P 7200 3400
 AR Path="/5FCCFCB8" Ref="C?"  Part="1" 
 AR Path="/5E27B612/5FCCFCB8" Ref="C?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFCB8" Ref="C14"  Part="1" 
-F 0 "C14" H 7315 3446 50  0000 L CNN
-F 1 "100nF 35V" H 7315 3355 50  0000 L CNN
+F 0 "C14" H 7086 3446 50  0000 R CNN
+F 1 "100nF 35V" H 7086 3355 50  0000 R CNN
 F 2 "" H 7238 3250 50  0001 C CNN
 F 3 "~" H 7200 3400 50  0001 C CNN
 	1    7200 3400
@@ -183,8 +183,8 @@ AR Path="/5E2D8DA2/5FCCFD3B" Ref="R?"  Part="1"
 AR Path="/5FCCFD3B" Ref="R?"  Part="1" 
 AR Path="/5E27B612/5FCCFD3B" Ref="R?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFD3B" Ref="R8"  Part="1" 
-F 0 "R8" V 4193 6100 50  0000 C CNN
-F 1 "10K" V 4284 6100 50  0000 C CNN
+F 0 "R8" H 4470 6146 50  0000 L CNN
+F 1 "430" H 4470 6055 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4330 6100 50  0001 C CNN
 F 3 "~" H 4400 6100 50  0001 C CNN
 	1    4400 6100
@@ -220,7 +220,7 @@ U 1 1 5FD21456
 P 3100 5500
 F 0 "J10" H 3072 5428 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 5383 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 5500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 5500 50  0001 C CNN
 F 3 "~" H 3100 5500 50  0001 C CNN
 	1    3100 5500
 	-1   0    0    -1  
@@ -235,7 +235,7 @@ U 1 1 5FD3E35C
 P 3100 6100
 F 0 "J11" H 3072 6028 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 5983 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 6100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 6100 50  0001 C CNN
 F 3 "~" H 3100 6100 50  0001 C CNN
 	1    3100 6100
 	-1   0    0    -1  
@@ -254,7 +254,7 @@ U 1 1 5FD41D04
 P 3100 6650
 F 0 "J12" H 3072 6578 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 6533 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 6650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 6650 50  0001 C CNN
 F 3 "~" H 3100 6650 50  0001 C CNN
 	1    3100 6650
 	-1   0    0    -1  
@@ -281,110 +281,62 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5FD91D86
-P 1500 3300
+P 1500 3000
 AR Path="/5E27B612/5FD91D86" Ref="J?"  Part="1" 
 AR Path="/5E5EF2D4/5FD91D86" Ref="J9"  Part="1" 
-F 0 "J9" H 1418 3425 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1418 3066 50  0001 C CNN
-F 2 "" H 1500 3300 50  0001 C CNN
-F 3 "~" H 1500 3300 50  0001 C CNN
-	1    1500 3300
+F 0 "J9" H 1418 3125 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1418 2766 50  0001 C CNN
+F 2 "" H 1500 3000 50  0001 C CNN
+F 3 "~" H 1500 3000 50  0001 C CNN
+	1    1500 3000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 3300 1800 3300
-Wire Wire Line
-	2100 3300 2100 3150
-Wire Wire Line
-	1700 3400 1900 3400
-Wire Wire Line
-	2100 3400 2100 3550
-Text HLabel 1800 3550 3    50   UnSpc ~ 0
-AC+
-Text HLabel 1900 3550 3    50   UnSpc ~ 0
-AC-
-Wire Wire Line
-	1800 3550 1800 3300
-Connection ~ 1800 3300
-Wire Wire Line
-	1800 3300 2100 3300
-Wire Wire Line
-	1900 3550 1900 3400
-Connection ~ 1900 3400
-Wire Wire Line
-	1900 3400 2100 3400
 $Comp
 L Device:Fuse F?
 U 1 1 5FD91D98
-P 3100 3150
+P 2150 3000
 AR Path="/5E26F6FE/5FD91D98" Ref="F?"  Part="1" 
 AR Path="/5E27B612/5FD91D98" Ref="F?"  Part="1" 
 AR Path="/5E5EF2D4/5FD91D98" Ref="F3"  Part="1" 
-F 0 "F3" V 2903 3150 50  0000 C CNN
-F 1 "Fuse" V 2994 3150 50  0000 C CNN
-F 2 "" V 3030 3150 50  0001 C CNN
-F 3 "~" H 3100 3150 50  0001 C CNN
-	1    3100 3150
+F 0 "F3" V 1953 3000 50  0000 C CNN
+F 1 "Fuse" V 2044 3000 50  0000 C CNN
+F 2 "" V 2080 3000 50  0001 C CNN
+F 3 "~" H 2150 3000 50  0001 C CNN
+	1    2150 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2900 3150 2950 3150
-Wire Wire Line
-	2900 3550 2950 3550
 $Comp
 L Diode_Bridge:DF02M D?
 U 1 1 5FD91DA0
-P 3600 3350
+P 3750 3050
 AR Path="/5E27B612/5FD91DA0" Ref="D?"  Part="1" 
 AR Path="/5E5EF2D4/5FD91DA0" Ref="D8"  Part="1" 
-F 0 "D8" H 3944 3396 50  0000 L CNN
-F 1 "DF02M" H 3944 3305 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm" H 3750 3475 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/88571/dfm.pdf" H 3600 3350 50  0001 C CNN
-	1    3600 3350
+F 0 "D8" H 4094 3096 50  0000 L CNN
+F 1 "DF02M" H 4094 3005 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm" H 3900 3175 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/88571/dfm.pdf" H 3750 3050 50  0001 C CNN
+	1    3750 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 3550 2950 3700
-Wire Wire Line
-	2950 3700 3600 3700
-Wire Wire Line
-	3600 3700 3600 3650
-Wire Wire Line
-	3250 3150 3300 3150
-Wire Wire Line
-	3300 3150 3300 3000
-Wire Wire Line
-	3300 3000 3600 3000
-Wire Wire Line
-	3600 3000 3600 3050
-Wire Wire Line
-	3300 3350 3300 3800
-Wire Wire Line
-	3900 3350 3900 3800
-Text Label 3300 3800 3    50   ~ 0
-rectified_-
-Text Label 3900 3800 3    50   ~ 0
-rectified_+
 $Comp
 L Device:Transformer_1P_1S T?
 U 1 1 5FD91DB1
-P 2500 3350
+P 2800 3050
 AR Path="/5E27B612/5FD91DB1" Ref="T?"  Part="1" 
 AR Path="/5E5EF2D4/5FD91DB1" Ref="T2"  Part="1" 
-F 0 "T2" H 2500 3731 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 2500 3640 50  0000 C CNN
-F 2 "" H 2500 3350 50  0001 C CNN
-F 3 "~" H 2500 3350 50  0001 C CNN
-	1    2500 3350
+F 0 "T2" H 2800 3339 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 2800 3340 50  0001 C CNN
+F 2 "" H 2800 3050 50  0001 C CNN
+F 3 "~" H 2800 3050 50  0001 C CNN
+	1    2800 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT_US RV3
 U 1 1 5FD9ED8B
 P 7800 4000
-F 0 "RV3" H 7733 4046 50  0000 R CNN
-F 1 "R_POT_US" H 7733 3955 50  0000 R CNN
+F 0 "RV3" H 7732 4046 50  0000 R CNN
+F 1 "5k" H 7732 3955 50  0000 R CNN
 F 2 "" H 7800 4000 50  0001 C CNN
 F 3 "~" H 7800 4000 50  0001 C CNN
 	1    7800 4000
@@ -415,7 +367,7 @@ AR Path="/5FCCFC5A" Ref="D?"  Part="1"
 AR Path="/5E27B612/5FCCFC5A" Ref="D?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFC5A" Ref="D11"  Part="1" 
 F 0 "D11" V 8804 3779 50  0000 L CNN
-F 1 "1N4004" V 8895 3779 50  0000 L CNN
+F 1 "SM4001" V 8895 3779 50  0000 L CNN
 F 2 "" H 8850 3700 50  0001 C CNN
 F 3 "~" H 8850 3700 50  0001 C CNN
 	1    8850 3700
@@ -551,4 +503,48 @@ F 3 "~" H 8050 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8050 3750
+Wire Wire Line
+	2400 3000 2400 2850
+Wire Wire Line
+	2400 3100 2400 3250
+Text HLabel 1850 2900 1    50   UnSpc ~ 0
+AC+
+Text HLabel 1850 3200 3    50   UnSpc ~ 0
+AC-
+Text Label 3450 3650 3    50   ~ 0
+rectified_-
+Text Label 4050 3650 3    50   ~ 0
+rectified_+
+Wire Wire Line
+	1700 3000 1850 3000
+Wire Wire Line
+	1700 3100 1850 3100
+Wire Wire Line
+	1850 2900 1850 3000
+Connection ~ 1850 3000
+Wire Wire Line
+	1850 3100 1850 3200
+Connection ~ 1850 3100
+Wire Wire Line
+	1850 3000 2000 3000
+Wire Wire Line
+	1850 3100 2400 3100
+Wire Wire Line
+	2300 3000 2400 3000
+Wire Wire Line
+	3750 2750 3750 2650
+Wire Wire Line
+	3750 2650 3200 2650
+Wire Wire Line
+	3200 2650 3200 2850
+Wire Wire Line
+	3200 3500 3200 3250
+Wire Wire Line
+	3750 3350 3750 3500
+Wire Wire Line
+	3200 3500 3750 3500
+Wire Wire Line
+	3450 3650 3450 3050
+Wire Wire Line
+	4050 3050 4050 3650
 $EndSCHEMATC
