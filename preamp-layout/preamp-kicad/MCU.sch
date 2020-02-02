@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 7 12
 Title "Preamp MCU Board"
 Date "2020-01-23"
 Rev "A00"
@@ -60,7 +60,7 @@ Text HLabel 3550 2400 0    50   Output ~ 0
 CS_FP
 Text HLabel 3550 2500 0    50   Output ~ 0
 CS_VOL_HP
-Text HLabel 3550 2300 0    50   Output ~ 0
+Text HLabel 8050 4900 0    50   Output ~ 0
 LED_DT
 Text HLabel 3550 2600 0    50   Output ~ 0
 CS_VOL_MAIN
@@ -320,4 +320,27 @@ F 3 "~" H 8600 3200 50  0001 C CNN
 	1    8600 3200
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	8050 5000 8050 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8A311
+P 8050 5100
+AR Path="/5E26F6FE/5EA8A311" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/5EA8A311" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 8050 4850 50  0001 C CNN
+F 1 "GND" H 8055 4927 50  0000 C CNN
+F 2 "" H 8050 5100 50  0001 C CNN
+F 3 "" H 8050 5100 50  0001 C CNN
+	1    8050 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 4800 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8050 4800 8150 4800
+Wire Wire Line
+	8050 4900 8150 4900
+Wire Wire Line
+	8050 5000 8150 5000
 $EndSCHEMATC
