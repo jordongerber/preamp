@@ -112,7 +112,7 @@ U 1 1 5E2B212C
 P 5600 3750
 F 0 "J1" V 5492 3562 50  0000 R CNN
 F 1 "Conn_01x02_Female" V 5447 3562 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 3750 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5600 3750 50  0001 C CNN
 F 3 "~" H 5600 3750 50  0001 C CNN
 	1    5600 3750
 	0    -1   -1   0   

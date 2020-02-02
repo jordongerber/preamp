@@ -220,7 +220,7 @@ U 1 1 5FD21456
 P 3100 5500
 F 0 "J10" H 3072 5428 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 5383 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 5500 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3100 5500 50  0001 C CNN
 F 3 "~" H 3100 5500 50  0001 C CNN
 	1    3100 5500
 	-1   0    0    -1  
@@ -235,7 +235,7 @@ U 1 1 5FD3E35C
 P 3100 6100
 F 0 "J11" H 3072 6028 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 5983 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 6100 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3100 6100 50  0001 C CNN
 F 3 "~" H 3100 6100 50  0001 C CNN
 	1    3100 6100
 	-1   0    0    -1  
@@ -254,7 +254,7 @@ U 1 1 5FD41D04
 P 3100 6650
 F 0 "J12" H 3072 6578 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 3072 6533 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 6650 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3100 6650 50  0001 C CNN
 F 3 "~" H 3100 6650 50  0001 C CNN
 	1    3100 6650
 	-1   0    0    -1  

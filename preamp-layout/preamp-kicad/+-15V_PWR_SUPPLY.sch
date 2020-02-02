@@ -627,21 +627,6 @@ Connection ~ 6000 2050
 Wire Wire Line
 	6000 4450 5800 4450
 Connection ~ 6000 4450
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 647A815C
-P 2200 5800
-AR Path="/5E607732/647A815C" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/647A815C" Ref="J?"  Part="1" 
-AR Path="/6009D432/647A815C" Ref="J?"  Part="1" 
-AR Path="/5E27B612/647A815C" Ref="J6"  Part="1" 
-F 0 "J6" H 2228 5780 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 2228 5735 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 5800 50  0001 C CNN
-F 3 "~" H 2200 5800 50  0001 C CNN
-	1    2200 5800
-	1    0    0    -1  
-$EndComp
 Text GLabel 1900 5600 0    50   UnSpc ~ 0
 +15V
 Text GLabel 1900 6000 0    50   UnSpc ~ 0
@@ -660,21 +645,6 @@ Wire Wire Line
 	1950 5900 1950 6000
 Wire Wire Line
 	1950 6000 1900 6000
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 647B6C33
-P 2200 6400
-AR Path="/5E607732/647B6C33" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/647B6C33" Ref="J?"  Part="1" 
-AR Path="/6009D432/647B6C33" Ref="J?"  Part="1" 
-AR Path="/5E27B612/647B6C33" Ref="J7"  Part="1" 
-F 0 "J7" H 2228 6380 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 2228 6335 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 6400 50  0001 C CNN
-F 3 "~" H 2200 6400 50  0001 C CNN
-	1    2200 6400
-	1    0    0    -1  
-$EndComp
 Text GLabel 1900 6200 0    50   UnSpc ~ 0
 +15V
 Text GLabel 1900 6600 0    50   UnSpc ~ 0
@@ -693,21 +663,6 @@ Wire Wire Line
 	1950 6500 1950 6600
 Wire Wire Line
 	1950 6600 1900 6600
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 647BAB03
-P 2200 7000
-AR Path="/5E607732/647BAB03" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/647BAB03" Ref="J?"  Part="1" 
-AR Path="/6009D432/647BAB03" Ref="J?"  Part="1" 
-AR Path="/5E27B612/647BAB03" Ref="J8"  Part="1" 
-F 0 "J8" H 2228 6980 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 2228 6935 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 7000 50  0001 C CNN
-F 3 "~" H 2200 7000 50  0001 C CNN
-	1    2200 7000
-	1    0    0    -1  
-$EndComp
 Text GLabel 1900 6800 0    50   UnSpc ~ 0
 +15V
 Text GLabel 1900 7200 0    50   UnSpc ~ 0
@@ -888,4 +843,46 @@ Wire Wire Line
 	2850 3800 2850 3200
 Wire Wire Line
 	3450 3200 3450 3800
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5E5A9FCF
+P 2200 5800
+AR Path="/5E27B612/5E5A9FCF" Ref="J6"  Part="1" 
+AR Path="/6009D432/5E5A9FCF" Ref="J?"  Part="1" 
+AR Path="/5E1A0CE1/5E5A9FCF" Ref="J?"  Part="1" 
+F 0 "J6" H 2172 5778 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2172 5733 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2200 5800 50  0001 C CNN
+F 3 "~" H 2200 5800 50  0001 C CNN
+	1    2200 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J7
+U 1 1 5E5BC88E
+P 2200 6400
+AR Path="/5E27B612/5E5BC88E" Ref="J7"  Part="1" 
+AR Path="/6009D432/5E5BC88E" Ref="J?"  Part="1" 
+AR Path="/5E1A0CE1/5E5BC88E" Ref="J?"  Part="1" 
+F 0 "J7" H 2172 6378 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2172 6333 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2200 6400 50  0001 C CNN
+F 3 "~" H 2200 6400 50  0001 C CNN
+	1    2200 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J8
+U 1 1 5E5C1243
+P 2200 7000
+AR Path="/5E27B612/5E5C1243" Ref="J8"  Part="1" 
+AR Path="/6009D432/5E5C1243" Ref="J?"  Part="1" 
+AR Path="/5E1A0CE1/5E5C1243" Ref="J?"  Part="1" 
+F 0 "J8" H 2172 6978 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2172 6933 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2200 7000 50  0001 C CNN
+F 3 "~" H 2200 7000 50  0001 C CNN
+	1    2200 7000
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

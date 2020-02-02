@@ -282,17 +282,6 @@ Wire Wire Line
 	6850 2750 6950 2750
 Text GLabel 6850 2750 0    50   UnSpc ~ 0
 +5V
-$Comp
-L Connector:Conn_01x02_Female J61
-U 1 1 638B3B3E
-P 7150 2750
-F 0 "J61" H 7178 2680 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7178 2635 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 2750 50  0001 C CNN
-F 3 "~" H 7150 2750 50  0001 C CNN
-	1    7150 2750
-	1    0    0    -1  
-$EndComp
 Text Label 5550 3800 0    50   ~ 0
 OUT_2_R+
 Text Label 5550 3700 0    50   ~ 0
@@ -307,7 +296,7 @@ U 1 1 60B85B38
 P 7150 3300
 F 0 "J62" H 7122 3228 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7122 3183 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 3300 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7150 3300 50  0001 C CNN
 F 3 "~" H 7150 3300 50  0001 C CNN
 	1    7150 3300
 	-1   0    0    -1  
@@ -1649,5 +1638,16 @@ F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 2150 50  
 F 3 "~" H 10600 2150 50  0001 C CNN
 	1    10600 2150
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J61
+U 1 1 5E5DB820
+P 7150 2750
+F 0 "J61" H 7122 2678 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7122 2633 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7150 2750 50  0001 C CNN
+F 3 "~" H 7150 2750 50  0001 C CNN
+	1    7150 2750
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

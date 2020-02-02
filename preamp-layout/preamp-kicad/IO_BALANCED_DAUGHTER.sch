@@ -1145,25 +1145,10 @@ AR Path="/6009D432/64789762" Ref="J?"  Part="1"
 AR Path="/5E1A0CE1/64789762" Ref="J31"  Part="1" 
 F 0 "J31" H 5872 6078 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 5872 6033 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5900 6100 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 5900 6100 50  0001 C CNN
 F 3 "~" H 5900 6100 50  0001 C CNN
 	1    5900 6100
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 64789768
-P 5900 6700
-AR Path="/5E607732/64789768" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/64789768" Ref="J?"  Part="1" 
-AR Path="/6009D432/64789768" Ref="J?"  Part="1" 
-AR Path="/5E1A0CE1/64789768" Ref="J32"  Part="1" 
-F 0 "J32" H 5928 6726 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 5928 6635 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5900 6700 50  0001 C CNN
-F 3 "~" H 5900 6700 50  0001 C CNN
-	1    5900 6700
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5700 6000 5650 6000
@@ -1454,5 +1439,19 @@ F 2 "" H 10600 4250 50  0001 C CNN
 F 3 "" H 10600 4250 50  0001 C CNN
 	1    10600 4250
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5E5911E4
+P 5900 6700
+AR Path="/5E27B612/5E5911E4" Ref="J?"  Part="1" 
+AR Path="/6009D432/5E5911E4" Ref="J?"  Part="1" 
+AR Path="/5E1A0CE1/5E5911E4" Ref="J32"  Part="1" 
+F 0 "J32" H 5872 6678 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5872 6633 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 5900 6700 50  0001 C CNN
+F 3 "~" H 5900 6700 50  0001 C CNN
+	1    5900 6700
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

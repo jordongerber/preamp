@@ -33,19 +33,6 @@ Wire Wire Line
 	9400 2550 9500 2550
 Text GLabel 9400 2550 0    50   UnSpc ~ 0
 +5V
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 63AD6B3B
-P 9700 2550
-AR Path="/5E2D8DA2/63AD6B3B" Ref="J?"  Part="1" 
-AR Path="/619FA14B/63AD6B3B" Ref="J27"  Part="1" 
-F 0 "J27" H 9728 2480 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 9728 2435 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 2550 50  0001 C CNN
-F 3 "~" H 9700 2550 50  0001 C CNN
-	1    9700 2550
-	1    0    0    -1  
-$EndComp
 Text Notes 9250 2100 0    50   ~ 0
 PWR, monitoring
 $Comp
@@ -54,7 +41,7 @@ U 1 1 63AD6EFD
 P 9700 3100
 F 0 "J28" H 9672 3028 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 9672 2983 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 3100 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9700 3100 50  0001 C CNN
 F 3 "~" H 9700 3100 50  0001 C CNN
 	1    9700 3100
 	-1   0    0    -1  
@@ -322,4 +309,15 @@ NoConn ~ 4700 3000
 NoConn ~ 4700 3600
 NoConn ~ 8150 2900
 NoConn ~ 8150 3000
+$Comp
+L Connector:Conn_01x02_Male J27
+U 1 1 5E6537E3
+P 9700 2550
+F 0 "J27" H 9672 2478 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9672 2433 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9700 2550 50  0001 C CNN
+F 3 "~" H 9700 2550 50  0001 C CNN
+	1    9700 2550
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
