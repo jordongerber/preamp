@@ -279,30 +279,17 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5FD91D86
-P 4300 1450
-AR Path="/5E27B612/5FD91D86" Ref="J?"  Part="1" 
-AR Path="/5E5EF2D4/5FD91D86" Ref="J9"  Part="1" 
-F 0 "J9" H 4218 1575 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 4218 1216 50  0001 C CNN
-F 2 "" H 4300 1450 50  0001 C CNN
-F 3 "~" H 4300 1450 50  0001 C CNN
-	1    4300 1450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:Fuse F?
 U 1 1 5FD91D98
-P 4950 1450
+P 4950 1400
 AR Path="/5E26F6FE/5FD91D98" Ref="F?"  Part="1" 
 AR Path="/5E27B612/5FD91D98" Ref="F?"  Part="1" 
 AR Path="/5E5EF2D4/5FD91D98" Ref="F3"  Part="1" 
-F 0 "F3" V 4753 1450 50  0000 C CNN
-F 1 "Fuse" V 4844 1450 50  0000 C CNN
-F 2 "" V 4880 1450 50  0001 C CNN
-F 3 "~" H 4950 1450 50  0001 C CNN
-	1    4950 1450
+F 0 "F3" V 4753 1400 50  0000 C CNN
+F 1 "Fuse" V 4844 1400 50  0000 C CNN
+F 2 "" V 4880 1400 50  0001 C CNN
+F 3 "~" H 4950 1400 50  0001 C CNN
+	1    4950 1400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -490,34 +477,26 @@ F 3 "~" H 6200 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6200 4450
-Wire Wire Line
-	5200 1450 5200 1300
-Wire Wire Line
-	5200 1550 5200 1700
-Text HLabel 4650 1350 1    50   UnSpc ~ 0
+Text HLabel 4650 1300 1    50   UnSpc ~ 0
 AC+
-Text HLabel 4650 1650 3    50   UnSpc ~ 0
+Text HLabel 4650 1700 3    50   UnSpc ~ 0
 AC-
 Text Label 6250 2100 3    50   ~ 0
 rectified_-
 Text Label 6850 2100 3    50   ~ 0
 rectified_+
 Wire Wire Line
-	4500 1450 4650 1450
+	4650 1300 4650 1400
+Connection ~ 4650 1400
 Wire Wire Line
-	4500 1550 4650 1550
+	4650 1600 4650 1700
+Connection ~ 4650 1600
 Wire Wire Line
-	4650 1350 4650 1450
-Connection ~ 4650 1450
+	4650 1400 4800 1400
 Wire Wire Line
-	4650 1550 4650 1650
-Connection ~ 4650 1550
+	4650 1600 5200 1600
 Wire Wire Line
-	4650 1450 4800 1450
-Wire Wire Line
-	4650 1550 5200 1550
-Wire Wire Line
-	5100 1450 5200 1450
+	5100 1400 5200 1400
 Wire Wire Line
 	6550 1200 6550 1100
 Wire Wire Line
@@ -561,6 +540,44 @@ Text Notes 6150 1050 0    50   ~ 0
 6.3VAC
 Text Notes 5000 3750 0    50   ~ 0
 7.8VDC
-Text Notes 4800 1650 0    50   ~ 0
+Text Notes 4800 1700 0    50   ~ 0
 120VAC
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5E8DD1BE
+P 4050 1500
+AR Path="/5E26F6FE/5E8DD1BE" Ref="J?"  Part="1" 
+AR Path="/5E5EF2D4/5E8DD1BE" Ref="J9"  Part="1" 
+F 0 "J9" H 3968 1725 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 3968 1266 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 4050 1500 50  0001 C CNN
+F 3 "~" H 4050 1500 50  0001 C CNN
+	1    4050 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1400 5200 1300
+Wire Wire Line
+	5200 1600 5200 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5E8EF23A
+P 4400 1700
+AR Path="/5E26F6FE/5E8EF23A" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EF2D4/5E8EF23A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4400 1450 50  0001 C CNN
+F 1 "GND" H 4405 1527 50  0000 C CNN
+F 2 "" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1400 4650 1400
+Wire Wire Line
+	4250 1600 4650 1600
+Wire Wire Line
+	4250 1500 4400 1500
+Wire Wire Line
+	4400 1500 4400 1700
 $EndSCHEMATC

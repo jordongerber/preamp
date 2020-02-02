@@ -48,62 +48,32 @@ Wire Wire Line
 Connection ~ 5800 3850
 Text HLabel 6550 3750 1    50   UnSpc ~ 0
 AC_OUT_+
-Text HLabel 6550 4050 3    50   UnSpc ~ 0
+Text HLabel 6550 4150 3    50   UnSpc ~ 0
 AC_OUT_-
 Wire Wire Line
-	5450 4100 5450 3950
+	5450 4200 5450 4050
 $Comp
 L Device:R R1
 U 1 1 5E2C3357
-P 5450 4250
-F 0 "R1" H 5520 4296 50  0000 L CNN
-F 1 "4.7M" H 5520 4205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5380 4250 50  0001 C CNN
-F 3 "~" H 5450 4250 50  0001 C CNN
-	1    5450 4250
+P 5450 4350
+F 0 "R1" H 5520 4396 50  0000 L CNN
+F 1 "4.7M" H 5520 4305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5380 4350 50  0001 C CNN
+F 3 "~" H 5450 4350 50  0001 C CNN
+	1    5450 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 3950 4750 3950
-Connection ~ 5450 3950
-Wire Wire Line
-	5100 3850 4750 3850
+Connection ~ 5450 4050
 Connection ~ 5100 3850
 $Comp
 L power:GND #PWR03
 U 1 1 649E3EA1
-P 5450 4500
-F 0 "#PWR03" H 5450 4250 50  0001 C CNN
-F 1 "GND" H 5455 4327 50  0000 C CNN
-F 2 "" H 5450 4500 50  0001 C CNN
-F 3 "" H 5450 4500 50  0001 C CNN
-	1    5450 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 65B060F9
-P 7350 3550
-AR Path="/5E27B612/65B060F9" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/65B060F9" Ref="J2"  Part="1" 
-F 0 "J2" H 7430 3496 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7430 3451 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7350 3550 50  0001 C CNN
-F 3 "~" H 7350 3550 50  0001 C CNN
-	1    7350 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 65B0680E
-P 7350 4150
-AR Path="/5E27B612/65B0680E" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/65B0680E" Ref="J3"  Part="1" 
-F 0 "J3" H 7430 4096 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7430 4051 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7350 4150 50  0001 C CNN
-F 3 "~" H 7350 4150 50  0001 C CNN
-	1    7350 4150
+P 5450 4600
+F 0 "#PWR03" H 5450 4350 50  0001 C CNN
+F 1 "GND" H 5455 4427 50  0000 C CNN
+F 2 "" H 5450 4600 50  0001 C CNN
+F 3 "" H 5450 4600 50  0001 C CNN
+	1    5450 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -122,27 +92,25 @@ Wire Wire Line
 Wire Wire Line
 	5100 3850 5400 3850
 Wire Wire Line
-	5450 4400 5450 4500
+	5450 4500 5450 4600
 Wire Wire Line
-	6750 3850 6750 3550
-Wire Wire Line
-	6750 3550 7150 3550
+	6750 3250 7150 3250
 Wire Wire Line
 	6250 3850 6550 3850
 Wire Wire Line
-	6900 3650 7150 3650
+	6900 3450 7150 3450
 Wire Wire Line
-	5450 3950 6550 3950
+	5450 4050 6550 4050
 Wire Wire Line
 	6550 3750 6550 3850
 Connection ~ 6550 3850
 Wire Wire Line
 	6550 3850 6750 3850
 Wire Wire Line
-	6550 4050 6550 3950
-Connection ~ 6550 3950
+	6550 4150 6550 4050
+Connection ~ 6550 4050
 Wire Wire Line
-	6550 3950 6900 3950
+	6550 4050 6900 4050
 Text HLabel 5100 3200 1    50   UnSpc ~ 0
 PWR_SW_1
 Text HLabel 5800 3200 1    50   UnSpc ~ 0
@@ -153,43 +121,108 @@ Connection ~ 5100 3400
 Wire Wire Line
 	5800 3200 5800 3400
 Connection ~ 5800 3400
-Text HLabel 4750 3750 1    50   UnSpc ~ 0
+Text HLabel 4850 3750 1    50   UnSpc ~ 0
 AC_IN_+
-Text HLabel 4750 4050 3    50   UnSpc ~ 0
+Text HLabel 4850 4150 3    50   UnSpc ~ 0
 AC_IN_-
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5E330384
-P 4300 3850
-AR Path="/5E27B612/5E330384" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/5E330384" Ref="J4"  Part="1" 
-F 0 "J4" H 4218 3975 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 4380 3751 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 4300 3850 50  0001 C CNN
-F 3 "~" H 4300 3850 50  0001 C CNN
-	1    4300 3850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 3950 6900 3650
-Wire Wire Line
-	6750 3850 6750 4150
-Wire Wire Line
-	6750 4150 7150 4150
 Connection ~ 6750 3850
 Wire Wire Line
-	6900 3950 6900 4250
+	6900 4650 7150 4650
 Wire Wire Line
-	6900 4250 7150 4250
-Connection ~ 6900 3950
+	4850 3750 4850 3850
 Wire Wire Line
-	4750 3750 4750 3850
-Connection ~ 4750 3850
+	4850 4150 4850 4050
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5E8BB7CA
+P 4300 3950
+F 0 "J4" H 4218 4175 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 4218 3716 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 4300 3950 50  0001 C CNN
+F 3 "~" H 4300 3950 50  0001 C CNN
+	1    4300 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 5E8BEBC3
+P 7350 3350
+F 0 "J2" H 7430 3346 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7268 3116 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 3350 50  0001 C CNN
+F 3 "~" H 7350 3350 50  0001 C CNN
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5E8C1BA2
+P 7350 4550
+F 0 "J3" H 7430 4546 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7268 4316 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 4550 50  0001 C CNN
+F 3 "~" H 7350 4550 50  0001 C CNN
+	1    7350 4550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4750 3850 4500 3850
+	7150 3350 7050 3350
 Wire Wire Line
-	4750 4050 4750 3950
-Connection ~ 4750 3950
+	7050 4550 7150 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5E8C517A
+P 7200 3900
+F 0 "#PWR?" H 7200 3650 50  0001 C CNN
+F 1 "GND" H 7205 3727 50  0000 C CNN
+F 2 "" H 7200 3900 50  0001 C CNN
+F 3 "" H 7200 3900 50  0001 C CNN
+	1    7200 3900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4750 3950 5450 3950
+	7200 3900 7200 3850
+Wire Wire Line
+	7200 3850 7050 3850
+Connection ~ 7050 3850
+Wire Wire Line
+	6750 3250 6750 3850
+Wire Wire Line
+	6900 3450 6900 4050
+Wire Wire Line
+	7050 3350 7050 3850
+Wire Wire Line
+	6750 4450 7150 4450
+Wire Wire Line
+	6900 4050 6900 4650
+Connection ~ 6900 4050
+Wire Wire Line
+	6750 3850 6750 4450
+Wire Wire Line
+	7050 3850 7050 4550
+Wire Wire Line
+	4500 4050 4850 4050
+Wire Wire Line
+	4500 3850 4850 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5E8D595F
+P 4600 4250
+F 0 "#PWR?" H 4600 4000 50  0001 C CNN
+F 1 "GND" H 4605 4077 50  0000 C CNN
+F 2 "" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3950 4600 3950
+Wire Wire Line
+	4600 3950 4600 4250
+Connection ~ 4850 4050
+Wire Wire Line
+	4850 4050 5450 4050
+Connection ~ 4850 3850
+Wire Wire Line
+	4850 3850 5100 3850
 $EndSCHEMATC

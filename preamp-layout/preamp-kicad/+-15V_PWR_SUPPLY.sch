@@ -13,24 +13,9 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-$Comp
-L Connector:Screw_Terminal_01x02 J5
-U 1 1 5F8FF1B9
-P 1600 3400
-F 0 "J5" H 1518 3525 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1518 3166 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1600 3400 50  0001 C CNN
-F 3 "~" H 1600 3400 50  0001 C CNN
-	1    1600 3400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 3400 2500 3250
-Wire Wire Line
-	2500 3500 2500 3650
-Text HLabel 1950 3300 1    50   UnSpc ~ 0
+Text HLabel 1950 3250 1    50   UnSpc ~ 0
 AC+
-Text HLabel 1950 3600 3    50   UnSpc ~ 0
+Text HLabel 1950 3650 3    50   UnSpc ~ 0
 AC-
 Text GLabel 3900 6000 1    50   UnSpc ~ 0
 +15V
@@ -105,14 +90,14 @@ Wire Wire Line
 $Comp
 L Device:Fuse F?
 U 1 1 60029A0D
-P 2250 3400
+P 2250 3350
 AR Path="/5E26F6FE/60029A0D" Ref="F?"  Part="1" 
 AR Path="/5E27B612/60029A0D" Ref="F2"  Part="1" 
-F 0 "F2" V 2053 3400 50  0000 C CNN
-F 1 "500mA" V 2144 3400 50  0000 C CNN
-F 2 "" V 2180 3400 50  0001 C CNN
-F 3 "~" H 2250 3400 50  0001 C CNN
-	1    2250 3400
+F 0 "F2" V 2053 3350 50  0000 C CNN
+F 1 "500mA" V 2144 3350 50  0000 C CNN
+F 2 "" V 2180 3350 50  0001 C CNN
+F 3 "~" H 2250 3350 50  0001 C CNN
+	1    2250 3350
 	0    1    1    0   
 $EndComp
 $Comp
@@ -801,21 +786,17 @@ F 3 "~" H 8050 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1800 3400 1950 3400
+	1950 3250 1950 3350
+Connection ~ 1950 3350
 Wire Wire Line
-	1800 3500 1950 3500
+	1950 3550 1950 3650
+Connection ~ 1950 3550
 Wire Wire Line
-	1950 3300 1950 3400
-Connection ~ 1950 3400
+	1950 3350 2100 3350
 Wire Wire Line
-	1950 3500 1950 3600
-Connection ~ 1950 3500
+	1950 3550 2500 3550
 Wire Wire Line
-	1950 3400 2100 3400
-Wire Wire Line
-	1950 3500 2500 3500
-Wire Wire Line
-	2400 3400 2500 3400
+	2400 3350 2500 3350
 Wire Wire Line
 	3850 3150 3850 3050
 Wire Wire Line
@@ -883,7 +864,7 @@ Wire Wire Line
 	3300 3350 3300 3550
 Wire Wire Line
 	3850 3750 3850 3850
-Text Notes 2100 3600 0    50   ~ 0
+Text Notes 2100 3650 0    50   ~ 0
 120VAC
 Text Notes 3400 3000 0    50   ~ 0
 28VAC
@@ -891,4 +872,43 @@ Text Notes 6800 2300 0    50   ~ 0
 +19.2VDC
 Text Notes 6800 4900 0    50   ~ 0
 -19.2VDC
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5E8FCAF8
+P 1350 3450
+AR Path="/5E26F6FE/5E8FCAF8" Ref="J?"  Part="1" 
+AR Path="/5E5EF2D4/5E8FCAF8" Ref="J?"  Part="1" 
+AR Path="/5E27B612/5E8FCAF8" Ref="J5"  Part="1" 
+F 0 "J5" H 1268 3675 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 1268 3216 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 1350 3450 50  0001 C CNN
+F 3 "~" H 1350 3450 50  0001 C CNN
+	1    1350 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3350 2500 3250
+Wire Wire Line
+	2500 3550 2500 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5E92CBD9
+P 1700 3650
+AR Path="/5E26F6FE/5E92CBD9" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5E92CBD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1700 3400 50  0001 C CNN
+F 1 "GND" H 1705 3477 50  0000 C CNN
+F 2 "" H 1700 3650 50  0001 C CNN
+F 3 "" H 1700 3650 50  0001 C CNN
+	1    1700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3450 1700 3450
+Wire Wire Line
+	1700 3450 1700 3650
+Wire Wire Line
+	1550 3550 1950 3550
+Wire Wire Line
+	1550 3350 1950 3350
 $EndSCHEMATC
