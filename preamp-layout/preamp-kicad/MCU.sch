@@ -13,311 +13,311 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 4650 1550 0    50   Input ~ 0
+Text HLabel 3550 2200 0    50   Input ~ 0
 MISO
-Text HLabel 6800 2500 2    50   Output ~ 0
+Text HLabel 5700 3150 2    50   Output ~ 0
 MOSI
-Text HLabel 6800 3100 2    50   Output ~ 0
+Text HLabel 5700 3750 2    50   Output ~ 0
 CLK
-Text HLabel 6800 3200 2    50   Output ~ 0
+Text HLabel 5700 3850 2    50   Output ~ 0
 CS_IO
 Wire Wire Line
-	9500 3200 9500 3300
+	8400 3850 8400 3950
 Wire Wire Line
-	9400 3100 9500 3100
-Text GLabel 9400 3100 0    50   UnSpc ~ 0
+	8300 3750 8400 3750
+Text GLabel 8300 3750 0    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	9500 2650 9500 2750
+	8400 3300 8400 3400
 Wire Wire Line
-	9400 2550 9500 2550
-Text GLabel 9400 2550 0    50   UnSpc ~ 0
+	8300 3200 8400 3200
+Text GLabel 8300 3200 0    50   UnSpc ~ 0
 +5V
-Text Notes 9250 2100 0    50   ~ 0
+Text Notes 8150 2750 0    50   ~ 0
 PWR, monitoring
 $Comp
 L Connector:Conn_01x02_Male J28
 U 1 1 63AD6EFD
-P 9700 3100
-F 0 "J28" H 9672 3028 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 9672 2983 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9700 3100 50  0001 C CNN
-F 3 "~" H 9700 3100 50  0001 C CNN
-	1    9700 3100
+P 8600 3750
+F 0 "J28" H 8572 3678 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8572 3633 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8600 3750 50  0001 C CNN
+F 3 "~" H 8600 3750 50  0001 C CNN
+	1    8600 3750
 	-1   0    0    -1  
 $EndComp
-Text HLabel 4400 3100 0    50   Input ~ 0
+Text HLabel 3300 3750 0    50   Input ~ 0
 SEL_CLK
-Text HLabel 4400 3300 0    50   Input ~ 0
+Text HLabel 3300 3950 0    50   Input ~ 0
 SEL_SW
-Text HLabel 4400 3400 0    50   Input ~ 0
+Text HLabel 3300 4050 0    50   Input ~ 0
 VOL_CLK
-Text HLabel 4400 3500 0    50   Input ~ 0
+Text HLabel 3300 4150 0    50   Input ~ 0
 VOL_DT
-Text HLabel 4400 3700 0    50   Input ~ 0
+Text HLabel 3300 4350 0    50   Input ~ 0
 VOL_SW
-Text HLabel 4650 1750 0    50   Output ~ 0
+Text HLabel 3550 2400 0    50   Output ~ 0
 CS_FP
-Text HLabel 4650 1850 0    50   Output ~ 0
+Text HLabel 3550 2500 0    50   Output ~ 0
 CS_VOL_HP
-Text HLabel 4650 1650 0    50   Output ~ 0
+Text HLabel 3550 2300 0    50   Output ~ 0
 LED_DT
-Text HLabel 4650 1950 0    50   Output ~ 0
+Text HLabel 3550 2600 0    50   Output ~ 0
 CS_VOL_MAIN
-Text GLabel 4650 4050 3    50   UnSpc ~ 0
+Text GLabel 3550 4700 3    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	4450 4100 4450 3800
+	3350 4750 3350 4450
 $Comp
 L preamp:ESP32-DevKitC U5
 U 1 1 64954378
-P 5600 3200
-F 0 "U5" H 5600 4165 50  0000 C CNN
-F 1 "ESP32-DevKitC" H 5600 4074 50  0000 C CNN
-F 2 "" H 5600 4200 50  0001 C CNN
-F 3 "" H 5600 4200 50  0001 C CNN
-	1    5600 3200
+P 4500 3850
+F 0 "U5" H 4500 4815 50  0000 C CNN
+F 1 "ESP32-DevKitC" H 4500 4724 50  0000 C CNN
+F 2 "" H 4500 4850 50  0001 C CNN
+F 3 "" H 4500 4850 50  0001 C CNN
+	1    4500 3850
 	1    0    0    -1  
 $EndComp
-Text HLabel 4400 3200 0    50   Input ~ 0
+Text HLabel 3300 3850 0    50   Input ~ 0
 SEL_DT
 Wire Wire Line
-	4650 3900 4700 3900
+	3550 4550 3600 4550
 Wire Wire Line
-	4650 3900 4650 4050
+	3550 4550 3550 4700
 Wire Wire Line
-	4450 3800 4700 3800
+	3350 4450 3600 4450
 Wire Wire Line
-	4400 3100 4700 3100
+	3300 3750 3600 3750
 Wire Wire Line
-	4400 3200 4700 3200
+	3300 3850 3600 3850
 Wire Wire Line
-	4400 3300 4700 3300
+	3300 3950 3600 3950
 Wire Wire Line
-	4400 3400 4700 3400
+	3300 4050 3600 4050
 Wire Wire Line
-	4400 3500 4700 3500
+	3300 4150 3600 4150
 Wire Wire Line
-	4400 3700 4700 3700
+	3300 4350 3600 4350
 Wire Wire Line
-	6500 2500 6800 2500
+	5400 3150 5700 3150
 Wire Wire Line
-	6500 3100 6800 3100
+	5400 3750 5700 3750
 Wire Wire Line
-	6500 3200 6800 3200
+	5400 3850 5700 3850
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6496C10E
-P 8350 3550
+P 7250 4200
 AR Path="/5E607732/6496C10E" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6496C10E" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496C10E" Ref="J23"  Part="1" 
-F 0 "J23" H 8378 3530 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 8378 3485 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 3550 50  0001 C CNN
-F 3 "~" H 8350 3550 50  0001 C CNN
-	1    8350 3550
+F 0 "J23" H 7278 4180 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7278 4135 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7250 4200 50  0001 C CNN
+F 3 "~" H 7250 4200 50  0001 C CNN
+	1    7250 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 6496C114
-P 9450 4250
+P 8350 4900
 AR Path="/5E2D8DA2/6496C114" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496C114" Ref="J26"  Part="1" 
-F 0 "J26" H 9422 4228 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 9422 4183 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9450 4250 50  0001 C CNN
-F 3 "~" H 9450 4250 50  0001 C CNN
-	1    9450 4250
+F 0 "J26" H 8322 4878 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8322 4833 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4900 50  0001 C CNN
+F 3 "~" H 8350 4900 50  0001 C CNN
+	1    8350 4900
 	-1   0    0    -1  
 $EndComp
-Text HLabel 8150 3450 0    50   Input ~ 0
+Text HLabel 7050 4100 0    50   Input ~ 0
 SEL_CLK
-Text HLabel 8150 3650 0    50   Input ~ 0
+Text HLabel 7050 4300 0    50   Input ~ 0
 SEL_SW
-Text HLabel 8150 3550 0    50   Input ~ 0
+Text HLabel 7050 4200 0    50   Input ~ 0
 SEL_DT
-Text HLabel 8150 3900 0    50   Input ~ 0
+Text HLabel 7050 4550 0    50   Input ~ 0
 VOL_CLK
-Text HLabel 8150 4000 0    50   Input ~ 0
+Text HLabel 7050 4650 0    50   Input ~ 0
 VOL_DT
-Text HLabel 8150 4100 0    50   Input ~ 0
+Text HLabel 7050 4750 0    50   Input ~ 0
 VOL_SW
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6496FD14
-P 8350 4000
+P 7250 4650
 AR Path="/5E607732/6496FD14" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6496FD14" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496FD14" Ref="J24"  Part="1" 
-F 0 "J24" H 8378 3980 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 8378 3935 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4000 50  0001 C CNN
-F 3 "~" H 8350 4000 50  0001 C CNN
-	1    8350 4000
+F 0 "J24" H 7278 4630 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7278 4585 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7250 4650 50  0001 C CNN
+F 3 "~" H 7250 4650 50  0001 C CNN
+	1    7250 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 8150 4450 0    50   Output ~ 0
+Text HLabel 7050 5100 0    50   Output ~ 0
 MOSI
-Text HLabel 8150 4350 0    50   Output ~ 0
+Text HLabel 7050 5000 0    50   Output ~ 0
 CLK
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 64973E6E
-P 8350 4450
+P 7250 5100
 AR Path="/5E607732/64973E6E" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/64973E6E" Ref="J?"  Part="1" 
 AR Path="/619FA14B/64973E6E" Ref="J25"  Part="1" 
-F 0 "J25" H 8378 4430 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 8378 4385 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4450 50  0001 C CNN
-F 3 "~" H 8350 4450 50  0001 C CNN
-	1    8350 4450
+F 0 "J25" H 7278 5080 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7278 5035 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7250 5100 50  0001 C CNN
+F 3 "~" H 7250 5100 50  0001 C CNN
+	1    7250 5100
 	1    0    0    -1  
 $EndComp
-Text HLabel 8150 4550 0    50   Input ~ 0
+Text HLabel 7050 5200 0    50   Input ~ 0
 MISO
 $Comp
 L Connector:Conn_01x06_Female J22
 U 1 1 64977856
-P 8350 2700
-F 0 "J22" H 8378 2630 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 8378 2585 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8350 2700 50  0001 C CNN
-F 3 "~" H 8350 2700 50  0001 C CNN
-	1    8350 2700
+P 7250 3350
+F 0 "J22" H 7278 3280 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 7278 3235 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7250 3350 50  0001 C CNN
+F 3 "~" H 7250 3350 50  0001 C CNN
+	1    7250 3350
 	1    0    0    -1  
 $EndComp
-Text HLabel 8150 2600 0    50   Output ~ 0
+Text HLabel 7050 3250 0    50   Output ~ 0
 CS_FP
-Text HLabel 8150 2700 0    50   Output ~ 0
+Text HLabel 7050 3350 0    50   Output ~ 0
 CS_VOL_HP
-Text HLabel 8150 2800 0    50   Output ~ 0
+Text HLabel 7050 3450 0    50   Output ~ 0
 CS_VOL_MAIN
-Text HLabel 8150 2500 0    50   Output ~ 0
+Text HLabel 7050 3150 0    50   Output ~ 0
 CS_IO
 $Comp
 L Connector:Conn_01x15_Female J21
 U 1 1 649C22F5
-P 6300 3200
-F 0 "J21" H 6192 3993 50  0000 C CNN
-F 1 "Conn_01x15_Female" H 6192 3994 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 6300 3200 50  0001 C CNN
-F 3 "~" H 6300 3200 50  0001 C CNN
-	1    6300 3200
+P 5200 3850
+F 0 "J21" H 5092 4643 50  0000 C CNN
+F 1 "Conn_01x15_Female" H 5092 4644 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 5200 3850 50  0001 C CNN
+F 3 "~" H 5200 3850 50  0001 C CNN
+	1    5200 3850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x15_Female J20
 U 1 1 649C438C
-P 4900 3200
-F 0 "J20" H 4928 3180 50  0000 L CNN
-F 1 "Conn_01x15_Female" H 4928 3135 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 4900 3200 50  0001 C CNN
-F 3 "~" H 4900 3200 50  0001 C CNN
-	1    4900 3200
+P 3800 3850
+F 0 "J20" H 3828 3830 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 3828 3785 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3800 3850 50  0001 C CNN
+F 3 "~" H 3800 3850 50  0001 C CNN
+	1    3800 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EF3AEF
-P 4450 4100
+P 3350 4750
 AR Path="/5E26F6FE/64EF3AEF" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF3AEF" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 4450 3850 50  0001 C CNN
-F 1 "GND" H 4455 3927 50  0000 C CNN
-F 2 "" H 4450 4100 50  0001 C CNN
-F 3 "" H 4450 4100 50  0001 C CNN
-	1    4450 4100
+F 0 "#PWR024" H 3350 4500 50  0001 C CNN
+F 1 "GND" H 3355 4577 50  0000 C CNN
+F 2 "" H 3350 4750 50  0001 C CNN
+F 3 "" H 3350 4750 50  0001 C CNN
+	1    3350 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EF440C
-P 9500 2750
+P 8400 3400
 AR Path="/5E26F6FE/64EF440C" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF440C" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 9500 2500 50  0001 C CNN
-F 1 "GND" H 9505 2577 50  0000 C CNN
-F 2 "" H 9500 2750 50  0001 C CNN
-F 3 "" H 9500 2750 50  0001 C CNN
-	1    9500 2750
+F 0 "#PWR025" H 8400 3150 50  0001 C CNN
+F 1 "GND" H 8405 3227 50  0000 C CNN
+F 2 "" H 8400 3400 50  0001 C CNN
+F 3 "" H 8400 3400 50  0001 C CNN
+	1    8400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EF4C33
-P 9500 3300
+P 8400 3950
 AR Path="/5E26F6FE/64EF4C33" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF4C33" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 9500 3050 50  0001 C CNN
-F 1 "GND" H 9505 3127 50  0000 C CNN
-F 2 "" H 9500 3300 50  0001 C CNN
-F 3 "" H 9500 3300 50  0001 C CNN
-	1    9500 3300
+F 0 "#PWR026" H 8400 3700 50  0001 C CNN
+F 1 "GND" H 8405 3777 50  0000 C CNN
+F 2 "" H 8400 3950 50  0001 C CNN
+F 3 "" H 8400 3950 50  0001 C CNN
+	1    8400 3950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6050 3900
-NoConn ~ 6050 3800
-NoConn ~ 6050 3700
-NoConn ~ 6050 3600
-NoConn ~ 6050 3500
-NoConn ~ 6050 3400
-NoConn ~ 6050 3300
-NoConn ~ 6050 3200
-NoConn ~ 6050 3100
-NoConn ~ 6050 3000
-NoConn ~ 6050 2900
-NoConn ~ 6050 2500
-NoConn ~ 6050 2600
-NoConn ~ 6050 2700
-NoConn ~ 6050 2800
-NoConn ~ 6500 2600
-NoConn ~ 6500 2700
-NoConn ~ 6500 2800
-NoConn ~ 6500 2900
-NoConn ~ 6500 3000
-NoConn ~ 6500 3300
-NoConn ~ 6500 3400
-NoConn ~ 6500 3500
-NoConn ~ 6500 3600
-NoConn ~ 6500 3700
-NoConn ~ 6500 3800
-NoConn ~ 6500 3900
-NoConn ~ 5150 3900
-NoConn ~ 5150 3800
-NoConn ~ 5150 3700
-NoConn ~ 5150 3600
-NoConn ~ 5150 3500
-NoConn ~ 5150 3400
-NoConn ~ 5150 3300
-NoConn ~ 5150 3200
-NoConn ~ 5150 3100
-NoConn ~ 5150 3000
-NoConn ~ 5150 2900
-NoConn ~ 5150 2800
-NoConn ~ 5150 2700
-NoConn ~ 5150 2600
-NoConn ~ 5150 2500
-NoConn ~ 4700 2500
-NoConn ~ 4700 2600
-NoConn ~ 4700 2700
-NoConn ~ 4700 2800
-NoConn ~ 4700 2900
-NoConn ~ 4700 3000
-NoConn ~ 4700 3600
-NoConn ~ 8150 2900
-NoConn ~ 8150 3000
+NoConn ~ 4950 4550
+NoConn ~ 4950 4450
+NoConn ~ 4950 4350
+NoConn ~ 4950 4250
+NoConn ~ 4950 4150
+NoConn ~ 4950 4050
+NoConn ~ 4950 3950
+NoConn ~ 4950 3850
+NoConn ~ 4950 3750
+NoConn ~ 4950 3650
+NoConn ~ 4950 3550
+NoConn ~ 4950 3150
+NoConn ~ 4950 3250
+NoConn ~ 4950 3350
+NoConn ~ 4950 3450
+NoConn ~ 5400 3250
+NoConn ~ 5400 3350
+NoConn ~ 5400 3450
+NoConn ~ 5400 3550
+NoConn ~ 5400 3650
+NoConn ~ 5400 3950
+NoConn ~ 5400 4050
+NoConn ~ 5400 4150
+NoConn ~ 5400 4250
+NoConn ~ 5400 4350
+NoConn ~ 5400 4450
+NoConn ~ 5400 4550
+NoConn ~ 4050 4550
+NoConn ~ 4050 4450
+NoConn ~ 4050 4350
+NoConn ~ 4050 4250
+NoConn ~ 4050 4150
+NoConn ~ 4050 4050
+NoConn ~ 4050 3950
+NoConn ~ 4050 3850
+NoConn ~ 4050 3750
+NoConn ~ 4050 3650
+NoConn ~ 4050 3550
+NoConn ~ 4050 3450
+NoConn ~ 4050 3350
+NoConn ~ 4050 3250
+NoConn ~ 4050 3150
+NoConn ~ 3600 3150
+NoConn ~ 3600 3250
+NoConn ~ 3600 3350
+NoConn ~ 3600 3450
+NoConn ~ 3600 3550
+NoConn ~ 3600 3650
+NoConn ~ 3600 4250
+NoConn ~ 7050 3550
+NoConn ~ 7050 3650
 $Comp
 L Connector:Conn_01x02_Male J27
 U 1 1 5E6537E3
-P 9700 2550
-F 0 "J27" H 9672 2478 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 9672 2433 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9700 2550 50  0001 C CNN
-F 3 "~" H 9700 2550 50  0001 C CNN
-	1    9700 2550
+P 8600 3200
+F 0 "J27" H 8572 3128 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8572 3083 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8600 3200 50  0001 C CNN
+F 3 "~" H 8600 3200 50  0001 C CNN
+	1    8600 3200
 	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

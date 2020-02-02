@@ -83,58 +83,58 @@ Text GLabel 6800 2250 1    50   UnSpc ~ 0
 $Comp
 L 4xxx:4021 U4
 U 1 1 639BBE1A
-P 10100 4550
-F 0 "U4" H 10100 5531 50  0000 C CNN
-F 1 "4021" H 10100 5440 50  0000 C CNN
-F 2 "" H 10100 4700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 10100 4700 50  0001 C CNN
-	1    10100 4550
+P 9500 4400
+F 0 "U4" H 9500 5381 50  0000 C CNN
+F 1 "4021" H 9500 5290 50  0000 C CNN
+F 2 "" H 9500 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 9500 4550 50  0001 C CNN
+	1    9500 4400
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 3450 1    50   UnSpc ~ 0
+Text GLabel 9500 3300 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	10100 3750 10100 3450
-Text Label 9550 4450 2    50   ~ 0
+	9500 3600 9500 3300
+Text Label 8950 4300 2    50   ~ 0
 SW_CH1
-Text Label 9550 4550 2    50   ~ 0
+Text Label 8950 4400 2    50   ~ 0
 SW_CH2
-Text Label 9550 4650 2    50   ~ 0
+Text Label 8950 4500 2    50   ~ 0
 SW_CH3
-Text Label 9550 4750 2    50   ~ 0
+Text Label 8950 4600 2    50   ~ 0
 SW_CH4
-Text Label 9550 4850 2    50   ~ 0
+Text Label 8950 4700 2    50   ~ 0
 SW_CH5
-Text Label 9550 4950 2    50   ~ 0
+Text Label 8950 4800 2    50   ~ 0
 SW_MUTE
 Wire Wire Line
-	9700 4450 9550 4450
+	9100 4300 8950 4300
 Wire Wire Line
-	9550 4650 9700 4650
+	8950 4500 9100 4500
 Wire Wire Line
-	9550 4550 9700 4550
+	8950 4400 9100 4400
 Wire Wire Line
-	9700 4750 9550 4750
+	9100 4600 8950 4600
 Wire Wire Line
-	9700 4850 9550 4850
+	9100 4700 8950 4700
 Wire Wire Line
-	9700 4950 9550 4950
-Text HLabel 10650 4150 2    50   Output ~ 0
+	9100 4800 8950 4800
+Text HLabel 10050 4000 2    50   Output ~ 0
 MISO
-Text HLabel 9550 4250 0    50   Input ~ 0
+Text HLabel 8950 4100 0    50   Input ~ 0
 MOSI
-Text HLabel 9550 3950 0    50   Input ~ 0
+Text HLabel 8950 3800 0    50   Input ~ 0
 CLK
-Text HLabel 9550 4150 0    50   Input ~ 0
+Text HLabel 8950 4000 0    50   Input ~ 0
 CS
 Wire Wire Line
-	9550 4250 9700 4250
+	8950 4100 9100 4100
 Wire Wire Line
-	9550 4150 9700 4150
+	8950 4000 9100 4000
 Wire Wire Line
-	9550 3950 9700 3950
+	8950 3800 9100 3800
 Wire Wire Line
-	10500 4150 10650 4150
+	9900 4000 10050 4000
 Text Label 5150 2650 3    50   ~ 0
 SW_CH1
 Text Label 5450 2650 3    50   ~ 0
@@ -190,14 +190,14 @@ Text GLabel 7550 2250 1    50   UnSpc ~ 0
 +5V
 Text Label 7550 2650 3    50   ~ 0
 SW_OUT_2
-Text Label 9550 5050 2    50   ~ 0
+Text Label 8950 4900 2    50   ~ 0
 SW_OUT_1
-Text Label 9550 5150 2    50   ~ 0
+Text Label 8950 5000 2    50   ~ 0
 SW_OUT_2
 Wire Wire Line
-	9700 5050 9550 5050
+	9100 4900 8950 4900
 Wire Wire Line
-	9550 5150 9700 5150
+	8950 5000 9100 5000
 Text GLabel 2100 1800 1    50   UnSpc ~ 0
 +5V
 $Comp
@@ -241,7 +241,7 @@ AR Path="/6009D432/60B80487" Ref="J?"  Part="1"
 AR Path="/5E5ECAAE/60B80487" Ref="J17"  Part="1" 
 F 0 "J17" H 1522 6428 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 1522 6383 50  0001 R CNN
-F 2 "" H 1550 6500 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1550 6500 50  0001 C CNN
 F 3 "~" H 1550 6500 50  0001 C CNN
 	1    1550 6500
 	-1   0    0    -1  
@@ -262,19 +262,6 @@ Wire Wire Line
 	1150 7150 1150 7250
 Wire Wire Line
 	1350 7050 1150 7050
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 60B804B3
-P 1550 7050
-AR Path="/6009D432/60B804B3" Ref="J?"  Part="1" 
-AR Path="/5E5ECAAE/60B804B3" Ref="J18"  Part="1" 
-F 0 "J18" H 1578 6980 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 1578 6935 50  0001 L CNN
-F 2 "" H 1550 7050 50  0001 C CNN
-F 3 "~" H 1550 7050 50  0001 C CNN
-	1    1550 7050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EC2914
@@ -330,35 +317,49 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EC7570
-P 10100 5350
+P 9500 5200
 AR Path="/5E26F6FE/64EC7570" Ref="#PWR?"  Part="1" 
 AR Path="/5E5ECAAE/64EC7570" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 10100 5100 50  0001 C CNN
-F 1 "GND" H 10105 5177 50  0000 C CNN
-F 2 "" H 10100 5350 50  0001 C CNN
-F 3 "" H 10100 5350 50  0001 C CNN
-	1    10100 5350
+F 0 "#PWR023" H 9500 4950 50  0001 C CNN
+F 1 "GND" H 9505 5027 50  0000 C CNN
+F 2 "" H 9500 5200 50  0001 C CNN
+F 3 "" H 9500 5200 50  0001 C CNN
+	1    9500 5200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10500 3950
-NoConn ~ 10500 4050
+NoConn ~ 9900 3800
+NoConn ~ 9900 3900
 $Comp
 L Connector:Conn_01x04_Female J19
 U 1 1 65AE66F9
-P 10150 2800
-F 0 "J19" H 10178 2730 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 10178 2685 50  0001 L CNN
-F 2 "" H 10150 2800 50  0001 C CNN
-F 3 "~" H 10150 2800 50  0001 C CNN
-	1    10150 2800
+P 9550 2650
+F 0 "J19" H 9578 2580 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9578 2535 50  0001 L CNN
+F 2 "" H 9550 2650 50  0001 C CNN
+F 3 "~" H 9550 2650 50  0001 C CNN
+	1    9550 2650
 	1    0    0    -1  
 $EndComp
-Text HLabel 9950 2900 0    50   Output ~ 0
+Text HLabel 9350 2750 0    50   Output ~ 0
 MISO
-Text HLabel 9950 2700 0    50   Input ~ 0
+Text HLabel 9350 2550 0    50   Input ~ 0
 CLK
-Text HLabel 9950 2800 0    50   Input ~ 0
+Text HLabel 9350 2650 0    50   Input ~ 0
 MOSI
-Text HLabel 9950 3000 0    50   Input ~ 0
+Text HLabel 9350 2850 0    50   Input ~ 0
 CS
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E8B15E1
+P 1550 7050
+AR Path="/5E5EF2D4/5E8B15E1" Ref="J?"  Part="1" 
+AR Path="/6009D432/5E8B15E1" Ref="J?"  Part="1" 
+AR Path="/5E5ECAAE/5E8B15E1" Ref="J18"  Part="1" 
+F 0 "J18" H 1522 6978 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 1522 6933 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1550 7050 50  0001 C CNN
+F 3 "~" H 1550 7050 50  0001 C CNN
+	1    1550 7050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
