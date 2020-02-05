@@ -839,22 +839,6 @@ Wire Wire Line
 	3600 5950 3350 5950
 Connection ~ 3600 5950
 $Comp
-L Device:R R?
-U 1 1 5ECB89C1
-P 9650 4600
-AR Path="/5E2D8DA2/5ECB89C1" Ref="R?"  Part="1" 
-AR Path="/5ECB89C1" Ref="R?"  Part="1" 
-AR Path="/5E27B612/5ECB89C1" Ref="R?"  Part="1" 
-AR Path="/5E5EF2D4/5ECB89C1" Ref="R?"  Part="1" 
-AR Path="/5E5ECAAE/5ECB89C1" Ref="R95"  Part="1" 
-F 0 "R95" H 9720 4646 50  0000 L CNN
-F 1 "430" H 9720 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9580 4600 50  0001 C CNN
-F 3 "~" H 9650 4600 50  0001 C CNN
-	1    9650 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D?
 U 1 1 5ECB89C7
 P 9650 5000
@@ -925,4 +909,20 @@ Text HLabel 3600 5750 1    50   UnSpc ~ 0
 SW_8
 Wire Wire Line
 	3600 5750 3600 5950
+$Comp
+L Device:R R?
+U 1 1 5ECB89C1
+P 9650 4600
+AR Path="/5E2D8DA2/5ECB89C1" Ref="R?"  Part="1" 
+AR Path="/5ECB89C1" Ref="R?"  Part="1" 
+AR Path="/5E27B612/5ECB89C1" Ref="R?"  Part="1" 
+AR Path="/5E5EF2D4/5ECB89C1" Ref="R?"  Part="1" 
+AR Path="/5E5ECAAE/5ECB89C1" Ref="R95"  Part="1" 
+F 0 "R95" H 9720 4646 50  0000 L CNN
+F 1 "330R" H 9720 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9580 4600 50  0001 C CNN
+F 3 "~" H 9650 4600 50  0001 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

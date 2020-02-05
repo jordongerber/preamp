@@ -26,7 +26,7 @@ F6 "AC_IN_+" U L 1550 6350 50
 F7 "AC_OUT_-" U R 2350 6150 50 
 $EndSheet
 $Sheet
-S 3050 5750 1050 750 
+S 3050 5950 550  300 
 U 5E27B612
 F0 "+-15V PWR SUPPLY" 50
 F1 "+-15V_PWR_SUPPLY.sch" 50
@@ -34,7 +34,7 @@ F2 "AC+" U L 3050 6050 50
 F3 "AC-" U L 3050 6150 50 
 $EndSheet
 $Sheet
-S 3200 6850 800  600 
+S 3200 7000 550  300 
 U 5E5EF2D4
 F0 "5V supply" 50
 F1 "5V_supply.sch" 50
@@ -487,7 +487,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 6450 1550 6450
 $Sheet
-S 8250 4450 550  400 
+S 8250 4500 550  300 
 U 5E960098
 F0 "front panel LED" 50
 F1 "front_panel_LED.sch" 50
@@ -695,6 +695,8 @@ Wire Wire Line
 	4950 3950 5750 3950
 Wire Wire Line
 	10750 2900 10750 3450
+Connection ~ 10750 2900
+Connection ~ 10750 3450
 Wire Bus Line
 	5200 1700 5200 3300
 Wire Bus Line
@@ -703,6 +705,4 @@ Wire Bus Line
 	3600 2850 3600 3300
 Wire Bus Line
 	6650 3300 6650 4050
-Connection ~ 10750 2900
-Connection ~ 10750 3450
 $EndSCHEMATC
