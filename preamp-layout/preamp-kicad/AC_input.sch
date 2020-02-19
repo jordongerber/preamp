@@ -94,23 +94,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 4500 5450 4600
 Wire Wire Line
-	6750 3250 7150 3250
-Wire Wire Line
 	6250 3850 6550 3850
-Wire Wire Line
-	6900 3450 7150 3450
 Wire Wire Line
 	5450 4050 6550 4050
 Wire Wire Line
 	6550 3750 6550 3850
-Connection ~ 6550 3850
-Wire Wire Line
-	6550 3850 6750 3850
 Wire Wire Line
 	6550 4150 6550 4050
-Connection ~ 6550 4050
-Wire Wire Line
-	6550 4050 6900 4050
 Text HLabel 5100 3200 1    50   UnSpc ~ 0
 PWR_SW_1
 Text HLabel 5800 3200 1    50   UnSpc ~ 0
@@ -125,9 +115,6 @@ Text HLabel 4850 3750 1    50   UnSpc ~ 0
 AC_IN_+
 Text HLabel 4850 4150 3    50   UnSpc ~ 0
 AC_IN_-
-Connection ~ 6750 3850
-Wire Wire Line
-	6900 4650 7150 4650
 Wire Wire Line
 	4850 3750 4850 3850
 Wire Wire Line
@@ -143,32 +130,66 @@ F 3 "~" H 4300 3950 50  0001 C CNN
 	1    4300 3950
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	4500 4050 4850 4050
+Wire Wire Line
+	4500 3850 4850 3850
+Wire Wire Line
+	4500 3950 4600 3950
+Wire Wire Line
+	4600 3950 4600 4250
+Connection ~ 4850 4050
+Wire Wire Line
+	4850 4050 5450 4050
+Connection ~ 4850 3850
+Wire Wire Line
+	4850 3850 5100 3850
 $Comp
-L Connector:Screw_Terminal_01x03 J2
-U 1 1 5E8BEBC3
-P 7350 3350
-F 0 "J2" H 7430 3346 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 7268 3116 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 3350 50  0001 C CNN
-F 3 "~" H 7350 3350 50  0001 C CNN
-	1    7350 3350
+L Connector:Conn_01x02_Male J?
+U 1 1 5F12D3AA
+P 4400 4250
+AR Path="/5E5EF2D4/5F12D3AA" Ref="J?"  Part="1" 
+AR Path="/5E26F6FE/5F12D3AA" Ref="J?"  Part="1" 
+F 0 "J?" H 4508 4339 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4372 4133 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4400 4250 50  0001 C CNN
+F 3 "~" H 4400 4250 50  0001 C CNN
+	1    4400 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J3
-U 1 1 5E8C1BA2
-P 7350 4550
-F 0 "J3" H 7430 4546 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 7268 4316 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 4550 50  0001 C CNN
-F 3 "~" H 7350 4550 50  0001 C CNN
-	1    7350 4550
+L power:GND #PWR0111
+U 1 1 5E8D595F
+P 4600 4450
+F 0 "#PWR0111" H 4600 4200 50  0001 C CNN
+F 1 "GND" H 4605 4277 50  0000 C CNN
+F 2 "" H 4600 4450 50  0001 C CNN
+F 3 "" H 4600 4450 50  0001 C CNN
+	1    4600 4450
 	1    0    0    -1  
 $EndComp
+Connection ~ 6550 4050
+Connection ~ 6550 3850
 Wire Wire Line
-	7150 3350 7050 3350
+	7050 3850 7050 4550
 Wire Wire Line
-	7050 4550 7150 4550
+	6750 3850 6750 4450
+Connection ~ 6900 4050
+Wire Wire Line
+	6900 4050 6900 4650
+Wire Wire Line
+	6750 4450 7150 4450
+Wire Wire Line
+	7050 3350 7050 3850
+Wire Wire Line
+	6900 3450 6900 4050
+Wire Wire Line
+	6750 3250 6750 3850
+Connection ~ 7050 3850
+Wire Wire Line
+	7200 3850 7050 3850
+Wire Wire Line
+	7200 3900 7200 3850
 $Comp
 L power:GND #PWR0110
 U 1 1 5E8C517A
@@ -181,48 +202,42 @@ F 3 "" H 7200 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 3900 7200 3850
+	7050 4550 7150 4550
 Wire Wire Line
-	7200 3850 7050 3850
-Connection ~ 7050 3850
-Wire Wire Line
-	6750 3250 6750 3850
-Wire Wire Line
-	6900 3450 6900 4050
-Wire Wire Line
-	7050 3350 7050 3850
-Wire Wire Line
-	6750 4450 7150 4450
-Wire Wire Line
-	6900 4050 6900 4650
-Connection ~ 6900 4050
-Wire Wire Line
-	6750 3850 6750 4450
-Wire Wire Line
-	7050 3850 7050 4550
-Wire Wire Line
-	4500 4050 4850 4050
-Wire Wire Line
-	4500 3850 4850 3850
+	7150 3350 7050 3350
 $Comp
-L power:GND #PWR0111
-U 1 1 5E8D595F
-P 4600 4250
-F 0 "#PWR0111" H 4600 4000 50  0001 C CNN
-F 1 "GND" H 4605 4077 50  0000 C CNN
-F 2 "" H 4600 4250 50  0001 C CNN
-F 3 "" H 4600 4250 50  0001 C CNN
-	1    4600 4250
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5E8C1BA2
+P 7350 4550
+F 0 "J3" H 7430 4546 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7268 4316 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 4550 50  0001 C CNN
+F 3 "~" H 7350 4550 50  0001 C CNN
+	1    7350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 5E8BEBC3
+P 7350 3350
+F 0 "J2" H 7430 3346 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7268 3116 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 3350 50  0001 C CNN
+F 3 "~" H 7350 3350 50  0001 C CNN
+	1    7350 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3950 4600 3950
+	6900 4650 7150 4650
+Connection ~ 6750 3850
 Wire Wire Line
-	4600 3950 4600 4250
-Connection ~ 4850 4050
+	6550 4050 6900 4050
 Wire Wire Line
-	4850 4050 5450 4050
-Connection ~ 4850 3850
+	6550 3850 6750 3850
 Wire Wire Line
-	4850 3850 5100 3850
+	6900 3450 7150 3450
+Wire Wire Line
+	6750 3250 7150 3250
+Wire Wire Line
+	4600 4350 4600 4450
 $EndSCHEMATC
