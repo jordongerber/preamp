@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:preamp-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 12
+Sheet 12 13
 Title ""
-Date "2020-01-23"
+Date "2020-02-25"
 Rev "A00"
 Comp ""
 Comment1 "creativecommons.org/licenses/by/4.0/"
@@ -114,6 +115,8 @@ $Comp
 L Analog_DAC:MCP4902 U12
 U 1 1 6017A289
 P 1500 2450
+AR Path="/6017A289" Ref="U12"  Part="1" 
+AR Path="/6009D432/6017A289" Ref="U12"  Part="1" 
 F 0 "U12" H 1700 2900 50  0000 C CNN
 F 1 "MCP4902" H 1700 2800 50  0000 C CNN
 F 2 "" H 2300 2150 50  0001 C CNN
@@ -715,6 +718,8 @@ $Comp
 L Analog_DAC:MCP4902 U13
 U 1 1 6033B91D
 P 1500 5950
+AR Path="/6033B91D" Ref="U13"  Part="1" 
+AR Path="/6009D432/6033B91D" Ref="U13"  Part="1" 
 F 0 "U13" H 1700 6400 50  0000 C CNN
 F 1 "MCP4902" H 1700 6300 50  0000 C CNN
 F 2 "" H 2300 5650 50  0001 C CNN

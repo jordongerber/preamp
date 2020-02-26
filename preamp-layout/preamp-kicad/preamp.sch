@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:preamp-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title "Preamp"
-Date "2020-01-23"
+Date "2020-02-25"
 Rev "A00"
 Comp ""
 Comment1 "creativecommons.org/licenses/by/4.0/"
@@ -40,14 +41,6 @@ F0 "5V supply" 50
 F1 "5V_supply.sch" 50
 F2 "AC+" U L 3200 7100 50 
 F3 "AC-" U L 3200 7200 50 
-$EndSheet
-$Sheet
-S 5850 950  550  500 
-U 5E4A803E
-F0 "headphone amp" 50
-F1 "headphone_amp.sch" 50
-F2 "in_R" U L 5850 1250 50 
-F3 "in_L" U L 5850 1150 50 
 $EndSheet
 $Sheet
 S 5750 3850 700  900 
@@ -89,16 +82,6 @@ F14 "CS_VOL_HP" O L 8200 2450 50
 F15 "CS_VOL_MAIN" O L 8200 2550 50 
 $EndSheet
 $Sheet
-S 1400 4350 550  550 
-U 5E1A0CE1
-F0 "Balanced daughter IO pcb" 50
-F1 "IO_BALANCED_DAUGHTER.sch" 50
-F2 "OUT_R" U R 1950 4800 50 
-F3 "OUT_L" U R 1950 4700 50 
-F4 "IN_L" U R 1950 4450 50 
-F5 "IN_R" U R 1950 4550 50 
-$EndSheet
-$Sheet
 S 850  900  750  2450
 U 5E607732
 F0 "IO" 50
@@ -118,22 +101,6 @@ F13 "A_IN_5_R" U R 1600 2150 50
 F14 "A_OUT_2_R" U R 1600 3200 50 
 F15 "A_OUT_2_L" U R 1600 3100 50 
 $EndSheet
-Text Label 2200 4450 0    50   ~ 0
-BAL_IN_L
-Text Label 2200 4550 0    50   ~ 0
-BAL_IN_R
-Text Label 2200 4700 0    50   ~ 0
-BAL_OUT_L
-Text Label 2200 4800 0    50   ~ 0
-BAL_OUT_R
-Text Label 1950 2350 3    50   ~ 0
-BAL_IN_L
-Text Label 1850 2350 3    50   ~ 0
-BAL_IN_R
-Text Label 1950 3400 3    50   ~ 0
-BAL_OUT_L
-Text Label 1850 3400 3    50   ~ 0
-BAL_OUT_R
 $Comp
 L Device:Rotary_Encoder_Switch SW?
 U 1 1 5E975BA4
@@ -195,25 +162,9 @@ Connection ~ 2650 6150
 Wire Wire Line
 	2650 6150 3050 6150
 Wire Wire Line
-	1950 4450 2200 4450
-Wire Wire Line
-	1950 4550 2200 4550
-Wire Wire Line
-	1950 4700 2200 4700
-Wire Wire Line
-	1950 4800 2200 4800
-Wire Wire Line
 	1600 2850 2150 2850
 Wire Wire Line
 	1600 2950 2150 2950
-Wire Wire Line
-	1600 3100 1950 3100
-Wire Wire Line
-	1600 3200 1850 3200
-Wire Wire Line
-	1600 2150 1850 2150
-Wire Wire Line
-	1600 2050 1950 2050
 Wire Wire Line
 	1600 1000 2150 1000
 Wire Wire Line
@@ -230,26 +181,6 @@ Wire Wire Line
 	1600 1750 2150 1750
 Wire Wire Line
 	1600 1850 2150 1850
-Wire Wire Line
-	1950 2350 1950 2050
-Connection ~ 1950 2050
-Wire Wire Line
-	1950 2050 2150 2050
-Wire Wire Line
-	1850 2350 1850 2150
-Connection ~ 1850 2150
-Wire Wire Line
-	1850 2150 2150 2150
-Wire Wire Line
-	1950 3400 1950 3100
-Connection ~ 1950 3100
-Wire Wire Line
-	1950 3100 2150 3100
-Wire Wire Line
-	1850 3400 1850 3200
-Connection ~ 1850 3200
-Wire Wire Line
-	1850 3200 2150 3200
 Wire Wire Line
 	10450 2400 10750 2400
 Wire Wire Line
@@ -680,14 +611,6 @@ Wire Wire Line
 	10750 2900 10750 3450
 Connection ~ 10750 2900
 Connection ~ 10750 3450
-Wire Bus Line
-	5200 1700 5200 3300
-Wire Bus Line
-	8000 3300 8000 3500
-Wire Bus Line
-	3600 2850 3600 3300
-Wire Bus Line
-	6650 3300 6650 4050
 $Sheet
 S 4250 1050 750  1000
 U 6009D432
@@ -704,5 +627,120 @@ F9 "~CS_VOL_MAIN" I R 5000 1500 50
 F10 "~LDAC" I R 5000 1800 50 
 F11 "MOSI" I R 5000 1600 50 
 F12 "CLK" I R 5000 1700 50 
+$EndSheet
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5F4B3F32
+P 7250 1250
+AR Path="/5E4A803E/5F4B3F32" Ref="J?"  Part="1" 
+AR Path="/5F4B3F32" Ref="J?"  Part="1" 
+F 0 "J?" H 7232 1575 50  0000 C CNN
+F 1 "AudioJack3" H 7232 1484 50  0000 C CNN
+F 2 "" H 7250 1250 50  0001 C CNN
+F 3 "~" H 7250 1250 50  0001 C CNN
+	1    7250 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4B3F39
+P 6950 1450
+AR Path="/6009D432/5F4B3F39" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A803E/5F4B3F39" Ref="#PWR?"  Part="1" 
+AR Path="/5F4B3F39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6950 1200 50  0001 C CNN
+F 1 "GND" H 6955 1277 50  0000 C CNN
+F 2 "" H 6950 1450 50  0001 C CNN
+F 3 "" H 6950 1450 50  0001 C CNN
+	1    6950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1450 6950 1350
+Wire Wire Line
+	6950 1350 7050 1350
+Wire Wire Line
+	6750 1150 7050 1150
+Wire Wire Line
+	6750 1250 7050 1250
+$Sheet
+S 5850 950  900  500 
+U 5E4A803E
+F0 "headphone amp" 50
+F1 "headphone_amp.sch" 50
+F2 "R_IN" U L 5850 1250 50 
+F3 "L_IN" U L 5850 1150 50 
+F4 "L_OUT" U R 6750 1150 50 
+F5 "R_OUT" U R 6750 1250 50 
+$EndSheet
+Wire Wire Line
+	1850 3200 2150 3200
+Wire Wire Line
+	1600 3200 1850 3200
+Connection ~ 1850 3200
+Wire Wire Line
+	1850 3400 1850 3200
+Wire Wire Line
+	1950 3100 2150 3100
+Wire Wire Line
+	1600 3100 1950 3100
+Connection ~ 1950 3100
+Wire Wire Line
+	1950 3400 1950 3100
+Text Label 1850 3400 3    50   ~ 0
+BAL_OUT_R
+Text Label 1950 3400 3    50   ~ 0
+BAL_OUT_L
+Wire Wire Line
+	1850 2150 2150 2150
+Wire Wire Line
+	1600 2150 1850 2150
+Connection ~ 1850 2150
+Wire Wire Line
+	1850 2350 1850 2150
+Wire Wire Line
+	1950 2050 2150 2050
+Wire Wire Line
+	1600 2050 1950 2050
+Connection ~ 1950 2050
+Wire Wire Line
+	1950 2350 1950 2050
+Text Label 1850 2350 3    50   ~ 0
+BAL_IN_R
+Text Label 1950 2350 3    50   ~ 0
+BAL_IN_L
+Wire Bus Line
+	5200 1700 5200 3300
+Wire Bus Line
+	6650 3300 6650 4050
+Wire Bus Line
+	8000 3300 8000 3500
+Wire Bus Line
+	3600 2850 3600 3300
+Wire Wire Line
+	1950 4800 2200 4800
+Wire Wire Line
+	1950 4700 2200 4700
+Wire Wire Line
+	1950 4550 2200 4550
+Wire Wire Line
+	1950 4450 2200 4450
+Text Label 2200 4800 0    50   ~ 0
+BAL_OUT_R
+Text Label 2200 4700 0    50   ~ 0
+BAL_OUT_L
+Text Label 2200 4550 0    50   ~ 0
+BAL_IN_R
+Text Label 2200 4450 0    50   ~ 0
+BAL_IN_L
+$Sheet
+S 1400 4350 550  550 
+U 5E1A0CE1
+F0 "Balanced daughter IO pcb" 50
+F1 "IO_BALANCED_DAUGHTER.sch" 50
+F2 "OUT_R" U R 1950 4800 50 
+F3 "OUT_L" U R 1950 4700 50 
+F4 "IN_L" U R 1950 4450 50 
+F5 "IN_R" U R 1950 4550 50 
 $EndSheet
 $EndSCHEMATC
