@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:preamp-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -135,77 +134,38 @@ Wire Wire Line
 	4500 4050 4850 4050
 Wire Wire Line
 	4500 3850 4850 3850
-Wire Wire Line
-	4500 3950 4600 3950
-Wire Wire Line
-	4600 3950 4600 4250
 Connection ~ 4850 4050
 Wire Wire Line
 	4850 4050 5450 4050
 Connection ~ 4850 3850
 Wire Wire Line
 	4850 3850 5100 3850
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5F12D3AA
-P 4400 4250
-AR Path="/5E5EF2D4/5F12D3AA" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/5F12D3AA" Ref="J?"  Part="1" 
-F 0 "J?" H 4508 4339 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 4372 4133 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4400 4250 50  0001 C CNN
-F 3 "~" H 4400 4250 50  0001 C CNN
-	1    4400 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5E8D595F
-P 4600 4450
-F 0 "#PWR0111" H 4600 4200 50  0001 C CNN
-F 1 "GND" H 4605 4277 50  0000 C CNN
-F 2 "" H 4600 4450 50  0001 C CNN
-F 3 "" H 4600 4450 50  0001 C CNN
-	1    4600 4450
-	1    0    0    -1  
-$EndComp
 Connection ~ 6550 4050
 Connection ~ 6550 3850
-Wire Wire Line
-	7050 3850 7050 4550
-Wire Wire Line
-	6750 3850 6750 4450
 Connection ~ 6900 4050
 Wire Wire Line
 	6900 4050 6900 4650
 Wire Wire Line
 	6750 4450 7150 4450
 Wire Wire Line
-	7050 3350 7050 3850
-Wire Wire Line
 	6900 3450 6900 4050
 Wire Wire Line
-	6750 3250 6750 3850
-Connection ~ 7050 3850
+	7200 3950 7050 3950
 Wire Wire Line
-	7200 3850 7050 3850
-Wire Wire Line
-	7200 3900 7200 3850
+	7200 4000 7200 3950
 $Comp
 L power:GND #PWR0110
 U 1 1 5E8C517A
-P 7200 3900
-F 0 "#PWR0110" H 7200 3650 50  0001 C CNN
-F 1 "GND" H 7205 3727 50  0000 C CNN
-F 2 "" H 7200 3900 50  0001 C CNN
-F 3 "" H 7200 3900 50  0001 C CNN
-	1    7200 3900
+P 7200 4000
+F 0 "#PWR0110" H 7200 3750 50  0001 C CNN
+F 1 "GND" H 7205 3827 50  0000 C CNN
+F 2 "" H 7200 4000 50  0001 C CNN
+F 3 "" H 7200 4000 50  0001 C CNN
+	1    7200 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7050 4550 7150 4550
-Wire Wire Line
-	7150 3350 7050 3350
 $Comp
 L Connector:Screw_Terminal_01x03 J3
 U 1 1 5E8C1BA2
@@ -220,25 +180,93 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J2
 U 1 1 5E8BEBC3
-P 7350 3350
-F 0 "J2" H 7430 3346 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 7268 3116 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 3350 50  0001 C CNN
-F 3 "~" H 7350 3350 50  0001 C CNN
-	1    7350 3350
+P 7850 3350
+F 0 "J2" H 7930 3346 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7768 3116 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7850 3350 50  0001 C CNN
+F 3 "~" H 7850 3350 50  0001 C CNN
+	1    7850 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6900 4650 7150 4650
-Connection ~ 6750 3850
 Wire Wire Line
 	6550 4050 6900 4050
 Wire Wire Line
 	6550 3850 6750 3850
 Wire Wire Line
-	6900 3450 7150 3450
+	4500 3950 7050 3950
+Connection ~ 7050 3950
 Wire Wire Line
-	6750 3250 7150 3250
+	7050 3950 7050 4550
 Wire Wire Line
-	4600 4350 4600 4450
+	7050 3350 7050 3950
+Wire Wire Line
+	6900 3450 7650 3450
+Wire Wire Line
+	7050 3350 7650 3350
+Wire Wire Line
+	7550 3250 7650 3250
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5E5E0EF2
+P 9200 2250
+F 0 "J?" H 9228 2180 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 9047 2062 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9200 2250 50  0001 C CNN
+F 3 "~" H 9200 2250 50  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+Text HLabel 9000 2350 0    50   BiDi ~ 0
+STBY_CTRL_2
+Text HLabel 9000 2250 0    50   BiDi ~ 0
+STBY_CTRL_1
+Wire Wire Line
+	6750 3850 6750 4450
+Text HLabel 7450 2050 2    50   BiDi ~ 0
+STBY_CTRL_2
+Text HLabel 6850 2050 0    50   BiDi ~ 0
+STBY_CTRL_1
+Wire Wire Line
+	6750 2350 6850 2350
+Wire Wire Line
+	7450 2350 7550 2350
+$Comp
+L preamp:G5RLU-1A-E K?
+U 1 1 5E5D8616
+P 7150 2350
+F 0 "K?" H 7150 3017 50  0000 C CNN
+F 1 "G5RLU-1A-E" H 7150 2926 50  0000 C CNN
+F 2 "" H 7150 1800 50  0001 C CNN
+F 3 "" H 7150 1800 50  0001 C CNN
+	1    7150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E605BF1
+P 7100 3050
+AR Path="/5E2D8DA2/5E605BF1" Ref="J?"  Part="1" 
+AR Path="/5E26F6FE/5E605BF1" Ref="J?"  Part="1" 
+F 0 "J?" V 7208 2862 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7072 2933 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7100 3050 50  0001 C CNN
+F 3 "~" H 7100 3050 50  0001 C CNN
+	1    7100 3050
+	0    -1   1    0   
+$EndComp
+Connection ~ 6750 3850
+Wire Wire Line
+	7100 3250 6750 3250
+Wire Wire Line
+	7200 3250 7550 3250
+Connection ~ 6750 3250
+Wire Wire Line
+	6750 3250 6750 3850
+Connection ~ 7550 3250
+Wire Wire Line
+	7550 2350 7550 3250
+Wire Wire Line
+	6750 2350 6750 3250
 $EndSCHEMATC
