@@ -66,10 +66,10 @@ $EndComp
 Connection ~ 5450 4050
 Connection ~ 5100 3850
 $Comp
-L power:GND #PWR03
+L power:GND #PWR04
 U 1 1 649E3EA1
 P 5450 4600
-F 0 "#PWR03" H 5450 4350 50  0001 C CNN
+F 0 "#PWR04" H 5450 4350 50  0001 C CNN
 F 1 "GND" H 5455 4427 50  0000 C CNN
 F 2 "" H 5450 4600 50  0001 C CNN
 F 3 "" H 5450 4600 50  0001 C CNN
@@ -77,10 +77,10 @@ F 3 "" H 5450 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J1
+L Connector:Conn_01x02_Female J3
 U 1 1 5E2B212C
 P 5400 3650
-F 0 "J1" V 5292 3462 50  0000 R CNN
+F 0 "J3" V 5292 3462 50  0000 R CNN
 F 1 "Conn_01x02_Female" V 5247 3462 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5400 3650 50  0001 C CNN
 F 3 "~" H 5400 3650 50  0001 C CNN
@@ -120,10 +120,10 @@ Wire Wire Line
 Wire Wire Line
 	4850 4150 4850 4050
 $Comp
-L Connector:Screw_Terminal_01x03 J4
+L Connector:Screw_Terminal_01x03 J2
 U 1 1 5E8BB7CA
 P 4300 3950
-F 0 "J4" H 4218 4175 50  0000 C CNN
+F 0 "J2" H 4218 4175 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 4218 3716 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 4300 3950 50  0001 C CNN
 F 3 "~" H 4300 3950 50  0001 C CNN
@@ -154,10 +154,10 @@ Wire Wire Line
 Wire Wire Line
 	7200 4000 7200 3950
 $Comp
-L power:GND #PWR0110
+L power:GND #PWR05
 U 1 1 5E8C517A
 P 7200 4000
-F 0 "#PWR0110" H 7200 3750 50  0001 C CNN
+F 0 "#PWR05" H 7200 3750 50  0001 C CNN
 F 1 "GND" H 7205 3827 50  0000 C CNN
 F 2 "" H 7200 4000 50  0001 C CNN
 F 3 "" H 7200 4000 50  0001 C CNN
@@ -167,10 +167,10 @@ $EndComp
 Wire Wire Line
 	7050 4550 7150 4550
 $Comp
-L Connector:Screw_Terminal_01x03 J3
+L Connector:Screw_Terminal_01x03 J5
 U 1 1 5E8C1BA2
 P 7350 4550
-F 0 "J3" H 7430 4546 50  0000 L CNN
+F 0 "J5" H 7430 4546 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 7268 4316 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7350 4550 50  0001 C CNN
 F 3 "~" H 7350 4550 50  0001 C CNN
@@ -178,10 +178,10 @@ F 3 "~" H 7350 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J2
+L Connector:Screw_Terminal_01x03 J7
 U 1 1 5E8BEBC3
 P 7850 3350
-F 0 "J2" H 7930 3346 50  0000 L CNN
+F 0 "J7" H 7930 3346 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 7768 3116 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 7850 3350 50  0001 C CNN
 F 3 "~" H 7850 3350 50  0001 C CNN
@@ -205,22 +205,20 @@ Wire Wire Line
 	6900 3450 7650 3450
 Wire Wire Line
 	7050 3350 7650 3350
-Wire Wire Line
-	7550 3250 7650 3250
 $Comp
-L Connector:Conn_01x02_Female J?
+L Connector:Conn_01x02_Female J6
 U 1 1 5E5E0EF2
-P 9200 2250
-F 0 "J?" H 9228 2180 50  0000 L CNN
-F 1 "Conn_01x02_Female" V 9047 2062 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9200 2250 50  0001 C CNN
-F 3 "~" H 9200 2250 50  0001 C CNN
-	1    9200 2250
+P 7550 1300
+F 0 "J6" H 7578 1230 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 7397 1112 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7550 1300 50  0001 C CNN
+F 3 "~" H 7550 1300 50  0001 C CNN
+	1    7550 1300
 	1    0    0    -1  
 $EndComp
-Text HLabel 9000 2350 0    50   BiDi ~ 0
+Text HLabel 7350 1400 0    50   BiDi ~ 0
 STBY_CTRL_2
-Text HLabel 9000 2250 0    50   BiDi ~ 0
+Text HLabel 7350 1300 0    50   BiDi ~ 0
 STBY_CTRL_1
 Wire Wire Line
 	6750 3850 6750 4450
@@ -230,13 +228,11 @@ Text HLabel 6850 2050 0    50   BiDi ~ 0
 STBY_CTRL_1
 Wire Wire Line
 	6750 2350 6850 2350
-Wire Wire Line
-	7450 2350 7550 2350
 $Comp
-L preamp:G5RLU-1A-E K?
+L preamp:G5RLU-1A-E K1
 U 1 1 5E5D8616
 P 7150 2350
-F 0 "K?" H 7150 3017 50  0000 C CNN
+F 0 "K1" H 7150 3017 50  0000 C CNN
 F 1 "G5RLU-1A-E" H 7150 2926 50  0000 C CNN
 F 2 "" H 7150 1800 50  0001 C CNN
 F 3 "" H 7150 1800 50  0001 C CNN
@@ -248,8 +244,8 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E605BF1
 P 7100 3050
 AR Path="/5E2D8DA2/5E605BF1" Ref="J?"  Part="1" 
-AR Path="/5E26F6FE/5E605BF1" Ref="J?"  Part="1" 
-F 0 "J?" V 7208 2862 50  0000 R CNN
+AR Path="/5E26F6FE/5E605BF1" Ref="J4"  Part="1" 
+F 0 "J4" V 7208 2862 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7072 2933 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7100 3050 50  0001 C CNN
 F 3 "~" H 7100 3050 50  0001 C CNN
@@ -259,14 +255,20 @@ $EndComp
 Connection ~ 6750 3850
 Wire Wire Line
 	7100 3250 6750 3250
-Wire Wire Line
-	7200 3250 7550 3250
 Connection ~ 6750 3250
 Wire Wire Line
 	6750 3250 6750 3850
-Connection ~ 7550 3250
-Wire Wire Line
-	7550 2350 7550 3250
 Wire Wire Line
 	6750 2350 6750 3250
+Wire Wire Line
+	7200 3250 7550 3250
+Wire Wire Line
+	7450 2650 7550 2650
+Wire Wire Line
+	7550 2650 7550 3250
+Connection ~ 7550 3250
+Wire Wire Line
+	7550 3250 7650 3250
+NoConn ~ 7450 2350
+NoConn ~ 6850 2650
 $EndSCHEMATC
