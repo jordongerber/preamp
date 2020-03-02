@@ -104,25 +104,8 @@ F 3 "~" H 3500 1400 50  0001 C CNN
 	1    3500 1400
 	0    1    1    0   
 $EndComp
-Text HLabel 850  6350 3    50   Input ~ 0
+Text HLabel 900  6350 3    50   Input ~ 0
 ~CS_VOL_HP
-Text HLabel 850  2650 0    50   Input ~ 0
-MOSI
-Text HLabel 850  2450 0    50   Input ~ 0
-CLK
-$Comp
-L Analog_DAC:MCP4902 U?
-U 1 1 6017A289
-P 1500 2450
-AR Path="/6017A289" Ref="U?"  Part="1" 
-AR Path="/6009D432/6017A289" Ref="U9"  Part="1" 
-F 0 "U9" H 1700 2900 50  0000 C CNN
-F 1 "MCP4902" H 1700 2800 50  0000 C CNN
-F 2 "" H 2300 2150 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 2150 50  0001 C CNN
-	1    1500 2450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 60187E8A
@@ -296,10 +279,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 1650 3100 1650
 Connection ~ 3100 1650
-Text GLabel 2550 1000 0    50   UnSpc ~ 0
+Text GLabel 2700 1000 0    50   UnSpc ~ 0
 -15V
-Wire Wire Line
-	2550 1000 2700 1000
 $Comp
 L Device:R R?
 U 1 1 602059F6
@@ -417,16 +398,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 3350 3100 3350
 Connection ~ 3100 3350
-Text GLabel 2550 2700 0    50   UnSpc ~ 0
+Text GLabel 2700 2700 0    50   UnSpc ~ 0
 -15V
-Wire Wire Line
-	2550 2700 2700 2700
-Wire Wire Line
-	850  2450 1000 2450
-Wire Wire Line
-	850  2650 1000 2650
-Wire Wire Line
-	850  2750 1000 2750
 Text Label 4100 3350 1    50   ~ 0
 Buffered_DAC_Main_R
 Text Label 4100 1650 1    50   ~ 0
@@ -709,9 +682,9 @@ F 3 "~" H 3500 4900 50  0001 C CNN
 	1    3500 4900
 	0    1    1    0   
 $EndComp
-Text HLabel 850  6150 0    50   Input ~ 0
+Text HLabel 900  6150 0    50   Input ~ 0
 MOSI
-Text HLabel 850  5950 0    50   Input ~ 0
+Text HLabel 900  5950 0    50   Input ~ 0
 CLK
 $Comp
 L Analog_DAC:MCP4902 U?
@@ -899,10 +872,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 5150 3100 5150
 Connection ~ 3100 5150
-Text GLabel 2550 4500 0    50   UnSpc ~ 0
+Text GLabel 2700 4500 0    50   UnSpc ~ 0
 -15V
-Wire Wire Line
-	2550 4500 2700 4500
 $Comp
 L Device:R R?
 U 1 1 6033B9CA
@@ -1020,16 +991,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 6850 3100 6850
 Connection ~ 3100 6850
-Text GLabel 2550 6200 0    50   UnSpc ~ 0
+Text GLabel 2700 6200 0    50   UnSpc ~ 0
 -15V
-Wire Wire Line
-	2550 6200 2700 6200
-Wire Wire Line
-	850  5950 1000 5950
-Wire Wire Line
-	850  6150 1000 6150
-Wire Wire Line
-	850  6250 1000 6250
 Text Label 4100 6850 1    50   ~ 0
 Buffered_DAC_HP_R
 Text Label 4100 5150 1    50   ~ 0
@@ -1285,9 +1248,7 @@ Text GLabel 8800 5500 1    50   UnSpc ~ 0
 Text GLabel 8800 6100 3    50   UnSpc ~ 0
 -15V
 Wire Wire Line
-	850  6250 850  6350
-Wire Wire Line
-	850  2750 850  2850
+	900  6250 900  6350
 Wire Wire Line
 	4100 5150 4100 5250
 Wire Wire Line
@@ -1305,15 +1266,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 3450 4100 3450
 Wire Wire Line
-	2000 2350 2100 2350
-Wire Wire Line
-	2100 2350 2100 1650
-Wire Wire Line
 	2100 1650 2200 1650
-Wire Wire Line
-	2000 2650 2100 2650
-Wire Wire Line
-	2100 2650 2100 3350
 Wire Wire Line
 	2100 3350 2200 3350
 Wire Wire Line
@@ -1864,17 +1817,6 @@ F 3 "" H 3100 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR069
-U 1 1 65235778
-P 1500 2950
-F 0 "#PWR069" H 1500 2700 50  0001 C CNN
-F 1 "GND" H 1505 2777 50  0000 C CNN
-F 2 "" H 1500 2950 50  0001 C CNN
-F 3 "" H 1500 2950 50  0001 C CNN
-	1    1500 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR070
 U 1 1 65245F3B
 P 1500 6450
@@ -1907,18 +1849,8 @@ F 3 "" H 3100 5450 50  0001 C CNN
 	1    3100 5450
 	1    0    0    -1  
 $EndComp
-Text HLabel 850  6050 0    50   Input ~ 0
+Text HLabel 900  6050 0    50   Input ~ 0
 ~LDAC
-Wire Wire Line
-	850  6050 1000 6050
-Text HLabel 850  2550 0    50   Input ~ 0
-~LDAC
-Wire Wire Line
-	850  2550 1000 2550
-Wire Wire Line
-	1000 2250 950  2250
-Wire Wire Line
-	950  2250 950  1900
 Wire Wire Line
 	1000 5750 950  5750
 Wire Wire Line
@@ -1927,12 +1859,6 @@ Wire Wire Line
 	950  5400 1500 5400
 Text GLabel 1500 5200 1    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	950  1900 1500 1900
-Text GLabel 1500 1700 1    50   UnSpc ~ 0
-+5V
-Text HLabel 850  2850 3    50   Input ~ 0
-~CS_VOL_MAIN
 NoConn ~ 9150 3600
 NoConn ~ 9150 1600
 NoConn ~ 5800 1600
@@ -2016,11 +1942,6 @@ F 3 "~" H 7700 5100 50  0001 C CNN
 	1    7700 5100
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1500 1900
-Wire Wire Line
-	1500 1900 1500 2050
-Wire Wire Line
-	1500 1700 1500 1900
 Connection ~ 1500 5400
 Wire Wire Line
 	1500 5400 1500 5550
@@ -2032,7 +1953,7 @@ U 1 1 5F064263
 P 1500 4000
 F 0 "J64" H 1472 3978 50  0000 R CNN
 F 1 "Conn_01x05_Male" H 1608 4290 50  0001 C CNN
-F 2 "" H 1500 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1500 4000 50  0001 C CNN
 F 3 "~" H 1500 4000 50  0001 C CNN
 	1    1500 4000
 	-1   0    0    -1  
@@ -2047,4 +1968,97 @@ Text HLabel 1300 4100 0    50   Input ~ 0
 ~CS_VOL_MAIN
 Text HLabel 1300 4200 0    50   Input ~ 0
 ~CS_VOL_HP
+Text GLabel 2300 5700 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	2300 5700 2300 5750
+Connection ~ 2300 5750
+Wire Wire Line
+	2300 5750 2300 6250
+Wire Wire Line
+	2000 5750 2300 5750
+Wire Wire Line
+	2000 6250 2300 6250
+Text GLabel 1500 1700 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	1500 1700 1500 1900
+Wire Wire Line
+	1500 1900 1500 2050
+Connection ~ 1500 1900
+Text HLabel 900  2850 3    50   Input ~ 0
+~CS_VOL_MAIN
+Wire Wire Line
+	950  1900 1500 1900
+Wire Wire Line
+	950  2250 950  1900
+Wire Wire Line
+	1000 2250 950  2250
+Text HLabel 900  2550 0    50   Input ~ 0
+~LDAC
+$Comp
+L power:GND #PWR069
+U 1 1 65235778
+P 1500 2950
+F 0 "#PWR069" H 1500 2700 50  0001 C CNN
+F 1 "GND" H 1505 2777 50  0000 C CNN
+F 2 "" H 1500 2950 50  0001 C CNN
+F 3 "" H 1500 2950 50  0001 C CNN
+	1    1500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2750 900  2850
+$Comp
+L Analog_DAC:MCP4902 U?
+U 1 1 6017A289
+P 1500 2450
+AR Path="/6017A289" Ref="U?"  Part="1" 
+AR Path="/6009D432/6017A289" Ref="U9"  Part="1" 
+F 0 "U9" H 1700 2900 50  0000 C CNN
+F 1 "MCP4902" H 1700 2800 50  0000 C CNN
+F 2 "" H 2300 2150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 2150 50  0001 C CNN
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 900  2450 0    50   Input ~ 0
+CLK
+Text HLabel 900  2650 0    50   Input ~ 0
+MOSI
+Text GLabel 2300 2200 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	2000 2750 2300 2750
+Wire Wire Line
+	2300 2250 2300 2750
+Wire Wire Line
+	2300 2200 2300 2250
+Connection ~ 2300 2250
+Wire Wire Line
+	2000 2250 2300 2250
+Wire Wire Line
+	2100 2650 2100 3350
+Wire Wire Line
+	2000 2650 2100 2650
+Wire Wire Line
+	2100 2350 2100 1650
+Wire Wire Line
+	2000 2350 2100 2350
+Wire Wire Line
+	900  5950 1000 5950
+Wire Wire Line
+	900  6050 1000 6050
+Wire Wire Line
+	900  6150 1000 6150
+Wire Wire Line
+	900  6250 1000 6250
+Wire Wire Line
+	900  2450 1000 2450
+Wire Wire Line
+	900  2550 1000 2550
+Wire Wire Line
+	1000 2650 900  2650
+Wire Wire Line
+	900  2750 1000 2750
 $EndSCHEMATC

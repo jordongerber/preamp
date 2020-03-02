@@ -13,58 +13,54 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 3550 2200 0    50   Input ~ 0
+Text HLabel 5400 3250 2    50   Input ~ 0
 MISO
-Text HLabel 5700 3150 2    50   Output ~ 0
+Text HLabel 5400 3150 2    50   Output ~ 0
 MOSI
-Text HLabel 5700 3750 2    50   Output ~ 0
+Text HLabel 5400 3750 2    50   Output ~ 0
 CLK
-Text HLabel 5700 3850 2    50   Output ~ 0
+Text HLabel 5400 3850 2    50   Output ~ 0
 CS_IO
 Wire Wire Line
-	8400 3850 8400 3950
-Wire Wire Line
-	8300 3750 8400 3750
-Text GLabel 8300 3750 0    50   UnSpc ~ 0
+	8400 3950 8400 4050
+Text GLabel 8400 3850 0    50   UnSpc ~ 0
 +5V
 Wire Wire Line
 	8400 3300 8400 3400
-Wire Wire Line
-	8300 3200 8400 3200
-Text GLabel 8300 3200 0    50   UnSpc ~ 0
+Text GLabel 8400 3200 0    50   UnSpc ~ 0
 +5V
 Text Notes 8150 2750 0    50   ~ 0
 PWR, monitoring
 $Comp
 L Connector:Conn_01x02_Male J35
 U 1 1 63AD6EFD
-P 8600 3750
-F 0 "J35" H 8572 3678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 8572 3633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8600 3750 50  0001 C CNN
-F 3 "~" H 8600 3750 50  0001 C CNN
-	1    8600 3750
+P 8600 3850
+F 0 "J35" H 8572 3778 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8572 3733 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8600 3850 50  0001 C CNN
+F 3 "~" H 8600 3850 50  0001 C CNN
+	1    8600 3850
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3300 3750 0    50   Input ~ 0
+Text HLabel 3600 3750 0    50   Input ~ 0
 SEL_CLK
-Text HLabel 3300 3950 0    50   Input ~ 0
+Text HLabel 3600 3950 0    50   Input ~ 0
 SEL_SW
-Text HLabel 3300 4050 0    50   Input ~ 0
+Text HLabel 3600 4050 0    50   Input ~ 0
 VOL_CLK
-Text HLabel 3300 4150 0    50   Input ~ 0
+Text HLabel 3600 4150 0    50   Input ~ 0
 VOL_DT
-Text HLabel 3300 4350 0    50   Input ~ 0
+Text HLabel 3600 4350 0    50   Input ~ 0
 VOL_SW
-Text HLabel 3550 2400 0    50   Output ~ 0
+Text HLabel 5400 4150 2    50   Output ~ 0
 CS_FP
-Text HLabel 3550 2500 0    50   Output ~ 0
+Text HLabel 5400 4050 2    50   Output ~ 0
 CS_VOL_HP
 Text HLabel 8050 4900 0    50   Output ~ 0
 LED_DT
-Text HLabel 3550 2600 0    50   Output ~ 0
+Text HLabel 5400 3950 2    50   Output ~ 0
 CS_VOL_MAIN
-Text GLabel 3550 4700 3    50   UnSpc ~ 0
+Text GLabel 3600 4550 0    50   UnSpc ~ 0
 +5V
 Wire Wire Line
 	3350 4750 3350 4450
@@ -79,32 +75,10 @@ F 3 "" H 4500 4850 50  0001 C CNN
 	1    4500 3850
 	1    0    0    -1  
 $EndComp
-Text HLabel 3300 3850 0    50   Input ~ 0
+Text HLabel 3600 3850 0    50   Input ~ 0
 SEL_DT
 Wire Wire Line
-	3550 4550 3600 4550
-Wire Wire Line
-	3550 4550 3550 4700
-Wire Wire Line
 	3350 4450 3600 4450
-Wire Wire Line
-	3300 3750 3600 3750
-Wire Wire Line
-	3300 3850 3600 3850
-Wire Wire Line
-	3300 3950 3600 3950
-Wire Wire Line
-	3300 4050 3600 4050
-Wire Wire Line
-	3300 4150 3600 4150
-Wire Wire Line
-	3300 4350 3600 4350
-Wire Wire Line
-	5400 3150 5700 3150
-Wire Wire Line
-	5400 3750 5700 3750
-Wire Wire Line
-	5400 3850 5700 3850
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6496C10E
@@ -122,14 +96,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 6496C114
-P 8350 4900
+P 8250 4900
 AR Path="/5E2D8DA2/6496C114" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496C114" Ref="J33"  Part="1" 
-F 0 "J33" H 8322 4878 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 8322 4833 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4900 50  0001 C CNN
-F 3 "~" H 8350 4900 50  0001 C CNN
-	1    8350 4900
+F 0 "J33" H 8222 4878 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8222 4833 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8250 4900 50  0001 C CNN
+F 3 "~" H 8250 4900 50  0001 C CNN
+	1    8250 4900
 	-1   0    0    -1  
 $EndComp
 Text HLabel 7050 4100 0    50   Input ~ 0
@@ -248,14 +222,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EF4C33
-P 8400 3950
+P 8400 4050
 AR Path="/5E26F6FE/64EF4C33" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF4C33" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 8400 3700 50  0001 C CNN
-F 1 "GND" H 8405 3777 50  0000 C CNN
-F 2 "" H 8400 3950 50  0001 C CNN
-F 3 "" H 8400 3950 50  0001 C CNN
-	1    8400 3950
+F 0 "#PWR034" H 8400 3800 50  0001 C CNN
+F 1 "GND" H 8405 3877 50  0000 C CNN
+F 2 "" H 8400 4050 50  0001 C CNN
+F 3 "" H 8400 4050 50  0001 C CNN
+	1    8400 4050
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4950 4550
@@ -273,14 +247,10 @@ NoConn ~ 4950 3150
 NoConn ~ 4950 3250
 NoConn ~ 4950 3350
 NoConn ~ 4950 3450
-NoConn ~ 5400 3250
 NoConn ~ 5400 3350
 NoConn ~ 5400 3450
 NoConn ~ 5400 3550
 NoConn ~ 5400 3650
-NoConn ~ 5400 3950
-NoConn ~ 5400 4050
-NoConn ~ 5400 4150
 NoConn ~ 5400 4250
 NoConn ~ 5400 4350
 NoConn ~ 5400 4450
@@ -303,7 +273,6 @@ NoConn ~ 4050 3150
 NoConn ~ 3600 3150
 NoConn ~ 3600 3250
 NoConn ~ 3600 3350
-NoConn ~ 3600 3450
 NoConn ~ 3600 3550
 NoConn ~ 3600 3650
 NoConn ~ 3600 4250
@@ -337,10 +306,6 @@ F 3 "" H 8050 5100 50  0001 C CNN
 $EndComp
 Text GLabel 8050 4800 0    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	8050 4800 8150 4800
-Wire Wire Line
-	8050 4900 8150 4900
-Wire Wire Line
-	8050 5000 8150 5000
+Text HLabel 3600 3450 0    50   Output ~ 0
+LED_DT
 $EndSCHEMATC
