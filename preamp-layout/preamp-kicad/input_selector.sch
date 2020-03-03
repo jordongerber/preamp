@@ -30,29 +30,14 @@ F 3 "~" H 6600 4700 50  0001 C CNN
 	1    6600 4700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_Expansion:MCP23S17_SP U?
-U 1 1 5E01AA66
-P 2200 2700
-AR Path="/5E01AA66" Ref="U?"  Part="1" 
-AR Path="/5E2D8DA2/5E01AA66" Ref="U6"  Part="1" 
-F 0 "U6" H 2500 3800 50  0000 C CNN
-F 1 "MCP23S17_SP" H 2500 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 2400 1700 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 50  0001 L CNN
-	1    2200 2700
-	1    0    0    -1  
-$EndComp
 Text Label 5550 1400 0    50   ~ 0
 IN_1_S+
 Text GLabel 5450 1200 2    50   UnSpc ~ 0
 +5V
 Wire Wire Line
 	5450 1200 5300 1200
-Text GLabel 2200 1250 1    50   UnSpc ~ 0
+Text GLabel 2200 1600 1    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	2200 1250 2200 1600
 Wire Wire Line
 	5300 1400 5550 1400
 Wire Wire Line
@@ -150,37 +135,18 @@ Wire Wire Line
 	6850 3300 6950 3300
 Text GLabel 6850 3300 0    50   UnSpc ~ 0
 +5V
-Text HLabel 1100 1350 0    50   Input ~ 0
+Text HLabel 1300 1450 1    50   Input ~ 0
 CLK
-Text HLabel 1100 1250 0    50   Input ~ 0
+Text HLabel 1400 1450 1    50   Input ~ 0
 CS
-Text HLabel 1100 1450 0    50   Input ~ 0
+Text HLabel 1200 1450 1    50   Input ~ 0
 MOSI
 Wire Wire Line
-	1050 2000 1400 2000
+	1050 1900 1400 1900
 Wire Wire Line
-	1050 1900 1500 1900
+	1050 2100 1200 2100
 Wire Wire Line
-	1050 2100 1300 2100
-Connection ~ 1300 2100
-Wire Wire Line
-	1300 2100 1500 2100
-Connection ~ 1400 2000
-Wire Wire Line
-	1400 2000 1500 2000
-Connection ~ 1500 1900
-Wire Wire Line
-	1500 1250 1500 1900
-Wire Wire Line
-	1100 1250 1500 1250
-Wire Wire Line
-	1400 1350 1400 2000
-Wire Wire Line
-	1100 1350 1400 1350
-Wire Wire Line
-	1300 1450 1300 2100
-Wire Wire Line
-	1100 1450 1300 1450
+	1200 1450 1200 2100
 Text Label 5550 1900 0    50   ~ 0
 IN_3_R+
 Text Label 5550 1800 0    50   ~ 0
@@ -526,10 +492,10 @@ IN_1_R+
 Text Notes 10150 2818 2    118  ~ 24
 IN 2
 $Comp
-L preamp:G6JU K4
+L preamp:G6JU K3
 U 1 1 6353124F
 P 10350 2750
-F 0 "K4" V 10304 2928 50  0000 L CNN
+F 0 "K3" V 10304 2928 50  0000 L CNN
 F 1 "G6JU" V 10395 2928 50  0000 L CNN
 F 2 "" H 10350 2850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 2850 50  0001 C CNN
@@ -589,10 +555,10 @@ IN_2_R+
 Text Notes 10150 3818 2    118  ~ 24
 IN 3
 $Comp
-L preamp:G6JU K3
+L preamp:G6JU K4
 U 1 1 6365EAC0
 P 10350 3750
-F 0 "K3" V 10304 3928 50  0000 L CNN
+F 0 "K4" V 10304 3928 50  0000 L CNN
 F 1 "G6JU" V 10395 3928 50  0000 L CNN
 F 2 "" H 10350 3850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 3850 50  0001 C CNN
@@ -1124,10 +1090,10 @@ Wire Wire Line
 Wire Wire Line
 	3450 5100 3450 4900
 $Comp
-L preamp:G6JU K4
+L preamp:G6JU K3
 U 3 1 63D47795
 P 3750 5500
-F 0 "K4" H 3750 5277 50  0000 C CNN
+F 0 "K3" H 3750 5277 50  0000 C CNN
 F 1 "G6JU" H 3750 5186 50  0000 C CNN
 F 2 "" H 3750 5600 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5600 50  0001 C CNN
@@ -1135,10 +1101,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5600 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp:G6JU K4
+L preamp:G6JU K3
 U 2 1 63D4779F
 P 3750 4900
-F 0 "K4" H 3750 5225 50  0000 C CNN
+F 0 "K3" H 3750 5225 50  0000 C CNN
 F 1 "G6JU" H 3750 5134 50  0000 C CNN
 F 2 "" H 3750 5000 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5000 50  0001 C CNN
@@ -1183,10 +1149,10 @@ Wire Wire Line
 Wire Wire Line
 	1650 6750 1650 6550
 $Comp
-L preamp:G6JU K3
+L preamp:G6JU K4
 U 3 1 63E1D906
 P 1950 7150
-F 0 "K3" H 1950 6927 50  0000 C CNN
+F 0 "K4" H 1950 6927 50  0000 C CNN
 F 1 "G6JU" H 1950 6836 50  0000 C CNN
 F 2 "" H 1950 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 7250 50  0001 C CNN
@@ -1604,10 +1570,10 @@ NoConn ~ 1500 2200
 NoConn ~ 2900 2600
 NoConn ~ 2900 3500
 $Comp
-L preamp:G6JU K3
+L preamp:G6JU K4
 U 2 1 63E1D910
 P 1950 6550
-F 0 "K3" H 1950 6875 50  0000 C CNN
+F 0 "K4" H 1950 6875 50  0000 C CNN
 F 1 "G6JU" H 1950 6784 50  0000 C CNN
 F 2 "" H 1950 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 6650 50  0001 C CNN
@@ -1649,4 +1615,32 @@ F 3 "~" H 1150 6850 50  0001 C CNN
 	1    1150 6850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Interface_Expansion:MCP23S17_SP U?
+U 1 1 5E01AA66
+P 2200 2700
+AR Path="/5E01AA66" Ref="U?"  Part="1" 
+AR Path="/5E2D8DA2/5E01AA66" Ref="U6"  Part="1" 
+F 0 "U6" H 2500 3800 50  0000 C CNN
+F 1 "MCP23S17_SP" H 2500 3700 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 2400 1700 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 50  0001 L CNN
+	1    2200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2000 1300 2000
+Wire Wire Line
+	1300 1450 1300 2000
+Wire Wire Line
+	1400 1450 1400 1900
+Connection ~ 1200 2100
+Connection ~ 1300 2000
+Connection ~ 1400 1900
+Wire Wire Line
+	1400 1900 1500 1900
+Wire Wire Line
+	1200 2100 1500 2100
+Wire Wire Line
+	1300 2000 1500 2000
 $EndSCHEMATC

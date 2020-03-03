@@ -17,41 +17,6 @@ Text HLabel 2150 4700 0    50   UnSpc ~ 0
 R_IN
 Text HLabel 2150 4300 0    50   UnSpc ~ 0
 L_IN
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 60B7C07D
-P 1950 6100
-AR Path="/5E5EF2D4/60B7C07D" Ref="J?"  Part="1" 
-AR Path="/6009D432/60B7C07D" Ref="J?"  Part="1" 
-AR Path="/5E4A803E/60B7C07D" Ref="J73"  Part="1" 
-F 0 "J73" H 1922 6028 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 1922 5983 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1950 6100 50  0001 C CNN
-F 3 "~" H 1950 6100 50  0001 C CNN
-	1    1950 6100
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1550 6100 0    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	1750 6200 1550 6200
-Wire Wire Line
-	1550 6200 1550 6300
-Wire Wire Line
-	1750 6100 1550 6100
-$Comp
-L power:GND #PWR?
-U 1 1 64EC0170
-P 1550 6300
-AR Path="/5E26F6FE/64EC0170" Ref="#PWR?"  Part="1" 
-AR Path="/5E4A803E/64EC0170" Ref="#PWR097"  Part="1" 
-F 0 "#PWR097" H 1550 6050 50  0001 C CNN
-F 1 "GND" H 1555 6127 50  0000 C CNN
-F 2 "" H 1550 6300 50  0001 C CNN
-F 3 "" H 1550 6300 50  0001 C CNN
-	1    1550 6300
-	1    0    0    -1  
-$EndComp
 Text GLabel 3850 6100 1    50   UnSpc ~ 0
 +15V
 $Comp
@@ -64,7 +29,7 @@ AR Path="/5E27B612/5E3C1B26" Ref="R?"  Part="1"
 AR Path="/6009D432/5E3C1B26" Ref="R?"  Part="1" 
 AR Path="/5E4A803E/5E3C1B26" Ref="R62"  Part="1" 
 F 0 "R62" H 3920 6396 50  0000 L CNN
-F 1 "1.3k" H 3920 6305 50  0000 L CNN
+F 1 "1.5k" H 3920 6305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 6350 50  0001 C CNN
 F 3 "~" H 3850 6350 50  0001 C CNN
 	1    3850 6350
@@ -103,7 +68,7 @@ AR Path="/5E27B612/5E3C1B36" Ref="R?"  Part="1"
 AR Path="/6009D432/5E3C1B36" Ref="R?"  Part="1" 
 AR Path="/5E4A803E/5E3C1B36" Ref="R63"  Part="1" 
 F 0 "R63" H 4470 6396 50  0000 L CNN
-F 1 "1.3k" H 4470 6305 50  0000 L CNN
+F 1 "1.5k" H 4470 6305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4330 6350 50  0001 C CNN
 F 3 "~" H 4400 6350 50  0001 C CNN
 	1    4400 6350
@@ -882,8 +847,8 @@ U 1 1 647A3EBE
 P 2950 6200
 AR Path="/5E27B612/647A3EBE" Ref="J?"  Part="1" 
 AR Path="/6009D432/647A3EBE" Ref="J?"  Part="1" 
-AR Path="/5E4A803E/647A3EBE" Ref="J76"  Part="1" 
-F 0 "J76" H 2922 6178 50  0000 R CNN
+AR Path="/5E4A803E/647A3EBE" Ref="J73"  Part="1" 
+F 0 "J73" H 2922 6178 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 2922 6133 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2950 6200 50  0001 C CNN
 F 3 "~" H 2950 6200 50  0001 C CNN
@@ -903,8 +868,8 @@ P 3450 4500
 AR Path="/5E607732/5F33E58A" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/5F33E58A" Ref="J?"  Part="1" 
 AR Path="/6009D432/5F33E58A" Ref="J?"  Part="1" 
-AR Path="/5E4A803E/5F33E58A" Ref="J78"  Part="1" 
-F 0 "J78" H 3478 4480 50  0000 L CNN
+AR Path="/5E4A803E/5F33E58A" Ref="J76"  Part="1" 
+F 0 "J76" H 3478 4480 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 3478 4435 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3450 4500 50  0001 C CNN
 F 3 "~" H 3450 4500 50  0001 C CNN
@@ -994,17 +959,6 @@ Text GLabel 1700 2550 2    50   UnSpc ~ 0
 +15V
 Text GLabel 1700 2650 2    50   UnSpc ~ 0
 -15V
-$Comp
-L Connector:Conn_01x04_Male J79
-U 1 1 5E709DB6
-P 4050 2450
-F 0 "J79" H 4022 2378 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 4158 2640 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 2450 50  0001 C CNN
-F 3 "~" H 4050 2450 50  0001 C CNN
-	1    4050 2450
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 3850 2650
 $Comp
 L preamp:TPA6120 U20
@@ -1037,41 +991,6 @@ Text GLabel 5650 6850 3    50   UnSpc ~ 0
 Text GLabel 6200 6850 3    50   UnSpc ~ 0
 -15V
 $Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5E79808C
-P 1950 6700
-AR Path="/5E5EF2D4/5E79808C" Ref="J?"  Part="1" 
-AR Path="/6009D432/5E79808C" Ref="J?"  Part="1" 
-AR Path="/5E4A803E/5E79808C" Ref="J74"  Part="1" 
-F 0 "J74" H 1922 6628 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 1922 6583 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1950 6700 50  0001 C CNN
-F 3 "~" H 1950 6700 50  0001 C CNN
-	1    1950 6700
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1550 6700 0    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	1750 6800 1550 6800
-Wire Wire Line
-	1550 6800 1550 6900
-Wire Wire Line
-	1750 6700 1550 6700
-$Comp
-L power:GND #PWR?
-U 1 1 5E798096
-P 1550 6900
-AR Path="/5E26F6FE/5E798096" Ref="#PWR?"  Part="1" 
-AR Path="/5E4A803E/5E798096" Ref="#PWR098"  Part="1" 
-F 0 "#PWR098" H 1550 6650 50  0001 C CNN
-F 1 "GND" H 1555 6727 50  0000 C CNN
-F 2 "" H 1550 6900 50  0001 C CNN
-F 3 "" H 1550 6900 50  0001 C CNN
-	1    1550 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E7A75C4
 P 2650 6800
@@ -1102,8 +1021,8 @@ U 1 1 5E7A75D4
 P 2950 6800
 AR Path="/5E27B612/5E7A75D4" Ref="J?"  Part="1" 
 AR Path="/6009D432/5E7A75D4" Ref="J?"  Part="1" 
-AR Path="/5E4A803E/5E7A75D4" Ref="J77"  Part="1" 
-F 0 "J77" H 2922 6778 50  0000 R CNN
+AR Path="/5E4A803E/5E7A75D4" Ref="J74"  Part="1" 
+F 0 "J74" H 2922 6778 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 2922 6733 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2950 6800 50  0001 C CNN
 F 3 "~" H 2950 6800 50  0001 C CNN
@@ -1116,4 +1035,15 @@ Text GLabel 2650 7000 0    50   UnSpc ~ 0
 -15V
 Text GLabel 2650 6600 0    50   UnSpc ~ 0
 +15V
+$Comp
+L Connector:Conn_01x04_Female J77
+U 1 1 5EF5CC6D
+P 4050 2450
+F 0 "J77" H 4078 2380 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 4078 2335 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 2450 50  0001 C CNN
+F 3 "~" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
