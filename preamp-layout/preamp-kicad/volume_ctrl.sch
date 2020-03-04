@@ -50,7 +50,7 @@ AR Path="/61DA059E/600B8824" Ref="U?"  Part="3"
 AR Path="/6009D432/600B8824" Ref="U11"  Part="3" 
 F 0 "U11" H 8208 5446 50  0000 L CNN
 F 1 "TL072" H 8208 5355 50  0000 L CNN
-F 2 "" H 8250 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8250 5400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8250 5400 50  0001 C CNN
 	3    8250 5400
 	1    0    0    -1  
@@ -1142,7 +1142,7 @@ AR Path="/61DA059E/603FD5C0" Ref="U?"  Part="3"
 AR Path="/6009D432/603FD5C0" Ref="U12"  Part="3" 
 F 0 "U12" H 8958 5446 50  0000 L CNN
 F 1 "TL072" H 8958 5355 50  0000 L CNN
-F 2 "" H 9000 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9000 5400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9000 5400 50  0001 C CNN
 	3    9000 5400
 	1    0    0    -1  
@@ -1163,7 +1163,7 @@ AR Path="/61DA059E/604092EC" Ref="U?"  Part="3"
 AR Path="/6009D432/604092EC" Ref="U15"  Part="3" 
 F 0 "U15" H 9708 5446 50  0000 L CNN
 F 1 "TL072" H 9708 5355 50  0000 L CNN
-F 2 "" H 9750 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9750 5400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9750 5400 50  0001 C CNN
 	3    9750 5400
 	1    0    0    -1  
@@ -1479,7 +1479,7 @@ AR Path="/61DA059E/64985FF3" Ref="U?"  Part="3"
 AR Path="/6009D432/64985FF3" Ref="U18"  Part="3" 
 F 0 "U18" H 10458 5446 50  0000 L CNN
 F 1 "TL072" H 10458 5355 50  0000 L CNN
-F 2 "" H 10500 5400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10500 5400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10500 5400 50  0001 C CNN
 	3    10500 5400
 	1    0    0    -1  

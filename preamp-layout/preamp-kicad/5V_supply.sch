@@ -16,15 +16,15 @@ $EndDescr
 $Comp
 L Device:C C?
 U 1 1 5FCCFC4E
-P 7500 4400
+P 7550 4400
 AR Path="/5FCCFC4E" Ref="C?"  Part="1" 
 AR Path="/5E27B612/5FCCFC4E" Ref="C?"  Part="1" 
 AR Path="/5E5EF2D4/5FCCFC4E" Ref="C15"  Part="1" 
-F 0 "C15" H 7615 4446 50  0000 L CNN
-F 1 "0.01uF" H 7615 4355 50  0000 L CNN
-F 2 "" H 7538 4250 50  0001 C CNN
-F 3 "~" H 7500 4400 50  0001 C CNN
-	1    7500 4400
+F 0 "C15" H 7665 4446 50  0000 L CNN
+F 1 "0.1uF" H 7665 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7588 4250 50  0001 C CNN
+F 3 "~" H 7550 4400 50  0001 C CNN
+	1    7550 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -52,7 +52,7 @@ AR Path="/5E27B612/5FCCFC8B" Ref="R?"  Part="1"
 AR Path="/5E5EF2D4/5FCCFC8B" Ref="R10"  Part="1" 
 F 0 "R10" H 6520 4446 50  0000 L CNN
 F 1 "240R" H 6520 4355 50  0000 L CNN
-F 2 "" V 6380 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6380 4400 50  0001 C CNN
 F 3 "~" H 6450 4400 50  0001 C CNN
 	1    6450 4400
 	1    0    0    -1  
@@ -72,7 +72,7 @@ AR Path="/5E27B612/5FCCFCA0" Ref="R?"  Part="1"
 AR Path="/5E5EF2D4/5FCCFCA0" Ref="R9"  Part="1" 
 F 0 "R9" V 4043 3800 50  0000 C CNN
 F 1 "10R 1W" V 4134 3800 50  0000 C CNN
-F 2 "" V 4180 3800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4180 3800 50  0001 C CNN
 F 3 "~" H 4250 3800 50  0001 C CNN
 	1    4250 3800
 	0    1    1    0   
@@ -83,10 +83,7 @@ Wire Wire Line
 	4650 3800 4400 3800
 Connection ~ 5350 3800
 Wire Wire Line
-	3850 3800 4100 3800
-Wire Wire Line
 	5950 4850 5950 5000
-Connection ~ 4650 5000
 Connection ~ 5950 5000
 $Comp
 L Device:C C?
@@ -97,37 +94,9 @@ AR Path="/5E27B612/5FCCFCB8" Ref="C?"  Part="1"
 AR Path="/5E5EF2D4/5FCCFCB8" Ref="C14"  Part="1" 
 F 0 "C14" H 5236 4146 50  0000 R CNN
 F 1 "0.1uF" H 5236 4055 50  0000 R CNN
-F 2 "" H 5388 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5388 3950 50  0001 C CNN
 F 3 "~" H 5350 4100 50  0001 C CNN
 	1    5350 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 5FCCFCBE
-P 3850 4500
-AR Path="/5FCCFCBE" Ref="C?"  Part="1" 
-AR Path="/5E27B612/5FCCFCBE" Ref="C?"  Part="1" 
-AR Path="/5E5EF2D4/5FCCFCBE" Ref="C12"  Part="1" 
-F 0 "C12" H 3965 4546 50  0000 L CNN
-F 1 "2200uF" H 3965 4455 50  0000 L CNN
-F 2 "" H 3850 4500 50  0001 C CNN
-F 3 "~" H 3850 4500 50  0001 C CNN
-	1    3850 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 5FCCFCC4
-P 4650 4500
-AR Path="/5FCCFCC4" Ref="C?"  Part="1" 
-AR Path="/5E27B612/5FCCFCC4" Ref="C?"  Part="1" 
-AR Path="/5E5EF2D4/5FCCFCC4" Ref="C13"  Part="1" 
-F 0 "C13" H 4765 4546 50  0000 L CNN
-F 1 "2200uF" H 4765 4455 50  0000 L CNN
-F 2 "" H 4650 4500 50  0001 C CNN
-F 3 "~" H 4650 4500 50  0001 C CNN
-	1    4650 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -139,21 +108,10 @@ Wire Wire Line
 Wire Wire Line
 	5350 3350 5350 3800
 Wire Wire Line
-	3850 5000 4650 5000
-Wire Wire Line
-	3850 4350 3850 3800
-Wire Wire Line
-	4650 4350 4650 3800
-Wire Wire Line
-	3850 4650 3850 5000
-Wire Wire Line
-	4650 4650 4650 5000
-Wire Wire Line
 	4650 3800 5350 3800
 Connection ~ 4650 3800
 Wire Wire Line
-	7500 4250 7500 3800
-Connection ~ 7500 3800
+	7550 4250 7550 3800
 Wire Wire Line
 	8150 4250 8150 3800
 Connection ~ 8150 3800
@@ -168,7 +126,7 @@ AR Path="/5E27B612/5FCCFD14" Ref="C?"  Part="1"
 AR Path="/5E5EF2D4/5FCCFD14" Ref="C16"  Part="1" 
 F 0 "C16" H 8265 4446 50  0000 L CNN
 F 1 "100uF" H 8265 4355 50  0000 L CNN
-F 2 "" H 8150 4400 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8150 4400 50  0001 C CNN
 F 3 "~" H 8150 4400 50  0001 C CNN
 	1    8150 4400
 	1    0    0    -1  
@@ -273,7 +231,7 @@ U 1 1 5FD504DC
 P 5950 3800
 F 0 "U3" H 5950 4042 50  0000 C CNN
 F 1 "L7805" H 5950 3951 50  0000 C CNN
-F 2 "" H 5975 3650 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5975 3650 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5950 3750 50  0001 C CNN
 	1    5950 3800
 	1    0    0    -1  
@@ -323,8 +281,6 @@ Wire Wire Line
 Wire Wire Line
 	6200 4450 5950 4450
 Wire Wire Line
-	4650 5000 5950 5000
-Wire Wire Line
 	5350 3800 5350 3950
 Wire Wire Line
 	5350 4450 5950 4450
@@ -362,25 +318,10 @@ Wire Wire Line
 	7000 4550 7000 5000
 Connection ~ 7000 5000
 Wire Wire Line
-	7000 5000 7500 5000
-Wire Wire Line
-	7500 4550 7500 5000
-Connection ~ 7500 5000
-Wire Wire Line
-	7500 5000 8150 5000
-Wire Wire Line
-	7500 3800 8150 3800
-Wire Wire Line
-	7000 3800 7500 3800
+	7550 4550 7550 5000
 Wire Wire Line
 	8150 5100 8150 5000
 Connection ~ 8150 5000
-Wire Wire Line
-	3850 3800 3650 3800
-Connection ~ 3850 3800
-Wire Wire Line
-	3850 5000 3650 5000
-Connection ~ 3850 5000
 Wire Wire Line
 	1550 5850 1550 5950
 $Comp
@@ -580,4 +521,63 @@ Wire Wire Line
 	4250 1500 4400 1500
 Wire Wire Line
 	4400 1500 4400 1700
+$Comp
+L Device:CP1 C?
+U 1 1 5FCCFCC4
+P 4650 4400
+AR Path="/5FCCFCC4" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCCFCC4" Ref="C?"  Part="1" 
+AR Path="/5E5EF2D4/5FCCFCC4" Ref="C13"  Part="1" 
+F 0 "C13" H 4765 4446 50  0000 L CNN
+F 1 "2200uF" H 4765 4355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 4650 4400 50  0001 C CNN
+F 3 "~" H 4650 4400 50  0001 C CNN
+	1    4650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5FCCFCBE
+P 3850 4400
+AR Path="/5FCCFCBE" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCCFCBE" Ref="C?"  Part="1" 
+AR Path="/5E5EF2D4/5FCCFCBE" Ref="C12"  Part="1" 
+F 0 "C12" H 3965 4446 50  0000 L CNN
+F 1 "2200uF" H 3965 4355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3850 4400 50  0001 C CNN
+F 3 "~" H 3850 4400 50  0001 C CNN
+	1    3850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3800 3850 3800
+Wire Wire Line
+	3650 5000 3850 5000
+Wire Wire Line
+	3850 4250 3850 3800
+Connection ~ 3850 3800
+Wire Wire Line
+	3850 3800 4100 3800
+Wire Wire Line
+	4650 4250 4650 3800
+Wire Wire Line
+	3850 4550 3850 5000
+Connection ~ 3850 5000
+Wire Wire Line
+	3850 5000 4650 5000
+Wire Wire Line
+	4650 4550 4650 5000
+Connection ~ 4650 5000
+Wire Wire Line
+	4650 5000 5950 5000
+Connection ~ 7550 3800
+Wire Wire Line
+	7550 3800 8150 3800
+Connection ~ 7550 5000
+Wire Wire Line
+	7550 5000 8150 5000
+Wire Wire Line
+	7000 5000 7550 5000
+Wire Wire Line
+	7000 3800 7550 3800
 $EndSCHEMATC

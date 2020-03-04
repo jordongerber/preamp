@@ -166,7 +166,7 @@ AR Path="/6009D432/5F19A448" Ref="U?"  Part="3"
 AR Path="/5E4A803E/5F19A448" Ref="U19"  Part="3" 
 F 0 "U19" H 3908 6596 50  0000 L CNN
 F 1 "TL072" H 3908 6505 50  0000 L CNN
-F 2 "" H 3950 6550 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3950 6550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3950 6550 50  0001 C CNN
 	3    3950 6550
 	1    0    0    -1  
