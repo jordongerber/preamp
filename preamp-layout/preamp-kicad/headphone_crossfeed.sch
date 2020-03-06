@@ -443,12 +443,6 @@ Text HLabel 8550 3900 2    50   UnSpc ~ 0
 R_OUT
 Text HLabel 3400 5750 0    50   UnSpc ~ 0
 L_IN
-Text HLabel 4450 5750 2    50   UnSpc ~ 0
-L_OUT
-Text HLabel 3400 5850 0    50   UnSpc ~ 0
-R_IN
-Text HLabel 4450 5950 2    50   UnSpc ~ 0
-R_OUT
 $Comp
 L Connector:Conn_01x04_Female J78
 U 1 1 5E7CDD58
@@ -461,24 +455,6 @@ F 3 "~" H 3600 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4450 6050
-NoConn ~ 3400 5950
-NoConn ~ 3400 6050
-$Comp
-L power:GND #PWR?
-U 1 1 5E7DF118
-P 4800 5850
-AR Path="/6009D432/5E7DF118" Ref="#PWR?"  Part="1" 
-AR Path="/5E4A803E/5E7DF118" Ref="#PWR?"  Part="1" 
-AR Path="/5E4A803E/5EE80145/5E7DF118" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 4800 5600 50  0001 C CNN
-F 1 "GND" H 4805 5677 50  0000 C CNN
-F 2 "" H 4800 5850 50  0001 C CNN
-F 3 "" H 4800 5850 50  0001 C CNN
-	1    4800 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4450 5850 4800 5850
 $Comp
 L Connector:Conn_01x04_Male J79
 U 1 1 5EF52177
@@ -490,4 +466,28 @@ F 3 "~" H 4250 5850 50  0001 C CNN
 	1    4250 5850
 	1    0    0    -1  
 $EndComp
+Text HLabel 3400 5950 0    50   UnSpc ~ 0
+R_IN
+Text HLabel 3400 5850 0    50   UnSpc ~ 0
+L_OUT
+Text HLabel 3400 6050 0    50   UnSpc ~ 0
+R_OUT
+$Comp
+L power:GND #PWR?
+U 1 1 5E7DF118
+P 4800 5950
+AR Path="/6009D432/5E7DF118" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A803E/5E7DF118" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A803E/5EE80145/5E7DF118" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4800 5700 50  0001 C CNN
+F 1 "GND" H 4805 5777 50  0000 C CNN
+F 2 "" H 4800 5950 50  0001 C CNN
+F 3 "" H 4800 5950 50  0001 C CNN
+	1    4800 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 5950 4800 5950
+NoConn ~ 4450 5750
+NoConn ~ 4450 5850
 $EndSCHEMATC

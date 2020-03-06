@@ -129,12 +129,6 @@ Wire Wire Line
 	7000 1650 7000 1750
 Wire Wire Line
 	7000 2050 7000 2150
-Wire Wire Line
-	6950 3400 6950 3500
-Wire Wire Line
-	6850 3300 6950 3300
-Text GLabel 6850 3300 0    50   UnSpc ~ 0
-+5V
 Text HLabel 1300 1450 1    50   Input ~ 0
 CLK
 Text HLabel 1400 1450 1    50   Input ~ 0
@@ -242,12 +236,6 @@ Text Notes 5750 4400 0    50   ~ 0
 Sends to amp / tone / etc
 Text Notes 5800 5200 0    50   ~ 0
 Receives from gain stage
-Wire Wire Line
-	6950 2850 6950 2950
-Wire Wire Line
-	6850 2750 6950 2750
-Text GLabel 6850 2750 0    50   UnSpc ~ 0
-+5V
 Text Label 5550 3800 0    50   ~ 0
 OUT_2_R+
 Text Label 5550 3700 0    50   ~ 0
@@ -259,12 +247,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J61
 U 1 1 60B85B38
-P 7150 3300
-F 0 "J61" H 7122 3228 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 7122 3183 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7150 3300 50  0001 C CNN
-F 3 "~" H 7150 3300 50  0001 C CNN
-	1    7150 3300
+P 7300 2950
+F 0 "J61" H 7272 2878 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7272 2833 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7300 2950 50  0001 C CNN
+F 3 "~" H 7300 2950 50  0001 C CNN
+	1    7300 2950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1359,32 +1347,6 @@ F 3 "" H 7000 2150 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 64C83DF6
-P 6950 2950
-AR Path="/5E26F6FE/64C83DF6" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D8DA2/64C83DF6" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 6950 2700 50  0001 C CNN
-F 1 "GND" H 6955 2777 50  0000 C CNN
-F 2 "" H 6950 2950 50  0001 C CNN
-F 3 "" H 6950 2950 50  0001 C CNN
-	1    6950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64CA86A4
-P 6950 3500
-AR Path="/5E26F6FE/64CA86A4" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D8DA2/64CA86A4" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 6950 3250 50  0001 C CNN
-F 1 "GND" H 6955 3327 50  0000 C CNN
-F 2 "" H 6950 3500 50  0001 C CNN
-F 3 "" H 6950 3500 50  0001 C CNN
-	1    6950 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 64CCCF8D
 P 6300 4700
 AR Path="/5E26F6FE/64CCCF8D" Ref="#PWR?"  Part="1" 
@@ -1596,13 +1558,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J60
 U 1 1 5E5DB820
-P 7150 2750
-F 0 "J60" H 7122 2678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 7122 2633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7150 2750 50  0001 C CNN
-F 3 "~" H 7150 2750 50  0001 C CNN
-	1    7150 2750
-	-1   0    0    -1  
+P 6700 2950
+F 0 "J60" H 6672 2878 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6672 2833 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 6700 2950 50  0001 C CNN
+F 3 "~" H 6700 2950 50  0001 C CNN
+	1    6700 2950
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J52
@@ -1643,4 +1605,33 @@ Wire Wire Line
 	1200 2100 1500 2100
 Wire Wire Line
 	1300 2000 1500 2000
+Text GLabel 7000 2850 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	7100 3050 7000 3050
+Wire Wire Line
+	7000 3050 7000 3150
+Wire Wire Line
+	7100 2950 7000 2950
+$Comp
+L power:GND #PWR?
+U 1 1 60248FFE
+P 7000 3150
+AR Path="/6009D432/60248FFE" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/60248FFE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 2900 50  0001 C CNN
+F 1 "GND" H 7005 2977 50  0000 C CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 3050
+Wire Wire Line
+	7000 3050 6900 3050
+Wire Wire Line
+	7000 2850 7000 2950
+Connection ~ 7000 2950
+Wire Wire Line
+	7000 2950 6900 2950
 $EndSCHEMATC
