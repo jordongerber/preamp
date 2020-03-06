@@ -283,7 +283,7 @@ P 7800 2350
 AR Path="/5E5EF2D4/5FE3F8F2" Ref="U?"  Part="1" 
 AR Path="/5E27B612/5FE3F8F2" Ref="U1"  Part="1" 
 F 0 "U1" H 7800 2592 50  0000 C CNN
-F 1 "LM7805" H 7800 2501 50  0000 C CNN
+F 1 "LM7815" H 7800 2501 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7825 2200 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7800 2300 50  0001 C CNN
 	1    7800 2350
@@ -297,7 +297,7 @@ P 7800 4750
 AR Path="/5E5EF2D4/5FE3F8FA" Ref="U?"  Part="1" 
 AR Path="/5E27B612/5FE3F8FA" Ref="U2"  Part="1" 
 F 0 "U2" H 7800 4601 50  0000 C CNN
-F 1 "LM7905" H 7800 4510 50  0000 C CNN
+F 1 "LM7915" H 7800 4510 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 4550 50  0001 C CIN
 F 3 "http://www.fairchildsemi.com/ds/LM/LM7905.pdf" H 7800 4750 50  0001 C CNN
 	1    7800 4750
