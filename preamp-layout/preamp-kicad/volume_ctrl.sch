@@ -156,7 +156,7 @@ U 1 1 6017683C
 P 5950 1600
 F 0 "U13" H 5450 1400 50  0000 L CNN
 F 1 "THAT2181" H 5350 1300 50  0000 L CNN
-F 2 "" H 5950 1600 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5950 1600 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf" H 5950 1600 50  0001 C CNN
 	1    5950 1600
 	1    0    0    -1  
@@ -471,7 +471,7 @@ U 1 1 602F6E92
 P 5950 3600
 F 0 "U14" H 5450 3400 50  0000 L CNN
 F 1 "THAT2181" H 5350 3300 50  0000 L CNN
-F 2 "" H 5950 3600 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5950 3600 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf" H 5950 3600 50  0001 C CNN
 	1    5950 3600
 	1    0    0    -1  
@@ -645,7 +645,7 @@ AR Path="/6033B91D" Ref="U?"  Part="1"
 AR Path="/6009D432/6033B91D" Ref="U10"  Part="1" 
 F 0 "U10" H 1700 6400 50  0000 C CNN
 F 1 "MCP4902" H 1700 6300 50  0000 C CNN
-F 2 "" H 2300 5650 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2300 5650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 5650 50  0001 C CNN
 	1    1500 5950
 	1    0    0    -1  
@@ -719,7 +719,7 @@ U 1 1 6033B96D
 P 9300 1600
 F 0 "U16" H 8800 1400 50  0000 L CNN
 F 1 "THAT2181" H 8700 1300 50  0000 L CNN
-F 2 "" H 9300 1600 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9300 1600 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf" H 9300 1600 50  0001 C CNN
 	1    9300 1600
 	1    0    0    -1  
@@ -1034,7 +1034,7 @@ U 1 1 6033BA78
 P 9300 3600
 F 0 "U17" H 8800 3400 50  0000 L CNN
 F 1 "THAT2181" H 8700 3300 50  0000 L CNN
-F 2 "" H 9300 3600 50  0001 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9300 3600 50  0001 C CNN
 F 3 "http://www.thatcorp.com/datashts/THAT_2181-Series_Datasheet.pdf" H 9300 3600 50  0001 C CNN
 	1    9300 3600
 	1    0    0    -1  
@@ -1864,7 +1864,7 @@ AR Path="/6017A289" Ref="U?"  Part="1"
 AR Path="/6009D432/6017A289" Ref="U9"  Part="1" 
 F 0 "U9" H 1700 2900 50  0000 C CNN
 F 1 "MCP4902" H 1700 2800 50  0000 C CNN
-F 2 "" H 2300 2150 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2300 2150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 2150 50  0001 C CNN
 	1    1500 2450
 	1    0    0    -1  

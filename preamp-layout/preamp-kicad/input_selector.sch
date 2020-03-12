@@ -74,7 +74,7 @@ U 1 1 5E0598D8
 P 4900 3400
 F 0 "U8" H 4900 4067 50  0000 C CNN
 F 1 "ULN2003" H 4900 3976 50  0000 C CNN
-F 2 "" H 4950 2850 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4950 2850 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 3200 50  0001 C CNN
 	1    4900 3400
 	1    0    0    -1  
@@ -167,7 +167,7 @@ U 1 1 5E036B83
 P 4900 1600
 F 0 "U7" H 4900 2267 50  0000 C CNN
 F 1 "ULN2003" H 4900 2176 50  0000 C CNN
-F 2 "" H 4950 1050 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4950 1050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 1400 50  0001 C CNN
 	1    4900 1600
 	1    0    0    -1  
@@ -433,7 +433,7 @@ U 1 1 632C72C1
 P 10350 1750
 F 0 "K2" V 10304 1928 50  0000 L CNN
 F 1 "G6JU" V 10395 1928 50  0000 L CNN
-F 2 "" H 10350 1850 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 1850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 1850 50  0001 C CNN
 	1    10350 1750
 	0    1    1    0   
@@ -485,7 +485,7 @@ U 1 1 6353124F
 P 10350 2750
 F 0 "K3" V 10304 2928 50  0000 L CNN
 F 1 "G6JU" V 10395 2928 50  0000 L CNN
-F 2 "" H 10350 2850 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 2850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 2850 50  0001 C CNN
 	1    10350 2750
 	0    1    1    0   
@@ -548,7 +548,7 @@ U 1 1 6365EAC0
 P 10350 3750
 F 0 "K4" V 10304 3928 50  0000 L CNN
 F 1 "G6JU" V 10395 3928 50  0000 L CNN
-F 2 "" H 10350 3850 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 3850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 3850 50  0001 C CNN
 	1    10350 3750
 	0    1    1    0   
@@ -611,7 +611,7 @@ U 1 1 636947FD
 P 10350 4750
 F 0 "K5" V 10304 4928 50  0000 L CNN
 F 1 "G6JU" V 10395 4928 50  0000 L CNN
-F 2 "" H 10350 4850 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 4850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 4850 50  0001 C CNN
 	1    10350 4750
 	0    1    1    0   
@@ -674,7 +674,7 @@ U 1 1 63694829
 P 10350 5750
 F 0 "K6" V 10304 5928 50  0000 L CNN
 F 1 "G6JU" V 10395 5928 50  0000 L CNN
-F 2 "" H 10350 5850 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 5850 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 5850 50  0001 C CNN
 	1    10350 5750
 	0    1    1    0   
@@ -756,7 +756,7 @@ U 1 1 638E8EFC
 P 8650 1700
 F 0 "K7" V 8604 1878 50  0000 L CNN
 F 1 "G6JU" V 8695 1878 50  0000 L CNN
-F 2 "" H 8650 1800 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8650 1800 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 1800 50  0001 C CNN
 	1    8650 1700
 	0    1    1    0   
@@ -819,7 +819,7 @@ U 1 1 638E8F28
 P 8650 2700
 F 0 "K8" V 8604 2878 50  0000 L CNN
 F 1 "G6JU" V 8695 2878 50  0000 L CNN
-F 2 "" H 8650 2800 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8650 2800 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 2800 50  0001 C CNN
 	1    8650 2700
 	0    1    1    0   
@@ -928,7 +928,7 @@ U 3 1 63BC627A
 P 8550 5950
 F 0 "K8" H 8550 5727 50  0000 C CNN
 F 1 "G6JU" H 8550 5636 50  0000 C CNN
-F 2 "" H 8550 6050 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 6050 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 6050 50  0001 C CNN
 	3    8550 5950
 	1    0    0    -1  
@@ -939,7 +939,7 @@ U 2 1 63BC6270
 P 8550 5350
 F 0 "K8" H 8550 5675 50  0000 C CNN
 F 1 "G6JU" H 8550 5584 50  0000 C CNN
-F 2 "" H 8550 5450 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 5450 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5450 50  0001 C CNN
 	2    8550 5350
 	1    0    0    -1  
@@ -997,7 +997,7 @@ U 3 1 6205D525
 P 8550 4500
 F 0 "K7" H 8550 4277 50  0000 C CNN
 F 1 "G6JU" H 8550 4186 50  0000 C CNN
-F 2 "" H 8550 4600 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4600 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4600 50  0001 C CNN
 	3    8550 4500
 	1    0    0    -1  
@@ -1008,7 +1008,7 @@ U 2 1 6205D51B
 P 8550 3900
 F 0 "K7" H 8550 4225 50  0000 C CNN
 F 1 "G6JU" H 8550 4134 50  0000 C CNN
-F 2 "" H 8550 4000 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4000 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4000 50  0001 C CNN
 	2    8550 3900
 	1    0    0    -1  
@@ -1037,7 +1037,7 @@ U 3 1 63C5D22F
 P 1950 5500
 F 0 "K2" H 1950 5277 50  0000 C CNN
 F 1 "G6JU" H 1950 5186 50  0000 C CNN
-F 2 "" H 1950 5600 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 5600 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 5600 50  0001 C CNN
 	3    1950 5500
 	1    0    0    -1  
@@ -1048,7 +1048,7 @@ U 2 1 63C5D239
 P 1950 4900
 F 0 "K2" H 1950 5225 50  0000 C CNN
 F 1 "G6JU" H 1950 5134 50  0000 C CNN
-F 2 "" H 1950 5000 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 5000 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 5000 50  0001 C CNN
 	2    1950 4900
 	1    0    0    -1  
@@ -1083,7 +1083,7 @@ U 3 1 63D47795
 P 3750 5500
 F 0 "K3" H 3750 5277 50  0000 C CNN
 F 1 "G6JU" H 3750 5186 50  0000 C CNN
-F 2 "" H 3750 5600 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 5600 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5600 50  0001 C CNN
 	3    3750 5500
 	1    0    0    -1  
@@ -1094,7 +1094,7 @@ U 2 1 63D4779F
 P 3750 4900
 F 0 "K3" H 3750 5225 50  0000 C CNN
 F 1 "G6JU" H 3750 5134 50  0000 C CNN
-F 2 "" H 3750 5000 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 5000 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5000 50  0001 C CNN
 	2    3750 4900
 	1    0    0    -1  
@@ -1142,7 +1142,7 @@ U 3 1 63E1D906
 P 1950 7150
 F 0 "K4" H 1950 6927 50  0000 C CNN
 F 1 "G6JU" H 1950 6836 50  0000 C CNN
-F 2 "" H 1950 7250 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 7250 50  0001 C CNN
 	3    1950 7150
 	1    0    0    -1  
@@ -1179,7 +1179,7 @@ U 3 1 63E1D932
 P 3750 7150
 F 0 "K5" H 3750 6927 50  0000 C CNN
 F 1 "G6JU" H 3750 6836 50  0000 C CNN
-F 2 "" H 3750 7250 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 7250 50  0001 C CNN
 	3    3750 7150
 	1    0    0    -1  
@@ -1190,7 +1190,7 @@ U 2 1 63E1D93C
 P 3750 6550
 F 0 "K5" H 3750 6875 50  0000 C CNN
 F 1 "G6JU" H 3750 6784 50  0000 C CNN
-F 2 "" H 3750 6650 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 6650 50  0001 C CNN
 	2    3750 6550
 	1    0    0    -1  
@@ -1238,7 +1238,7 @@ U 3 1 63E6412D
 P 5550 7150
 F 0 "K6" H 5550 6927 50  0000 C CNN
 F 1 "G6JU" H 5550 6836 50  0000 C CNN
-F 2 "" H 5550 7250 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5550 7250 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5550 7250 50  0001 C CNN
 	3    5550 7150
 	1    0    0    -1  
@@ -1249,7 +1249,7 @@ U 2 1 63E64137
 P 5550 6550
 F 0 "K6" H 5550 6875 50  0000 C CNN
 F 1 "G6JU" H 5550 6784 50  0000 C CNN
-F 2 "" H 5550 6650 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5550 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5550 6650 50  0001 C CNN
 	2    5550 6550
 	1    0    0    -1  
@@ -1537,7 +1537,7 @@ U 2 1 63E1D910
 P 1950 6550
 F 0 "K4" H 1950 6875 50  0000 C CNN
 F 1 "G6JU" H 1950 6784 50  0000 C CNN
-F 2 "" H 1950 6650 50  0001 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 6650 50  0001 C CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 6650 50  0001 C CNN
 	2    1950 6550
 	1    0    0    -1  
@@ -1585,7 +1585,7 @@ AR Path="/5E01AA66" Ref="U?"  Part="1"
 AR Path="/5E2D8DA2/5E01AA66" Ref="U6"  Part="1" 
 F 0 "U6" H 2500 3800 50  0000 C CNN
 F 1 "MCP23S17_SP" H 2500 3700 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 2400 1700 50  0001 L CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2400 1700 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 50  0001 L CNN
 	1    2200 2700
 	1    0    0    -1  
@@ -1618,8 +1618,8 @@ L power:GND #PWR?
 U 1 1 60248FFE
 P 7000 3150
 AR Path="/6009D432/60248FFE" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D8DA2/60248FFE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7000 2900 50  0001 C CNN
+AR Path="/5E2D8DA2/60248FFE" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 7000 2900 50  0001 C CNN
 F 1 "GND" H 7005 2977 50  0000 C CNN
 F 2 "" H 7000 3150 50  0001 C CNN
 F 3 "" H 7000 3150 50  0001 C CNN

@@ -13,14 +13,6 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 5400 3250 2    50   Input ~ 0
-MISO
-Text HLabel 5400 3150 2    50   Output ~ 0
-MOSI
-Text HLabel 5400 3750 2    50   Output ~ 0
-CLK
-Text HLabel 5400 3850 2    50   Output ~ 0
-CS_IO
 Wire Wire Line
 	8400 3950 8400 4050
 Text GLabel 8400 3850 0    50   UnSpc ~ 0
@@ -42,43 +34,35 @@ F 3 "~" H 8600 3850 50  0001 C CNN
 	1    8600 3850
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3600 3750 0    50   Input ~ 0
+Text HLabel 4000 3550 0    50   Input ~ 0
 SEL_CLK
-Text HLabel 3600 3950 0    50   Input ~ 0
+Text HLabel 4000 3750 0    50   Input ~ 0
 SEL_SW
-Text HLabel 3600 4050 0    50   Input ~ 0
+Text HLabel 4000 3850 0    50   Input ~ 0
 VOL_CLK
-Text HLabel 3600 4150 0    50   Input ~ 0
+Text HLabel 4000 3950 0    50   Input ~ 0
 VOL_DT
-Text HLabel 3600 4350 0    50   Input ~ 0
+Text HLabel 4000 4150 0    50   Input ~ 0
 VOL_SW
-Text HLabel 5400 4150 2    50   Output ~ 0
-CS_FP
-Text HLabel 5400 4050 2    50   Output ~ 0
-CS_VOL_HP
 Text HLabel 8050 4900 0    50   Output ~ 0
 LED_DT
-Text HLabel 5400 3950 2    50   Output ~ 0
-CS_VOL_MAIN
-Text GLabel 3600 4550 0    50   UnSpc ~ 0
+Text GLabel 4000 4350 0    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	3350 4750 3350 4450
+	3750 4550 3750 4250
 $Comp
 L preamp:ESP32-DevKitC U5
 U 1 1 64954378
-P 4500 3850
-F 0 "U5" H 4500 4815 50  0000 C CNN
-F 1 "ESP32-DevKitC" H 4500 4724 50  0000 C CNN
-F 2 "" H 4500 4850 50  0001 C CNN
-F 3 "" H 4500 4850 50  0001 C CNN
-	1    4500 3850
+P 4550 3650
+F 0 "U5" H 4550 4615 50  0000 C CNN
+F 1 "ESP32-DevKitC" H 4550 4524 50  0000 C CNN
+F 2 "preamp:ESP32_MELIFE_DEVKIT" H 4550 4650 50  0001 C CNN
+F 3 "" H 4550 4650 50  0001 C CNN
+	1    4550 3650
 	1    0    0    -1  
 $EndComp
-Text HLabel 3600 3850 0    50   Input ~ 0
+Text HLabel 4000 3650 0    50   Input ~ 0
 SEL_DT
-Wire Wire Line
-	3350 4450 3600 4450
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6496C10E
@@ -172,38 +156,16 @@ CS_VOL_MAIN
 Text HLabel 7050 3150 0    50   Output ~ 0
 CS_IO
 $Comp
-L Connector:Conn_01x15_Female J28
-U 1 1 649C22F5
-P 5200 3850
-F 0 "J28" H 5092 4643 50  0000 C CNN
-F 1 "Conn_01x15_Female" H 5092 4644 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 5200 3850 50  0001 C CNN
-F 3 "~" H 5200 3850 50  0001 C CNN
-	1    5200 3850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x15_Female J27
-U 1 1 649C438C
-P 3800 3850
-F 0 "J27" H 3828 3830 50  0000 L CNN
-F 1 "Conn_01x15_Female" H 3828 3785 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3800 3850 50  0001 C CNN
-F 3 "~" H 3800 3850 50  0001 C CNN
-	1    3800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 64EF3AEF
-P 3350 4750
+P 3750 4550
 AR Path="/5E26F6FE/64EF3AEF" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF3AEF" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 3350 4500 50  0001 C CNN
-F 1 "GND" H 3355 4577 50  0000 C CNN
-F 2 "" H 3350 4750 50  0001 C CNN
-F 3 "" H 3350 4750 50  0001 C CNN
-	1    3350 4750
+F 0 "#PWR031" H 3750 4300 50  0001 C CNN
+F 1 "GND" H 3755 4377 50  0000 C CNN
+F 2 "" H 3750 4550 50  0001 C CNN
+F 3 "" H 3750 4550 50  0001 C CNN
+	1    3750 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -232,50 +194,12 @@ F 3 "" H 8400 4050 50  0001 C CNN
 	1    8400 4050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4950 4550
-NoConn ~ 4950 4450
-NoConn ~ 4950 4350
-NoConn ~ 4950 4250
-NoConn ~ 4950 4150
-NoConn ~ 4950 4050
-NoConn ~ 4950 3950
-NoConn ~ 4950 3850
-NoConn ~ 4950 3750
-NoConn ~ 4950 3650
-NoConn ~ 4950 3550
-NoConn ~ 4950 3150
-NoConn ~ 4950 3250
-NoConn ~ 4950 3350
-NoConn ~ 4950 3450
-NoConn ~ 5400 3350
-NoConn ~ 5400 3450
-NoConn ~ 5400 3550
-NoConn ~ 5400 3650
-NoConn ~ 5400 4250
-NoConn ~ 5400 4350
-NoConn ~ 5400 4450
-NoConn ~ 5400 4550
-NoConn ~ 4050 4550
-NoConn ~ 4050 4450
-NoConn ~ 4050 4350
-NoConn ~ 4050 4250
-NoConn ~ 4050 4150
-NoConn ~ 4050 4050
-NoConn ~ 4050 3950
-NoConn ~ 4050 3850
-NoConn ~ 4050 3750
-NoConn ~ 4050 3650
-NoConn ~ 4050 3550
-NoConn ~ 4050 3450
-NoConn ~ 4050 3350
-NoConn ~ 4050 3250
-NoConn ~ 4050 3150
-NoConn ~ 3600 3150
-NoConn ~ 3600 3250
-NoConn ~ 3600 3350
-NoConn ~ 3600 3550
-NoConn ~ 3600 3650
-NoConn ~ 3600 4250
+NoConn ~ 4000 2950
+NoConn ~ 4000 3050
+NoConn ~ 4000 3150
+NoConn ~ 4000 3350
+NoConn ~ 4000 3450
+NoConn ~ 4000 4050
 NoConn ~ 7050 3550
 NoConn ~ 7050 3650
 $Comp
@@ -306,6 +230,88 @@ F 3 "" H 8050 5100 50  0001 C CNN
 $EndComp
 Text GLabel 8050 4800 0    50   UnSpc ~ 0
 +5V
-Text HLabel 3600 3450 0    50   Output ~ 0
+Text HLabel 4000 3250 0    50   Output ~ 0
 LED_DT
+NoConn ~ 5100 4350
+NoConn ~ 5100 4250
+NoConn ~ 5100 4150
+NoConn ~ 5100 4050
+NoConn ~ 5100 3450
+NoConn ~ 5100 3350
+NoConn ~ 5100 3250
+NoConn ~ 5100 3150
+Text HLabel 5100 3750 2    50   Output ~ 0
+CS_VOL_MAIN
+Text HLabel 5100 3850 2    50   Output ~ 0
+CS_VOL_HP
+Text HLabel 5100 3950 2    50   Output ~ 0
+CS_FP
+Text HLabel 5100 3650 2    50   Output ~ 0
+CS_IO
+Text HLabel 5100 3550 2    50   Output ~ 0
+CLK
+Text HLabel 5100 2950 2    50   Output ~ 0
+MOSI
+Text HLabel 5100 3050 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	5000 3050 5100 3050
+Wire Wire Line
+	5000 2950 5100 2950
+Wire Wire Line
+	5000 3250 5100 3250
+Wire Wire Line
+	5000 3150 5100 3150
+Wire Wire Line
+	5000 3450 5100 3450
+Wire Wire Line
+	5000 3350 5100 3350
+Wire Wire Line
+	5000 3650 5100 3650
+Wire Wire Line
+	5000 3550 5100 3550
+Wire Wire Line
+	5000 3850 5100 3850
+Wire Wire Line
+	5000 3750 5100 3750
+Wire Wire Line
+	5000 4050 5100 4050
+Wire Wire Line
+	5000 3950 5100 3950
+Wire Wire Line
+	5000 4250 5100 4250
+Wire Wire Line
+	5000 4150 5100 4150
+Wire Wire Line
+	5000 4350 5100 4350
+Wire Wire Line
+	4000 3050 4100 3050
+Wire Wire Line
+	4000 2950 4100 2950
+Wire Wire Line
+	4000 3250 4100 3250
+Wire Wire Line
+	4000 3150 4100 3150
+Wire Wire Line
+	4000 3450 4100 3450
+Wire Wire Line
+	4000 3350 4100 3350
+Wire Wire Line
+	4000 3650 4100 3650
+Wire Wire Line
+	4000 3550 4100 3550
+Wire Wire Line
+	4000 3850 4100 3850
+Wire Wire Line
+	4000 3750 4100 3750
+Wire Wire Line
+	4000 4050 4100 4050
+Wire Wire Line
+	4000 3950 4100 3950
+Wire Wire Line
+	4000 4150 4100 4150
+Wire Wire Line
+	4000 4350 4100 4350
+Wire Wire Line
+	3750 4250 4100 4250
 $EndSCHEMATC
