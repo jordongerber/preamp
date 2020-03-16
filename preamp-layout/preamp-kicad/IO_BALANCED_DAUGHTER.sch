@@ -409,8 +409,8 @@ AR Path="/5E2D8DA2/5E1BDEA8" Ref="U?"  Part="2"
 AR Path="/5E1A0CE1/5E1BDEA8" Ref="U22"  Part="2" 
 AR Path="/5E80BFEC/5E1BDEA8" Ref="U?"  Part="2" 
 F 0 "U22" H 4750 5517 50  0000 C CNN
-F 1 "TL072" H 4750 5426 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4750 5150 50  0001 C CNN
+F 1 "NJM2068M" H 4750 5426 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 4750 5150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4750 5150 50  0001 C CNN
 	2    4750 5150
 	1    0    0    -1  
@@ -480,8 +480,8 @@ AR Path="/5E2D8DA2/5E1BDECF" Ref="U?"  Part="1"
 AR Path="/5E1A0CE1/5E1BDECF" Ref="U21"  Part="1" 
 AR Path="/5E80BFEC/5E1BDECF" Ref="U?"  Part="1" 
 F 0 "U21" H 5500 1483 50  0000 C CNN
-F 1 "TL072" H 5500 1574 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 5500 1850 50  0001 C CNN
+F 1 "NJM2068M" H 5500 1574 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 5500 1850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5500 1850 50  0001 C CNN
 	1    5500 1850
 	1    0    0    1   
@@ -494,38 +494,24 @@ AR Path="/5E2D8DA2/5E1BDED5" Ref="U?"  Part="2"
 AR Path="/5E1A0CE1/5E1BDED5" Ref="U21"  Part="2" 
 AR Path="/5E80BFEC/5E1BDED5" Ref="U?"  Part="2" 
 F 0 "U21" H 9500 1483 50  0000 C CNN
-F 1 "TL072" H 9500 1574 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9500 1850 50  0001 C CNN
+F 1 "NJM2068M" H 9500 1574 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 9500 1850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9500 1850 50  0001 C CNN
 	2    9500 1850
 	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL072 U?
-U 3 1 5E1BDEDB
-P 1050 6800
-AR Path="/5E2D8DA2/5E1BDEDB" Ref="U?"  Part="3" 
-AR Path="/5E1A0CE1/5E1BDEDB" Ref="U21"  Part="3" 
-AR Path="/5E80BFEC/5E1BDEDB" Ref="U?"  Part="3" 
-F 0 "U21" H 1008 6846 50  0000 L CNN
-F 1 "TL072" H 1008 6755 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1050 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1050 6800 50  0001 C CNN
-	3    1050 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
 U 3 1 5E1BDEE3
-P 1450 6800
+P 1750 6800
 AR Path="/5E2D8DA2/5E1BDEE3" Ref="U?"  Part="3" 
 AR Path="/5E1A0CE1/5E1BDEE3" Ref="U22"  Part="3" 
 AR Path="/5E80BFEC/5E1BDEE3" Ref="U?"  Part="3" 
-F 0 "U22" H 1408 6846 50  0000 L CNN
-F 1 "TL072" H 1408 6755 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1450 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1450 6800 50  0001 C CNN
-	3    1450 6800
+F 0 "U22" H 1708 6846 50  0000 L CNN
+F 1 "NJM2068M" H 1708 6755 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 1750 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1750 6800 50  0001 C CNN
+	3    1750 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -608,8 +594,8 @@ AR Path="/5E2D8DA2/5E1BDF24" Ref="U?"  Part="1"
 AR Path="/5E1A0CE1/5E1BDF24" Ref="U22"  Part="1" 
 AR Path="/5E80BFEC/5E1BDF24" Ref="U?"  Part="1" 
 F 0 "U22" H 4800 3867 50  0000 C CNN
-F 1 "TL072" H 4800 3776 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4800 3500 50  0001 C CNN
+F 1 "NJM2068M" H 4800 3776 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 4800 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4800 3500 50  0001 C CNN
 	1    4800 3500
 	1    0    0    -1  
@@ -728,8 +714,8 @@ AR Path="/5E2D8DA2/5E1BDF66" Ref="U?"  Part="1"
 AR Path="/5E1A0CE1/5E1BDF66" Ref="U23"  Part="1" 
 AR Path="/5E80BFEC/5E1BDF66" Ref="U?"  Part="1" 
 F 0 "U23" H 8800 3867 50  0000 C CNN
-F 1 "TL072" H 8800 3776 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8800 3500 50  0001 C CNN
+F 1 "NJM2068M" H 8800 3776 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8800 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8800 3500 50  0001 C CNN
 	1    8800 3500
 	1    0    0    -1  
@@ -742,8 +728,8 @@ AR Path="/5E2D8DA2/5E1BDF6C" Ref="U?"  Part="2"
 AR Path="/5E1A0CE1/5E1BDF6C" Ref="U23"  Part="2" 
 AR Path="/5E80BFEC/5E1BDF6C" Ref="U?"  Part="2" 
 F 0 "U23" H 8800 5517 50  0000 C CNN
-F 1 "TL072" H 8800 5426 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8800 5150 50  0001 C CNN
+F 1 "NJM2068M" H 8800 5426 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8800 5150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8800 5150 50  0001 C CNN
 	2    8800 5150
 	1    0    0    -1  
@@ -812,15 +798,15 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 5E1BDF94
-P 1850 6800
+P 2250 6800
 AR Path="/5E2D8DA2/5E1BDF94" Ref="U?"  Part="3" 
 AR Path="/5E1A0CE1/5E1BDF94" Ref="U23"  Part="3" 
 AR Path="/5E80BFEC/5E1BDF94" Ref="U?"  Part="3" 
-F 0 "U23" H 1808 6846 50  0000 L CNN
-F 1 "TL072" H 1808 6755 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 1850 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1850 6800 50  0001 C CNN
-	3    1850 6800
+F 0 "U23" H 2208 6846 50  0000 L CNN
+F 1 "NJM2068M" H 2208 6755 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 2250 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2250 6800 50  0001 C CNN
+	3    2250 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1383,85 +1369,85 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5F573B27
-P 2200 7000
+P 2650 7000
 AR Path="/5E4A803E/5F573B27" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F573B27" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F573B27" Ref="C72"  Part="1" 
-F 0 "C72" H 2315 7046 50  0000 L CNN
-F 1 "0.1uF" H 2315 6955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 6850 50  0001 C CNN
-F 3 "~" H 2200 7000 50  0001 C CNN
-	1    2200 7000
+F 0 "C72" H 2765 7046 50  0000 L CNN
+F 1 "0.1uF" H 2765 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 6850 50  0001 C CNN
+F 3 "~" H 2650 7000 50  0001 C CNN
+	1    2650 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F5C7537
-P 2700 6600
+P 3150 6600
 AR Path="/5E4A803E/5F5C7537" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F5C7537" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F5C7537" Ref="C69"  Part="1" 
-F 0 "C69" H 2815 6646 50  0000 L CNN
-F 1 "0.1uF" H 2815 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 6450 50  0001 C CNN
-F 3 "~" H 2700 6600 50  0001 C CNN
-	1    2700 6600
+F 0 "C69" H 3265 6646 50  0000 L CNN
+F 1 "0.1uF" H 3265 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 6450 50  0001 C CNN
+F 3 "~" H 3150 6600 50  0001 C CNN
+	1    3150 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F5C754B
-P 2700 7000
+P 3150 7000
 AR Path="/5E4A803E/5F5C754B" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F5C754B" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F5C754B" Ref="C70"  Part="1" 
-F 0 "C70" H 2815 7046 50  0000 L CNN
-F 1 "0.1uF" H 2815 6955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 6850 50  0001 C CNN
-F 3 "~" H 2700 7000 50  0001 C CNN
-	1    2700 7000
+F 0 "C70" H 3265 7046 50  0000 L CNN
+F 1 "0.1uF" H 3265 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3188 6850 50  0001 C CNN
+F 3 "~" H 3150 7000 50  0001 C CNN
+	1    3150 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F5D0C3F
-P 3200 6600
+P 3650 6600
 AR Path="/5E4A803E/5F5D0C3F" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F5D0C3F" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F5D0C3F" Ref="C67"  Part="1" 
-F 0 "C67" H 3315 6646 50  0000 L CNN
-F 1 "0.1uF" H 3315 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 6450 50  0001 C CNN
-F 3 "~" H 3200 6600 50  0001 C CNN
-	1    3200 6600
+F 0 "C67" H 3765 6646 50  0000 L CNN
+F 1 "0.1uF" H 3765 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 6450 50  0001 C CNN
+F 3 "~" H 3650 6600 50  0001 C CNN
+	1    3650 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F5D0C49
-P 3700 6900
+P 4150 6900
 AR Path="/6009D432/5F5D0C49" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5F5D0C49" Ref="#PWR?"  Part="1" 
 AR Path="/5E1A0CE1/5F5D0C49" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 3700 6650 50  0001 C CNN
-F 1 "GND" H 3705 6727 50  0000 C CNN
-F 2 "" H 3700 6900 50  0001 C CNN
-F 3 "" H 3700 6900 50  0001 C CNN
-	1    3700 6900
+F 0 "#PWR0144" H 4150 6650 50  0001 C CNN
+F 1 "GND" H 4155 6727 50  0000 C CNN
+F 2 "" H 4150 6900 50  0001 C CNN
+F 3 "" H 4150 6900 50  0001 C CNN
+	1    4150 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F5D0C53
-P 3200 7000
+P 3650 7000
 AR Path="/5E4A803E/5F5D0C53" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F5D0C53" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F5D0C53" Ref="C68"  Part="1" 
-F 0 "C68" H 3315 7046 50  0000 L CNN
-F 1 "0.1uF" H 3315 6955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 6850 50  0001 C CNN
-F 3 "~" H 3200 7000 50  0001 C CNN
-	1    3200 7000
+F 0 "C68" H 3765 7046 50  0000 L CNN
+F 1 "0.1uF" H 3765 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 6850 50  0001 C CNN
+F 3 "~" H 3650 7000 50  0001 C CNN
+	1    3650 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1509,98 +1495,112 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5F573B1B
-P 2200 6600
+P 2650 6600
 AR Path="/5E4A803E/5F573B1B" Ref="C?"  Part="1" 
 AR Path="/6009D432/5F573B1B" Ref="C?"  Part="1" 
 AR Path="/5E1A0CE1/5F573B1B" Ref="C71"  Part="1" 
-F 0 "C71" H 2315 6646 50  0000 L CNN
-F 1 "0.1uF" H 2315 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 6450 50  0001 C CNN
-F 3 "~" H 2200 6600 50  0001 C CNN
-	1    2200 6600
+F 0 "C71" H 2765 6646 50  0000 L CNN
+F 1 "0.1uF" H 2765 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 6450 50  0001 C CNN
+F 3 "~" H 2650 6600 50  0001 C CNN
+	1    2650 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2200 7350 3    50   UnSpc ~ 0
+Text GLabel 2650 7350 3    50   UnSpc ~ 0
 -15V
-Text GLabel 2200 6250 1    50   UnSpc ~ 0
+Text GLabel 2650 6250 1    50   UnSpc ~ 0
 +15V
 Wire Wire Line
-	2200 6750 2200 6800
+	2650 6750 2650 6800
 Wire Wire Line
-	2700 6750 2700 6800
+	3150 6750 3150 6800
 Wire Wire Line
-	3200 6750 3200 6800
+	3650 6750 3650 6800
 Wire Wire Line
-	3700 6900 3700 6800
-Connection ~ 2200 6800
+	4150 6900 4150 6800
+Connection ~ 2650 6800
 Wire Wire Line
-	2200 6800 2200 6850
+	2650 6800 2650 6850
 Wire Wire Line
-	2200 6800 2700 6800
-Connection ~ 2700 6800
+	2650 6800 3150 6800
+Connection ~ 3150 6800
 Wire Wire Line
-	2700 6800 2700 6850
-Connection ~ 3200 6800
+	3150 6800 3150 6850
+Connection ~ 3650 6800
 Wire Wire Line
-	3200 6800 3200 6850
+	3650 6800 3650 6850
 Wire Wire Line
-	2200 7250 2700 7250
+	2650 7250 3150 7250
 Wire Wire Line
-	3200 7250 3200 7150
+	3650 7250 3650 7150
 Wire Wire Line
-	2200 7150 2200 7250
-Connection ~ 2200 7250
+	2650 7150 2650 7250
+Connection ~ 2650 7250
 Wire Wire Line
-	2200 7250 2200 7350
+	2650 7250 2650 7350
 Wire Wire Line
-	2700 7150 2700 7250
-Connection ~ 2700 7250
+	3150 7150 3150 7250
+Connection ~ 3150 7250
 Wire Wire Line
-	2700 7250 3200 7250
+	3150 7250 3650 7250
 Wire Wire Line
-	2200 6350 2700 6350
+	2650 6350 3150 6350
 Wire Wire Line
-	3200 6350 3200 6450
+	3650 6350 3650 6450
 Wire Wire Line
-	2200 6250 2200 6350
-Connection ~ 2200 6350
+	2650 6250 2650 6350
+Connection ~ 2650 6350
 Wire Wire Line
-	2200 6350 2200 6450
+	2650 6350 2650 6450
 Wire Wire Line
-	2700 6450 2700 6350
-Connection ~ 2700 6350
+	3150 6450 3150 6350
+Connection ~ 3150 6350
 Wire Wire Line
-	2700 6350 3200 6350
+	3150 6350 3650 6350
 Wire Wire Line
-	2200 6350 1750 6350
+	1150 6350 1150 6500
 Wire Wire Line
-	950  6350 950  6500
+	1150 7100 1150 7250
 Wire Wire Line
-	950  7100 950  7250
+	1650 7100 1650 7250
 Wire Wire Line
-	950  7250 1350 7250
+	2150 7100 2150 7250
 Wire Wire Line
-	1350 7100 1350 7250
-Connection ~ 1350 7250
+	1650 6500 1650 6350
 Wire Wire Line
-	1350 7250 1750 7250
+	2150 6500 2150 6350
 Wire Wire Line
-	1750 7100 1750 7250
-Connection ~ 1750 7250
+	3650 6800 3150 6800
 Wire Wire Line
-	1750 7250 2200 7250
+	3650 6800 4150 6800
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5E1BDEDB
+P 1250 6800
+AR Path="/5E2D8DA2/5E1BDEDB" Ref="U?"  Part="3" 
+AR Path="/5E1A0CE1/5E1BDEDB" Ref="U21"  Part="3" 
+AR Path="/5E80BFEC/5E1BDEDB" Ref="U?"  Part="3" 
+F 0 "U21" H 1208 6846 50  0000 L CNN
+F 1 "NJM2068M" H 1208 6755 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 1250 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1250 6800 50  0001 C CNN
+	3    1250 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 7250
 Wire Wire Line
-	1350 6500 1350 6350
-Connection ~ 1350 6350
+	2150 7250 2650 7250
+Connection ~ 1650 7250
 Wire Wire Line
-	1350 6350 950  6350
+	1650 7250 2150 7250
+Connection ~ 1650 6350
 Wire Wire Line
-	1750 6500 1750 6350
-Connection ~ 1750 6350
+	1650 6350 2150 6350
+Connection ~ 2150 6350
 Wire Wire Line
-	1750 6350 1350 6350
+	2150 6350 2650 6350
 Wire Wire Line
-	3200 6800 2700 6800
+	1150 6350 1650 6350
 Wire Wire Line
-	3200 6800 3700 6800
+	1150 7250 1650 7250
 $EndSCHEMATC

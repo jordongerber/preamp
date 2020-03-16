@@ -22,57 +22,6 @@ out_main_L
 Text HLabel 7350 3700 2    50   UnSpc ~ 0
 out_main_R
 $Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 600B881E
-P 3500 3450
-AR Path="/5E2D8DA2/600B881E" Ref="U?"  Part="2" 
-AR Path="/600B881E" Ref="U?"  Part="2" 
-AR Path="/61DC5D9D/600B881E" Ref="U?"  Part="2" 
-AR Path="/5F2E428C/600B881E" Ref="U?"  Part="2" 
-AR Path="/61DA059E/600B881E" Ref="U?"  Part="2" 
-AR Path="/6009D432/600B881E" Ref="U11"  Part="2" 
-F 0 "U11" H 3500 3817 50  0000 C CNN
-F 1 "TL072" H 3500 3726 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3500 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 3450 50  0001 C CNN
-	2    3500 3450
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 600B8824
-P 7450 5450
-AR Path="/5E2D8DA2/600B8824" Ref="U?"  Part="3" 
-AR Path="/600B8824" Ref="U?"  Part="3" 
-AR Path="/61DC5D9D/600B8824" Ref="U?"  Part="3" 
-AR Path="/5F2E428C/600B8824" Ref="U?"  Part="3" 
-AR Path="/61DA059E/600B8824" Ref="U?"  Part="3" 
-AR Path="/6009D432/600B8824" Ref="U11"  Part="3" 
-F 0 "U11" H 7408 5496 50  0000 L CNN
-F 1 "TL072" H 7408 5405 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7450 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7450 5450 50  0001 C CNN
-	3    7450 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 600B887D
-P 3500 1750
-AR Path="/5E2D8DA2/600B887D" Ref="U?"  Part="1" 
-AR Path="/600B887D" Ref="U?"  Part="1" 
-AR Path="/61DC5D9D/600B887D" Ref="U?"  Part="1" 
-AR Path="/5F2E428C/600B887D" Ref="U?"  Part="1" 
-AR Path="/61DA059E/600B887D" Ref="U?"  Part="1" 
-AR Path="/6009D432/600B887D" Ref="U11"  Part="1" 
-F 0 "U11" H 3500 2117 50  0000 C CNN
-F 1 "TL072" H 3500 2026 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3500 1750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 1750 50  0001 C CNN
-	1    3500 1750
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 600B8883
 P 3500 1000
@@ -385,8 +334,8 @@ AR Path="/5F2E428C/602693B0" Ref="U?"  Part="1"
 AR Path="/61DA059E/602693B0" Ref="U?"  Part="1" 
 AR Path="/6009D432/602693B0" Ref="U15"  Part="1" 
 F 0 "U15" H 6750 1975 50  0000 C CNN
-F 1 "TL072" H 6750 2066 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6750 1700 50  0001 C CNN
+F 1 "NJM2068M" H 6750 2066 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 6750 1700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6750 1700 50  0001 C CNN
 	1    6750 1700
 	1    0    0    1   
@@ -402,8 +351,8 @@ AR Path="/5F2E428C/6026CEF5" Ref="U?"  Part="2"
 AR Path="/61DA059E/6026CEF5" Ref="U?"  Part="2" 
 AR Path="/6009D432/6026CEF5" Ref="U15"  Part="2" 
 F 0 "U15" H 6750 3975 50  0000 C CNN
-F 1 "TL072" H 6750 4066 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 6750 3700 50  0001 C CNN
+F 1 "NJM2068M" H 6750 4066 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 6750 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6750 3700 50  0001 C CNN
 	2    6750 3700
 	1    0    0    1   
@@ -571,40 +520,6 @@ Text HLabel 10700 1700 2    50   UnSpc ~ 0
 out_HP_L
 Text HLabel 10700 3700 2    50   UnSpc ~ 0
 out_HP_R
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 6033B8E8
-P 3500 6950
-AR Path="/5E2D8DA2/6033B8E8" Ref="U?"  Part="2" 
-AR Path="/6033B8E8" Ref="U?"  Part="2" 
-AR Path="/61DC5D9D/6033B8E8" Ref="U?"  Part="2" 
-AR Path="/5F2E428C/6033B8E8" Ref="U?"  Part="2" 
-AR Path="/61DA059E/6033B8E8" Ref="U?"  Part="2" 
-AR Path="/6009D432/6033B8E8" Ref="U12"  Part="2" 
-F 0 "U12" H 3500 7317 50  0000 C CNN
-F 1 "TL072" H 3500 7226 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3500 6950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 6950 50  0001 C CNN
-	2    3500 6950
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 6033B8FC
-P 3500 5250
-AR Path="/5E2D8DA2/6033B8FC" Ref="U?"  Part="1" 
-AR Path="/6033B8FC" Ref="U?"  Part="1" 
-AR Path="/61DC5D9D/6033B8FC" Ref="U?"  Part="1" 
-AR Path="/5F2E428C/6033B8FC" Ref="U?"  Part="1" 
-AR Path="/61DA059E/6033B8FC" Ref="U?"  Part="1" 
-AR Path="/6009D432/6033B8FC" Ref="U12"  Part="1" 
-F 0 "U12" H 3500 5617 50  0000 C CNN
-F 1 "TL072" H 3500 5526 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3500 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 5250 50  0001 C CNN
-	1    3500 5250
-	1    0    0    1   
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 6033B906
@@ -948,8 +863,8 @@ AR Path="/5F2E428C/6033BA38" Ref="U?"  Part="1"
 AR Path="/61DA059E/6033BA38" Ref="U?"  Part="1" 
 AR Path="/6009D432/6033BA38" Ref="U18"  Part="1" 
 F 0 "U18" H 10100 1975 50  0000 C CNN
-F 1 "TL072" H 10100 2066 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10100 1700 50  0001 C CNN
+F 1 "NJM2068M" H 10100 2066 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 10100 1700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10100 1700 50  0001 C CNN
 	1    10100 1700
 	1    0    0    1   
@@ -965,8 +880,8 @@ AR Path="/5F2E428C/6033BA42" Ref="U?"  Part="2"
 AR Path="/61DA059E/6033BA42" Ref="U?"  Part="2" 
 AR Path="/6009D432/6033BA42" Ref="U18"  Part="2" 
 F 0 "U18" H 10100 3975 50  0000 C CNN
-F 1 "TL072" H 10100 4066 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 10100 3700 50  0001 C CNN
+F 1 "NJM2068M" H 10100 4066 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 10100 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10100 3700 50  0001 C CNN
 	2    10100 3700
 	1    0    0    1   
@@ -1128,36 +1043,19 @@ Wire Wire Line
 Connection ~ 10600 3700
 $Comp
 L Amplifier_Operational:TL072 U?
-U 3 1 603FD5C0
-P 7850 5450
-AR Path="/5E2D8DA2/603FD5C0" Ref="U?"  Part="3" 
-AR Path="/603FD5C0" Ref="U?"  Part="3" 
-AR Path="/61DC5D9D/603FD5C0" Ref="U?"  Part="3" 
-AR Path="/5F2E428C/603FD5C0" Ref="U?"  Part="3" 
-AR Path="/61DA059E/603FD5C0" Ref="U?"  Part="3" 
-AR Path="/6009D432/603FD5C0" Ref="U12"  Part="3" 
-F 0 "U12" H 7808 5496 50  0000 L CNN
-F 1 "TL072" H 7808 5405 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 7850 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7850 5450 50  0001 C CNN
-	3    7850 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
 U 3 1 604092EC
-P 8250 5450
+P 8050 5450
 AR Path="/5E2D8DA2/604092EC" Ref="U?"  Part="3" 
 AR Path="/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/604092EC" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/604092EC" Ref="U?"  Part="3" 
 AR Path="/61DA059E/604092EC" Ref="U?"  Part="3" 
 AR Path="/6009D432/604092EC" Ref="U15"  Part="3" 
-F 0 "U15" H 8208 5496 50  0000 L CNN
-F 1 "TL072" H 8208 5405 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8250 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8250 5450 50  0001 C CNN
-	3    8250 5450
+F 0 "U15" H 8008 5496 50  0000 L CNN
+F 1 "NJM2068M" H 8008 5405 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8050 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8050 5450 50  0001 C CNN
+	3    8050 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1418,18 +1316,18 @@ Text GLabel 4850 5600 3    50   UnSpc ~ 0
 $Comp
 L Amplifier_Operational:TL072 U?
 U 3 1 64985FF3
-P 8650 5450
+P 8600 5450
 AR Path="/5E2D8DA2/64985FF3" Ref="U?"  Part="3" 
 AR Path="/64985FF3" Ref="U?"  Part="3" 
 AR Path="/61DC5D9D/64985FF3" Ref="U?"  Part="3" 
 AR Path="/5F2E428C/64985FF3" Ref="U?"  Part="3" 
 AR Path="/61DA059E/64985FF3" Ref="U?"  Part="3" 
 AR Path="/6009D432/64985FF3" Ref="U18"  Part="3" 
-F 0 "U18" H 8608 5496 50  0000 L CNN
-F 1 "TL072" H 8608 5405 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 8650 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8650 5450 50  0001 C CNN
-	3    8650 5450
+F 0 "U18" H 8558 5496 50  0000 L CNN
+F 1 "NJM2068M" H 8558 5405 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8600 5450 50  0001 C CNN
+	3    8600 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2184,43 +2082,88 @@ Connection ~ 10350 5450
 Wire Wire Line
 	10350 5450 10350 5500
 Wire Wire Line
-	9000 5000 8550 5000
+	7400 5150 7400 5000
 Wire Wire Line
-	7350 5000 7350 5150
+	7950 5150 7950 5000
 Wire Wire Line
-	9000 5900 8550 5900
+	7950 5750 7950 5900
 Wire Wire Line
-	7350 5900 7350 5750
+	8500 5750 8500 5900
 Wire Wire Line
-	7750 5750 7750 5900
-Connection ~ 7750 5900
-Wire Wire Line
-	7750 5900 7350 5900
-Wire Wire Line
-	7750 5150 7750 5000
-Connection ~ 7750 5000
-Wire Wire Line
-	7750 5000 7350 5000
-Wire Wire Line
-	8150 5150 8150 5000
-Connection ~ 8150 5000
-Wire Wire Line
-	8150 5000 7750 5000
-Wire Wire Line
-	8150 5750 8150 5900
-Connection ~ 8150 5900
-Wire Wire Line
-	8150 5900 7750 5900
-Wire Wire Line
-	8550 5750 8550 5900
-Connection ~ 8550 5900
-Wire Wire Line
-	8550 5900 8150 5900
-Wire Wire Line
-	8550 5150 8550 5000
-Connection ~ 8550 5000
-Wire Wire Line
-	8550 5000 8150 5000
+	8500 5150 8500 5000
 Wire Wire Line
 	10350 5450 10800 5450
+$Comp
+L Amplifier_Operational:TL074 U11
+U 1 1 5E736DA3
+P 3500 1750
+F 0 "U11" H 3500 2025 50  0000 C CNN
+F 1 "TL074CDR" H 3500 2116 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3450 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3550 1950 50  0001 C CNN
+	1    3500 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U11
+U 2 1 5E738D93
+P 3500 3450
+F 0 "U11" H 3500 3725 50  0000 C CNN
+F 1 "TL074CDR" H 3500 3816 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3450 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3550 3650 50  0001 C CNN
+	2    3500 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U11
+U 3 1 5E73ACBC
+P 3500 5250
+F 0 "U11" H 3500 5525 50  0000 C CNN
+F 1 "TL074CDR" H 3500 5616 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3450 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3550 5450 50  0001 C CNN
+	3    3500 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U11
+U 4 1 5E73D06C
+P 3500 6950
+F 0 "U11" H 3500 7225 50  0000 C CNN
+F 1 "TL074CDR" H 3500 7316 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3450 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3550 7150 50  0001 C CNN
+	4    3500 6950
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U11
+U 5 1 5E73EF8B
+P 7500 5450
+F 0 "U11" H 7458 5496 50  0000 L CNN
+F 1 "TL074CDR" H 7458 5405 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7450 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7550 5650 50  0001 C CNN
+	5    7500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5750 7400 5900
+Connection ~ 8500 5000
+Wire Wire Line
+	8500 5000 9000 5000
+Connection ~ 7950 5000
+Wire Wire Line
+	7950 5000 8500 5000
+Connection ~ 7950 5900
+Wire Wire Line
+	7950 5900 8500 5900
+Connection ~ 8500 5900
+Wire Wire Line
+	8500 5900 9000 5900
+Wire Wire Line
+	7400 5000 7950 5000
+Wire Wire Line
+	7400 5900 7950 5900
 $EndSCHEMATC
