@@ -270,7 +270,7 @@ F 3 "~" H 9900 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9900 3100 9900 3550
-Text GLabel 10150 2350 2    50   UnSpc ~ 0
+Text GLabel 9900 2100 1    50   UnSpc ~ 0
 +15V
 Text Label 5500 4750 2    50   ~ 0
 rectified_-
@@ -525,7 +525,7 @@ F 3 "~" H 9900 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9900 4000 9900 3550
-Text GLabel 10150 4750 2    50   UnSpc ~ 0
+Text GLabel 9900 5000 3    50   UnSpc ~ 0
 -15V
 $Comp
 L Device:R_POT_US RV?
@@ -907,8 +907,8 @@ Wire Wire Line
 Connection ~ 9900 2350
 Connection ~ 9900 3550
 Wire Wire Line
-	9900 2350 10150 2350
+	9900 2350 9900 2100
 Connection ~ 9900 4750
 Wire Wire Line
-	9900 4750 10150 4750
+	9900 4750 9900 5000
 $EndSCHEMATC

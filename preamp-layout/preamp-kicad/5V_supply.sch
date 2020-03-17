@@ -116,7 +116,7 @@ Wire Wire Line
 	8150 4250 8150 3800
 Connection ~ 8150 3800
 Wire Wire Line
-	8150 3800 8300 3800
+	8150 3800 8150 3650
 $Comp
 L Device:CP1 C?
 U 1 1 5FCCFD14
@@ -380,7 +380,7 @@ Text GLabel 1550 5750 0    50   UnSpc ~ 0
 +5V
 Text GLabel 3000 6050 1    50   UnSpc ~ 0
 +5V
-Text GLabel 8300 3800 2    50   UnSpc ~ 0
+Text GLabel 8150 3650 1    50   UnSpc ~ 0
 +5V
 $Comp
 L power:GND #PWR?
