@@ -129,18 +129,12 @@ Wire Wire Line
 	7000 1650 7000 1750
 Wire Wire Line
 	7000 2050 7000 2150
-Text HLabel 1300 1450 1    50   Input ~ 0
+Text HLabel 1400 2000 0    50   Input ~ 0
 CLK
-Text HLabel 1400 1450 1    50   Input ~ 0
-CS
-Text HLabel 1200 1450 1    50   Input ~ 0
+Text HLabel 1400 1900 0    50   Input ~ 0
+~CS
+Text HLabel 1400 2100 0    50   Input ~ 0
 MOSI
-Wire Wire Line
-	1050 1900 1400 1900
-Wire Wire Line
-	1050 2100 1200 2100
-Wire Wire Line
-	1200 1450 1200 2100
 Text Label 5550 1900 0    50   ~ 0
 IN_3_R+
 Text Label 5550 1800 0    50   ~ 0
@@ -398,14 +392,14 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6152C395
-P 850 2000
+P 900 1300
 AR Path="/5E607732/6152C395" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6152C395" Ref="J50"  Part="1" 
-F 0 "J50" H 742 2193 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 878 1935 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 850 2000 50  0001 C CNN
-F 3 "~" H 850 2000 50  0001 C CNN
-	1    850  2000
+F 0 "J50" H 792 1493 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 928 1235 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 900 1300 50  0001 C CNN
+F 3 "~" H 900 1300 50  0001 C CNN
+	1    900  1300
 	-1   0    0    -1  
 $EndComp
 Text HLabel 1550 4900 0    50   UnSpc ~ 0
@@ -1590,21 +1584,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 
 	1    2200 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 2000 1300 2000
-Wire Wire Line
-	1300 1450 1300 2000
-Wire Wire Line
-	1400 1450 1400 1900
-Connection ~ 1200 2100
-Connection ~ 1300 2000
-Connection ~ 1400 1900
-Wire Wire Line
-	1400 1900 1500 1900
-Wire Wire Line
-	1200 2100 1500 2100
-Wire Wire Line
-	1300 2000 1500 2000
 Text GLabel 7000 2850 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
@@ -1634,4 +1613,22 @@ Wire Wire Line
 Connection ~ 7000 2950
 Wire Wire Line
 	7000 2950 6900 2950
+Wire Wire Line
+	1100 1200 1200 1200
+Wire Wire Line
+	1100 1300 1200 1300
+Wire Wire Line
+	1100 1400 1200 1400
+Wire Wire Line
+	1500 1900 1400 1900
+Wire Wire Line
+	1500 2000 1400 2000
+Wire Wire Line
+	1500 2100 1400 2100
+Text HLabel 1200 1300 2    50   Input ~ 0
+CLK
+Text HLabel 1200 1200 2    50   Input ~ 0
+~CS
+Text HLabel 1200 1400 2    50   Input ~ 0
+MOSI
 $EndSCHEMATC

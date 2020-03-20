@@ -14,13 +14,13 @@ Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
 Text HLabel 4900 3600 0    50   UnSpc ~ 0
-in_R
+IN_R
 Text HLabel 4900 1600 0    50   UnSpc ~ 0
-in_L
+IN_L
 Text HLabel 7350 1700 2    50   UnSpc ~ 0
-out_main_L
+OUT_1_L
 Text HLabel 7350 3700 2    50   UnSpc ~ 0
-out_main_R
+OUT_1_R
 $Comp
 L Device:R R?
 U 1 1 600B8883
@@ -433,9 +433,9 @@ in_R
 Text HLabel 8250 1600 0    50   UnSpc ~ 0
 in_L
 Text HLabel 10700 1700 2    50   UnSpc ~ 0
-out_HP_L
+OUT_2_L
 Text HLabel 10700 3700 2    50   UnSpc ~ 0
-out_HP_R
+OUT_2_R
 $Comp
 L Device:R R?
 U 1 1 6033B906
@@ -464,23 +464,10 @@ F 3 "~" H 3500 4900 50  0001 C CNN
 	1    3500 4900
 	0    1    1    0   
 $EndComp
-Text HLabel 900  6150 0    50   Input ~ 0
+Text HLabel 950  6150 0    50   Input ~ 0
 MOSI
-Text HLabel 900  5950 0    50   Input ~ 0
+Text HLabel 950  5950 0    50   Input ~ 0
 CLK
-$Comp
-L Analog_DAC:MCP4902 U?
-U 1 1 6033B91D
-P 1500 5950
-AR Path="/6033B91D" Ref="U?"  Part="1" 
-AR Path="/6009D432/6033B91D" Ref="U10"  Part="1" 
-F 0 "U10" H 1700 6400 50  0000 C CNN
-F 1 "MCP4902" H 1700 6300 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2300 5650 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 5650 50  0001 C CNN
-	1    1500 5950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 6033B927
@@ -1480,8 +1467,6 @@ F 3 "" H 3100 5450 50  0001 C CNN
 	1    3100 5450
 	1    0    0    -1  
 $EndComp
-Text HLabel 900  6050 0    50   Input ~ 0
-~LDAC
 Wire Wire Line
 	1000 5750 950  5750
 Wire Wire Line
@@ -1578,26 +1563,13 @@ Wire Wire Line
 	1500 5400 1500 5550
 Wire Wire Line
 	1500 5200 1500 5400
-$Comp
-L Connector:Conn_01x05_Male J64
-U 1 1 5F064263
-P 1500 4000
-F 0 "J64" H 1472 3978 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 1608 4290 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1500 4000 50  0001 C CNN
-F 3 "~" H 1500 4000 50  0001 C CNN
-	1    1500 4000
-	-1   0    0    -1  
-$EndComp
-Text HLabel 1300 4000 0    50   Input ~ 0
+Text HLabel 1450 4350 0    50   Input ~ 0
 MOSI
-Text HLabel 1300 3800 0    50   Input ~ 0
+Text HLabel 1450 4250 0    50   Input ~ 0
 CLK
-Text HLabel 1300 3900 0    50   Input ~ 0
-~LDAC
-Text HLabel 1300 4100 0    50   Input ~ 0
+Text HLabel 1450 4050 0    50   Input ~ 0
 ~CS_VOL_MAIN
-Text HLabel 1300 4200 0    50   Input ~ 0
+Text HLabel 1450 4150 0    50   Input ~ 0
 ~CS_VOL_HP
 Text GLabel 2300 5700 1    50   UnSpc ~ 0
 +5V
@@ -1625,8 +1597,6 @@ Wire Wire Line
 	950  2250 950  1900
 Wire Wire Line
 	1000 2250 950  2250
-Text HLabel 900  2550 0    50   Input ~ 0
-~LDAC
 $Comp
 L power:GND #PWR069
 U 1 1 65235778
@@ -1640,23 +1610,6 @@ F 3 "" H 1500 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	900  2750 900  2850
-$Comp
-L Analog_DAC:MCP4902 U?
-U 1 1 6017A289
-P 1500 2450
-AR Path="/6017A289" Ref="U?"  Part="1" 
-AR Path="/6009D432/6017A289" Ref="U9"  Part="1" 
-F 0 "U9" H 1700 2900 50  0000 C CNN
-F 1 "MCP4902" H 1700 2800 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2300 2150 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 2150 50  0001 C CNN
-	1    1500 2450
-	1    0    0    -1  
-$EndComp
-Text HLabel 900  2450 0    50   Input ~ 0
-CLK
-Text HLabel 900  2650 0    50   Input ~ 0
-MOSI
 Text GLabel 2300 2200 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
@@ -1677,19 +1630,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2350 2100 2350
 Wire Wire Line
-	900  5950 1000 5950
-Wire Wire Line
-	900  6050 1000 6050
-Wire Wire Line
-	900  6150 1000 6150
-Wire Wire Line
 	900  6250 1000 6250
-Wire Wire Line
-	900  2450 1000 2450
-Wire Wire Line
-	900  2550 1000 2550
-Wire Wire Line
-	1000 2650 900  2650
 Wire Wire Line
 	900  2750 1000 2750
 $Comp
@@ -2373,4 +2314,79 @@ Connection ~ 9250 5200
 Connection ~ 9250 6100
 Connection ~ 10600 5200
 Connection ~ 10600 6100
+$Comp
+L preamp:MCP4902 U9
+U 1 1 5E77ABA3
+P 1500 2450
+F 0 "U9" H 1700 2900 50  0000 C CNN
+F 1 "MCP4902" H 1700 2800 50  0000 C CNN
+F 2 "" H 2300 2150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 2150 50  0001 C CNN
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamp:MCP4902 U10
+U 1 1 5E7990F3
+P 1500 5950
+F 0 "U10" H 1700 6400 50  0000 C CNN
+F 1 "MCP4902" H 1700 6300 50  0000 C CNN
+F 2 "" H 2300 5650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 2300 5650 50  0001 C CNN
+	1    1500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF1B68
+P 650 6200
+F 0 "#PWR?" H 650 5950 50  0001 C CNN
+F 1 "GND" H 655 6027 50  0000 C CNN
+F 2 "" H 650 6200 50  0001 C CNN
+F 3 "" H 650 6200 50  0001 C CNN
+	1    650  6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6050 1000 6050
+Wire Wire Line
+	950  5950 1000 5950
+Wire Wire Line
+	950  6150 1000 6150
+Wire Wire Line
+	650  6050 650  6200
+Text HLabel 950  2650 0    50   Input ~ 0
+MOSI
+Text HLabel 950  2450 0    50   Input ~ 0
+CLK
+$Comp
+L power:GND #PWR?
+U 1 1 5ED2B3B8
+P 650 2700
+F 0 "#PWR?" H 650 2450 50  0001 C CNN
+F 1 "GND" H 655 2527 50  0000 C CNN
+F 2 "" H 650 2700 50  0001 C CNN
+F 3 "" H 650 2700 50  0001 C CNN
+	1    650  2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  2550 1000 2550
+Wire Wire Line
+	650  2550 650  2700
+Wire Wire Line
+	950  2450 1000 2450
+Wire Wire Line
+	950  2650 1000 2650
+$Comp
+L Connector:Conn_01x04_Male J64
+U 1 1 5EDBC5D0
+P 1650 4150
+F 0 "J64" H 1622 4078 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1758 4340 50  0001 C CNN
+F 2 "" H 1650 4150 50  0001 C CNN
+F 3 "~" H 1650 4150 50  0001 C CNN
+	1    1650 4150
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

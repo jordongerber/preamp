@@ -30,7 +30,7 @@ MOSI
 Text HLabel 6050 3300 0    50   Input ~ 0
 CLK
 Text HLabel 6050 3400 0    50   Input ~ 0
-CS
+~CS
 Wire Wire Line
 	6050 3200 6200 3200
 Wire Wire Line
@@ -241,14 +241,14 @@ F 3 "~" H 9750 1650 50  0001 C CNN
 	1    9750 1650
 	1    0    0    -1  
 $EndComp
-Text HLabel 9550 1650 0    50   Output ~ 0
+Text HLabel 9550 1750 0    50   Output ~ 0
 MISO
-Text HLabel 9550 1450 0    50   Input ~ 0
-CLK
 Text HLabel 9550 1550 0    50   Input ~ 0
+CLK
+Text HLabel 9550 1650 0    50   Input ~ 0
 MOSI
-Text HLabel 9550 1750 0    50   Input ~ 0
-CS
+Text HLabel 9550 1450 0    50   Input ~ 0
+~CS
 Text HLabel 9550 1850 0    50   Output ~ 0
 SW_INT
 Wire Wire Line
