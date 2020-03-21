@@ -14,22 +14,18 @@ Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
 Wire Wire Line
-	3600 6600 3600 6700
-Text GLabel 3600 6500 0    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	3600 5950 3600 6050
-Text GLabel 3600 5850 0    50   UnSpc ~ 0
+	4050 5750 4050 5850
+Text GLabel 4050 5550 1    50   UnSpc ~ 0
 +5V
 $Comp
 L Connector:Conn_01x02_Male J35
 U 1 1 63AD6EFD
-P 3800 6500
-F 0 "J35" H 3772 6428 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3772 6383 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3800 6500 50  0001 C CNN
-F 3 "~" H 3800 6500 50  0001 C CNN
-	1    3800 6500
+P 4350 5650
+F 0 "J35" H 4322 5578 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4322 5533 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4350 5650 50  0001 C CNN
+F 3 "~" H 4350 5650 50  0001 C CNN
+	1    4350 5650
 	-1   0    0    -1  
 $EndComp
 Text HLabel 3500 3200 0    50   Input ~ 0
@@ -109,28 +105,15 @@ F 3 "" H 3250 4200 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 64EF440C
-P 3600 6050
-AR Path="/5E26F6FE/64EF440C" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/64EF440C" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 3600 5800 50  0001 C CNN
-F 1 "GND" H 3605 5877 50  0000 C CNN
-F 2 "" H 3600 6050 50  0001 C CNN
-F 3 "" H 3600 6050 50  0001 C CNN
-	1    3600 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 64EF4C33
-P 3600 6700
+P 4050 5850
 AR Path="/5E26F6FE/64EF4C33" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF4C33" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 3600 6450 50  0001 C CNN
-F 1 "GND" H 3605 6527 50  0000 C CNN
-F 2 "" H 3600 6700 50  0001 C CNN
-F 3 "" H 3600 6700 50  0001 C CNN
-	1    3600 6700
+F 0 "#PWR034" H 4050 5600 50  0001 C CNN
+F 1 "GND" H 4055 5677 50  0000 C CNN
+F 2 "" H 4050 5850 50  0001 C CNN
+F 3 "" H 4050 5850 50  0001 C CNN
+	1    4050 5850
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3500 2600
@@ -141,13 +124,13 @@ NoConn ~ 3500 3700
 $Comp
 L Connector:Conn_01x02_Male J34
 U 1 1 5E6537E3
-P 3800 5850
-F 0 "J34" H 3772 5778 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3772 5733 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3800 5850 50  0001 C CNN
-F 3 "~" H 3800 5850 50  0001 C CNN
-	1    3800 5850
-	-1   0    0    -1  
+P 3750 5650
+F 0 "J34" H 3722 5578 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3722 5533 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3750 5650 50  0001 C CNN
+F 3 "~" H 3750 5650 50  0001 C CNN
+	1    3750 5650
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7150 5300 7150 5400
@@ -425,4 +408,16 @@ Wire Wire Line
 	7150 2800 7150 2900
 Text HLabel 3500 2700 0    50   Input ~ 0
 SW_INT
+Wire Wire Line
+	3950 5650 4050 5650
+Wire Wire Line
+	3950 5750 4050 5750
+Connection ~ 4050 5750
+Wire Wire Line
+	4050 5750 4150 5750
+Wire Wire Line
+	4050 5650 4050 5550
+Connection ~ 4050 5650
+Wire Wire Line
+	4050 5650 4150 5650
 $EndSCHEMATC

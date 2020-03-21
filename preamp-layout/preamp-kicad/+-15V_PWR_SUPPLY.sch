@@ -14,9 +14,9 @@ Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
 Text HLabel 1950 3250 1    50   UnSpc ~ 0
-AC+
+AC_HOT
 Text HLabel 1950 3650 3    50   UnSpc ~ 0
-AC-
+AC_N
 Text GLabel 3900 6000 1    50   UnSpc ~ 0
 +15V
 $Comp

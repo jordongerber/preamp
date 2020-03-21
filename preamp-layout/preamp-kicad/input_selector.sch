@@ -392,14 +392,14 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6152C395
-P 900 1300
+P 1200 1050
 AR Path="/5E607732/6152C395" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6152C395" Ref="J50"  Part="1" 
-F 0 "J50" H 792 1493 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 928 1235 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 900 1300 50  0001 C CNN
-F 3 "~" H 900 1300 50  0001 C CNN
-	1    900  1300
+F 0 "J50" H 1092 1243 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1228 985 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1200 1050 50  0001 C CNN
+F 3 "~" H 1200 1050 50  0001 C CNN
+	1    1200 1050
 	-1   0    0    -1  
 $EndComp
 Text HLabel 1550 4900 0    50   UnSpc ~ 0
@@ -1614,21 +1614,21 @@ Connection ~ 7000 2950
 Wire Wire Line
 	7000 2950 6900 2950
 Wire Wire Line
-	1100 1200 1200 1200
+	1400 950  1500 950 
 Wire Wire Line
-	1100 1300 1200 1300
+	1400 1050 1500 1050
 Wire Wire Line
-	1100 1400 1200 1400
+	1400 1150 1500 1150
 Wire Wire Line
 	1500 1900 1400 1900
 Wire Wire Line
 	1500 2000 1400 2000
 Wire Wire Line
 	1500 2100 1400 2100
-Text HLabel 1200 1300 2    50   Input ~ 0
+Text HLabel 1500 1050 2    50   Input ~ 0
 CLK
-Text HLabel 1200 1200 2    50   Input ~ 0
+Text HLabel 1500 950  2    50   Input ~ 0
 ~CS
-Text HLabel 1200 1400 2    50   Input ~ 0
+Text HLabel 1500 1150 2    50   Input ~ 0
 MOSI
 $EndSCHEMATC

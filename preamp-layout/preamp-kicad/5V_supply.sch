@@ -419,9 +419,9 @@ F 3 "~" H 6200 4450 50  0001 C CNN
 $EndComp
 Connection ~ 6200 4450
 Text HLabel 4650 1300 1    50   UnSpc ~ 0
-AC+
+AC_HOT
 Text HLabel 4650 1700 3    50   UnSpc ~ 0
-AC-
+AC_N
 Text Label 6250 2100 3    50   ~ 0
 rectified_-
 Text Label 6850 2100 3    50   ~ 0

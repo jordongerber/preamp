@@ -1182,9 +1182,9 @@ F 3 "~" H 5750 7450 50  0001 C CNN
 	1    5750 7450
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 6600 3    50   UnSpc ~ 0
+Text GLabel 6000 6200 1    50   UnSpc ~ 0
 +15V
-Text GLabel 6050 6600 3    50   UnSpc ~ 0
+Text GLabel 6000 6600 3    50   UnSpc ~ 0
 -15V
 $Comp
 L Amplifier_Operational:TL072 U?
@@ -1272,12 +1272,12 @@ $EndComp
 $Comp
 L power:GND #PWR089
 U 1 1 6503182E
-P 5900 6800
-F 0 "#PWR089" H 5900 6550 50  0001 C CNN
-F 1 "GND" H 5905 6627 50  0000 C CNN
-F 2 "" H 5900 6800 50  0001 C CNN
-F 3 "" H 5900 6800 50  0001 C CNN
-	1    5900 6800
+P 5800 6650
+F 0 "#PWR089" H 5800 6400 50  0001 C CNN
+F 1 "GND" H 5805 6477 50  0000 C CNN
+F 2 "" H 5800 6650 50  0001 C CNN
+F 3 "" H 5800 6650 50  0001 C CNN
+	1    5800 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1811,26 +1811,9 @@ Connection ~ 4700 6500
 Wire Wire Line
 	4700 6500 4600 6500
 Wire Wire Line
-	5700 6300 5750 6300
+	5700 6500 6000 6500
 Wire Wire Line
-	5700 6400 5900 6400
-Wire Wire Line
-	5700 6500 6050 6500
-Wire Wire Line
-	5750 6600 5750 6300
-Connection ~ 5750 6300
-Wire Wire Line
-	5750 6300 6100 6300
-Wire Wire Line
-	6050 6600 6050 6500
-Connection ~ 6050 6500
-Wire Wire Line
-	6050 6500 6100 6500
-Wire Wire Line
-	5900 6800 5900 6400
-Connection ~ 5900 6400
-Wire Wire Line
-	5900 6400 6100 6400
+	6000 6600 6000 6500
 Wire Wire Line
 	7900 5600 7900 5650
 Wire Wire Line
@@ -2389,4 +2372,21 @@ F 3 "~" H 1650 4150 50  0001 C CNN
 	1    1650 4150
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	5700 6300 6000 6300
+Connection ~ 6000 6500
+Wire Wire Line
+	6000 6500 6100 6500
+Wire Wire Line
+	6000 6200 6000 6300
+Connection ~ 6000 6300
+Wire Wire Line
+	6000 6300 6100 6300
+Wire Wire Line
+	5700 6400 5800 6400
+Wire Wire Line
+	5800 6650 5800 6400
+Connection ~ 5800 6400
+Wire Wire Line
+	5800 6400 6100 6400
 $EndSCHEMATC
