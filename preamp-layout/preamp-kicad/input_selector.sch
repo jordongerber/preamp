@@ -13,411 +13,411 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 6250 5750 0    50   UnSpc ~ 0
+Text HLabel 1500 3700 0    50   UnSpc ~ 0
 A_IN_R
-Text HLabel 6250 5300 0    50   UnSpc ~ 0
+Text HLabel 1500 3300 0    50   UnSpc ~ 0
 A_IN_L
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 5E8E2ACA
-P 6600 4700
+P 1850 2700
 AR Path="/5E607732/5E8E2ACA" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/5E8E2ACA" Ref="J59"  Part="1" 
-F 0 "J59" H 6628 4680 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6628 4635 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 4700 50  0001 C CNN
-F 3 "~" H 6600 4700 50  0001 C CNN
-	1    6600 4700
+F 0 "J59" H 1878 2680 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 1878 2635 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1850 2700 50  0001 C CNN
+F 3 "~" H 1850 2700 50  0001 C CNN
+	1    1850 2700
 	1    0    0    -1  
 $EndComp
-Text Label 5550 1400 0    50   ~ 0
+Text Label 7000 1400 0    50   ~ 0
 IN_1_S+
-Text GLabel 5450 1200 2    50   UnSpc ~ 0
+Text GLabel 6900 1200 2    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	5450 1200 5300 1200
-Text GLabel 2200 1600 1    50   UnSpc ~ 0
+	6900 1200 6750 1200
+Text GLabel 3650 1600 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	5300 1400 5550 1400
+	6750 1400 7000 1400
 Wire Wire Line
-	5300 3300 5550 3300
+	6750 3300 7000 3300
 Wire Wire Line
-	5300 3200 5550 3200
-Text Label 5550 2000 0    50   ~ 0
+	6750 3200 7000 3200
+Text Label 7000 2000 0    50   ~ 0
 IN_4_S+
-Text Label 5550 3200 0    50   ~ 0
+Text Label 7000 3200 0    50   ~ 0
 IN_4_R+
 Wire Wire Line
-	5300 3500 5550 3500
+	6750 3500 7000 3500
 Wire Wire Line
-	5300 3400 5550 3400
+	6750 3400 7000 3400
 Wire Wire Line
-	5300 3700 5550 3700
+	6750 3700 7000 3700
 Wire Wire Line
-	5300 3600 5550 3600
-Text Label 5550 3300 0    50   ~ 0
+	6750 3600 7000 3600
+Text Label 7000 3300 0    50   ~ 0
 IN_5_S+
-Text Label 5550 3400 0    50   ~ 0
+Text Label 7000 3400 0    50   ~ 0
 IN_5_R+
 Wire Wire Line
-	5450 3000 5300 3000
-Text GLabel 5450 3000 2    50   UnSpc ~ 0
+	6900 3000 6750 3000
+Text GLabel 6900 3000 2    50   UnSpc ~ 0
 +5V
-Text Label 5550 3500 0    50   ~ 0
+Text Label 7000 3500 0    50   ~ 0
 OUT_1_S+
-Text Label 5550 3600 0    50   ~ 0
+Text Label 7000 3600 0    50   ~ 0
 OUT_1_R+
 $Comp
 L Transistor_Array:ULN2003 U8
 U 1 1 5E0598D8
-P 4900 3400
-F 0 "U8" H 4900 4067 50  0000 C CNN
-F 1 "ULN2003" H 4900 3976 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4950 2850 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 3200 50  0001 C CNN
-	1    4900 3400
+P 6350 3400
+F 0 "U8" H 6350 4067 50  0000 C CNN
+F 1 "ULN2003" H 6350 3976 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6400 2850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6450 3200 50  0001 C CNN
+	1    6350 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 3800 2200 3850
+	3650 3800 3650 3850
 Wire Wire Line
-	1500 3300 1450 3300
+	2950 3300 2900 3300
 Wire Wire Line
-	1450 3300 1450 3400
+	2900 3300 2900 3400
 Wire Wire Line
-	1500 3400 1450 3400
+	2950 3400 2900 3400
 Wire Wire Line
-	1450 3400 1450 3500
+	2900 3400 2900 3500
 Wire Wire Line
-	1500 3500 1450 3500
+	2950 3500 2900 3500
 Wire Wire Line
-	1450 3500 1450 3850
-Text GLabel 1350 2800 0    50   UnSpc ~ 0
+	2900 3500 2900 3850
+Text GLabel 2800 2800 0    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	1350 2800 1500 2800
-Text GLabel 7000 1250 1    50   UnSpc ~ 0
+	2800 2800 2950 2800
+Text GLabel 950  900  1    50   UnSpc ~ 0
 +5V
 $Comp
 L Device:R R20
 U 1 1 5FDEBED2
-P 7000 1500
+P 950 1150
 AR Path="/5E2D8DA2/5FDEBED2" Ref="R20"  Part="1" 
 AR Path="/5FDEBED2" Ref="R?"  Part="1" 
-F 0 "R20" H 7070 1546 50  0000 L CNN
-F 1 "330R" H 7070 1455 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6930 1500 50  0001 C CNN
-F 3 "~" H 7000 1500 50  0001 C CNN
-	1    7000 1500
+F 0 "R20" H 1020 1196 50  0000 L CNN
+F 1 "330R" H 1020 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 880 1150 50  0001 C CNN
+F 3 "~" H 950 1150 50  0001 C CNN
+	1    950  1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D13
 U 1 1 5FE4B18E
-P 7000 1900
-F 0 "D13" V 7039 1782 50  0000 R CNN
-F 1 "RED" V 6948 1782 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7000 1900 50  0001 C CNN
-F 3 "~" H 7000 1900 50  0001 C CNN
-	1    7000 1900
+P 950 1550
+F 0 "D13" V 989 1432 50  0000 R CNN
+F 1 "RED" V 898 1432 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 950 1550 50  0001 C CNN
+F 3 "~" H 950 1550 50  0001 C CNN
+	1    950  1550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7000 1250 7000 1350
+	950  900  950  1000
 Wire Wire Line
-	7000 1650 7000 1750
+	950  1300 950  1400
 Wire Wire Line
-	7000 2050 7000 2150
-Text HLabel 1400 2000 0    50   Input ~ 0
+	950  1700 950  1800
+Text HLabel 2850 2000 0    50   Input ~ 0
 CLK
-Text HLabel 1400 1900 0    50   Input ~ 0
+Text HLabel 2850 1900 0    50   Input ~ 0
 ~CS
-Text HLabel 1400 2100 0    50   Input ~ 0
+Text HLabel 2850 2100 0    50   Input ~ 0
 MOSI
-Text Label 5550 1900 0    50   ~ 0
+Text Label 7000 1900 0    50   ~ 0
 IN_3_R+
-Text Label 5550 1800 0    50   ~ 0
+Text Label 7000 1800 0    50   ~ 0
 IN_3_S+
 Wire Wire Line
-	5300 1800 5550 1800
+	6750 1800 7000 1800
 Wire Wire Line
-	5300 1900 5550 1900
+	6750 1900 7000 1900
 Wire Wire Line
-	5300 1700 5550 1700
+	6750 1700 7000 1700
 Wire Wire Line
-	5300 1600 5550 1600
+	6750 1600 7000 1600
 Wire Wire Line
-	5300 1500 5550 1500
-Text Label 5550 1600 0    50   ~ 0
+	6750 1500 7000 1500
+Text Label 7000 1600 0    50   ~ 0
 IN_2_S+
-Text Label 5550 1700 0    50   ~ 0
+Text Label 7000 1700 0    50   ~ 0
 IN_2_R+
-Text Label 5550 1500 0    50   ~ 0
+Text Label 7000 1500 0    50   ~ 0
 IN_1_R+
 $Comp
 L Transistor_Array:ULN2003 U7
 U 1 1 5E036B83
-P 4900 1600
-F 0 "U7" H 4900 2267 50  0000 C CNN
-F 1 "ULN2003" H 4900 2176 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4950 1050 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5000 1400 50  0001 C CNN
-	1    4900 1600
+P 6350 1600
+F 0 "U7" H 6350 2267 50  0000 C CNN
+F 1 "ULN2003" H 6350 2176 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6400 1050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6450 1400 50  0001 C CNN
+	1    6350 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 3900 2200 3850
-Connection ~ 2200 3850
-Connection ~ 1450 3500
+	3650 3900 3650 3850
+Connection ~ 3650 3850
+Connection ~ 2900 3500
 Wire Wire Line
-	1450 3850 2200 3850
-Connection ~ 1450 3400
+	2900 3850 3650 3850
+Connection ~ 2900 3400
 Wire Wire Line
-	2900 3300 3550 3300
+	4350 3300 5000 3300
 Wire Wire Line
-	2900 3100 3350 3100
+	4350 3100 4800 3100
 Wire Wire Line
-	2900 3000 3250 3000
+	4350 3000 4700 3000
 Wire Wire Line
-	2900 2900 3150 2900
+	4350 2900 4600 2900
 Wire Wire Line
-	2900 2800 3050 2800
+	4350 2800 4500 2800
 Wire Wire Line
-	2900 3200 3450 3200
+	4350 3200 4900 3200
 Wire Wire Line
-	4300 2400 4300 1900
+	5750 2400 5750 1900
 Wire Wire Line
-	4200 2300 4200 1800
+	5650 2300 5650 1800
 Wire Wire Line
-	4100 2200 4100 1700
+	5550 2200 5550 1700
 Wire Wire Line
-	4000 2100 4000 1600
+	5450 2100 5450 1600
 Wire Wire Line
-	3900 2000 3900 1500
+	5350 2000 5350 1500
 Wire Wire Line
-	3800 1900 3800 1400
+	5250 1900 5250 1400
 Wire Wire Line
-	3050 3800 3050 2800
+	4500 3800 4500 2800
 Wire Wire Line
-	3150 3800 3150 2900
+	4600 3800 4600 2900
 Wire Wire Line
-	3250 3800 3250 3000
+	4700 3800 4700 3000
 Wire Wire Line
-	3350 3800 3350 3100
+	4800 3800 4800 3100
 Wire Wire Line
-	3450 3800 3450 3200
+	4900 3800 4900 3200
 Wire Wire Line
-	3550 3800 3550 3300
+	5000 3800 5000 3300
 $Comp
 L Connector:Conn_01x03_Male J58
 U 1 1 637A81F9
-P 6550 5500
-F 0 "J58" H 6522 5478 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6522 5433 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6550 5500 50  0001 C CNN
-F 3 "~" H 6550 5500 50  0001 C CNN
-	1    6550 5500
+P 1800 3500
+F 0 "J58" H 1772 3478 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 1772 3433 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1800 3500 50  0001 C CNN
+F 3 "~" H 1800 3500 50  0001 C CNN
+	1    1800 3500
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6300 4900 0    50   UnSpc ~ 0
+Text HLabel 1550 2900 0    50   UnSpc ~ 0
 A_OUT_R
-Text HLabel 6300 4500 0    50   UnSpc ~ 0
+Text HLabel 1550 2500 0    50   UnSpc ~ 0
 A_OUT_L
 Wire Wire Line
-	6300 4700 6400 4700
-Text Notes 5750 4400 0    50   ~ 0
+	1550 2700 1650 2700
+Text Notes 1000 2400 0    50   ~ 0
 Sends to amp / tone / etc
-Text Notes 5800 5200 0    50   ~ 0
+Text Notes 1050 3200 0    50   ~ 0
 Receives from gain stage
-Text Label 5550 3800 0    50   ~ 0
+Text Label 7000 3800 0    50   ~ 0
 OUT_2_R+
-Text Label 5550 3700 0    50   ~ 0
+Text Label 7000 3700 0    50   ~ 0
 OUT_2_S+
 Wire Wire Line
-	5300 2000 5550 2000
+	6750 2000 7000 2000
 Wire Wire Line
-	5300 3800 5550 3800
+	6750 3800 7000 3800
 $Comp
 L Connector:Conn_01x02_Male J61
 U 1 1 60B85B38
-P 7300 2950
-F 0 "J61" H 7272 2878 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 7272 2833 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 7300 2950 50  0001 C CNN
-F 3 "~" H 7300 2950 50  0001 C CNN
-	1    7300 2950
+P 2150 1750
+F 0 "J61" H 2122 1678 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2122 1633 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2150 1750 50  0001 C CNN
+F 3 "~" H 2150 1750 50  0001 C CNN
+	1    2150 1750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 1400 4500 1400
+	5250 1400 5950 1400
 Wire Wire Line
-	3900 1500 4500 1500
+	5350 1500 5950 1500
 Wire Wire Line
-	4000 1600 4500 1600
+	5450 1600 5950 1600
 Wire Wire Line
-	4100 1700 4500 1700
+	5550 1700 5950 1700
 Wire Wire Line
-	4200 1800 4500 1800
+	5650 1800 5950 1800
 Wire Wire Line
-	4300 1900 4500 1900
+	5750 1900 5950 1900
 Wire Wire Line
-	2900 2500 3600 2500
+	4350 2500 5050 2500
 Wire Wire Line
-	4400 2500 4400 2000
+	5850 2500 5850 2000
 Wire Wire Line
-	4400 2000 4500 2000
+	5850 2000 5950 2000
 Wire Wire Line
-	4400 2800 4400 3200
+	5850 2800 5850 3200
 Wire Wire Line
-	4400 3200 4500 3200
+	5850 3200 5950 3200
 Wire Wire Line
-	4300 2900 4300 3300
+	5750 2900 5750 3300
 Wire Wire Line
-	4300 3300 4500 3300
+	5750 3300 5950 3300
 Wire Wire Line
-	4200 3000 4200 3400
+	5650 3000 5650 3400
 Wire Wire Line
-	4200 3400 4500 3400
+	5650 3400 5950 3400
 Wire Wire Line
-	4100 3100 4100 3500
+	5550 3100 5550 3500
 Wire Wire Line
-	4100 3500 4500 3500
+	5550 3500 5950 3500
 Wire Wire Line
-	4000 3200 4000 3600
+	5450 3200 5450 3600
 Wire Wire Line
-	4000 3600 4500 3600
+	5450 3600 5950 3600
 Wire Wire Line
-	3900 3300 3900 3700
+	5350 3300 5350 3700
 Wire Wire Line
-	3900 3700 4500 3700
+	5350 3700 5950 3700
 Wire Wire Line
-	2900 3400 3650 3400
+	4350 3400 5100 3400
 Wire Wire Line
-	3800 3400 3800 3800
+	5250 3400 5250 3800
 Wire Wire Line
-	3800 3800 4500 3800
+	5250 3800 5950 3800
 $Comp
 L Connector:Conn_01x07_Female J55
 U 1 1 60FF250B
-P 3300 1150
-F 0 "J55" V 3373 1130 50  0000 C CNN
-F 1 "Conn_01x07_Female" V 3374 1130 50  0001 C CNN
-F 2 "" H 3300 1150 50  0001 C CNN
-F 3 "~" H 3300 1150 50  0001 C CNN
-	1    3300 1150
+P 4750 1150
+F 0 "J55" V 4823 1130 50  0000 C CNN
+F 1 "Conn_01x07_Female" V 4824 1130 50  0001 C CNN
+F 2 "" H 4750 1150 50  0001 C CNN
+F 3 "~" H 4750 1150 50  0001 C CNN
+	1    4750 1150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3000 1350 3000 1900
+	4450 1350 4450 1900
 Wire Wire Line
-	3100 1350 3100 2000
+	4550 1350 4550 2000
 Wire Wire Line
-	3200 1350 3200 2100
+	4650 1350 4650 2100
 Wire Wire Line
-	3300 1350 3300 2200
+	4750 1350 4750 2200
 Wire Wire Line
-	3400 1350 3400 2300
+	4850 1350 4850 2300
 Wire Wire Line
-	3500 1350 3500 2400
+	4950 1350 4950 2400
 Wire Wire Line
-	2900 1900 3000 1900
+	4350 1900 4450 1900
 Wire Wire Line
-	2900 2000 3100 2000
+	4350 2000 4550 2000
 Wire Wire Line
-	2900 2100 3200 2100
+	4350 2100 4650 2100
 Wire Wire Line
-	2900 2200 3300 2200
+	4350 2200 4750 2200
 Wire Wire Line
-	2900 2300 3400 2300
+	4350 2300 4850 2300
 Wire Wire Line
-	2900 2400 3500 2400
-Connection ~ 3000 1900
+	4350 2400 4950 2400
+Connection ~ 4450 1900
 Wire Wire Line
-	3000 1900 3800 1900
-Connection ~ 3100 2000
+	4450 1900 5250 1900
+Connection ~ 4550 2000
 Wire Wire Line
-	3100 2000 3900 2000
-Connection ~ 3200 2100
+	4550 2000 5350 2000
+Connection ~ 4650 2100
 Wire Wire Line
-	3200 2100 4000 2100
-Connection ~ 3300 2200
+	4650 2100 5450 2100
+Connection ~ 4750 2200
 Wire Wire Line
-	3300 2200 4100 2200
-Connection ~ 3400 2300
+	4750 2200 5550 2200
+Connection ~ 4850 2300
 Wire Wire Line
-	3400 2300 4200 2300
-Connection ~ 3500 2400
+	4850 2300 5650 2300
+Connection ~ 4950 2400
 Wire Wire Line
-	3500 2400 4300 2400
+	4950 2400 5750 2400
 Wire Wire Line
-	3600 1350 3600 2500
-Connection ~ 3600 2500
+	5050 1350 5050 2500
+Connection ~ 5050 2500
 Wire Wire Line
-	3600 2500 4400 2500
+	5050 2500 5850 2500
 $Comp
 L Connector:Conn_01x07_Female J56
 U 1 1 610AC3C4
-P 3350 4000
-F 0 "J56" V 3423 3980 50  0000 C CNN
-F 1 "Conn_01x07_Female" V 3424 3980 50  0001 C CNN
-F 2 "" H 3350 4000 50  0001 C CNN
-F 3 "~" H 3350 4000 50  0001 C CNN
-	1    3350 4000
+P 4800 4000
+F 0 "J56" V 4873 3980 50  0000 C CNN
+F 1 "Conn_01x07_Female" V 4874 3980 50  0001 C CNN
+F 2 "" H 4800 4000 50  0001 C CNN
+F 3 "~" H 4800 4000 50  0001 C CNN
+	1    4800 4000
 	0    -1   1    0   
 $EndComp
-Connection ~ 3050 2800
-Connection ~ 3150 2900
-Connection ~ 3250 3000
-Connection ~ 3350 3100
-Connection ~ 3450 3200
-Connection ~ 3550 3300
+Connection ~ 4500 2800
+Connection ~ 4600 2900
+Connection ~ 4700 3000
+Connection ~ 4800 3100
+Connection ~ 4900 3200
+Connection ~ 5000 3300
 Wire Wire Line
-	3050 2800 4400 2800
+	4500 2800 5850 2800
 Wire Wire Line
-	3150 2900 4300 2900
+	4600 2900 5750 2900
 Wire Wire Line
-	3250 3000 4200 3000
+	4700 3000 5650 3000
 Wire Wire Line
-	3350 3100 4100 3100
+	4800 3100 5550 3100
 Wire Wire Line
-	3450 3200 4000 3200
+	4900 3200 5450 3200
 Wire Wire Line
-	3550 3300 3900 3300
+	5000 3300 5350 3300
 Wire Wire Line
-	3650 3800 3650 3400
-Connection ~ 3650 3400
+	5100 3800 5100 3400
+Connection ~ 5100 3400
 Wire Wire Line
-	3650 3400 3800 3400
+	5100 3400 5250 3400
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 6152C395
-P 1200 1050
+P 1800 1050
 AR Path="/5E607732/6152C395" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/6152C395" Ref="J50"  Part="1" 
-F 0 "J50" H 1092 1243 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 1228 985 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1200 1050 50  0001 C CNN
-F 3 "~" H 1200 1050 50  0001 C CNN
-	1    1200 1050
+F 0 "J50" H 1692 1243 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1828 985 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1800 1050 50  0001 C CNN
+F 3 "~" H 1800 1050 50  0001 C CNN
+	1    1800 1050
 	-1   0    0    -1  
 $EndComp
-Text HLabel 1550 4900 0    50   UnSpc ~ 0
+Text HLabel 3300 5250 0    50   UnSpc ~ 0
 A_IN_1_L
-Text HLabel 1550 5500 0    50   UnSpc ~ 0
+Text HLabel 3300 5650 0    50   UnSpc ~ 0
 A_IN_1_R
 $Comp
 L Connector:Conn_01x03_Male J51
 U 1 1 61FAB9F4
-P 1150 5200
-F 0 "J51" H 1050 5200 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1122 5133 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1150 5200 50  0001 C CNN
-F 3 "~" H 1150 5200 50  0001 C CNN
-	1    1150 5200
+P 1300 4250
+F 0 "J51" H 1200 4250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 4183 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 4250 50  0001 C CNN
+F 3 "~" H 1300 4250 50  0001 C CNN
+	1    1300 4250
 	1    0    0    -1  
 $EndComp
-Text Label 2250 5000 0    50   ~ 0
+Text Label 3950 5350 0    50   ~ 0
 A_OUT_L
 Text Notes 10150 1818 2    118  ~ 24
 IN 1
@@ -877,54 +877,40 @@ Connection ~ 9150 2100
 Connection ~ 9150 2300
 Text GLabel 9150 1100 1    50   UnSpc ~ 0
 +5V
-Connection ~ 8250 5950
 Wire Wire Line
-	8150 5950 8250 5950
-Connection ~ 8250 5350
-Wire Wire Line
-	8150 5350 8250 5350
-Wire Wire Line
-	7950 5650 8200 5650
-Wire Wire Line
-	7950 5750 8250 5750
-Wire Wire Line
-	7950 5550 8250 5550
-Text Label 8950 6050 0    50   ~ 0
+	1500 7350 1750 7350
+Text Label 8950 5850 0    50   ~ 0
 A_IN_R
 Text Label 8950 5450 0    50   ~ 0
 A_IN_L
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 63BC6293
-P 7750 5650
+P 1300 7350
 AR Path="/5E607732/63BC6293" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/63BC6293" Ref="J63"  Part="1" 
-F 0 "J63" H 7900 5650 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 7778 5585 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 5650 50  0001 C CNN
-F 3 "~" H 7750 5650 50  0001 C CNN
-	1    7750 5650
+F 0 "J63" H 1450 7350 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1328 7285 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 7350 50  0001 C CNN
+F 3 "~" H 1300 7350 50  0001 C CNN
+	1    1300 7350
 	-1   0    0    -1  
 $EndComp
-Text Notes 8750 5700 0    118  ~ 24
+Text Notes 7800 5200 0    118  ~ 24
 OUT 2
 Wire Wire Line
-	8850 6050 8950 6050
+	8850 5850 8950 5850
 Wire Wire Line
 	8850 5450 8950 5450
-Wire Wire Line
-	8250 5750 8250 5950
-Wire Wire Line
-	8250 5550 8250 5350
 $Comp
 L preamp:G6JU K8
 U 3 1 63BC627A
-P 8550 5950
-F 0 "K8" H 8550 5727 50  0000 C CNN
-F 1 "G6JU" H 8550 5636 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 6050 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 6050 50  0001 C CNN
-	3    8550 5950
+P 8550 5750
+F 0 "K8" H 8550 5527 50  0000 C CNN
+F 1 "G6JU" H 8550 5436 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 5850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5850 50  0001 C CNN
+	3    8550 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -938,62 +924,44 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5450 50
 	2    8550 5350
 	1    0    0    -1  
 $EndComp
-Connection ~ 8250 4500
 Wire Wire Line
-	8150 4500 8250 4500
-Connection ~ 8250 3900
-Wire Wire Line
-	8150 3900 8250 3900
-Wire Wire Line
-	7950 4200 8200 4200
-Wire Wire Line
-	7950 4300 8250 4300
-Wire Wire Line
-	7950 4100 8250 4100
-Text HLabel 8150 5350 0    50   UnSpc ~ 0
+	1500 6850 1750 6850
+Text HLabel 8200 5350 0    50   UnSpc ~ 0
 A_OUT_2_L
-Text HLabel 8150 5950 0    50   UnSpc ~ 0
+Text HLabel 8200 5750 0    50   UnSpc ~ 0
 A_OUT_2_R
-Text HLabel 8150 3900 0    50   UnSpc ~ 0
-A_OUT_1_L
-Text HLabel 8150 4500 0    50   UnSpc ~ 0
-A_OUT_1_R
-Text Label 8950 4600 0    50   ~ 0
+Text Label 8950 4400 0    50   ~ 0
 A_IN_R
 Text Label 8950 4000 0    50   ~ 0
 A_IN_L
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 620969B0
-P 7750 4200
+P 1300 6850
 AR Path="/5E607732/620969B0" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/620969B0" Ref="J62"  Part="1" 
-F 0 "J62" H 7900 4200 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 7778 4135 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 4200 50  0001 C CNN
-F 3 "~" H 7750 4200 50  0001 C CNN
-	1    7750 4200
+F 0 "J62" H 1450 6850 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1328 6785 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 6850 50  0001 C CNN
+F 3 "~" H 1300 6850 50  0001 C CNN
+	1    1300 6850
 	-1   0    0    -1  
 $EndComp
-Text Notes 8750 4250 0    118  ~ 24
+Text Notes 7800 3750 0    118  ~ 24
 OUT 1
 Wire Wire Line
-	8850 4600 8950 4600
+	8850 4400 8950 4400
 Wire Wire Line
 	8850 4000 8950 4000
-Wire Wire Line
-	8250 4300 8250 4500
-Wire Wire Line
-	8250 4100 8250 3900
 $Comp
 L preamp:G6JU K7
 U 3 1 6205D525
-P 8550 4500
-F 0 "K7" H 8550 4277 50  0000 C CNN
-F 1 "G6JU" H 8550 4186 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4600 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4600 50  0001 C CNN
-	3    8550 4500
+P 8550 4300
+F 0 "K7" H 8550 4077 50  0000 C CNN
+F 1 "G6JU" H 8550 3986 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4400 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4400 50  0001 C CNN
+	3    8550 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1007,362 +975,258 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4000 50
 	2    8550 3900
 	1    0    0    -1  
 $EndComp
-Connection ~ 1650 5500
 Wire Wire Line
-	1550 5500 1650 5500
-Connection ~ 1650 4900
-Wire Wire Line
-	1550 4900 1650 4900
-Wire Wire Line
-	1350 5200 1600 5200
-Wire Wire Line
-	1350 5300 1650 5300
-Wire Wire Line
-	1350 5100 1650 5100
-Text Notes 2150 5300 0    118  ~ 24
+	1500 4250 1750 4250
+Text Notes 3000 5100 0    118  ~ 24
 IN 1
-Wire Wire Line
-	1650 5300 1650 5500
-Wire Wire Line
-	1650 5100 1650 4900
 $Comp
 L preamp:G6JU K2
 U 3 1 63C5D22F
-P 1950 5500
-F 0 "K2" H 1950 5277 50  0000 C CNN
-F 1 "G6JU" H 1950 5186 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 5600 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 5600 50  0001 C CNN
-	3    1950 5500
+P 3650 5650
+F 0 "K2" H 3650 5427 50  0000 C CNN
+F 1 "G6JU" H 3650 5336 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 5750 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 5750 50  0001 C CNN
+	3    3650 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K2
 U 2 1 63C5D239
-P 1950 4900
-F 0 "K2" H 1950 5225 50  0000 C CNN
-F 1 "G6JU" H 1950 5134 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 5000 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 5000 50  0001 C CNN
-	2    1950 4900
+P 3650 5250
+F 0 "K2" H 3650 5575 50  0000 C CNN
+F 1 "G6JU" H 3650 5484 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 5350 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 5350 50  0001 C CNN
+	2    3650 5250
 	1    0    0    -1  
 $EndComp
-Text Label 2250 5600 0    50   ~ 0
+Text Label 3950 5750 0    50   ~ 0
 A_OUT_R
-Text HLabel 3350 4900 0    50   UnSpc ~ 0
+Text HLabel 4850 5250 0    50   UnSpc ~ 0
 A_IN_2_L
-Text HLabel 3350 5500 0    50   UnSpc ~ 0
+Text HLabel 4850 5650 0    50   UnSpc ~ 0
 A_IN_2_R
-Connection ~ 3450 5500
 Wire Wire Line
-	3350 5500 3450 5500
-Connection ~ 3450 4900
-Wire Wire Line
-	3350 4900 3450 4900
-Wire Wire Line
-	3150 5200 3400 5200
-Wire Wire Line
-	3150 5300 3450 5300
-Wire Wire Line
-	3150 5100 3450 5100
-Text Notes 3950 5300 0    118  ~ 24
+	1500 4750 1750 4750
+Text Notes 4550 5100 0    118  ~ 24
 IN 2
-Wire Wire Line
-	3450 5300 3450 5500
-Wire Wire Line
-	3450 5100 3450 4900
 $Comp
 L preamp:G6JU K3
 U 3 1 63D47795
-P 3750 5500
-F 0 "K3" H 3750 5277 50  0000 C CNN
-F 1 "G6JU" H 3750 5186 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 5600 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5600 50  0001 C CNN
-	3    3750 5500
+P 5200 5650
+F 0 "K3" H 5200 5427 50  0000 C CNN
+F 1 "G6JU" H 5200 5336 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 5750 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 5750 50  0001 C CNN
+	3    5200 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K3
 U 2 1 63D4779F
-P 3750 4900
-F 0 "K3" H 3750 5225 50  0000 C CNN
-F 1 "G6JU" H 3750 5134 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 5000 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 5000 50  0001 C CNN
-	2    3750 4900
+P 5200 5250
+F 0 "K3" H 5200 5575 50  0000 C CNN
+F 1 "G6JU" H 5200 5484 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 5350 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 5350 50  0001 C CNN
+	2    5200 5250
 	1    0    0    -1  
 $EndComp
-Text Label 4050 5600 0    50   ~ 0
+Text Label 5500 5750 0    50   ~ 0
 A_OUT_R
 $Comp
 L Connector:Conn_01x03_Male J53
 U 1 1 63D9CD4B
-P 2950 5200
-F 0 "J53" H 2850 5200 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 2922 5133 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2950 5200 50  0001 C CNN
-F 3 "~" H 2950 5200 50  0001 C CNN
-	1    2950 5200
+P 1300 4750
+F 0 "J53" H 1200 4750 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 4683 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 4750 50  0001 C CNN
+F 3 "~" H 1300 4750 50  0001 C CNN
+	1    1300 4750
 	1    0    0    -1  
 $EndComp
-Text HLabel 1550 6550 0    50   UnSpc ~ 0
+Text HLabel 6400 5250 0    50   UnSpc ~ 0
 A_IN_3_L
-Text HLabel 1550 7150 0    50   UnSpc ~ 0
+Text HLabel 6400 5650 0    50   UnSpc ~ 0
 A_IN_3_R
-Text Label 2250 6650 0    50   ~ 0
+Text Label 7050 5350 0    50   ~ 0
 A_OUT_L
-Connection ~ 1650 7150
 Wire Wire Line
-	1550 7150 1650 7150
-Connection ~ 1650 6550
-Wire Wire Line
-	1550 6550 1650 6550
-Wire Wire Line
-	1350 6850 1600 6850
-Wire Wire Line
-	1350 6950 1650 6950
-Wire Wire Line
-	1350 6750 1650 6750
-Text Notes 2150 6950 0    118  ~ 24
+	1500 5250 1750 5250
+Text Notes 6100 5100 0    118  ~ 24
 IN 3
-Wire Wire Line
-	1650 6950 1650 7150
-Wire Wire Line
-	1650 6750 1650 6550
 $Comp
 L preamp:G6JU K4
 U 3 1 63E1D906
-P 1950 7150
-F 0 "K4" H 1950 6927 50  0000 C CNN
-F 1 "G6JU" H 1950 6836 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 7250 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 7250 50  0001 C CNN
-	3    1950 7150
+P 6750 5650
+F 0 "K4" H 6750 5427 50  0000 C CNN
+F 1 "G6JU" H 6750 5336 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 6750 5750 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 6750 5750 50  0001 C CNN
+	3    6750 5650
 	1    0    0    -1  
 $EndComp
-Text Label 2250 7250 0    50   ~ 0
+Text Label 7050 5750 0    50   ~ 0
 A_OUT_R
-Text HLabel 3350 6550 0    50   UnSpc ~ 0
-A_IN_4_L
-Text HLabel 3350 7150 0    50   UnSpc ~ 0
-A_IN_4_R
-Text Label 4050 6650 0    50   ~ 0
-A_OUT_L
-Connection ~ 3450 7150
 Wire Wire Line
-	3350 7150 3450 7150
-Connection ~ 3450 6550
-Wire Wire Line
-	3350 6550 3450 6550
-Wire Wire Line
-	3150 6850 3400 6850
-Wire Wire Line
-	3150 6950 3450 6950
-Wire Wire Line
-	3150 6750 3450 6750
-Text Notes 3950 6950 0    118  ~ 24
+	1500 5750 1750 5750
+Text Notes 3000 6450 0    118  ~ 24
 IN 4
-Wire Wire Line
-	3450 6950 3450 7150
-Wire Wire Line
-	3450 6750 3450 6550
-$Comp
-L preamp:G6JU K5
-U 3 1 63E1D932
-P 3750 7150
-F 0 "K5" H 3750 6927 50  0000 C CNN
-F 1 "G6JU" H 3750 6836 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 7250 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 7250 50  0001 C CNN
-	3    3750 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L preamp:G6JU K5
-U 2 1 63E1D93C
-P 3750 6550
-F 0 "K5" H 3750 6875 50  0000 C CNN
-F 1 "G6JU" H 3750 6784 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3750 6650 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3750 6650 50  0001 C CNN
-	2    3750 6550
-	1    0    0    -1  
-$EndComp
-Text Label 4050 7250 0    50   ~ 0
-A_OUT_R
 $Comp
 L Connector:Conn_01x03_Male J54
 U 1 1 63E1D947
-P 2950 6850
-F 0 "J54" H 2850 6850 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 2922 6783 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2950 6850 50  0001 C CNN
-F 3 "~" H 2950 6850 50  0001 C CNN
-	1    2950 6850
+P 1300 5750
+F 0 "J54" H 1200 5750 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 5683 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 5750 50  0001 C CNN
+F 3 "~" H 1300 5750 50  0001 C CNN
+	1    1300 5750
 	1    0    0    -1  
 $EndComp
-Text HLabel 5150 6550 0    50   UnSpc ~ 0
+Text HLabel 4850 6600 0    50   UnSpc ~ 0
 A_IN_5_L
-Text HLabel 5150 7150 0    50   UnSpc ~ 0
+Text HLabel 4850 7000 0    50   UnSpc ~ 0
 A_IN_5_R
-Text Label 5850 6650 0    50   ~ 0
+Text Label 5500 6700 0    50   ~ 0
 A_OUT_L
-Connection ~ 5250 7150
 Wire Wire Line
-	5150 7150 5250 7150
-Connection ~ 5250 6550
-Wire Wire Line
-	5150 6550 5250 6550
-Wire Wire Line
-	4950 6850 5200 6850
-Wire Wire Line
-	4950 6950 5250 6950
-Wire Wire Line
-	4950 6750 5250 6750
-Text Notes 5750 6950 0    118  ~ 24
+	1500 6250 1750 6250
+Text Notes 4550 6450 0    118  ~ 24
 IN 5
-Wire Wire Line
-	5250 6950 5250 7150
-Wire Wire Line
-	5250 6750 5250 6550
 $Comp
 L preamp:G6JU K6
 U 3 1 63E6412D
-P 5550 7150
-F 0 "K6" H 5550 6927 50  0000 C CNN
-F 1 "G6JU" H 5550 6836 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5550 7250 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5550 7250 50  0001 C CNN
-	3    5550 7150
+P 5200 7000
+F 0 "K6" H 5200 6777 50  0000 C CNN
+F 1 "G6JU" H 5200 6686 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 7100 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 7100 50  0001 C CNN
+	3    5200 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K6
 U 2 1 63E64137
-P 5550 6550
-F 0 "K6" H 5550 6875 50  0000 C CNN
-F 1 "G6JU" H 5550 6784 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5550 6650 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5550 6650 50  0001 C CNN
-	2    5550 6550
+P 5200 6600
+F 0 "K6" H 5200 6925 50  0000 C CNN
+F 1 "G6JU" H 5200 6834 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 6700 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 6700 50  0001 C CNN
+	2    5200 6600
 	1    0    0    -1  
 $EndComp
-Text Label 5850 7250 0    50   ~ 0
+Text Label 5500 7100 0    50   ~ 0
 A_OUT_R
 $Comp
 L Connector:Conn_01x03_Male J57
 U 1 1 63E64142
-P 4750 6850
-F 0 "J57" H 4650 6850 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 4722 6783 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4750 6850 50  0001 C CNN
-F 3 "~" H 4750 6850 50  0001 C CNN
-	1    4750 6850
+P 1300 6250
+F 0 "J57" H 1200 6250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 6183 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 6250 50  0001 C CNN
+F 3 "~" H 1300 6250 50  0001 C CNN
+	1    1300 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 4500 6350 4500
+	1550 2500 1600 2500
 Wire Wire Line
-	6350 4500 6350 4600
+	1600 2500 1600 2600
 Wire Wire Line
-	6350 4600 6400 4600
+	1600 2600 1650 2600
 Wire Wire Line
-	6300 4900 6350 4900
+	1550 2900 1600 2900
 Wire Wire Line
-	6350 4900 6350 4800
+	1600 2900 1600 2800
 Wire Wire Line
-	6350 4800 6400 4800
+	1600 2800 1650 2800
 Wire Wire Line
-	6250 5500 6350 5500
+	1500 3500 1600 3500
 Wire Wire Line
-	6250 5300 6300 5300
+	1500 3300 1550 3300
 Wire Wire Line
-	6300 5300 6300 5400
+	1550 3300 1550 3400
 Wire Wire Line
-	6300 5400 6350 5400
+	1550 3400 1600 3400
 Wire Wire Line
-	6250 5750 6300 5750
-Wire Wire Line
-	6300 5750 6300 5600
-Wire Wire Line
-	6300 5600 6350 5600
+	1550 3600 1600 3600
 $Comp
 L power:GND #PWR?
 U 1 1 64BBA535
-P 2200 3900
+P 3650 3900
 AR Path="/5E26F6FE/64BBA535" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64BBA535" Ref="#PWR051"  Part="1" 
-F 0 "#PWR051" H 2200 3650 50  0001 C CNN
-F 1 "GND" H 2205 3727 50  0000 C CNN
-F 2 "" H 2200 3900 50  0001 C CNN
-F 3 "" H 2200 3900 50  0001 C CNN
-	1    2200 3900
+F 0 "#PWR051" H 3650 3650 50  0001 C CNN
+F 1 "GND" H 3655 3727 50  0000 C CNN
+F 2 "" H 3650 3900 50  0001 C CNN
+F 3 "" H 3650 3900 50  0001 C CNN
+	1    3650 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64C160A3
-P 4900 2200
+P 6350 2200
 AR Path="/5E26F6FE/64C160A3" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64C160A3" Ref="#PWR054"  Part="1" 
-F 0 "#PWR054" H 4900 1950 50  0001 C CNN
-F 1 "GND" H 4905 2027 50  0000 C CNN
-F 2 "" H 4900 2200 50  0001 C CNN
-F 3 "" H 4900 2200 50  0001 C CNN
-	1    4900 2200
+F 0 "#PWR054" H 6350 1950 50  0001 C CNN
+F 1 "GND" H 6355 2027 50  0000 C CNN
+F 2 "" H 6350 2200 50  0001 C CNN
+F 3 "" H 6350 2200 50  0001 C CNN
+	1    6350 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64C3AB10
-P 4900 4000
+P 6350 4000
 AR Path="/5E26F6FE/64C3AB10" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64C3AB10" Ref="#PWR055"  Part="1" 
-F 0 "#PWR055" H 4900 3750 50  0001 C CNN
-F 1 "GND" H 4905 3827 50  0000 C CNN
-F 2 "" H 4900 4000 50  0001 C CNN
-F 3 "" H 4900 4000 50  0001 C CNN
-	1    4900 4000
+F 0 "#PWR055" H 6350 3750 50  0001 C CNN
+F 1 "GND" H 6355 3827 50  0000 C CNN
+F 2 "" H 6350 4000 50  0001 C CNN
+F 3 "" H 6350 4000 50  0001 C CNN
+	1    6350 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64C5F5F4
-P 7000 2150
+P 950 1800
 AR Path="/5E26F6FE/64C5F5F4" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64C5F5F4" Ref="#PWR061"  Part="1" 
-F 0 "#PWR061" H 7000 1900 50  0001 C CNN
-F 1 "GND" H 7005 1977 50  0000 C CNN
-F 2 "" H 7000 2150 50  0001 C CNN
-F 3 "" H 7000 2150 50  0001 C CNN
-	1    7000 2150
+F 0 "#PWR061" H 950 1550 50  0001 C CNN
+F 1 "GND" H 955 1627 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64CCCF8D
-P 6300 4700
+P 1550 2700
 AR Path="/5E26F6FE/64CCCF8D" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64CCCF8D" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 6300 4450 50  0001 C CNN
-F 1 "GND" V 6305 4572 50  0000 R CNN
-F 2 "" H 6300 4700 50  0001 C CNN
-F 3 "" H 6300 4700 50  0001 C CNN
-	1    6300 4700
+F 0 "#PWR058" H 1550 2450 50  0001 C CNN
+F 1 "GND" V 1555 2572 50  0000 R CNN
+F 2 "" H 1550 2700 50  0001 C CNN
+F 3 "" H 1550 2700 50  0001 C CNN
+	1    1550 2700
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64CF171C
-P 6250 5500
+P 1500 3500
 AR Path="/5E26F6FE/64CF171C" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64CF171C" Ref="#PWR057"  Part="1" 
-F 0 "#PWR057" H 6250 5250 50  0001 C CNN
-F 1 "GND" V 6255 5372 50  0000 R CNN
-F 2 "" H 6250 5500 50  0001 C CNN
-F 3 "" H 6250 5500 50  0001 C CNN
-	1    6250 5500
+F 0 "#PWR057" H 1500 3250 50  0001 C CNN
+F 1 "GND" V 1505 3372 50  0000 R CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "" H 1500 3500 50  0001 C CNN
+	1    1500 3500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1381,14 +1245,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D3ACF0
-P 8850 4400
+P 8850 4200
 AR Path="/5E26F6FE/64D3ACF0" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D3ACF0" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 8850 4150 50  0001 C CNN
-F 1 "GND" H 8855 4227 50  0000 C CNN
-F 2 "" H 8850 4400 50  0001 C CNN
-F 3 "" H 8850 4400 50  0001 C CNN
-	1    8850 4400
+F 0 "#PWR065" H 8850 3950 50  0001 C CNN
+F 1 "GND" H 8855 4027 50  0000 C CNN
+F 2 "" H 8850 4200 50  0001 C CNN
+F 3 "" H 8850 4200 50  0001 C CNN
+	1    8850 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1407,133 +1271,131 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D83F57
-P 8850 5850
+P 8850 5650
 AR Path="/5E26F6FE/64D83F57" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D83F57" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 8850 5600 50  0001 C CNN
-F 1 "GND" H 8855 5677 50  0000 C CNN
-F 2 "" H 8850 5850 50  0001 C CNN
-F 3 "" H 8850 5850 50  0001 C CNN
-	1    8850 5850
+F 0 "#PWR067" H 8850 5400 50  0001 C CNN
+F 1 "GND" H 8855 5477 50  0000 C CNN
+F 2 "" H 8850 5650 50  0001 C CNN
+F 3 "" H 8850 5650 50  0001 C CNN
+	1    8850 5650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64DA87BA
-P 8200 5650
+P 1750 7350
 AR Path="/5E26F6FE/64DA87BA" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64DA87BA" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 8200 5400 50  0001 C CNN
-F 1 "GND" V 8205 5522 50  0000 R CNN
-F 2 "" H 8200 5650 50  0001 C CNN
-F 3 "" H 8200 5650 50  0001 C CNN
-	1    8200 5650
+F 0 "#PWR063" H 1750 7100 50  0001 C CNN
+F 1 "GND" V 1755 7222 50  0000 R CNN
+F 2 "" H 1750 7350 50  0001 C CNN
+F 3 "" H 1750 7350 50  0001 C CNN
+	1    1750 7350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64DCCE63
-P 8200 4200
+P 1750 6850
 AR Path="/5E26F6FE/64DCCE63" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64DCCE63" Ref="#PWR062"  Part="1" 
-F 0 "#PWR062" H 8200 3950 50  0001 C CNN
-F 1 "GND" V 8205 4072 50  0000 R CNN
-F 2 "" H 8200 4200 50  0001 C CNN
-F 3 "" H 8200 4200 50  0001 C CNN
-	1    8200 4200
+F 0 "#PWR062" H 1750 6600 50  0001 C CNN
+F 1 "GND" V 1755 6722 50  0000 R CNN
+F 2 "" H 1750 6850 50  0001 C CNN
+F 3 "" H 1750 6850 50  0001 C CNN
+	1    1750 6850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64DF159D
-P 5200 6850
+P 1750 6250
 AR Path="/5E26F6FE/64DF159D" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64DF159D" Ref="#PWR056"  Part="1" 
-F 0 "#PWR056" H 5200 6600 50  0001 C CNN
-F 1 "GND" V 5205 6722 50  0000 R CNN
-F 2 "" H 5200 6850 50  0001 C CNN
-F 3 "" H 5200 6850 50  0001 C CNN
-	1    5200 6850
+F 0 "#PWR056" H 1750 6000 50  0001 C CNN
+F 1 "GND" V 1755 6122 50  0000 R CNN
+F 2 "" H 1750 6250 50  0001 C CNN
+F 3 "" H 1750 6250 50  0001 C CNN
+	1    1750 6250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64E15D0A
-P 3400 6850
+P 1750 5750
 AR Path="/5E26F6FE/64E15D0A" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64E15D0A" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 3400 6600 50  0001 C CNN
-F 1 "GND" V 3405 6722 50  0000 R CNN
-F 2 "" H 3400 6850 50  0001 C CNN
-F 3 "" H 3400 6850 50  0001 C CNN
-	1    3400 6850
+F 0 "#PWR053" H 1750 5500 50  0001 C CNN
+F 1 "GND" V 1755 5622 50  0000 R CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0001 C CNN
+	1    1750 5750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64E3A6FC
-P 1600 6850
+P 1750 5250
 AR Path="/5E26F6FE/64E3A6FC" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64E3A6FC" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 1600 6600 50  0001 C CNN
-F 1 "GND" V 1605 6722 50  0000 R CNN
-F 2 "" H 1600 6850 50  0001 C CNN
-F 3 "" H 1600 6850 50  0001 C CNN
-	1    1600 6850
+F 0 "#PWR050" H 1750 5000 50  0001 C CNN
+F 1 "GND" V 1755 5122 50  0000 R CNN
+F 2 "" H 1750 5250 50  0001 C CNN
+F 3 "" H 1750 5250 50  0001 C CNN
+	1    1750 5250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64E5EEF1
-P 1600 5200
+P 1750 4250
 AR Path="/5E26F6FE/64E5EEF1" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64E5EEF1" Ref="#PWR049"  Part="1" 
-F 0 "#PWR049" H 1600 4950 50  0001 C CNN
-F 1 "GND" V 1605 5072 50  0000 R CNN
-F 2 "" H 1600 5200 50  0001 C CNN
-F 3 "" H 1600 5200 50  0001 C CNN
-	1    1600 5200
+F 0 "#PWR049" H 1750 4000 50  0001 C CNN
+F 1 "GND" V 1755 4122 50  0000 R CNN
+F 2 "" H 1750 4250 50  0001 C CNN
+F 3 "" H 1750 4250 50  0001 C CNN
+	1    1750 4250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64E83996
-P 3400 5200
+P 1750 4750
 AR Path="/5E26F6FE/64E83996" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64E83996" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 3400 4950 50  0001 C CNN
-F 1 "GND" V 3405 5072 50  0000 R CNN
-F 2 "" H 3400 5200 50  0001 C CNN
-F 3 "" H 3400 5200 50  0001 C CNN
-	1    3400 5200
+F 0 "#PWR052" H 1750 4500 50  0001 C CNN
+F 1 "GND" V 1755 4622 50  0000 R CNN
+F 2 "" H 1750 4750 50  0001 C CNN
+F 3 "" H 1750 4750 50  0001 C CNN
+	1    1750 4750
 	0    -1   -1   0   
 $EndComp
-Text Label 4050 5000 0    50   ~ 0
+Text Label 5500 5350 0    50   ~ 0
 A_OUT_L
-NoConn ~ 4050 4800
-NoConn ~ 4050 5400
-NoConn ~ 2250 4800
-NoConn ~ 2250 5400
-NoConn ~ 2250 6450
-NoConn ~ 2250 7050
-NoConn ~ 4050 7050
-NoConn ~ 4050 6450
-NoConn ~ 5850 6450
-NoConn ~ 5850 7050
-NoConn ~ 1500 2500
-NoConn ~ 1500 2600
-NoConn ~ 1500 2200
-NoConn ~ 2900 2600
-NoConn ~ 2900 3500
+NoConn ~ 5500 5150
+NoConn ~ 5500 5550
+NoConn ~ 3950 5150
+NoConn ~ 3950 5550
+NoConn ~ 7050 5150
+NoConn ~ 7050 5550
+NoConn ~ 5500 6500
+NoConn ~ 5500 6900
+NoConn ~ 2950 2500
+NoConn ~ 2950 2600
+NoConn ~ 2950 2200
+NoConn ~ 4350 2600
+NoConn ~ 4350 3500
 $Comp
 L preamp:G6JU K4
 U 2 1 63E1D910
-P 1950 6550
-F 0 "K4" H 1950 6875 50  0000 C CNN
-F 1 "G6JU" H 1950 6784 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 1950 6650 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 1950 6650 50  0001 C CNN
-	2    1950 6550
+P 6750 5250
+F 0 "K4" H 6750 5575 50  0000 C CNN
+F 1 "G6JU" H 6750 5484 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 6750 5350 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 6750 5350 50  0001 C CNN
+	2    6750 5250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1552,83 +1414,207 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J60
 U 1 1 5E5DB820
-P 6700 2950
-F 0 "J60" H 6672 2878 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 6672 2833 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 6700 2950 50  0001 C CNN
-F 3 "~" H 6700 2950 50  0001 C CNN
-	1    6700 2950
+P 1550 1750
+F 0 "J60" H 1522 1678 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 1522 1633 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1550 1750 50  0001 C CNN
+F 3 "~" H 1550 1750 50  0001 C CNN
+	1    1550 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J52
 U 1 1 63E1D8E7
-P 1150 6850
-F 0 "J52" H 1050 6850 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1122 6783 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1150 6850 50  0001 C CNN
-F 3 "~" H 1150 6850 50  0001 C CNN
-	1    1150 6850
+P 1300 5250
+F 0 "J52" H 1200 5250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 5183 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 5250 50  0001 C CNN
+F 3 "~" H 1300 5250 50  0001 C CNN
+	1    1300 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Interface_Expansion:MCP23S17_SP U?
 U 1 1 5E01AA66
-P 2200 2700
+P 3650 2700
 AR Path="/5E01AA66" Ref="U?"  Part="1" 
 AR Path="/5E2D8DA2/5E01AA66" Ref="U6"  Part="1" 
-F 0 "U6" H 2500 3800 50  0000 C CNN
-F 1 "MCP23S17_SP" H 2500 3700 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2400 1700 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2400 1600 50  0001 L CNN
-	1    2200 2700
+F 0 "U6" H 3950 3800 50  0000 C CNN
+F 1 "MCP23S17_SP" H 3950 3700 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3850 1700 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3850 1600 50  0001 L CNN
+	1    3650 2700
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2850 1    50   UnSpc ~ 0
+Text GLabel 1850 1650 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	7100 3050 7000 3050
+	1950 1850 1850 1850
 Wire Wire Line
-	7000 3050 7000 3150
+	1850 1850 1850 1950
 Wire Wire Line
-	7100 2950 7000 2950
+	1950 1750 1850 1750
 $Comp
 L power:GND #PWR?
 U 1 1 60248FFE
-P 7000 3150
+P 1850 1950
 AR Path="/6009D432/60248FFE" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/60248FFE" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 7000 2900 50  0001 C CNN
-F 1 "GND" H 7005 2977 50  0000 C CNN
-F 2 "" H 7000 3150 50  0001 C CNN
-F 3 "" H 7000 3150 50  0001 C CNN
-	1    7000 3150
+F 0 "#PWR0101" H 1850 1700 50  0001 C CNN
+F 1 "GND" H 1855 1777 50  0000 C CNN
+F 2 "" H 1850 1950 50  0001 C CNN
+F 3 "" H 1850 1950 50  0001 C CNN
+	1    1850 1950
 	1    0    0    -1  
 $EndComp
-Connection ~ 7000 3050
+Connection ~ 1850 1850
 Wire Wire Line
-	7000 3050 6900 3050
+	1850 1850 1750 1850
 Wire Wire Line
-	7000 2850 7000 2950
-Connection ~ 7000 2950
+	1850 1650 1850 1750
+Connection ~ 1850 1750
 Wire Wire Line
-	7000 2950 6900 2950
+	1850 1750 1750 1750
 Wire Wire Line
-	1400 950  1500 950 
+	2000 950  2100 950 
 Wire Wire Line
-	1400 1050 1500 1050
+	2000 1050 2100 1050
 Wire Wire Line
-	1400 1150 1500 1150
+	2000 1150 2100 1150
 Wire Wire Line
-	1500 1900 1400 1900
+	2950 1900 2850 1900
 Wire Wire Line
-	1500 2000 1400 2000
+	2950 2000 2850 2000
 Wire Wire Line
-	1500 2100 1400 2100
-Text HLabel 1500 1050 2    50   Input ~ 0
+	2950 2100 2850 2100
+Text HLabel 2100 1050 2    50   Input ~ 0
 CLK
-Text HLabel 1500 950  2    50   Input ~ 0
+Text HLabel 2100 950  2    50   Input ~ 0
 ~CS
-Text HLabel 1500 1150 2    50   Input ~ 0
+Text HLabel 2100 1150 2    50   Input ~ 0
 MOSI
+Text HLabel 1600 4150 2    50   UnSpc ~ 0
+A_IN_1_L
+Text HLabel 1600 4350 2    50   UnSpc ~ 0
+A_IN_1_R
+Wire Wire Line
+	3300 5250 3350 5250
+Wire Wire Line
+	3300 5650 3350 5650
+Wire Wire Line
+	1500 4150 1600 4150
+Wire Wire Line
+	1500 4350 1600 4350
+Text HLabel 1600 5150 2    50   UnSpc ~ 0
+A_IN_3_L
+Text HLabel 1600 5350 2    50   UnSpc ~ 0
+A_IN_3_R
+Wire Wire Line
+	1500 5150 1600 5150
+Wire Wire Line
+	1500 5350 1600 5350
+Wire Wire Line
+	6400 5250 6450 5250
+Wire Wire Line
+	6400 5650 6450 5650
+Text HLabel 1600 4650 2    50   UnSpc ~ 0
+A_IN_2_L
+Text HLabel 1600 4850 2    50   UnSpc ~ 0
+A_IN_2_R
+Wire Wire Line
+	1500 4650 1600 4650
+Wire Wire Line
+	1500 4850 1600 4850
+Wire Wire Line
+	4850 5250 4900 5250
+Wire Wire Line
+	4850 5650 4900 5650
+Text HLabel 1600 5650 2    50   UnSpc ~ 0
+A_IN_4_L
+Text HLabel 1600 5850 2    50   UnSpc ~ 0
+A_IN_4_R
+Wire Wire Line
+	1500 5650 1600 5650
+Wire Wire Line
+	1500 5850 1600 5850
+NoConn ~ 3950 6500
+NoConn ~ 3950 6900
+Text Label 3950 7100 0    50   ~ 0
+A_OUT_R
+$Comp
+L preamp:G6JU K5
+U 2 1 63E1D93C
+P 3650 6600
+F 0 "K5" H 3650 6925 50  0000 C CNN
+F 1 "G6JU" H 3650 6834 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 6700 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 6700 50  0001 C CNN
+	2    3650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamp:G6JU K5
+U 3 1 63E1D932
+P 3650 7000
+F 0 "K5" H 3650 6777 50  0000 C CNN
+F 1 "G6JU" H 3650 6686 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 7100 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 7100 50  0001 C CNN
+	3    3650 7000
+	1    0    0    -1  
+$EndComp
+Text Label 3950 6700 0    50   ~ 0
+A_OUT_L
+Text HLabel 3300 6600 0    50   UnSpc ~ 0
+A_IN_4_L
+Text HLabel 3300 7000 0    50   UnSpc ~ 0
+A_IN_4_R
+Wire Wire Line
+	3300 6600 3350 6600
+Wire Wire Line
+	3300 7000 3350 7000
+Text HLabel 1600 6150 2    50   UnSpc ~ 0
+A_IN_5_L
+Text HLabel 1600 6350 2    50   UnSpc ~ 0
+A_IN_5_R
+Wire Wire Line
+	1500 6150 1600 6150
+Wire Wire Line
+	1500 6350 1600 6350
+Wire Wire Line
+	4850 6600 4900 6600
+Wire Wire Line
+	4850 7000 4900 7000
+Wire Wire Line
+	1550 3600 1550 3700
+Wire Wire Line
+	1550 3700 1500 3700
+Text HLabel 8200 4300 0    50   UnSpc ~ 0
+A_OUT_1_R
+Text HLabel 8200 3900 0    50   UnSpc ~ 0
+A_OUT_1_L
+Text HLabel 1600 6950 2    50   UnSpc ~ 0
+A_OUT_1_R
+Text HLabel 1600 6750 2    50   UnSpc ~ 0
+A_OUT_1_L
+Wire Wire Line
+	1500 6750 1600 6750
+Wire Wire Line
+	1500 6950 1600 6950
+Text HLabel 1600 7250 2    50   UnSpc ~ 0
+A_OUT_2_L
+Text HLabel 1600 7450 2    50   UnSpc ~ 0
+A_OUT_2_R
+Wire Wire Line
+	1500 7250 1600 7250
+Wire Wire Line
+	1500 7450 1600 7450
+Wire Wire Line
+	8200 3900 8250 3900
+Wire Wire Line
+	8200 4300 8250 4300
+Wire Wire Line
+	8200 5350 8250 5350
+Wire Wire Line
+	8200 5750 8250 5750
 $EndSCHEMATC

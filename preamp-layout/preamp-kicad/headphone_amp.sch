@@ -303,7 +303,7 @@ Wire Wire Line
 Connection ~ 8550 4350
 Wire Wire Line
 	8550 4350 8700 4350
-Text Notes 6950 6450 0    50   ~ 0
+Text Notes 6550 6450 0    50   ~ 0
 crosstalk: https://headwizememorial.wordpress.com/2018/03/09/an-acoustic-simulator-for-headphone-amplifiers/\n\namp: https://www.nutsvolts.com/magazine/article/precision_stereo_headphone_amplifier
 Wire Wire Line
 	3100 1450 3100 1650
@@ -343,9 +343,9 @@ Wire Wire Line
 Wire Wire Line
 	9000 4350 9150 4350
 Text HLabel 9150 2250 2    50   UnSpc ~ 0
-L_OUT
+OUT_L
 Text HLabel 9150 4350 2    50   UnSpc ~ 0
-R_OUT
+OUT_R
 $Comp
 L preamp:TPA6120 U20
 U 3 1 5E68D9A9
@@ -463,15 +463,15 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F00DE46
-P 5500 6450
+P 5150 6300
 AR Path="/6009D432/5F00DE46" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5F00DE46" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 5500 6200 50  0001 C CNN
-F 1 "GND" H 5505 6277 50  0000 C CNN
-F 2 "" H 5500 6450 50  0001 C CNN
-F 3 "" H 5500 6450 50  0001 C CNN
-	1    5500 6450
-	1    0    0    -1  
+F 0 "#PWR0142" H 5150 6050 50  0001 C CNN
+F 1 "GND" H 5155 6127 50  0000 C CNN
+F 2 "" H 5150 6300 50  0001 C CNN
+F 3 "" H 5150 6300 50  0001 C CNN
+	1    5150 6300
+	0    -1   -1   0   
 $EndComp
 Text HLabel 3050 4700 0    50   UnSpc ~ 0
 OUT_L
@@ -688,10 +688,6 @@ Wire Wire Line
 Connection ~ 4000 5800
 Wire Wire Line
 	4000 5800 3450 5800
-Wire Wire Line
-	5000 6300 5500 6300
-Wire Wire Line
-	5500 6300 5500 6450
 Text HLabel 2350 1350 2    50   UnSpc ~ 0
 IN_L
 Text HLabel 2350 1550 2    50   UnSpc ~ 0
@@ -733,4 +729,6 @@ Wire Wire Line
 Connection ~ 4600 4300
 Wire Wire Line
 	4600 4300 4700 4300
+Wire Wire Line
+	5000 6300 5150 6300
 $EndSCHEMATC
