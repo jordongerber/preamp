@@ -93,10 +93,8 @@ Wire Wire Line
 	2950 3500 2900 3500
 Wire Wire Line
 	2900 3500 2900 3850
-Text GLabel 2800 2800 0    50   UnSpc ~ 0
+Text GLabel 2850 2800 0    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	2800 2800 2950 2800
 Text GLabel 950  900  1    50   UnSpc ~ 0
 +5V
 $Comp
@@ -292,10 +290,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 3800 5950 3800
 $Comp
-L Connector:Conn_01x07_Female J55
+L Connector:Conn_01x07_Female J56
 U 1 1 60FF250B
 P 4750 1150
-F 0 "J55" V 4823 1130 50  0000 C CNN
+F 0 "J56" V 4823 1130 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 4824 1130 50  0001 C CNN
 F 2 "" H 4750 1150 50  0001 C CNN
 F 3 "~" H 4750 1150 50  0001 C CNN
@@ -350,10 +348,10 @@ Connection ~ 5050 2500
 Wire Wire Line
 	5050 2500 5850 2500
 $Comp
-L Connector:Conn_01x07_Female J56
+L Connector:Conn_01x07_Female J57
 U 1 1 610AC3C4
 P 4800 4000
-F 0 "J56" V 4873 3980 50  0000 C CNN
+F 0 "J57" V 4873 3980 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 4874 3980 50  0001 C CNN
 F 2 "" H 4800 4000 50  0001 C CNN
 F 3 "~" H 4800 4000 50  0001 C CNN
@@ -956,10 +954,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 5850 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J53
+L Connector:Conn_01x03_Male J52
 U 1 1 63D9CD4B
 P 1300 4750
-F 0 "J53" H 1200 4750 50  0000 C CNN
+F 0 "J52" H 1200 4750 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 1272 4683 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 4750 50  0001 C CNN
 F 3 "~" H 1300 4750 50  0001 C CNN
@@ -1031,10 +1029,10 @@ F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5800 5850 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J57
+L Connector:Conn_01x03_Male J55
 U 1 1 63E64142
 P 1300 6250
-F 0 "J57" H 1200 6250 50  0000 C CNN
+F 0 "J55" H 1200 6250 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 1272 6183 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 6250 50  0001 C CNN
 F 3 "~" H 1300 6250 50  0001 C CNN
@@ -1332,10 +1330,10 @@ F 3 "~" H 1550 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J52
+L Connector:Conn_01x03_Male J53
 U 1 1 63E1D8E7
 P 1300 5250
-F 0 "J52" H 1200 5250 50  0000 C CNN
+F 0 "J53" H 1200 5250 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 1272 5183 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 5250 50  0001 C CNN
 F 3 "~" H 1300 5250 50  0001 C CNN
@@ -1624,4 +1622,6 @@ Text HLabel 2850 1900 0    50   Input ~ 0
 IO_SDA
 Text HLabel 2850 2000 0    50   Input ~ 0
 IO_SCL
+Wire Wire Line
+	2850 2800 2950 2800
 $EndSCHEMATC
