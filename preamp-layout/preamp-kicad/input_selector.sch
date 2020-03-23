@@ -402,10 +402,8 @@ F 3 "~" H 1800 1050 50  0001 C CNN
 	1    1800 1050
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3300 5250 0    50   UnSpc ~ 0
+Text HLabel 3600 4750 0    50   UnSpc ~ 0
 A_IN_1_L
-Text HLabel 3300 5650 0    50   UnSpc ~ 0
-A_IN_1_R
 $Comp
 L Connector:Conn_01x03_Male J51
 U 1 1 61FAB9F4
@@ -417,472 +415,440 @@ F 3 "~" H 1300 4250 50  0001 C CNN
 	1    1300 4250
 	1    0    0    -1  
 $EndComp
-Text Label 3950 5350 0    50   ~ 0
-A_OUT_L
-Text Notes 10150 1818 2    118  ~ 24
+Text Notes 9900 1768 2    118  ~ 24
 IN 1
 $Comp
 L preamp:G6JU K2
 U 1 1 632C72C1
-P 10350 1750
-F 0 "K2" V 10304 1928 50  0000 L CNN
-F 1 "G6JU" V 10395 1928 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 1850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 1850 50  0001 C CNN
-	1    10350 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 632C72CB
-P 10600 1350
-AR Path="/5E2D8DA2/632C72CB" Ref="R25"  Part="1" 
-AR Path="/632C72CB" Ref="R?"  Part="1" 
-F 0 "R25" V 10393 1350 50  0000 C CNN
-F 1 "51R" V 10484 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 1350 50  0001 C CNN
-F 3 "~" H 10600 1350 50  0001 C CNN
-	1    10600 1350
+P 10100 1700
+F 0 "K2" V 10054 1878 50  0000 L CNN
+F 1 "G6JU" V 10145 1878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10100 1800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10100 1800 50  0001 C CNN
+	1    10100 1700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 1350 10850 2150
+	10600 1300 10600 2100
 Wire Wire Line
-	10350 2050 10350 2150
+	10100 2000 10100 2100
 Wire Wire Line
-	10850 1350 10750 1350
+	10600 1300 10500 1300
 Wire Wire Line
-	10450 1350 10350 1350
+	10200 1300 10100 1300
 Wire Wire Line
-	10350 1350 10350 1450
+	10100 1300 10100 1400
 Wire Wire Line
-	10450 2150 10350 2150
-Connection ~ 10350 2150
+	10200 2100 10100 2100
+Connection ~ 10100 2100
 Wire Wire Line
-	10350 2150 10250 2150
+	10100 2100 10000 2100
 Wire Wire Line
-	10750 2150 10850 2150
-Text GLabel 10850 1150 1    50   UnSpc ~ 0
+	10500 2100 10600 2100
+Text GLabel 10600 1100 1    50   UnSpc ~ 0
 +5V
-Connection ~ 10350 1350
-Text Label 10250 1350 2    50   ~ 0
+Connection ~ 10100 1300
+Text Label 10000 1300 2    50   ~ 0
 IN_1_S+
 Wire Wire Line
-	10250 1350 10350 1350
-Text Label 10250 2150 2    50   ~ 0
+	10000 1300 10100 1300
+Text Label 10000 2100 2    50   ~ 0
 IN_1_R+
-Text Notes 10150 2818 2    118  ~ 24
+Text Notes 9900 2768 2    118  ~ 24
 IN 2
 $Comp
 L preamp:G6JU K3
 U 1 1 6353124F
-P 10350 2750
-F 0 "K3" V 10304 2928 50  0000 L CNN
-F 1 "G6JU" V 10395 2928 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 2850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 2850 50  0001 C CNN
-	1    10350 2750
+P 10100 2700
+F 0 "K3" V 10054 2878 50  0000 L CNN
+F 1 "G6JU" V 10145 2878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10100 2800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10100 2800 50  0001 C CNN
+	1    10100 2700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R27
 U 1 1 63531259
-P 10600 2350
+P 10350 2300
 AR Path="/5E2D8DA2/63531259" Ref="R27"  Part="1" 
 AR Path="/63531259" Ref="R?"  Part="1" 
-F 0 "R27" V 10715 2350 50  0000 C CNN
-F 1 "51R" V 10806 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 2350 50  0001 C CNN
-F 3 "~" H 10600 2350 50  0001 C CNN
-	1    10600 2350
+F 0 "R27" V 10465 2300 50  0000 C CNN
+F 1 "51R" V 10556 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 2300 50  0001 C CNN
+F 3 "~" H 10350 2300 50  0001 C CNN
+	1    10350 2300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R28
 U 1 1 63531263
-P 10600 3150
+P 10350 3100
 AR Path="/5E2D8DA2/63531263" Ref="R28"  Part="1" 
 AR Path="/63531263" Ref="R?"  Part="1" 
-F 0 "R28" V 10393 3150 50  0000 C CNN
-F 1 "51R" V 10484 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 3150 50  0001 C CNN
-F 3 "~" H 10600 3150 50  0001 C CNN
-	1    10600 3150
+F 0 "R28" V 10143 3100 50  0000 C CNN
+F 1 "51R" V 10234 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 3100 50  0001 C CNN
+F 3 "~" H 10350 3100 50  0001 C CNN
+	1    10350 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 2350 10850 3150
+	10600 2300 10600 3100
 Wire Wire Line
-	10350 3050 10350 3150
+	10100 3000 10100 3100
 Wire Wire Line
-	10850 2350 10750 2350
+	10600 2300 10500 2300
 Wire Wire Line
-	10450 2350 10350 2350
+	10200 2300 10100 2300
 Wire Wire Line
-	10350 2350 10350 2450
+	10100 2300 10100 2400
 Wire Wire Line
-	10450 3150 10350 3150
-Connection ~ 10350 3150
+	10200 3100 10100 3100
+Connection ~ 10100 3100
 Wire Wire Line
-	10350 3150 10250 3150
+	10100 3100 10000 3100
 Wire Wire Line
-	10750 3150 10850 3150
-Connection ~ 10350 2350
-Text Label 10250 2350 2    50   ~ 0
+	10500 3100 10600 3100
+Connection ~ 10100 2300
+Text Label 10000 2300 2    50   ~ 0
 IN_2_S+
 Wire Wire Line
-	10250 2350 10350 2350
-Text Label 10250 3150 2    50   ~ 0
+	10000 2300 10100 2300
+Text Label 10000 3100 2    50   ~ 0
 IN_2_R+
-Text Notes 10150 3818 2    118  ~ 24
+Text Notes 9900 3768 2    118  ~ 24
 IN 3
 $Comp
 L preamp:G6JU K4
 U 1 1 6365EAC0
-P 10350 3750
-F 0 "K4" V 10304 3928 50  0000 L CNN
-F 1 "G6JU" V 10395 3928 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 3850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 3850 50  0001 C CNN
-	1    10350 3750
+P 10100 3700
+F 0 "K4" V 10054 3878 50  0000 L CNN
+F 1 "G6JU" V 10145 3878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10100 3800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10100 3800 50  0001 C CNN
+	1    10100 3700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R29
 U 1 1 6365EACA
-P 10600 3350
+P 10350 3300
 AR Path="/5E2D8DA2/6365EACA" Ref="R29"  Part="1" 
 AR Path="/6365EACA" Ref="R?"  Part="1" 
-F 0 "R29" V 10715 3350 50  0000 C CNN
-F 1 "51R" V 10806 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 3350 50  0001 C CNN
-F 3 "~" H 10600 3350 50  0001 C CNN
-	1    10600 3350
+F 0 "R29" V 10465 3300 50  0000 C CNN
+F 1 "51R" V 10556 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 3300 50  0001 C CNN
+F 3 "~" H 10350 3300 50  0001 C CNN
+	1    10350 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R30
 U 1 1 6365EAD4
-P 10600 4150
+P 10350 4100
 AR Path="/5E2D8DA2/6365EAD4" Ref="R30"  Part="1" 
 AR Path="/6365EAD4" Ref="R?"  Part="1" 
-F 0 "R30" V 10393 4150 50  0000 C CNN
-F 1 "51R" V 10484 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 4150 50  0001 C CNN
-F 3 "~" H 10600 4150 50  0001 C CNN
-	1    10600 4150
+F 0 "R30" V 10143 4100 50  0000 C CNN
+F 1 "51R" V 10234 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 4100 50  0001 C CNN
+F 3 "~" H 10350 4100 50  0001 C CNN
+	1    10350 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 3350 10850 4150
+	10600 3300 10600 4100
 Wire Wire Line
-	10350 4050 10350 4150
+	10100 4000 10100 4100
 Wire Wire Line
-	10850 3350 10750 3350
+	10600 3300 10500 3300
 Wire Wire Line
-	10450 3350 10350 3350
+	10200 3300 10100 3300
 Wire Wire Line
-	10350 3350 10350 3450
+	10100 3300 10100 3400
 Wire Wire Line
-	10450 4150 10350 4150
-Connection ~ 10350 4150
+	10200 4100 10100 4100
+Connection ~ 10100 4100
 Wire Wire Line
-	10350 4150 10250 4150
+	10100 4100 10000 4100
 Wire Wire Line
-	10750 4150 10850 4150
-Connection ~ 10350 3350
-Text Label 10250 3350 2    50   ~ 0
+	10500 4100 10600 4100
+Connection ~ 10100 3300
+Text Label 10000 3300 2    50   ~ 0
 IN_3_S+
 Wire Wire Line
-	10250 3350 10350 3350
-Text Label 10250 4150 2    50   ~ 0
+	10000 3300 10100 3300
+Text Label 10000 4100 2    50   ~ 0
 IN_3_R+
-Text Notes 10150 4818 2    118  ~ 24
+Text Notes 9900 4768 2    118  ~ 24
 IN 4
 $Comp
 L preamp:G6JU K5
 U 1 1 636947FD
-P 10350 4750
-F 0 "K5" V 10304 4928 50  0000 L CNN
-F 1 "G6JU" V 10395 4928 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 4850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 4850 50  0001 C CNN
-	1    10350 4750
+P 10100 4700
+F 0 "K5" V 10054 4878 50  0000 L CNN
+F 1 "G6JU" V 10145 4878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10100 4800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10100 4800 50  0001 C CNN
+	1    10100 4700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R31
 U 1 1 63694807
-P 10600 4350
+P 10350 4300
 AR Path="/5E2D8DA2/63694807" Ref="R31"  Part="1" 
 AR Path="/63694807" Ref="R?"  Part="1" 
-F 0 "R31" V 10715 4350 50  0000 C CNN
-F 1 "51R" V 10806 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 4350 50  0001 C CNN
-F 3 "~" H 10600 4350 50  0001 C CNN
-	1    10600 4350
+F 0 "R31" V 10465 4300 50  0000 C CNN
+F 1 "51R" V 10556 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 4300 50  0001 C CNN
+F 3 "~" H 10350 4300 50  0001 C CNN
+	1    10350 4300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R32
 U 1 1 63694811
-P 10600 5150
+P 10350 5100
 AR Path="/5E2D8DA2/63694811" Ref="R32"  Part="1" 
 AR Path="/63694811" Ref="R?"  Part="1" 
-F 0 "R32" V 10393 5150 50  0000 C CNN
-F 1 "51R" V 10484 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 5150 50  0001 C CNN
-F 3 "~" H 10600 5150 50  0001 C CNN
-	1    10600 5150
+F 0 "R32" V 10143 5100 50  0000 C CNN
+F 1 "51R" V 10234 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 5100 50  0001 C CNN
+F 3 "~" H 10350 5100 50  0001 C CNN
+	1    10350 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 4350 10850 5150
+	10600 4300 10600 5100
 Wire Wire Line
-	10350 5050 10350 5150
+	10100 5000 10100 5100
 Wire Wire Line
-	10850 4350 10750 4350
+	10600 4300 10500 4300
 Wire Wire Line
-	10450 4350 10350 4350
+	10200 4300 10100 4300
 Wire Wire Line
-	10350 4350 10350 4450
+	10100 4300 10100 4400
 Wire Wire Line
-	10450 5150 10350 5150
-Connection ~ 10350 5150
+	10200 5100 10100 5100
+Connection ~ 10100 5100
 Wire Wire Line
-	10350 5150 10250 5150
+	10100 5100 10000 5100
 Wire Wire Line
-	10750 5150 10850 5150
-Connection ~ 10350 4350
-Text Label 10250 4350 2    50   ~ 0
+	10500 5100 10600 5100
+Connection ~ 10100 4300
+Text Label 10000 4300 2    50   ~ 0
 IN_4_S+
 Wire Wire Line
-	10250 4350 10350 4350
-Text Label 10250 5150 2    50   ~ 0
+	10000 4300 10100 4300
+Text Label 10000 5100 2    50   ~ 0
 IN_4_R+
-Text Notes 10150 5818 2    118  ~ 24
+Text Notes 9900 5768 2    118  ~ 24
 IN 5
 $Comp
 L preamp:G6JU K6
 U 1 1 63694829
-P 10350 5750
-F 0 "K6" V 10304 5928 50  0000 L CNN
-F 1 "G6JU" V 10395 5928 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10350 5850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10350 5850 50  0001 C CNN
-	1    10350 5750
+P 10100 5700
+F 0 "K6" V 10054 5878 50  0000 L CNN
+F 1 "G6JU" V 10145 5878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10100 5800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10100 5800 50  0001 C CNN
+	1    10100 5700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R33
 U 1 1 63694833
-P 10600 5350
+P 10350 5300
 AR Path="/5E2D8DA2/63694833" Ref="R33"  Part="1" 
 AR Path="/63694833" Ref="R?"  Part="1" 
-F 0 "R33" V 10715 5350 50  0000 C CNN
-F 1 "51R" V 10806 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 5350 50  0001 C CNN
-F 3 "~" H 10600 5350 50  0001 C CNN
-	1    10600 5350
+F 0 "R33" V 10465 5300 50  0000 C CNN
+F 1 "51R" V 10556 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 5300 50  0001 C CNN
+F 3 "~" H 10350 5300 50  0001 C CNN
+	1    10350 5300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R34
 U 1 1 6369483D
-P 10600 6150
+P 10350 6100
 AR Path="/5E2D8DA2/6369483D" Ref="R34"  Part="1" 
 AR Path="/6369483D" Ref="R?"  Part="1" 
-F 0 "R34" V 10393 6150 50  0000 C CNN
-F 1 "51R" V 10484 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 6150 50  0001 C CNN
-F 3 "~" H 10600 6150 50  0001 C CNN
-	1    10600 6150
+F 0 "R34" V 10143 6100 50  0000 C CNN
+F 1 "51R" V 10234 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 6100 50  0001 C CNN
+F 3 "~" H 10350 6100 50  0001 C CNN
+	1    10350 6100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10850 5350 10850 6150
+	10600 5300 10600 6100
 Wire Wire Line
-	10350 6050 10350 6150
+	10100 6000 10100 6100
 Wire Wire Line
-	10850 5350 10750 5350
+	10600 5300 10500 5300
 Wire Wire Line
-	10450 5350 10350 5350
+	10200 5300 10100 5300
 Wire Wire Line
-	10350 5350 10350 5450
+	10100 5300 10100 5400
 Wire Wire Line
-	10450 6150 10350 6150
-Connection ~ 10350 6150
+	10200 6100 10100 6100
+Connection ~ 10100 6100
 Wire Wire Line
-	10350 6150 10250 6150
+	10100 6100 10000 6100
 Wire Wire Line
-	10750 6150 10850 6150
-Connection ~ 10350 5350
-Text Label 10250 5350 2    50   ~ 0
+	10500 6100 10600 6100
+Connection ~ 10100 5300
+Text Label 10000 5300 2    50   ~ 0
 IN_5_S+
 Wire Wire Line
-	10250 5350 10350 5350
-Text Label 10250 6150 2    50   ~ 0
+	10000 5300 10100 5300
+Text Label 10000 6100 2    50   ~ 0
 IN_5_R+
 Wire Wire Line
-	10850 2150 10850 2350
-Connection ~ 10850 2150
-Connection ~ 10850 2350
+	10600 2100 10600 2300
+Connection ~ 10600 2100
+Connection ~ 10600 2300
 Wire Wire Line
-	10850 3150 10850 3350
-Connection ~ 10850 3150
-Connection ~ 10850 3350
+	10600 3100 10600 3300
+Connection ~ 10600 3100
+Connection ~ 10600 3300
 Wire Wire Line
-	10850 4150 10850 4350
-Connection ~ 10850 4150
-Connection ~ 10850 4350
+	10600 4100 10600 4300
+Connection ~ 10600 4100
+Connection ~ 10600 4300
 Wire Wire Line
-	10850 5150 10850 5350
-Connection ~ 10850 5150
-Connection ~ 10850 5350
+	10600 5100 10600 5300
+Connection ~ 10600 5100
+Connection ~ 10600 5300
 Wire Wire Line
-	10850 1150 10850 1350
-Connection ~ 10850 1350
-Text Notes 8450 1768 2    118  ~ 24
+	10600 1100 10600 1300
+Connection ~ 10600 1300
+Text Notes 8300 1768 2    118  ~ 24
 OUT 1
 $Comp
 L preamp:G6JU K7
 U 1 1 638E8EFC
-P 8650 1700
-F 0 "K7" V 8604 1878 50  0000 L CNN
-F 1 "G6JU" V 8695 1878 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8650 1800 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 1800 50  0001 C CNN
-	1    8650 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 638E8F06
-P 8900 1300
-AR Path="/5E2D8DA2/638E8F06" Ref="R21"  Part="1" 
-AR Path="/638E8F06" Ref="R?"  Part="1" 
-F 0 "R21" V 9015 1300 50  0000 C CNN
-F 1 "51R" V 9106 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8830 1300 50  0001 C CNN
-F 3 "~" H 8900 1300 50  0001 C CNN
-	1    8900 1300
+P 8500 1700
+F 0 "K7" V 8454 1878 50  0000 L CNN
+F 1 "G6JU" V 8545 1878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8500 1800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8500 1800 50  0001 C CNN
+	1    8500 1700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R22
 U 1 1 638E8F10
-P 8900 2100
+P 8750 2100
 AR Path="/5E2D8DA2/638E8F10" Ref="R22"  Part="1" 
 AR Path="/638E8F10" Ref="R?"  Part="1" 
-F 0 "R22" V 8693 2100 50  0000 C CNN
-F 1 "51R" V 8784 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8830 2100 50  0001 C CNN
-F 3 "~" H 8900 2100 50  0001 C CNN
-	1    8900 2100
+F 0 "R22" V 8543 2100 50  0000 C CNN
+F 1 "51R" V 8634 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8680 2100 50  0001 C CNN
+F 3 "~" H 8750 2100 50  0001 C CNN
+	1    8750 2100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 1300 9150 2100
+	9000 1300 9000 2100
 Wire Wire Line
-	8650 2000 8650 2100
+	8500 2000 8500 2100
 Wire Wire Line
-	9150 1300 9050 1300
+	9000 1300 8900 1300
 Wire Wire Line
-	8750 1300 8650 1300
+	8600 1300 8500 1300
 Wire Wire Line
-	8650 1300 8650 1400
+	8500 1300 8500 1400
 Wire Wire Line
-	8750 2100 8650 2100
-Connection ~ 8650 2100
+	8600 2100 8500 2100
+Connection ~ 8500 2100
 Wire Wire Line
-	8650 2100 8550 2100
+	8500 2100 8400 2100
 Wire Wire Line
-	9050 2100 9150 2100
-Connection ~ 8650 1300
-Text Label 8550 1300 2    50   ~ 0
+	8900 2100 9000 2100
+Connection ~ 8500 1300
+Text Label 8400 1300 2    50   ~ 0
 OUT_1_S+
 Wire Wire Line
-	8550 1300 8650 1300
-Text Label 8550 2100 2    50   ~ 0
+	8400 1300 8500 1300
+Text Label 8400 2100 2    50   ~ 0
 OUT_1_R+
-Text Notes 8450 2768 2    118  ~ 24
+Text Notes 8300 2768 2    118  ~ 24
 OUT 2
 $Comp
 L preamp:G6JU K8
 U 1 1 638E8F28
-P 8650 2700
-F 0 "K8" V 8604 2878 50  0000 L CNN
-F 1 "G6JU" V 8695 2878 50  0000 L CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8650 2800 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8650 2800 50  0001 C CNN
-	1    8650 2700
+P 8500 2700
+F 0 "K8" V 8454 2878 50  0000 L CNN
+F 1 "G6JU" V 8545 2878 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8500 2800 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8500 2800 50  0001 C CNN
+	1    8500 2700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R23
 U 1 1 638E8F32
-P 8900 2300
+P 8750 2300
 AR Path="/5E2D8DA2/638E8F32" Ref="R23"  Part="1" 
 AR Path="/638E8F32" Ref="R?"  Part="1" 
-F 0 "R23" V 9015 2300 50  0000 C CNN
-F 1 "51R" V 9106 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8830 2300 50  0001 C CNN
-F 3 "~" H 8900 2300 50  0001 C CNN
-	1    8900 2300
+F 0 "R23" V 8865 2300 50  0000 C CNN
+F 1 "51R" V 8956 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8680 2300 50  0001 C CNN
+F 3 "~" H 8750 2300 50  0001 C CNN
+	1    8750 2300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R24
 U 1 1 638E8F3C
-P 8900 3100
+P 8750 3100
 AR Path="/5E2D8DA2/638E8F3C" Ref="R24"  Part="1" 
 AR Path="/638E8F3C" Ref="R?"  Part="1" 
-F 0 "R24" V 8693 3100 50  0000 C CNN
-F 1 "51R" V 8784 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8830 3100 50  0001 C CNN
-F 3 "~" H 8900 3100 50  0001 C CNN
-	1    8900 3100
+F 0 "R24" V 8543 3100 50  0000 C CNN
+F 1 "51R" V 8634 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8680 3100 50  0001 C CNN
+F 3 "~" H 8750 3100 50  0001 C CNN
+	1    8750 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 2300 9150 3100
+	9000 2300 9000 3100
 Wire Wire Line
-	8650 3000 8650 3100
+	8500 3000 8500 3100
 Wire Wire Line
-	9150 2300 9050 2300
+	9000 2300 8900 2300
 Wire Wire Line
-	8750 2300 8650 2300
+	8600 2300 8500 2300
 Wire Wire Line
-	8650 2300 8650 2400
+	8500 2300 8500 2400
 Wire Wire Line
-	8750 3100 8650 3100
-Connection ~ 8650 3100
+	8600 3100 8500 3100
+Connection ~ 8500 3100
 Wire Wire Line
-	8650 3100 8550 3100
+	8500 3100 8400 3100
 Wire Wire Line
-	9050 3100 9150 3100
-Connection ~ 8650 2300
-Text Label 8550 2300 2    50   ~ 0
+	8900 3100 9000 3100
+Connection ~ 8500 2300
+Text Label 8400 2300 2    50   ~ 0
 OUT_2_S+
 Wire Wire Line
-	8550 2300 8650 2300
-Text Label 8550 3100 2    50   ~ 0
+	8400 2300 8500 2300
+Text Label 8400 3100 2    50   ~ 0
 OUT_2_R+
 Wire Wire Line
-	9150 1100 9150 1300
-Connection ~ 9150 1300
+	9000 1100 9000 1300
+Connection ~ 9000 1300
 Wire Wire Line
-	9150 2100 9150 2300
-Connection ~ 9150 2100
-Connection ~ 9150 2300
-Text GLabel 9150 1100 1    50   UnSpc ~ 0
+	9000 2100 9000 2300
+Connection ~ 9000 2100
+Connection ~ 9000 2300
+Text GLabel 9000 1100 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
 	1500 7350 1750 7350
-Text Label 8950 5850 0    50   ~ 0
-A_IN_R
-Text Label 8950 5450 0    50   ~ 0
-A_IN_L
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 63BC6293
@@ -896,44 +862,36 @@ F 3 "~" H 1300 7350 50  0001 C CNN
 	1    1300 7350
 	-1   0    0    -1  
 $EndComp
-Text Notes 7800 5200 0    118  ~ 24
+Text Notes 6950 6000 0    118  ~ 24
 OUT 2
-Wire Wire Line
-	8850 5850 8950 5850
-Wire Wire Line
-	8850 5450 8950 5450
 $Comp
 L preamp:G6JU K8
 U 3 1 63BC627A
-P 8550 5750
-F 0 "K8" H 8550 5527 50  0000 C CNN
-F 1 "G6JU" H 8550 5436 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 5850 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5850 50  0001 C CNN
-	3    8550 5750
+P 7800 6100
+F 0 "K8" H 7550 6000 50  0000 C CNN
+F 1 "G6JU" H 7800 5900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 7800 6200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 7800 6200 50  0001 C CNN
+	3    7800 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K8
 U 2 1 63BC6270
-P 8550 5350
-F 0 "K8" H 8550 5675 50  0000 C CNN
-F 1 "G6JU" H 8550 5584 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 5450 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 5450 50  0001 C CNN
-	2    8550 5350
+P 7800 5750
+F 0 "K8" H 7550 5900 50  0000 C CNN
+F 1 "G6JU" H 7800 5950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 7800 5850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 7800 5850 50  0001 C CNN
+	2    7800 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1500 6850 1750 6850
-Text HLabel 8200 5350 0    50   UnSpc ~ 0
+Text HLabel 7450 5750 0    50   UnSpc ~ 0
 A_OUT_2_L
-Text HLabel 8200 5750 0    50   UnSpc ~ 0
+Text HLabel 7450 6100 0    50   UnSpc ~ 0
 A_OUT_2_R
-Text Label 8950 4400 0    50   ~ 0
-A_IN_R
-Text Label 8950 4000 0    50   ~ 0
-A_IN_L
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 620969B0
@@ -947,94 +905,75 @@ F 3 "~" H 1300 6850 50  0001 C CNN
 	1    1300 6850
 	-1   0    0    -1  
 $EndComp
-Text Notes 7800 3750 0    118  ~ 24
+Text Notes 6950 5000 0    118  ~ 24
 OUT 1
-Wire Wire Line
-	8850 4400 8950 4400
-Wire Wire Line
-	8850 4000 8950 4000
 $Comp
 L preamp:G6JU K7
 U 3 1 6205D525
-P 8550 4300
-F 0 "K7" H 8550 4077 50  0000 C CNN
-F 1 "G6JU" H 8550 3986 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4400 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4400 50  0001 C CNN
-	3    8550 4300
+P 7800 5100
+F 0 "K7" H 7550 5000 50  0000 C CNN
+F 1 "G6JU" H 7800 4900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 7800 5200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 7800 5200 50  0001 C CNN
+	3    7800 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K7
 U 2 1 6205D51B
-P 8550 3900
-F 0 "K7" H 8550 4225 50  0000 C CNN
-F 1 "G6JU" H 8550 4134 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 8550 4000 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 8550 4000 50  0001 C CNN
-	2    8550 3900
+P 7800 4750
+F 0 "K7" H 7550 4900 50  0000 C CNN
+F 1 "G6JU" H 7800 4950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 7800 4850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 7800 4850 50  0001 C CNN
+	2    7800 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1500 4250 1750 4250
-Text Notes 3000 5100 0    118  ~ 24
+Text Notes 3200 5000 0    118  ~ 24
 IN 1
 $Comp
 L preamp:G6JU K2
-U 3 1 63C5D22F
-P 3650 5650
-F 0 "K2" H 3650 5427 50  0000 C CNN
-F 1 "G6JU" H 3650 5336 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 5750 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 5750 50  0001 C CNN
-	3    3650 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L preamp:G6JU K2
 U 2 1 63C5D239
-P 3650 5250
-F 0 "K2" H 3650 5575 50  0000 C CNN
-F 1 "G6JU" H 3650 5484 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 5350 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 5350 50  0001 C CNN
-	2    3650 5250
+P 3950 4750
+F 0 "K2" H 3700 4900 50  0000 C CNN
+F 1 "G6JU" H 3950 4950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 4850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 4850 50  0001 C CNN
+	2    3950 4750
 	1    0    0    -1  
 $EndComp
-Text Label 3950 5750 0    50   ~ 0
-A_OUT_R
-Text HLabel 4850 5250 0    50   UnSpc ~ 0
+Text HLabel 3600 5750 0    50   UnSpc ~ 0
 A_IN_2_L
-Text HLabel 4850 5650 0    50   UnSpc ~ 0
+Text HLabel 3600 6100 0    50   UnSpc ~ 0
 A_IN_2_R
 Wire Wire Line
 	1500 4750 1750 4750
-Text Notes 4550 5100 0    118  ~ 24
+Text Notes 3200 6000 0    118  ~ 24
 IN 2
 $Comp
 L preamp:G6JU K3
 U 3 1 63D47795
-P 5200 5650
-F 0 "K3" H 5200 5427 50  0000 C CNN
-F 1 "G6JU" H 5200 5336 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 5750 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 5750 50  0001 C CNN
-	3    5200 5650
+P 3950 6100
+F 0 "K3" H 3700 6000 50  0000 C CNN
+F 1 "G6JU" H 3950 5900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 6200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 6200 50  0001 C CNN
+	3    3950 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K3
 U 2 1 63D4779F
-P 5200 5250
-F 0 "K3" H 5200 5575 50  0000 C CNN
-F 1 "G6JU" H 5200 5484 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 5350 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 5350 50  0001 C CNN
-	2    5200 5250
+P 3950 5750
+F 0 "K3" H 3700 5900 50  0000 C CNN
+F 1 "G6JU" H 3950 5950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 5850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 5850 50  0001 C CNN
+	2    3950 5750
 	1    0    0    -1  
 $EndComp
-Text Label 5500 5750 0    50   ~ 0
-A_OUT_R
 $Comp
 L Connector:Conn_01x03_Male J53
 U 1 1 63D9CD4B
@@ -1046,32 +985,28 @@ F 3 "~" H 1300 4750 50  0001 C CNN
 	1    1300 4750
 	1    0    0    -1  
 $EndComp
-Text HLabel 6400 5250 0    50   UnSpc ~ 0
+Text HLabel 3600 6750 0    50   UnSpc ~ 0
 A_IN_3_L
-Text HLabel 6400 5650 0    50   UnSpc ~ 0
+Text HLabel 3600 7100 0    50   UnSpc ~ 0
 A_IN_3_R
-Text Label 7050 5350 0    50   ~ 0
-A_OUT_L
 Wire Wire Line
 	1500 5250 1750 5250
-Text Notes 6100 5100 0    118  ~ 24
+Text Notes 3200 7000 0    118  ~ 24
 IN 3
 $Comp
 L preamp:G6JU K4
 U 3 1 63E1D906
-P 6750 5650
-F 0 "K4" H 6750 5427 50  0000 C CNN
-F 1 "G6JU" H 6750 5336 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 6750 5750 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 6750 5750 50  0001 C CNN
-	3    6750 5650
+P 3950 7100
+F 0 "K4" H 3700 7000 50  0000 C CNN
+F 1 "G6JU" H 3950 6900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 7200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 7200 50  0001 C CNN
+	3    3950 7100
 	1    0    0    -1  
 $EndComp
-Text Label 7050 5750 0    50   ~ 0
-A_OUT_R
 Wire Wire Line
 	1500 5750 1750 5750
-Text Notes 3000 6450 0    118  ~ 24
+Text Notes 5050 5000 0    118  ~ 24
 IN 4
 $Comp
 L Connector:Conn_01x03_Male J54
@@ -1084,40 +1019,36 @@ F 3 "~" H 1300 5750 50  0001 C CNN
 	1    1300 5750
 	1    0    0    -1  
 $EndComp
-Text HLabel 4850 6600 0    50   UnSpc ~ 0
+Text HLabel 5450 5750 0    50   UnSpc ~ 0
 A_IN_5_L
-Text HLabel 4850 7000 0    50   UnSpc ~ 0
+Text HLabel 5450 6100 0    50   UnSpc ~ 0
 A_IN_5_R
-Text Label 5500 6700 0    50   ~ 0
-A_OUT_L
 Wire Wire Line
 	1500 6250 1750 6250
-Text Notes 4550 6450 0    118  ~ 24
+Text Notes 5050 6000 0    118  ~ 24
 IN 5
 $Comp
 L preamp:G6JU K6
 U 3 1 63E6412D
-P 5200 7000
-F 0 "K6" H 5200 6777 50  0000 C CNN
-F 1 "G6JU" H 5200 6686 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 7100 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 7100 50  0001 C CNN
-	3    5200 7000
+P 5800 6100
+F 0 "K6" H 5550 6000 50  0000 C CNN
+F 1 "G6JU" H 5800 5900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5800 6200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5800 6200 50  0001 C CNN
+	3    5800 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K6
 U 2 1 63E64137
-P 5200 6600
-F 0 "K6" H 5200 6925 50  0000 C CNN
-F 1 "G6JU" H 5200 6834 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5200 6700 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5200 6700 50  0001 C CNN
-	2    5200 6600
+P 5800 5750
+F 0 "K6" H 5550 5900 50  0000 C CNN
+F 1 "G6JU" H 5800 5950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5800 5850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5800 5850 50  0001 C CNN
+	2    5800 5750
 	1    0    0    -1  
 $EndComp
-Text Label 5500 7100 0    50   ~ 0
-A_OUT_R
 $Comp
 L Connector:Conn_01x03_Male J57
 U 1 1 63E64142
@@ -1232,53 +1163,53 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D1642F
-P 8850 3800
+P 8100 4650
 AR Path="/5E26F6FE/64D1642F" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D1642F" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 8850 3550 50  0001 C CNN
-F 1 "GND" H 8855 3627 50  0000 C CNN
-F 2 "" H 8850 3800 50  0001 C CNN
-F 3 "" H 8850 3800 50  0001 C CNN
-	1    8850 3800
+F 0 "#PWR064" H 8100 4400 50  0001 C CNN
+F 1 "GND" H 8105 4477 50  0000 C CNN
+F 2 "" H 8100 4650 50  0001 C CNN
+F 3 "" H 8100 4650 50  0001 C CNN
+	1    8100 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D3ACF0
-P 8850 4200
+P 8100 5000
 AR Path="/5E26F6FE/64D3ACF0" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D3ACF0" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 8850 3950 50  0001 C CNN
-F 1 "GND" H 8855 4027 50  0000 C CNN
-F 2 "" H 8850 4200 50  0001 C CNN
-F 3 "" H 8850 4200 50  0001 C CNN
-	1    8850 4200
+F 0 "#PWR065" H 8100 4750 50  0001 C CNN
+F 1 "GND" H 8105 4827 50  0000 C CNN
+F 2 "" H 8100 5000 50  0001 C CNN
+F 3 "" H 8100 5000 50  0001 C CNN
+	1    8100 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D5F564
-P 8850 5250
+P 8100 5650
 AR Path="/5E26F6FE/64D5F564" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D5F564" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 8850 5000 50  0001 C CNN
-F 1 "GND" H 8855 5077 50  0000 C CNN
-F 2 "" H 8850 5250 50  0001 C CNN
-F 3 "" H 8850 5250 50  0001 C CNN
-	1    8850 5250
+F 0 "#PWR066" H 8100 5400 50  0001 C CNN
+F 1 "GND" H 8105 5477 50  0000 C CNN
+F 2 "" H 8100 5650 50  0001 C CNN
+F 3 "" H 8100 5650 50  0001 C CNN
+	1    8100 5650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64D83F57
-P 8850 5650
+P 8100 6000
 AR Path="/5E26F6FE/64D83F57" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/64D83F57" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 8850 5400 50  0001 C CNN
-F 1 "GND" H 8855 5477 50  0000 C CNN
-F 2 "" H 8850 5650 50  0001 C CNN
-F 3 "" H 8850 5650 50  0001 C CNN
-	1    8850 5650
+F 0 "#PWR067" H 8100 5750 50  0001 C CNN
+F 1 "GND" H 8105 5827 50  0000 C CNN
+F 2 "" H 8100 6000 50  0001 C CNN
+F 3 "" H 8100 6000 50  0001 C CNN
+	1    8100 6000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1372,16 +1303,14 @@ F 3 "" H 1750 4750 50  0001 C CNN
 	1    1750 4750
 	0    -1   -1   0   
 $EndComp
-Text Label 5500 5350 0    50   ~ 0
-A_OUT_L
-NoConn ~ 5500 5150
-NoConn ~ 5500 5550
-NoConn ~ 3950 5150
-NoConn ~ 3950 5550
-NoConn ~ 7050 5150
-NoConn ~ 7050 5550
-NoConn ~ 5500 6500
-NoConn ~ 5500 6900
+NoConn ~ 4250 5650
+NoConn ~ 4250 6000
+NoConn ~ 4250 4650
+NoConn ~ 4250 5000
+NoConn ~ 4250 6650
+NoConn ~ 4250 7000
+NoConn ~ 6100 5650
+NoConn ~ 6100 6000
 NoConn ~ 2950 2500
 NoConn ~ 2950 2600
 NoConn ~ 2950 2200
@@ -1390,25 +1319,25 @@ NoConn ~ 4350 3500
 $Comp
 L preamp:G6JU K4
 U 2 1 63E1D910
-P 6750 5250
-F 0 "K4" H 6750 5575 50  0000 C CNN
-F 1 "G6JU" H 6750 5484 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 6750 5350 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 6750 5350 50  0001 C CNN
-	2    6750 5250
+P 3950 6750
+F 0 "K4" H 3700 6900 50  0000 C CNN
+F 1 "G6JU" H 3950 6950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 6850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 6850 50  0001 C CNN
+	2    3950 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R26
 U 1 1 632C72D5
-P 10600 2150
+P 10350 2100
 AR Path="/5E2D8DA2/632C72D5" Ref="R26"  Part="1" 
 AR Path="/632C72D5" Ref="R?"  Part="1" 
-F 0 "R26" V 10393 2150 50  0000 C CNN
-F 1 "51R" V 10484 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10530 2150 50  0001 C CNN
-F 3 "~" H 10600 2150 50  0001 C CNN
-	1    10600 2150
+F 0 "R26" V 10143 2100 50  0000 C CNN
+F 1 "51R" V 10234 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 2100 50  0001 C CNN
+F 3 "~" H 10350 2100 50  0001 C CNN
+	1    10350 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1498,9 +1427,7 @@ A_IN_1_L
 Text HLabel 1600 4350 2    50   UnSpc ~ 0
 A_IN_1_R
 Wire Wire Line
-	3300 5250 3350 5250
-Wire Wire Line
-	3300 5650 3350 5650
+	3600 4750 3650 4750
 Wire Wire Line
 	1500 4150 1600 4150
 Wire Wire Line
@@ -1514,9 +1441,9 @@ Wire Wire Line
 Wire Wire Line
 	1500 5350 1600 5350
 Wire Wire Line
-	6400 5250 6450 5250
+	3600 6750 3650 6750
 Wire Wire Line
-	6400 5650 6450 5650
+	3600 7100 3650 7100
 Text HLabel 1600 4650 2    50   UnSpc ~ 0
 A_IN_2_L
 Text HLabel 1600 4850 2    50   UnSpc ~ 0
@@ -1526,9 +1453,9 @@ Wire Wire Line
 Wire Wire Line
 	1500 4850 1600 4850
 Wire Wire Line
-	4850 5250 4900 5250
+	3600 5750 3650 5750
 Wire Wire Line
-	4850 5650 4900 5650
+	3600 6100 3650 6100
 Text HLabel 1600 5650 2    50   UnSpc ~ 0
 A_IN_4_L
 Text HLabel 1600 5850 2    50   UnSpc ~ 0
@@ -1537,42 +1464,38 @@ Wire Wire Line
 	1500 5650 1600 5650
 Wire Wire Line
 	1500 5850 1600 5850
-NoConn ~ 3950 6500
-NoConn ~ 3950 6900
-Text Label 3950 7100 0    50   ~ 0
-A_OUT_R
+NoConn ~ 6100 4650
+NoConn ~ 6100 5000
 $Comp
 L preamp:G6JU K5
 U 2 1 63E1D93C
-P 3650 6600
-F 0 "K5" H 3650 6925 50  0000 C CNN
-F 1 "G6JU" H 3650 6834 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 6700 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 6700 50  0001 C CNN
-	2    3650 6600
+P 5800 4750
+F 0 "K5" H 5550 4900 50  0000 C CNN
+F 1 "G6JU" H 5800 4950 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5800 4850 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5800 4850 50  0001 C CNN
+	2    5800 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L preamp:G6JU K5
 U 3 1 63E1D932
-P 3650 7000
-F 0 "K5" H 3650 6777 50  0000 C CNN
-F 1 "G6JU" H 3650 6686 50  0000 C CNN
-F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3650 7100 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3650 7100 50  0001 C CNN
-	3    3650 7000
+P 5800 5100
+F 0 "K5" H 5550 5000 50  0000 C CNN
+F 1 "G6JU" H 5800 4900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 5800 5200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 5800 5200 50  0001 C CNN
+	3    5800 5100
 	1    0    0    -1  
 $EndComp
-Text Label 3950 6700 0    50   ~ 0
-A_OUT_L
-Text HLabel 3300 6600 0    50   UnSpc ~ 0
+Text HLabel 5450 4750 0    50   UnSpc ~ 0
 A_IN_4_L
-Text HLabel 3300 7000 0    50   UnSpc ~ 0
+Text HLabel 5450 5100 0    50   UnSpc ~ 0
 A_IN_4_R
 Wire Wire Line
-	3300 6600 3350 6600
+	5450 4750 5500 4750
 Wire Wire Line
-	3300 7000 3350 7000
+	5450 5100 5500 5100
 Text HLabel 1600 6150 2    50   UnSpc ~ 0
 A_IN_5_L
 Text HLabel 1600 6350 2    50   UnSpc ~ 0
@@ -1582,16 +1505,16 @@ Wire Wire Line
 Wire Wire Line
 	1500 6350 1600 6350
 Wire Wire Line
-	4850 6600 4900 6600
+	5450 5750 5500 5750
 Wire Wire Line
-	4850 7000 4900 7000
+	5450 6100 5500 6100
 Wire Wire Line
 	1550 3600 1550 3700
 Wire Wire Line
 	1550 3700 1500 3700
-Text HLabel 8200 4300 0    50   UnSpc ~ 0
+Text HLabel 7450 5100 0    50   UnSpc ~ 0
 A_OUT_1_R
-Text HLabel 8200 3900 0    50   UnSpc ~ 0
+Text HLabel 7450 4750 0    50   UnSpc ~ 0
 A_OUT_1_L
 Text HLabel 1600 6950 2    50   UnSpc ~ 0
 A_OUT_1_R
@@ -1610,11 +1533,108 @@ Wire Wire Line
 Wire Wire Line
 	1500 7450 1600 7450
 Wire Wire Line
-	8200 3900 8250 3900
+	7450 4750 7500 4750
 Wire Wire Line
-	8200 4300 8250 4300
+	7450 5100 7500 5100
 Wire Wire Line
-	8200 5350 8250 5350
+	7450 5750 7500 5750
 Wire Wire Line
-	8200 5750 8250 5750
+	7450 6100 7500 6100
+Text HLabel 4300 4850 2    50   UnSpc ~ 0
+A_OUT_L
+Wire Wire Line
+	4250 4850 4300 4850
+Text HLabel 4300 7200 2    50   UnSpc ~ 0
+A_OUT_R
+Text HLabel 4300 6850 2    50   UnSpc ~ 0
+A_OUT_L
+Wire Wire Line
+	4250 6850 4300 6850
+Wire Wire Line
+	4250 7200 4300 7200
+Text HLabel 6150 5200 2    50   UnSpc ~ 0
+A_OUT_R
+Text HLabel 6150 4850 2    50   UnSpc ~ 0
+A_OUT_L
+Wire Wire Line
+	6100 4850 6150 4850
+Wire Wire Line
+	6100 5200 6150 5200
+Text HLabel 4300 6200 2    50   UnSpc ~ 0
+A_OUT_R
+Text HLabel 4300 5850 2    50   UnSpc ~ 0
+A_OUT_L
+Wire Wire Line
+	4250 5850 4300 5850
+Wire Wire Line
+	4250 6200 4300 6200
+Text HLabel 6150 6200 2    50   UnSpc ~ 0
+A_OUT_R
+Text HLabel 6150 5850 2    50   UnSpc ~ 0
+A_OUT_L
+Wire Wire Line
+	6100 5850 6150 5850
+Wire Wire Line
+	6100 6200 6150 6200
+Text HLabel 8150 5200 2    50   UnSpc ~ 0
+A_IN_R
+Text HLabel 8150 4850 2    50   UnSpc ~ 0
+A_IN_L
+Text HLabel 8150 6200 2    50   UnSpc ~ 0
+A_IN_R
+Text HLabel 8150 5850 2    50   UnSpc ~ 0
+A_IN_L
+Wire Wire Line
+	8100 4850 8150 4850
+Wire Wire Line
+	8100 5200 8150 5200
+Wire Wire Line
+	8100 5850 8150 5850
+Wire Wire Line
+	8100 6200 8150 6200
+Wire Wire Line
+	4250 5200 4300 5200
+Text HLabel 4300 5200 2    50   UnSpc ~ 0
+A_OUT_R
+Wire Wire Line
+	3600 5100 3650 5100
+$Comp
+L preamp:G6JU K2
+U 3 1 63C5D22F
+P 3950 5100
+F 0 "K2" H 3700 5000 50  0000 C CNN
+F 1 "G6JU" H 3950 4900 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 3950 5200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 3950 5200 50  0001 C CNN
+	3    3950 5100
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 5100 0    50   UnSpc ~ 0
+A_IN_1_R
+$Comp
+L Device:R R25
+U 1 1 632C72CB
+P 10350 1300
+AR Path="/5E2D8DA2/632C72CB" Ref="R25"  Part="1" 
+AR Path="/632C72CB" Ref="R?"  Part="1" 
+F 0 "R25" V 10450 1300 50  0000 C CNN
+F 1 "51R" V 10550 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10280 1300 50  0001 C CNN
+F 3 "~" H 10350 1300 50  0001 C CNN
+	1    10350 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 638E8F06
+P 8750 1300
+AR Path="/5E2D8DA2/638E8F06" Ref="R21"  Part="1" 
+AR Path="/638E8F06" Ref="R?"  Part="1" 
+F 0 "R21" V 8865 1300 50  0000 C CNN
+F 1 "51R" V 8956 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8680 1300 50  0001 C CNN
+F 3 "~" H 8750 1300 50  0001 C CNN
+	1    8750 1300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

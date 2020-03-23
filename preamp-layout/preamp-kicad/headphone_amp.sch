@@ -327,15 +327,15 @@ xfeed_out_r
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 647A3EBE
-P 4100 4400
+P 4150 4000
 AR Path="/5E27B612/647A3EBE" Ref="J?"  Part="1" 
 AR Path="/6009D432/647A3EBE" Ref="J?"  Part="1" 
 AR Path="/5E4A803E/647A3EBE" Ref="J73"  Part="1" 
-F 0 "J73" H 4208 4589 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 4072 4333 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4100 4400 50  0001 C CNN
-F 3 "~" H 4100 4400 50  0001 C CNN
-	1    4100 4400
+F 0 "J73" H 4258 4189 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4122 3933 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4150 4000 50  0001 C CNN
+F 3 "~" H 4150 4000 50  0001 C CNN
+	1    4150 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -394,15 +394,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 5E7A75D4
-P 4900 4400
+P 4950 4000
 AR Path="/5E27B612/5E7A75D4" Ref="J?"  Part="1" 
 AR Path="/6009D432/5E7A75D4" Ref="J?"  Part="1" 
 AR Path="/5E4A803E/5E7A75D4" Ref="J74"  Part="1" 
-F 0 "J74" H 4872 4378 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 4872 4333 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4900 4400 50  0001 C CNN
-F 3 "~" H 4900 4400 50  0001 C CNN
-	1    4900 4400
+F 0 "J74" H 4922 3978 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 4922 3933 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4950 4000 50  0001 C CNN
+F 3 "~" H 4950 4000 50  0001 C CNN
+	1    4950 4000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -473,96 +473,96 @@ F 3 "" H 5150 6300 50  0001 C CNN
 	1    5150 6300
 	0    -1   -1   0   
 $EndComp
-Text HLabel 3050 4700 0    50   UnSpc ~ 0
+Text HLabel 10200 3450 0    50   UnSpc ~ 0
 OUT_L
-Text HLabel 3050 4300 0    50   UnSpc ~ 0
+Text HLabel 10200 3050 0    50   UnSpc ~ 0
 OUT_L
 $Comp
 L power:GND #PWR?
 U 1 1 5F3ED77C
-P 3050 4500
+P 10200 3250
 AR Path="/5E26F6FE/5F3ED77C" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5F3ED77C" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 3050 4250 50  0001 C CNN
-F 1 "GND" V 3055 4372 50  0000 R CNN
-F 2 "" H 3050 4500 50  0001 C CNN
-F 3 "" H 3050 4500 50  0001 C CNN
-	1    3050 4500
+F 0 "#PWR0102" H 10200 3000 50  0001 C CNN
+F 1 "GND" V 10205 3122 50  0000 R CNN
+F 2 "" H 10200 3250 50  0001 C CNN
+F 3 "" H 10200 3250 50  0001 C CNN
+	1    10200 3250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3100 4700 3050 4700
+	10250 3450 10200 3450
 Wire Wire Line
-	3100 4600 3100 4700
+	10250 3350 10250 3450
 Wire Wire Line
-	3150 4600 3100 4600
+	10300 3350 10250 3350
 Wire Wire Line
-	3100 4300 3050 4300
+	10250 3050 10200 3050
 Wire Wire Line
-	3100 4400 3100 4300
+	10250 3150 10250 3050
 Wire Wire Line
-	3150 4400 3100 4400
+	10300 3150 10250 3150
 Wire Wire Line
-	3150 4500 3050 4500
+	10300 3250 10200 3250
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 5F33E58A
-P 3350 4500
+P 10500 3250
 AR Path="/5E607732/5F33E58A" Ref="J?"  Part="1" 
 AR Path="/5E2D8DA2/5F33E58A" Ref="J?"  Part="1" 
 AR Path="/6009D432/5F33E58A" Ref="J?"  Part="1" 
 AR Path="/5E4A803E/5F33E58A" Ref="J76"  Part="1" 
-F 0 "J76" H 3378 4480 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 3378 4435 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3350 4500 50  0001 C CNN
-F 3 "~" H 3350 4500 50  0001 C CNN
-	1    3350 4500
+F 0 "J76" H 10392 3443 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 10528 3185 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10500 3250 50  0001 C CNN
+F 3 "~" H 10500 3250 50  0001 C CNN
+	1    10500 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F1B4E90
-P 2050 4500
+P 1750 4050
 AR Path="/5E26F6FE/5F1B4E90" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5F1B4E90" Ref="#PWR099"  Part="1" 
-F 0 "#PWR099" H 2050 4250 50  0001 C CNN
-F 1 "GND" V 2055 4372 50  0000 R CNN
-F 2 "" H 2050 4500 50  0001 C CNN
-F 3 "" H 2050 4500 50  0001 C CNN
-	1    2050 4500
-	0    1    1    0   
+F 0 "#PWR099" H 1750 3800 50  0001 C CNN
+F 1 "GND" V 1755 3922 50  0000 R CNN
+F 2 "" H 1750 4050 50  0001 C CNN
+F 3 "" H 1750 4050 50  0001 C CNN
+	1    1750 4050
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2100 4700 2050 4700
+	1700 4250 1750 4250
 Wire Wire Line
-	2100 4600 2100 4700
+	1700 4150 1700 4250
 Wire Wire Line
-	2150 4600 2100 4600
+	1650 4150 1700 4150
 Wire Wire Line
-	2100 4300 2050 4300
+	1700 3850 1750 3850
 Wire Wire Line
-	2100 4400 2100 4300
+	1700 3950 1700 3850
 Wire Wire Line
-	2150 4400 2100 4400
+	1650 3950 1700 3950
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 5F1B4E80
-P 2350 4500
+P 1450 4050
 AR Path="/5E27B612/5F1B4E80" Ref="J?"  Part="1" 
 AR Path="/6009D432/5F1B4E80" Ref="J?"  Part="1" 
 AR Path="/5E4A803E/5F1B4E80" Ref="J75"  Part="1" 
-F 0 "J75" H 2322 4478 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 2322 4433 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2350 4500 50  0001 C CNN
-F 3 "~" H 2350 4500 50  0001 C CNN
-	1    2350 4500
-	-1   0    0    -1  
+F 0 "J75" H 1422 4028 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 1422 3983 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 4050 50  0001 C CNN
+F 3 "~" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 4500 2050 4500
-Text HLabel 2050 4300 0    50   UnSpc ~ 0
+	1650 4050 1750 4050
+Text HLabel 1750 3850 2    50   UnSpc ~ 0
 IN_L
-Text HLabel 2050 4700 0    50   UnSpc ~ 0
+Text HLabel 1750 4250 2    50   UnSpc ~ 0
 IN_R
 $Comp
 L Device:R R?
@@ -625,12 +625,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x04_Male J72
 U 1 1 5E6D1CB1
-P 2050 1450
-F 0 "J72" H 2158 1639 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2158 1640 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 1450 50  0001 C CNN
-F 3 "~" H 2050 1450 50  0001 C CNN
-	1    2050 1450
+P 2050 1350
+F 0 "J72" H 2158 1539 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2158 1540 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 1350 50  0001 C CNN
+F 3 "~" H 2050 1350 50  0001 C CNN
+	1    2050 1350
 	1    0    0    -1  
 $EndComp
 Text GLabel 3200 1250 0    50   UnSpc ~ 0
@@ -657,27 +657,27 @@ F5 "R_OUT" U L 2250 2550 50
 $EndSheet
 Wire Wire Line
 	3200 1450 3100 1450
-Text GLabel 4600 4200 1    50   UnSpc ~ 0
+Text GLabel 4650 3800 1    50   UnSpc ~ 0
 +15V
-Text GLabel 4600 4600 3    50   UnSpc ~ 0
+Text GLabel 4650 4200 3    50   UnSpc ~ 0
 -15V
 $Comp
 L power:GND #PWR?
 U 1 1 601F478F
-P 4400 4650
+P 4450 4250
 AR Path="/6009D432/601F478F" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/601F478F" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 4400 4400 50  0001 C CNN
-F 1 "GND" H 4405 4477 50  0000 C CNN
-F 2 "" H 4400 4650 50  0001 C CNN
-F 3 "" H 4400 4650 50  0001 C CNN
-	1    4400 4650
+F 0 "#PWR0106" H 4450 4000 50  0001 C CNN
+F 1 "GND" H 4455 4077 50  0000 C CNN
+F 2 "" H 4450 4250 50  0001 C CNN
+F 3 "" H 4450 4250 50  0001 C CNN
+	1    4450 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 4500 4600 4500
+	4350 4100 4650 4100
 Wire Wire Line
-	4600 4600 4600 4500
+	4650 4200 4650 4100
 Wire Wire Line
 	4500 6800 4000 6800
 Connection ~ 4000 6800
@@ -688,22 +688,22 @@ Wire Wire Line
 Connection ~ 4000 5800
 Wire Wire Line
 	4000 5800 3450 5800
-Text HLabel 2350 1350 2    50   UnSpc ~ 0
+Text HLabel 2350 1250 2    50   UnSpc ~ 0
 IN_L
-Text HLabel 2350 1550 2    50   UnSpc ~ 0
+Text HLabel 2350 1450 2    50   UnSpc ~ 0
 IN_R
-Text Label 2350 1450 0    50   ~ 0
+Text Label 2350 1350 0    50   ~ 0
 xfeed_out_l
-Text Label 2350 1650 0    50   ~ 0
+Text Label 2350 1550 0    50   ~ 0
 xfeed_out_r
+Wire Wire Line
+	2250 1250 2350 1250
 Wire Wire Line
 	2250 1350 2350 1350
 Wire Wire Line
 	2250 1450 2350 1450
 Wire Wire Line
 	2250 1550 2350 1550
-Wire Wire Line
-	2250 1650 2350 1650
 Wire Wire Line
 	2050 2250 2250 2250
 Wire Wire Line
@@ -713,22 +713,22 @@ Wire Wire Line
 Wire Wire Line
 	2050 2550 2250 2550
 Wire Wire Line
-	4300 4300 4600 4300
+	4350 3900 4650 3900
 Wire Wire Line
-	4300 4400 4400 4400
+	4350 4000 4450 4000
 Wire Wire Line
-	4400 4650 4400 4400
-Connection ~ 4400 4400
-Connection ~ 4600 4500
+	4450 4250 4450 4000
+Connection ~ 4450 4000
+Connection ~ 4650 4100
 Wire Wire Line
-	4600 4500 4700 4500
+	4650 4100 4750 4100
 Wire Wire Line
-	4400 4400 4700 4400
+	4450 4000 4750 4000
 Wire Wire Line
-	4600 4200 4600 4300
-Connection ~ 4600 4300
+	4650 3800 4650 3900
+Connection ~ 4650 3900
 Wire Wire Line
-	4600 4300 4700 4300
+	4650 3900 4750 3900
 Wire Wire Line
 	5000 6300 5150 6300
 $EndSCHEMATC
