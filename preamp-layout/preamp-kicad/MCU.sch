@@ -28,17 +28,7 @@ F 3 "~" H 4350 5650 50  0001 C CNN
 	1    4350 5650
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3500 3200 0    50   Input ~ 0
-SEL_CLK
-Text HLabel 3500 3400 0    50   Input ~ 0
-SEL_SW
-Text HLabel 3500 3500 0    50   Input ~ 0
-VOL_CLK
-Text HLabel 3500 3600 0    50   Input ~ 0
-VOL_DT
-Text HLabel 3500 3800 0    50   Input ~ 0
-VOL_SW
-Text HLabel 7150 5200 0    50   Output ~ 0
+Text HLabel 7950 5200 0    50   Output ~ 0
 LED_DT
 Text GLabel 3500 4000 0    50   UnSpc ~ 0
 +5V
@@ -55,41 +45,19 @@ F 3 "" H 4050 4300 50  0001 C CNN
 	1    4050 3300
 	1    0    0    -1  
 $EndComp
-Text HLabel 3500 3300 0    50   Input ~ 0
-SEL_DT
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 6496C114
-P 7450 5200
+P 8250 5200
 AR Path="/5E2D8DA2/6496C114" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496C114" Ref="J33"  Part="1" 
-F 0 "J33" H 7422 5178 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 7422 5133 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7450 5200 50  0001 C CNN
-F 3 "~" H 7450 5200 50  0001 C CNN
-	1    7450 5200
+F 0 "J33" H 8222 5178 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8222 5133 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8250 5200 50  0001 C CNN
+F 3 "~" H 8250 5200 50  0001 C CNN
+	1    8250 5200
 	-1   0    0    -1  
 $EndComp
-Text HLabel 7150 2400 0    50   Input ~ 0
-SEL_CLK
-Text HLabel 7150 2600 0    50   Input ~ 0
-SEL_SW
-Text HLabel 7150 2500 0    50   Input ~ 0
-SEL_DT
-Text HLabel 7150 3550 0    50   Input ~ 0
-VOL_CLK
-Text HLabel 7150 3650 0    50   Input ~ 0
-VOL_DT
-Text HLabel 7150 3750 0    50   Input ~ 0
-VOL_SW
-Text HLabel 9050 3250 0    50   Output ~ 0
-~CS_FP
-Text HLabel 9050 2400 0    50   Output ~ 0
-~CS_VOL_HP
-Text HLabel 9050 2500 0    50   Output ~ 0
-~CS_VOL_MAIN
-Text HLabel 9050 4000 0    50   Output ~ 0
-~CS_IO
 $Comp
 L power:GND #PWR?
 U 1 1 64EF3AEF
@@ -117,9 +85,6 @@ F 3 "" H 4050 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3500 2600
-NoConn ~ 3500 2800
-NoConn ~ 3500 3000
-NoConn ~ 3500 3100
 NoConn ~ 3500 3700
 $Comp
 L Connector:Conn_01x02_Male J34
@@ -133,21 +98,21 @@ F 3 "~" H 3750 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 5300 7150 5400
+	7950 5300 7950 5400
 $Comp
 L power:GND #PWR?
 U 1 1 5EA8A311
-P 7150 5400
+P 7950 5400
 AR Path="/5E26F6FE/5EA8A311" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/5EA8A311" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 7150 5150 50  0001 C CNN
-F 1 "GND" H 7155 5227 50  0000 C CNN
-F 2 "" H 7150 5400 50  0001 C CNN
-F 3 "" H 7150 5400 50  0001 C CNN
-	1    7150 5400
+F 0 "#PWR032" H 7950 5150 50  0001 C CNN
+F 1 "GND" H 7955 5227 50  0000 C CNN
+F 2 "" H 7950 5400 50  0001 C CNN
+F 3 "" H 7950 5400 50  0001 C CNN
+	1    7950 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 7150 5100 0    50   UnSpc ~ 0
+Text GLabel 7950 5100 0    50   UnSpc ~ 0
 +5V
 Text HLabel 3500 2900 0    50   Output ~ 0
 LED_DT
@@ -155,25 +120,8 @@ NoConn ~ 4600 4000
 NoConn ~ 4600 3800
 NoConn ~ 4600 3700
 NoConn ~ 4600 3100
-NoConn ~ 4600 3000
 NoConn ~ 4600 2900
 NoConn ~ 4600 2800
-Text HLabel 4600 3400 2    50   Output ~ 0
-~CS_VOL_MAIN
-Text HLabel 4600 3500 2    50   Output ~ 0
-~CS_VOL_HP
-Text HLabel 4600 3600 2    50   Output ~ 0
-~CS_FP
-Text HLabel 4600 3300 2    50   Output ~ 0
-~CS_IO
-Text HLabel 4600 3200 2    50   Output ~ 0
-CLK
-Text HLabel 4600 2600 2    50   Output ~ 0
-MOSI
-Text HLabel 4600 2700 2    50   Input ~ 0
-MISO
-Wire Wire Line
-	4500 2700 4600 2700
 Wire Wire Line
 	4500 2600 4600 2600
 Wire Wire Line
@@ -182,8 +130,6 @@ Wire Wire Line
 	4500 2800 4600 2800
 Wire Wire Line
 	4500 3100 4600 3100
-Wire Wire Line
-	4500 3000 4600 3000
 Wire Wire Line
 	4500 3300 4600 3300
 Wire Wire Line
@@ -208,10 +154,6 @@ Wire Wire Line
 	3500 2900 3600 2900
 Wire Wire Line
 	3500 2800 3600 2800
-Wire Wire Line
-	3500 3100 3600 3100
-Wire Wire Line
-	3500 3000 3600 3000
 Wire Wire Line
 	3500 3300 3600 3300
 Wire Wire Line
@@ -247,165 +189,12 @@ F 3 "" H 4750 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 3900 4750 3900
-Text HLabel 9050 4200 0    50   Output ~ 0
-MOSI
-Text HLabel 9050 4100 0    50   Output ~ 0
-CLK
 Wire Wire Line
-	9050 4000 9150 4000
+	7950 5100 8050 5100
 Wire Wire Line
-	9150 4100 9050 4100
+	7950 5200 8050 5200
 Wire Wire Line
-	9050 4200 9150 4200
-Text HLabel 9050 3450 0    50   Output ~ 0
-MOSI
-Text HLabel 9050 3350 0    50   Output ~ 0
-CLK
-Wire Wire Line
-	9050 3550 9150 3550
-Wire Wire Line
-	9150 3350 9050 3350
-Wire Wire Line
-	9050 3450 9150 3450
-Text HLabel 9050 2700 0    50   Output ~ 0
-MOSI
-Text HLabel 9050 2600 0    50   Output ~ 0
-CLK
-Wire Wire Line
-	9050 2500 9150 2500
-Wire Wire Line
-	9150 2600 9050 2600
-Wire Wire Line
-	9050 2700 9150 2700
-Wire Wire Line
-	9050 2400 9150 2400
-$Comp
-L Connector:Conn_01x04_Female J32
-U 1 1 5E861833
-P 9350 3350
-F 0 "J32" H 9378 3280 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 9378 3235 50  0001 L CNN
-F 2 "" H 9350 3350 50  0001 C CNN
-F 3 "~" H 9350 3350 50  0001 C CNN
-	1    9350 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Female J27
-U 1 1 5E865D15
-P 9350 4100
-F 0 "J27" H 9378 4030 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 9378 3985 50  0001 L CNN
-F 2 "" H 9350 4100 50  0001 C CNN
-F 3 "~" H 9350 4100 50  0001 C CNN
-	1    9350 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 4300 9150 4300
-Text HLabel 9050 4300 0    50   Input ~ 0
-MISO
-Wire Wire Line
-	9050 3250 9150 3250
-Text HLabel 9050 3550 0    50   Input ~ 0
-MISO
-$Comp
-L Connector:Conn_01x05_Female J29
-U 1 1 5E87D0EC
-P 9350 2600
-F 0 "J29" H 9378 2580 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 9378 2535 50  0001 L CNN
-F 2 "" H 9350 2600 50  0001 C CNN
-F 3 "~" H 9350 2600 50  0001 C CNN
-	1    9350 2600
-	1    0    0    -1  
-$EndComp
-Text HLabel 9050 2800 0    50   Input ~ 0
-MISO
-Wire Wire Line
-	9050 2800 9150 2800
-Wire Wire Line
-	7150 5100 7250 5100
-Wire Wire Line
-	7150 5200 7250 5200
-Wire Wire Line
-	7150 5300 7250 5300
-Wire Wire Line
-	7150 2400 7250 2400
-Wire Wire Line
-	7150 2500 7250 2500
-Wire Wire Line
-	7150 2600 7250 2600
-Wire Wire Line
-	7150 3550 7250 3550
-Wire Wire Line
-	7150 3650 7250 3650
-Wire Wire Line
-	7150 3750 7250 3750
-$Comp
-L Connector:Conn_01x05_Female J30
-U 1 1 5E8A3616
-P 7450 2600
-F 0 "J30" H 7478 2580 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 7478 2535 50  0001 L CNN
-F 2 "" H 7450 2600 50  0001 C CNN
-F 3 "~" H 7450 2600 50  0001 C CNN
-	1    7450 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Female J31
-U 1 1 5E8A5187
-P 7450 3750
-F 0 "J31" H 7478 3730 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 7478 3685 50  0001 L CNN
-F 2 "" H 7450 3750 50  0001 C CNN
-F 3 "~" H 7450 3750 50  0001 C CNN
-	1    7450 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 2700 7250 2700
-Wire Wire Line
-	7150 2800 7250 2800
-Wire Wire Line
-	7150 3850 7250 3850
-$Comp
-L power:GND #PWR?
-U 1 1 5E8B256E
-P 7150 4050
-AR Path="/5E26F6FE/5E8B256E" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/5E8B256E" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 7150 3800 50  0001 C CNN
-F 1 "GND" H 7155 3877 50  0000 C CNN
-F 2 "" H 7150 4050 50  0001 C CNN
-F 3 "" H 7150 4050 50  0001 C CNN
-	1    7150 4050
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7150 2700 0    50   UnSpc ~ 0
-+5V
-Text GLabel 7150 3850 0    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	7150 3950 7250 3950
-Wire Wire Line
-	7150 3950 7150 4050
-$Comp
-L power:GND #PWR?
-U 1 1 5E8BC186
-P 7150 2900
-AR Path="/5E26F6FE/5E8BC186" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/5E8BC186" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 7150 2650 50  0001 C CNN
-F 1 "GND" H 7155 2727 50  0000 C CNN
-F 2 "" H 7150 2900 50  0001 C CNN
-F 3 "" H 7150 2900 50  0001 C CNN
-	1    7150 2900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 2800 7150 2900
+	7950 5300 8050 5300
 Text HLabel 3500 2700 0    50   Input ~ 0
 SW_INT
 Wire Wire Line
@@ -420,4 +209,321 @@ Wire Wire Line
 Connection ~ 4050 5650
 Wire Wire Line
 	4050 5650 4150 5650
+Text HLabel 7900 2250 0    50   BiDi ~ 0
+IO_SDA
+Text HLabel 7900 2350 0    50   Output ~ 0
+IO_SCL
+$Comp
+L Connector:Conn_01x02_Female J27
+U 1 1 620B808D
+P 8450 2250
+F 0 "J27" H 8478 2180 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 8478 2135 50  0001 L CNN
+F 2 "" H 8450 2250 50  0001 C CNN
+F 3 "~" H 8450 2250 50  0001 C CNN
+	1    8450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J29
+U 1 1 620C5260
+P 8450 3200
+F 0 "J29" H 8478 3130 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 8478 3085 50  0001 L CNN
+F 2 "" H 8450 3200 50  0001 C CNN
+F 3 "~" H 8450 3200 50  0001 C CNN
+	1    8450 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 7900 3200 0    50   BiDi ~ 0
+VOL_SDA
+Text HLabel 7900 3300 0    50   Output ~ 0
+VOL_SCL
+$Comp
+L Interface_Expansion:TCA9548APWR U10
+U 1 1 620E565D
+P 5800 3400
+F 0 "U10" H 6150 4400 50  0000 C CNN
+F 1 "TCA9548APWR" H 6150 4300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 5800 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 5850 3650 50  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2700 5400 2700
+Wire Wire Line
+	5000 3000 5000 2800
+Wire Wire Line
+	5000 2800 5400 2800
+Wire Wire Line
+	4500 3000 5000 3000
+$Comp
+L power:GND #PWR?
+U 1 1 620F03A9
+P 5800 4500
+AR Path="/5E26F6FE/620F03A9" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/620F03A9" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 5800 4250 50  0001 C CNN
+F 1 "GND" H 5805 4327 50  0000 C CNN
+F 2 "" H 5800 4500 50  0001 C CNN
+F 3 "" H 5800 4500 50  0001 C CNN
+	1    5800 4500
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5800 2450 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	5800 2450 5800 2500
+Text HLabel 6250 2800 2    50   BiDi ~ 0
+IO_SDA
+Text HLabel 6250 2700 2    50   Output ~ 0
+IO_SCL
+Text HLabel 6250 3000 2    50   BiDi ~ 0
+VOL_SDA
+Text HLabel 6250 2900 2    50   Output ~ 0
+VOL_SCL
+Wire Wire Line
+	6200 2700 6250 2700
+Wire Wire Line
+	6200 2800 6250 2800
+Wire Wire Line
+	6200 2900 6250 2900
+Wire Wire Line
+	6200 3000 6250 3000
+Text HLabel 6250 3200 2    50   BiDi ~ 0
+FP_SDA
+Text HLabel 6250 3100 2    50   Output ~ 0
+FP_SCL
+Wire Wire Line
+	6200 3100 6250 3100
+Wire Wire Line
+	6200 3200 6250 3200
+Text HLabel 7900 4150 0    50   BiDi ~ 0
+FP_SDA
+Text HLabel 7900 4250 0    50   Output ~ 0
+FP_SCL
+NoConn ~ 4600 2600
+NoConn ~ 4600 3200
+NoConn ~ 4600 3300
+NoConn ~ 4600 3400
+NoConn ~ 4600 3500
+NoConn ~ 4600 3600
+Wire Wire Line
+	5350 3200 5400 3200
+NoConn ~ 6200 3500
+NoConn ~ 6200 3600
+NoConn ~ 6200 3700
+NoConn ~ 6200 3800
+NoConn ~ 6200 3900
+NoConn ~ 6200 4000
+NoConn ~ 6200 4100
+NoConn ~ 6200 4200
+Wire Wire Line
+	5800 4400 5800 4450
+Wire Wire Line
+	5400 3700 5300 3700
+Wire Wire Line
+	5300 3700 5300 3800
+Wire Wire Line
+	5300 4450 5800 4450
+Connection ~ 5800 4450
+Wire Wire Line
+	5800 4450 5800 4500
+Wire Wire Line
+	5400 3800 5300 3800
+Connection ~ 5300 3800
+Wire Wire Line
+	5300 3800 5300 3900
+Wire Wire Line
+	5400 3900 5300 3900
+Connection ~ 5300 3900
+Wire Wire Line
+	5300 3900 5300 4450
+Text Label 3100 3000 2    50   ~ 0
+~I2C_RST
+Wire Wire Line
+	3100 3000 3600 3000
+Text Label 5350 3200 2    50   ~ 0
+~I2C_RST
+$Comp
+L Device:R R129
+U 1 1 6215B919
+P 8150 2000
+F 0 "R129" H 8220 2046 50  0000 L CNN
+F 1 "1.5k" H 8220 1955 50  0000 L CNN
+F 2 "" V 8080 2000 50  0001 C CNN
+F 3 "~" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R126
+U 1 1 6215C950
+P 8000 2000
+F 0 "R126" H 7930 2046 50  0000 R CNN
+F 1 "1.5k" H 7930 1955 50  0000 R CNN
+F 2 "" V 7930 2000 50  0001 C CNN
+F 3 "~" H 8000 2000 50  0001 C CNN
+	1    8000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2250 8000 2250
+Wire Wire Line
+	7900 2350 8150 2350
+Wire Wire Line
+	8000 2150 8000 2250
+Connection ~ 8000 2250
+Wire Wire Line
+	8000 2250 8250 2250
+Wire Wire Line
+	8150 2150 8150 2350
+Connection ~ 8150 2350
+Wire Wire Line
+	8150 2350 8250 2350
+Text GLabel 8000 1750 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8000 1750 8000 1800
+Wire Wire Line
+	8000 1800 8150 1800
+Wire Wire Line
+	8150 1800 8150 1850
+Connection ~ 8000 1800
+Wire Wire Line
+	8000 1800 8000 1850
+Wire Wire Line
+	7900 3200 8000 3200
+Wire Wire Line
+	7900 3300 8150 3300
+Wire Wire Line
+	7900 4150 8000 4150
+Wire Wire Line
+	7900 4250 8150 4250
+$Comp
+L Device:R R130
+U 1 1 62192971
+P 8150 2950
+F 0 "R130" H 8220 2996 50  0000 L CNN
+F 1 "1.5k" H 8220 2905 50  0000 L CNN
+F 2 "" V 8080 2950 50  0001 C CNN
+F 3 "~" H 8150 2950 50  0001 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R127
+U 1 1 6219297B
+P 8000 2950
+F 0 "R127" H 7930 2996 50  0000 R CNN
+F 1 "1.5k" H 7930 2905 50  0000 R CNN
+F 2 "" V 7930 2950 50  0001 C CNN
+F 3 "~" H 8000 2950 50  0001 C CNN
+	1    8000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3100 8000 3200
+Wire Wire Line
+	8150 3100 8150 3300
+Text GLabel 8000 2700 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8000 2700 8000 2750
+Wire Wire Line
+	8000 2750 8150 2750
+Wire Wire Line
+	8150 2750 8150 2800
+Connection ~ 8000 2750
+Wire Wire Line
+	8000 2750 8000 2800
+Connection ~ 8000 3200
+Wire Wire Line
+	8000 3200 8250 3200
+Connection ~ 8150 3300
+Wire Wire Line
+	8150 3300 8250 3300
+$Comp
+L Device:R R131
+U 1 1 621965D3
+P 8150 3900
+F 0 "R131" H 8220 3946 50  0000 L CNN
+F 1 "1.5k" H 8220 3855 50  0000 L CNN
+F 2 "" V 8080 3900 50  0001 C CNN
+F 3 "~" H 8150 3900 50  0001 C CNN
+	1    8150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R128
+U 1 1 621965DD
+P 8000 3900
+F 0 "R128" H 7930 3946 50  0000 R CNN
+F 1 "1.5k" H 7930 3855 50  0000 R CNN
+F 2 "" V 7930 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4050 8000 4150
+Wire Wire Line
+	8150 4050 8150 4250
+Text GLabel 8000 3650 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8000 3650 8000 3700
+Wire Wire Line
+	8000 3700 8150 3700
+Wire Wire Line
+	8150 3700 8150 3750
+Connection ~ 8000 3700
+Wire Wire Line
+	8000 3700 8000 3750
+Connection ~ 8000 4150
+Wire Wire Line
+	8000 4150 8250 4150
+Connection ~ 8150 4250
+Wire Wire Line
+	8150 4250 8250 4250
+NoConn ~ 6200 3400
+NoConn ~ 6200 3300
+Text HLabel 3500 2800 0    50   Input ~ 0
+ENC_INT
+NoConn ~ 3500 3200
+NoConn ~ 3500 3500
+NoConn ~ 3500 3600
+NoConn ~ 3500 3800
+$Comp
+L Connector:Conn_01x05_Female J32
+U 1 1 62441251
+P 8450 4350
+F 0 "J32" H 8478 4330 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 8478 4285 50  0001 L CNN
+F 2 "" H 8450 4350 50  0001 C CNN
+F 3 "~" H 8450 4350 50  0001 C CNN
+	1    8450 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 8150 4350 0    50   Input ~ 0
+SW_INT
+Text HLabel 8150 4450 0    50   Input ~ 0
+ENC_INT
+Wire Wire Line
+	8150 4350 8250 4350
+Wire Wire Line
+	8150 4450 8250 4450
+Text HLabel 3500 3100 0    50   Output ~ 0
+~FP_RST
+Wire Wire Line
+	3500 3100 3600 3100
+Text HLabel 8150 4550 0    50   Output ~ 0
+~FP_RST
+Wire Wire Line
+	8150 4550 8250 4550
+Text HLabel 3500 3300 0    50   Output ~ 0
+STBY_SET
+Text HLabel 3500 3400 0    50   Output ~ 0
+STBY_RST
 $EndSCHEMATC

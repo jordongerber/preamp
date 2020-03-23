@@ -129,12 +129,6 @@ Wire Wire Line
 	950  1300 950  1400
 Wire Wire Line
 	950  1700 950  1800
-Text HLabel 2850 2000 0    50   Input ~ 0
-CLK
-Text HLabel 2850 1900 0    50   Input ~ 0
-~CS
-Text HLabel 2850 2100 0    50   Input ~ 0
-MOSI
 Text Label 7000 1900 0    50   ~ 0
 IN_3_R+
 Text Label 7000 1800 0    50   ~ 0
@@ -389,19 +383,6 @@ Wire Wire Line
 Connection ~ 5100 3400
 Wire Wire Line
 	5100 3400 5250 3400
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 6152C395
-P 1800 1050
-AR Path="/5E607732/6152C395" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/6152C395" Ref="J50"  Part="1" 
-F 0 "J50" H 1692 1243 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 1828 985 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1800 1050 50  0001 C CNN
-F 3 "~" H 1800 1050 50  0001 C CNN
-	1    1800 1050
-	-1   0    0    -1  
-$EndComp
 Text HLabel 3600 4750 0    50   UnSpc ~ 0
 A_IN_1_L
 $Comp
@@ -1313,7 +1294,6 @@ NoConn ~ 6100 5650
 NoConn ~ 6100 6000
 NoConn ~ 2950 2500
 NoConn ~ 2950 2600
-NoConn ~ 2950 2200
 NoConn ~ 4350 2600
 NoConn ~ 4350 3500
 $Comp
@@ -1362,19 +1342,6 @@ F 3 "~" H 1300 5250 50  0001 C CNN
 	1    1300 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_Expansion:MCP23S17_SP U?
-U 1 1 5E01AA66
-P 3650 2700
-AR Path="/5E01AA66" Ref="U?"  Part="1" 
-AR Path="/5E2D8DA2/5E01AA66" Ref="U6"  Part="1" 
-F 0 "U6" H 3950 3800 50  0000 C CNN
-F 1 "MCP23S17_SP" H 3950 3700 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3850 1700 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3850 1600 50  0001 L CNN
-	1    3650 2700
-	1    0    0    -1  
-$EndComp
 Text GLabel 1850 1650 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
@@ -1405,23 +1372,9 @@ Connection ~ 1850 1750
 Wire Wire Line
 	1850 1750 1750 1750
 Wire Wire Line
-	2000 950  2100 950 
-Wire Wire Line
-	2000 1050 2100 1050
-Wire Wire Line
-	2000 1150 2100 1150
-Wire Wire Line
 	2950 1900 2850 1900
 Wire Wire Line
 	2950 2000 2850 2000
-Wire Wire Line
-	2950 2100 2850 2100
-Text HLabel 2100 1050 2    50   Input ~ 0
-CLK
-Text HLabel 2100 950  2    50   Input ~ 0
-~CS
-Text HLabel 2100 1150 2    50   Input ~ 0
-MOSI
 Text HLabel 1600 4150 2    50   UnSpc ~ 0
 A_IN_1_L
 Text HLabel 1600 4350 2    50   UnSpc ~ 0
@@ -1637,4 +1590,38 @@ F 3 "~" H 8750 1300 50  0001 C CNN
 	1    8750 1300
 	0    1    1    0   
 $EndComp
+$Comp
+L Interface_Expansion:MCP23017_SO U6
+U 1 1 61F87816
+P 3650 2700
+F 0 "U6" H 3950 3800 50  0000 C CNN
+F 1 "MCP23017_SO" H 3950 3700 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3850 1700 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3850 1600 50  0001 L CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J50
+U 1 1 61FF179F
+P 2650 1100
+F 0 "J50" H 2542 1193 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 2542 1194 50  0001 C CNN
+F 2 "" H 2650 1100 50  0001 C CNN
+F 3 "~" H 2650 1100 50  0001 C CNN
+	1    2650 1100
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2900 1100 2    50   Input ~ 0
+IO_SDA
+Text HLabel 2900 1200 2    50   Input ~ 0
+IO_SCL
+Wire Wire Line
+	2850 1100 2900 1100
+Wire Wire Line
+	2850 1200 2900 1200
+Text HLabel 2850 1900 0    50   Input ~ 0
+IO_SDA
+Text HLabel 2850 2000 0    50   Input ~ 0
+IO_SCL
 $EndSCHEMATC
