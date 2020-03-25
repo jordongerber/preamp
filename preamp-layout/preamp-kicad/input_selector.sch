@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 13
+Sheet 7 13
 Title "IO Relay Select Board"
 Date "2020-02-25"
 Rev "A00"
@@ -95,38 +95,6 @@ Wire Wire Line
 	2900 3500 2900 3850
 Text GLabel 2850 2800 0    50   UnSpc ~ 0
 +5V
-Text GLabel 950  900  1    50   UnSpc ~ 0
-+5V
-$Comp
-L Device:R R20
-U 1 1 5FDEBED2
-P 950 1150
-AR Path="/5E2D8DA2/5FDEBED2" Ref="R20"  Part="1" 
-AR Path="/5FDEBED2" Ref="R?"  Part="1" 
-F 0 "R20" H 1020 1196 50  0000 L CNN
-F 1 "330R" H 1020 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 880 1150 50  0001 C CNN
-F 3 "~" H 950 1150 50  0001 C CNN
-	1    950  1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D13
-U 1 1 5FE4B18E
-P 950 1550
-F 0 "D13" V 989 1432 50  0000 R CNN
-F 1 "RED" V 898 1432 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 950 1550 50  0001 C CNN
-F 3 "~" H 950 1550 50  0001 C CNN
-	1    950  1550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	950  900  950  1000
-Wire Wire Line
-	950  1300 950  1400
-Wire Wire Line
-	950  1700 950  1800
 Text Label 7000 1900 0    50   ~ 0
 IN_3_R+
 Text Label 7000 1800 0    50   ~ 0
@@ -233,12 +201,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J61
 U 1 1 60B85B38
-P 2150 1750
-F 0 "J61" H 2122 1678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 2122 1633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2150 1750 50  0001 C CNN
-F 3 "~" H 2150 1750 50  0001 C CNN
-	1    2150 1750
+P 3150 1100
+F 0 "J61" H 3122 1028 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3122 983 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3150 1100 50  0001 C CNN
+F 3 "~" H 3150 1100 50  0001 C CNN
+	1    3150 1100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1102,19 +1070,6 @@ F 3 "" H 6350 4000 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 64C5F5F4
-P 950 1800
-AR Path="/5E26F6FE/64C5F5F4" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D8DA2/64C5F5F4" Ref="#PWR061"  Part="1" 
-F 0 "#PWR061" H 950 1550 50  0001 C CNN
-F 1 "GND" H 955 1627 50  0000 C CNN
-F 2 "" H 950 1800 50  0001 C CNN
-F 3 "" H 950 1800 50  0001 C CNN
-	1    950  1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 64CCCF8D
 P 1550 2700
 AR Path="/5E26F6FE/64CCCF8D" Ref="#PWR?"  Part="1" 
@@ -1321,12 +1276,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J60
 U 1 1 5E5DB820
-P 1550 1750
-F 0 "J60" H 1522 1678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 1522 1633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1550 1750 50  0001 C CNN
-F 3 "~" H 1550 1750 50  0001 C CNN
-	1    1550 1750
+P 2550 1100
+F 0 "J60" H 2522 1028 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2522 983 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2550 1100 50  0001 C CNN
+F 3 "~" H 2550 1100 50  0001 C CNN
+	1    2550 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1340,35 +1295,35 @@ F 3 "~" H 1300 5250 50  0001 C CNN
 	1    1300 5250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1850 1650 1    50   UnSpc ~ 0
+Text GLabel 2850 1000 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	1950 1850 1850 1850
+	2950 1200 2850 1200
 Wire Wire Line
-	1850 1850 1850 1950
+	2850 1200 2850 1300
 Wire Wire Line
-	1950 1750 1850 1750
+	2950 1100 2850 1100
 $Comp
 L power:GND #PWR?
 U 1 1 60248FFE
-P 1850 1950
+P 2850 1300
 AR Path="/6009D432/60248FFE" Ref="#PWR?"  Part="1" 
 AR Path="/5E2D8DA2/60248FFE" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 1850 1700 50  0001 C CNN
-F 1 "GND" H 1855 1777 50  0000 C CNN
-F 2 "" H 1850 1950 50  0001 C CNN
-F 3 "" H 1850 1950 50  0001 C CNN
-	1    1850 1950
+F 0 "#PWR0101" H 2850 1050 50  0001 C CNN
+F 1 "GND" H 2855 1127 50  0000 C CNN
+F 2 "" H 2850 1300 50  0001 C CNN
+F 3 "" H 2850 1300 50  0001 C CNN
+	1    2850 1300
 	1    0    0    -1  
 $EndComp
-Connection ~ 1850 1850
+Connection ~ 2850 1200
 Wire Wire Line
-	1850 1850 1750 1850
+	2850 1200 2750 1200
 Wire Wire Line
-	1850 1650 1850 1750
-Connection ~ 1850 1750
+	2850 1000 2850 1100
+Connection ~ 2850 1100
 Wire Wire Line
-	1850 1750 1750 1750
+	2850 1100 2750 1100
 Wire Wire Line
 	2950 1900 2850 1900
 Wire Wire Line
@@ -1602,26 +1557,150 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Female J50
 U 1 1 61FF179F
-P 2650 1100
-F 0 "J50" H 2542 1193 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 2542 1194 50  0001 C CNN
-F 2 "" H 2650 1100 50  0001 C CNN
-F 3 "~" H 2650 1100 50  0001 C CNN
-	1    2650 1100
+P 3600 900
+F 0 "J50" H 3492 993 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 3492 994 50  0001 C CNN
+F 2 "" H 3600 900 50  0001 C CNN
+F 3 "~" H 3600 900 50  0001 C CNN
+	1    3600 900 
 	-1   0    0    -1  
 $EndComp
-Text HLabel 2900 1100 2    50   Input ~ 0
+Text HLabel 3850 900  2    50   Input ~ 0
 IO_SDA
-Text HLabel 2900 1200 2    50   Input ~ 0
+Text HLabel 3850 1000 2    50   Input ~ 0
 IO_SCL
 Wire Wire Line
-	2850 1100 2900 1100
+	3800 900  3850 900 
 Wire Wire Line
-	2850 1200 2900 1200
+	3800 1000 3850 1000
 Text HLabel 2850 1900 0    50   Input ~ 0
 IO_SDA
 Text HLabel 2850 2000 0    50   Input ~ 0
 IO_SCL
 Wire Wire Line
 	2850 2800 2950 2800
+$Comp
+L Device:C C?
+U 1 1 5E93020B
+P 1350 1450
+AR Path="/5E4A803E/5E93020B" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E93020B" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E93020B" Ref="C?"  Part="1" 
+AR Path="/5E2D8DA2/5E93020B" Ref="C78"  Part="1" 
+F 0 "C78" H 1300 1650 50  0000 R CNN
+F 1 "0.1uF" H 1300 1550 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1388 1300 50  0001 C CNN
+F 3 "~" H 1350 1450 50  0001 C CNN
+	1    1350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1600 1350 1850
+Wire Wire Line
+	1350 1300 1350 1050
+Wire Wire Line
+	1700 1850 1950 1850
+Wire Wire Line
+	1700 1050 1950 1050
+Wire Wire Line
+	1700 1600 1700 1850
+Wire Wire Line
+	1700 1300 1700 1050
+$Comp
+L power:GND #PWR?
+U 1 1 64C5F5F4
+P 1950 1900
+AR Path="/5E26F6FE/64C5F5F4" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C5F5F4" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 1950 1650 50  0001 C CNN
+F 1 "GND" H 1955 1727 50  0000 C CNN
+F 2 "" H 1950 1900 50  0001 C CNN
+F 3 "" H 1950 1900 50  0001 C CNN
+	1    1950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1800 1950 1850
+Wire Wire Line
+	1950 1400 1950 1500
+Wire Wire Line
+	1950 1000 1950 1050
+$Comp
+L Device:LED D13
+U 1 1 5FE4B18E
+P 1950 1650
+F 0 "D13" V 1989 1532 50  0000 R CNN
+F 1 "RED" V 1898 1532 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1950 1650 50  0001 C CNN
+F 3 "~" H 1950 1650 50  0001 C CNN
+	1    1950 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5FDEBED2
+P 1950 1250
+AR Path="/5E2D8DA2/5FDEBED2" Ref="R20"  Part="1" 
+AR Path="/5FDEBED2" Ref="R?"  Part="1" 
+F 0 "R20" H 2020 1296 50  0000 L CNN
+F 1 "330R" H 2020 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1880 1250 50  0001 C CNN
+F 3 "~" H 1950 1250 50  0001 C CNN
+	1    1950 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 1000 1    50   UnSpc ~ 0
++5V
+Connection ~ 1950 1050
+Wire Wire Line
+	1950 1050 1950 1100
+Connection ~ 1950 1850
+Wire Wire Line
+	1950 1850 1950 1900
+Wire Wire Line
+	1000 1300 1000 1050
+Wire Wire Line
+	1000 1600 1000 1850
+$Comp
+L Device:C C?
+U 1 1 5E945AA6
+P 1000 1450
+AR Path="/5E4A803E/5E945AA6" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E945AA6" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E945AA6" Ref="C?"  Part="1" 
+AR Path="/5E2D8DA2/5E945AA6" Ref="C77"  Part="1" 
+F 0 "C77" H 950 1650 50  0000 R CNN
+F 1 "0.1uF" H 950 1550 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1038 1300 50  0001 C CNN
+F 3 "~" H 1000 1450 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E91A99B
+P 1700 1450
+AR Path="/5E4A803E/5E91A99B" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E91A99B" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E91A99B" Ref="C?"  Part="1" 
+AR Path="/5E2D8DA2/5E91A99B" Ref="C79"  Part="1" 
+F 0 "C79" H 1650 1650 50  0000 R CNN
+F 1 "0.1uF" H 1650 1550 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1738 1300 50  0001 C CNN
+F 3 "~" H 1700 1450 50  0001 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1050 1350 1050
+Connection ~ 1350 1050
+Wire Wire Line
+	1000 1850 1350 1850
+Connection ~ 1350 1850
+Wire Wire Line
+	1350 1850 1700 1850
+Connection ~ 1700 1850
+Wire Wire Line
+	1350 1050 1700 1050
+Connection ~ 1700 1050
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 13
+Sheet 13 13
 Title "Front Panel"
 Date "2020-02-25"
 Rev "A00"
@@ -710,11 +710,11 @@ F 3 "" H 10150 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 5050 10150 5150
+	10150 5050 10150 5100
 Wire Wire Line
 	10150 4650 10150 4750
 Wire Wire Line
-	10150 4250 10150 4350
+	10150 4250 10150 4300
 $Comp
 L Device:LED D?
 U 1 1 5ECB89C7
@@ -733,16 +733,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E8B15E1
-P 10400 3250
+P 9700 2700
 AR Path="/5E5EF2D4/5E8B15E1" Ref="J?"  Part="1" 
 AR Path="/6009D432/5E8B15E1" Ref="J?"  Part="1" 
 AR Path="/5E5ECAAE/5E8B15E1" Ref="J26"  Part="1" 
-F 0 "J26" H 10372 3178 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 10372 3133 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10400 3250 50  0001 C CNN
-F 3 "~" H 10400 3250 50  0001 C CNN
-	1    10400 3250
-	-1   0    0    -1  
+F 0 "J26" H 9672 2628 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9672 2583 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9700 2700 50  0001 C CNN
+F 3 "~" H 9700 2700 50  0001 C CNN
+	1    9700 2700
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -757,47 +757,22 @@ F 3 "" H 10000 2900 50  0001 C CNN
 	1    10000 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64EC55E1
-P 10000 3450
-AR Path="/5E26F6FE/64EC55E1" Ref="#PWR?"  Part="1" 
-AR Path="/5E5ECAAE/64EC55E1" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 10000 3200 50  0001 C CNN
-F 1 "GND" H 10005 3277 50  0000 C CNN
-F 2 "" H 10000 3450 50  0001 C CNN
-F 3 "" H 10000 3450 50  0001 C CNN
-	1    10000 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 3250 10000 3250
-Wire Wire Line
-	10000 3350 10000 3450
-Wire Wire Line
-	10200 3350 10000 3350
-Text GLabel 10000 3250 0    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	10200 2700 10000 2700
 Wire Wire Line
 	10000 2800 10000 2900
-Wire Wire Line
-	10200 2800 10000 2800
-Text GLabel 10000 2700 0    50   UnSpc ~ 0
+Text GLabel 10000 2600 1    50   UnSpc ~ 0
 +5V
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 60B80487
-P 10400 2700
+P 10300 2700
 AR Path="/5E5EF2D4/60B80487" Ref="J?"  Part="1" 
 AR Path="/6009D432/60B80487" Ref="J?"  Part="1" 
 AR Path="/5E5ECAAE/60B80487" Ref="J25"  Part="1" 
-F 0 "J25" H 10372 2628 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 10372 2583 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10400 2700 50  0001 C CNN
-F 3 "~" H 10400 2700 50  0001 C CNN
-	1    10400 2700
+F 0 "J25" H 10272 2628 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10272 2583 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 10300 2700 50  0001 C CNN
+F 3 "~" H 10300 2700 50  0001 C CNN
+	1    10300 2700
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1147,8 +1122,6 @@ $EndComp
 Wire Wire Line
 	6650 5650 6650 5700
 Wire Wire Line
-	6650 3350 6650 3450
-Wire Wire Line
 	7350 5150 7450 5150
 Wire Wire Line
 	7450 5150 7450 5250
@@ -1208,19 +1181,15 @@ F 3 "~" H 8900 4050 50  0001 C CNN
 	1    8900 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 8700 4150 0    50   Output ~ 0
+Text HLabel 8600 4150 0    50   Output ~ 0
 FP_INTB
-Text HLabel 8700 3950 0    50   Output ~ 0
-FP_SCL
-Text HLabel 8700 4050 0    50   Output ~ 0
+Text HLabel 8600 4050 0    50   Output ~ 0
 FP_INTA
-Text HLabel 8700 3850 0    50   Output ~ 0
-FP_SDA
-Text HLabel 8700 4250 0    50   Input ~ 0
+Text HLabel 8600 4250 0    50   Input ~ 0
 ~FP_RST
 Text HLabel 7450 4450 2    50   Output ~ 0
 FP_INTB
-Text HLabel 7450 3850 2    50   Output ~ 0
+Text HLabel 7450 3850 2    50   Input ~ 0
 FP_SCL
 Text HLabel 7450 4350 2    50   Output ~ 0
 FP_INTA
@@ -1238,4 +1207,60 @@ Wire Wire Line
 	7350 4450 7450 4450
 Wire Wire Line
 	7350 4650 7450 4650
+Text HLabel 8600 3950 0    50   Input ~ 0
+FP_SCL
+Text HLabel 8600 3850 0    50   Output ~ 0
+FP_SDA
+Wire Wire Line
+	8600 3850 8700 3850
+Wire Wire Line
+	8600 3950 8700 3950
+Wire Wire Line
+	8600 4050 8700 4050
+Wire Wire Line
+	8600 4150 8700 4150
+Wire Wire Line
+	8600 4250 8700 4250
+Wire Wire Line
+	9900 2800 10000 2800
+Wire Wire Line
+	9900 2700 10000 2700
+Wire Wire Line
+	10100 2800 10000 2800
+Connection ~ 10000 2800
+Wire Wire Line
+	10000 2600 10000 2700
+Connection ~ 10000 2700
+Wire Wire Line
+	10000 2700 10100 2700
+Wire Wire Line
+	9900 4550 9900 4300
+Connection ~ 10150 4300
+Wire Wire Line
+	10150 4300 10150 4350
+Wire Wire Line
+	9900 4850 9900 5100
+Connection ~ 10150 5100
+Wire Wire Line
+	10150 5100 10150 5150
+Wire Wire Line
+	6650 3350 6650 3450
+$Comp
+L Device:C C?
+U 1 1 5E8C1B16
+P 9900 4700
+AR Path="/5E4A803E/5E8C1B16" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E8C1B16" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E8C1B16" Ref="C122"  Part="1" 
+F 0 "C122" H 9786 4746 50  0000 R CNN
+F 1 "0.1uF" H 9786 4655 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9938 4550 50  0001 C CNN
+F 3 "~" H 9900 4700 50  0001 C CNN
+	1    9900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4300 10150 4300
+Wire Wire Line
+	9900 5100 10150 5100
 $EndSCHEMATC

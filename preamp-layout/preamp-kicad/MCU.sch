@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 5 13
 Title "Preamp MCU Board"
 Date "2020-02-25"
 Rev "A00"
@@ -14,21 +14,21 @@ Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
 Wire Wire Line
-	4650 6500 4650 6600
-Text GLabel 4650 6300 1    50   UnSpc ~ 0
+	3600 6500 3600 6600
+Text GLabel 3600 6300 1    50   UnSpc ~ 0
 +5V
 $Comp
 L Connector:Conn_01x02_Male J35
 U 1 1 63AD6EFD
-P 4950 6400
-F 0 "J35" H 4922 6328 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 4922 6283 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4950 6400 50  0001 C CNN
-F 3 "~" H 4950 6400 50  0001 C CNN
-	1    4950 6400
+P 3900 6400
+F 0 "J35" H 3872 6328 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3872 6283 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3900 6400 50  0001 C CNN
+F 3 "~" H 3900 6400 50  0001 C CNN
+	1    3900 6400
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3000 6400 0    50   Output ~ 0
+Text HLabel 1950 6400 0    50   Output ~ 0
 LED_DT
 Text GLabel 3750 3900 0    50   UnSpc ~ 0
 +5V
@@ -48,14 +48,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 6496C114
-P 3300 6400
+P 2250 6400
 AR Path="/5E2D8DA2/6496C114" Ref="J?"  Part="1" 
 AR Path="/619FA14B/6496C114" Ref="J33"  Part="1" 
-F 0 "J33" H 3272 6378 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 3272 6333 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3300 6400 50  0001 C CNN
-F 3 "~" H 3300 6400 50  0001 C CNN
-	1    3300 6400
+F 0 "J33" H 2222 6378 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 2222 6333 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2250 6400 50  0001 C CNN
+F 3 "~" H 2250 6400 50  0001 C CNN
+	1    2250 6400
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -74,14 +74,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64EF4C33
-P 4650 6600
+P 3600 6600
 AR Path="/5E26F6FE/64EF4C33" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/64EF4C33" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 4650 6350 50  0001 C CNN
-F 1 "GND" H 4655 6427 50  0000 C CNN
-F 2 "" H 4650 6600 50  0001 C CNN
-F 3 "" H 4650 6600 50  0001 C CNN
-	1    4650 6600
+F 0 "#PWR034" H 3600 6350 50  0001 C CNN
+F 1 "GND" H 3605 6427 50  0000 C CNN
+F 2 "" H 3600 6600 50  0001 C CNN
+F 3 "" H 3600 6600 50  0001 C CNN
+	1    3600 6600
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3750 2500
@@ -89,30 +89,30 @@ NoConn ~ 3750 3600
 $Comp
 L Connector:Conn_01x02_Male J34
 U 1 1 5E6537E3
-P 4350 6400
-F 0 "J34" H 4322 6328 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 4322 6283 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4350 6400 50  0001 C CNN
-F 3 "~" H 4350 6400 50  0001 C CNN
-	1    4350 6400
+P 3300 6400
+F 0 "J34" H 3272 6328 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3272 6283 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3300 6400 50  0001 C CNN
+F 3 "~" H 3300 6400 50  0001 C CNN
+	1    3300 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 6500 3000 6600
+	1950 6500 1950 6600
 $Comp
 L power:GND #PWR?
 U 1 1 5EA8A311
-P 3000 6600
+P 1950 6600
 AR Path="/5E26F6FE/5EA8A311" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/5EA8A311" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 3000 6350 50  0001 C CNN
-F 1 "GND" H 3005 6427 50  0000 C CNN
-F 2 "" H 3000 6600 50  0001 C CNN
-F 3 "" H 3000 6600 50  0001 C CNN
-	1    3000 6600
+F 0 "#PWR032" H 1950 6350 50  0001 C CNN
+F 1 "GND" H 1955 6427 50  0000 C CNN
+F 2 "" H 1950 6600 50  0001 C CNN
+F 3 "" H 1950 6600 50  0001 C CNN
+	1    1950 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3000 6300 0    50   UnSpc ~ 0
+Text GLabel 1950 6300 0    50   UnSpc ~ 0
 +5V
 Text HLabel 3750 2800 0    50   Output ~ 0
 LED_DT
@@ -190,26 +190,26 @@ $EndComp
 Wire Wire Line
 	4750 3800 5000 3800
 Wire Wire Line
-	3000 6300 3100 6300
+	1950 6300 2050 6300
 Wire Wire Line
-	3000 6400 3100 6400
+	1950 6400 2050 6400
 Wire Wire Line
-	3000 6500 3100 6500
+	1950 6500 2050 6500
 Text HLabel 3750 2600 0    50   Input ~ 0
 SW_INT
 Wire Wire Line
-	4550 6400 4650 6400
+	3500 6400 3600 6400
 Wire Wire Line
-	4550 6500 4650 6500
-Connection ~ 4650 6500
+	3500 6500 3600 6500
+Connection ~ 3600 6500
 Wire Wire Line
-	4650 6500 4750 6500
+	3600 6500 3700 6500
 Wire Wire Line
-	4650 6400 4650 6300
-Connection ~ 4650 6400
+	3600 6400 3600 6300
+Connection ~ 3600 6400
 Wire Wire Line
-	4650 6400 4750 6400
-Text HLabel 9050 2500 0    50   BiDi ~ 0
+	3600 6400 3700 6400
+Text HLabel 9050 2500 0    50   Output ~ 0
 IO_SDA
 Text HLabel 9050 2600 0    50   Output ~ 0
 IO_SCL
@@ -235,71 +235,65 @@ F 3 "~" H 9600 3700 50  0001 C CNN
 	1    9600 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 9050 3700 0    50   BiDi ~ 0
+Text HLabel 9050 3700 0    50   Output ~ 0
 VOL_SDA
 Text HLabel 9050 3800 0    50   Output ~ 0
 VOL_SCL
 $Comp
 L Interface_Expansion:TCA9548APWR U10
 U 1 1 620E565D
-P 6050 3300
-F 0 "U10" H 6400 4300 50  0000 C CNN
-F 1 "TCA9548APWR" H 6400 4200 50  0000 C CNN
-F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6050 2300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 6100 3550 50  0001 C CNN
-	1    6050 3300
+P 6700 3300
+F 0 "U10" H 7050 4300 50  0000 C CNN
+F 1 "TCA9548APWR" H 7050 4200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6700 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 6750 3550 50  0001 C CNN
+	1    6700 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2600 5650 2600
-Wire Wire Line
-	5250 2900 5250 2700
-Wire Wire Line
-	5250 2700 5650 2700
-Wire Wire Line
-	4750 2900 5250 2900
+	5550 2900 5550 2700
 $Comp
 L power:GND #PWR?
 U 1 1 620F03A9
-P 6050 4400
+P 6700 4400
 AR Path="/5E26F6FE/620F03A9" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/620F03A9" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 6050 4150 50  0001 C CNN
-F 1 "GND" H 6055 4227 50  0000 C CNN
-F 2 "" H 6050 4400 50  0001 C CNN
-F 3 "" H 6050 4400 50  0001 C CNN
-	1    6050 4400
+F 0 "#PWR069" H 6700 4150 50  0001 C CNN
+F 1 "GND" H 6705 4227 50  0000 C CNN
+F 2 "" H 6700 4400 50  0001 C CNN
+F 3 "" H 6700 4400 50  0001 C CNN
+	1    6700 4400
 	-1   0    0    -1  
 $EndComp
-Text GLabel 6050 2350 1    50   UnSpc ~ 0
+Text GLabel 6700 2350 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
-	6050 2350 6050 2400
-Text HLabel 6500 2700 2    50   BiDi ~ 0
+	6700 2350 6700 2400
+Text HLabel 7150 2700 2    50   Output ~ 0
 IO_SDA
-Text HLabel 6500 2600 2    50   Output ~ 0
+Text HLabel 7150 2600 2    50   Output ~ 0
 IO_SCL
-Text HLabel 6500 2900 2    50   BiDi ~ 0
+Text HLabel 7150 2900 2    50   Output ~ 0
 VOL_SDA
-Text HLabel 6500 2800 2    50   Output ~ 0
+Text HLabel 7150 2800 2    50   Output ~ 0
 VOL_SCL
 Wire Wire Line
-	6450 2600 6500 2600
+	7100 2600 7150 2600
 Wire Wire Line
-	6450 2700 6500 2700
+	7100 2700 7150 2700
 Wire Wire Line
-	6450 2800 6500 2800
+	7100 2800 7150 2800
 Wire Wire Line
-	6450 2900 6500 2900
-Text HLabel 6500 3100 2    50   BiDi ~ 0
+	7100 2900 7150 2900
+Text HLabel 7150 3100 2    50   Input ~ 0
 FP_SDA
-Text HLabel 6500 3000 2    50   Output ~ 0
+Text HLabel 7150 3000 2    50   Output ~ 0
 FP_SCL
 Wire Wire Line
-	6450 3000 6500 3000
+	7100 3000 7150 3000
 Wire Wire Line
-	6450 3100 6500 3100
-Text HLabel 9050 4900 0    50   BiDi ~ 0
+	7100 3100 7150 3100
+Text HLabel 9050 4900 0    50   Input ~ 0
 FP_SDA
 Text HLabel 9050 5000 0    50   Output ~ 0
 FP_SCL
@@ -310,41 +304,41 @@ NoConn ~ 4850 3300
 NoConn ~ 4850 3400
 NoConn ~ 4850 3500
 Wire Wire Line
-	5600 3100 5650 3100
-NoConn ~ 6450 3400
-NoConn ~ 6450 3500
-NoConn ~ 6450 3600
-NoConn ~ 6450 3700
-NoConn ~ 6450 3800
-NoConn ~ 6450 3900
-NoConn ~ 6450 4000
-NoConn ~ 6450 4100
+	6250 3100 6300 3100
+NoConn ~ 7100 3400
+NoConn ~ 7100 3500
+NoConn ~ 7100 3600
+NoConn ~ 7100 3700
+NoConn ~ 7100 3800
+NoConn ~ 7100 3900
+NoConn ~ 7100 4000
+NoConn ~ 7100 4100
 Wire Wire Line
-	6050 4300 6050 4350
+	6700 4300 6700 4350
 Wire Wire Line
-	5650 3600 5550 3600
+	6300 3600 6200 3600
 Wire Wire Line
-	5550 3600 5550 3700
+	6200 3600 6200 3700
 Wire Wire Line
-	5550 4350 6050 4350
-Connection ~ 6050 4350
+	6200 4350 6700 4350
+Connection ~ 6700 4350
 Wire Wire Line
-	6050 4350 6050 4400
+	6700 4350 6700 4400
 Wire Wire Line
-	5650 3700 5550 3700
-Connection ~ 5550 3700
+	6300 3700 6200 3700
+Connection ~ 6200 3700
 Wire Wire Line
-	5550 3700 5550 3800
+	6200 3700 6200 3800
 Wire Wire Line
-	5650 3800 5550 3800
-Connection ~ 5550 3800
+	6300 3800 6200 3800
+Connection ~ 6200 3800
 Wire Wire Line
-	5550 3800 5550 4350
+	6200 3800 6200 4350
 Text Label 3350 2900 2    50   ~ 0
 ~I2C_RST
 Wire Wire Line
 	3350 2900 3850 2900
-Text Label 5600 3100 2    50   ~ 0
+Text Label 6250 3100 2    50   ~ 0
 ~I2C_RST
 $Comp
 L Device:R R129
@@ -487,8 +481,8 @@ Wire Wire Line
 Connection ~ 9300 5000
 Wire Wire Line
 	9300 5000 9400 5000
-NoConn ~ 6450 3300
-NoConn ~ 6450 3200
+NoConn ~ 7100 3300
+NoConn ~ 7100 3200
 Text HLabel 3750 2700 0    50   Input ~ 0
 ENC_INT
 NoConn ~ 3750 3100
@@ -578,4 +572,73 @@ NoConn ~ 2150 3600
 NoConn ~ 2150 3700
 NoConn ~ 2150 3800
 NoConn ~ 2150 3900
+Wire Wire Line
+	5150 6300 5150 6200
+Wire Wire Line
+	5150 6600 5150 6700
+$Comp
+L Device:C C?
+U 1 1 5E91224C
+P 5150 6450
+AR Path="/5E4A803E/5E91224C" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E91224C" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E91224C" Ref="C?"  Part="1" 
+AR Path="/619FA14B/5E91224C" Ref="C75"  Part="1" 
+F 0 "C75" H 5036 6496 50  0000 R CNN
+F 1 "0.1uF" H 5036 6405 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 6300 50  0001 C CNN
+F 3 "~" H 5150 6450 50  0001 C CNN
+	1    5150 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6200 5400 6200
+Wire Wire Line
+	5150 6700 5400 6700
+Wire Wire Line
+	5400 6300 5400 6200
+Wire Wire Line
+	5400 6600 5400 6700
+$Comp
+L Device:C C?
+U 1 1 5E9151DD
+P 5400 6450
+AR Path="/5E4A803E/5E9151DD" Ref="C?"  Part="1" 
+AR Path="/6009D432/5E9151DD" Ref="C?"  Part="1" 
+AR Path="/5E5ECAAE/5E9151DD" Ref="C?"  Part="1" 
+AR Path="/619FA14B/5E9151DD" Ref="C76"  Part="1" 
+F 0 "C76" H 5515 6496 50  0000 L CNN
+F 1 "0.1uF" H 5515 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 6300 50  0001 C CNN
+F 3 "~" H 5400 6450 50  0001 C CNN
+	1    5400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6700 5150 6800
+$Comp
+L power:GND #PWR?
+U 1 1 5F72D895
+P 5150 6800
+AR Path="/5E26F6FE/5F72D895" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/5F72D895" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 5150 6550 50  0001 C CNN
+F 1 "GND" H 5155 6627 50  0000 C CNN
+F 2 "" H 5150 6800 50  0001 C CNN
+F 3 "" H 5150 6800 50  0001 C CNN
+	1    5150 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 6700
+Text GLabel 5150 6100 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	5150 6200 5150 6100
+Connection ~ 5150 6200
+Wire Wire Line
+	4750 2600 6300 2600
+Wire Wire Line
+	4750 2900 5550 2900
+Wire Wire Line
+	5550 2700 6300 2700
 $EndSCHEMATC
