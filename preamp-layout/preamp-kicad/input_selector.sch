@@ -93,7 +93,7 @@ Wire Wire Line
 	2950 3500 2900 3500
 Wire Wire Line
 	2900 3500 2900 3850
-Text GLabel 2850 2800 0    50   UnSpc ~ 0
+Text GLabel 2450 2800 0    50   UnSpc ~ 0
 +5V
 Text GLabel 950  900  1    50   UnSpc ~ 0
 +5V
@@ -1622,6 +1622,26 @@ Text HLabel 2850 1900 0    50   Input ~ 0
 IO_SDA
 Text HLabel 2850 2000 0    50   Input ~ 0
 IO_SCL
+Text Notes 2400 3450 0    50   ~ 0
+IC ADDR 0
+Wire Wire Line
+	2450 2800 2550 2800
+$Comp
+L Device:R R133
+U 1 1 5FBFBBBA
+P 2700 2800
+AR Path="/5E2D8DA2/5FBFBBBA" Ref="R133"  Part="1" 
+AR Path="/5FBFBBBA" Ref="R?"  Part="1" 
+AR Path="/5E27B612/5FBFBBBA" Ref="R?"  Part="1" 
+AR Path="/5E5EF2D4/5FBFBBBA" Ref="R?"  Part="1" 
+AR Path="/5E5ECAAE/5FBFBBBA" Ref="R?"  Part="1" 
+F 0 "R133" V 2585 2800 50  0000 C CNN
+F 1 "10k" V 2494 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2630 2800 50  0001 C CNN
+F 3 "~" H 2700 2800 50  0001 C CNN
+	1    2700 2800
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	2850 2800 2950 2800
 $EndSCHEMATC

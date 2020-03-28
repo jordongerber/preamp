@@ -1161,13 +1161,6 @@ Wire Wire Line
 	7350 5250 7450 5250
 Connection ~ 7450 5250
 Wire Wire Line
-	7450 5250 7450 5350
-Wire Wire Line
-	7350 5350 7450 5350
-Connection ~ 7450 5350
-Wire Wire Line
-	7450 5350 7450 5700
-Wire Wire Line
 	5850 3750 5950 3750
 Wire Wire Line
 	5850 4450 5950 4450
@@ -1226,8 +1219,6 @@ Text HLabel 7450 4350 2    50   Output ~ 0
 FP_INTA
 Text HLabel 7450 3750 2    50   Output ~ 0
 FP_SDA
-Text HLabel 7450 4650 2    50   Input ~ 0
-~FP_RST
 Wire Wire Line
 	7350 3750 7450 3750
 Wire Wire Line
@@ -1238,4 +1229,32 @@ Wire Wire Line
 	7350 4450 7450 4450
 Wire Wire Line
 	7350 4650 7450 4650
+Wire Wire Line
+	7450 5250 7450 5700
+Text GLabel 7550 5350 2    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	7350 5350 7550 5350
+Text Notes 7500 5250 0    50   ~ 0
+IC ADDR 1
+$Comp
+L Device:R R?
+U 1 1 5FBDFC38
+P 7600 4650
+AR Path="/5E2D8DA2/5FBDFC38" Ref="R?"  Part="1" 
+AR Path="/5FBDFC38" Ref="R?"  Part="1" 
+AR Path="/5E27B612/5FBDFC38" Ref="R?"  Part="1" 
+AR Path="/5E5EF2D4/5FBDFC38" Ref="R?"  Part="1" 
+AR Path="/5E5ECAAE/5FBDFC38" Ref="R132"  Part="1" 
+F 0 "R132" V 7485 4650 50  0000 C CNN
+F 1 "10k" V 7394 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7530 4650 50  0001 C CNN
+F 3 "~" H 7600 4650 50  0001 C CNN
+	1    7600 4650
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7850 4650 2    50   Input ~ 0
+~FP_RST
+Wire Wire Line
+	7750 4650 7850 4650
 $EndSCHEMATC
