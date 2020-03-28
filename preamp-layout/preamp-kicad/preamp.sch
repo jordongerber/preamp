@@ -321,8 +321,8 @@ S 6050 1000 900  500
 U 5E4A803E
 F0 "headphone amp" 50
 F1 "headphone_amp.sch" 50
-F4 "IN_L" U L 6050 1200 50 
-F5 "IN_R" U L 6050 1300 50 
+F2 "IN_L" U L 6050 1200 50 
+F3 "IN_R" U L 6050 1300 50 
 $EndSheet
 Wire Wire Line
 	2300 6650 2450 6650
