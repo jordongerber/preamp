@@ -112,14 +112,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E74EEAB
-P 3700 5350
+P 3900 5350
 AR Path="/5E26F6FE/5E74EEAB" Ref="#PWR?"  Part="1" 
 AR Path="/619FA14B/5E74EEAB" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 3700 5100 50  0001 C CNN
-F 1 "GND" H 3705 5177 50  0000 C CNN
-F 2 "" H 3700 5350 50  0001 C CNN
-F 3 "" H 3700 5350 50  0001 C CNN
-	1    3700 5350
+F 0 "#PWR0108" H 3900 5100 50  0001 C CNN
+F 1 "GND" H 3905 5177 50  0000 C CNN
+F 2 "" H 3900 5350 50  0001 C CNN
+F 3 "" H 3900 5350 50  0001 C CNN
+	1    3900 5350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -142,287 +142,12 @@ Wire Wire Line
 Connection ~ 3200 6750
 Wire Wire Line
 	3200 6750 3300 6750
-Text HLabel 5950 5600 0    50   Output ~ 0
-IO_SDA
-Text HLabel 5950 5700 0    50   Output ~ 0
-IO_SCL
-$Comp
-L Connector:Conn_01x02_Female J27
-U 1 1 620B808D
-P 6500 5600
-F 0 "J27" H 6528 5530 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 6528 5485 50  0001 L CNN
-F 2 "" H 6500 5600 50  0001 C CNN
-F 3 "~" H 6500 5600 50  0001 C CNN
-	1    6500 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J29
-U 1 1 620C5260
-P 7900 5600
-F 0 "J29" H 7928 5530 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7928 5485 50  0001 L CNN
-F 2 "" H 7900 5600 50  0001 C CNN
-F 3 "~" H 7900 5600 50  0001 C CNN
-	1    7900 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_Expansion:TCA9548APWR U10
-U 1 1 620E565D
-P 6050 2300
-F 0 "U10" H 6400 3300 50  0000 C CNN
-F 1 "TCA9548APWR" H 6400 3200 50  0000 C CNN
-F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6050 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 6100 2550 50  0001 C CNN
-	1    6050 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 620F03A9
-P 6050 3400
-AR Path="/5E26F6FE/620F03A9" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/620F03A9" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 6050 3150 50  0001 C CNN
-F 1 "GND" H 6055 3227 50  0000 C CNN
-F 2 "" H 6050 3400 50  0001 C CNN
-F 3 "" H 6050 3400 50  0001 C CNN
-	1    6050 3400
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6050 1350 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	6050 1350 6050 1400
-Text HLabel 6500 1700 2    50   Output ~ 0
-IO_SDA
-Text HLabel 6500 1600 2    50   Output ~ 0
-IO_SCL
-Text HLabel 6500 1900 2    50   Output ~ 0
-VOL_SDA
-Text HLabel 6500 1800 2    50   Output ~ 0
-VOL_SCL
-Wire Wire Line
-	6450 1600 6500 1600
-Wire Wire Line
-	6450 1700 6500 1700
-Wire Wire Line
-	6450 1800 6500 1800
-Wire Wire Line
-	6450 1900 6500 1900
-Text HLabel 6500 2100 2    50   Input ~ 0
-FP_SDA
-Text HLabel 6500 2000 2    50   Output ~ 0
-FP_SCL
-Wire Wire Line
-	6450 2000 6500 2000
-Wire Wire Line
-	6450 2100 6500 2100
-Wire Wire Line
-	5600 2100 5650 2100
-NoConn ~ 6450 2400
-NoConn ~ 6450 2500
-NoConn ~ 6450 2600
-NoConn ~ 6450 2700
-NoConn ~ 6450 2800
-NoConn ~ 6450 2900
-NoConn ~ 6450 3000
-NoConn ~ 6450 3100
-Wire Wire Line
-	6050 3300 6050 3350
-Wire Wire Line
-	5650 2600 5550 2600
-Wire Wire Line
-	5550 2600 5550 2700
-Wire Wire Line
-	5550 3350 6050 3350
-Connection ~ 6050 3350
-Wire Wire Line
-	6050 3350 6050 3400
-Wire Wire Line
-	5650 2700 5550 2700
-Connection ~ 5550 2700
-Wire Wire Line
-	5550 2700 5550 2800
-Wire Wire Line
-	5650 2800 5550 2800
-Connection ~ 5550 2800
-Wire Wire Line
-	5550 2800 5550 3350
 Text Label 2050 4250 2    50   ~ 0
 ~I2C_RST
 Wire Wire Line
 	2050 4250 2550 4250
-Text Label 5600 2100 2    50   ~ 0
-~I2C_RST
-$Comp
-L Device:R R129
-U 1 1 6215B919
-P 6200 5350
-F 0 "R129" H 6270 5396 50  0000 L CNN
-F 1 "1.5k" H 6270 5305 50  0000 L CNN
-F 2 "" V 6130 5350 50  0001 C CNN
-F 3 "~" H 6200 5350 50  0001 C CNN
-	1    6200 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R126
-U 1 1 6215C950
-P 6050 5350
-F 0 "R126" H 5980 5396 50  0000 R CNN
-F 1 "1.5k" H 5980 5305 50  0000 R CNN
-F 2 "" V 5980 5350 50  0001 C CNN
-F 3 "~" H 6050 5350 50  0001 C CNN
-	1    6050 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 5600 6050 5600
-Wire Wire Line
-	5950 5700 6200 5700
-Wire Wire Line
-	6050 5500 6050 5600
-Connection ~ 6050 5600
-Wire Wire Line
-	6050 5600 6300 5600
-Wire Wire Line
-	6200 5500 6200 5700
-Connection ~ 6200 5700
-Wire Wire Line
-	6200 5700 6300 5700
-Text GLabel 6050 5100 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	6050 5100 6050 5150
-Wire Wire Line
-	6050 5150 6200 5150
-Wire Wire Line
-	6200 5150 6200 5200
-Connection ~ 6050 5150
-Wire Wire Line
-	6050 5150 6050 5200
-Wire Wire Line
-	7350 5600 7450 5600
-Wire Wire Line
-	7350 5700 7600 5700
-Wire Wire Line
-	8750 5600 8850 5600
-Wire Wire Line
-	8750 5700 9000 5700
-$Comp
-L Device:R R130
-U 1 1 62192971
-P 7600 5350
-F 0 "R130" H 7670 5396 50  0000 L CNN
-F 1 "1.5k" H 7670 5305 50  0000 L CNN
-F 2 "" V 7530 5350 50  0001 C CNN
-F 3 "~" H 7600 5350 50  0001 C CNN
-	1    7600 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R127
-U 1 1 6219297B
-P 7450 5350
-F 0 "R127" H 7380 5396 50  0000 R CNN
-F 1 "1.5k" H 7380 5305 50  0000 R CNN
-F 2 "" V 7380 5350 50  0001 C CNN
-F 3 "~" H 7450 5350 50  0001 C CNN
-	1    7450 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 5500 7450 5600
-Wire Wire Line
-	7600 5500 7600 5700
-Text GLabel 7450 5100 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	7450 5100 7450 5150
-Wire Wire Line
-	7450 5150 7600 5150
-Wire Wire Line
-	7600 5150 7600 5200
-Connection ~ 7450 5150
-Wire Wire Line
-	7450 5150 7450 5200
-Connection ~ 7450 5600
-Wire Wire Line
-	7450 5600 7700 5600
-Connection ~ 7600 5700
-Wire Wire Line
-	7600 5700 7700 5700
-$Comp
-L Device:R R131
-U 1 1 621965D3
-P 9000 5350
-F 0 "R131" H 9070 5396 50  0000 L CNN
-F 1 "1.5k" H 9070 5305 50  0000 L CNN
-F 2 "" V 8930 5350 50  0001 C CNN
-F 3 "~" H 9000 5350 50  0001 C CNN
-	1    9000 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R128
-U 1 1 621965DD
-P 8850 5350
-F 0 "R128" H 8780 5396 50  0000 R CNN
-F 1 "1.5k" H 8780 5305 50  0000 R CNN
-F 2 "" V 8780 5350 50  0001 C CNN
-F 3 "~" H 8850 5350 50  0001 C CNN
-	1    8850 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5500 8850 5600
-Wire Wire Line
-	9000 5500 9000 5700
-Text GLabel 8850 5100 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	8850 5100 8850 5150
-Wire Wire Line
-	8850 5150 9000 5150
-Wire Wire Line
-	9000 5150 9000 5200
-Connection ~ 8850 5150
-Wire Wire Line
-	8850 5150 8850 5200
-Connection ~ 8850 5600
-Wire Wire Line
-	8850 5600 9100 5600
-Connection ~ 9000 5700
-Wire Wire Line
-	9000 5700 9100 5700
 Text HLabel 2450 4050 0    50   Input ~ 0
 ENC_INT
-$Comp
-L Connector:Conn_01x05_Female J32
-U 1 1 62441251
-P 9300 5800
-F 0 "J32" H 9328 5780 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 9328 5735 50  0001 L CNN
-F 2 "" H 9300 5800 50  0001 C CNN
-F 3 "~" H 9300 5800 50  0001 C CNN
-	1    9300 5800
-	1    0    0    -1  
-$EndComp
-Text HLabel 9000 5800 0    50   Input ~ 0
-SW_INT
-Text HLabel 9000 5900 0    50   Input ~ 0
-ENC_INT
-Wire Wire Line
-	9000 5800 9100 5800
-Wire Wire Line
-	9000 5900 9100 5900
-Text HLabel 9000 6000 0    50   Output ~ 0
-~FP_RST
-Wire Wire Line
-	9000 6000 9100 6000
 NoConn ~ 2450 3850
 NoConn ~ 2450 4350
 NoConn ~ 2450 4450
@@ -516,7 +241,6 @@ F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1150 950 50  000
 	1    3000 2100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3100 1300
 NoConn ~ 3400 1600
 NoConn ~ 3400 1700
 NoConn ~ 3400 2200
@@ -524,143 +248,10 @@ NoConn ~ 3400 2300
 NoConn ~ 3400 2500
 NoConn ~ 2600 1700
 NoConn ~ 2600 2000
-$Comp
-L Interface_Expansion:MCP23017_SO U19
-U 1 1 600B85EA
-P 8850 3100
-F 0 "U19" H 9150 4200 50  0000 C CNN
-F 1 "MCP23017_SO" H 9150 4100 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 9050 2100 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 9050 2000 50  0001 L CNN
-	1    8850 3100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8150 2900
-NoConn ~ 8150 3000
-Wire Wire Line
-	8150 3700 8050 3700
-Wire Wire Line
-	8050 3700 8050 3800
-Wire Wire Line
-	8150 3800 8050 3800
-Connection ~ 8050 3800
-Wire Wire Line
-	8050 3800 8050 3900
-Wire Wire Line
-	8150 3900 8050 3900
-Connection ~ 8050 3900
-Wire Wire Line
-	8050 3900 8050 4250
-$Comp
-L power:GND #PWR?
-U 1 1 600E9E50
-P 8850 4300
-AR Path="/5E26F6FE/600E9E50" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/600E9E50" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 8850 4050 50  0001 C CNN
-F 1 "GND" H 8855 4127 50  0000 C CNN
-F 2 "" H 8850 4300 50  0001 C CNN
-F 3 "" H 8850 4300 50  0001 C CNN
-	1    8850 4300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 4200 8850 4250
-Connection ~ 8850 4250
-Wire Wire Line
-	8850 4250 8850 4300
-Wire Wire Line
-	8050 4250 8850 4250
-Text HLabel 9650 2300 2    50   Output ~ 0
-~FP_RST
-Text HLabel 9650 2400 2    50   Output ~ 0
-STBY_SET
-Text HLabel 9650 2500 2    50   Output ~ 0
-STBY_RST
-Text Label 5400 1600 2    50   ~ 0
-SCL
-Text Label 5400 1700 2    50   ~ 0
-SDA
-Wire Wire Line
-	5650 1600 5400 1600
-Wire Wire Line
-	5650 1700 5400 1700
 Text Label 3500 1900 0    50   ~ 0
 SDA
 Text Label 3500 1800 0    50   ~ 0
 SCL
-$Comp
-L Device:R R133
-U 1 1 6011B8E1
-P 7900 2050
-F 0 "R133" H 7970 2096 50  0000 L CNN
-F 1 "1.5k" H 7970 2005 50  0000 L CNN
-F 2 "" V 7830 2050 50  0001 C CNN
-F 3 "~" H 7900 2050 50  0001 C CNN
-	1    7900 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R132
-U 1 1 6011B8EB
-P 7750 2050
-F 0 "R132" H 7680 2096 50  0000 R CNN
-F 1 "1.5k" H 7680 2005 50  0000 R CNN
-F 2 "" V 7680 2050 50  0001 C CNN
-F 3 "~" H 7750 2050 50  0001 C CNN
-	1    7750 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 2200 7750 2300
-Wire Wire Line
-	7900 2200 7900 2400
-Text GLabel 7750 1800 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	7750 1800 7750 1850
-Wire Wire Line
-	7750 1850 7900 1850
-Wire Wire Line
-	7900 1850 7900 1900
-Connection ~ 7750 1850
-Wire Wire Line
-	7750 1850 7750 1900
-Text HLabel 8750 5700 0    50   Output ~ 0
-FP_SCL
-Text HLabel 8750 5600 0    50   Input ~ 0
-FP_SDA
-Text HLabel 7350 5700 0    50   Output ~ 0
-VOL_SCL
-Text HLabel 7350 5600 0    50   Output ~ 0
-VOL_SDA
-Wire Wire Line
-	9550 2300 9650 2300
-Wire Wire Line
-	9550 2400 9650 2400
-Wire Wire Line
-	9550 2500 9650 2500
-Text GLabel 8850 1950 1    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	8850 1950 8850 2000
-NoConn ~ 9550 2600
-NoConn ~ 9550 2700
-NoConn ~ 9550 2800
-NoConn ~ 9550 2900
-NoConn ~ 9550 3000
-NoConn ~ 9550 3200
-NoConn ~ 9550 3300
-NoConn ~ 9550 3400
-NoConn ~ 9550 3500
-NoConn ~ 9550 3600
-NoConn ~ 9550 3700
-NoConn ~ 9550 3800
-NoConn ~ 9550 3900
-Text Label 8050 3200 2    50   ~ 0
-~I2C_RST
-Wire Wire Line
-	8150 3200 8050 3200
 Text Label 2500 2100 2    50   ~ 0
 ~I2C_RST
 Text GLabel 2900 1250 1    50   UnSpc ~ 0
@@ -682,8 +273,6 @@ F 3 "" H 3000 2950 50  0001 C CNN
 $EndComp
 Text HLabel 3500 2000 2    50   Input ~ 0
 SW_INT
-Text HLabel 3500 2100 2    50   Input ~ 0
-ENC_INT
 Wire Wire Line
 	3400 2000 3500 2000
 Wire Wire Line
@@ -692,20 +281,6 @@ Text HLabel 3500 2400 2    50   Output ~ 0
 LED_DT
 Wire Wire Line
 	3500 2400 3400 2400
-Wire Wire Line
-	7750 2300 8150 2300
-Wire Wire Line
-	7900 2400 8150 2400
-Wire Wire Line
-	6450 2300 7750 2300
-Connection ~ 7750 2300
-Wire Wire Line
-	6450 2200 6650 2200
-Wire Wire Line
-	6650 2200 6650 2400
-Connection ~ 7900 2400
-Wire Wire Line
-	6650 2400 7900 2400
 Wire Wire Line
 	3000 2900 3000 2950
 Wire Wire Line
@@ -720,7 +295,7 @@ SCL
 Text Label 3700 4250 0    50   ~ 0
 SDA
 Wire Wire Line
-	3700 5150 3700 5350
+	3900 5150 3900 5350
 Wire Wire Line
 	3450 4250 3700 4250
 Wire Wire Line
@@ -747,11 +322,6 @@ Wire Wire Line
 	3550 5050 3450 5050
 Wire Wire Line
 	3550 4950 3450 4950
-Wire Wire Line
-	3450 5250 3550 5250
-NoConn ~ 3550 5250
-Wire Wire Line
-	3450 5150 3700 5150
 $Comp
 L power:GND #PWR?
 U 1 1 60558160
@@ -785,4 +355,468 @@ Wire Wire Line
 	2550 4950 2450 4950
 Wire Wire Line
 	2550 3850 2450 3850
+Text HLabel 9050 5300 2    50   Input ~ 0
+FP_SDA
+Text HLabel 9050 5400 2    50   Output ~ 0
+FP_SCL
+Wire Wire Line
+	8800 5700 8700 5700
+Text HLabel 8800 5700 2    50   Output ~ 0
+~FP_RST
+Wire Wire Line
+	8800 5600 8700 5600
+Wire Wire Line
+	8800 5500 8700 5500
+Text HLabel 8800 5600 2    50   Input ~ 0
+ENC_INT
+Text HLabel 8800 5500 2    50   Input ~ 0
+SW_INT
+$Comp
+L Connector:Conn_01x05_Female J32
+U 1 1 62441251
+P 8500 5500
+F 0 "J32" H 8528 5480 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 8528 5435 50  0001 L CNN
+F 2 "" H 8500 5500 50  0001 C CNN
+F 3 "~" H 8500 5500 50  0001 C CNN
+	1    8500 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5400 8700 5400
+Connection ~ 8800 5400
+Wire Wire Line
+	8950 5300 8700 5300
+Connection ~ 8950 5300
+Wire Wire Line
+	8950 4850 8950 4900
+Wire Wire Line
+	8800 4850 8800 4900
+Wire Wire Line
+	8950 4850 8800 4850
+Wire Wire Line
+	8800 4800 8800 4850
+Text GLabel 8800 4800 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8800 5200 8800 5400
+Wire Wire Line
+	8950 5200 8950 5300
+$Comp
+L Device:R R128
+U 1 1 621965DD
+P 8950 5050
+F 0 "R128" H 8880 5096 50  0000 R CNN
+F 1 "1.5k" H 8880 5005 50  0000 R CNN
+F 2 "" V 8880 5050 50  0001 C CNN
+F 3 "~" H 8950 5050 50  0001 C CNN
+	1    8950 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R131
+U 1 1 621965D3
+P 8800 5050
+F 0 "R131" H 8870 5096 50  0000 L CNN
+F 1 "1.5k" H 8870 5005 50  0000 L CNN
+F 2 "" V 8730 5050 50  0001 C CNN
+F 3 "~" H 8800 5050 50  0001 C CNN
+	1    8800 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5400 8800 5400
+Wire Wire Line
+	9050 5300 8950 5300
+Text HLabel 7700 5300 2    50   Output ~ 0
+VOL_SDA
+Text HLabel 7700 5400 2    50   Output ~ 0
+VOL_SCL
+Wire Wire Line
+	7450 5400 7350 5400
+Connection ~ 7450 5400
+Wire Wire Line
+	7600 5300 7350 5300
+Connection ~ 7600 5300
+Wire Wire Line
+	7600 4850 7600 4900
+Wire Wire Line
+	7450 4850 7450 4900
+Wire Wire Line
+	7600 4850 7450 4850
+Wire Wire Line
+	7450 4800 7450 4850
+Text GLabel 7450 4800 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	7450 5200 7450 5400
+Wire Wire Line
+	7600 5200 7600 5300
+$Comp
+L Device:R R127
+U 1 1 6219297B
+P 7600 5050
+F 0 "R127" H 7530 5096 50  0000 R CNN
+F 1 "1.5k" H 7530 5005 50  0000 R CNN
+F 2 "" V 7530 5050 50  0001 C CNN
+F 3 "~" H 7600 5050 50  0001 C CNN
+	1    7600 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R130
+U 1 1 62192971
+P 7450 5050
+F 0 "R130" H 7520 5096 50  0000 L CNN
+F 1 "1.5k" H 7520 5005 50  0000 L CNN
+F 2 "" V 7380 5050 50  0001 C CNN
+F 3 "~" H 7450 5050 50  0001 C CNN
+	1    7450 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5400 7450 5400
+Wire Wire Line
+	7700 5300 7600 5300
+$Comp
+L Connector:Conn_01x02_Female J29
+U 1 1 620C5260
+P 7150 5300
+F 0 "J29" H 7178 5230 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7178 5185 50  0001 L CNN
+F 2 "" H 7150 5300 50  0001 C CNN
+F 3 "~" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4850 6250 4900
+Wire Wire Line
+	6100 4850 6100 4900
+Wire Wire Line
+	6250 4850 6100 4850
+Wire Wire Line
+	6100 4800 6100 4850
+Text GLabel 6100 4800 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	6100 5400 6000 5400
+Connection ~ 6100 5400
+Wire Wire Line
+	6100 5200 6100 5400
+Wire Wire Line
+	6250 5300 6000 5300
+Connection ~ 6250 5300
+Wire Wire Line
+	6250 5200 6250 5300
+Wire Wire Line
+	6350 5400 6100 5400
+Wire Wire Line
+	6350 5300 6250 5300
+$Comp
+L Device:R R126
+U 1 1 6215C950
+P 6250 5050
+F 0 "R126" H 6180 5096 50  0000 R CNN
+F 1 "1.5k" H 6180 5005 50  0000 R CNN
+F 2 "" V 6180 5050 50  0001 C CNN
+F 3 "~" H 6250 5050 50  0001 C CNN
+	1    6250 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R129
+U 1 1 6215B919
+P 6100 5050
+F 0 "R129" H 6170 5096 50  0000 L CNN
+F 1 "1.5k" H 6170 5005 50  0000 L CNN
+F 2 "" V 6030 5050 50  0001 C CNN
+F 3 "~" H 6100 5050 50  0001 C CNN
+	1    6100 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J27
+U 1 1 620B808D
+P 5800 5300
+F 0 "J27" H 5828 5230 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5828 5185 50  0001 L CNN
+F 2 "" H 5800 5300 50  0001 C CNN
+F 3 "~" H 5800 5300 50  0001 C CNN
+	1    5800 5300
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6350 5400 2    50   Output ~ 0
+IO_SCL
+Text HLabel 6350 5300 2    50   Output ~ 0
+IO_SDA
+NoConn ~ 9500 3300
+NoConn ~ 9500 3200
+NoConn ~ 9500 3100
+NoConn ~ 9500 3000
+NoConn ~ 9500 2900
+Wire Wire Line
+	8300 3650 8950 3650
+Wire Wire Line
+	8950 3650 8950 3700
+Connection ~ 8950 3650
+Wire Wire Line
+	8950 3600 8950 3650
+Wire Wire Line
+	8950 2250 8950 2300
+Text GLabel 8950 2250 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8400 2800 8300 2800
+Text Label 8300 2800 2    50   ~ 0
+~I2C_RST
+Wire Wire Line
+	9500 2800 9600 2800
+Wire Wire Line
+	9500 2700 9600 2700
+Wire Wire Line
+	9500 2600 9600 2600
+Text HLabel 9600 2800 2    50   Output ~ 0
+STBY_RST
+Text HLabel 9600 2700 2    50   Output ~ 0
+STBY_SET
+Text HLabel 9600 2600 2    50   Output ~ 0
+~FP_RST
+$Comp
+L power:GND #PWR?
+U 1 1 600E9E50
+P 8950 3700
+AR Path="/5E26F6FE/600E9E50" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/600E9E50" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 8950 3450 50  0001 C CNN
+F 1 "GND" H 8955 3527 50  0000 C CNN
+F 2 "" H 8950 3700 50  0001 C CNN
+F 3 "" H 8950 3700 50  0001 C CNN
+	1    8950 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3400 8300 3650
+Connection ~ 8300 3400
+Wire Wire Line
+	8400 3400 8300 3400
+Wire Wire Line
+	8300 3300 8300 3400
+Connection ~ 8300 3300
+Wire Wire Line
+	8400 3300 8300 3300
+Wire Wire Line
+	8300 3200 8300 3300
+Wire Wire Line
+	8400 3200 8300 3200
+NoConn ~ 8400 3000
+NoConn ~ 6700 2700
+NoConn ~ 6700 2800
+NoConn ~ 6700 2900
+NoConn ~ 6700 3400
+NoConn ~ 6700 3300
+NoConn ~ 6700 3200
+NoConn ~ 6700 3100
+NoConn ~ 6700 3000
+Wire Wire Line
+	6700 2400 6750 2400
+Wire Wire Line
+	6700 2300 6750 2300
+Text HLabel 6750 2300 2    50   Output ~ 0
+FP_SCL
+Text HLabel 6750 2400 2    50   Input ~ 0
+FP_SDA
+Wire Wire Line
+	6700 2200 6750 2200
+Wire Wire Line
+	6700 2100 6750 2100
+Text HLabel 6750 2100 2    50   Output ~ 0
+VOL_SCL
+Text HLabel 6750 2200 2    50   Output ~ 0
+VOL_SDA
+Wire Wire Line
+	6700 2000 6750 2000
+Wire Wire Line
+	6700 1900 6750 1900
+Text HLabel 6750 1900 2    50   Output ~ 0
+IO_SCL
+Text HLabel 6750 2000 2    50   Output ~ 0
+IO_SDA
+Text HLabel 3500 2100 2    50   Input ~ 0
+ENC_INT
+$Comp
+L Interface_Expansion:TCA9548APWR U10
+U 1 1 620E565D
+P 6300 2600
+F 0 "U10" H 6650 3600 50  0000 C CNN
+F 1 "TCA9548APWR" H 6650 3500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6300 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 6350 2850 50  0001 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3650 6300 3700
+Connection ~ 6300 3650
+Wire Wire Line
+	5800 3650 6300 3650
+Wire Wire Line
+	6300 3600 6300 3650
+$Comp
+L power:GND #PWR?
+U 1 1 620F03A9
+P 6300 3700
+AR Path="/5E26F6FE/620F03A9" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/620F03A9" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 6300 3450 50  0001 C CNN
+F 1 "GND" H 6305 3527 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3100 5800 3650
+Connection ~ 5800 3100
+Wire Wire Line
+	5900 3100 5800 3100
+Wire Wire Line
+	5800 3000 5800 3100
+Connection ~ 5800 3000
+Wire Wire Line
+	5900 3000 5800 3000
+Wire Wire Line
+	5800 2900 5800 3000
+Wire Wire Line
+	5900 2900 5800 2900
+Text Label 5850 2400 2    50   ~ 0
+~I2C_RST
+Wire Wire Line
+	5850 2400 5900 2400
+Wire Wire Line
+	5500 1900 5250 1900
+Text Label 5250 2000 2    50   ~ 0
+SDA
+Text Label 5250 1900 2    50   ~ 0
+SCL
+$Comp
+L preamp:MCP23008T-E_SO U19
+U 1 1 6064B859
+P 8950 2950
+F 0 "U19" H 9300 3700 50  0000 C CNN
+F 1 "MCP23008T-E_SO" H 9350 3600 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 8950 3700 50  0001 C CNN
+F 3 "" H 8950 3700 50  0001 C CNN
+	1    8950 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 1250 1    50   UnSpc ~ 0
++3.3V
+Wire Wire Line
+	3100 1250 3100 1300
+Text GLabel 3550 5250 2    50   UnSpc ~ 0
++3.3V
+Wire Wire Line
+	3450 5250 3550 5250
+Wire Wire Line
+	3450 5150 3900 5150
+Text GLabel 6300 1650 1    50   UnSpc ~ 0
++3.3V
+Wire Wire Line
+	6300 1650 6300 1700
+$Comp
+L Device:R R136
+U 1 1 60844DF8
+P 5650 1650
+F 0 "R136" H 5720 1696 50  0000 L CNN
+F 1 "1.5k" H 5720 1605 50  0000 L CNN
+F 2 "" V 5580 1650 50  0001 C CNN
+F 3 "~" H 5650 1650 50  0001 C CNN
+	1    5650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R135
+U 1 1 60844E02
+P 5500 1650
+F 0 "R135" H 5430 1696 50  0000 R CNN
+F 1 "1.5k" H 5430 1605 50  0000 R CNN
+F 2 "" V 5430 1650 50  0001 C CNN
+F 3 "~" H 5500 1650 50  0001 C CNN
+	1    5500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1800 5500 1900
+Wire Wire Line
+	5650 1800 5650 2000
+Wire Wire Line
+	5500 1450 5650 1450
+Wire Wire Line
+	5650 1450 5650 1500
+Wire Wire Line
+	5500 1450 5500 1500
+Wire Wire Line
+	5250 2000 5650 2000
+Connection ~ 5650 2000
+Wire Wire Line
+	5650 2000 5900 2000
+Wire Wire Line
+	5500 1900 5900 1900
+Connection ~ 5500 1900
+Text GLabel 5500 1400 1    50   UnSpc ~ 0
++3.3V
+Wire Wire Line
+	5500 1400 5500 1450
+Connection ~ 5500 1450
+Wire Wire Line
+	6700 2600 7850 2600
+Wire Wire Line
+	6700 2500 7700 2500
+Text GLabel 7700 2000 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	7700 2000 7700 2050
+Connection ~ 7700 2050
+Wire Wire Line
+	7700 2050 7700 2100
+Wire Wire Line
+	7850 2050 7850 2100
+Wire Wire Line
+	7700 2050 7850 2050
+Wire Wire Line
+	7850 2400 7850 2600
+Wire Wire Line
+	7700 2400 7700 2500
+$Comp
+L Device:R R132
+U 1 1 6011B8EB
+P 7700 2250
+F 0 "R132" H 7630 2296 50  0000 R CNN
+F 1 "1.5k" H 7630 2205 50  0000 R CNN
+F 2 "" V 7630 2250 50  0001 C CNN
+F 3 "~" H 7700 2250 50  0001 C CNN
+	1    7700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R133
+U 1 1 6011B8E1
+P 7850 2250
+F 0 "R133" H 7920 2296 50  0000 L CNN
+F 1 "1.5k" H 7920 2205 50  0000 L CNN
+F 2 "" V 7780 2250 50  0001 C CNN
+F 3 "~" H 7850 2250 50  0001 C CNN
+	1    7850 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 2500
+Connection ~ 7850 2600
+Wire Wire Line
+	7700 2500 8400 2500
+Wire Wire Line
+	7850 2600 8400 2600
+Connection ~ 6100 4850
+Connection ~ 7450 4850
+Connection ~ 8800 4850
 $EndSCHEMATC
