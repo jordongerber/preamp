@@ -801,13 +801,13 @@ Wire Wire Line
 Wire Wire Line
 	4150 3450 4150 4050
 $Comp
-L Connector:Conn_01x03_Male J9
+L Connector:Conn_01x03_Male J8
 U 1 1 5E5A9FCF
 P 3100 5800
-AR Path="/5E27B612/5E5A9FCF" Ref="J9"  Part="1" 
+AR Path="/5E27B612/5E5A9FCF" Ref="J8"  Part="1" 
 AR Path="/6009D432/5E5A9FCF" Ref="J?"  Part="1" 
 AR Path="/5E1A0CE1/5E5A9FCF" Ref="J?"  Part="1" 
-F 0 "J9" H 3072 5778 50  0000 R CNN
+F 0 "J8" H 3072 5778 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 3072 5733 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 3100 5800 50  0001 C CNN
 F 3 "~" H 3100 5800 50  0001 C CNN
@@ -815,13 +815,13 @@ F 3 "~" H 3100 5800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J10
+L Connector:Conn_01x03_Male J9
 U 1 1 5E5BC88E
 P 3100 6400
-AR Path="/5E27B612/5E5BC88E" Ref="J10"  Part="1" 
+AR Path="/5E27B612/5E5BC88E" Ref="J9"  Part="1" 
 AR Path="/6009D432/5E5BC88E" Ref="J?"  Part="1" 
 AR Path="/5E1A0CE1/5E5BC88E" Ref="J?"  Part="1" 
-F 0 "J10" H 3072 6378 50  0000 R CNN
+F 0 "J9" H 3072 6378 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 3072 6333 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 3100 6400 50  0001 C CNN
 F 3 "~" H 3100 6400 50  0001 C CNN
@@ -829,13 +829,13 @@ F 3 "~" H 3100 6400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J11
+L Connector:Conn_01x03_Male J10
 U 1 1 5E5C1243
 P 3100 7000
-AR Path="/5E27B612/5E5C1243" Ref="J11"  Part="1" 
+AR Path="/5E27B612/5E5C1243" Ref="J10"  Part="1" 
 AR Path="/6009D432/5E5C1243" Ref="J?"  Part="1" 
 AR Path="/5E1A0CE1/5E5C1243" Ref="J?"  Part="1" 
-F 0 "J11" H 3072 6978 50  0000 R CNN
+F 0 "J10" H 3072 6978 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 3072 6933 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 3100 7000 50  0001 C CNN
 F 3 "~" H 3100 7000 50  0001 C CNN
@@ -871,8 +871,8 @@ U 1 1 5E8FCAF8
 P 1350 3450
 AR Path="/5E26F6FE/5E8FCAF8" Ref="J?"  Part="1" 
 AR Path="/5E5EF2D4/5E8FCAF8" Ref="J?"  Part="1" 
-AR Path="/5E27B612/5E8FCAF8" Ref="J8"  Part="1" 
-F 0 "J8" H 1268 3675 50  0000 C CNN
+AR Path="/5E27B612/5E8FCAF8" Ref="J7"  Part="1" 
+F 0 "J7" H 1268 3675 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 1268 3216 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 1350 3450 50  0001 C CNN
 F 3 "~" H 1350 3450 50  0001 C CNN

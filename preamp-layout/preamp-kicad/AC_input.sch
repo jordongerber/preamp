@@ -13,110 +13,71 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 3000 5900 0    50   UnSpc ~ 0
-AC_IN_HOT
-Text HLabel 3000 6000 0    50   UnSpc ~ 0
-PWR_SW
 Wire Wire Line
-	4850 3300 5200 3300
-Wire Wire Line
-	6150 3300 6300 3300
-Wire Wire Line
-	8000 3700 8150 3700
-Text HLabel 8000 3700 0    50   UnSpc ~ 0
+	7950 3300 8100 3300
+Text HLabel 7950 3300 0    50   UnSpc ~ 0
 AC_OUT_HOT
 Wire Wire Line
-	5400 5100 5400 5000
+	5700 4050 5700 3950
 Wire Wire Line
-	5400 5450 5400 5500
+	5700 4400 5700 4450
 Wire Wire Line
-	5050 5450 5400 5450
+	5350 4400 5700 4400
 Wire Wire Line
-	5050 5500 5050 5450
+	5350 4450 5350 4400
 $Comp
-L power:GNDPWR #PWR037
+L power:GNDPWR #PWR02
 U 1 1 5E808DD8
-P 5050 5500
-F 0 "#PWR037" H 5050 5300 50  0001 C CNN
-F 1 "GNDPWR" H 5054 5346 50  0000 C CNN
-F 2 "" H 5050 5450 50  0001 C CNN
-F 3 "" H 5050 5450 50  0001 C CNN
-	1    5050 5500
+P 5350 4450
+F 0 "#PWR02" H 5350 4250 50  0001 C CNN
+F 1 "GNDPWR" H 5354 4296 50  0000 C CNN
+F 2 "" H 5350 4400 50  0001 C CNN
+F 3 "" H 5350 4400 50  0001 C CNN
+	1    5350 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 3900 9050 3900
+	8900 3500 9000 3500
 Wire Wire Line
-	9050 3800 8600 3800
+	9000 3400 8550 3400
 $Comp
-L power:GND #PWR038
+L power:GND #PWR04
 U 1 1 5E804695
-P 8600 3850
-F 0 "#PWR038" H 8600 3600 50  0001 C CNN
-F 1 "GND" H 8605 3677 50  0000 C CNN
-F 2 "" H 8600 3850 50  0001 C CNN
-F 3 "" H 8600 3850 50  0001 C CNN
-	1    8600 3850
+P 8550 3450
+F 0 "#PWR04" H 8550 3200 50  0001 C CNN
+F 1 "GND" H 8555 3277 50  0000 C CNN
+F 2 "" H 8550 3450 50  0001 C CNN
+F 3 "" H 8550 3450 50  0001 C CNN
+	1    8550 3450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 3850 8600 3800
-Text HLabel 8950 3900 0    50   UnSpc ~ 0
+	8550 3450 8550 3400
+Text HLabel 8900 3500 0    50   UnSpc ~ 0
 AC_N
 Wire Wire Line
-	8950 5000 9050 5000
-Text HLabel 8950 5000 0    50   UnSpc ~ 0
+	8900 4150 9000 4150
+Text HLabel 8900 4150 0    50   UnSpc ~ 0
 AC_OUT_HOT
 Wire Wire Line
-	8950 5200 9050 5200
+	8900 4350 9000 4350
 Wire Wire Line
-	9050 5100 8600 5100
+	9000 4250 8550 4250
 $Comp
-L power:GND #PWR039
+L power:GND #PWR05
 U 1 1 5E7FF5C7
-P 8600 5150
-F 0 "#PWR039" H 8600 4900 50  0001 C CNN
-F 1 "GND" H 8605 4977 50  0000 C CNN
-F 2 "" H 8600 5150 50  0001 C CNN
-F 3 "" H 8600 5150 50  0001 C CNN
-	1    8600 5150
+P 8550 4300
+F 0 "#PWR05" H 8550 4050 50  0001 C CNN
+F 1 "GND" H 8555 4127 50  0000 C CNN
+F 2 "" H 8550 4300 50  0001 C CNN
+F 3 "" H 8550 4300 50  0001 C CNN
+	1    8550 4300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 5150 8600 5100
-Text HLabel 8950 5200 0    50   UnSpc ~ 0
+	8550 4300 8550 4250
+Text HLabel 8900 4350 0    50   UnSpc ~ 0
 AC_N
-Wire Wire Line
-	2800 3750 3250 3750
-Wire Wire Line
-	2800 3850 2900 3850
-Wire Wire Line
-	2800 3650 2900 3650
-Text HLabel 2900 3650 2    50   UnSpc ~ 0
-AC_IN_HOT
-Text HLabel 2900 3850 2    50   UnSpc ~ 0
-AC_N
-$Comp
-L power:GND #PWR036
-U 1 1 5E7F2BFD
-P 3250 3800
-F 0 "#PWR036" H 3250 3550 50  0001 C CNN
-F 1 "GND" H 3255 3627 50  0000 C CNN
-F 2 "" H 3250 3800 50  0001 C CNN
-F 3 "" H 3250 3800 50  0001 C CNN
-	1    3250 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3800 3250 3750
-Wire Wire Line
-	3000 6600 3150 6600
-Wire Wire Line
-	3000 6500 3150 6500
-Wire Wire Line
-	3150 6000 3000 6000
-Wire Wire Line
-	3150 5900 3000 5900
 Wire Wire Line
 	5700 3300 5850 3300
 Wire Wire Line
@@ -124,143 +85,106 @@ Wire Wire Line
 Connection ~ 5700 3300
 Wire Wire Line
 	5500 3300 5700 3300
-NoConn ~ 8250 3100
-NoConn ~ 8850 2800
+NoConn ~ 8200 2700
+NoConn ~ 8800 2400
 Wire Wire Line
-	8950 3700 9050 3700
+	8900 3300 9000 3300
 Wire Wire Line
-	8950 3100 8950 3700
+	8900 2700 8900 3300
 Wire Wire Line
-	8850 3100 8950 3100
-Connection ~ 8950 3700
+	8800 2700 8900 2700
+Connection ~ 8900 3300
 Wire Wire Line
-	8600 3700 8950 3700
+	8550 3300 8900 3300
 Wire Wire Line
-	8150 2800 8150 3700
-Connection ~ 8150 3700
+	8100 2400 8100 3300
+Connection ~ 8100 3300
 Wire Wire Line
-	8500 3700 8150 3700
+	8450 3300 8100 3300
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5E605BF1
-P 8500 3500
+P 8450 3100
 AR Path="/5E2D8DA2/5E605BF1" Ref="J?"  Part="1" 
 AR Path="/5E26F6FE/5E605BF1" Ref="J4"  Part="1" 
-F 0 "J4" V 8608 3312 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 8472 3383 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8500 3500 50  0001 C CNN
-F 3 "~" H 8500 3500 50  0001 C CNN
-	1    8500 3500
+F 0 "J4" V 8558 2912 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8422 2983 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8450 3100 50  0001 C CNN
+F 3 "~" H 8450 3100 50  0001 C CNN
+	1    8450 3100
 	0    -1   1    0   
 $EndComp
 $Comp
 L preamp:G5RLU-1A-E K1
 U 1 1 5E5D8616
-P 8550 2800
-F 0 "K1" H 8550 3467 50  0000 C CNN
-F 1 "G5RLU-1A-E" H 8550 3376 50  0000 C CNN
-F 2 "" H 8550 2250 50  0001 C CNN
-F 3 "" H 8550 2250 50  0001 C CNN
-	1    8550 2800
+P 8500 2400
+F 0 "K1" H 8500 3067 50  0000 C CNN
+F 1 "G5RLU-1A-E" H 8500 2976 50  0000 C CNN
+F 2 "" H 8500 1850 50  0001 C CNN
+F 3 "" H 8500 1850 50  0001 C CNN
+	1    8500 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2800 8250 2800
-Text HLabel 8250 2500 0    50   Input ~ 0
+	8100 2400 8200 2400
+Text HLabel 8200 2100 0    50   Input ~ 0
 STBY_CTRL_1
-Text HLabel 8850 2500 2    50   Input ~ 0
+Text HLabel 8800 2100 2    50   Input ~ 0
 STBY_CTRL_2
-Text HLabel 3000 6500 0    50   Input ~ 0
-STBY_CTRL_1
-Text HLabel 3000 6600 0    50   Input ~ 0
-STBY_CTRL_2
-$Comp
-L Connector:Conn_01x02_Female J6
-U 1 1 5E5E0EF2
-P 3350 6500
-F 0 "J6" H 3378 6430 50  0000 L CNN
-F 1 "Conn_01x02_Female" V 3197 6312 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3350 6500 50  0001 C CNN
-F 3 "~" H 3350 6500 50  0001 C CNN
-	1    3350 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J7
-U 1 1 5E8BEBC3
-P 9250 3800
-F 0 "J7" H 9330 3796 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 9168 3566 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 9250 3800 50  0001 C CNN
-F 3 "~" H 9250 3800 50  0001 C CNN
-	1    9250 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J5
-U 1 1 5E8C1BA2
-P 9250 5100
-F 0 "J5" H 9330 5096 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 9168 4866 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 9250 5100 50  0001 C CNN
-F 3 "~" H 9250 5100 50  0001 C CNN
-	1    9250 5100
+U 1 1 5E8BEBC3
+P 9200 3400
+F 0 "J5" H 9280 3396 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 9118 3166 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 9200 3400 50  0001 C CNN
+F 3 "~" H 9200 3400 50  0001 C CNN
+	1    9200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J2
-U 1 1 5E8BB7CA
-P 2600 3750
-F 0 "J2" H 2518 3975 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 2518 3516 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 2600 3750 50  0001 C CNN
-F 3 "~" H 2600 3750 50  0001 C CNN
-	1    2600 3750
-	-1   0    0    -1  
+L Connector:Screw_Terminal_01x03 J6
+U 1 1 5E8C1BA2
+P 9200 4250
+F 0 "J6" H 9280 4246 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 9118 4016 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 9200 4250 50  0001 C CNN
+F 3 "~" H 9200 4250 50  0001 C CNN
+	1    9200 4250
+	1    0    0    -1  
 $EndComp
-Text HLabel 5400 5000 1    50   UnSpc ~ 0
+Text HLabel 5700 3950 1    50   UnSpc ~ 0
 AC_N
-Text HLabel 4850 3300 0    50   UnSpc ~ 0
+Text HLabel 5100 3300 0    50   UnSpc ~ 0
 AC_IN_HOT
 Text HLabel 5700 3200 1    50   UnSpc ~ 0
 PWR_SW
-Connection ~ 5400 5450
+Connection ~ 5700 4400
 Wire Wire Line
-	5400 5400 5400 5450
+	5700 4350 5700 4400
 $Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5E2B212C
-P 3350 5900
-F 0 "J3" H 3378 5830 50  0000 L CNN
-F 1 "Conn_01x02_Female" V 3197 5712 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3350 5900 50  0001 C CNN
-F 3 "~" H 3350 5900 50  0001 C CNN
-	1    3350 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
+L power:GND #PWR03
 U 1 1 649E3EA1
-P 5400 5500
-F 0 "#PWR04" H 5400 5250 50  0001 C CNN
-F 1 "GND" H 5405 5327 50  0000 C CNN
-F 2 "" H 5400 5500 50  0001 C CNN
-F 3 "" H 5400 5500 50  0001 C CNN
-	1    5400 5500
+P 5700 4450
+F 0 "#PWR03" H 5700 4200 50  0001 C CNN
+F 1 "GND" H 5705 4277 50  0000 C CNN
+F 2 "" H 5700 4450 50  0001 C CNN
+F 3 "" H 5700 4450 50  0001 C CNN
+	1    5700 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5E2C3357
-P 5400 5250
-F 0 "R1" H 5470 5296 50  0000 L CNN
-F 1 "4.7M" H 5470 5205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5330 5250 50  0001 C CNN
-F 3 "~" H 5400 5250 50  0001 C CNN
-	1    5400 5250
+P 5700 4200
+F 0 "R1" H 5770 4246 50  0000 L CNN
+F 1 "4.7M" H 5770 4155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 4200 50  0001 C CNN
+F 3 "~" H 5700 4200 50  0001 C CNN
+	1    5700 4200
 	1    0    0    -1  
 $EndComp
-Text HLabel 6300 3300 2    50   UnSpc ~ 0
+Text HLabel 6250 3300 2    50   UnSpc ~ 0
 AC_OUT_HOT
 $Comp
 L Device:Fuse F1
@@ -283,5 +207,81 @@ F 2 "" H 5388 3150 50  0001 C CNN
 F 3 "~" H 5350 3300 50  0001 C CNN
 	1    5350 3300
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3300 5200 3300
+Wire Wire Line
+	6150 3300 6250 3300
+Text HLabel 3100 4000 0    50   UnSpc ~ 0
+AC_IN_HOT
+Text HLabel 3100 4100 0    50   UnSpc ~ 0
+PWR_SW
+Wire Wire Line
+	2950 3250 3400 3250
+Wire Wire Line
+	2950 3350 3050 3350
+Wire Wire Line
+	2950 3150 3050 3150
+Text HLabel 3050 3150 2    50   UnSpc ~ 0
+AC_IN_HOT
+Text HLabel 3050 3350 2    50   UnSpc ~ 0
+AC_N
+$Comp
+L power:GND #PWR01
+U 1 1 5E7F2BFD
+P 3400 3300
+F 0 "#PWR01" H 3400 3050 50  0001 C CNN
+F 1 "GND" H 3405 3127 50  0000 C CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3300 3400 3250
+Wire Wire Line
+	3100 4700 3250 4700
+Wire Wire Line
+	3100 4600 3250 4600
+Wire Wire Line
+	3250 4100 3100 4100
+Wire Wire Line
+	3250 4000 3100 4000
+Text HLabel 3100 4600 0    50   Input ~ 0
+STBY_CTRL_1
+Text HLabel 3100 4700 0    50   Input ~ 0
+STBY_CTRL_2
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5E5E0EF2
+P 3450 4600
+F 0 "J3" H 3478 4530 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 3297 4412 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3450 4600 50  0001 C CNN
+F 3 "~" H 3450 4600 50  0001 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5E8BB7CA
+P 2750 3250
+F 0 "J1" H 2668 3475 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 2668 3016 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 2750 3250 50  0001 C CNN
+F 3 "~" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5E2B212C
+P 3450 4000
+F 0 "J2" H 3478 3930 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 3297 3812 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3450 4000 50  0001 C CNN
+F 3 "~" H 3450 4000 50  0001 C CNN
+	1    3450 4000
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

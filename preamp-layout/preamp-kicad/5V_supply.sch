@@ -173,10 +173,10 @@ rectified_-
 Text Label 3650 3800 2    50   ~ 0
 rectified_+
 $Comp
-L Connector:Conn_01x02_Male J12
+L Connector:Conn_01x02_Male J11
 U 1 1 5FD21456
 P 1950 5750
-F 0 "J12" H 1922 5678 50  0000 R CNN
+F 0 "J11" H 1922 5678 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 1922 5633 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1950 5750 50  0001 C CNN
 F 3 "~" H 1950 5750 50  0001 C CNN
@@ -188,10 +188,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 5750 1550 5750
 $Comp
-L Connector:Conn_01x02_Male J13
+L Connector:Conn_01x02_Male J12
 U 1 1 5FD3E35C
 P 1950 6350
-F 0 "J13" H 1922 6278 50  0000 R CNN
+F 0 "J12" H 1922 6278 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 1922 6233 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1950 6350 50  0001 C CNN
 F 3 "~" H 1950 6350 50  0001 C CNN
@@ -207,10 +207,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 6350 1550 6350
 $Comp
-L Connector:Conn_01x02_Male J14
+L Connector:Conn_01x02_Male J13
 U 1 1 5FD41D04
 P 1950 6900
-F 0 "J14" H 1922 6828 50  0000 R CNN
+F 0 "J13" H 1922 6828 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 1922 6783 50  0001 R CNN
 F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1950 6900 50  0001 C CNN
 F 3 "~" H 1950 6900 50  0001 C CNN
@@ -488,8 +488,8 @@ L Connector:Screw_Terminal_01x03 J?
 U 1 1 5E8DD1BE
 P 4050 1500
 AR Path="/5E26F6FE/5E8DD1BE" Ref="J?"  Part="1" 
-AR Path="/5E5EF2D4/5E8DD1BE" Ref="J15"  Part="1" 
-F 0 "J15" H 3968 1725 50  0000 C CNN
+AR Path="/5E5EF2D4/5E8DD1BE" Ref="J14"  Part="1" 
+F 0 "J14" H 3968 1725 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 3968 1266 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal" H 4050 1500 50  0001 C CNN
 F 3 "~" H 4050 1500 50  0001 C CNN
