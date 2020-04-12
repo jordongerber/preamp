@@ -1,11 +1,18 @@
-3167974829645
+4755889552645
+preamp
+01110501Z_3AG
+
+
+0
+4
+2
 preamp
 ESP32_MELIFE_DEVKIT
 
 
 0
 30
-15
+26
 preamp
 Relay_DPDT_Omron_G6JU-2P-Y
 Omron G6K-2P-Y relay package http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf

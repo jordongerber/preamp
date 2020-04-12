@@ -30,22 +30,12 @@ F 3 "~" H 1850 2700 50  0001 C CNN
 	1    1850 2700
 	1    0    0    -1  
 $EndComp
-Text Label 7000 1400 0    50   ~ 0
-IN_1_S+
-Text GLabel 6900 1200 2    50   UnSpc ~ 0
-+5V
-Wire Wire Line
-	6900 1200 6750 1200
 Text GLabel 3650 1450 1    50   UnSpc ~ 0
 +5V
-Wire Wire Line
-	6750 1400 7000 1400
 Wire Wire Line
 	6750 3300 7000 3300
 Wire Wire Line
 	6750 3200 7000 3200
-Text Label 7000 2000 0    50   ~ 0
-IN_4_S+
 Text Label 7000 3200 0    50   ~ 0
 IN_4_R+
 Wire Wire Line
@@ -95,37 +85,6 @@ Wire Wire Line
 	2900 3500 2900 3850
 Text GLabel 2850 2800 0    50   UnSpc ~ 0
 +5V
-Text Label 7000 1900 0    50   ~ 0
-IN_3_R+
-Text Label 7000 1800 0    50   ~ 0
-IN_3_S+
-Wire Wire Line
-	6750 1800 7000 1800
-Wire Wire Line
-	6750 1900 7000 1900
-Wire Wire Line
-	6750 1700 7000 1700
-Wire Wire Line
-	6750 1600 7000 1600
-Wire Wire Line
-	6750 1500 7000 1500
-Text Label 7000 1600 0    50   ~ 0
-IN_2_S+
-Text Label 7000 1700 0    50   ~ 0
-IN_2_R+
-Text Label 7000 1500 0    50   ~ 0
-IN_1_R+
-$Comp
-L Transistor_Array:ULN2003 U9
-U 1 1 5E036B83
-P 6350 1600
-F 0 "U9" H 6350 2267 50  0000 C CNN
-F 1 "ULN2003" H 6350 2176 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6400 1050 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6450 1400 50  0001 C CNN
-	1    6350 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 3900 3650 3850
 Connection ~ 3650 3850
@@ -146,18 +105,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 3200 4900 3200
 Wire Wire Line
-	5750 2400 5750 1900
-Wire Wire Line
-	5650 2300 5650 1800
-Wire Wire Line
-	5550 2200 5550 1700
-Wire Wire Line
-	5450 2100 5450 1600
-Wire Wire Line
-	5350 2000 5350 1500
-Wire Wire Line
-	5250 1900 5250 1400
-Wire Wire Line
 	4500 3800 4500 2800
 Wire Wire Line
 	4600 3800 4600 2900
@@ -169,17 +116,6 @@ Wire Wire Line
 	4900 3800 4900 3200
 Wire Wire Line
 	5000 3800 5000 3300
-$Comp
-L Connector:Conn_01x03_Male J42
-U 1 1 637A81F9
-P 1800 3500
-F 0 "J42" H 1772 3478 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 1772 3433 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1800 3500 50  0001 C CNN
-F 3 "~" H 1800 3500 50  0001 C CNN
-	1    1800 3500
-	-1   0    0    -1  
-$EndComp
 Text HLabel 1550 2900 0    50   UnSpc ~ 0
 A_OUT_R
 Text HLabel 1550 2500 0    50   UnSpc ~ 0
@@ -195,8 +131,6 @@ OUT_2_R+
 Text Label 7000 3700 0    50   ~ 0
 OUT_2_S+
 Wire Wire Line
-	6750 2000 7000 2000
-Wire Wire Line
 	6750 3800 7000 3800
 $Comp
 L Connector:Conn_01x02_Male J48
@@ -210,23 +144,7 @@ F 3 "~" H 6200 7050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1400 5950 1400
-Wire Wire Line
-	5350 1500 5950 1500
-Wire Wire Line
-	5450 1600 5950 1600
-Wire Wire Line
-	5550 1700 5950 1700
-Wire Wire Line
-	5650 1800 5950 1800
-Wire Wire Line
-	5750 1900 5950 1900
-Wire Wire Line
 	4350 2500 5050 2500
-Wire Wire Line
-	5850 2500 5850 2000
-Wire Wire Line
-	5850 2000 5950 2000
 Wire Wire Line
 	5850 2800 5850 3200
 Wire Wire Line
@@ -263,7 +181,7 @@ U 1 1 60FF250B
 P 4750 1150
 F 0 "J45" V 4823 1130 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 4824 1130 50  0001 C CNN
-F 2 "" H 4750 1150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 4750 1150 50  0001 C CNN
 F 3 "~" H 4750 1150 50  0001 C CNN
 	1    4750 1150
 	0    -1   -1   0   
@@ -321,7 +239,7 @@ U 1 1 610AC3C4
 P 4800 4000
 F 0 "J46" V 4873 3980 50  0000 C CNN
 F 1 "Conn_01x07_Female" V 4874 3980 50  0001 C CNN
-F 2 "" H 4800 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 4800 4000 50  0001 C CNN
 F 3 "~" H 4800 4000 50  0001 C CNN
 	1    4800 4000
 	0    -1   1    0   
@@ -796,19 +714,6 @@ Text GLabel 9000 1100 1    50   UnSpc ~ 0
 +5V
 Wire Wire Line
 	1500 7350 1750 7350
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 63BC6293
-P 1300 7350
-AR Path="/5E607732/63BC6293" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/63BC6293" Ref="J41"  Part="1" 
-F 0 "J41" H 1450 7350 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 1328 7285 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 7350 50  0001 C CNN
-F 3 "~" H 1300 7350 50  0001 C CNN
-	1    1300 7350
-	-1   0    0    -1  
-$EndComp
 Text Notes 6950 6000 0    118  ~ 24
 OUT 2
 $Comp
@@ -839,19 +744,6 @@ Text HLabel 7450 5750 0    50   UnSpc ~ 0
 A_OUT_2_L
 Text HLabel 7450 6100 0    50   UnSpc ~ 0
 A_OUT_2_R
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 620969B0
-P 1300 6850
-AR Path="/5E607732/620969B0" Ref="J?"  Part="1" 
-AR Path="/5E2D8DA2/620969B0" Ref="J40"  Part="1" 
-F 0 "J40" H 1450 6850 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 1328 6785 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 6850 50  0001 C CNN
-F 3 "~" H 1300 6850 50  0001 C CNN
-	1    1300 6850
-	-1   0    0    -1  
-$EndComp
 Text Notes 6950 5000 0    118  ~ 24
 OUT 1
 $Comp
@@ -1040,19 +932,6 @@ F 1 "GND" H 3655 3727 50  0000 C CNN
 F 2 "" H 3650 3900 50  0001 C CNN
 F 3 "" H 3650 3900 50  0001 C CNN
 	1    3650 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64C160A3
-P 6350 2200
-AR Path="/5E26F6FE/64C160A3" Ref="#PWR?"  Part="1" 
-AR Path="/5E2D8DA2/64C160A3" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 6350 1950 50  0001 C CNN
-F 1 "GND" H 6355 2027 50  0000 C CNN
-F 2 "" H 6350 2200 50  0001 C CNN
-F 3 "" H 6350 2200 50  0001 C CNN
-	1    6350 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1556,7 +1435,7 @@ U 1 1 61FF179F
 P 2600 900
 F 0 "J44" H 2492 993 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 2492 994 50  0001 C CNN
-F 2 "" H 2600 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2600 900 50  0001 C CNN
 F 3 "~" H 2600 900 50  0001 C CNN
 	1    2600 900 
 	-1   0    0    -1  
@@ -1753,4 +1632,123 @@ Wire Wire Line
 Connection ~ 2700 1900
 Wire Wire Line
 	2700 1900 2950 1900
+Wire Wire Line
+	5850 2500 5850 2150
+Wire Wire Line
+	5750 2400 5750 2050
+Wire Wire Line
+	5650 2300 5650 1950
+Wire Wire Line
+	5550 2200 5550 1850
+Wire Wire Line
+	5450 2100 5450 1750
+Wire Wire Line
+	5350 2000 5350 1650
+Wire Wire Line
+	5250 1900 5250 1550
+$Comp
+L power:GND #PWR?
+U 1 1 64C160A3
+P 6350 2350
+AR Path="/5E26F6FE/64C160A3" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/64C160A3" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 6350 2100 50  0001 C CNN
+F 1 "GND" H 6355 2177 50  0000 C CNN
+F 2 "" H 6350 2350 50  0001 C CNN
+F 3 "" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2150 5950 2150
+Wire Wire Line
+	5750 2050 5950 2050
+Wire Wire Line
+	5650 1950 5950 1950
+Wire Wire Line
+	5550 1850 5950 1850
+Wire Wire Line
+	5450 1750 5950 1750
+Wire Wire Line
+	5350 1650 5950 1650
+Wire Wire Line
+	5250 1550 5950 1550
+Wire Wire Line
+	6750 2150 7000 2150
+$Comp
+L Transistor_Array:ULN2003 U9
+U 1 1 5E036B83
+P 6350 1750
+F 0 "U9" H 6350 2417 50  0000 C CNN
+F 1 "ULN2003" H 6350 2326 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6400 1200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 6450 1550 50  0001 C CNN
+	1    6350 1750
+	1    0    0    -1  
+$EndComp
+Text Label 7000 1650 0    50   ~ 0
+IN_1_R+
+Text Label 7000 1850 0    50   ~ 0
+IN_2_R+
+Text Label 7000 1750 0    50   ~ 0
+IN_2_S+
+Wire Wire Line
+	6750 1650 7000 1650
+Wire Wire Line
+	6750 1750 7000 1750
+Wire Wire Line
+	6750 1850 7000 1850
+Wire Wire Line
+	6750 2050 7000 2050
+Wire Wire Line
+	6750 1950 7000 1950
+Text Label 7000 1950 0    50   ~ 0
+IN_3_S+
+Text Label 7000 2050 0    50   ~ 0
+IN_3_R+
+Text Label 7000 2150 0    50   ~ 0
+IN_4_S+
+Wire Wire Line
+	6750 1550 7000 1550
+Wire Wire Line
+	6900 1350 6750 1350
+Text GLabel 6900 1350 2    50   UnSpc ~ 0
++5V
+Text Label 7000 1550 0    50   ~ 0
+IN_1_S+
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61432578
+P 1800 3500
+AR Path="/5E607732/61432578" Ref="J?"  Part="1" 
+AR Path="/5E2D8DA2/61432578" Ref="J42"  Part="1" 
+F 0 "J42" H 1828 3480 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 1828 3435 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1800 3500 50  0001 C CNN
+F 3 "~" H 1800 3500 50  0001 C CNN
+	1    1800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J40
+U 1 1 61461D5D
+P 1300 6850
+F 0 "J40" H 1200 6850 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 6783 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 6850 50  0001 C CNN
+F 3 "~" H 1300 6850 50  0001 C CNN
+	1    1300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J41
+U 1 1 61461D67
+P 1300 7350
+F 0 "J41" H 1200 7350 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1272 7283 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 7350 50  0001 C CNN
+F 3 "~" H 1300 7350 50  0001 C CNN
+	1    1300 7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

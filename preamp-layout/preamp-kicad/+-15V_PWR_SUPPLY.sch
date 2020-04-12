@@ -95,7 +95,7 @@ AR Path="/5E26F6FE/60029A0D" Ref="F?"  Part="1"
 AR Path="/5E27B612/60029A0D" Ref="F2"  Part="1" 
 F 0 "F2" V 2053 3350 50  0000 C CNN
 F 1 "500mA" V 2144 3350 50  0000 C CNN
-F 2 "" V 2180 3350 50  0001 C CNN
+F 2 "preamp:01110501Z_3AG" V 2180 3350 50  0001 C CNN
 F 3 "~" H 2250 3350 50  0001 C CNN
 	1    2250 3350
 	0    1    1    0   
@@ -111,9 +111,9 @@ F 3 "http://www.vishay.com/docs/88571/dfm.pdf" H 3850 3450 50  0001 C CNN
 	1    3850 3450
 	1    0    0    -1  
 $EndComp
-Text Label 3550 4050 3    50   ~ 0
+Text Label 3550 4000 3    50   ~ 0
 rectified_-
-Text Label 4150 4050 3    50   ~ 0
+Text Label 4150 4000 3    50   ~ 0
 rectified_+
 $Comp
 L Device:C C?
@@ -276,46 +276,7 @@ Text Label 5500 4750 2    50   ~ 0
 rectified_-
 Text Label 5500 2350 2    50   ~ 0
 rectified_+
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FE3F8F2
-P 7800 2350
-AR Path="/5E5EF2D4/5FE3F8F2" Ref="U?"  Part="1" 
-AR Path="/5E27B612/5FE3F8F2" Ref="U1"  Part="1" 
-F 0 "U1" H 7800 2592 50  0000 C CNN
-F 1 "LM7815" H 7800 2501 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7825 2200 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7800 2300 50  0001 C CNN
-	1    7800 2350
-	1    0    0    -1  
-$EndComp
 Connection ~ 5700 3550
-$Comp
-L Regulator_Linear:LM7905_TO220 U?
-U 1 1 5FE3F8FA
-P 7800 4750
-AR Path="/5E5EF2D4/5FE3F8FA" Ref="U?"  Part="1" 
-AR Path="/5E27B612/5FE3F8FA" Ref="U2"  Part="1" 
-F 0 "U2" H 7800 4601 50  0000 C CNN
-F 1 "LM7915" H 7800 4510 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 4550 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM7905.pdf" H 7800 4750 50  0001 C CNN
-	1    7800 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT_US RV?
-U 1 1 5FE3F900
-P 7800 3250
-AR Path="/5E5EF2D4/5FE3F900" Ref="RV?"  Part="1" 
-AR Path="/5E27B612/5FE3F900" Ref="RV1"  Part="1" 
-F 0 "RV1" H 7732 3296 50  0000 R CNN
-F 1 "5k" H 7732 3205 50  0000 R CNN
-F 2 "" H 7800 3250 50  0001 C CNN
-F 3 "~" H 7800 3250 50  0001 C CNN
-	1    7800 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7950 3250 8050 3250
 Wire Wire Line
@@ -527,19 +488,6 @@ Wire Wire Line
 	9900 4000 9900 3550
 Text GLabel 9900 5000 3    50   UnSpc ~ 0
 -15V
-$Comp
-L Device:R_POT_US RV?
-U 1 1 5FE3F975
-P 7800 3850
-AR Path="/5E5EF2D4/5FE3F975" Ref="RV?"  Part="1" 
-AR Path="/5E27B612/5FE3F975" Ref="RV2"  Part="1" 
-F 0 "RV2" H 7732 3804 50  0000 R CNN
-F 1 "5k" H 7732 3895 50  0000 R CNN
-F 2 "" H 7800 3850 50  0001 C CNN
-F 3 "~" H 7800 3850 50  0001 C CNN
-	1    7800 3850
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7950 3850 8050 3850
 Wire Wire Line
@@ -796,10 +744,6 @@ Wire Wire Line
 	3850 3050 3300 3050
 Wire Wire Line
 	3300 3850 3850 3850
-Wire Wire Line
-	3550 4050 3550 3450
-Wire Wire Line
-	4150 3450 4150 4050
 $Comp
 L Connector:Conn_01x03_Male J8
 U 1 1 5E5A9FCF
@@ -911,4 +855,56 @@ Wire Wire Line
 Connection ~ 9900 4750
 Wire Wire Line
 	9900 4750 9900 5000
+$Comp
+L Regulator_Linear:LM7815_TO220 U1
+U 1 1 612FF6B0
+P 7800 2350
+F 0 "U1" H 7800 2592 50  0000 C CNN
+F 1 "LM7815" H 7800 2501 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 2575 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 7800 2300 50  0001 C CNN
+	1    7800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7915_TO220 U2
+U 1 1 6130D110
+P 7800 4750
+F 0 "U2" H 7800 4601 50  0000 C CNN
+F 1 "LM7915" H 7800 4510 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 4550 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7905.pdf" H 7800 4750 50  0001 C CNN
+	1    7800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 613227DC
+P 7800 3250
+AR Path="/5E5EF2D4/613227DC" Ref="RV?"  Part="1" 
+AR Path="/5E27B612/613227DC" Ref="RV1"  Part="1" 
+F 0 "RV1" H 7730 3296 50  0000 R CNN
+F 1 "4.7k" H 7730 3205 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical" H 7800 3250 50  0001 C CNN
+F 3 "~" H 7800 3250 50  0001 C CNN
+	1    7800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61335892
+P 7800 3850
+AR Path="/5E5EF2D4/61335892" Ref="RV?"  Part="1" 
+AR Path="/5E27B612/61335892" Ref="RV2"  Part="1" 
+F 0 "RV2" H 7730 3896 50  0000 R CNN
+F 1 "4.7k" H 7730 3805 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical" H 7800 3850 50  0001 C CNN
+F 3 "~" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3450 3550 4000
+Wire Wire Line
+	4150 3450 4150 4000
 $EndSCHEMATC
