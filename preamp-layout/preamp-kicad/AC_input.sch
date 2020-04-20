@@ -109,7 +109,7 @@ AR Path="/5E2D8DA2/5E605BF1" Ref="J?"  Part="1"
 AR Path="/5E26F6FE/5E605BF1" Ref="J4"  Part="1" 
 F 0 "J4" V 8558 2912 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 8422 2983 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 8450 3100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8450 3100 50  0001 C CNN
 F 3 "~" H 8450 3100 50  0001 C CNN
 	1    8450 3100
 	0    -1   1    0   

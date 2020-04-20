@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 13 13
 Title "IO Main Board"
 Date "2020-02-25"
 Rev "A00"
@@ -16,487 +16,567 @@ $EndDescr
 $Comp
 L Connector:Conn_Coaxial_x2 J?
 U 1 1 5E60DD2B
-P 2800 2850
+P 1550 2950
 AR Path="/5E2D8DA2/5E60DD2B" Ref="J?"  Part="1" 
 AR Path="/5E607732/5E60DD2B" Ref="J22"  Part="1" 
-F 0 "J22" H 2728 3097 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 2728 3097 50  0001 C CNN
-F 2 "" H 2800 2750 50  0001 C CNN
-F 3 " ~" H 2800 2750 50  0001 C CNN
-	1    2800 2850
+F 0 "J22" H 1478 3197 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 1478 3197 50  0001 C CNN
+F 2 "" H 1550 2850 50  0001 C CNN
+F 3 " ~" H 1550 2850 50  0001 C CNN
+	1    1550 2950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x03_Female J27
-U 1 1 5E60DD36
-P 4850 2850
-F 0 "J27" H 4878 2830 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 2785 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 2850 50  0001 C CNN
-F 3 "~" H 4850 2850 50  0001 C CNN
-	1    4850 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 2850 4550 2850
-Text HLabel 3100 2750 2    50   UnSpc ~ 0
-A_IN_2_L
-Text HLabel 3100 2950 2    50   UnSpc ~ 0
-A_IN_2_R
 $Comp
 L Connector:Conn_Coaxial_x2 J?
 U 1 1 6431D3FD
-P 2800 1800
+P 1550 1900
 AR Path="/5E2D8DA2/6431D3FD" Ref="J?"  Part="1" 
 AR Path="/5E607732/6431D3FD" Ref="J21"  Part="1" 
-F 0 "J21" H 2728 2047 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 2728 2047 50  0001 C CNN
-F 2 "" H 2800 1700 50  0001 C CNN
-F 3 " ~" H 2800 1700 50  0001 C CNN
-	1    2800 1800
+F 0 "J21" H 1478 2147 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 1478 2147 50  0001 C CNN
+F 2 "" H 1550 1800 50  0001 C CNN
+F 3 " ~" H 1550 1800 50  0001 C CNN
+	1    1550 1900
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x03_Female J26
-U 1 1 6431D407
-P 4850 1800
-F 0 "J26" H 4878 1780 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 1735 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 1800 50  0001 C CNN
-F 3 "~" H 4850 1800 50  0001 C CNN
-	1    4850 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 1800 4550 1800
-Text HLabel 3100 1700 2    50   UnSpc ~ 0
-A_IN_1_L
-Text HLabel 3100 1900 2    50   UnSpc ~ 0
-A_IN_1_R
 $Comp
 L Connector:Conn_Coaxial_x2 J?
 U 1 1 6433171F
-P 2800 4950
+P 1550 5050
 AR Path="/5E2D8DA2/6433171F" Ref="J?"  Part="1" 
 AR Path="/5E607732/6433171F" Ref="J24"  Part="1" 
-F 0 "J24" H 2728 5197 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 2728 5197 50  0001 C CNN
-F 2 "" H 2800 4850 50  0001 C CNN
-F 3 " ~" H 2800 4850 50  0001 C CNN
-	1    2800 4950
+F 0 "J24" H 1478 5297 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 1478 5297 50  0001 C CNN
+F 2 "" H 1550 4950 50  0001 C CNN
+F 3 " ~" H 1550 4950 50  0001 C CNN
+	1    1550 5050
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x03_Female J29
-U 1 1 64331729
-P 4850 4950
-F 0 "J29" H 4878 4930 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 4885 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 4950 50  0001 C CNN
-F 3 "~" H 4850 4950 50  0001 C CNN
-	1    4850 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 4950 4550 4950
-Text HLabel 3100 4850 2    50   UnSpc ~ 0
-A_IN_4_L
-Text HLabel 3100 5050 2    50   UnSpc ~ 0
-A_IN_4_R
 $Comp
 L Connector:Conn_Coaxial_x2 J?
 U 1 1 64331754
-P 2800 3900
+P 1550 4000
 AR Path="/5E2D8DA2/64331754" Ref="J?"  Part="1" 
 AR Path="/5E607732/64331754" Ref="J23"  Part="1" 
-F 0 "J23" H 2728 4147 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 2728 4147 50  0001 C CNN
-F 2 "" H 2800 3800 50  0001 C CNN
-F 3 " ~" H 2800 3800 50  0001 C CNN
-	1    2800 3900
+F 0 "J23" H 1478 4247 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 1478 4247 50  0001 C CNN
+F 2 "" H 1550 3900 50  0001 C CNN
+F 3 " ~" H 1550 3900 50  0001 C CNN
+	1    1550 4000
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J28
-U 1 1 6433175E
-P 4850 3900
-F 0 "J28" H 4878 3880 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 3835 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 3900 50  0001 C CNN
-F 3 "~" H 4850 3900 50  0001 C CNN
-	1    4850 3900
-	1    0    0    -1  
-$EndComp
-Text HLabel 3100 3800 2    50   UnSpc ~ 0
-A_IN_3_L
-Text HLabel 3100 4000 2    50   UnSpc ~ 0
-A_IN_3_R
-$Comp
-L Connector:Conn_Coaxial_x2 J?
-U 1 1 6433C001
-P 2800 6000
-AR Path="/5E2D8DA2/6433C001" Ref="J?"  Part="1" 
-AR Path="/5E607732/6433C001" Ref="J25"  Part="1" 
-F 0 "J25" H 2728 6247 50  0000 C CNN
-F 1 "Conn_Coaxial_x2" H 2728 6247 50  0001 C CNN
-F 2 "" H 2800 5900 50  0001 C CNN
-F 3 " ~" H 2800 5900 50  0001 C CNN
-	1    2800 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J30
-U 1 1 6433C00B
-P 4850 6000
-F 0 "J30" H 4878 5980 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 5935 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 6000 50  0001 C CNN
-F 3 "~" H 4850 6000 50  0001 C CNN
-	1    4850 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 6000 4550 6000
-Text HLabel 3100 5900 2    50   UnSpc ~ 0
-A_IN_5_L
-Text HLabel 3100 6100 2    50   UnSpc ~ 0
-A_IN_5_R
-Text HLabel 8750 4400 0    50   UnSpc ~ 0
-A_OUT_2_R
-Text HLabel 8750 4200 0    50   UnSpc ~ 0
-A_OUT_2_L
-Wire Wire Line
-	7200 4300 7300 4300
-$Comp
-L Connector:Conn_Coaxial_x2 J?
-U 1 1 64358093
-P 9050 4300
-AR Path="/5E2D8DA2/64358093" Ref="J?"  Part="1" 
-AR Path="/5E607732/64358093" Ref="J34"  Part="1" 
-F 0 "J34" H 9150 4229 50  0000 L CNN
-F 1 "Conn_Coaxial_x2" H 8978 4547 50  0001 C CNN
-F 2 "" H 9050 4200 50  0001 C CNN
-F 3 " ~" H 9050 4200 50  0001 C CNN
-	1    9050 4300
-	1    0    0    -1  
-$EndComp
-Text HLabel 8750 3350 0    50   UnSpc ~ 0
-A_OUT_1_R
-Text HLabel 8750 3150 0    50   UnSpc ~ 0
-A_OUT_1_L
-Wire Wire Line
-	7200 3250 7300 3250
-$Comp
-L Connector:Conn_Coaxial_x2 J?
-U 1 1 64354C54
-P 9050 3250
-AR Path="/5E2D8DA2/64354C54" Ref="J?"  Part="1" 
-AR Path="/5E607732/64354C54" Ref="J33"  Part="1" 
-F 0 "J33" H 9150 3179 50  0000 L CNN
-F 1 "Conn_Coaxial_x2" H 8978 3497 50  0001 C CNN
-F 2 "" H 9050 3150 50  0001 C CNN
-F 3 " ~" H 9050 3150 50  0001 C CNN
-	1    9050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J31
-U 1 1 6436D21D
-P 7000 3250
-F 0 "J31" H 6973 3228 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6972 3183 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7000 3250 50  0001 C CNN
-F 3 "~" H 7000 3250 50  0001 C CNN
-	1    7000 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J32
-U 1 1 6437A2AD
-P 7000 4300
-F 0 "J32" H 6973 4278 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6972 4233 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7000 4300 50  0001 C CNN
-F 3 "~" H 7000 4300 50  0001 C CNN
-	1    7000 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64B8A4E5
-P 4550 1800
-AR Path="/5E26F6FE/64B8A4E5" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64B8A4E5" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 4550 1550 50  0001 C CNN
-F 1 "GND" V 4555 1672 50  0000 R CNN
-F 2 "" H 4550 1800 50  0001 C CNN
-F 3 "" H 4550 1800 50  0001 C CNN
-	1    4550 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 3900 4550 3900
-$Comp
-L power:GND #PWR?
-U 1 1 64B99929
-P 4550 2850
-AR Path="/5E26F6FE/64B99929" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64B99929" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 4550 2600 50  0001 C CNN
-F 1 "GND" V 4555 2722 50  0000 R CNN
-F 2 "" H 4550 2850 50  0001 C CNN
-F 3 "" H 4550 2850 50  0001 C CNN
-	1    4550 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64B9AE8F
-P 4550 3900
-AR Path="/5E26F6FE/64B9AE8F" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64B9AE8F" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 4550 3650 50  0001 C CNN
-F 1 "GND" V 4555 3772 50  0000 R CNN
-F 2 "" H 4550 3900 50  0001 C CNN
-F 3 "" H 4550 3900 50  0001 C CNN
-	1    4550 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64B9C67B
-P 4550 6000
-AR Path="/5E26F6FE/64B9C67B" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64B9C67B" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 4550 5750 50  0001 C CNN
-F 1 "GND" V 4555 5872 50  0000 R CNN
-F 2 "" H 4550 6000 50  0001 C CNN
-F 3 "" H 4550 6000 50  0001 C CNN
-	1    4550 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64B9F2DA
-P 4550 4950
-AR Path="/5E26F6FE/64B9F2DA" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64B9F2DA" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 4550 4700 50  0001 C CNN
-F 1 "GND" V 4555 4822 50  0000 R CNN
-F 2 "" H 4550 4950 50  0001 C CNN
-F 3 "" H 4550 4950 50  0001 C CNN
-	1    4550 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64BA0A7B
-P 7300 3250
-AR Path="/5E26F6FE/64BA0A7B" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64BA0A7B" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 7300 3000 50  0001 C CNN
-F 1 "GND" V 7305 3122 50  0000 R CNN
-F 2 "" H 7300 3250 50  0001 C CNN
-F 3 "" H 7300 3250 50  0001 C CNN
-	1    7300 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64BA2069
-P 7300 4300
-AR Path="/5E26F6FE/64BA2069" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/64BA2069" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 7300 4050 50  0001 C CNN
-F 1 "GND" V 7305 4172 50  0000 R CNN
-F 2 "" H 7300 4300 50  0001 C CNN
-F 3 "" H 7300 4300 50  0001 C CNN
-	1    7300 4300
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64BB2C61
-P 2800 2150
+P 1550 2250
 AR Path="/5E26F6FE/64BB2C61" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/64BB2C61" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 2800 1900 50  0001 C CNN
-F 1 "GND" H 2805 1977 50  0000 C CNN
-F 2 "" H 2800 2150 50  0001 C CNN
-F 3 "" H 2800 2150 50  0001 C CNN
-	1    2800 2150
+F 0 "#PWR027" H 1550 2000 50  0001 C CNN
+F 1 "GND" H 1555 2077 50  0000 C CNN
+F 2 "" H 1550 2250 50  0001 C CNN
+F 3 "" H 1550 2250 50  0001 C CNN
+	1    1550 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 2750 3100 2750
-Wire Wire Line
-	3000 2950 3100 2950
-Text HLabel 4550 2750 0    50   UnSpc ~ 0
-A_IN_2_L
-Text HLabel 4550 2950 0    50   UnSpc ~ 0
-A_IN_2_R
-Wire Wire Line
-	4550 2750 4650 2750
-Wire Wire Line
-	4550 2950 4650 2950
-Wire Wire Line
-	3000 1700 3100 1700
-Wire Wire Line
-	3000 1900 3100 1900
-Text HLabel 4550 1700 0    50   UnSpc ~ 0
-A_IN_1_L
-Text HLabel 4550 1900 0    50   UnSpc ~ 0
-A_IN_1_R
-Wire Wire Line
-	8750 3150 8850 3150
-Wire Wire Line
-	4550 1900 4650 1900
-Wire Wire Line
-	4550 1700 4650 1700
-Wire Wire Line
-	8750 3350 8850 3350
-Wire Wire Line
-	3000 3800 3100 3800
-Wire Wire Line
-	3000 4000 3100 4000
-Wire Wire Line
-	4550 3800 4650 3800
-Wire Wire Line
-	4550 4000 4650 4000
-Text HLabel 4550 3800 0    50   UnSpc ~ 0
-A_IN_3_L
-Text HLabel 4550 4000 0    50   UnSpc ~ 0
-A_IN_3_R
-Wire Wire Line
-	3000 4850 3100 4850
-Wire Wire Line
-	3000 5050 3100 5050
-Wire Wire Line
-	4550 4850 4650 4850
-Wire Wire Line
-	4550 5050 4650 5050
-Text HLabel 4550 4850 0    50   UnSpc ~ 0
-A_IN_4_L
-Text HLabel 4550 5050 0    50   UnSpc ~ 0
-A_IN_4_R
-Wire Wire Line
-	3000 5900 3100 5900
-Wire Wire Line
-	3000 6100 3100 6100
-Text HLabel 4650 5900 0    50   UnSpc ~ 0
-A_IN_5_L
-Text HLabel 4650 6100 0    50   UnSpc ~ 0
-A_IN_5_R
-Wire Wire Line
-	7200 4200 7300 4200
-Wire Wire Line
-	7200 4400 7300 4400
-Wire Wire Line
-	7200 3150 7300 3150
-Wire Wire Line
-	7200 3350 7300 3350
-Text HLabel 7300 3350 2    50   UnSpc ~ 0
-A_OUT_1_R
-Text HLabel 7300 3150 2    50   UnSpc ~ 0
-A_OUT_1_L
-Wire Wire Line
-	8750 4200 8850 4200
-Wire Wire Line
-	8750 4400 8850 4400
-Text HLabel 7300 4400 2    50   UnSpc ~ 0
-A_OUT_2_R
-Text HLabel 7300 4200 2    50   UnSpc ~ 0
-A_OUT_2_L
-Wire Wire Line
-	2800 2100 2800 2150
-$Comp
-L power:GND #PWR?
-U 1 1 5E790D2A
-P 9050 4650
-AR Path="/5E26F6FE/5E790D2A" Ref="#PWR?"  Part="1" 
-AR Path="/5E607732/5E790D2A" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 9050 4400 50  0001 C CNN
-F 1 "GND" H 9055 4477 50  0000 C CNN
-F 2 "" H 9050 4650 50  0001 C CNN
-F 3 "" H 9050 4650 50  0001 C CNN
-	1    9050 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 4600 9050 4650
+	1550 2200 1550 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5E792160
-P 2800 3200
+P 1550 3300
 AR Path="/5E26F6FE/5E792160" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5E792160" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 2800 2950 50  0001 C CNN
-F 1 "GND" H 2805 3027 50  0000 C CNN
-F 2 "" H 2800 3200 50  0001 C CNN
-F 3 "" H 2800 3200 50  0001 C CNN
-	1    2800 3200
+F 0 "#PWR028" H 1550 3050 50  0001 C CNN
+F 1 "GND" H 1555 3127 50  0000 C CNN
+F 2 "" H 1550 3300 50  0001 C CNN
+F 3 "" H 1550 3300 50  0001 C CNN
+	1    1550 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 3150 2800 3200
+	1550 3250 1550 3300
 $Comp
 L power:GND #PWR?
 U 1 1 5E792F4E
-P 2800 4250
+P 1550 4350
 AR Path="/5E26F6FE/5E792F4E" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5E792F4E" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 2800 4000 50  0001 C CNN
-F 1 "GND" H 2805 4077 50  0000 C CNN
-F 2 "" H 2800 4250 50  0001 C CNN
-F 3 "" H 2800 4250 50  0001 C CNN
-	1    2800 4250
+F 0 "#PWR029" H 1550 4100 50  0001 C CNN
+F 1 "GND" H 1555 4177 50  0000 C CNN
+F 2 "" H 1550 4350 50  0001 C CNN
+F 3 "" H 1550 4350 50  0001 C CNN
+	1    1550 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 4200 2800 4250
+	1550 4300 1550 4350
 $Comp
 L power:GND #PWR?
 U 1 1 5E7942CF
-P 2800 5300
+P 1550 5400
 AR Path="/5E26F6FE/5E7942CF" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5E7942CF" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 2800 5050 50  0001 C CNN
-F 1 "GND" H 2805 5127 50  0000 C CNN
-F 2 "" H 2800 5300 50  0001 C CNN
-F 3 "" H 2800 5300 50  0001 C CNN
-	1    2800 5300
+F 0 "#PWR030" H 1550 5150 50  0001 C CNN
+F 1 "GND" H 1555 5227 50  0000 C CNN
+F 2 "" H 1550 5400 50  0001 C CNN
+F 3 "" H 1550 5400 50  0001 C CNN
+	1    1550 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 5250 2800 5300
+	1550 5350 1550 5400
+Wire Wire Line
+	2900 2200 2900 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5E795042
-P 2800 6350
+P 2900 2250
 AR Path="/5E26F6FE/5E795042" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5E795042" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 2800 6100 50  0001 C CNN
-F 1 "GND" H 2805 6177 50  0000 C CNN
-F 2 "" H 2800 6350 50  0001 C CNN
-F 3 "" H 2800 6350 50  0001 C CNN
-	1    2800 6350
+F 0 "#PWR031" H 2900 2000 50  0001 C CNN
+F 1 "GND" H 2905 2077 50  0000 C CNN
+F 2 "" H 2900 2250 50  0001 C CNN
+F 3 "" H 2900 2250 50  0001 C CNN
+	1    2900 2250
+	1    0    0    -1  
+$EndComp
+Text HLabel 4900 3650 0    50   UnSpc ~ 0
+A_IN_5_R
+Text HLabel 4900 3550 0    50   UnSpc ~ 0
+A_IN_5_L
+Wire Wire Line
+	3100 2000 3200 2000
+Wire Wire Line
+	3100 1800 3200 1800
+Text HLabel 3200 2000 2    50   UnSpc ~ 0
+A_IN_5_R
+Text HLabel 3200 1800 2    50   UnSpc ~ 0
+A_IN_5_L
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 6433C001
+P 2900 1900
+AR Path="/5E2D8DA2/6433C001" Ref="J?"  Part="1" 
+AR Path="/5E607732/6433C001" Ref="J25"  Part="1" 
+F 0 "J25" H 2828 2147 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 2828 2147 50  0001 C CNN
+F 2 "" H 2900 1800 50  0001 C CNN
+F 3 " ~" H 2900 1800 50  0001 C CNN
+	1    2900 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 5FE55CCE
+P 2900 2950
+AR Path="/5E2D8DA2/5FE55CCE" Ref="J?"  Part="1" 
+AR Path="/5E607732/5FE55CCE" Ref="J45"  Part="1" 
+F 0 "J45" H 2828 3197 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 2828 3197 50  0001 C CNN
+F 2 "" H 2900 2850 50  0001 C CNN
+F 3 " ~" H 2900 2850 50  0001 C CNN
+	1    2900 2950
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3200 2850 2    50   UnSpc ~ 0
+A_IN_6_L
+Text HLabel 3200 3050 2    50   UnSpc ~ 0
+A_IN_6_R
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 5FE55CDA
+P 2900 5050
+AR Path="/5E2D8DA2/5FE55CDA" Ref="J?"  Part="1" 
+AR Path="/5E607732/5FE55CDA" Ref="J85"  Part="1" 
+F 0 "J85" H 2828 5297 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 2828 5297 50  0001 C CNN
+F 2 "" H 2900 4950 50  0001 C CNN
+F 3 " ~" H 2900 4950 50  0001 C CNN
+	1    2900 5050
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3200 4950 2    50   UnSpc ~ 0
+A_IN_8_L
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 5FE55CE6
+P 2900 4000
+AR Path="/5E2D8DA2/5FE55CE6" Ref="J?"  Part="1" 
+AR Path="/5E607732/5FE55CE6" Ref="J46"  Part="1" 
+F 0 "J46" H 2828 4247 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" H 2828 4247 50  0001 C CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 " ~" H 2900 3900 50  0001 C CNN
+	1    2900 4000
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3200 3900 2    50   UnSpc ~ 0
+A_IN_7_L
+Text HLabel 3200 4100 2    50   UnSpc ~ 0
+A_IN_7_R
+Wire Wire Line
+	3100 2850 3200 2850
+Wire Wire Line
+	3100 3050 3200 3050
+Wire Wire Line
+	3100 3900 3200 3900
+Wire Wire Line
+	3100 4100 3200 4100
+Wire Wire Line
+	3100 4950 3200 4950
+Wire Wire Line
+	3100 5150 3200 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5FE55CF8
+P 2900 3300
+AR Path="/5E26F6FE/5FE55CF8" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5FE55CF8" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 2900 3050 50  0001 C CNN
+F 1 "GND" H 2905 3127 50  0000 C CNN
+F 2 "" H 2900 3300 50  0001 C CNN
+F 3 "" H 2900 3300 50  0001 C CNN
+	1    2900 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6300 2800 6350
+	2900 3250 2900 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FE55D03
+P 2900 4350
+AR Path="/5E26F6FE/5FE55D03" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5FE55D03" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 2900 4100 50  0001 C CNN
+F 1 "GND" H 2905 4177 50  0000 C CNN
+F 2 "" H 2900 4350 50  0001 C CNN
+F 3 "" H 2900 4350 50  0001 C CNN
+	1    2900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4300 2900 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5FE55D0E
+P 2900 5400
+AR Path="/5E26F6FE/5FE55D0E" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5FE55D0E" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 2900 5150 50  0001 C CNN
+F 1 "GND" H 2905 5227 50  0000 C CNN
+F 2 "" H 2900 5400 50  0001 C CNN
+F 3 "" H 2900 5400 50  0001 C CNN
+	1    2900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5350 2900 5400
+Text HLabel 4900 4250 0    50   UnSpc ~ 0
+A_IN_8_R
+Text HLabel 4900 4150 0    50   UnSpc ~ 0
+A_IN_8_L
+Wire Wire Line
+	4900 4250 5000 4250
+Wire Wire Line
+	4900 4150 5000 4150
+Text HLabel 4900 4050 0    50   UnSpc ~ 0
+A_IN_7_R
+Text HLabel 4900 3950 0    50   UnSpc ~ 0
+A_IN_7_L
+Wire Wire Line
+	4900 4050 5000 4050
+Wire Wire Line
+	4900 3950 5000 3950
+Wire Wire Line
+	4900 3850 5000 3850
+Wire Wire Line
+	4900 3750 5000 3750
+Text HLabel 4900 3850 0    50   UnSpc ~ 0
+A_IN_6_R
+Text HLabel 4900 3750 0    50   UnSpc ~ 0
+A_IN_6_L
+Text HLabel 3200 5150 2    50   UnSpc ~ 0
+A_IN_8_R
+Wire Wire Line
+	4900 3650 5000 3650
+Wire Wire Line
+	4900 3550 5000 3550
+Wire Wire Line
+	4900 3350 5000 3350
+Wire Wire Line
+	4900 3450 5000 3450
+Text HLabel 4900 3350 0    50   UnSpc ~ 0
+A_IN_4_L
+Text HLabel 4900 3450 0    50   UnSpc ~ 0
+A_IN_4_R
+Wire Wire Line
+	1750 5150 1850 5150
+Wire Wire Line
+	1750 4950 1850 4950
+Text HLabel 1850 5150 2    50   UnSpc ~ 0
+A_IN_4_R
+Text HLabel 1850 4950 2    50   UnSpc ~ 0
+A_IN_4_L
+Wire Wire Line
+	4900 3150 5000 3150
+Wire Wire Line
+	4900 3250 5000 3250
+Text HLabel 4900 3150 0    50   UnSpc ~ 0
+A_IN_3_L
+Text HLabel 4900 3250 0    50   UnSpc ~ 0
+A_IN_3_R
+Wire Wire Line
+	1750 4100 1850 4100
+Wire Wire Line
+	1750 3900 1850 3900
+Text HLabel 1850 4100 2    50   UnSpc ~ 0
+A_IN_3_R
+Text HLabel 1850 3900 2    50   UnSpc ~ 0
+A_IN_3_L
+Wire Wire Line
+	4900 2950 5000 2950
+Wire Wire Line
+	4900 3050 5000 3050
+Wire Wire Line
+	1750 3050 1850 3050
+Wire Wire Line
+	1750 2850 1850 2850
+Text HLabel 4900 2950 0    50   UnSpc ~ 0
+A_IN_2_L
+Text HLabel 4900 3050 0    50   UnSpc ~ 0
+A_IN_2_R
+Text HLabel 1850 3050 2    50   UnSpc ~ 0
+A_IN_2_R
+Text HLabel 1850 2850 2    50   UnSpc ~ 0
+A_IN_2_L
+Wire Wire Line
+	1750 1800 1850 1800
+Wire Wire Line
+	1750 2000 1850 2000
+Wire Wire Line
+	4900 2850 5000 2850
+Wire Wire Line
+	4900 2750 5000 2750
+Text HLabel 4900 2750 0    50   UnSpc ~ 0
+A_IN_1_L
+Text HLabel 4900 2850 0    50   UnSpc ~ 0
+A_IN_1_R
+Text HLabel 1850 2000 2    50   UnSpc ~ 0
+A_IN_1_R
+Text HLabel 1850 1800 2    50   UnSpc ~ 0
+A_IN_1_L
+Text HLabel 9100 3600 0    50   UnSpc ~ 0
+A_OUT_2_R
+Text HLabel 9100 3400 0    50   UnSpc ~ 0
+A_OUT_2_L
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 64358093
+P 9400 3500
+AR Path="/5E2D8DA2/64358093" Ref="J?"  Part="1" 
+AR Path="/5E607732/64358093" Ref="J34"  Part="1" 
+F 0 "J34" H 9500 3429 50  0000 L CNN
+F 1 "Conn_Coaxial_x2" H 9328 3747 50  0001 C CNN
+F 2 "" H 9400 3400 50  0001 C CNN
+F 3 " ~" H 9400 3400 50  0001 C CNN
+	1    9400 3500
+	1    0    0    -1  
+$EndComp
+Text HLabel 9100 2550 0    50   UnSpc ~ 0
+A_OUT_1_R
+Text HLabel 9100 2350 0    50   UnSpc ~ 0
+A_OUT_1_L
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 64354C54
+P 9400 2450
+AR Path="/5E2D8DA2/64354C54" Ref="J?"  Part="1" 
+AR Path="/5E607732/64354C54" Ref="J33"  Part="1" 
+F 0 "J33" H 9500 2379 50  0000 L CNN
+F 1 "Conn_Coaxial_x2" H 9328 2697 50  0001 C CNN
+F 2 "" H 9400 2350 50  0001 C CNN
+F 3 " ~" H 9400 2350 50  0001 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2350 9200 2350
+Wire Wire Line
+	9100 2550 9200 2550
+Wire Wire Line
+	7500 3500 7600 3500
+Wire Wire Line
+	7500 3600 7600 3600
+Wire Wire Line
+	7500 3300 7600 3300
+Wire Wire Line
+	7500 3400 7600 3400
+Text HLabel 7600 3400 2    50   UnSpc ~ 0
+A_OUT_1_R
+Text HLabel 7600 3300 2    50   UnSpc ~ 0
+A_OUT_1_L
+Wire Wire Line
+	9100 3400 9200 3400
+Wire Wire Line
+	9100 3600 9200 3600
+Text HLabel 7600 3600 2    50   UnSpc ~ 0
+A_OUT_2_R
+Text HLabel 7600 3500 2    50   UnSpc ~ 0
+A_OUT_2_L
+$Comp
+L power:GND #PWR?
+U 1 1 5E790D2A
+P 9400 3850
+AR Path="/5E26F6FE/5E790D2A" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5E790D2A" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 9400 3600 50  0001 C CNN
+F 1 "GND" H 9405 3677 50  0000 C CNN
+F 2 "" H 9400 3850 50  0001 C CNN
+F 3 "" H 9400 3850 50  0001 C CNN
+	1    9400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3800 9400 3850
 $Comp
 L power:GND #PWR?
 U 1 1 5E7983F2
-P 9050 3600
+P 9400 2800
 AR Path="/5E26F6FE/5E7983F2" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5E7983F2" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 9050 3350 50  0001 C CNN
-F 1 "GND" H 9055 3427 50  0000 C CNN
-F 2 "" H 9050 3600 50  0001 C CNN
-F 3 "" H 9050 3600 50  0001 C CNN
-	1    9050 3600
+F 0 "#PWR039" H 9400 2550 50  0001 C CNN
+F 1 "GND" H 9405 2627 50  0000 C CNN
+F 2 "" H 9400 2800 50  0001 C CNN
+F 3 "" H 9400 2800 50  0001 C CNN
+	1    9400 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 3550 9050 3600
+	9400 2750 9400 2800
+Text HLabel 9100 4650 0    50   UnSpc ~ 0
+A_OUT_3_R
+Text HLabel 9100 4450 0    50   UnSpc ~ 0
+A_OUT_3_L
+$Comp
+L Connector:Conn_Coaxial_x2 J?
+U 1 1 5FE35DBF
+P 9400 4550
+AR Path="/5E2D8DA2/5FE35DBF" Ref="J?"  Part="1" 
+AR Path="/5E607732/5FE35DBF" Ref="J90"  Part="1" 
+F 0 "J90" H 9500 4479 50  0000 L CNN
+F 1 "Conn_Coaxial_x2" H 9328 4797 50  0001 C CNN
+F 2 "" H 9400 4450 50  0001 C CNN
+F 3 " ~" H 9400 4450 50  0001 C CNN
+	1    9400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3700 7600 3700
+Wire Wire Line
+	7500 3800 7600 3800
+Wire Wire Line
+	9100 4450 9200 4450
+Wire Wire Line
+	9100 4650 9200 4650
+Text HLabel 7600 3800 2    50   UnSpc ~ 0
+A_OUT_3_R
+Text HLabel 7600 3700 2    50   UnSpc ~ 0
+A_OUT_3_L
+$Comp
+L power:GND #PWR?
+U 1 1 5FE35DE3
+P 9400 4900
+AR Path="/5E26F6FE/5FE35DE3" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5FE35DE3" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 9400 4650 50  0001 C CNN
+F 1 "GND" H 9405 4727 50  0000 C CNN
+F 2 "" H 9400 4900 50  0001 C CNN
+F 3 "" H 9400 4900 50  0001 C CNN
+	1    9400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4850 9400 4900
+$Comp
+L Connector:Conn_01x18_Female J28
+U 1 1 5EF67BC3
+P 5200 3450
+F 0 "J28" H 5228 3380 50  0000 L CNN
+F 1 "Conn_01x18_Female" H 5228 3335 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 5200 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2650 4900 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5EF7F944
+P 4900 2650
+AR Path="/5E26F6FE/5EF7F944" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5EF7F944" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 4900 2400 50  0001 C CNN
+F 1 "GND" V 4905 2522 50  0000 R CNN
+F 2 "" H 4900 2650 50  0001 C CNN
+F 3 "" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 4350 4900 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5EF814C3
+P 4900 4350
+AR Path="/5E26F6FE/5EF814C3" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5EF814C3" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 4900 4100 50  0001 C CNN
+F 1 "GND" V 4905 4222 50  0000 R CNN
+F 2 "" H 4900 4350 50  0001 C CNN
+F 3 "" H 4900 4350 50  0001 C CNN
+	1    4900 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J29
+U 1 1 5EF84B88
+P 7300 3500
+F 0 "J29" H 7192 3893 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 7328 3385 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7300 3500 50  0001 C CNN
+F 3 "~" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3200 7600 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5EF952EC
+P 7600 3200
+AR Path="/5E26F6FE/5EF952EC" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5EF952EC" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 7600 2950 50  0001 C CNN
+F 1 "GND" V 7605 3072 50  0000 R CNN
+F 2 "" H 7600 3200 50  0001 C CNN
+F 3 "" H 7600 3200 50  0001 C CNN
+	1    7600 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 3900 7600 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5EF96E13
+P 7600 3900
+AR Path="/5E26F6FE/5EF96E13" Ref="#PWR?"  Part="1" 
+AR Path="/5E607732/5EF96E13" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 7600 3650 50  0001 C CNN
+F 1 "GND" V 7605 3772 50  0000 R CNN
+F 2 "" H 7600 3900 50  0001 C CNN
+F 3 "" H 7600 3900 50  0001 C CNN
+	1    7600 3900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

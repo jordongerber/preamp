@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
+Sheet 9 13
 Title "Headphone Amplifier Board"
 Date "2020-02-25"
 Rev "A00"
@@ -305,21 +305,6 @@ Wire Wire Line
 	7900 4450 8050 4450
 Text Notes 6550 6450 0    50   ~ 0
 crosstalk: https://headwizememorial.wordpress.com/2018/03/09/an-acoustic-simulator-for-headphone-amplifiers/\n\namp: https://www.nutsvolts.com/magazine/article/precision_stereo_headphone_amplifier
-Wire Wire Line
-	3100 1450 3100 1650
-$Comp
-L power:GND #PWR?
-U 1 1 5EF0112C
-P 3100 1650
-AR Path="/6009D432/5EF0112C" Ref="#PWR?"  Part="1" 
-AR Path="/5E4A803E/5EF0112C" Ref="#PWR091"  Part="1" 
-F 0 "#PWR091" H 3100 1400 50  0001 C CNN
-F 1 "GND" H 3105 1477 50  0000 C CNN
-F 2 "" H 3100 1650 50  0001 C CNN
-F 3 "" H 3100 1650 50  0001 C CNN
-	1    3100 1650
-	1    0    0    -1  
-$EndComp
 Text Label 6400 2250 2    50   ~ 0
 xfeed_out_l
 Text Label 6400 4350 2    50   ~ 0
@@ -333,7 +318,7 @@ AR Path="/6009D432/647A3EBE" Ref="J?"  Part="1"
 AR Path="/5E4A803E/647A3EBE" Ref="J61"  Part="1" 
 F 0 "J61" H 3908 4239 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 3772 3983 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 3800 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 3800 4050 50  0001 C CNN
 F 3 "~" H 3800 4050 50  0001 C CNN
 	1    3800 4050
 	1    0    0    -1  
@@ -364,7 +349,6 @@ F 3 "" H 4150 6550 50  0001 C CNN
 	4    4100 6300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3200 1550
 $Comp
 L preamp:TPA6120 U19
 U 2 1 5E690007
@@ -396,43 +380,10 @@ AR Path="/6009D432/5E7A75D4" Ref="J?"  Part="1"
 AR Path="/5E4A803E/5E7A75D4" Ref="J62"  Part="1" 
 F 0 "J62" H 4572 4028 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 4572 3983 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4600 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 4600 4050 50  0001 C CNN
 F 3 "~" H 4600 4050 50  0001 C CNN
 	1    4600 4050
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Female J60
-U 1 1 5EF5CC6D
-P 3400 1350
-F 0 "J60" H 3428 1280 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 3428 1235 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3400 1350 50  0001 C CNN
-F 3 "~" H 3400 1350 50  0001 C CNN
-	1    3400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C96
-U 1 1 5EF7CEF2
-P 5000 6050
-F 0 "C96" H 5115 6096 50  0000 L CNN
-F 1 "0.1uF" H 5115 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 5900 50  0001 C CNN
-F 3 "~" H 5000 6050 50  0001 C CNN
-	1    5000 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C97
-U 1 1 5EF8629D
-P 5000 6550
-F 0 "C97" H 5115 6596 50  0000 L CNN
-F 1 "0.1uF" H 5115 6505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 6400 50  0001 C CNN
-F 3 "~" H 5000 6550 50  0001 C CNN
-	1    5000 6550
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C95
@@ -503,7 +454,7 @@ AR Path="/6009D432/5F1B4E80" Ref="J?"  Part="1"
 AR Path="/5E4A803E/5F1B4E80" Ref="J58"  Part="1" 
 F 0 "J58" H 1872 4028 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 1872 3983 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1900 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 1900 4050 50  0001 C CNN
 F 3 "~" H 1900 4050 50  0001 C CNN
 	1    1900 4050
 	1    0    0    -1  
@@ -543,26 +494,6 @@ Text GLabel 4500 5700 1    50   UnSpc ~ 0
 Text GLabel 4500 6900 3    50   UnSpc ~ 0
 -15V
 Wire Wire Line
-	4500 5800 5000 5800
-Wire Wire Line
-	5000 5800 5000 5900
-Wire Wire Line
-	4500 6800 5000 6800
-Wire Wire Line
-	5000 6800 5000 6700
-Wire Wire Line
-	4500 6200 4500 6300
-Connection ~ 4500 6300
-Wire Wire Line
-	4500 6300 4500 6400
-Wire Wire Line
-	5000 6200 5000 6300
-Wire Wire Line
-	4500 6300 5000 6300
-Connection ~ 5000 6300
-Wire Wire Line
-	5000 6300 5000 6400
-Wire Wire Line
 	4500 5700 4500 5800
 Connection ~ 4500 5800
 Wire Wire Line
@@ -572,21 +503,6 @@ Wire Wire Line
 Connection ~ 4500 6800
 Wire Wire Line
 	4500 6800 4500 6900
-$Comp
-L Connector:Conn_01x04_Male J59
-U 1 1 5E6D1CB1
-P 2050 1350
-F 0 "J59" H 2158 1539 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2158 1540 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 1350 50  0001 C CNN
-F 3 "~" H 2050 1350 50  0001 C CNN
-	1    2050 1350
-	1    0    0    -1  
-$EndComp
-Text GLabel 3200 1250 0    50   UnSpc ~ 0
-+15V
-Text GLabel 3200 1350 0    50   UnSpc ~ 0
--15V
 Text HLabel 2050 2250 0    50   UnSpc ~ 0
 IN_L
 Text HLabel 2050 2450 0    50   UnSpc ~ 0
@@ -605,8 +521,6 @@ F3 "L_OUT" U L 2250 2350 50
 F4 "R_IN" U L 2250 2450 50 
 F5 "R_OUT" U L 2250 2550 50 
 $EndSheet
-Wire Wire Line
-	3200 1450 3100 1450
 Text GLabel 4300 3850 1    50   UnSpc ~ 0
 +15V
 Text GLabel 4300 4250 3    50   UnSpc ~ 0
@@ -638,22 +552,22 @@ Wire Wire Line
 Connection ~ 4000 5800
 Wire Wire Line
 	4000 5800 3450 5800
-Text HLabel 2350 1250 2    50   UnSpc ~ 0
+Text HLabel 1850 1100 2    50   UnSpc ~ 0
 IN_L
-Text HLabel 2350 1450 2    50   UnSpc ~ 0
+Text HLabel 1850 1300 2    50   UnSpc ~ 0
 IN_R
-Text Label 2350 1350 0    50   ~ 0
+Text Label 1850 1200 0    50   ~ 0
 xfeed_out_l
-Text Label 2350 1550 0    50   ~ 0
+Text Label 1850 1400 0    50   ~ 0
 xfeed_out_r
 Wire Wire Line
-	2250 1250 2350 1250
+	1750 1100 1850 1100
 Wire Wire Line
-	2250 1350 2350 1350
+	1750 1200 1850 1200
 Wire Wire Line
-	2250 1450 2350 1450
+	1750 1300 1850 1300
 Wire Wire Line
-	2250 1550 2350 1550
+	1750 1400 1850 1400
 Wire Wire Line
 	2050 2250 2250 2250
 Wire Wire Line
@@ -679,21 +593,6 @@ Wire Wire Line
 Connection ~ 4300 3950
 Wire Wire Line
 	4300 3950 4400 3950
-Wire Wire Line
-	5000 6300 5150 6300
-$Comp
-L Connector:AudioJack3 J63
-U 1 1 5E7B4943
-P 9450 3250
-AR Path="/5E4A803E/5E7B4943" Ref="J63"  Part="1" 
-AR Path="/5E7B4943" Ref="J?"  Part="1" 
-F 0 "J63" H 9432 3575 50  0000 C CNN
-F 1 "AudioJack3" H 9432 3484 50  0000 C CNN
-F 2 "" H 9450 3250 50  0001 C CNN
-F 3 "~" H 9450 3250 50  0001 C CNN
-	1    9450 3250
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E7B4949
@@ -724,4 +623,90 @@ Text Label 8500 2350 0    50   ~ 0
 OUT_L
 Text Label 8500 4450 0    50   ~ 0
 OUT_R
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5F30CFBF
+P 9450 3250
+AR Path="/5E27B612/5F30CFBF" Ref="J?"  Part="1" 
+AR Path="/6009D432/5F30CFBF" Ref="J?"  Part="1" 
+AR Path="/5E4A803E/5F30CFBF" Ref="J32"  Part="1" 
+F 0 "J32" H 9422 3228 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9422 3183 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 9450 3250 50  0001 C CNN
+F 3 "~" H 9450 3250 50  0001 C CNN
+	1    9450 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C96
+U 1 1 5F332D1E
+P 5000 6050
+F 0 "C96" H 5115 6096 50  0000 L CNN
+F 1 "100uF" H 5115 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.2" H 5000 6050 50  0001 C CNN
+F 3 "~" H 5000 6050 50  0001 C CNN
+	1    5000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C97
+U 1 1 5F3373CD
+P 5000 6550
+F 0 "C97" H 5115 6596 50  0000 L CNN
+F 1 "100uF" H 5115 6505 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.2" H 5000 6550 50  0001 C CNN
+F 3 "~" H 5000 6550 50  0001 C CNN
+	1    5000 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6200 4500 6300
+Wire Wire Line
+	4500 5800 5000 5800
+Wire Wire Line
+	5000 5800 5000 5900
+Wire Wire Line
+	4500 6800 5000 6800
+Wire Wire Line
+	5000 6800 5000 6700
+Wire Wire Line
+	4500 6300 5000 6300
+Connection ~ 4500 6300
+Wire Wire Line
+	4500 6300 4500 6400
+Wire Wire Line
+	5000 6200 5000 6300
+Connection ~ 5000 6300
+Wire Wire Line
+	5000 6300 5150 6300
+Wire Wire Line
+	5000 6300 5000 6400
+$Comp
+L Connector:Conn_01x05_Male J35
+U 1 1 5F415EA4
+P 1550 1300
+F 0 "J35" H 1658 1589 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 1658 1590 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1550 1300 50  0001 C CNN
+F 3 "~" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F41D7DE
+P 1850 1600
+AR Path="/6009D432/5F41D7DE" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A803E/5F41D7DE" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 1850 1350 50  0001 C CNN
+F 1 "GND" H 1855 1427 50  0000 C CNN
+F 2 "" H 1850 1600 50  0001 C CNN
+F 3 "" H 1850 1600 50  0001 C CNN
+	1    1850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1500 1850 1600
+Wire Wire Line
+	1750 1500 1850 1500
 $EndSCHEMATC

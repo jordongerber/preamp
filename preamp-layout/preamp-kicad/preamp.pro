@@ -1,4 +1,4 @@
-update=Saturday, April 11, 2020 at 05:58:12 PM
+update=Sunday, April 19, 2020 at 10:08:43 AM
 version=1
 last_client=kicad
 [general]
@@ -248,8 +248,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=15v_pwr
-Clearance=0.5
-TrackWidth=1
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -259,8 +259,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=3.3v_pwr
-Clearance=0.5
-TrackWidth=1
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -270,8 +270,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=5v_pwr
-Clearance=0.5
-TrackWidth=1
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -281,8 +281,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=ac_pwr
-Clearance=2
-TrackWidth=4
+Clearance=1
+TrackWidth=2
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -292,8 +292,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=analog_signal
-Clearance=0.5
-TrackWidth=1
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3

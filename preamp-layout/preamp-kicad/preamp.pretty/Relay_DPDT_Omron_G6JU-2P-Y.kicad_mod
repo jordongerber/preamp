@@ -1,4 +1,4 @@
-(module Relay_DPDT_Omron_G6JU-2P-Y (layer F.Cu) (tedit 5E69AD4A)
+(module Relay_DPDT_Omron_G6JU-2P-Y (layer F.Cu) (tedit 5E96065B)
   (descr "Omron G6K-2P-Y relay package http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf")
   (tags "Omron G6K-2P-Y relay")
   (fp_text reference REF** (at 0 -3.175) (layer F.SilkS)
@@ -27,8 +27,8 @@
   (pad 3 thru_hole circle (at 1.6 5.4) (size 1.7 1.7) (drill 0.85) (layers *.Cu *.Mask))
   (pad 4 thru_hole circle (at 1.6 7.6) (size 1.7 1.7) (drill 0.85) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Relay_THT.3dshapes/Relay_DPDT_Omron_G6K-2P-Y.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
+    (offset (xyz -1.6256 0 0))
+    (scale (xyz 0.63 1 1))
     (rotate (xyz 0 0 0))
   )
 )

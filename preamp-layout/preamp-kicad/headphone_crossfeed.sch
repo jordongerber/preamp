@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 10 13
 Title "Headphone Crosstalk"
 Date "2020-02-25"
 Rev "A00"
@@ -21,7 +21,7 @@ AR Path="/5E4A803E/5EE90D89" Ref="RV?"  Part="1"
 AR Path="/5E4A803E/5EE80145/5EE90D89" Ref="RV4"  Part="1" 
 F 0 "RV4" H 3780 3196 50  0000 R CNN
 F 1 "500R" H 3780 3105 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 3150 50  0001 C CNN
+F 2 "" H 3850 3150 50  0001 C CNN
 F 3 "~" H 3850 3150 50  0001 C CNN
 	1    3850 3150
 	-1   0    0    -1  
@@ -34,7 +34,7 @@ AR Path="/5E4A803E/5EE90D8F" Ref="RV?"  Part="2"
 AR Path="/5E4A803E/5EE80145/5EE90D8F" Ref="RV4"  Part="2" 
 F 0 "RV4" H 8131 3196 50  0000 R CNN
 F 1 "500R" H 8131 3105 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8200 3150 50  0001 C CNN
+F 2 "" H 8200 3150 50  0001 C CNN
 F 3 "~" H 8200 3150 50  0001 C CNN
 	2    8200 3150
 	1    0    0    -1  
@@ -125,7 +125,7 @@ AR Path="/5E4A803E/5EE90DB9" Ref="SW?"  Part="1"
 AR Path="/5E4A803E/5EE80145/5EE90DB9" Ref="SW10"  Part="1" 
 F 0 "SW10" H 4600 2567 50  0000 C CNN
 F 1 "SW_DPDT_x2" V 4645 2612 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4600 2800 50  0001 C CNN
+F 2 "" H 4600 2800 50  0001 C CNN
 F 3 "~" H 4600 2800 50  0001 C CNN
 	1    4600 2800
 	1    0    0    1   
@@ -138,7 +138,7 @@ AR Path="/5E4A803E/5EE90DBF" Ref="SW?"  Part="2"
 AR Path="/5E4A803E/5EE80145/5EE90DBF" Ref="SW10"  Part="2" 
 F 0 "SW10" H 7450 2567 50  0000 C CNN
 F 1 "SW_DPDT_x2" V 7495 2613 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7450 2800 50  0001 C CNN
+F 2 "" H 7450 2800 50  0001 C CNN
 F 3 "~" H 7450 2800 50  0001 C CNN
 	2    7450 2800
 	-1   0    0    1   
@@ -213,7 +213,7 @@ Connection ~ 4350 2800
 Wire Wire Line
 	4800 2900 4850 2900
 Wire Wire Line
-	4800 2700 4950 2700
+	4800 2700 4900 2700
 Wire Wire Line
 	3850 3800 3850 3900
 Wire Wire Line
@@ -375,7 +375,7 @@ Connection ~ 7700 2800
 Wire Wire Line
 	7250 2900 7200 2900
 Wire Wire Line
-	7250 2700 7100 2700
+	7250 2700 7150 2700
 Wire Wire Line
 	8200 3800 8200 3900
 Wire Wire Line
@@ -394,11 +394,11 @@ Connection ~ 7700 3900
 Wire Wire Line
 	3650 2800 3850 2800
 Wire Wire Line
-	3850 3300 3850 3500
+	3850 3300 3850 3400
 Wire Wire Line
 	7700 2800 8200 2800
 Wire Wire Line
-	8200 3300 8200 3500
+	8200 3300 8200 3400
 Connection ~ 3850 2800
 Wire Wire Line
 	3850 2800 4350 2800
@@ -441,53 +441,134 @@ Text HLabel 8550 2800 2    50   UnSpc ~ 0
 R_IN
 Text HLabel 8550 3900 2    50   UnSpc ~ 0
 R_OUT
-Text HLabel 3400 5750 0    50   UnSpc ~ 0
+Text HLabel 5200 5150 0    50   UnSpc ~ 0
 L_IN
-$Comp
-L Connector:Conn_01x04_Female J64
-U 1 1 5E7CDD58
-P 3600 5850
-F 0 "J64" H 3628 5780 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 3628 5735 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3600 5850 50  0001 C CNN
-F 3 "~" H 3600 5850 50  0001 C CNN
-	1    3600 5850
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4450 6050
-$Comp
-L Connector:Conn_01x04_Male J65
-U 1 1 5EF52177
-P 4250 5850
-F 0 "J65" H 4358 6039 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 4358 6040 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4250 5850 50  0001 C CNN
-F 3 "~" H 4250 5850 50  0001 C CNN
-	1    4250 5850
-	1    0    0    -1  
-$EndComp
-Text HLabel 3400 5950 0    50   UnSpc ~ 0
+Text HLabel 5200 5350 0    50   UnSpc ~ 0
 R_IN
-Text HLabel 3400 5850 0    50   UnSpc ~ 0
+Text HLabel 5200 5250 0    50   UnSpc ~ 0
 L_OUT
-Text HLabel 3400 6050 0    50   UnSpc ~ 0
+Text HLabel 5200 5450 0    50   UnSpc ~ 0
 R_OUT
 $Comp
 L power:GND #PWR?
 U 1 1 5E7DF118
-P 4800 5950
+P 5150 5600
 AR Path="/6009D432/5E7DF118" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5E7DF118" Ref="#PWR?"  Part="1" 
 AR Path="/5E4A803E/5EE80145/5E7DF118" Ref="#PWR098"  Part="1" 
-F 0 "#PWR098" H 4800 5700 50  0001 C CNN
-F 1 "GND" H 4805 5777 50  0000 C CNN
-F 2 "" H 4800 5950 50  0001 C CNN
-F 3 "" H 4800 5950 50  0001 C CNN
-	1    4800 5950
-	0    -1   -1   0   
+F 0 "#PWR098" H 5150 5350 50  0001 C CNN
+F 1 "GND" H 5155 5427 50  0000 C CNN
+F 2 "" H 5150 5600 50  0001 C CNN
+F 3 "" H 5150 5600 50  0001 C CNN
+	1    5150 5600
+	1    0    0    -1  
 $EndComp
+Text Label 4900 2600 1    50   ~ 0
+SW_L_OUT_2
+Text Label 4950 3600 0    50   ~ 0
+SW_L_OUT_1
 Wire Wire Line
-	4450 5950 4800 5950
-NoConn ~ 4450 5750
-NoConn ~ 4450 5850
+	4850 3400 4850 3600
+Wire Wire Line
+	4850 3600 4950 3600
+Connection ~ 4850 3400
+Wire Wire Line
+	4900 2600 4900 2700
+Connection ~ 4900 2700
+Wire Wire Line
+	4900 2700 4950 2700
+Text Label 7150 2600 1    50   ~ 0
+SW_R_OUT_2
+Wire Wire Line
+	7150 2600 7150 2700
+Connection ~ 7150 2700
+Wire Wire Line
+	7150 2700 7100 2700
+Text Label 7100 3600 2    50   ~ 0
+SW_R_OUT_1
+Wire Wire Line
+	7200 3400 7200 3600
+Wire Wire Line
+	7200 3600 7100 3600
+Connection ~ 7200 3400
+Text Label 8300 3400 0    50   ~ 0
+VR_R_OUT
+Wire Wire Line
+	8200 3400 8300 3400
+Connection ~ 8200 3400
+Wire Wire Line
+	8200 3400 8200 3500
+Text Label 3750 3400 2    50   ~ 0
+VR_L_OUT
+Wire Wire Line
+	3850 3400 3750 3400
+Connection ~ 3850 3400
+Wire Wire Line
+	3850 3400 3850 3500
+Wire Wire Line
+	5150 5600 5150 5550
+$Comp
+L Connector:Conn_01x05_Female J36
+U 1 1 5F3DC886
+P 5500 5350
+F 0 "J36" H 5528 5330 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 5528 5285 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5500 5350 50  0001 C CNN
+F 3 "~" H 5500 5350 50  0001 C CNN
+	1    5500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J37
+U 1 1 5F3DD5DA
+P 7150 5300
+F 0 "J37" H 7122 5228 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 7122 5183 50  0001 R CNN
+F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 7150 5300 50  0001 C CNN
+F 3 "~" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6850 5000 0    50   UnSpc ~ 0
+L_IN
+Text HLabel 6850 5400 0    50   UnSpc ~ 0
+R_IN
+Text Label 6850 5100 2    50   ~ 0
+VR_L_OUT
+Text Label 6850 5500 2    50   ~ 0
+VR_R_OUT
+Text Label 6850 5300 2    50   ~ 0
+SW_L_OUT_2
+Text Label 6850 5700 2    50   ~ 0
+SW_R_OUT_2
+Text Label 6850 5200 2    50   ~ 0
+SW_L_OUT_1
+Text Label 6850 5600 2    50   ~ 0
+SW_R_OUT_1
+Wire Wire Line
+	6850 5000 6950 5000
+Wire Wire Line
+	6850 5100 6950 5100
+Wire Wire Line
+	6850 5200 6950 5200
+Wire Wire Line
+	6850 5300 6950 5300
+Wire Wire Line
+	6850 5400 6950 5400
+Wire Wire Line
+	6850 5500 6950 5500
+Wire Wire Line
+	6850 5600 6950 5600
+Wire Wire Line
+	6850 5700 6950 5700
+Wire Wire Line
+	5200 5150 5300 5150
+Wire Wire Line
+	5200 5250 5300 5250
+Wire Wire Line
+	5200 5350 5300 5350
+Wire Wire Line
+	5200 5450 5300 5450
+Wire Wire Line
+	5150 5550 5300 5550
 $EndSCHEMATC
