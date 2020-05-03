@@ -1,4 +1,4 @@
-update=Sunday, April 19, 2020 at 10:08:43 AM
+update=Thursday, April 23, 2020 at 10:42:49 PM
 version=1
 last_client=kicad
 [general]
@@ -248,8 +248,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=15v_pwr
-Clearance=0.2
-TrackWidth=0.25
+Clearance=0.4
+TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -259,8 +259,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=3.3v_pwr
-Clearance=0.2
-TrackWidth=0.25
+Clearance=0.4
+TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
