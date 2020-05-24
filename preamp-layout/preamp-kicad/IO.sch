@@ -140,10 +140,6 @@ F 3 "" H 2900 2250 50  0001 C CNN
 	1    2900 2250
 	1    0    0    -1  
 $EndComp
-Text HLabel 4900 3650 0    50   UnSpc ~ 0
-A_IN_5_R
-Text HLabel 4900 3550 0    50   UnSpc ~ 0
-A_IN_5_L
 Wire Wire Line
 	3100 2000 3200 2000
 Wire Wire Line
@@ -271,44 +267,8 @@ F 3 "" H 2900 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 5350 2900 5400
-Text HLabel 4900 4250 0    50   UnSpc ~ 0
-A_IN_8_R
-Text HLabel 4900 4150 0    50   UnSpc ~ 0
-A_IN_8_L
-Wire Wire Line
-	4900 4250 5000 4250
-Wire Wire Line
-	4900 4150 5000 4150
-Text HLabel 4900 4050 0    50   UnSpc ~ 0
-A_IN_7_R
-Text HLabel 4900 3950 0    50   UnSpc ~ 0
-A_IN_7_L
-Wire Wire Line
-	4900 4050 5000 4050
-Wire Wire Line
-	4900 3950 5000 3950
-Wire Wire Line
-	4900 3850 5000 3850
-Wire Wire Line
-	4900 3750 5000 3750
-Text HLabel 4900 3850 0    50   UnSpc ~ 0
-A_IN_6_R
-Text HLabel 4900 3750 0    50   UnSpc ~ 0
-A_IN_6_L
 Text HLabel 3200 5150 2    50   UnSpc ~ 0
 A_IN_8_R
-Wire Wire Line
-	4900 3650 5000 3650
-Wire Wire Line
-	4900 3550 5000 3550
-Wire Wire Line
-	4900 3350 5000 3350
-Wire Wire Line
-	4900 3450 5000 3450
-Text HLabel 4900 3350 0    50   UnSpc ~ 0
-A_IN_4_L
-Text HLabel 4900 3450 0    50   UnSpc ~ 0
-A_IN_4_R
 Wire Wire Line
 	1750 5150 1850 5150
 Wire Wire Line
@@ -318,14 +278,6 @@ A_IN_4_R
 Text HLabel 1850 4950 2    50   UnSpc ~ 0
 A_IN_4_L
 Wire Wire Line
-	4900 3150 5000 3150
-Wire Wire Line
-	4900 3250 5000 3250
-Text HLabel 4900 3150 0    50   UnSpc ~ 0
-A_IN_3_L
-Text HLabel 4900 3250 0    50   UnSpc ~ 0
-A_IN_3_R
-Wire Wire Line
 	1750 4100 1850 4100
 Wire Wire Line
 	1750 3900 1850 3900
@@ -334,17 +286,9 @@ A_IN_3_R
 Text HLabel 1850 3900 2    50   UnSpc ~ 0
 A_IN_3_L
 Wire Wire Line
-	4900 2950 5000 2950
-Wire Wire Line
-	4900 3050 5000 3050
-Wire Wire Line
 	1750 3050 1850 3050
 Wire Wire Line
 	1750 2850 1850 2850
-Text HLabel 4900 2950 0    50   UnSpc ~ 0
-A_IN_2_L
-Text HLabel 4900 3050 0    50   UnSpc ~ 0
-A_IN_2_R
 Text HLabel 1850 3050 2    50   UnSpc ~ 0
 A_IN_2_R
 Text HLabel 1850 2850 2    50   UnSpc ~ 0
@@ -353,14 +297,6 @@ Wire Wire Line
 	1750 1800 1850 1800
 Wire Wire Line
 	1750 2000 1850 2000
-Wire Wire Line
-	4900 2850 5000 2850
-Wire Wire Line
-	4900 2750 5000 2750
-Text HLabel 4900 2750 0    50   UnSpc ~ 0
-A_IN_1_L
-Text HLabel 4900 2850 0    50   UnSpc ~ 0
-A_IN_1_R
 Text HLabel 1850 2000 2    50   UnSpc ~ 0
 A_IN_1_R
 Text HLabel 1850 1800 2    50   UnSpc ~ 0
@@ -500,42 +436,42 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x18_Female J28
 U 1 1 5EF67BC3
-P 5200 3450
-F 0 "J28" H 5228 3380 50  0000 L CNN
-F 1 "Conn_01x18_Female" H 5228 3335 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 5200 3450 50  0001 C CNN
-F 3 "~" H 5200 3450 50  0001 C CNN
-	1    5200 3450
+P 6000 3550
+F 0 "J28" H 6028 3480 50  0000 L CNN
+F 1 "Conn_01x18_Female" H 6028 3435 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 6000 3550 50  0001 C CNN
+F 3 "~" H 6000 3550 50  0001 C CNN
+	1    6000 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2650 4900 2650
+	5800 2750 5700 2750
 $Comp
 L power:GND #PWR?
 U 1 1 5EF7F944
-P 4900 2650
+P 5700 2750
 AR Path="/5E26F6FE/5EF7F944" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5EF7F944" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 4900 2400 50  0001 C CNN
-F 1 "GND" V 4905 2522 50  0000 R CNN
-F 2 "" H 4900 2650 50  0001 C CNN
-F 3 "" H 4900 2650 50  0001 C CNN
-	1    4900 2650
+F 0 "#PWR036" H 5700 2500 50  0001 C CNN
+F 1 "GND" V 5705 2622 50  0000 R CNN
+F 2 "" H 5700 2750 50  0001 C CNN
+F 3 "" H 5700 2750 50  0001 C CNN
+	1    5700 2750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 4350 4900 4350
+	5800 4450 5700 4450
 $Comp
 L power:GND #PWR?
 U 1 1 5EF814C3
-P 4900 4350
+P 5700 4450
 AR Path="/5E26F6FE/5EF814C3" Ref="#PWR?"  Part="1" 
 AR Path="/5E607732/5EF814C3" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 4900 4100 50  0001 C CNN
-F 1 "GND" V 4905 4222 50  0000 R CNN
-F 2 "" H 4900 4350 50  0001 C CNN
-F 3 "" H 4900 4350 50  0001 C CNN
-	1    4900 4350
+F 0 "#PWR037" H 5700 4200 50  0001 C CNN
+F 1 "GND" V 5705 4322 50  0000 R CNN
+F 2 "" H 5700 4450 50  0001 C CNN
+F 3 "" H 5700 4450 50  0001 C CNN
+	1    5700 4450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -579,4 +515,68 @@ F 3 "" H 7600 3900 50  0001 C CNN
 	1    7600 3900
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5700 2850 5800 2850
+Wire Wire Line
+	5700 2950 5800 2950
+Wire Wire Line
+	5700 3050 5800 3050
+Wire Wire Line
+	5700 3150 5800 3150
+Wire Wire Line
+	5700 3250 5800 3250
+Wire Wire Line
+	5700 3350 5800 3350
+Wire Wire Line
+	5700 3450 5800 3450
+Wire Wire Line
+	5700 3550 5800 3550
+Wire Wire Line
+	5700 4350 5800 4350
+Wire Wire Line
+	5700 4250 5800 4250
+Wire Wire Line
+	5700 4150 5800 4150
+Wire Wire Line
+	5700 4050 5800 4050
+Wire Wire Line
+	5700 3950 5800 3950
+Wire Wire Line
+	5700 3850 5800 3850
+Wire Wire Line
+	5700 3750 5800 3750
+Wire Wire Line
+	5700 3650 5800 3650
+Text HLabel 5300 3650 0    50   UnSpc ~ 0
+A_IN_1_R
+Text HLabel 5300 2850 0    50   UnSpc ~ 0
+A_IN_1_L
+Text HLabel 5300 3750 0    50   UnSpc ~ 0
+A_IN_2_R
+Text HLabel 5300 2950 0    50   UnSpc ~ 0
+A_IN_2_L
+Text HLabel 5300 3850 0    50   UnSpc ~ 0
+A_IN_3_R
+Text HLabel 5300 3050 0    50   UnSpc ~ 0
+A_IN_3_L
+Text HLabel 5300 3950 0    50   UnSpc ~ 0
+A_IN_4_R
+Text HLabel 5300 3150 0    50   UnSpc ~ 0
+A_IN_4_L
+Text HLabel 5300 3450 0    50   UnSpc ~ 0
+A_IN_6_L
+Text HLabel 5300 4250 0    50   UnSpc ~ 0
+A_IN_6_R
+Text HLabel 5300 3350 0    50   UnSpc ~ 0
+A_IN_7_L
+Text HLabel 5300 4150 0    50   UnSpc ~ 0
+A_IN_7_R
+Text HLabel 5300 3250 0    50   UnSpc ~ 0
+A_IN_8_L
+Text HLabel 5300 4050 0    50   UnSpc ~ 0
+A_IN_8_R
+Text HLabel 5300 3550 0    50   UnSpc ~ 0
+A_IN_5_L
+Text HLabel 5300 4350 0    50   UnSpc ~ 0
+A_IN_5_R
 $EndSCHEMATC

@@ -13,21 +13,6 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Wire Wire Line
-	2950 6850 2950 6950
-Text GLabel 2950 6650 1    50   UnSpc ~ 0
-+5V
-$Comp
-L Connector:Conn_01x02_Male J16
-U 1 1 63AD6EFD
-P 3250 6750
-F 0 "J16" H 3222 6678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 3222 6633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 3250 6750 50  0001 C CNN
-F 3 "~" H 3250 6750 50  0001 C CNN
-	1    3250 6750
-	-1   0    0    -1  
-$EndComp
 Text HLabel 9600 5400 2    50   Output ~ 0
 LED_DT
 Text GLabel 2100 5400 0    50   UnSpc ~ 0
@@ -71,31 +56,7 @@ F 3 "" H 1850 5600 50  0001 C CNN
 	1    1850 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 64EF4C33
-P 2950 6950
-AR Path="/5E26F6FE/64EF4C33" Ref="#PWR?"  Part="1" 
-AR Path="/619FA14B/64EF4C33" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 2950 6700 50  0001 C CNN
-F 1 "GND" H 2955 6777 50  0000 C CNN
-F 2 "" H 2950 6950 50  0001 C CNN
-F 3 "" H 2950 6950 50  0001 C CNN
-	1    2950 6950
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2100 5100
-$Comp
-L Connector:Conn_01x02_Male J15
-U 1 1 5E6537E3
-P 2650 6750
-F 0 "J15" H 2622 6678 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 2622 6633 50  0001 R CNN
-F 2 "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" H 2650 6750 50  0001 C CNN
-F 3 "~" H 2650 6750 50  0001 C CNN
-	1    2650 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 5500 9600 5600
 $Comp
@@ -191,18 +152,6 @@ Wire Wire Line
 	9600 5500 9500 5500
 Text HLabel 2100 4100 0    50   Input ~ 0
 SW_INT
-Wire Wire Line
-	2850 6750 2950 6750
-Wire Wire Line
-	2850 6850 2950 6850
-Connection ~ 2950 6850
-Wire Wire Line
-	2950 6850 3050 6850
-Wire Wire Line
-	2950 6750 2950 6650
-Connection ~ 2950 6750
-Wire Wire Line
-	2950 6750 3050 6750
 Text HLabel 6000 5300 2    50   Output ~ 0
 IO_SDA
 Text HLabel 6000 5400 2    50   Output ~ 0
@@ -716,4 +665,78 @@ Text Label 8100 3100 2    50   ~ 0
 ~I2C_RST
 Wire Wire Line
 	8500 3100 8550 3100
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5FCC138E
+P 1750 6750
+AR Path="/5E2D8DA2/5FCC138E" Ref="J?"  Part="1" 
+AR Path="/619FA14B/5FCC138E" Ref="J15"  Part="1" 
+F 0 "J15" H 1858 6939 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1858 6940 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal" H 1750 6750 50  0001 C CNN
+F 3 "~" H 1750 6750 50  0001 C CNN
+	1    1750 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5FCC1394
+P 3000 6750
+AR Path="/5E2D8DA2/5FCC1394" Ref="J?"  Part="1" 
+AR Path="/619FA14B/5FCC1394" Ref="J16"  Part="1" 
+F 0 "J16" H 2972 6678 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3108 6940 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal" H 3000 6750 50  0001 C CNN
+F 3 "~" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6650 2250 6650
+Wire Wire Line
+	1950 6750 2550 6750
+Text GLabel 2250 6550 1    50   UnSpc ~ 0
++15V
+Wire Wire Line
+	2250 6550 2250 6650
+Connection ~ 2250 6650
+Text GLabel 2550 6550 1    50   UnSpc ~ 0
+-15V
+Wire Wire Line
+	2550 7050 2550 6950
+Text GLabel 2550 7050 3    50   UnSpc ~ 0
++5V
+Connection ~ 2550 6950
+Wire Wire Line
+	2550 6950 2800 6950
+Wire Wire Line
+	2250 6650 2800 6650
+Wire Wire Line
+	1950 6950 2550 6950
+Wire Wire Line
+	1950 6850 2250 6850
+$Comp
+L power:GND #PWR?
+U 1 1 5FCC13A7
+P 2250 7050
+AR Path="/6009D432/5FCC13A7" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/5FCC13A7" Ref="#PWR?"  Part="1" 
+AR Path="/619FA14B/5FCC13A7" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 2250 6800 50  0001 C CNN
+F 1 "GND" H 2255 6877 50  0000 C CNN
+F 2 "" H 2250 7050 50  0001 C CNN
+F 3 "" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 7050 2250 6850
+Connection ~ 2250 6850
+Wire Wire Line
+	2250 6850 2800 6850
+Wire Wire Line
+	2550 6550 2550 6750
+Connection ~ 2550 6750
+Wire Wire Line
+	2550 6750 2800 6750
 $EndSCHEMATC
