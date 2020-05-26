@@ -1083,12 +1083,10 @@ Connection ~ 4100 6100
 Wire Wire Line
 	3750 6900 4100 6900
 Connection ~ 4100 6900
-Text Label 5600 1300 0    50   ~ 0
+Text Label 5600 1500 0    50   ~ 0
 IN_R_SEL_A0
 Text Label 5600 1400 0    50   ~ 0
 IN_R_SEL_A1
-Text Label 5600 1500 0    50   ~ 0
-IN_R_SEL_A2
 Wire Wire Line
 	5600 1600 5500 1600
 Wire Wire Line
@@ -1717,4 +1715,58 @@ Text Label 7600 2800 0    50   ~ 0
 OUT_1_S+
 Text Label 6600 3100 2    50   ~ 0
 RLY_2_R+
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5ECD8FE5
+P 6800 6900
+AR Path="/5ECD8FE5" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5ECD8FE5" Ref="H1"  Part="1" 
+F 0 "H1" H 6900 6900 50  0001 L CNN
+F 1 "MountingHole" H 6900 6855 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 6900 50  0001 C CNN
+F 3 "~" H 6800 6900 50  0001 C CNN
+	1    6800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5ECD8FEB
+P 6800 7100
+AR Path="/5ECD8FEB" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5ECD8FEB" Ref="H2"  Part="1" 
+F 0 "H2" H 6900 7100 50  0001 L CNN
+F 1 "MountingHole" H 6900 7055 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7100 50  0001 C CNN
+F 3 "~" H 6800 7100 50  0001 C CNN
+	1    6800 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5ECD8FF1
+P 6800 7300
+AR Path="/5ECD8FF1" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5ECD8FF1" Ref="H3"  Part="1" 
+F 0 "H3" H 6900 7300 50  0001 L CNN
+F 1 "MountingHole" H 6900 7255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7300 50  0001 C CNN
+F 3 "~" H 6800 7300 50  0001 C CNN
+	1    6800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5ECD8FF7
+P 6800 7500
+AR Path="/5ECD8FF7" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5ECD8FF7" Ref="H4"  Part="1" 
+F 0 "H4" H 6900 7500 50  0001 L CNN
+F 1 "MountingHole" H 6900 7455 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7500 50  0001 C CNN
+F 3 "~" H 6800 7500 50  0001 C CNN
+	1    6800 7500
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1300 0    50   ~ 0
+IN_R_SEL_A2
 $EndSCHEMATC

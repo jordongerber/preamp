@@ -284,4 +284,60 @@ F 3 "~" H 3450 4000 50  0001 C CNN
 	1    3450 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE34CF9
+P 6750 6850
+AR Path="/5EE34CF9" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE34CF9" Ref="H?"  Part="1" 
+AR Path="/5E26F6FE/5EE34CF9" Ref="H5"  Part="1" 
+F 0 "H5" H 6850 6850 50  0001 L CNN
+F 1 "MountingHole" H 6850 6805 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 6850 50  0001 C CNN
+F 3 "~" H 6750 6850 50  0001 C CNN
+	1    6750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE34CFF
+P 6750 7050
+AR Path="/5EE34CFF" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE34CFF" Ref="H?"  Part="1" 
+AR Path="/5E26F6FE/5EE34CFF" Ref="H6"  Part="1" 
+F 0 "H6" H 6850 7050 50  0001 L CNN
+F 1 "MountingHole" H 6850 7005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7050 50  0001 C CNN
+F 3 "~" H 6750 7050 50  0001 C CNN
+	1    6750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE34D05
+P 6750 7250
+AR Path="/5EE34D05" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE34D05" Ref="H?"  Part="1" 
+AR Path="/5E26F6FE/5EE34D05" Ref="H7"  Part="1" 
+F 0 "H7" H 6850 7250 50  0001 L CNN
+F 1 "MountingHole" H 6850 7205 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7250 50  0001 C CNN
+F 3 "~" H 6750 7250 50  0001 C CNN
+	1    6750 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE34D0B
+P 6750 7450
+AR Path="/5EE34D0B" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE34D0B" Ref="H?"  Part="1" 
+AR Path="/5E26F6FE/5EE34D0B" Ref="H8"  Part="1" 
+F 0 "H8" H 6850 7450 50  0001 L CNN
+F 1 "MountingHole" H 6850 7405 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7450 50  0001 C CNN
+F 3 "~" H 6750 7450 50  0001 C CNN
+	1    6750 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

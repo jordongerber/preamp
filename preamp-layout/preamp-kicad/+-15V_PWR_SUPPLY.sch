@@ -384,4 +384,60 @@ Wire Wire Line
 Connection ~ 6850 3600
 Wire Wire Line
 	6850 3600 6850 3850
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE31613
+P 6750 6850
+AR Path="/5EE31613" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE31613" Ref="H?"  Part="1" 
+AR Path="/5E27B612/5EE31613" Ref="H9"  Part="1" 
+F 0 "H9" H 6850 6850 50  0001 L CNN
+F 1 "MountingHole" H 6850 6805 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 6850 50  0001 C CNN
+F 3 "~" H 6750 6850 50  0001 C CNN
+	1    6750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE31619
+P 6750 7050
+AR Path="/5EE31619" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE31619" Ref="H?"  Part="1" 
+AR Path="/5E27B612/5EE31619" Ref="H10"  Part="1" 
+F 0 "H10" H 6850 7050 50  0001 L CNN
+F 1 "MountingHole" H 6850 7005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7050 50  0001 C CNN
+F 3 "~" H 6750 7050 50  0001 C CNN
+	1    6750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE3161F
+P 6750 7250
+AR Path="/5EE3161F" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE3161F" Ref="H?"  Part="1" 
+AR Path="/5E27B612/5EE3161F" Ref="H11"  Part="1" 
+F 0 "H11" H 6850 7250 50  0001 L CNN
+F 1 "MountingHole" H 6850 7205 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7250 50  0001 C CNN
+F 3 "~" H 6750 7250 50  0001 C CNN
+	1    6750 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE31625
+P 6750 7450
+AR Path="/5EE31625" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE31625" Ref="H?"  Part="1" 
+AR Path="/5E27B612/5EE31625" Ref="H12"  Part="1" 
+F 0 "H12" H 6850 7450 50  0001 L CNN
+F 1 "MountingHole" H 6850 7405 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7450 50  0001 C CNN
+F 3 "~" H 6750 7450 50  0001 C CNN
+	1    6750 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

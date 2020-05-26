@@ -257,4 +257,60 @@ F 3 "https://www.meanwell.com/Upload/PDF/IRM-05/IRM-05-SPEC.PDF" H 6650 3200 50 
 $EndComp
 Wire Wire Line
 	7050 3700 7150 3700
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE32D49
+P 6750 6800
+AR Path="/5EE32D49" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE32D49" Ref="H?"  Part="1" 
+AR Path="/5E5EF2D4/5EE32D49" Ref="H13"  Part="1" 
+F 0 "H13" H 6850 6800 50  0001 L CNN
+F 1 "MountingHole" H 6850 6755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 6800 50  0001 C CNN
+F 3 "~" H 6750 6800 50  0001 C CNN
+	1    6750 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE32D4F
+P 6750 7000
+AR Path="/5EE32D4F" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE32D4F" Ref="H?"  Part="1" 
+AR Path="/5E5EF2D4/5EE32D4F" Ref="H14"  Part="1" 
+F 0 "H14" H 6850 7000 50  0001 L CNN
+F 1 "MountingHole" H 6850 6955 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7000 50  0001 C CNN
+F 3 "~" H 6750 7000 50  0001 C CNN
+	1    6750 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE32D55
+P 6750 7200
+AR Path="/5EE32D55" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE32D55" Ref="H?"  Part="1" 
+AR Path="/5E5EF2D4/5EE32D55" Ref="H15"  Part="1" 
+F 0 "H15" H 6850 7200 50  0001 L CNN
+F 1 "MountingHole" H 6850 7155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7200 50  0001 C CNN
+F 3 "~" H 6750 7200 50  0001 C CNN
+	1    6750 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EE32D5B
+P 6750 7400
+AR Path="/5EE32D5B" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EE32D5B" Ref="H?"  Part="1" 
+AR Path="/5E5EF2D4/5EE32D5B" Ref="H16"  Part="1" 
+F 0 "H16" H 6850 7400 50  0001 L CNN
+F 1 "MountingHole" H 6850 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6750 7400 50  0001 C CNN
+F 3 "~" H 6750 7400 50  0001 C CNN
+	1    6750 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

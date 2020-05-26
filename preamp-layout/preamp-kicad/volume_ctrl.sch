@@ -592,11 +592,11 @@ Wire Wire Line
 Wire Wire Line
 	6700 1300 6700 950 
 Text Label 9250 950  2    50   ~ 0
-DAC_CTRL_1_L
+GAIN_CTRL_1_L
 Text Label 9250 2950 2    50   ~ 0
-DAC_CTRL_1_R
+GAIN_CTRL_1_R
 Text Label 6700 2950 2    50   ~ 0
-DAC_CTRL_2_R
+GAIN_CTRL_2_R
 Wire Wire Line
 	8000 1600 8000 1700
 Wire Wire Line
@@ -1168,18 +1168,14 @@ Text GLabel 2500 2200 1    50   UnSpc ~ 0
 $Comp
 L power:GND #PWR067
 U 1 1 618BF574
-P 2500 3150
-F 0 "#PWR067" H 2500 2900 50  0001 C CNN
-F 1 "GND" H 2505 2977 50  0000 C CNN
-F 2 "" H 2500 3150 50  0001 C CNN
-F 3 "" H 2500 3150 50  0001 C CNN
-	1    2500 3150
+P 2500 3200
+F 0 "#PWR067" H 2500 2950 50  0001 C CNN
+F 1 "GND" H 2505 3027 50  0000 C CNN
+F 2 "" H 2500 3200 50  0001 C CNN
+F 3 "" H 2500 3200 50  0001 C CNN
+	1    2500 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 3100 2500 3150
-NoConn ~ 2150 2550
-NoConn ~ 2150 2650
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 619B12AC
@@ -1536,7 +1532,7 @@ F 3 "~" H 1450 4250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 6700 950  2    50   ~ 0
-DAC_CTRL_2_L
+GAIN_CTRL_2_L
 Wire Wire Line
 	8700 1600 8850 1600
 Wire Wire Line
@@ -1546,13 +1542,13 @@ Wire Wire Line
 Wire Wire Line
 	6100 3600 6300 3600
 Text Label 5350 6650 1    50   ~ 0
-DAC_CTRL_1_R
+GAIN_CTRL_1_R
 Text Label 5350 3350 1    50   ~ 0
-DAC_CTRL_2_R
+GAIN_CTRL_2_R
 Text Label 5350 5000 1    50   ~ 0
-DAC_CTRL_1_L
+GAIN_CTRL_1_L
 Text Label 5350 1700 1    50   ~ 0
-DAC_CTRL_2_L
+GAIN_CTRL_2_L
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5FC48F98
@@ -2297,4 +2293,76 @@ Text Label 3500 6650 2    50   ~ 0
 DAC_B
 Wire Wire Line
 	3500 6650 3600 6650
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EDF4915
+P 6800 6850
+AR Path="/5EDF4915" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EDF4915" Ref="H?"  Part="1" 
+AR Path="/6009D432/5EDF4915" Ref="H21"  Part="1" 
+F 0 "H21" H 6900 6850 50  0001 L CNN
+F 1 "MountingHole" H 6900 6805 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 6850 50  0001 C CNN
+F 3 "~" H 6800 6850 50  0001 C CNN
+	1    6800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EDF491B
+P 6800 7050
+AR Path="/5EDF491B" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EDF491B" Ref="H?"  Part="1" 
+AR Path="/6009D432/5EDF491B" Ref="H22"  Part="1" 
+F 0 "H22" H 6900 7050 50  0001 L CNN
+F 1 "MountingHole" H 6900 7005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7050 50  0001 C CNN
+F 3 "~" H 6800 7050 50  0001 C CNN
+	1    6800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EDF4921
+P 6800 7250
+AR Path="/5EDF4921" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EDF4921" Ref="H?"  Part="1" 
+AR Path="/6009D432/5EDF4921" Ref="H23"  Part="1" 
+F 0 "H23" H 6900 7250 50  0001 L CNN
+F 1 "MountingHole" H 6900 7205 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7250 50  0001 C CNN
+F 3 "~" H 6800 7250 50  0001 C CNN
+	1    6800 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5EDF4927
+P 6800 7450
+AR Path="/5EDF4927" Ref="H?"  Part="1" 
+AR Path="/5E2D8DA2/5EDF4927" Ref="H?"  Part="1" 
+AR Path="/6009D432/5EDF4927" Ref="H24"  Part="1" 
+F 0 "H24" H 6900 7450 50  0001 L CNN
+F 1 "MountingHole" H 6900 7405 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6800 7450 50  0001 C CNN
+F 3 "~" H 6800 7450 50  0001 C CNN
+	1    6800 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3100 2500 3150
+Wire Wire Line
+	2500 3150 2100 3150
+Wire Wire Line
+	2100 3150 2100 2650
+Wire Wire Line
+	2100 2550 2150 2550
+Connection ~ 2500 3150
+Wire Wire Line
+	2500 3150 2500 3200
+Wire Wire Line
+	2150 2650 2100 2650
+Connection ~ 2100 2650
+Wire Wire Line
+	2100 2650 2100 2550
 $EndSCHEMATC
