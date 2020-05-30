@@ -13,7 +13,7 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-Text HLabel 5550 2450 0    50   UnSpc ~ 0
+Text HLabel 5550 1800 0    50   UnSpc ~ 0
 AC_HOT
 Text GLabel 3900 6000 1    50   UnSpc ~ 0
 +15V
@@ -88,18 +88,16 @@ Wire Wire Line
 $Comp
 L Device:Fuse F?
 U 1 1 60029A0D
-P 5800 2450
+P 5800 1800
 AR Path="/5E26F6FE/60029A0D" Ref="F?"  Part="1" 
 AR Path="/5E27B612/60029A0D" Ref="F2"  Part="1" 
-F 0 "F2" V 5603 2450 50  0000 C CNN
-F 1 "500mA" V 5694 2450 50  0000 C CNN
-F 2 "preamp:01110501Z_3AG" V 5730 2450 50  0001 C CNN
-F 3 "~" H 5800 2450 50  0001 C CNN
-	1    5800 2450
+F 0 "F2" V 5603 1800 50  0000 C CNN
+F 1 "500mA" V 5694 1800 50  0000 C CNN
+F 2 "preamp:01110501Z_3AG" V 5730 1800 50  0001 C CNN
+F 3 "~" H 5800 1800 50  0001 C CNN
+	1    5800 1800
 	0    1    1    0   
 $EndComp
-Text GLabel 8850 2700 2    50   UnSpc ~ 0
-+15V
 $Comp
 L power:GND #PWR?
 U 1 1 649F2273
@@ -162,23 +160,23 @@ Wire Wire Line
 $Comp
 L Converter_ACDC:IRM-10-15 PS1
 U 1 1 5F784632
-P 6450 2550
-F 0 "PS1" H 6450 2917 50  0000 C CNN
-F 1 "IRM-10-15" H 6450 2826 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-10-xx_THT" H 6450 2200 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF" H 6450 2150 50  0001 C CNN
-	1    6450 2550
+P 6450 1900
+F 0 "PS1" H 6450 2267 50  0000 C CNN
+F 1 "IRM-10-15" H 6450 2176 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-10-xx_THT" H 6450 1550 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF" H 6450 1500 50  0001 C CNN
+	1    6450 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Converter_ACDC:IRM-10-15 PS2
 U 1 1 5F785BE1
-P 6450 3450
-F 0 "PS2" H 6450 3817 50  0000 C CNN
-F 1 "IRM-10-15" H 6450 3726 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-10-xx_THT" H 6450 3100 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF" H 6450 3050 50  0001 C CNN
-	1    6450 3450
+P 6450 3100
+F 0 "PS2" H 6450 3467 50  0000 C CNN
+F 1 "IRM-10-15" H 6450 3376 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-10-xx_THT" H 6450 2750 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF" H 6450 2700 50  0001 C CNN
+	1    6450 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -288,128 +286,124 @@ F 3 "" H 5000 6900 50  0001 C CNN
 $EndComp
 Text GLabel 5000 6000 1    50   UnSpc ~ 0
 +5V
-Text GLabel 6950 4250 2    50   UnSpc ~ 0
-+5V
 $Comp
 L Converter_ACDC:IRM-05-5 PS?
 U 1 1 5FB8D07D
-P 6450 4350
+P 6450 4450
 AR Path="/5E5EF2D4/5FB8D07D" Ref="PS?"  Part="1" 
 AR Path="/5E27B612/5FB8D07D" Ref="PS3"  Part="1" 
-F 0 "PS3" H 6450 4717 50  0000 C CNN
-F 1 "IRM-05-5" H 6450 4626 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-05-xx_THT" H 6450 4000 50  0001 C CNN
-F 3 "https://www.meanwell.com/Upload/PDF/IRM-05/IRM-05-SPEC.PDF" H 6450 3950 50  0001 C CNN
-	1    6450 4350
+F 0 "PS3" H 6450 4817 50  0000 C CNN
+F 1 "IRM-05-5" H 6450 4726 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-05-xx_THT" H 6450 4100 50  0001 C CNN
+F 3 "https://www.meanwell.com/Upload/PDF/IRM-05/IRM-05-SPEC.PDF" H 6450 4050 50  0001 C CNN
+	1    6450 4450
 	1    0    0    -1  
 $EndComp
 Text Notes 3300 2950 0    50   ~ 0
 120VAC
-Text HLabel 5550 2650 0    50   UnSpc ~ 0
+Text HLabel 5550 2000 0    50   UnSpc ~ 0
 AC_N
 Text HLabel 3600 3200 2    50   UnSpc ~ 0
 AC_N
 Text HLabel 3700 3000 2    50   UnSpc ~ 0
 AC_HOT
 Wire Wire Line
-	5550 2450 5650 2450
+	5550 1800 5650 1800
 Wire Wire Line
-	5950 2450 6050 2450
+	5950 1800 6050 1800
 Wire Wire Line
-	5550 2650 6050 2650
+	5550 2000 6050 2000
 $Comp
 L power:GND #PWR?
 U 1 1 5FBCC749
-P 6950 3350
+P 6950 3000
 AR Path="/5E26F6FE/5FBCC749" Ref="#PWR?"  Part="1" 
 AR Path="/5E27B612/5FBCC749" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 6950 3100 50  0001 C CNN
-F 1 "GND" V 6955 3222 50  0000 R CNN
-F 2 "" H 6950 3350 50  0001 C CNN
-F 3 "" H 6950 3350 50  0001 C CNN
-	1    6950 3350
+F 0 "#PWR0120" H 6950 2750 50  0001 C CNN
+F 1 "GND" V 6955 2872 50  0000 R CNN
+F 2 "" H 6950 3000 50  0001 C CNN
+F 3 "" H 6950 3000 50  0001 C CNN
+	1    6950 3000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6850 3350 6950 3350
+	6850 3000 6950 3000
 $Comp
 L power:GND #PWR?
 U 1 1 5FBD3448
-P 6950 2650
+P 6950 2000
 AR Path="/5E26F6FE/5FBD3448" Ref="#PWR?"  Part="1" 
 AR Path="/5E27B612/5FBD3448" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 6950 2400 50  0001 C CNN
-F 1 "GND" V 6955 2522 50  0000 R CNN
-F 2 "" H 6950 2650 50  0001 C CNN
-F 3 "" H 6950 2650 50  0001 C CNN
-	1    6950 2650
+F 0 "#PWR0121" H 6950 1750 50  0001 C CNN
+F 1 "GND" V 6955 1872 50  0000 R CNN
+F 2 "" H 6950 2000 50  0001 C CNN
+F 3 "" H 6950 2000 50  0001 C CNN
+	1    6950 2000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6850 2650 6950 2650
+	6850 2000 6950 2000
 $Comp
 L power:GND #PWR?
 U 1 1 5FBD8242
-P 6950 4450
+P 6950 4550
 AR Path="/5E26F6FE/5FBD8242" Ref="#PWR?"  Part="1" 
 AR Path="/5E27B612/5FBD8242" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 6950 4200 50  0001 C CNN
-F 1 "GND" V 6955 4322 50  0000 R CNN
-F 2 "" H 6950 4450 50  0001 C CNN
-F 3 "" H 6950 4450 50  0001 C CNN
-	1    6950 4450
+F 0 "#PWR0122" H 6950 4300 50  0001 C CNN
+F 1 "GND" V 6955 4422 50  0000 R CNN
+F 2 "" H 6950 4550 50  0001 C CNN
+F 3 "" H 6950 4550 50  0001 C CNN
+	1    6950 4550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6850 4450 6950 4450
-Wire Wire Line
-	6850 4250 6950 4250
-Text HLabel 5550 3350 0    50   UnSpc ~ 0
+	6850 4550 6950 4550
+Text HLabel 5550 3000 0    50   UnSpc ~ 0
 AC_HOT
 $Comp
 L Device:Fuse F?
 U 1 1 5FBDC33A
-P 5800 3350
+P 5800 3000
 AR Path="/5E26F6FE/5FBDC33A" Ref="F?"  Part="1" 
 AR Path="/5E27B612/5FBDC33A" Ref="F3"  Part="1" 
-F 0 "F3" V 5603 3350 50  0000 C CNN
-F 1 "500mA" V 5694 3350 50  0000 C CNN
-F 2 "preamp:01110501Z_3AG" V 5730 3350 50  0001 C CNN
-F 3 "~" H 5800 3350 50  0001 C CNN
-	1    5800 3350
+F 0 "F3" V 5603 3000 50  0000 C CNN
+F 1 "500mA" V 5694 3000 50  0000 C CNN
+F 2 "preamp:01110501Z_3AG" V 5730 3000 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
 	0    1    1    0   
 $EndComp
-Text HLabel 5550 3550 0    50   UnSpc ~ 0
+Text HLabel 5550 3200 0    50   UnSpc ~ 0
 AC_N
 Wire Wire Line
-	5550 3350 5650 3350
+	5550 3000 5650 3000
 Wire Wire Line
-	5950 3350 6050 3350
+	5950 3000 6050 3000
 Wire Wire Line
-	5550 3550 6050 3550
-Text HLabel 5550 4250 0    50   UnSpc ~ 0
+	5550 3200 6050 3200
+Text HLabel 5550 4350 0    50   UnSpc ~ 0
 AC_HOT
 $Comp
 L Device:Fuse F?
 U 1 1 5FBDD3ED
-P 5800 4250
+P 5800 4350
 AR Path="/5E26F6FE/5FBDD3ED" Ref="F?"  Part="1" 
 AR Path="/5E27B612/5FBDD3ED" Ref="F4"  Part="1" 
-F 0 "F4" V 5603 4250 50  0000 C CNN
-F 1 "500mA" V 5694 4250 50  0000 C CNN
-F 2 "preamp:01110501Z_3AG" V 5730 4250 50  0001 C CNN
-F 3 "~" H 5800 4250 50  0001 C CNN
-	1    5800 4250
+F 0 "F4" V 5603 4350 50  0000 C CNN
+F 1 "500mA" V 5694 4350 50  0000 C CNN
+F 2 "preamp:01110501Z_3AG" V 5730 4350 50  0001 C CNN
+F 3 "~" H 5800 4350 50  0001 C CNN
+	1    5800 4350
 	0    1    1    0   
 $EndComp
-Text HLabel 5550 4450 0    50   UnSpc ~ 0
+Text HLabel 5550 4550 0    50   UnSpc ~ 0
 AC_N
 Wire Wire Line
-	5550 4250 5650 4250
+	5550 4350 5650 4350
 Wire Wire Line
-	5950 4250 6050 4250
+	5950 4350 6050 4350
 Wire Wire Line
-	5550 4450 6050 4450
+	5550 4550 6050 4550
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5FBE839F
@@ -487,89 +481,62 @@ Wire Wire Line
 Connection ~ 2350 6450
 Wire Wire Line
 	2350 6450 2600 6450
-$Comp
-L preamp:G5RLU-1A-E K?
-U 1 1 5FBF9D30
-P 8450 2700
-AR Path="/5E26F6FE/5FBF9D30" Ref="K?"  Part="1" 
-AR Path="/5E27B612/5FBF9D30" Ref="K1"  Part="1" 
-F 0 "K1" H 8450 3367 50  0000 C CNN
-F 1 "G5RLU-1A-E" H 8450 3276 50  0000 C CNN
-F 2 "" H 8450 2150 50  0001 C CNN
-F 3 "" H 8450 2150 50  0001 C CNN
-	1    8450 2700
-	1    0    0    -1  
-$EndComp
-Text HLabel 8150 2400 0    50   Input ~ 0
+Text HLabel 9750 1900 0    50   Input ~ 0
 STBY_CTRL_1
-Text HLabel 8750 2400 2    50   Input ~ 0
+Text HLabel 10350 1900 2    50   Input ~ 0
 STBY_CTRL_2
-Text GLabel 8850 3000 2    50   UnSpc ~ 0
--15V
-Wire Wire Line
-	8750 2700 8850 2700
-Wire Wire Line
-	8750 3000 8850 3000
-Text Label 6950 2450 0    50   ~ 0
+Text Label 8000 1700 1    50   ~ 0
 +15
-Text Label 6950 3550 0    50   ~ 0
+Text Label 8000 3100 1    50   ~ 0
 -15
 Wire Wire Line
-	6850 2450 6950 2450
+	8000 1800 8000 1700
 Wire Wire Line
-	6850 3550 6950 3550
-Text Label 8050 3000 2    50   ~ 0
--15
-Text Label 8050 2700 2    50   ~ 0
-+15
-Wire Wire Line
-	8050 2700 8150 2700
-Wire Wire Line
-	8050 3000 8150 3000
+	8000 3200 8000 3100
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5FC0EEC0
-P 8150 4350
+P 9650 4500
 AR Path="/5E2D8DA2/5FC0EEC0" Ref="J?"  Part="1" 
 AR Path="/5E26F6FE/5FC0EEC0" Ref="J?"  Part="1" 
 AR Path="/5E27B612/5FC0EEC0" Ref="J10"  Part="1" 
-F 0 "J10" H 8123 4278 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 8122 4233 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8150 4350 50  0001 C CNN
-F 3 "~" H 8150 4350 50  0001 C CNN
-	1    8150 4350
+F 0 "J10" H 9623 4428 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9622 4383 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 4500 50  0001 C CNN
+F 3 "~" H 9650 4500 50  0001 C CNN
+	1    9650 4500
 	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5FBF9D2A
-P 8150 4000
+P 9650 4150
 AR Path="/5E2D8DA2/5FBF9D2A" Ref="J?"  Part="1" 
 AR Path="/5E26F6FE/5FBF9D2A" Ref="J?"  Part="1" 
 AR Path="/5E27B612/5FBF9D2A" Ref="J9"  Part="1" 
-F 0 "J9" H 8123 3928 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 8122 3883 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8150 4000 50  0001 C CNN
-F 3 "~" H 8150 4000 50  0001 C CNN
-	1    8150 4000
+F 0 "J9" H 9623 4078 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9622 4033 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 4150 50  0001 C CNN
+F 3 "~" H 9650 4150 50  0001 C CNN
+	1    9650 4150
 	1    0    0    1   
 $EndComp
-Text GLabel 8700 3900 2    50   UnSpc ~ 0
+Text GLabel 10200 4050 2    50   UnSpc ~ 0
 +15V
-Text GLabel 8700 4250 2    50   UnSpc ~ 0
+Text GLabel 10200 4400 2    50   UnSpc ~ 0
 -15V
-Text Label 8450 4350 0    50   ~ 0
+Text Label 9950 4500 0    50   ~ 0
 -15
-Text Label 8450 4000 0    50   ~ 0
+Text Label 9950 4150 0    50   ~ 0
 +15
 Wire Wire Line
-	8450 4000 8350 4000
+	9950 4150 9850 4150
 Wire Wire Line
-	8450 4350 8350 4350
+	9950 4500 9850 4500
 Wire Wire Line
-	8350 4250 8700 4250
+	9850 4400 10200 4400
 Wire Wire Line
-	8350 3900 8700 3900
+	9850 4050 10200 4050
 $Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5FC2C072
@@ -643,4 +610,302 @@ F 3 "~" H 2300 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 3000 3700 3000
+$Comp
+L Device:CP1 C?
+U 1 1 5FCBEA6B
+P 7400 4600
+AR Path="/6009D432/5FCBEA6B" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCBEA6B" Ref="C51"  Part="1" 
+F 0 "C51" H 7515 4646 50  0000 L CNN
+F 1 "470uF" H 7515 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7400 4600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 7400 4600 50  0001 C CNN
+	1    7400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5FCBFCDB
+P 7700 4350
+F 0 "L3" V 7890 4350 50  0000 C CNN
+F 1 "150uH" V 7799 4350 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L23.4mm_D12.7mm_P7.62mm_Vertical_Vishay_IHA-203" H 7700 4350 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/abracon-llc/AIAP-03-151K/535-13018-ND/3059923" H 7700 4350 50  0001 C CNN
+	1    7700 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5FCC2226
+P 8000 4600
+AR Path="/6009D432/5FCC2226" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCC2226" Ref="C54"  Part="1" 
+F 0 "C54" H 8115 4646 50  0000 L CNN
+F 1 "470uF" H 8115 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 8000 4600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 8000 4600 50  0001 C CNN
+	1    8000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCC59B5
+P 7400 4800
+AR Path="/5E26F6FE/5FCC59B5" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCC59B5" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 7400 4550 50  0001 C CNN
+F 1 "GND" H 7405 4627 50  0000 C CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCCA28E
+P 8000 4800
+AR Path="/5E26F6FE/5FCCA28E" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCCA28E" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 8000 4550 50  0001 C CNN
+F 1 "GND" H 8005 4627 50  0000 C CNN
+F 2 "" H 8000 4800 50  0001 C CNN
+F 3 "" H 8000 4800 50  0001 C CNN
+	1    8000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4750 7400 4800
+Wire Wire Line
+	8000 4750 8000 4800
+Wire Wire Line
+	7400 4450 7400 4350
+Wire Wire Line
+	7400 4350 7550 4350
+Wire Wire Line
+	7850 4350 8000 4350
+Wire Wire Line
+	8000 4350 8000 4450
+Text GLabel 8000 4250 1    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8000 4350 8000 4250
+$Comp
+L Device:CP1 C?
+U 1 1 5FCDCD9C
+P 7400 3450
+AR Path="/6009D432/5FCDCD9C" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCDCD9C" Ref="C50"  Part="1" 
+F 0 "C50" H 7515 3496 50  0000 L CNN
+F 1 "470uF" H 7515 3405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7400 3450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 7400 3450 50  0001 C CNN
+	1    7400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5FCDCDA6
+P 7700 3200
+F 0 "L2" V 7890 3200 50  0000 C CNN
+F 1 "150uH" V 7799 3200 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L23.4mm_D12.7mm_P7.62mm_Vertical_Vishay_IHA-203" H 7700 3200 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/abracon-llc/AIAP-03-151K/535-13018-ND/3059923" H 7700 3200 50  0001 C CNN
+	1    7700 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5FCDCDB0
+P 8000 3450
+AR Path="/6009D432/5FCDCDB0" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCDCDB0" Ref="C53"  Part="1" 
+F 0 "C53" H 8115 3496 50  0000 L CNN
+F 1 "470uF" H 8115 3405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 8000 3450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 8000 3450 50  0001 C CNN
+	1    8000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCDCDBA
+P 7400 3650
+AR Path="/5E26F6FE/5FCDCDBA" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCDCDBA" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 7400 3400 50  0001 C CNN
+F 1 "GND" H 7405 3477 50  0000 C CNN
+F 2 "" H 7400 3650 50  0001 C CNN
+F 3 "" H 7400 3650 50  0001 C CNN
+	1    7400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCDCDC4
+P 8000 3650
+AR Path="/5E26F6FE/5FCDCDC4" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCDCDC4" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 8000 3400 50  0001 C CNN
+F 1 "GND" H 8005 3477 50  0000 C CNN
+F 2 "" H 8000 3650 50  0001 C CNN
+F 3 "" H 8000 3650 50  0001 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3600 7400 3650
+Wire Wire Line
+	8000 3600 8000 3650
+Wire Wire Line
+	7400 3300 7400 3200
+Wire Wire Line
+	7400 3200 7550 3200
+Wire Wire Line
+	7850 3200 8000 3200
+Wire Wire Line
+	8000 3200 8000 3300
+$Comp
+L Device:CP1 C?
+U 1 1 5FCDF1DA
+P 7400 2050
+AR Path="/6009D432/5FCDF1DA" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCDF1DA" Ref="C49"  Part="1" 
+F 0 "C49" H 7515 2096 50  0000 L CNN
+F 1 "470uF" H 7515 2005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7400 2050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 7400 2050 50  0001 C CNN
+	1    7400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FCDF1E4
+P 7700 1800
+F 0 "L1" V 7890 1800 50  0000 C CNN
+F 1 "150uH" V 7799 1800 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L23.4mm_D12.7mm_P7.62mm_Vertical_Vishay_IHA-203" H 7700 1800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/abracon-llc/AIAP-03-151K/535-13018-ND/3059923" H 7700 1800 50  0001 C CNN
+	1    7700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5FCDF1EE
+P 8000 2050
+AR Path="/6009D432/5FCDF1EE" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FCDF1EE" Ref="C52"  Part="1" 
+F 0 "C52" H 8115 2096 50  0000 L CNN
+F 1 "470uF" H 8115 2005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 8000 2050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEU-FC1J471L/P10351-ND/266360" H 8000 2050 50  0001 C CNN
+	1    8000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCDF1F8
+P 7400 2250
+AR Path="/5E26F6FE/5FCDF1F8" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCDF1F8" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 7400 2000 50  0001 C CNN
+F 1 "GND" H 7405 2077 50  0000 C CNN
+F 2 "" H 7400 2250 50  0001 C CNN
+F 3 "" H 7400 2250 50  0001 C CNN
+	1    7400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCDF202
+P 8000 2250
+AR Path="/5E26F6FE/5FCDF202" Ref="#PWR?"  Part="1" 
+AR Path="/5E27B612/5FCDF202" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 8000 2000 50  0001 C CNN
+F 1 "GND" H 8005 2077 50  0000 C CNN
+F 2 "" H 8000 2250 50  0001 C CNN
+F 3 "" H 8000 2250 50  0001 C CNN
+	1    8000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2200 7400 2250
+Wire Wire Line
+	8000 2200 8000 2250
+Wire Wire Line
+	7400 1900 7400 1800
+Wire Wire Line
+	7400 1800 7550 1800
+Wire Wire Line
+	7850 1800 8000 1800
+Wire Wire Line
+	8000 1800 8000 1900
+Connection ~ 8000 4350
+Wire Wire Line
+	6850 4350 7400 4350
+Connection ~ 7400 4350
+Connection ~ 8000 3200
+Connection ~ 8000 1800
+Wire Wire Line
+	6850 1800 7400 1800
+Connection ~ 7400 1800
+Wire Wire Line
+	6850 3200 7400 3200
+Connection ~ 7400 3200
+$Comp
+L preamp:G6JU K?
+U 1 1 5FD89553
+P 10050 1900
+AR Path="/5E2D8DA2/5FD89553" Ref="K?"  Part="1" 
+AR Path="/5E27B612/5FD89553" Ref="K1"  Part="1" 
+F 0 "K1" V 10004 2078 50  0000 L CNN
+F 1 "G6JU" V 10095 2078 50  0000 L CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10050 2000 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10050 2000 50  0001 C CNN
+	1    10050 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10350 3000
+NoConn ~ 10350 2500
+$Comp
+L preamp:G6JU K?
+U 3 1 5FD8955F
+P 10050 2900
+AR Path="/5E2D8DA2/5FD8955F" Ref="K?"  Part="3" 
+AR Path="/5E27B612/5FD8955F" Ref="K1"  Part="3" 
+F 0 "K1" H 9800 2800 50  0000 C CNN
+F 1 "G6JU" H 10050 2700 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10050 3000 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10050 3000 50  0001 C CNN
+	3    10050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L preamp:G6JU K?
+U 2 1 5FD89559
+P 10050 2400
+AR Path="/5E2D8DA2/5FD89559" Ref="K?"  Part="2" 
+AR Path="/5E27B612/5FD89559" Ref="K1"  Part="2" 
+F 0 "K1" H 9800 2550 50  0000 C CNN
+F 1 "G6JU" H 10050 2600 50  0000 C CNN
+F 2 "preamp:Relay_DPDT_Omron_G6JU-2P-Y" H 10050 2500 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6j.pdf" H 10050 2500 50  0001 C CNN
+	2    10050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2400 9750 2400
+Wire Wire Line
+	9650 2900 9750 2900
+Text Label 9650 2900 2    50   ~ 0
++15
+Text Label 9650 2400 2    50   ~ 0
+-15
+Wire Wire Line
+	10350 2300 10450 2300
+Wire Wire Line
+	10350 2800 10450 2800
+Text GLabel 10450 2300 2    50   UnSpc ~ 0
+-15V
+Text GLabel 10450 2800 2    50   UnSpc ~ 0
++15V
 $EndSCHEMATC
