@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 6 11
 Title "IO Relay Select Board"
 Date "2020-02-25"
 Rev "A00"

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 11 11
 Title "Front Panel"
 Date "2020-02-25"
 Rev "A00"
@@ -448,9 +448,9 @@ Wire Wire Line
 	5750 4900 5850 4900
 NoConn ~ 5850 5000
 NoConn ~ 5850 5100
-Text HLabel 9400 4900 2    50   Output ~ 0
-FP_INTB
 Text HLabel 9400 4800 2    50   Output ~ 0
+FP_INTB
+Text HLabel 9400 4900 2    50   Output ~ 0
 FP_INTA
 Text HLabel 9400 5000 2    50   Input ~ 0
 ~FP_RST

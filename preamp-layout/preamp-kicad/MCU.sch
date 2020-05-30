@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 13
+Sheet 3 11
 Title "Preamp MCU Board"
 Date "2020-02-25"
 Rev "A00"
@@ -48,7 +48,7 @@ U 1 1 620B808D
 P 3750 4850
 F 0 "J17" H 3642 4943 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 3778 4735 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 4850 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3750 4850 50  0001 C CNN
 F 3 "~" H 3750 4850 50  0001 C CNN
 	1    3750 4850
 	-1   0    0    -1  
@@ -59,7 +59,7 @@ U 1 1 620C5260
 P 3750 5250
 F 0 "J18" H 3642 5343 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 3778 5135 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 5250 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3750 5250 50  0001 C CNN
 F 3 "~" H 3750 5250 50  0001 C CNN
 	1    3750 5250
 	-1   0    0    -1  
@@ -83,9 +83,9 @@ Text HLabel 6150 2250 2    50   Output ~ 0
 IO_SDA
 Text HLabel 6150 2350 2    50   Output ~ 0
 IO_SCL
-Text HLabel 6150 2650 2    50   Output ~ 0
+Text HLabel 6150 3450 2    50   Output ~ 0
 VOL_SDA
-Text HLabel 6150 2750 2    50   Output ~ 0
+Text HLabel 6150 3550 2    50   Output ~ 0
 VOL_SCL
 Wire Wire Line
 	6100 2350 6150 2350
@@ -95,9 +95,9 @@ Wire Wire Line
 	6100 2750 6150 2750
 Wire Wire Line
 	6100 2650 6150 2650
-Text HLabel 6150 3050 2    50   Input ~ 0
+Text HLabel 6150 2650 2    50   Input ~ 0
 FP_SDA
-Text HLabel 6150 3150 2    50   Output ~ 0
+Text HLabel 6150 2750 2    50   Output ~ 0
 FP_SCL
 Wire Wire Line
 	6100 3150 6150 3150
@@ -122,9 +122,9 @@ Wire Wire Line
 Connection ~ 5000 3650
 Wire Wire Line
 	5000 3650 5000 3900
-Text HLabel 5350 5100 2    50   Input ~ 0
-SW_INT
 Text HLabel 5350 5200 2    50   Input ~ 0
+SW_INT
+Text HLabel 5350 5100 2    50   Input ~ 0
 ENC_INT
 Wire Wire Line
 	5350 5100 5250 5100
@@ -604,9 +604,9 @@ Wire Wire Line
 	8400 2600 8750 2600
 Wire Wire Line
 	8550 2700 8750 2700
-Text Label 6150 3450 0    50   ~ 0
+Text Label 6150 3050 0    50   ~ 0
 SD3
-Text Label 6150 3550 0    50   ~ 0
+Text Label 6150 3150 0    50   ~ 0
 SC3
 Wire Wire Line
 	6100 3450 6150 3450

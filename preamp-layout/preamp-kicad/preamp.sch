@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 11
 Title "Preamp"
 Date "2020-02-25"
 Rev "A00"
@@ -13,34 +13,6 @@ Comment2 "License: CC BY 4.0"
 Comment3 "github.com/SlurpyTurts/preamp"
 Comment4 "Author: Jordon Gerber"
 $EndDescr
-$Sheet
-S 4950 4300 1100 1150
-U 5E26F6FE
-F0 "AC input" 50
-F1 "AC_input.sch" 50
-F2 "AC_OUT_HOT" U R 6050 5100 50 
-F3 "AC_IN_HOT" U L 4950 5100 50 
-F4 "AC_N" U L 4950 5300 50 
-F5 "PWR_SW" U L 4950 4450 50 
-F6 "STBY_CTRL_2" I R 6050 4650 50 
-F7 "STBY_CTRL_1" I R 6050 4550 50 
-$EndSheet
-$Sheet
-S 6800 5000 550  400 
-U 5E27B612
-F0 "+-15V PWR SUPPLY" 50
-F1 "+-15V_PWR_SUPPLY.sch" 50
-F2 "AC_HOT" U L 6800 5100 50 
-F3 "AC_N" U L 6800 5300 50 
-$EndSheet
-$Sheet
-S 6800 5750 550  400 
-U 5E5EF2D4
-F0 "5V supply" 50
-F1 "5V_supply.sch" 50
-F2 "AC_HOT" U L 6800 5850 50 
-F3 "AC_N" U L 6800 6050 50 
-$EndSheet
 $Sheet
 S 8250 2550 950  1350
 U 619FA14B
@@ -59,10 +31,6 @@ F11 "IO_SDA" O L 8250 3000 50
 F12 "VOL_SDA" O L 8250 2800 50 
 F13 "FP_SDA" I R 9200 2800 50 
 $EndSheet
-Wire Wire Line
-	6050 5100 6450 5100
-Wire Wire Line
-	6450 5100 6450 5850
 $Sheet
 S 3600 1150 1200 2450
 U 5E2D8DA2
@@ -119,64 +87,32 @@ F1 "headphone_amp.sch" 50
 F2 "IN_L" U L 6550 1400 50 
 F3 "IN_R" U L 6550 1500 50 
 $EndSheet
-Wire Wire Line
-	4600 5300 4750 5300
 $Comp
 L Connector:Conn_WallPlug P?
 U 1 1 5E300B43
-P 4400 5200
+P 5000 5450
 AR Path="/5E26F6FE/5E300B43" Ref="P?"  Part="1" 
 AR Path="/5E300B43" Ref="P1"  Part="1" 
-F 0 "P1" H 4417 5433 50  0000 C CNN
-F 1 "Conn_WallPlug" H 4417 5434 50  0001 C CNN
-F 2 "" H 4800 5200 50  0001 C CNN
-F 3 "~" H 4800 5200 50  0001 C CNN
-	1    4400 5200
+F 0 "P1" H 5017 5683 50  0000 C CNN
+F 1 "Conn_WallPlug" H 5017 5684 50  0001 C CNN
+F 2 "" H 5400 5450 50  0001 C CNN
+F 3 "~" H 5400 5450 50  0001 C CNN
+	1    5000 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 5E2E8D21
-P 4750 4750
+P 5600 5350
 AR Path="/5E26F6FE/5E2E8D21" Ref="SW?"  Part="1" 
 AR Path="/5E2E8D21" Ref="SW1"  Part="1" 
-F 0 "SW1" V 4750 4848 50  0000 L CNN
-F 1 "SW_SPST" H 4750 4894 50  0001 C CNN
-F 2 "" H 4750 4750 50  0001 C CNN
-F 3 "~" H 4750 4750 50  0001 C CNN
-	1    4750 4750
-	0    -1   -1   0   
+F 0 "SW1" H 5600 5493 50  0000 C CNN
+F 1 "SW_SPST" H 5600 5494 50  0001 C CNN
+F 2 "" H 5600 5350 50  0001 C CNN
+F 3 "~" H 5600 5350 50  0001 C CNN
+	1    5600 5350
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 5100 4750 5100
-Wire Wire Line
-	4750 4550 4750 4450
-Wire Wire Line
-	4750 4450 4950 4450
-Wire Wire Line
-	4750 4950 4750 5100
-Connection ~ 4750 5100
-Wire Wire Line
-	4750 5100 4950 5100
-Wire Wire Line
-	4750 6050 6250 6050
-Connection ~ 4750 5300
-Wire Wire Line
-	4750 5300 4950 5300
-Wire Wire Line
-	6250 5300 6250 6050
-Wire Wire Line
-	4750 5300 4750 6050
-Wire Wire Line
-	6800 5100 6450 5100
-Connection ~ 6450 5100
-Wire Wire Line
-	6250 5300 6800 5300
-Wire Wire Line
-	6800 5850 6450 5850
-Wire Wire Line
-	6800 6050 6250 6050
-Connection ~ 6250 6050
 Wire Wire Line
 	8250 2900 4800 2900
 Wire Wire Line
@@ -219,8 +155,6 @@ Wire Wire Line
 	3250 3450 3600 3450
 Wire Wire Line
 	4800 3000 8250 3000
-Wire Wire Line
-	6050 4550 7650 4550
 Wire Wire Line
 	4800 1400 5250 1400
 Wire Wire Line
@@ -318,8 +252,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 3400 7750 3400
 Wire Wire Line
-	6050 4650 7750 4650
-Wire Wire Line
 	9200 2700 9650 2700
 Wire Wire Line
 	9200 2800 9650 2800
@@ -332,7 +264,55 @@ Wire Wire Line
 Wire Wire Line
 	9200 3350 9650 3350
 Wire Wire Line
-	7650 4550 7650 3300
+	7650 3300 7650 5350
 Wire Wire Line
-	7750 4650 7750 3400
+	7750 3400 7750 5550
+$Sheet
+S 6100 5200 1000 500 
+U 5E27B612
+F0 "DC_PWR SUPPLY" 50
+F1 "DC_PWR_SUPPLY.sch" 50
+F2 "AC_HOT" U L 6100 5350 50 
+F3 "AC_N" U L 6100 5550 50 
+F4 "STBY_CTRL_1" I R 7100 5350 50 
+F5 "STBY_CTRL_2" I R 7100 5550 50 
+$EndSheet
+Wire Wire Line
+	7100 5350 7650 5350
+Wire Wire Line
+	7100 5550 7750 5550
+$Comp
+L Device:C C?
+U 1 1 5FC87E72
+P 5600 4950
+AR Path="/5E26F6FE/5FC87E72" Ref="C?"  Part="1" 
+AR Path="/5E27B612/5FC87E72" Ref="C?"  Part="1" 
+AR Path="/5FC87E72" Ref="C1"  Part="1" 
+F 0 "C1" V 5348 4950 50  0000 C CNN
+F 1 "0.1uF" V 5439 4950 50  0000 C CNN
+F 2 "" H 5638 4800 50  0001 C CNN
+F 3 "~" H 5600 4950 50  0001 C CNN
+	1    5600 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 5350 5300 5350
+Wire Wire Line
+	5450 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 5350
+Connection ~ 5300 5350
+Wire Wire Line
+	5300 5350 5400 5350
+Wire Wire Line
+	5750 4950 5900 4950
+Wire Wire Line
+	5900 4950 5900 5350
+Wire Wire Line
+	5900 5350 5800 5350
+Wire Wire Line
+	5900 5350 6100 5350
+Connection ~ 5900 5350
+Wire Wire Line
+	5200 5550 6100 5550
 $EndSCHEMATC
