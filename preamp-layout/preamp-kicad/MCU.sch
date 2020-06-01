@@ -230,28 +230,6 @@ Text HLabel 9850 2800 2    50   Output ~ 0
 STBY_SET
 Text HLabel 9850 2900 2    50   Output ~ 0
 STBY_RST
-$Comp
-L Device:R R15
-U 1 1 6011B8E1
-P 8550 2350
-F 0 "R15" H 8620 2396 50  0000 L CNN
-F 1 "1.5k" H 8620 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8480 2350 50  0001 C CNN
-F 3 "~" H 8550 2350 50  0001 C CNN
-	1    8550 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 6011B8EB
-P 8400 2350
-F 0 "R14" H 8330 2396 50  0000 R CNN
-F 1 "1.5k" H 8330 2305 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8330 2350 50  0001 C CNN
-F 3 "~" H 8400 2350 50  0001 C CNN
-	1    8400 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 2500 8400 2600
 Wire Wire Line
@@ -347,28 +325,6 @@ F 3 "" H 9250 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8750 3100
-$Comp
-L Device:R R12
-U 1 1 60A32DBC
-P 4700 2800
-F 0 "R12" H 4630 2846 50  0000 R CNN
-F 1 "1.5k" H 4630 2755 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4630 2800 50  0001 C CNN
-F 3 "~" H 4700 2800 50  0001 C CNN
-	1    4700 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 60A32DC6
-P 4400 2800
-F 0 "R11" H 4330 2846 50  0000 R CNN
-F 1 "1.5k" H 4330 2755 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4330 2800 50  0001 C CNN
-F 3 "~" H 4400 2800 50  0001 C CNN
-	1    4400 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 2950 4400 3050
 Wire Wire Line
@@ -622,56 +578,12 @@ Connection ~ 8400 2600
 Wire Wire Line
 	8150 2700 8550 2700
 Connection ~ 8550 2700
-$Comp
-L Device:R R89
-U 1 1 5F130409
-P 6650 2450
-F 0 "R89" V 6857 2450 50  0000 C CNN
-F 1 "1.5k" V 6766 2450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 2450 50  0001 C CNN
-F 3 "~" H 6650 2450 50  0001 C CNN
-	1    6650 2450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6100 2450 6500 2450
-$Comp
-L Device:R R92
-U 1 1 5F17999D
-P 6650 2850
-F 0 "R92" V 6857 2850 50  0000 C CNN
-F 1 "1.5k" V 6766 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 2850 50  0001 C CNN
-F 3 "~" H 6650 2850 50  0001 C CNN
-	1    6650 2850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6100 2850 6500 2850
-$Comp
-L Device:R R93
-U 1 1 5F17D8A6
-P 6650 3250
-F 0 "R93" V 6857 3250 50  0000 C CNN
-F 1 "1.5k" V 6766 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 3250 50  0001 C CNN
-F 3 "~" H 6650 3250 50  0001 C CNN
-	1    6650 3250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6100 3250 6500 3250
-$Comp
-L Device:R R94
-U 1 1 5F181970
-P 6650 3650
-F 0 "R94" V 6857 3650 50  0000 C CNN
-F 1 "1.5k" V 6766 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 3650 50  0001 C CNN
-F 3 "~" H 6650 3650 50  0001 C CNN
-	1    6650 3650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6100 3650 6500 3650
 Wire Wire Line
@@ -726,17 +638,6 @@ Connection ~ 4700 2600
 Connection ~ 4700 3150
 Wire Wire Line
 	4700 3150 5100 3150
-$Comp
-L Device:R R13
-U 1 1 5F2EB180
-P 5000 2800
-F 0 "R13" H 4930 2846 50  0000 R CNN
-F 1 "1.5k" H 4930 2755 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4930 2800 50  0001 C CNN
-F 3 "~" H 5000 2800 50  0001 C CNN
-	1    5000 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 2600 5000 2650
 Wire Wire Line
@@ -771,5 +672,104 @@ F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 5050 5200 50  0001 C
 F 3 "~" H 5050 5200 50  0001 C CNN
 	1    5050 5200
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 6011B8E1
+P 8550 2350
+F 0 "R15" H 8620 2396 50  0000 L CNN
+F 1 "1.5k" H 8620 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8480 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 6011B8EB
+P 8400 2350
+F 0 "R14" H 8330 2396 50  0000 R CNN
+F 1 "1.5k" H 8330 2305 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8330 2350 50  0001 C CNN
+F 3 "~" H 8400 2350 50  0001 C CNN
+	1    8400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R94
+U 1 1 5F181970
+P 6650 3650
+F 0 "R94" V 6857 3650 50  0000 C CNN
+F 1 "1.5k" V 6766 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 3650 50  0001 C CNN
+F 3 "~" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R93
+U 1 1 5F17D8A6
+P 6650 3250
+F 0 "R93" V 6857 3250 50  0000 C CNN
+F 1 "1.5k" V 6766 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 3250 50  0001 C CNN
+F 3 "~" H 6650 3250 50  0001 C CNN
+	1    6650 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R92
+U 1 1 5F17999D
+P 6650 2850
+F 0 "R92" V 6857 2850 50  0000 C CNN
+F 1 "1.5k" V 6766 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 2850 50  0001 C CNN
+F 3 "~" H 6650 2850 50  0001 C CNN
+	1    6650 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R89
+U 1 1 5F130409
+P 6650 2450
+F 0 "R89" V 6857 2450 50  0000 C CNN
+F 1 "1.5k" V 6766 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 2450 50  0001 C CNN
+F 3 "~" H 6650 2450 50  0001 C CNN
+	1    6650 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5F2EB180
+P 5000 2800
+F 0 "R13" H 4930 2846 50  0000 R CNN
+F 1 "1.5k" H 4930 2755 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4930 2800 50  0001 C CNN
+F 3 "~" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60A32DC6
+P 4400 2800
+F 0 "R11" H 4330 2846 50  0000 R CNN
+F 1 "1.5k" H 4330 2755 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4330 2800 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 60A32DBC
+P 4700 2800
+F 0 "R12" H 4630 2846 50  0000 R CNN
+F 1 "1.5k" H 4630 2755 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4630 2800 50  0001 C CNN
+F 3 "~" H 4700 2800 50  0001 C CNN
+	1    4700 2800
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
