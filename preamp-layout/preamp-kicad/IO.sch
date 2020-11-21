@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 7 11
 Title "IO Main Board"
 Date "2020-02-25"
 Rev "A00"
@@ -515,38 +515,6 @@ F 3 "" H 7600 3900 50  0001 C CNN
 	1    7600 3900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5700 2850 5800 2850
-Wire Wire Line
-	5700 2950 5800 2950
-Wire Wire Line
-	5700 3050 5800 3050
-Wire Wire Line
-	5700 3150 5800 3150
-Wire Wire Line
-	5700 3250 5800 3250
-Wire Wire Line
-	5700 3350 5800 3350
-Wire Wire Line
-	5700 3450 5800 3450
-Wire Wire Line
-	5700 3550 5800 3550
-Wire Wire Line
-	5700 4350 5800 4350
-Wire Wire Line
-	5700 4250 5800 4250
-Wire Wire Line
-	5700 4150 5800 4150
-Wire Wire Line
-	5700 4050 5800 4050
-Wire Wire Line
-	5700 3950 5800 3950
-Wire Wire Line
-	5700 3850 5800 3850
-Wire Wire Line
-	5700 3750 5800 3750
-Wire Wire Line
-	5700 3650 5800 3650
 Text HLabel 5300 3650 0    50   UnSpc ~ 0
 A_IN_1_R
 Text HLabel 5300 2850 0    50   UnSpc ~ 0
@@ -579,4 +547,36 @@ Text HLabel 5300 3550 0    50   UnSpc ~ 0
 A_IN_5_L
 Text HLabel 5300 4350 0    50   UnSpc ~ 0
 A_IN_5_R
+Wire Wire Line
+	5300 2850 5800 2850
+Wire Wire Line
+	5300 2950 5800 2950
+Wire Wire Line
+	5300 3050 5800 3050
+Wire Wire Line
+	5300 3150 5800 3150
+Wire Wire Line
+	5300 3250 5800 3250
+Wire Wire Line
+	5300 3350 5800 3350
+Wire Wire Line
+	5300 3450 5800 3450
+Wire Wire Line
+	5300 3550 5800 3550
+Wire Wire Line
+	5300 3650 5800 3650
+Wire Wire Line
+	5300 3750 5800 3750
+Wire Wire Line
+	5300 3850 5800 3850
+Wire Wire Line
+	5300 3950 5800 3950
+Wire Wire Line
+	5300 4050 5800 4050
+Wire Wire Line
+	5300 4150 5800 4150
+Wire Wire Line
+	5300 4250 5800 4250
+Wire Wire Line
+	5300 4350 5800 4350
 $EndSCHEMATC

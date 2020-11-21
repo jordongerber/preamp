@@ -363,13 +363,13 @@ Wire Wire Line
 	3950 4050 4150 4050
 Text HLabel 6950 2400 2    50   UnSpc ~ 0
 IN_L
-Text HLabel 1950 3600 0    50   UnSpc ~ 0
+Text HLabel 1850 2850 0    50   UnSpc ~ 0
 IN_R
-Text HLabel 1950 3500 0    50   UnSpc ~ 0
+Text HLabel 1850 2750 0    50   UnSpc ~ 0
 IN_L
-Text HLabel 1950 3300 0    50   UnSpc ~ 0
+Text HLabel 1850 2550 0    50   UnSpc ~ 0
 OUT_R
-Text HLabel 1950 3200 0    50   UnSpc ~ 0
+Text HLabel 1850 2450 0    50   UnSpc ~ 0
 OUT_L
 $Comp
 L power:GND #PWR?
@@ -400,14 +400,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 64A9A3E0
-P 1850 3400
+P 1750 2650
 AR Path="/5E26F6FE/64A9A3E0" Ref="#PWR?"  Part="1" 
 AR Path="/5E1A0CE1/64A9A3E0" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 1850 3150 50  0001 C CNN
-F 1 "GND" V 1855 3272 50  0000 R CNN
-F 2 "" H 1850 3400 50  0001 C CNN
-F 3 "" H 1850 3400 50  0001 C CNN
-	1    1850 3400
+F 0 "#PWR0102" H 1750 2400 50  0001 C CNN
+F 1 "GND" V 1755 2522 50  0000 R CNN
+F 2 "" H 1750 2650 50  0001 C CNN
+F 3 "" H 1750 2650 50  0001 C CNN
+	1    1750 2650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1091,24 +1091,24 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x05_Male J67
 U 1 1 60DFA48A
-P 2250 3400
-F 0 "J67" H 2222 3378 50  0000 R CNN
-F 1 "Conn_01x05_Male" H 2222 3333 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2250 3400 50  0001 C CNN
-F 3 "~" H 2250 3400 50  0001 C CNN
-	1    2250 3400
+P 2150 2650
+F 0 "J67" H 2122 2628 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 2122 2583 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2150 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+	1    2150 2650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 3200 2050 3200
+	1850 2450 1950 2450
 Wire Wire Line
-	1950 3300 2050 3300
+	1850 2550 1950 2550
 Wire Wire Line
-	1950 3500 2050 3500
+	1850 2750 1950 2750
 Wire Wire Line
-	1950 3600 2050 3600
+	1850 2850 1950 2850
 Wire Wire Line
-	1850 3400 2050 3400
+	1750 2650 1950 2650
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5FC31E72
@@ -1239,4 +1239,82 @@ F 3 "~" H 6750 7450 50  0001 C CNN
 	1    6750 7450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA16519
+P 1850 3850
+AR Path="/6009D432/5FA16519" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/5FA16519" Ref="#PWR?"  Part="1" 
+AR Path="/5E1A0CE1/5FA16519" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 1850 3600 50  0001 C CNN
+F 1 "GND" V 1855 3722 50  0000 R CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA1651F
+P 1850 3850
+AR Path="/5E2D8DA2/5FA1651F" Ref="TP?"  Part="1" 
+AR Path="/5E1A0CE1/5FA1651F" Ref="TP44"  Part="1" 
+F 0 "TP44" V 1850 4038 50  0000 L CNN
+F 1 "TestPoint" V 1895 4038 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2050 3850 50  0001 C CNN
+F 3 "~" H 2050 3850 50  0001 C CNN
+	1    1850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA16525
+P 1850 3750
+AR Path="/5E2D8DA2/5FA16525" Ref="TP?"  Part="1" 
+AR Path="/5E1A0CE1/5FA16525" Ref="TP43"  Part="1" 
+F 0 "TP43" V 1850 3938 50  0000 L CNN
+F 1 "TestPoint" V 1895 3938 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2050 3750 50  0001 C CNN
+F 3 "~" H 2050 3750 50  0001 C CNN
+	1    1850 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 1800 3550 0    50   UnSpc ~ 0
++15V
+Text GLabel 1800 3650 0    50   UnSpc ~ 0
+-15V
+Text GLabel 1800 3750 0    50   UnSpc ~ 0
++5V
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA1652E
+P 1850 3650
+AR Path="/5E2D8DA2/5FA1652E" Ref="TP?"  Part="1" 
+AR Path="/5E1A0CE1/5FA1652E" Ref="TP42"  Part="1" 
+F 0 "TP42" V 1850 3838 50  0000 L CNN
+F 1 "TestPoint" V 1895 3838 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2050 3650 50  0001 C CNN
+F 3 "~" H 2050 3650 50  0001 C CNN
+	1    1850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA16534
+P 1850 3550
+AR Path="/5E2D8DA2/5FA16534" Ref="TP?"  Part="1" 
+AR Path="/5E1A0CE1/5FA16534" Ref="TP41"  Part="1" 
+F 0 "TP41" V 1850 3738 50  0000 L CNN
+F 1 "TestPoint" V 1895 3738 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2050 3550 50  0001 C CNN
+F 3 "~" H 2050 3550 50  0001 C CNN
+	1    1850 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 3750 1800 3750
+Wire Wire Line
+	1850 3650 1800 3650
+Wire Wire Line
+	1850 3550 1800 3550
 $EndSCHEMATC

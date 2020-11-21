@@ -5,6 +5,7 @@
 
 #include <Adafruit_NeoPixel.h>
 #include "Encoder.h"
+#include <Wire.h>
 
 #define NUM_LEDS 60
 #define LED_PIN 16
@@ -52,30 +53,6 @@ class Preamp{
       LED_refresh();
     }
     
-    void volume_up(){
-      if(current_volume < (max_volume - 1)){
-        current_volume++;
-        setVolume(current_volume);
-      }
-    }
-    
-    void volume_down(){
-      if(current_volume > 0){
-        current_volume--;
-        setVolume(current_volume);
-      }
-    }
-
-    void select_next(){
-      current_input++;
-      setInput(current_input);
-    }
-
-    void select_previous(){
-      current_input--;
-      setInput(current_input);
-    }
-    
     void LED_refresh(){
       FP_Strip->clear();
       if(standby)
@@ -113,10 +90,42 @@ class Preamp{
       FP_Strip->show();
     }
 
-    int getInput(){return current_input;}
-    int getVolume(){return current_volume;}
-    int getOutput(){return current_output;}
-    bool isMute(){return mute;}
+    void setVolume(int vol){
+      if(mute) mute = !mute;
+      if(vol >= 0 && vol < max_volume){
+        current_volume = vol;
+        LED_refresh();
+      }
+    }
+
+    void volume_up(){
+      if(current_volume < (max_volume - 1)){
+        current_volume++;
+        setVolume(current_volume);
+      }
+    }
+    
+    void volume_down(){
+      if(current_volume > 0){
+        current_volume--;
+        setVolume(current_volume);
+      }
+    }
+
+    void select_next(){
+      current_input++;
+      setInput(current_input);
+    }
+
+    void select_previous(){
+      current_input--;
+      setInput(current_input);
+    }
+
+    int getInput(){return this->current_input;}
+    int getVolume(){return this->current_volume;}
+    int getOutput(){return this->current_output;}
+    bool isMute(){return this->mute;}
 
     int get_selector_encoder_CLKPIN(){return selector_encoder->getCLK();}
     int get_selector_encoder_DTPIN(){return selector_encoder->getDT();}
@@ -146,22 +155,43 @@ class Preamp{
       else if(out >= 0 && out < max_outputs) current_output = out;
       LED_refresh();
     }
-    
-    void setVolume(int vol){
-      if(mute) mute = !mute;
-      if(vol >= 0 && vol < max_volume){
-        current_volume = vol;
-        LED_refresh();
-      }
+
+    void setMute(){
+      mute = true;
+      LED_refresh();
     }
 
-    void setMute(bool mut){
-      mute = !mut;
+    void unsetMute(){
+      mute = false;
+      LED_refresh();
     }
     
     void toggle_mute(){
       mute = !mute;
       LED_refresh();
+    }
+
+    void I2C_write(int device_address, int value){
+      std::stringstream stream;
+      stream << std::hex << value;
+      std::string hex_result(stream.str());
+
+      Wire.beginTransmission(device_address);
+      Wire.write(result);
+      Wire.endTransmission();
+
+    }
+
+    str I2C_read(int device_address){
+      std::stringstream stream;
+      stream << std::hex << value;
+      std::string hex_result(stream.str());
+
+      Wire.requestFrom(device_address, 8); //??
+      Wire.beginTransmission(device_address);
+      char c = Wire.read();
+      Wire.endTransmission();
+
     }
 
   private:
@@ -180,5 +210,9 @@ class Preamp{
     Encoder *selector_encoder;
     Encoder *volume_encoder;
     
+    enum I2S_devices{
+      IO_SEL, GAIN, FP, GPIO
+    };
+
     Adafruit_NeoPixel *FP_Strip;
 };

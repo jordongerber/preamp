@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 11
+Sheet 4 11
 Title "Headphone Amplifier Board"
 Date "2020-02-25"
 Rev "A00"
@@ -773,4 +773,65 @@ F 3 "~" H 6750 7450 50  0001 C CNN
 	1    6750 7450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA0E35C
+P 5900 5600
+AR Path="/6009D432/5FA0E35C" Ref="#PWR?"  Part="1" 
+AR Path="/5E2D8DA2/5FA0E35C" Ref="#PWR?"  Part="1" 
+AR Path="/5E4A803E/5FA0E35C" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 5900 5350 50  0001 C CNN
+F 1 "GND" V 5905 5472 50  0000 R CNN
+F 2 "" H 5900 5600 50  0001 C CNN
+F 3 "" H 5900 5600 50  0001 C CNN
+	1    5900 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA0E362
+P 5900 5600
+AR Path="/5E2D8DA2/5FA0E362" Ref="TP?"  Part="1" 
+AR Path="/5E4A803E/5FA0E362" Ref="TP40"  Part="1" 
+F 0 "TP40" V 5900 5788 50  0000 L CNN
+F 1 "TestPoint" V 5945 5788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6100 5600 50  0001 C CNN
+F 3 "~" H 6100 5600 50  0001 C CNN
+	1    5900 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 5850 5400 0    50   UnSpc ~ 0
++15V
+Text GLabel 5850 5500 0    50   UnSpc ~ 0
+-15V
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA0E371
+P 5900 5500
+AR Path="/5E2D8DA2/5FA0E371" Ref="TP?"  Part="1" 
+AR Path="/5E4A803E/5FA0E371" Ref="TP38"  Part="1" 
+F 0 "TP38" V 5900 5688 50  0000 L CNN
+F 1 "TestPoint" V 5945 5688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6100 5500 50  0001 C CNN
+F 3 "~" H 6100 5500 50  0001 C CNN
+	1    5900 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FA0E377
+P 5900 5400
+AR Path="/5E2D8DA2/5FA0E377" Ref="TP?"  Part="1" 
+AR Path="/5E4A803E/5FA0E377" Ref="TP37"  Part="1" 
+F 0 "TP37" V 5900 5588 50  0000 L CNN
+F 1 "TestPoint" V 5945 5588 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6100 5400 50  0001 C CNN
+F 3 "~" H 6100 5400 50  0001 C CNN
+	1    5900 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 5500 5850 5500
+Wire Wire Line
+	5900 5400 5850 5400
 $EndSCHEMATC
