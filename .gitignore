@@ -1,6 +1,29 @@
-*.bak
-*.kicad_pcb-bak
+# KiCad backup and autosave files
 *.bck
-*.sch-bak
-*.ods#
-*.html#
+*.bak
+*-backups/
+_autosave-*
+*.lck
+
+# KiCad local/machine-specific files
+fp-info-cache
+*.kicad_prl
+
+# Old KiCad format files (pre-v6)
+*.sch
+*.pro
+*.lib
+*.dcm
+*.net
+*.xml
+
+# Generated outputs (re-generate from source)
+*.pdf
+gerbers/
+fab/
+plot/
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db

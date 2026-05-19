@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name preamp)(type Legacy)(uri ${KIPRJMOD}/preamp.lib)(options "")(descr ""))
+	(version 7)
+	(lib (name "preamp") (type "Legacy") (uri "${KIPRJMOD}/preamp.lib") (options "") (descr ""))
+	(lib (name "preamp-cache") (type "Legacy") (uri "C:/Users/jordo/OneDrive/Documents/preamp/preamp-layout/preamp-kicad/preamp-cache.lib") (options "") (descr "Legacy project cache library"))
 )
